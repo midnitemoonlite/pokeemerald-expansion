@@ -177,6 +177,61 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     /* You may add any custom species below this point based on the following structure: */
 
+    [SPECIES_LOVELY] =
+    {
+        .baseHP        = 67,
+        .baseAttack    = 54,
+        .baseDefense   = 42,
+        .baseSpeed     = 54,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 31,
+        .types = MON_TYPES(TYPE_GRASS),
+        .catchRate = 255,
+        .expYield = 64,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(87.5),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_NONE, ABILITY_OVERGROW, ABILITY_FLOWER_VEIL},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Lovely"),
+        .cryId = CRY_CHERUBI,
+        .natDexNum = NATIONAL_DEX_LOVELY,
+        .categoryName = _("Dandelion"),
+        .height = 6,
+        .weight = 16,
+        .description = COMPOUND_STRING(
+            "Lovely sways back and forth with a cute\n"
+            "face to beguile onlookers. If that doesn't\n"
+            "work, it will stretch its stem out far\n"
+            "and grab them forcefully instead."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Lovely,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Lovely,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Lovely,
+        .shinyPalette = gMonShinyPalette_Lovely,
+        .iconSprite = gMonIcon_Cherubi,
+        .iconPalIndex = 0,
+        FOOTPRINT(Lovely)
+        .levelUpLearnset = sLovelyLevelUpLearnset,
+        .teachableLearnset = sCherubiTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+    
     /*
     [SPECIES_NONE] =
     {
