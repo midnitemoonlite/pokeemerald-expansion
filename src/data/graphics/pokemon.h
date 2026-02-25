@@ -26790,9 +26790,25 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonPalette_Egg[] = INCBIN_U16("graphics/pokemon/egg/normal.gbapal");
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");
 
+    // Dream Team entries
+
     const u32 gMonFrontPic_Lovely[] = INCBIN_U32("graphics/pokemon/lovely/front.4bpp.lz");
     const u32 gMonBackPic_Lovely[] = INCBIN_U32("graphics/pokemon/lovely/back.4bpp.lz");
     const u16 gMonPalette_Lovely[] = INCBIN_U16("graphics/pokemon/lovely/normal.gbapal");
     const u16 gMonShinyPalette_Lovely[] = INCBIN_U16("graphics/pokemon/lovely/shiny.gbapal");
     const u8 gMonIcon_Lovely[] = INCBIN_U8("graphics/pokemon/lovely/icon.4bpp");
     const u8 gMonFootprint_Lovely[] = INCBIN_U8("graphics/pokemon/lovely/footprint.1bpp");
+
+    const u32 gMonFrontPic_Rosely[] = INCBIN_U32("graphics/pokemon/rosely/front.4bpp.lz");
+    const u32 gMonBackPic_Rosely[] = INCBIN_U32("graphics/pokemon/rosely/back.4bpp.lz");
+    const u16 gMonPalette_Rosely[] = INCBIN_U16("graphics/pokemon/rosely/normal.gbapal");
+    const u16 gMonShinyPalette_Rosely[] = INCBIN_U16("graphics/pokemon/rosely/shiny.gbapal");
+    const u8 gMonIcon_Rosely[] = INCBIN_U8("graphics/pokemon/rosely/icon.4bpp");
+    const u8 gMonFootprint_Rosely[] = INCBIN_U8("graphics/pokemon/rosely/footprint.1bpp");
+
+    const u32 gMonFrontPic_SectoniaVine[] = INCBIN_U32("graphics/pokemon/sectoniavine/front.4bpp.lz");
+    const u32 gMonBackPic_SectoniaVine[] = INCBIN_U32("graphics/pokemon/sectoniavine/back.4bpp.lz");
+    const u16 gMonPalette_SectoniaVine[] = INCBIN_U16("graphics/pokemon/sectoniavine/normal.gbapal");
+    const u16 gMonShinyPalette_SectoniaVine[] = INCBIN_U16("graphics/pokemon/sectoniavine/shiny.gbapal");
+    const u8 gMonIcon_SectoniaVine[] = INCBIN_U8("graphics/pokemon/sectoniavine/icon.4bpp");
+    const u8 gMonFootprint_SectoniaVine[] = INCBIN_U8("graphics/pokemon/sectoniavine/footprint.1bpp");
