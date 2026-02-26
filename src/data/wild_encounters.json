@@ -85,12 +85,47 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_BLISSEY"
+                "species": "SPECIES_LOVELY"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_BLISSEY"
+                "species": "SPECIES_BURNING_LEO"
+              },
+              {
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_SQUISHY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_LOVELY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_BURNING_LEO"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_SQUISHY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_LOVELY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_BURNING_LEO"
+              },
+              {
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_SQUISHY"
               },
               {
                 "min_level": 2,
@@ -100,47 +135,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_LOVELY"
+                "species": "SPECIES_BURNING_LEO"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_BLISSEY"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_BLISSEY"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_BLISSEY"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_BLISSEY"
-              },
-              {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_BLISSEY"
-              },
-              {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_BLISSEY"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_BLISSEY"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_BLISSEY"
+                "species": "SPECIES_SQUISHY"
               },
               {
                 "min_level": 10,
