@@ -26855,6 +26855,34 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonIcon_Claykken[] = INCBIN_U8("graphics/pokemon/claykken/icon.4bpp");
     const u8 gMonFootprint_Claykken[] = INCBIN_U8("graphics/pokemon/claykken/footprint.1bpp");
 
+    const u32 gMonFrontPic_Chip[] = INCBIN_U32("graphics/pokemon/chip/front.4bpp.lz");
+    const u32 gMonBackPic_Chip[] = INCBIN_U32("graphics/pokemon/chip/back.4bpp.lz");
+    const u16 gMonPalette_Chip[] = INCBIN_U16("graphics/pokemon/chip/normal.gbapal");
+    const u16 gMonShinyPalette_Chip[] = INCBIN_U16("graphics/pokemon/chip/shiny.gbapal");
+    const u8 gMonIcon_Chip[] = INCBIN_U8("graphics/pokemon/chip/icon.4bpp");
+    const u8 gMonFootprint_Chip[] = INCBIN_U8("graphics/pokemon/chip/footprint.1bpp");
+
+    const u32 gMonFrontPic_Chippurus[] = INCBIN_U32("graphics/pokemon/chippurus/front.4bpp.lz");
+    const u32 gMonBackPic_Chippurus[] = INCBIN_U32("graphics/pokemon/chippurus/back.4bpp.lz");
+    const u16 gMonPalette_Chippurus[] = INCBIN_U16("graphics/pokemon/chippurus/normal.gbapal");
+    const u16 gMonShinyPalette_Chippurus[] = INCBIN_U16("graphics/pokemon/chippurus/shiny.gbapal");
+    const u8 gMonIcon_Chippurus[] = INCBIN_U8("graphics/pokemon/chippurus/icon.4bpp");
+    const u8 gMonFootprint_Chippurus[] = INCBIN_U8("graphics/pokemon/chippurus/footprint.1bpp");
+
+    const u32 gMonFrontPic_BrontoBurt[] = INCBIN_U32("graphics/pokemon/brontoburt/front.4bpp.lz");
+    const u32 gMonBackPic_BrontoBurt[] = INCBIN_U32("graphics/pokemon/brontoburt/back.4bpp.lz");
+    const u16 gMonPalette_BrontoBurt[] = INCBIN_U16("graphics/pokemon/brontoburt/normal.gbapal");
+    const u16 gMonShinyPalette_BrontoBurt[] = INCBIN_U16("graphics/pokemon/brontoburt/shiny.gbapal");
+    const u8 gMonIcon_BrontoBurt[] = INCBIN_U8("graphics/pokemon/brontoburt/icon.4bpp");
+    const u8 gMonFootprint_BrontoBurt[] = INCBIN_U8("graphics/pokemon/brontoburt/footprint.1bpp");
+
+    const u32 gMonFrontPic_HalcantoBurt[] = INCBIN_U32("graphics/pokemon/halcantoburt/front.4bpp.lz");
+    const u32 gMonBackPic_HalcantoBurt[] = INCBIN_U32("graphics/pokemon/halcantoburt/back.4bpp.lz");
+    const u16 gMonPalette_HalcantoBurt[] = INCBIN_U16("graphics/pokemon/halcantoburt/normal.gbapal");
+    const u16 gMonShinyPalette_HalcantoBurt[] = INCBIN_U16("graphics/pokemon/halcantoburt/shiny.gbapal");
+    const u8 gMonIcon_HalcantoBurt[] = INCBIN_U8("graphics/pokemon/halcantoburt/icon.4bpp");
+    const u8 gMonFootprint_HalcantoBurt[] = INCBIN_U8("graphics/pokemon/halcantoburt/footprint.1bpp");
+
     const u32 gMonFrontPic_Capiller[] = INCBIN_U32("graphics/pokemon/capiller/front.4bpp.lz");
     const u32 gMonBackPic_Capiller[] = INCBIN_U32("graphics/pokemon/capiller/back.4bpp.lz");
     const u16 gMonPalette_Capiller[] = INCBIN_U16("graphics/pokemon/capiller/normal.gbapal");

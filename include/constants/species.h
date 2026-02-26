@@ -1674,11 +1674,15 @@
 #define SPECIES_SQUISHY                                 1556
 #define SPECIES_SQUISTER                                1557
 #define SPECIES_CLAYKKEN                                1558
-#define SPECIES_CAPILLER                                1559
-#define SPECIES_PUPA                                    1560
+#define SPECIES_CHIP                                    1559
+#define SPECIES_CHIPPURUS                               1560
+#define SPECIES_BRONTO_BURT                             1561
+#define SPECIES_HALCANTO_BURT                           1562
+#define SPECIES_CAPILLER                                1563
+#define SPECIES_PUPA                                    1564
 #define SPECIES_BUTTERFLY                               SPECIES_BUTTERFLY_SOLO
-#define SPECIES_BUTTERFLY_SOLO                          1561
-#define SPECIES_BUTTERFLY_SWARM                         1562
+#define SPECIES_BUTTERFLY_SOLO                          1565
+#define SPECIES_BUTTERFLY_SWARM                         1566
 
 
 #define SPECIES_EGG                                     (SPECIES_BUTTERFLY_SWARM + 1)
