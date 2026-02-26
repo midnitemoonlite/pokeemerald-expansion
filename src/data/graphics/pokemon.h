@@ -26812,3 +26812,45 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_SectoniaVine[] = INCBIN_U16("graphics/pokemon/sectoniavine/shiny.gbapal");
     const u8 gMonIcon_SectoniaVine[] = INCBIN_U8("graphics/pokemon/sectoniavine/icon.4bpp");
     const u8 gMonFootprint_SectoniaVine[] = INCBIN_U8("graphics/pokemon/sectoniavine/footprint.1bpp");
+
+    const u32 gMonFrontPic_BurningLeo[] = INCBIN_U32("graphics/pokemon/burningleo/front.4bpp.lz");
+    const u32 gMonBackPic_BurningLeo[] = INCBIN_U32("graphics/pokemon/burningleo/back.4bpp.lz");
+    const u16 gMonPalette_BurningLeo[] = INCBIN_U16("graphics/pokemon/burningleo/normal.gbapal");
+    const u16 gMonShinyPalette_BurningLeo[] = INCBIN_U16("graphics/pokemon/burningleo/shiny.gbapal");
+    const u8 gMonIcon_BurningLeo[] = INCBIN_U8("graphics/pokemon/burningleo/icon.4bpp");
+    const u8 gMonFootprint_BurningLeo[] = INCBIN_U8("graphics/pokemon/burningleo/footprint.1bpp");
+
+    const u32 gMonFrontPic_Acchi[] = INCBIN_U32("graphics/pokemon/acchi/front.4bpp.lz");
+    const u32 gMonBackPic_Acchi[] = INCBIN_U32("graphics/pokemon/acchi/back.4bpp.lz");
+    const u16 gMonPalette_Acchi[] = INCBIN_U16("graphics/pokemon/acchi/normal.gbapal");
+    const u16 gMonShinyPalette_Acchi[] = INCBIN_U16("graphics/pokemon/acchi/shiny.gbapal");
+    const u8 gMonIcon_Acchi[] = INCBIN_U8("graphics/pokemon/acchi/icon.4bpp");
+    const u8 gMonFootprint_Acchi[] = INCBIN_U8("graphics/pokemon/acchi/footprint.1bpp");
+
+    const u32 gMonFrontPic_Pyribbit[] = INCBIN_U32("graphics/pokemon/pyribbit/front.4bpp.lz");
+    const u32 gMonBackPic_Pyribbit[] = INCBIN_U32("graphics/pokemon/pyribbit/back.4bpp.lz");
+    const u16 gMonPalette_Pyribbit[] = INCBIN_U16("graphics/pokemon/pyribbit/normal.gbapal");
+    const u16 gMonShinyPalette_Pyribbit[] = INCBIN_U16("graphics/pokemon/pyribbit/shiny.gbapal");
+    const u8 gMonIcon_Pyribbit[] = INCBIN_U8("graphics/pokemon/pyribbit/icon.4bpp");
+    const u8 gMonFootprint_Pyribbit[] = INCBIN_U8("graphics/pokemon/pyribbit/footprint.1bpp");
+
+    const u32 gMonFrontPic_Squishy[] = INCBIN_U32("graphics/pokemon/squishy/front.4bpp.lz");
+    const u32 gMonBackPic_Squishy[] = INCBIN_U32("graphics/pokemon/squishy/back.4bpp.lz");
+    const u16 gMonPalette_Squishy[] = INCBIN_U16("graphics/pokemon/squishy/normal.gbapal");
+    const u16 gMonShinyPalette_Squishy[] = INCBIN_U16("graphics/pokemon/squishy/shiny.gbapal");
+    const u8 gMonIcon_Squishy[] = INCBIN_U8("graphics/pokemon/squishy/icon.4bpp");
+    const u8 gMonFootprint_Squishy[] = INCBIN_U8("graphics/pokemon/squishy/footprint.1bpp");
+
+    const u32 gMonFrontPic_Squister[] = INCBIN_U32("graphics/pokemon/squister/front.4bpp.lz");
+    const u32 gMonBackPic_Squister[] = INCBIN_U32("graphics/pokemon/squister/back.4bpp.lz");
+    const u16 gMonPalette_Squister[] = INCBIN_U16("graphics/pokemon/squister/normal.gbapal");
+    const u16 gMonShinyPalette_Squister[] = INCBIN_U16("graphics/pokemon/squister/shiny.gbapal");
+    const u8 gMonIcon_Squister[] = INCBIN_U8("graphics/pokemon/squister/icon.4bpp");
+    const u8 gMonFootprint_Squister[] = INCBIN_U8("graphics/pokemon/squister/footprint.1bpp");
+
+    const u32 gMonFrontPic_Claykken[] = INCBIN_U32("graphics/pokemon/claykken/front.4bpp.lz");
+    const u32 gMonBackPic_Claykken[] = INCBIN_U32("graphics/pokemon/claykken/back.4bpp.lz");
+    const u16 gMonPalette_Claykken[] = INCBIN_U16("graphics/pokemon/claykken/normal.gbapal");
+    const u16 gMonShinyPalette_Claykken[] = INCBIN_U16("graphics/pokemon/claykken/shiny.gbapal");
+    const u8 gMonIcon_Claykken[] = INCBIN_U8("graphics/pokemon/claykken/icon.4bpp");
+    const u8 gMonFootprint_Claykken[] = INCBIN_U8("graphics/pokemon/claykken/footprint.1bpp");
