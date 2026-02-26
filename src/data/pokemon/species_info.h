@@ -356,7 +356,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 63,
         .baseSpDefense = 41,
         .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 255,
+        .catchRate = 45,
         .expYield = 64,
         .evYield_SpAttack = 1,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -514,7 +514,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         //.perfectIVCount = NUM_STATS,
     },
 
-        [SPECIES_SQUISHY] =
+    [SPECIES_SQUISHY] =
     {
         .baseHP        = 47,
         .baseAttack    = 60,
@@ -523,7 +523,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 50,
         .baseSpDefense = 52,
         .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 255,
+        .catchRate = 45,
         .expYield = 64,
         .evYield_Speed = 1,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -542,7 +542,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .description = COMPOUND_STRING(
             "Usually seen underwater, it can also\n"
             "occasionally be seen surfacing or even\n"
-            "swimming through the air. How Squishy \n"
+            "swimming through the air. How Squishy\n"
             "manages this is an enduring mystery."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -676,6 +676,232 @@ const struct SpeciesInfo gSpeciesInfo[] =
         FOOTPRINT(Claykken)
         .levelUpLearnset = sClaykkenLevelUpLearnset,
         .teachableLearnset = sTentacruelTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_CAPILLER] =
+    {
+        .baseHP        = 30,
+        .baseAttack    = 33,
+        .baseDefense   = 42,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 15,
+        .baseSpDefense = 30,
+        .types = MON_TYPES(TYPE_BUG),
+        .catchRate = 255,
+        .expYield = 38,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SWARM, ABILITY_NONE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Capiller"),
+        .cryId = CRY_SCATTERBUG,
+        .natDexNum = NATIONAL_DEX_CAPILLER,
+        .categoryName = _("Caterpillar"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "They have a habit of falling from\n"
+            "trees or burrowing out of fruit when\n"
+            "you least expect it. Certain sources\n"
+            "claim they're very unappetizing."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Capiller,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE,
+        .backPic = gMonBackPic_Capiller,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Capiller,
+        .shinyPalette = gMonShinyPalette_Capiller,
+        .iconSprite = gMonIcon_Scatterbug,
+        .iconPalIndex = 0,
+        FOOTPRINT(Squishy)
+        .levelUpLearnset = sCapillerLevelUpLearnset,
+        .teachableLearnset = sScatterbugTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 9, SPECIES_PUPA}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_PUPA] =
+    {
+        .baseHP        = 35,
+        .baseAttack    = 33,
+        .baseDefense   = 72,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 15,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_BUG),
+        .catchRate = 120,
+        .expYield = 73,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Pupa"),
+        .cryId = CRY_SPEWPA,
+        .natDexNum = NATIONAL_DEX_PUPA,
+        .categoryName = _("Chrysalis"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Pupa's body is immobile, so it\n"
+            "spews string from its rear end\n"
+            "to dangle from heights and uses\n"
+            "swinging momentum to move around."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Pupa,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE,
+        .backPic = gMonBackPic_Pupa,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Pupa,
+        .shinyPalette = gMonShinyPalette_Pupa,
+        .iconSprite = gMonIcon_Spewpa,
+        .iconPalIndex = 0,
+        FOOTPRINT(Squishy)
+        .levelUpLearnset = sPupaLevelUpLearnset,
+        .teachableLearnset = sSpewpaTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 13, SPECIES_BUTTERFLY_SOLO}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_BUTTERFLY_SOLO] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 27,
+        .baseDefense   = 32,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 71,
+        .baseSpDefense = 62,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .catchRate = 20,
+        .expYield = 108,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SCHOOLING, ABILITY_NONE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Butterfly"),
+        .cryId = CRY_CLOBBOPUS,
+        .natDexNum = NATIONAL_DEX_BUTTERFLY,
+        .categoryName = _("Papillon"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "The sight of butterflies is often\n"
+            "viewed as a symbol of peace in\n"
+            "Dream Land. Under most circumstances,\n"
+            "they are harmless creatures."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ButterflySolo,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE,
+        .backPic = gMonBackPic_ButterflySolo,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_ButterflySolo,
+        .shinyPalette = gMonShinyPalette_ButterflySolo,
+        .iconSprite = gMonIcon_Beautifly,
+        .iconPalIndex = 0,
+        FOOTPRINT(Butterfly)
+        .levelUpLearnset = sButterflyLevelUpLearnset,
+        .teachableLearnset = sTentacoolTeachableLearnset,
+        .formSpeciesIdTable = sButterflyFormSpeciesIdTable,
+        .formChangeTable = sButterflyFormChangeTable,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_BUTTERFLY_SWARM] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 100,
+        .baseDefense   = 108,
+        .baseSpeed     = 126,
+        .baseSpAttack  = 144,
+        .baseSpDefense = 111,
+        .types = MON_TYPES(TYPE_BUG, TYPE_GHOST),
+        .catchRate = 20,
+        .expYield = 247,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SCHOOLING, ABILITY_NONE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Butterfly"),
+        .cryId = CRY_CLOBBOPUS,
+        .natDexNum = NATIONAL_DEX_BUTTERFLY,
+        .categoryName = _("Papillon"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "The sight of a butterfly was once\n"
+            "believed to be an omen of approaching\n"
+            "death. They flutter silently, chasing\n"
+            "the screams of dying souls to feast on."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ButterflySwarm,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE,
+        .backPic = gMonBackPic_ButterflySwarm,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_ButterflySwarm,
+        .shinyPalette = gMonShinyPalette_ButterflySwarm,
+        .iconSprite = gMonIcon_Dustox,
+        .iconPalIndex = 0,
+        FOOTPRINT(Butterfly)
+        .levelUpLearnset = sButterflyLevelUpLearnset,
+        .teachableLearnset = sTentacoolTeachableLearnset,
+        .formSpeciesIdTable = sButterflyFormSpeciesIdTable,
+        .formChangeTable = sButterflyFormChangeTable,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,

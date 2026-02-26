@@ -85,11 +85,41 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_LOVELY"
+                "species": "SPECIES_CAPILLER"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
+                "species": "SPECIES_CAPILLER"
+              },
+              {
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_CAPILLER"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_CAPILLER"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_BURNING_LEO"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_SQUISHY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
+                "species": "SPECIES_CAPILLER"
+              },
+              {
+                "min_level": 3,
+                "max_level": 3,
                 "species": "SPECIES_BURNING_LEO"
               },
               {
@@ -98,39 +128,9 @@
                 "species": "SPECIES_SQUISHY"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_LOVELY"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_BURNING_LEO"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_SQUISHY"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_LOVELY"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_BURNING_LEO"
-              },
-              {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_SQUISHY"
-              },
-              {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_LOVELY"
+                "species": "SPECIES_CAPILLER"
               },
               {
                 "min_level": 3,
@@ -145,7 +145,7 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_LOVELY"
+                "species": "SPECIES_CAPILLER"
               }
             ]
           }

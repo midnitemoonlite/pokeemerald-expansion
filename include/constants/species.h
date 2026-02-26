@@ -1674,8 +1674,14 @@
 #define SPECIES_SQUISHY                                 1556
 #define SPECIES_SQUISTER                                1557
 #define SPECIES_CLAYKKEN                                1558
+#define SPECIES_CAPILLER                                1559
+#define SPECIES_PUPA                                    1560
+#define SPECIES_BUTTERFLY                               SPECIES_BUTTERFLY_SOLO
+#define SPECIES_BUTTERFLY_SOLO                          1561
+#define SPECIES_BUTTERFLY_SWARM                         1562
 
-#define SPECIES_EGG                                     (SPECIES_CLAYKKEN + 1)
+
+#define SPECIES_EGG                                     (SPECIES_BUTTERFLY_SWARM + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

@@ -26854,3 +26854,30 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Claykken[] = INCBIN_U16("graphics/pokemon/claykken/shiny.gbapal");
     const u8 gMonIcon_Claykken[] = INCBIN_U8("graphics/pokemon/claykken/icon.4bpp");
     const u8 gMonFootprint_Claykken[] = INCBIN_U8("graphics/pokemon/claykken/footprint.1bpp");
+
+    const u32 gMonFrontPic_Capiller[] = INCBIN_U32("graphics/pokemon/capiller/front.4bpp.lz");
+    const u32 gMonBackPic_Capiller[] = INCBIN_U32("graphics/pokemon/capiller/back.4bpp.lz");
+    const u16 gMonPalette_Capiller[] = INCBIN_U16("graphics/pokemon/capiller/normal.gbapal");
+    const u16 gMonShinyPalette_Capiller[] = INCBIN_U16("graphics/pokemon/capiller/shiny.gbapal");
+    const u8 gMonIcon_Capiller[] = INCBIN_U8("graphics/pokemon/capiller/icon.4bpp");
+    const u8 gMonFootprint_Capiller[] = INCBIN_U8("graphics/pokemon/capiller/footprint.1bpp");
+
+    const u32 gMonFrontPic_Pupa[] = INCBIN_U32("graphics/pokemon/pupa/front.4bpp.lz");
+    const u32 gMonBackPic_Pupa[] = INCBIN_U32("graphics/pokemon/pupa/back.4bpp.lz");
+    const u16 gMonPalette_Pupa[] = INCBIN_U16("graphics/pokemon/pupa/normal.gbapal");
+    const u16 gMonShinyPalette_Pupa[] = INCBIN_U16("graphics/pokemon/pupa/shiny.gbapal");
+    const u8 gMonIcon_Pupa[] = INCBIN_U8("graphics/pokemon/pupa/icon.4bpp");
+    const u8 gMonFootprint_Pupa[] = INCBIN_U8("graphics/pokemon/pupa/footprint.1bpp");
+
+    const u32 gMonFrontPic_ButterflySolo[] = INCBIN_U32("graphics/pokemon/butterfly/front.4bpp.lz");
+    const u32 gMonBackPic_ButterflySolo[] = INCBIN_U32("graphics/pokemon/butterfly/back.4bpp.lz");
+    const u16 gMonPalette_ButterflySolo[] = INCBIN_U16("graphics/pokemon/butterfly/normal.gbapal");
+    const u16 gMonShinyPalette_ButterflySolo[] = INCBIN_U16("graphics/pokemon/butterfly/shiny.gbapal");
+    const u8 gMonIcon_ButterflySolo[] = INCBIN_U8("graphics/pokemon/butterfly/icon.4bpp");
+    const u8 gMonFootprint_Butterfly[] = INCBIN_U8("graphics/pokemon/butterfly/footprint.1bpp");
+
+    const u32 gMonFrontPic_ButterflySwarm[] = INCBIN_U32("graphics/pokemon/butterfly/swarm/front.4bpp.lz");
+    const u32 gMonBackPic_ButterflySwarm[] = INCBIN_U32("graphics/pokemon/butterfly/swarm/back.4bpp.lz");
+    const u16 gMonPalette_ButterflySwarm[] = INCBIN_U16("graphics/pokemon/butterfly/swarm/normal.gbapal");
+    const u16 gMonShinyPalette_ButterflySwarm[] = INCBIN_U16("graphics/pokemon/butterfly/swarm/shiny.gbapal");
+    const u8 gMonIcon_ButterflySwarm[] = INCBIN_U8("graphics/pokemon/butterfly/swarm/icon.4bpp");

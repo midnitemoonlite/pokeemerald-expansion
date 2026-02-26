@@ -371,6 +371,9 @@ static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(SQUISHY),
     HOENN_TO_NATIONAL(SQUISTER),
     HOENN_TO_NATIONAL(CLAYKKEN),
+    HOENN_TO_NATIONAL(CAPILLER),
+    HOENN_TO_NATIONAL(PUPA),
+    HOENN_TO_NATIONAL(BUTTERFLY),
 };
 
 const struct SpindaSpot gSpindaSpotGraphics[] =

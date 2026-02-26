@@ -4432,7 +4432,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
             }
             break;
         case ABILITY_SCHOOLING:
-            if (gBattleMons[battler].level < 20)
+            if (gBattleMons[battler].level < 27)
                 break;
         // Fallthrough
         case ABILITY_ZEN_MODE:
@@ -4834,7 +4834,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                 }
                 break;
             case ABILITY_SCHOOLING:
-                if (gBattleMons[battler].level < 20)
+                if (gBattleMons[battler].level < 27)
                     break;
             // Fallthrough
             case ABILITY_ZEN_MODE:
