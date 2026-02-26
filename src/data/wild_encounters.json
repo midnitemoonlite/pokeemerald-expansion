@@ -85,22 +85,22 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CHIP"
+                "species": "SPECIES_CHICK"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CHIP"
+                "species": "SPECIES_CHICK"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CHIP"
+                "species": "SPECIES_TWIZZY"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_CHIP"
+                "species": "SPECIES_TWIZZY"
               },
               {
                 "min_level": 3,

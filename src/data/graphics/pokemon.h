@@ -26909,3 +26909,31 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonPalette_ButterflySwarm[] = INCBIN_U16("graphics/pokemon/butterfly/swarm/normal.gbapal");
     const u16 gMonShinyPalette_ButterflySwarm[] = INCBIN_U16("graphics/pokemon/butterfly/swarm/shiny.gbapal");
     const u8 gMonIcon_ButterflySwarm[] = INCBIN_U8("graphics/pokemon/butterfly/swarm/icon.4bpp");
+
+    const u32 gMonFrontPic_Chick[] = INCBIN_U32("graphics/pokemon/chick/front.4bpp.lz");
+    const u32 gMonBackPic_Chick[] = INCBIN_U32("graphics/pokemon/chick/back.4bpp.lz");
+    const u16 gMonPalette_Chick[] = INCBIN_U16("graphics/pokemon/chick/normal.gbapal");
+    const u16 gMonShinyPalette_Chick[] = INCBIN_U16("graphics/pokemon/chick/shiny.gbapal");
+    const u8 gMonIcon_Chick[] = INCBIN_U8("graphics/pokemon/chick/icon.4bpp");
+    const u8 gMonFootprint_Chick[] = INCBIN_U8("graphics/pokemon/chick/footprint.1bpp");
+
+    const u32 gMonFrontPic_Twizzy[] = INCBIN_U32("graphics/pokemon/twizzy/front.4bpp.lz");
+    const u32 gMonBackPic_Twizzy[] = INCBIN_U32("graphics/pokemon/twizzy/back.4bpp.lz");
+    const u16 gMonPalette_Twizzy[] = INCBIN_U16("graphics/pokemon/twizzy/normal.gbapal");
+    const u16 gMonShinyPalette_Twizzy[] = INCBIN_U16("graphics/pokemon/twizzy/shiny.gbapal");
+    const u8 gMonIcon_Twizzy[] = INCBIN_U8("graphics/pokemon/twizzy/icon.4bpp");
+    const u8 gMonFootprint_Twizzy[] = INCBIN_U8("graphics/pokemon/twizzy/footprint.1bpp");
+
+    const u32 gMonFrontPic_Tookey[] = INCBIN_U32("graphics/pokemon/tookey/front.4bpp.lz");
+    const u32 gMonBackPic_Tookey[] = INCBIN_U32("graphics/pokemon/tookey/back.4bpp.lz");
+    const u16 gMonPalette_Tookey[] = INCBIN_U16("graphics/pokemon/tookey/normal.gbapal");
+    const u16 gMonShinyPalette_Tookey[] = INCBIN_U16("graphics/pokemon/tookey/shiny.gbapal");
+    const u8 gMonIcon_Tookey[] = INCBIN_U8("graphics/pokemon/tookey/icon.4bpp");
+    const u8 gMonFootprint_Tookey[] = INCBIN_U8("graphics/pokemon/tookey/footprint.1bpp");
+
+    const u32 gMonFrontPic_Pichikuri[] = INCBIN_U32("graphics/pokemon/pichikuri/front.4bpp.lz");
+    const u32 gMonBackPic_Pichikuri[] = INCBIN_U32("graphics/pokemon/pichikuri/back.4bpp.lz");
+    const u16 gMonPalette_Pichikuri[] = INCBIN_U16("graphics/pokemon/pichikuri/normal.gbapal");
+    const u16 gMonShinyPalette_Pichikuri[] = INCBIN_U16("graphics/pokemon/pichikuri/shiny.gbapal");
+    const u8 gMonIcon_Pichikuri[] = INCBIN_U8("graphics/pokemon/pichikuri/icon.4bpp");
+    const u8 gMonFootprint_Pichikuri[] = INCBIN_U8("graphics/pokemon/pichikuri/footprint.1bpp");

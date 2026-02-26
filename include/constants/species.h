@@ -1683,9 +1683,13 @@
 #define SPECIES_BUTTERFLY                               SPECIES_BUTTERFLY_SOLO
 #define SPECIES_BUTTERFLY_SOLO                          1565
 #define SPECIES_BUTTERFLY_SWARM                         1566
+#define SPECIES_CHICK                                   1567
+#define SPECIES_TWIZZY                                  1568
+#define SPECIES_TOOKEY                                  1569
+#define SPECIES_PICHIKURI                               1570
 
 
-#define SPECIES_EGG                                     (SPECIES_BUTTERFLY_SWARM + 1)
+#define SPECIES_EGG                                     (SPECIES_PICHIKURI + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

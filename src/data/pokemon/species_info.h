@@ -737,7 +737,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         //.perfectIVCount = NUM_STATS,
     },
 
-        [SPECIES_CHIPPURUS] =
+    [SPECIES_CHIPPURUS] =
     {
         .baseHP        = 115,
         .baseAttack    = 87,
@@ -792,7 +792,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         //.perfectIVCount = NUM_STATS,
     },
 
-        [SPECIES_BRONTO_BURT] =
+    [SPECIES_BRONTO_BURT] =
     {
         .baseHP        = 40,
         .baseAttack    = 55,
@@ -848,7 +848,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         //.perfectIVCount = NUM_STATS,
     },
 
-        [SPECIES_HALCANTO_BURT] =
+    [SPECIES_HALCANTO_BURT] =
     {
         .baseHP        = 55,
         .baseAttack    = 85,
@@ -1124,6 +1124,230 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sTentacoolTeachableLearnset,
         .formSpeciesIdTable = sButterflyFormSpeciesIdTable,
         .formChangeTable = sButterflyFormChangeTable,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_CHICK] =
+    {
+        .baseHP        = 20,
+        .baseAttack    = 25,
+        .baseDefense   = 75,
+        .baseSpeed     = 10,
+        .baseSpAttack  = 25,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 190,
+        .expYield = 41,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_SHELL_ARMOR, ABILITY_NORMALIZE},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Chick"),
+        .cryId = CRY_TOGEPI,
+        .natDexNum = NATIONAL_DEX_CHICK,
+        .categoryName = _("Eggshell"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "A newborn chick that tends to stay\n"
+            "inside its egg. It is highly\n"
+            "impressional, so to see it leave its\n"
+            "shell, please show it kindness!"),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Chick,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Chick,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Chick,
+        .shinyPalette = gMonShinyPalette_Chick,
+        .iconSprite = gMonIcon_Togepi,
+        .iconPalIndex = 0,
+        FOOTPRINT(Chick)
+        .levelUpLearnset = sChickLevelUpLearnset,
+        .teachableLearnset = sTogepiTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_PICHIKURI, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_POISON})}, 
+                                {EVO_LEVEL, 0, SPECIES_TWIZZY, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_TWIZZY] =
+    {
+        .baseHP        = 45,
+        .baseAttack    = 35,
+        .baseDefense   = 40,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .catchRate = 190,
+        .expYield = 79,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_BIG_PECKS, ABILITY_NORMALIZE},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Twizzy"),
+        .cryId = CRY_TOGETIC,
+        .natDexNum = NATIONAL_DEX_TWIZZY,
+        .categoryName = _("Young Bird"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "They spend most of their time\n"
+            "roosting, so it's said to be\n"
+            "an omen of good weather if you\n"
+            "see a flock of flying Twizzies."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Twizzy,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_SHAKE_TWICE,
+        .backPic = gMonBackPic_Twizzy,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_SPRING,
+        .palette = gMonPalette_Twizzy,
+        .shinyPalette = gMonShinyPalette_Twizzy,
+        .iconSprite = gMonIcon_Twizzy,
+        .iconPalIndex = 0,
+        FOOTPRINT(Twizzy)
+        .levelUpLearnset = sTwizzyLevelUpLearnset,
+        .teachableLearnset = sTogeticTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_TOOKEY}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_TOOKEY] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 60,
+        .baseDefense   = 70,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .catchRate = 75,
+        .expYield = 202,
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_BIG_PECKS, ABILITY_NORMALIZE},
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Tookey"),
+        .cryId = CRY_TOGEKISS,
+        .natDexNum = NATIONAL_DEX_TOOKEY,
+        .categoryName = _("Chicken"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "They communicate to one another\n"
+            "with melodious clucks, making them\n"
+            "a favorite helper of those with\n"
+            "a passion for musicality."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Tookey,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_RAPID_H_HOPS,
+        .backPic = gMonBackPic_Tookey,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
+        .palette = gMonPalette_Tookey,
+        .shinyPalette = gMonShinyPalette_Tookey,
+        .iconSprite = gMonIcon_Tookey,
+        .iconPalIndex = 0,
+        FOOTPRINT(Tookey)
+        .levelUpLearnset = sTookeyLevelUpLearnset,
+        .teachableLearnset = sTogekissTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+        [SPECIES_PICHIKURI] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 85,
+        .baseDefense   = 95,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_POISON, TYPE_ROCK),
+        .catchRate = 75,
+        .expYield = 189,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_ROUGH_SKIN, ABILITY_SHELL_ARMOR, ABILITY_LEVITATE},
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Pichikuri"),
+        .cryId = CRY_MANDIBUZZ,
+        .natDexNum = NATIONAL_DEX_PICHIKURI,
+        .categoryName = _("Bad Egg"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "The negative energy absorbed by\n"
+            "its eggshell caused it to harden\n"
+            "and grow spikes, turning it into\n"
+            "a dangerous helmet."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Pichikuri,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_RAPID_H_HOPS,
+        .backPic = gMonBackPic_Pichikuri,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
+        .palette = gMonPalette_Pichikuri,
+        .shinyPalette = gMonShinyPalette_Pichikuri,
+        .iconSprite = gMonIcon_Pichikuri,
+        .iconPalIndex = 0,
+        FOOTPRINT(Pichikuri)
+        .levelUpLearnset = sPichikuriLevelUpLearnset,
+        .teachableLearnset = sMandibuzzTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
