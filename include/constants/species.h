@@ -1687,9 +1687,12 @@
 #define SPECIES_TWIZZY                                  1568
 #define SPECIES_TOOKEY                                  1569
 #define SPECIES_PICHIKURI                               1570
+#define SPECIES_WADDLE_DOO                              1571
+#define SPECIES_KING_DOO                                1572
+#define SPECIES_BATAMON                                 1573
 
 
-#define SPECIES_EGG                                     (SPECIES_PICHIKURI + 1)
+#define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

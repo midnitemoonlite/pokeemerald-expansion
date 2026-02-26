@@ -26937,3 +26937,24 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Pichikuri[] = INCBIN_U16("graphics/pokemon/pichikuri/shiny.gbapal");
     const u8 gMonIcon_Pichikuri[] = INCBIN_U8("graphics/pokemon/pichikuri/icon.4bpp");
     const u8 gMonFootprint_Pichikuri[] = INCBIN_U8("graphics/pokemon/pichikuri/footprint.1bpp");
+
+    const u32 gMonFrontPic_WaddleDoo[] = INCBIN_U32("graphics/pokemon/waddledoo/front.4bpp.lz");
+    const u32 gMonBackPic_WaddleDoo[] = INCBIN_U32("graphics/pokemon/waddledoo/back.4bpp.lz");
+    const u16 gMonPalette_WaddleDoo[] = INCBIN_U16("graphics/pokemon/waddledoo/normal.gbapal");
+    const u16 gMonShinyPalette_WaddleDoo[] = INCBIN_U16("graphics/pokemon/waddledoo/shiny.gbapal");
+    const u8 gMonIcon_WaddleDoo[] = INCBIN_U8("graphics/pokemon/waddledoo/icon.4bpp");
+    const u8 gMonFootprint_WaddleDoo[] = INCBIN_U8("graphics/pokemon/waddledoo/footprint.1bpp");
+
+    const u32 gMonFrontPic_KingDoo[] = INCBIN_U32("graphics/pokemon/kingdoo/front.4bpp.lz");
+    const u32 gMonBackPic_KingDoo[] = INCBIN_U32("graphics/pokemon/kingdoo/back.4bpp.lz");
+    const u16 gMonPalette_KingDoo[] = INCBIN_U16("graphics/pokemon/kingdoo/normal.gbapal");
+    const u16 gMonShinyPalette_KingDoo[] = INCBIN_U16("graphics/pokemon/kingdoo/shiny.gbapal");
+    const u8 gMonIcon_KingDoo[] = INCBIN_U8("graphics/pokemon/kingdoo/icon.4bpp");
+    const u8 gMonFootprint_KingDoo[] = INCBIN_U8("graphics/pokemon/kingdoo/footprint.1bpp");
+
+    const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
+    const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
+    const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");
+    const u16 gMonShinyPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/shiny.gbapal");
+    const u8 gMonIcon_Batamon[] = INCBIN_U8("graphics/pokemon/batamon/icon.4bpp");
+    const u8 gMonFootprint_Batamon[] = INCBIN_U8("graphics/pokemon/batamon/footprint.1bpp");
