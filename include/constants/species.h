@@ -1689,7 +1689,15 @@
 #define SPECIES_PICHIKURI                               1570
 #define SPECIES_WADDLE_DOO                              1571
 #define SPECIES_KING_DOO                                1572
-#define SPECIES_BATAMON                                 1573
+#define SPECIES_BEANBON_PLANT                           1573
+#define SPECIES_BEANBON                                 SPECIES_BEANBON_PLANT
+#define SPECIES_BEANBON_SANDY                           1574
+#define SPECIES_BEANBON_TRASH                           1575
+#define SPECIES_BIG_BEANBON                             1576
+#define SPECIES_BIGGER_BEANBON                          1577
+#define SPECIES_BIG_MUMMBON                             1578
+#define SPECIES_BIG_ZOMBON                              1579
+#define SPECIES_BATAMON                                 1580
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

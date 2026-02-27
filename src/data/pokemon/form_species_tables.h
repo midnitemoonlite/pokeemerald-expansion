@@ -2438,3 +2438,10 @@ static const u16 sButterflyFormSpeciesIdTable[] = {
     SPECIES_BUTTERFLY_SWARM,
     FORM_SPECIES_END,
 };
+
+static const u16 sBeanbonFormSpeciesIdTable[] = {
+    SPECIES_BEANBON_PLANT,
+    SPECIES_BEANBON_SANDY,
+    SPECIES_BEANBON_TRASH,
+    FORM_SPECIES_END,
+};
