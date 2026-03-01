@@ -85,27 +85,27 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_BEANBON"
+                "species": "SPECIES_CAPILLER"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_BEANBON_SANDY"
+                "species": "SPECIES_CAPILLER"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_BEANBON_PLANT"
+                "species": "SPECIES_CAPILLER"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_BEANBON_TRASH"
+                "species": "SPECIES_CAPILLER"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_BATAMON"
+                "species": "SPECIES_CAPILLER"
               },
               {
                 "min_level": 3,
