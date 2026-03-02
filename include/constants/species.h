@@ -1728,7 +1728,13 @@
 #define SPECIES_POPPY_BROS_JR                           1607
 #define SPECIES_POPPY_BROS_SR                           1608
 #define SPECIES_UFO                                     1609
-#define SPECIES_BATAMON                                 1610
+#define SPECIES_BLADE_KNIGHT                            1610
+#define SPECIES_GIGANT_EDGE                             1611
+#define SPECIES_IGNITE_EDGE                             1612
+#define SPECIES_SIR_KIBBLE                              1613
+#define SPECIES_KIBBLE_BLADE                            1614
+#define SPECIES_FROST_KIBBLE_BLADE                      1615
+#define SPECIES_BATAMON                                 1616
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

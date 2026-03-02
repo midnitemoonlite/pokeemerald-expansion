@@ -27833,6 +27833,60 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_UFO[] = INCBIN_U8("graphics/pokemon/ufo/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_BladeKnight[] = INCBIN_U32("graphics/pokemon/bladeknight/front.4bpp.lz");
+    const u32 gMonBackPic_BladeKnight[] = INCBIN_U32("graphics/pokemon/bladeknight/back.4bpp.lz");
+    const u16 gMonPalette_BladeKnight[] = INCBIN_U16("graphics/pokemon/bladeknight/normal.gbapal");
+    const u16 gMonShinyPalette_BladeKnight[] = INCBIN_U16("graphics/pokemon/bladeknight/shiny.gbapal");
+    const u8 gMonIcon_BladeKnight[] = INCBIN_U8("graphics/pokemon/bladeknight/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_BladeKnight[] = INCBIN_U8("graphics/pokemon/bladeknight/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_GigantEdge[] = INCBIN_U32("graphics/pokemon/gigantedge/front.4bpp.lz");
+    const u32 gMonBackPic_GigantEdge[] = INCBIN_U32("graphics/pokemon/gigantedge/back.4bpp.lz");
+    const u16 gMonPalette_GigantEdge[] = INCBIN_U16("graphics/pokemon/gigantedge/normal.gbapal");
+    const u16 gMonShinyPalette_GigantEdge[] = INCBIN_U16("graphics/pokemon/gigantedge/shiny.gbapal");
+    const u8 gMonIcon_GigantEdge[] = INCBIN_U8("graphics/pokemon/gigantedge/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_GigantEdge[] = INCBIN_U8("graphics/pokemon/gigantedge/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_IgniteEdge[] = INCBIN_U32("graphics/pokemon/igniteedge/front.4bpp.lz");
+    const u32 gMonBackPic_IgniteEdge[] = INCBIN_U32("graphics/pokemon/igniteedge/back.4bpp.lz");
+    const u16 gMonPalette_IgniteEdge[] = INCBIN_U16("graphics/pokemon/igniteedge/normal.gbapal");
+    const u16 gMonShinyPalette_IgniteEdge[] = INCBIN_U16("graphics/pokemon/igniteedge/shiny.gbapal");
+    const u8 gMonIcon_IgniteEdge[] = INCBIN_U8("graphics/pokemon/igniteedge/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_IgniteEdge[] = INCBIN_U8("graphics/pokemon/igniteedge/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_SirKibble[] = INCBIN_U32("graphics/pokemon/sirkibble/front.4bpp.lz");
+    const u32 gMonBackPic_SirKibble[] = INCBIN_U32("graphics/pokemon/sirkibble/back.4bpp.lz");
+    const u16 gMonPalette_SirKibble[] = INCBIN_U16("graphics/pokemon/sirkibble/normal.gbapal");
+    const u16 gMonShinyPalette_SirKibble[] = INCBIN_U16("graphics/pokemon/sirkibble/shiny.gbapal");
+    const u8 gMonIcon_SirKibble[] = INCBIN_U8("graphics/pokemon/sirkibble/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_SirKibble[] = INCBIN_U8("graphics/pokemon/sirkibble/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_KibbleBlade[] = INCBIN_U32("graphics/pokemon/kibbleblade/front.4bpp.lz");
+    const u32 gMonBackPic_KibbleBlade[] = INCBIN_U32("graphics/pokemon/kibbleblade/back.4bpp.lz");
+    const u16 gMonPalette_KibbleBlade[] = INCBIN_U16("graphics/pokemon/kibbleblade/normal.gbapal");
+    const u16 gMonShinyPalette_KibbleBlade[] = INCBIN_U16("graphics/pokemon/kibbleblade/shiny.gbapal");
+    const u8 gMonIcon_KibbleBlade[] = INCBIN_U8("graphics/pokemon/kibbleblade/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_KibbleBlade[] = INCBIN_U8("graphics/pokemon/kibbleblade/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_FrostKibbleBlade[] = INCBIN_U32("graphics/pokemon/frostkibbleblade/front.4bpp.lz");
+    const u32 gMonBackPic_FrostKibbleBlade[] = INCBIN_U32("graphics/pokemon/frostkibbleblade/back.4bpp.lz");
+    const u16 gMonPalette_FrostKibbleBlade[] = INCBIN_U16("graphics/pokemon/frostkibbleblade/normal.gbapal");
+    const u16 gMonShinyPalette_FrostKibbleBlade[] = INCBIN_U16("graphics/pokemon/frostkibbleblade/shiny.gbapal");
+    const u8 gMonIcon_FrostKibbleBlade[] = INCBIN_U8("graphics/pokemon/frostkibbleblade/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_FrostKibbleBlade[] = INCBIN_U8("graphics/pokemon/frostkibbleblade/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");
