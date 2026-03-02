@@ -1721,7 +1721,14 @@
 #define SPECIES_BIGGER_BEANBON                          1600
 #define SPECIES_BIG_MUMMBON                             1601
 #define SPECIES_BIG_ZOMBON                              1602
-#define SPECIES_BATAMON                                 1603
+#define SPECIES_GAW_GAW                                 1603
+#define SPECIES_GAO_GAO                                 1604
+#define SPECIES_CAPPY                                   1605
+#define SPECIES_POISON_MASH                             1606
+#define SPECIES_POPPY_BROS_JR                           1607
+#define SPECIES_POPPY_BROS_SR                           1608
+#define SPECIES_UFO                                     1609
+#define SPECIES_BATAMON                                 1610
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

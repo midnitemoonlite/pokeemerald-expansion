@@ -85,42 +85,42 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CAPILLER"
+                "species": "SPECIES_POPPY_BROS_JR"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CAPILLER"
+                "species": "SPECIES_GAW_GAW"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CAPILLER"
+                "species": "SPECIES_CAPPY"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_CAPILLER"
+                "species": "SPECIES_UFO"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_CAPILLER"
+                "species": "SPECIES_POPPY_BROS_JR"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_BATAMON"
+                "species": "SPECIES_CAPPY"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_BATAMON"
+                "species": "SPECIES_GAW_GAW"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_BATAMON"
+                "species": "SPECIES_LOVELY"
               },
               {
                 "min_level": 2,
@@ -140,12 +140,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SQUISHY"
+                "species": "SPECIES_BRONTO_BURT"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_CAPILLER"
+                "species": "SPECIES_CHIP"
               }
             ]
           }
