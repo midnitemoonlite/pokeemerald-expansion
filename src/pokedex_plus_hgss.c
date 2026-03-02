@@ -247,6 +247,11 @@ static const u16 sPokedexPlusHGSS_Default_darkest_Pal[] = INCBIN_U16("graphics/p
 static const u16 sPokedexPlusHGSS_National_darkest_Pal[] = INCBIN_U16("graphics/pokedex/hgss/palette_national_darkest.gbapal");
 static const u16 sPokedexPlusHGSS_MenuSearch_darkest_Pal[] = INCBIN_U16("graphics/pokedex/hgss/palette_search_menu_darkest.gbapal");
 static const u16 sPokedexPlusHGSS_SearchResults_darkest_Pal[] = INCBIN_U16("graphics/pokedex/hgss/palette_search_results_darkest.gbapal");
+// Dream Team custom Pokedex colors
+static const u16 sPokedexPlusHGSS_Default_dreamteam_Pal[] = INCBIN_U16("graphics/pokedex/hgss/palette_default_dreamteam.gbapal");
+static const u16 sPokedexPlusHGSS_National_dreamteam_Pal[] = INCBIN_U16("graphics/pokedex/hgss/palette_national_dreamteam.gbapal");
+static const u16 sPokedexPlusHGSS_MenuSearch_dreamteam_Pal[] = INCBIN_U16("graphics/pokedex/hgss/palette_search_menu_dreamteam.gbapal");
+static const u16 sPokedexPlusHGSS_SearchResults_dreamteam_Pal[] = INCBIN_U16("graphics/pokedex/hgss/palette_search_results_dreamteam.gbapal");
 // Other
 static const u32 sPokedexPlusHGSS_MenuList_Gfx[] = INCBIN_U32("graphics/pokedex/hgss/tileset_menu_list.4bpp.smol");
 static const u32 sPokedexPlusHGSS_MenuList_DECA_Gfx[] = INCBIN_U32("graphics/pokedex/hgss/tileset_menu_list_DECA.4bpp.smol");
@@ -286,6 +291,7 @@ enum {
     HGSS_CLASSIC,
     HGSS_DARK,
     HGSS_DARKEST,
+    HGSS_DREAM_TEAM,
     HGSS_COLOR_COUNT
 };
 
@@ -306,6 +312,11 @@ static const u16* const sDexPalettes[HGSS_COLOR_COUNT][HGSS_PAL_TYPE_COUNT] =
                          sPokedexPlusHGSS_SearchResults_darkest_Pal, 
                          sPokedexPlusHGSS_MenuSearch_darkest_Pal,
                          sSizeScreenSilhouette_inverted_Pal},
+    [HGSS_DREAM_TEAM] =    {sPokedexPlusHGSS_Default_dreamteam_Pal, 
+                         sPokedexPlusHGSS_National_dreamteam_Pal, 
+                         sPokedexPlusHGSS_SearchResults_dreamteam_Pal, 
+                         sPokedexPlusHGSS_MenuSearch_dreamteam_Pal,
+                         sSizeScreenSilhouette_Pal},
 };
 
 #define SCROLLING_MON_X 146
@@ -1217,6 +1228,7 @@ static const struct SpritePalette sInterfaceSpritePalette[] =
     {sPokedexPlusHGSS_Default_Pal, TAG_DEX_INTERFACE},
     {sPokedexPlusHGSS_Default_dark_Pal, TAG_DEX_INTERFACE},
     {sPokedexPlusHGSS_Default_darkest_Pal, TAG_DEX_INTERFACE},
+    {sPokedexPlusHGSS_Default_dreamteam_Pal, TAG_DEX_INTERFACE},
     {0}
 };
 
