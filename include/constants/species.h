@@ -1751,7 +1751,17 @@
 #define SPECIES_BEETLEY                                 1630
 #define SPECIES_HORNHEAD                                1631
 #define SPECIES_BUGZZY                                  1632
-#define SPECIES_BATAMON                                 1633
+#define SPECIES_MR_ANGLEP                               1633
+#define SPECIES_MR_P_UMPKIN                             1634
+#define SPECIES_SULKWORM                                1635
+#define SPECIES_FANGORA                                 1636
+#define SPECIES_BUTTONFLY                               1637
+#define SPECIES_BUTTONBEE                               1638
+#define SPECIES_ORBITFLY                                1639
+#define SPECIES_MAIGA                                   1640
+#define SPECIES_POPON                                   1641
+#define SPECIES_CONER                                   1642
+#define SPECIES_BATAMON                                 1643
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
