@@ -3197,6 +3197,173 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         //.perfectIVCount = NUM_STATS,
     },
 
+    [SPECIES_BEETLEY] =
+    {
+        .baseHP        = 48,
+        .baseAttack    = 71,
+        .baseDefense   = 71,
+        .baseSpeed     = 47,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 46,
+        .types = MON_TYPES(TYPE_BUG),
+        .catchRate = 160,
+        .expYield = 71,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(25.0),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SCRAPPY, ABILITY_GUTS, ABILITY_SWARM},
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Beetley"),
+        .cryId = CRY_HERACROSS,
+        .natDexNum = NATIONAL_DEX_BEETLEY,
+        .categoryName = _("Insectoid"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "It was recently crowned the new king\n"
+            "of insects for its incredible\n"
+            "strength, able to carry objects many\n"
+            "times its size with its single horn."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Beetley,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Beetley,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Beetley,
+        .shinyPalette = gMonShinyPalette_Beetley,
+        .iconSprite = gMonIcon_Heracross,
+        .iconPalIndex = 0,
+        FOOTPRINT(Beetley)
+        .levelUpLearnset = sBeetleyLevelUpLearnset,
+        .teachableLearnset = sHeracrossTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_HORNHEAD, CONDITIONS({IF_ATK_LT_DEF})},
+                                {EVO_LEVEL, 25, SPECIES_BUGZZY, CONDITIONS({IF_ATK_GT_DEF})}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_HORNHEAD] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 112,
+        .baseDefense   = 118,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_BUG, TYPE_ROCK),
+        .catchRate = 45,
+        .expYield = 186,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(25.0),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SAP_SIPPER, ABILITY_GUTS, ABILITY_OBLIVIOUS},
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Hornhead"),
+        .cryId = CRY_HITMONCHAN,
+        .natDexNum = NATIONAL_DEX_HORNHEAD,
+        .categoryName = _("Rhino Horn"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Hornhead's horn is stronger than\n"
+            "Beetley's several times over, but it\n"
+            "isn't the king of insects because\n"
+            "it's normally docile and clumsy."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Hornhead,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Hornhead,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Hornhead,
+        .shinyPalette = gMonShinyPalette_Hornhead,
+        .iconSprite = gMonIcon_Heracross,
+        .iconPalIndex = 2,
+        FOOTPRINT(Hornhead)
+        .levelUpLearnset = sHornheadLevelUpLearnset,
+        .teachableLearnset = sHeracrossTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_BUGZZY] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 130,
+        .baseDefense   = 90,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
+        .catchRate = 45,
+        .expYield = 186,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(25.0),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_GUTS, ABILITY_MOXIE},
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Bugzzy"),
+        .cryId = CRY_HITMONLEE,
+        .natDexNum = NATIONAL_DEX_BUGZZY,
+        .categoryName = _("Mandibles"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "The former king of insects passed\n"
+            "on its title due to its old age.\n"
+            "The wrestling techniques it uses are\n"
+            "still a force to be reckoned with!"),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Bugzzy,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Bugzzy,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Bugzzy,
+        .shinyPalette = gMonShinyPalette_Bugzzy,
+        .iconSprite = gMonIcon_Heracross,
+        .iconPalIndex = 3,
+        FOOTPRINT(Bugzzy)
+        .levelUpLearnset = sBugzzyLevelUpLearnset,
+        .teachableLearnset = sHeracrossTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
     [SPECIES_BATAMON] =
     {
         .baseHP        = 86,

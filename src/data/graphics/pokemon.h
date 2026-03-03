@@ -28013,6 +28013,33 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Bulby[] = INCBIN_U8("graphics/pokemon/bulby/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_Beetley[] = INCBIN_U32("graphics/pokemon/beetley/front.4bpp.lz");
+    const u32 gMonBackPic_Beetley[] = INCBIN_U32("graphics/pokemon/beetley/back.4bpp.lz");
+    const u16 gMonPalette_Beetley[] = INCBIN_U16("graphics/pokemon/beetley/normal.gbapal");
+    const u16 gMonShinyPalette_Beetley[] = INCBIN_U16("graphics/pokemon/beetley/shiny.gbapal");
+    const u8 gMonIcon_Beetley[] = INCBIN_U8("graphics/pokemon/beetley/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Beetley[] = INCBIN_U8("graphics/pokemon/beetley/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Hornhead[] = INCBIN_U32("graphics/pokemon/hornhead/front.4bpp.lz");
+    const u32 gMonBackPic_Hornhead[] = INCBIN_U32("graphics/pokemon/hornhead/back.4bpp.lz");
+    const u16 gMonPalette_Hornhead[] = INCBIN_U16("graphics/pokemon/hornhead/normal.gbapal");
+    const u16 gMonShinyPalette_Hornhead[] = INCBIN_U16("graphics/pokemon/hornhead/shiny.gbapal");
+    const u8 gMonIcon_Hornhead[] = INCBIN_U8("graphics/pokemon/hornhead/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Hornhead[] = INCBIN_U8("graphics/pokemon/hornhead/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Bugzzy[] = INCBIN_U32("graphics/pokemon/bugzzy/front.4bpp.lz");
+    const u32 gMonBackPic_Bugzzy[] = INCBIN_U32("graphics/pokemon/bugzzy/back.4bpp.lz");
+    const u16 gMonPalette_Bugzzy[] = INCBIN_U16("graphics/pokemon/bugzzy/normal.gbapal");
+    const u16 gMonShinyPalette_Bugzzy[] = INCBIN_U16("graphics/pokemon/bugzzy/shiny.gbapal");
+    const u8 gMonIcon_Bugzzy[] = INCBIN_U8("graphics/pokemon/bugzzy/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Bugzzy[] = INCBIN_U8("graphics/pokemon/bugzzy/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

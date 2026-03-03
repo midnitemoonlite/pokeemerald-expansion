@@ -85,11 +85,11 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_LEAFAN"
+                "species": "SPECIES_BEETLEY"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
+                "min_level": 3,
+                "max_level": 3,
                 "species": "SPECIES_BATAMON"
               },
               {
