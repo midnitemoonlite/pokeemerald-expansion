@@ -1746,7 +1746,9 @@
 #define SPECIES_BLIPPER                                 1625
 #define SPECIES_MAMATEE                                 1626
 #define SPECIES_BLING_BLIPPER                           1627
-#define SPECIES_BATAMON                                 1628
+#define SPECIES_LEAFAN                                  1628
+#define SPECIES_BULBY                                   1629
+#define SPECIES_BATAMON                                 1630
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

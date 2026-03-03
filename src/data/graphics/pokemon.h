@@ -27995,6 +27995,24 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_BlingBlipper[] = INCBIN_U8("graphics/pokemon/blingblipper/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_Leafan[] = INCBIN_U32("graphics/pokemon/leafan/front.4bpp.lz");
+    const u32 gMonBackPic_Leafan[] = INCBIN_U32("graphics/pokemon/leafan/back.4bpp.lz");
+    const u16 gMonPalette_Leafan[] = INCBIN_U16("graphics/pokemon/leafan/normal.gbapal");
+    const u16 gMonShinyPalette_Leafan[] = INCBIN_U16("graphics/pokemon/leafan/shiny.gbapal");
+    const u8 gMonIcon_Leafan[] = INCBIN_U8("graphics/pokemon/leafan/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Leafan[] = INCBIN_U8("graphics/pokemon/leafan/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Bulby[] = INCBIN_U32("graphics/pokemon/bulby/front.4bpp.lz");
+    const u32 gMonBackPic_Bulby[] = INCBIN_U32("graphics/pokemon/bulby/back.4bpp.lz");
+    const u16 gMonPalette_Bulby[] = INCBIN_U16("graphics/pokemon/bulby/normal.gbapal");
+    const u16 gMonShinyPalette_Bulby[] = INCBIN_U16("graphics/pokemon/bulby/shiny.gbapal");
+    const u8 gMonIcon_Bulby[] = INCBIN_U8("graphics/pokemon/bulby/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Bulby[] = INCBIN_U8("graphics/pokemon/bulby/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

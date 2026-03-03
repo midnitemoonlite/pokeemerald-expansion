@@ -85,12 +85,12 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_NEEDLOUS"
+                "species": "SPECIES_LEAFAN"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_BROOM_HATTER"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_BATAMON"
               },
               {
                 "min_level": 2,

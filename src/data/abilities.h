@@ -919,8 +919,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Flower Gift"),
         .description = COMPOUND_STRING("Allies power up in sunshine."),
         .aiRating = 4,
-        .cantBeCopied = TRUE,
-        .cantBeTraced = TRUE,
         .breakable = TRUE,
     },
 
@@ -1559,7 +1557,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SCHOOLING] =
     {
-        .name = _("Schooling"),
+        .name = _("Kaleidoscope"),
         .description = COMPOUND_STRING("Forms a swarm when strong."),
         .aiRating = 6,
         .cantBeCopied = TRUE,

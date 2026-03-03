@@ -3085,6 +3085,118 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         //.perfectIVCount = NUM_STATS,
     },
 
+    [SPECIES_LEAFAN] =
+    {
+        .baseHP        = 45,
+        .baseAttack    = 50,
+        .baseDefense   = 50,
+        .baseSpeed     = 25,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_GRASS),
+        .catchRate = 190,
+        .expYield = 53,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_LEAF_GUARD, ABILITY_SEED_SOWER, ABILITY_FLOWER_GIFT},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Leafan"),
+        .cryId = CRY_GOSSIFLEUR,
+        .natDexNum = NATIONAL_DEX_LEAFAN,
+        .categoryName = _("Leaf"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Leafan is so light the wind is able\n"
+            "to carry it. It floats like a\n"
+            "propeller, scattering its seeds\n"
+            "wherever the winds take it."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Leafan,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Leafan,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Leafan,
+        .shinyPalette = gMonShinyPalette_Leafan,
+        .iconSprite = gMonIcon_Gossifleur,
+        .iconPalIndex = 0,
+        FOOTPRINT(Leafan)
+        .levelUpLearnset = sLeafanLevelUpLearnset,
+        .teachableLearnset = sGossifleurTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_BULBY}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_BULBY] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 77,
+        .baseDefense   = 68,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
+        .catchRate = 75,
+        .expYield = 160,
+        .evYield_Attack = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_LEAF_GUARD, ABILITY_SEED_SOWER, ABILITY_FLOWER_GIFT},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Bulby"),
+        .cryId = CRY_ELDEGOSS,
+        .natDexNum = NATIONAL_DEX_BULBY,
+        .categoryName = _("Flowering"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Bulby spends most of its day buried\n"
+            "underground, with its flower above\n"
+            "ground. This lets it photosynthesize\n"
+            "and absorb nutrients at the same time."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Bulby,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Bulby,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Bulby,
+        .shinyPalette = gMonShinyPalette_Bulby,
+        .iconSprite = gMonIcon_Eldegoss,
+        .iconPalIndex = 0,
+        FOOTPRINT(Bulby)
+        .levelUpLearnset = sBulbyLevelUpLearnset,
+        .teachableLearnset = sEldegossTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
     [SPECIES_BATAMON] =
     {
         .baseHP        = 86,
