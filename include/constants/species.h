@@ -1734,7 +1734,19 @@
 #define SPECIES_SIR_KIBBLE                              1613
 #define SPECIES_KIBBLE_BLADE                            1614
 #define SPECIES_FROST_KIBBLE_BLADE                      1615
-#define SPECIES_BATAMON                                 1616
+#define SPECIES_NEEDLOUS                                1616
+#define SPECIES_PUNC                                    1617
+#define SPECIES_PIERCE                                  1618
+#define SPECIES_BROOM_HATTER                            1619
+#define SPECIES_KEKE                                    1620
+#define SPECIES_AWOOFY                                  1621
+#define SPECIES_PRIMAL_AWOOFY                           1622
+#define SPECIES_KABU                                    1623
+#define SPECIES_BIG_KABU                                1624
+#define SPECIES_BLIPPER                                 1625
+#define SPECIES_MAMATEE                                 1626
+#define SPECIES_BLING_BLIPPER                           1627
+#define SPECIES_BATAMON                                 1628
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

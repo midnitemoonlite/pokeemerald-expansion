@@ -199,10 +199,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Proud and kind-hearted, it shares its\n"
-            "warmth with others in need. It takes\n"
-            "great care of its mane and becomes\n"
-            "disheartened if it ever ends up dirty."),
+            "Proud and kind-hearted, Burning Leo\n"
+            "will share its warmth with others in\n"
+            "need. It gets disheartened should\n"
+            "its mane ever end up dirty."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -424,8 +424,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .description = COMPOUND_STRING(
             "By twisting and uncoiling its body,\n"
             "it rockets through the ocean at high\n"
-            "speeds. Its main weakness is being\n"
-            "unable to steer itself well."),
+            "speeds. Squister's main weakness is\n"
+            "being unable to steer itself well."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -645,7 +645,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A common sight in the skies of Dream\n"
-            "Land. It enjoys the thrill of dive-\n"
+            "Land. it enjoys the thrill of dive-\n"
             "bombing from high above, but often\n"
             "accidentally collides with others."),
         .pokemonScale = 256,
@@ -755,7 +755,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "They have a habit of falling from\n"
+            "Capillers have a habit of falling from\n"
             "trees or burrowing out of fruit when\n"
             "you least expect it. Certain sources\n"
             "claim they're very unappetizing."),
@@ -776,7 +776,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Capiller,
         .iconSprite = gMonIcon_Scatterbug,
         .iconPalIndex = 0,
-        FOOTPRINT(Squishy)
+        FOOTPRINT(Capiller)
         .levelUpLearnset = sCapillerLevelUpLearnset,
         .teachableLearnset = sScatterbugTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 9, SPECIES_PUPA}),
@@ -832,7 +832,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Pupa,
         .iconSprite = gMonIcon_Spewpa,
         .iconPalIndex = 0,
-        FOOTPRINT(Squishy)
+        FOOTPRINT(Punc)
         .levelUpLearnset = sPupaLevelUpLearnset,
         .teachableLearnset = sSpewpaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 13, SPECIES_BUTTERFLY_SOLO}),
@@ -1094,7 +1094,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "They communicate to one another\n"
+            "Tookeys communicate to one another\n"
             "with melodious clucks, making them\n"
             "a favorite helper of those with\n"
             "a passion for musicality."),
@@ -1433,7 +1433,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The type of Beanbon seen inhabiting\n"
-            "graveyards and buildings are known as.\n"
+            "graveyards and buildings are known as\n"
             "Zombons. Low exposure to sunlight\n"
             "makes their skin and leaves brittle."),
         .pokemonScale = 256,
@@ -2409,6 +2409,677 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         FOOTPRINT(FrostKibbleBlade)
         .levelUpLearnset = sFrostKibbleBladeLevelUpLearnset,
         .teachableLearnset = sAggronTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_NEEDLOUS] =
+    {
+        .baseHP        = 35,
+        .baseAttack    = 65,
+        .baseDefense   = 43,
+        .baseSpeed     = 42,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 30,
+        .types = MON_TYPES(TYPE_BUG, TYPE_BUG),
+        .catchRate = 255,
+        .expYield = 41,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_POISON_POINT, ABILITY_IRON_BARBS, ABILITY_MERCILESS},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Needlous"),
+        .cryId = CRY_WEEDLE,
+        .natDexNum = NATIONAL_DEX_NEEDLOUS,
+        .categoryName = _("Larval"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Don't be fooled by the sight of a\n"
+            "Needlous inching slowly along the\n"
+            "ground. It can curl into a ball\n"
+            "and roll forward at high speeds."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Needlous,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_Needlous,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Needlous,
+        .shinyPalette = gMonShinyPalette_Needlous,
+        .iconSprite = gMonIcon_Weedle,
+        .iconPalIndex = 0,
+        FOOTPRINT(Needlous)
+        .levelUpLearnset = sNeedlousLevelUpLearnset,
+        .teachableLearnset = sWeedleTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PUNC}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_PUNC] =
+    {
+        .baseHP        = 43,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpeed     = 32,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .catchRate = 120,
+        .expYield = 78,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_POISON_POINT, ABILITY_IRON_BARBS, ABILITY_MERCILESS},
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Punc"),
+        .cryId = CRY_KAKUNA,
+        .natDexNum = NATIONAL_DEX_PUNC,
+        .categoryName = _("Cocoon"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Its plated shell functions like\n"
+            "a cocoon, shielding the vulnerable\n"
+            "inside. When it feels safe, Punc\n"
+            "will uncurl and walk around."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Punc,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SWING_CONVEX,
+        .backPic = gMonBackPic_Punc,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_Punc,
+        .shinyPalette = gMonShinyPalette_Punc,
+        .iconSprite = gMonIcon_Kakuna,
+        .iconPalIndex = 0,
+        FOOTPRINT(Pupa)
+        .levelUpLearnset = sPuncLevelUpLearnset,
+        .teachableLearnset = sKakunaTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_PIERCE}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_PIERCE] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 95,
+        .baseDefense   = 70,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .catchRate = 45,
+        .expYield = 175,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_POISON_POINT, ABILITY_HONEY_GATHER, ABILITY_MERCILESS},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Pierce"),
+        .cryId = CRY_BEEDRILL,
+        .natDexNum = NATIONAL_DEX_PIERCE,
+        .categoryName = _("Bee"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "It has no stinger, but this diligent\n"
+            "helper carries a spear at all times,\n"
+            "which fulfills a similar purpose and\n"
+            "should be avoided in much the same way."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Pierce,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SWING_CONVEX,
+        .backPic = gMonBackPic_Pierce,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
+        .palette = gMonPalette_Pierce,
+        .shinyPalette = gMonShinyPalette_Pierce,
+        .iconSprite = gMonIcon_Beedrill,
+        .iconPalIndex = 0,
+        FOOTPRINT(Pierce)
+        .levelUpLearnset = sPierceLevelUpLearnset,
+        .teachableLearnset = sBeedrillTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_BROOM_HATTER] =
+    {
+        .baseHP        = 33,
+        .baseAttack    = 50,
+        .baseDefense   = 50,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
+        .catchRate = 140,
+        .expYield = 66,
+        .evYield_SpAttack = 1,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_OVERCOAT, ABILITY_SCREEN_CLEANER, ABILITY_WIND_RIDER},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Broom Hatter"),
+        .cryId = CRY_SPRITZEE,
+        .natDexNum = NATIONAL_DEX_BROOM_HATTER,
+        .categoryName = _("Cleaning"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "It spends day and night sweeping\n"
+            "everything it sees. It's so busy\n"
+            "cleaning with its broom that it\n"
+            "often forgets how to ride it."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BroomHatter,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_BroomHatter,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_BroomHatter,
+        .shinyPalette = gMonShinyPalette_BroomHatter,
+        .iconSprite = gMonIcon_Spritzee,
+        .iconPalIndex = 0,
+        FOOTPRINT(BroomHatter)
+        .levelUpLearnset = sBroomHatterLevelUpLearnset,
+        .teachableLearnset = sSpritzeeTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_KEKE}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+     [SPECIES_KEKE] =
+    {
+        .baseHP        = 55,
+        .baseAttack    = 70,
+        .baseDefense   = 55,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 93,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
+        .catchRate = 140,
+        .expYield = 167,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_OVERCOAT, ABILITY_SCREEN_CLEANER, ABILITY_WIND_RIDER},
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Keke"),
+        .cryId = CRY_AROMATISSE,
+        .natDexNum = NATIONAL_DEX_KEKE,
+        .categoryName = _("Broom Rider"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Keke spends its days lazily flying\n"
+            "around in search of places to clean.\n"
+            "It won't fly on windy days because\n"
+            "it's easily knocked off its own broom."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Keke,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW_SLOW,
+        .backPic = gMonBackPic_Keke,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
+        .palette = gMonPalette_Keke,
+        .shinyPalette = gMonShinyPalette_Keke,
+        .iconSprite = gMonIcon_Aromatisse,
+        .iconPalIndex = 0,
+        FOOTPRINT(Aromatisse)
+        .levelUpLearnset = sKekeLevelUpLearnset,
+        .teachableLearnset = sAromatisseTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_AWOOFY] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 55,
+        .baseDefense   = 45,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 255,
+        .expYield = 57,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_BALL_FETCH, ABILITY_RUN_AWAY, ABILITY_BEAST_BOOST},
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Awoofy"),
+        .cryId = CRY_YAMPER,
+        .natDexNum = NATIONAL_DEX_AWOOFY,
+        .categoryName = _("Tame"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "A beast that came from another world.\n"
+            "Awoofies get along so well with Waddle\n"
+            "Dees that it's difficult to imagine\n"
+            "they were once considered enemies."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Awoofy,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Awoofy,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Awoofy,
+        .shinyPalette = gMonShinyPalette_Awoofy,
+        .iconSprite = gMonIcon_Yamper,
+        .iconPalIndex = 0,
+        FOOTPRINT(Awoofy)
+        .levelUpLearnset = sAwoofyLevelUpLearnset,
+        .teachableLearnset = sYamperTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PRIMAL_AWOOFY}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_PRIMAL_AWOOFY] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 90,
+        .baseDefense   = 85,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_GROUND),
+        .catchRate = 120,
+        .expYield = 165,
+        .evYield_Attack = 1,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_STAKEOUT, ABILITY_GUARD_DOG, ABILITY_BEAST_BOOST},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("PrimalAwoofy"),
+        .cryId = CRY_BOLTUND,
+        .natDexNum = NATIONAL_DEX_PRIMAL_AWOOFY,
+        .categoryName = _("Primeval"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Normally residing in far-off deserts\n"
+            "and craglands, Primal Awoofies\n"
+            "are smarter and more aggressive\n"
+            "than their younger brethren."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_PrimalAwoofy,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
+        .backPic = gMonBackPic_PrimalAwoofy,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_STRETCH,
+        .palette = gMonPalette_PrimalAwoofy,
+        .shinyPalette = gMonShinyPalette_PrimalAwoofy,
+        .iconSprite = gMonIcon_Boltund,
+        .iconPalIndex = 0,
+        FOOTPRINT(Chip)
+        .levelUpLearnset = sPrimalAwoofyLevelUpLearnset,
+        .teachableLearnset = sBoltundTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_KABU] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 45,
+        .baseDefense   = 63,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 44,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ROCK),
+        .catchRate = 190,
+        .expYield = 58,
+        .evYield_HP = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_NONE, ABILITY_ROCK_HEAD, ABILITY_FOREWARN},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Kabu"),
+        .cryId = CRY_BONSLY,
+        .natDexNum = NATIONAL_DEX_KABU,
+        .categoryName = _("Stone Head"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "A stone sculpture with mysterious\n"
+            "powers. Legends say that a mighty\n"
+            "Kabu that lived in another world\n"
+            "had the power to see the future."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Kabu,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Kabu,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_Kabu,
+        .shinyPalette = gMonShinyPalette_Kabu,
+        .iconSprite = gMonIcon_Bonsly,
+        .iconPalIndex = 0,
+        FOOTPRINT(Kabu)
+        .levelUpLearnset = sKabuLevelUpLearnset,
+        .teachableLearnset = sBonslyTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_BIG_KABU}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_BIG_KABU] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 80,
+        .baseDefense   = 90,
+        .baseSpeed     = 73,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_ROCK),
+        .catchRate = 60,
+        .expYield = 169,
+        .evYield_HP = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_NONE, ABILITY_ROCK_HEAD, ABILITY_FOREWARN},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Big Kabu"),
+        .cryId = CRY_SUDOWOODO,
+        .natDexNum = NATIONAL_DEX_BIG_KABU,
+        .categoryName = _("Stone Tower"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Those who watch Big Kabu open\n"
+            "its mouth and release Kabus \n"
+            "from it become convinced it\n"
+            "might actually be a portal."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BigKabu,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_BigKabu,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_BigKabu,
+        .shinyPalette = gMonShinyPalette_BigKabu,
+        .iconSprite = gMonIcon_Sudowoodo,
+        .iconPalIndex = 0,
+        FOOTPRINT(BigKabu)
+        .levelUpLearnset = sBigKabuLevelUpLearnset,
+        .teachableLearnset = sSudowoodoTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_BLIPPER] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 35,
+        .baseDefense   = 40,
+        .baseSpeed     = 73,
+        .baseSpAttack  = 46,
+        .baseSpDefense = 61,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 225,
+        .expYield = 62,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_TINTED_LENS, ABILITY_WATER_VEIL, ABILITY_UNAWARE},
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Blipper"),
+        .cryId = CRY_GOLDEEN,
+        .natDexNum = NATIONAL_DEX_BLIPPER,
+        .categoryName = _("Goggles"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Some consider Blipper's goggles\n"
+            "to be a cutting-edge fashion\n"
+            "statement. Others find the accessory\n"
+            "to be tacky and redundant."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Blipper,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Blipper,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Blipper,
+        .shinyPalette = gMonShinyPalette_Blipper,
+        .iconSprite = gMonIcon_Goldeen,
+        .iconPalIndex = 0,
+        FOOTPRINT(Blipper)
+        .levelUpLearnset = sBlipperLevelUpLearnset,
+        .teachableLearnset = sGoldeenTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_MAMATEE}, 
+                                {EVO_LEVEL, 50, SPECIES_BLING_BLIPPER}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_MAMATEE] =
+    {
+        .baseHP        = 132,
+        .baseAttack    = 54,
+        .baseDefense   = 67,
+        .baseSpeed     = 58,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 78,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 60,
+        .expYield = 180,
+        .evYield_HP = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_TINTED_LENS, ABILITY_WATER_VEIL, ABILITY_UNAWARE},
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Mamatee"),
+        .cryId = CRY_SEAKING,
+        .natDexNum = NATIONAL_DEX_MAMATEE,
+        .categoryName = _("Maternal"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "It has earned the nickname\n"
+            "of 'Mother of the Blippers'\n"
+            "for its passive nature and\n"
+            "kind heart towards others."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Mamatee,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_Mamatee,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Mamatee,
+        .shinyPalette = gMonShinyPalette_Mamatee,
+        .iconSprite = gMonIcon_Seaking,
+        .iconPalIndex = 0,
+        FOOTPRINT(Mamatee)
+        .levelUpLearnset = sMamateeLevelUpLearnset,
+        .teachableLearnset = sSeakingTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_BLING_BLIPPER] =
+    {
+        .baseHP        = 162,
+        .baseAttack    = 84,
+        .baseDefense   = 102,
+        .baseSpeed     = 38,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 83,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 15,
+        .expYield = 277,
+        .evYield_HP = 1,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_GOOD_AS_GOLD, ABILITY_NONE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("BlingBlipper"),
+        .cryId = CRY_SUICUNE,
+        .natDexNum = NATIONAL_DEX_BLING_BLIPPER,
+        .categoryName = _("Big Catch"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "This oversized golden Blipper\n"
+            "has become the stuff of legends\n"
+            "in Waddle Dee Town. Catching one\n"
+            "is said to bring prosperity."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BlingBlipper,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .backPic = gMonBackPic_BlingBlipper,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_BlingBlipper,
+        .shinyPalette = gMonShinyPalette_BlingBlipper,
+        .iconSprite = gMonIcon_Suicune,
+        .iconPalIndex = 0,
+        FOOTPRINT(BlingBlipper)
+        .levelUpLearnset = sBlingBlipperLevelUpLearnset,
+        .teachableLearnset = sSuicuneTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
