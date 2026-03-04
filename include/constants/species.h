@@ -1687,7 +1687,6 @@
 #define SPECIES_TATSUGIRI_DROOPY_MEGA                   1570
 #define SPECIES_TATSUGIRI_STRETCHY_MEGA                 1571
 #define SPECIES_GLIMMORA_MEGA                           1572
-
 // Dream Team
 #define SPECIES_LOVELY                                  1573
 #define SPECIES_ROSELY                                  1574
@@ -1761,7 +1760,9 @@
 #define SPECIES_MAIGA                                   1640
 #define SPECIES_POPON                                   1641
 #define SPECIES_CONER                                   1642
-#define SPECIES_BATAMON                                 1643
+#define SPECIES_DRIFTER                                 1643
+#define SPECIES_JUMPER_SHOOT                            1644
+#define SPECIES_BATAMON                                 1645
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

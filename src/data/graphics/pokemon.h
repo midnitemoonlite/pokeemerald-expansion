@@ -28130,6 +28130,24 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Coner[] = INCBIN_U8("graphics/pokemon/coner/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_Drifter[] = INCBIN_U32("graphics/pokemon/drifter/front.4bpp.lz");
+    const u32 gMonBackPic_Drifter[] = INCBIN_U32("graphics/pokemon/drifter/back.4bpp.lz");
+    const u16 gMonPalette_Drifter[] = INCBIN_U16("graphics/pokemon/drifter/normal.gbapal");
+    const u16 gMonShinyPalette_Drifter[] = INCBIN_U16("graphics/pokemon/drifter/shiny.gbapal");
+    const u8 gMonIcon_Drifter[] = INCBIN_U8("graphics/pokemon/drifter/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Drifter[] = INCBIN_U8("graphics/pokemon/drifter/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_JumperShoot[] = INCBIN_U32("graphics/pokemon/jumpershoot/front.4bpp.lz");
+    const u32 gMonBackPic_JumperShoot[] = INCBIN_U32("graphics/pokemon/jumpershoot/back.4bpp.lz");
+    const u16 gMonPalette_JumperShoot[] = INCBIN_U16("graphics/pokemon/jumpershoot/normal.gbapal");
+    const u16 gMonShinyPalette_JumperShoot[] = INCBIN_U16("graphics/pokemon/jumpershoot/shiny.gbapal");
+    const u8 gMonIcon_JumperShoot[] = INCBIN_U8("graphics/pokemon/jumpershoot/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_JumperShoot[] = INCBIN_U8("graphics/pokemon/jumpershoot/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

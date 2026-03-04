@@ -3924,6 +3924,119 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         //.perfectIVCount = NUM_STATS,
     },
 
+    [SPECIES_DRIFTER] =
+    {
+        .baseHP        = 28,
+        .baseAttack    = 49,
+        .baseDefense   = 40,
+        .baseSpeed     = 32,
+        .baseSpAttack  = 49,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_FLYING),
+        .catchRate = 190,
+        .expYield = 66,
+        .evYield_Attack = 1,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_UNBURDEN, ABILITY_KEEN_EYE, ABILITY_WIND_RIDER},
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Drifter"),
+        .cryId = CRY_YAMASK,
+        .natDexNum = NATIONAL_DEX_DRIFTER,
+        .categoryName = _("Parasol"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Also known as Floaty the Drifter,\n"
+            "this living parasol will disguise\n"
+            "itself as a normal item. It\n"
+            "dislikes being lodged in sand."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Drifter,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_Drifter,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Drifter,
+        .shinyPalette = gMonShinyPalette_Drifter,
+        .iconSprite = gMonIcon_Yamask,
+        .iconPalIndex = 0,
+        FOOTPRINT(Drifter)
+        .levelUpLearnset = sDrifterLevelUpLearnset,
+        .teachableLearnset = sYamaskTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_BATTLE_END, 0, SPECIES_JUMPER_SHOOT, CONDITIONS({IF_CURRENT_DAMAGE_GE, 68})}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_JUMPER_SHOOT] =
+    {
+        .baseHP        = 68,
+        .baseAttack    = 96,
+        .baseDefense   = 71,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_GHOST),
+        .catchRate = 90,
+        .expYield = 171,
+        .evYield_Attack = 1,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_UNBURDEN, ABILITY_KEEN_EYE, ABILITY_WIND_RIDER},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Jumper Shoot"),
+        .cryId = CRY_COFAGRIGUS,
+        .natDexNum = NATIONAL_DEX_JUMPER_SHOOT,
+        .categoryName = _("Kasa-obake"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "A spirit that haunts an old umbrella.\n"
+            "It gets tired quickly from hopping\n"
+            "around on one leg, so it regularly\n"
+            "kicks its sandal off in frustration."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_JumperShoot,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_JumperShoot,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_JumperShoot,
+        .shinyPalette = gMonShinyPalette_JumperShoot,
+        .iconSprite = gMonIcon_Cofagrigus,
+        .iconPalIndex = 0,
+        FOOTPRINT(JumperShoot)
+        .levelUpLearnset = sJumperShootLevelUpLearnset,
+        .teachableLearnset = sCofagrigusTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
     [SPECIES_BATAMON] =
     {
         .baseHP        = 86,
