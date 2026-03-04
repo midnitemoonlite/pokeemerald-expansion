@@ -2206,5 +2206,14 @@ static const struct FormChange sBeanbonFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 
+static const struct FormChange sBuzzybatFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_BEFORE_MOVE,          SPECIES_BUZZYBAT_GRAVE,    MOVE_BANEFUL_BUNKER,      ABILITY_STANCE_CHANGE},
+    {FORM_CHANGE_BATTLE_BEFORE_MOVE,          SPECIES_BUZZYBAT_NORMAL,   MOVE_BANEFUL_BUNKER,      ABILITY_STANCE_CHANGE},
+    {FORM_CHANGE_FAINT,                       SPECIES_BUZZYBAT_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                  SPECIES_BUZZYBAT_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

@@ -2581,3 +2581,9 @@ static const u16 sBeanbonFormSpeciesIdTable[] = {
     SPECIES_BEANBON_TRASH,
     FORM_SPECIES_END,
 };
+
+static const u16 sBuzzybatFormSpeciesIdTable[] = {
+    SPECIES_BUZZYBAT_NORMAL,
+    SPECIES_BUZZYBAT_GRAVE,
+    FORM_SPECIES_END,
+};

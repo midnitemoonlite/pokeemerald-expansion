@@ -85,12 +85,12 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_SPARKY"
+                "species": "SPECIES_BATTY"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_PIERRE"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_BUZZYBAT"
               },
               {
                 "min_level": 2,

@@ -1774,7 +1774,12 @@
 #define SPECIES_ROCKY                                   1654
 #define SPECIES_GIANT_ROCKY                             1655
 #define SPECIES_MOUNDO                                  1656
-#define SPECIES_BATAMON                                 1657
+#define SPECIES_BATTY                                   1657
+#define SPECIES_PRICKLEBAT                              1658
+#define SPECIES_BUZZYBAT                                SPECIES_BUZZYBAT_NORMAL
+#define SPECIES_BUZZYBAT_NORMAL                         1659
+#define SPECIES_BUZZYBAT_GRAVE                          1660
+#define SPECIES_BATAMON                                 1661
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

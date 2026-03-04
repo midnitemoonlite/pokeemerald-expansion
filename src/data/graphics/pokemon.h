@@ -28256,6 +28256,39 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Moundo[] = INCBIN_U8("graphics/pokemon/moundo/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_Batty[] = INCBIN_U32("graphics/pokemon/batty/front.4bpp.lz");
+    const u32 gMonBackPic_Batty[] = INCBIN_U32("graphics/pokemon/batty/back.4bpp.lz");
+    const u16 gMonPalette_Batty[] = INCBIN_U16("graphics/pokemon/batty/normal.gbapal");
+    const u16 gMonShinyPalette_Batty[] = INCBIN_U16("graphics/pokemon/batty/shiny.gbapal");
+    const u8 gMonIcon_Batty[] = INCBIN_U8("graphics/pokemon/batty/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Batty[] = INCBIN_U8("graphics/pokemon/batty/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Pricklebat[] = INCBIN_U32("graphics/pokemon/pricklebat/front.4bpp.lz");
+    const u32 gMonBackPic_Pricklebat[] = INCBIN_U32("graphics/pokemon/pricklebat/back.4bpp.lz");
+    const u16 gMonPalette_Pricklebat[] = INCBIN_U16("graphics/pokemon/pricklebat/normal.gbapal");
+    const u16 gMonShinyPalette_Pricklebat[] = INCBIN_U16("graphics/pokemon/pricklebat/shiny.gbapal");
+    const u8 gMonIcon_Pricklebat[] = INCBIN_U8("graphics/pokemon/pricklebat/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Pricklebat[] = INCBIN_U8("graphics/pokemon/pricklebat/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_BuzzybatNormal[] = INCBIN_U32("graphics/pokemon/buzzybat/front.4bpp.lz");
+    const u32 gMonBackPic_BuzzybatNormal[] = INCBIN_U32("graphics/pokemon/buzzybat/back.4bpp.lz");
+    const u16 gMonPalette_BuzzybatNormal[] = INCBIN_U16("graphics/pokemon/buzzybat/normal.gbapal");
+    const u16 gMonShinyPalette_BuzzybatNormal[] = INCBIN_U16("graphics/pokemon/buzzybat/shiny.gbapal");
+    const u8 gMonIcon_BuzzybatNormal[] = INCBIN_U8("graphics/pokemon/buzzybat/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_BuzzybatNormal[] = INCBIN_U8("graphics/pokemon/buzzybat/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_BuzzybatGrave[] = INCBIN_U32("graphics/pokemon/buzzybat/grave/front.4bpp.lz");
+    const u32 gMonBackPic_BuzzybatGrave[] = INCBIN_U32("graphics/pokemon/buzzybat/grave/back.4bpp.lz");
+    const u16 gMonPalette_BuzzybatGrave[] = INCBIN_U16("graphics/pokemon/buzzybat/grave/normal.gbapal");
+    const u16 gMonShinyPalette_BuzzybatGrave[] = INCBIN_U16("graphics/pokemon/buzzybat/grave/shiny.gbapal");
+    const u8 gMonIcon_BuzzybatGrave[] = INCBIN_U8("graphics/pokemon/buzzybat/grave/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");
