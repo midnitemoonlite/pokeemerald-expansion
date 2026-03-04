@@ -1779,7 +1779,17 @@
 #define SPECIES_BUZZYBAT                                SPECIES_BUZZYBAT_NORMAL
 #define SPECIES_BUZZYBAT_NORMAL                         1659
 #define SPECIES_BUZZYBAT_GRAVE                          1660
-#define SPECIES_BATAMON                                 1661
+#define SPECIES_FLAMER                                  1661
+#define SPECIES_CHAIN_FLAMER                            1662
+#define SPECIES_BOXIN                                   1663
+#define SPECIES_BUN                                     1664
+#define SPECIES_BOX_BOXER                               1665
+#define SPECIES_EMBA                                    1666
+#define SPECIES_CANDLEMANDER                            1667
+#define SPECIES_EMBACONDA                               1668
+#define SPECIES_EMBIRD                                  1669
+#define SPECIES_HOT_WINGS                               1670
+#define SPECIES_BATAMON                                 1671
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

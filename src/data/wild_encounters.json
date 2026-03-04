@@ -85,27 +85,27 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_BATTY"
-              },
-              {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_BUZZYBAT"
+                "species": "SPECIES_EMBIRD"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_ROCKY"
+                "species": "SPECIES_FLAMER"
+              },
+              {
+                "min_level": 2,
+                "max_level": 2,
+                "species": "SPECIES_BOXIN"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_FLOTZO"
+                "species": "SPECIES_EMBA"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_MR_FLOATY"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_BUN"
               },
               {
                 "min_level": 3,
