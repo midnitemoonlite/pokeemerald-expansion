@@ -1762,7 +1762,19 @@
 #define SPECIES_CONER                                   1642
 #define SPECIES_DRIFTER                                 1643
 #define SPECIES_JUMPER_SHOOT                            1644
-#define SPECIES_BATAMON                                 1645
+#define SPECIES_PIERRE                                  1645
+#define SPECIES_CLOWN_ACROBOT                           1646
+#define SPECIES_SPARKY                                  1647
+#define SPECIES_MASTER_GREEN                            1648
+#define SPECIES_MR_FLOATY                               1649
+#define SPECIES_MR_FROSTY                               1650
+#define SPECIES_FLOTZO                                  1651
+#define SPECIES_FLOTZO_BORG                             1652
+#define SPECIES_GIANT_FLOTZO                            1653
+#define SPECIES_ROCKY                                   1654
+#define SPECIES_GIANT_ROCKY                             1655
+#define SPECIES_MOUNDO                                  1656
+#define SPECIES_BATAMON                                 1657
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

@@ -2887,10 +2887,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Those who watch Big Kabu open\n"
-            "its mouth and release Kabus \n"
-            "from it become convinced it\n"
-            "might actually be a portal."),
+            "Those who watch Big Kabu open its\n"
+            "mouth and release Kabus from inside\n"
+            "become convinced there may actually\n"
+            "be a portal inside Big Kabu's mouth."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3000,10 +3000,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It has earned the nickname\n"
-            "of 'Mother of the Blippers'\n"
-            "for its passive nature and\n"
-            "kind heart towards others."),
+            "It has earned the nickname of\n"
+            "'Mother of the Blippers' for its\n"
+            "passive nature and kind heart\n"
+            "towards anyone it meets."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3056,10 +3056,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "This oversized golden Blipper\n"
-            "has become the stuff of legends\n"
-            "in Waddle Dee Town. Catching one\n"
-            "is said to bring prosperity."),
+            "This oversized golden Blipper has\n"
+            "become the stuff of legends in Waddle\n"
+            "Dee Town. Catching one is said to\n"
+            "bring great wealth and prosperity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4032,6 +4032,677 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         FOOTPRINT(JumperShoot)
         .levelUpLearnset = sJumperShootLevelUpLearnset,
         .teachableLearnset = sCofagrigusTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_PIERRE] =
+    {
+        .baseHP        = 63,
+        .baseAttack    = 52,
+        .baseDefense   = 42,
+        .baseSpeed     = 39,
+        .baseSpAttack  = 56,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_FAIRY),
+        .catchRate = 225,
+        .expYield = 74,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 30,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_SKILL_LINK, ABILITY_UNBURDEN, ABILITY_TECHNICIAN},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Pierre"),
+        .cryId = CRY_MIME_JR,
+        .natDexNum = NATIONAL_DEX_PIERRE,
+        .categoryName = _("Juggling"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "This travelling clown is almost\n"
+            "always seeing juggling blocks\n"
+            "of various shapes. It also has\n"
+            "a knack for solving puzzles."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Pierre,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_Pierre,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Pierre,
+        .shinyPalette = gMonShinyPalette_Pierre,
+        .iconSprite = gMonIcon_MimeJr,
+        .iconPalIndex = 0,
+        FOOTPRINT(Pierre)
+        .levelUpLearnset = sPierreLevelUpLearnset,
+        .teachableLearnset = sMimeJrTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_CLOWN_ACROBOT}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_CLOWN_ACROBOT] =
+    {
+        .baseHP        = 79,
+        .baseAttack    = 80,
+        .baseDefense   = 70,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 94,
+        .types = MON_TYPES(TYPE_FAIRY),
+        .catchRate = 145,
+        .expYield = 156,
+        .evYield_SpDefense = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 30,
+        .friendship = 100,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_SKILL_LINK, ABILITY_UNBURDEN, ABILITY_TECHNICIAN},
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("ClownAcrobot"),
+        .cryId = CRY_MR_MIME,
+        .natDexNum = NATIONAL_DEX_CLOWN_ACROBOT,
+        .categoryName = _("Performer"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "A master in the art of circus\n"
+            "tricks, Clown Acrobot wants\n"
+            "nothing more than to put on a\n"
+            "good show and make others smile."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ClownAcrobot,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_ClownAcrobot,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_ClownAcrobot,
+        .shinyPalette = gMonShinyPalette_ClownAcrobot,
+        .iconSprite = gMonIcon_MrMime,
+        .iconPalIndex = 0,
+        FOOTPRINT(ClownAcrobot)
+        .levelUpLearnset = sClownAcrobotLevelUpLearnset,
+        .teachableLearnset = sMrMimeTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_SPARKY] =
+    {
+        .baseHP        = 58,
+        .baseAttack    = 45,
+        .baseDefense   = 40,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 78,
+        .baseSpDefense = 52,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 190,
+        .expYield = 59,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_STATIC, ABILITY_VOLT_ABSORB, ABILITY_STICKY_HOLD},
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Sparky"),
+        .cryId = CRY_VOLTORB,
+        .natDexNum = NATIONAL_DEX_SPARKY,
+        .categoryName = _("Electric Orb"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Using the orbs on its body, it can\n"
+            "generate an electric barrier around\n"
+            "itself. Touching one is likely\n"
+            "to give you a static shock."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Sparky,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_Sparky,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Sparky,
+        .shinyPalette = gMonShinyPalette_Sparky,
+        .iconSprite = gMonIcon_Voltorb,
+        .iconPalIndex = 0,
+        FOOTPRINT(Sparky)
+        .levelUpLearnset = sSparkyLevelUpLearnset,
+        .teachableLearnset = sVoltorbTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_MASTER_GREEN}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_MASTER_GREEN] =
+    {
+        .baseHP        = 84,
+        .baseAttack    = 71,
+        .baseDefense   = 58,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 121,
+        .baseSpDefense = 101,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_WATER),
+        .catchRate = 90,
+        .expYield = 174,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_STATIC, ABILITY_VOLT_ABSORB, ABILITY_STICKY_HOLD},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Master Green"),
+        .cryId = CRY_ELECTRODE,
+        .natDexNum = NATIONAL_DEX_MASTER_GREEN,
+        .categoryName = _("Jellyfish"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "A distant, electricity-wielding\n"
+            "cousin of Squishy. Contrary\n"
+            "to its name, it is mostly\n"
+            "seen in colors other than green."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MasterGreen,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_MasterGreen,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_MasterGreen,
+        .shinyPalette = gMonShinyPalette_MasterGreen,
+        .iconSprite = gMonIcon_Electrode,
+        .iconPalIndex = 0,
+        FOOTPRINT(MasterGreen)
+        .levelUpLearnset = sMasterGreenLevelUpLearnset,
+        .teachableLearnset = sElectrodeTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_MR_FLOATY] =
+    {
+        .baseHP        = 105,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 45,
+        .expYield = 182,
+        .evYield_HP = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_DAMP, ABILITY_HYDRATION, ABILITY_WATER_ABSORB},
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Mr. Floaty"),
+        .cryId = CRY_WALREIN,
+        .natDexNum = NATIONAL_DEX_MR_FLOATY,
+        .categoryName = _("Moist Walrus"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "If it doesn't have water to bathe\n"
+            "in, it gets panicked and agitated.\n"
+            "Mr. Floaty is very particular about\n"
+            "what kinds of swimwear it will don."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MrFloaty,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_MrFloaty,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_MrFloaty,
+        .shinyPalette = gMonShinyPalette_MrFloaty,
+        .iconSprite = gMonIcon_Walrein,
+        .iconPalIndex = 0,
+        FOOTPRINT(MrFloaty)
+        .levelUpLearnset = sMrFloatyLevelUpLearnset,
+        .teachableLearnset = sWalreinTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_MR_FROSTY}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_MR_FROSTY] =
+    {
+        .baseHP        = 105,
+        .baseAttack    = 100,
+        .baseDefense   = 90,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ICE),
+        .catchRate = 45,
+        .expYield = 182,
+        .evYield_HP = 1,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_SLUSH_RUSH, ABILITY_THICK_FAT, ABILITY_SNOW_CLOAK},
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Mr. Frosty"),
+        .cryId = CRY_WALREIN,
+        .natDexNum = NATIONAL_DEX_MR_FROSTY,
+        .categoryName = _("Ice Walrus"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "The ever-graceful Mr. Frosty hurls\n"
+            "ice and snow at its targets using\n"
+            "its rear. It recently patched its\n"
+            "overalls to keep said rear insulated."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_MrFrosty,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_MrFrosty,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_MrFrosty,
+        .shinyPalette = gMonShinyPalette_MrFrosty,
+        .iconSprite = gMonIcon_Walrein,
+        .iconPalIndex = 3,
+        FOOTPRINT(MrFrosty)
+        .levelUpLearnset = sMrFrostyLevelUpLearnset,
+        .teachableLearnset = sWalreinTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_FLOTZO] =
+    {
+        .baseHP        = 54,
+        .baseAttack    = 51,
+        .baseDefense   = 48,
+        .baseSpeed     = 53,
+        .baseSpAttack  = 71,
+        .baseSpDefense = 47,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 190,
+        .expYield = 65,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_SUCTION_CUPS, ABILITY_LIQUID_OOZE, ABILITY_LIMBER},
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Flotzo"),
+        .cryId = CRY_FRILLISH,
+        .natDexNum = NATIONAL_DEX_FLOTZO,
+        .categoryName = _("Octopus"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "A few key differences separate it\n"
+            "and Squishy; it lurks in deeper\n"
+            "waters, spends less time on land,\n"
+            "and has a moodier temperament."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Flotzo,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_Flotzo,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Flotzo,
+        .shinyPalette = gMonShinyPalette_Flotzo,
+        .iconSprite = gMonIcon_FrillishF,
+        .iconPalIndex = 0,
+        FOOTPRINT(Flotzo)
+        .levelUpLearnset = sFlotzoLevelUpLearnset,
+        .teachableLearnset = sFrillishTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FLOTZO_BORG}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_FLOTZO_BORG] =
+    {
+        .baseHP        = 72,
+        .baseAttack    = 80,
+        .baseDefense   = 100,
+        .baseSpeed     = 43,
+        .baseSpAttack  = 94,
+        .baseSpDefense = 64,
+        .types = MON_TYPES(TYPE_WATER),
+        .catchRate = 75,
+        .expYield = 168,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_SUCTION_CUPS, ABILITY_LIQUID_OOZE, ABILITY_LIMBER},
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Flotzo Borg"),
+        .cryId = CRY_ALOMOMOLA,
+        .natDexNum = NATIONAL_DEX_FLOTZO_BORG,
+        .categoryName = _("Diver"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Flotzo Borg's helmet obviously\n"
+            "isn't for breathing underwater;\n"
+            "instead, the helmet's nozzle\n"
+            "pressurizes the ink it shoots."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_FlotzoBorg,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_FlotzoBorg,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_FlotzoBorg,
+        .shinyPalette = gMonShinyPalette_FlotzoBorg,
+        .iconSprite = gMonIcon_Alomomola,
+        .iconPalIndex = 0,
+        FOOTPRINT(FlotzoBorg)
+        .levelUpLearnset = sFlotzoBorgLevelUpLearnset,
+        .teachableLearnset = sAlomomolaTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_GIANT_FLOTZO}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_GIANT_FLOTZO] =
+    {
+        .baseHP        = 86,
+        .baseAttack    = 106,
+        .baseDefense   = 108,
+        .baseSpeed     = 33,
+        .baseSpAttack  = 122,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_WATER, TYPE_GHOST),
+        .catchRate = 30,
+        .expYield = 276,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_SUCTION_CUPS, ABILITY_LIQUID_OOZE, ABILITY_VESSEL_OF_RUIN},
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Giant Flotzo"),
+        .cryId = CRY_JELLICENT,
+        .natDexNum = NATIONAL_DEX_GIANT_FLOTZO,
+        .categoryName = _("Diver"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "These garguantuan Flotzos terrorize\n"
+            "any ships that sail through its\n"
+            "domain; the resulting wreckage \n"
+            "becomes armor and shelter for it."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_GiantFlotzo,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_GiantFlotzo,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_GiantFlotzo,
+        .shinyPalette = gMonShinyPalette_GiantFlotzo,
+        .iconSprite = gMonIcon_JellicentF,
+        .iconPalIndex = 0,
+        FOOTPRINT(GiantFlotzo)
+        .levelUpLearnset = sGiantFlotzoLevelUpLearnset,
+        .teachableLearnset = sJellicentTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_ROCKY] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 80,
+        .baseDefense   = 100,
+        .baseSpeed     = 5,
+        .baseSpAttack  = 15,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_ROCK),
+        .catchRate = 255,
+        .expYield = 67,
+        .evYield_Defense = 1,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_STURDY, ABILITY_SHEER_FORCE, ABILITY_SOLID_ROCK},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Rocky"),
+        .cryId = CRY_ROGGENROLA,
+        .natDexNum = NATIONAL_DEX_ROCKY,
+        .categoryName = _("Stone"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Rocky may be small, but its body\n"
+            "is extremely durable. It can level\n"
+            "even the sturdiest of structures\n"
+            "with a single thud."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Rocky,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_Rocky,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Rocky,
+        .shinyPalette = gMonShinyPalette_Rocky,
+        .iconSprite = gMonIcon_Roggenrola,
+        .iconPalIndex = 0,
+        FOOTPRINT(Rocky)
+        .levelUpLearnset = sRockyLevelUpLearnset,
+        .teachableLearnset = sRoggenrolaTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_GIANT_ROCKY}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_GIANT_ROCKY] =
+    {
+        .baseHP        = 90,
+        .baseAttack    = 100,
+        .baseDefense   = 120,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 25,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_ROCK),
+        .catchRate = 120,
+        .expYield = 139,
+        .evYield_Defense = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_STURDY, ABILITY_SHEER_FORCE, ABILITY_SOLID_ROCK},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Giant Rocky"),
+        .cryId = CRY_BOLDORE,
+        .natDexNum = NATIONAL_DEX_GIANT_ROCKY,
+        .categoryName = _("Boulder"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Giant Rocky is so heavy it can't\n"
+            "even walk on its feet. It causes\n"
+            "tremors as it moves by hopping\n"
+            "before landing with a thud."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_GiantRocky,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_GiantRocky,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_GiantRocky,
+        .shinyPalette = gMonShinyPalette_GiantRocky,
+        .iconSprite = gMonIcon_Boldore,
+        .iconPalIndex = 0,
+        FOOTPRINT(GiantRocky)
+        .levelUpLearnset = sGiantRockyLevelUpLearnset,
+        .teachableLearnset = sBoldoreTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MOUNDO}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_MOUNDO] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 115,
+        .baseDefense   = 140,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_ROCK),
+        .catchRate = 45,
+        .expYield = 238,
+        .evYield_Defense = 3,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_STURDY, ABILITY_SHEER_FORCE, ABILITY_SOLID_ROCK},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Moundo"),
+        .cryId = CRY_GIGALITH,
+        .natDexNum = NATIONAL_DEX_MOUNDO,
+        .categoryName = _("Mountainous"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "The earth quakes with every step\n"
+            "Moundo takes. It can increase its\n"
+            "size even further by accumulating\n"
+            "sediment from the ground it's on."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Moundo,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .backPic = gMonBackPic_Moundo,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .palette = gMonPalette_Moundo,
+        .shinyPalette = gMonShinyPalette_Moundo,
+        .iconSprite = gMonIcon_Gigalith,
+        .iconPalIndex = 0,
+        FOOTPRINT(Moundo)
+        .levelUpLearnset = sMoundoLevelUpLearnset,
+        .teachableLearnset = sGigalithTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
