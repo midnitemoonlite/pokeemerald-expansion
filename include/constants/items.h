@@ -1053,6 +1053,7 @@ enum __attribute__((packed)) Item
 
     //Custom items
     ITEM_INFINITE_CANDY = 874,
+    ITEM_BLANK_PLATE = 875,
 
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,

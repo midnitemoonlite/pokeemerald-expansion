@@ -5132,6 +5132,26 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_PixiePlate,
     },
 
+    [ITEM_BLANK_PLATE] =
+    {
+        .name = ITEM_NAME("Blank Plate"),
+        .price = 1000,
+        .holdEffect = HOLD_EFFECT_PLATE,
+        .holdEffectParam = 20,
+        .description = COMPOUND_STRING(
+            "A tablet that ups\n"
+            "the power of\n"
+            "Normal-type moves."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = TYPE_NORMAL,
+        .flingPower = 90,
+        .iconPic = gItemIcon_Plate,
+        .iconPalette = gItemIconPalette_Snowball,
+    },
+
 // Drives
 
     [ITEM_DOUSE_DRIVE] =

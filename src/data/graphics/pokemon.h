@@ -28379,6 +28379,123 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_HotWings[] = INCBIN_U8("graphics/pokemon/hotwings/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_GuardShieldless[] = INCBIN_U32("graphics/pokemon/guard/front.4bpp.lz");
+    const u32 gMonBackPic_GuardShieldless[] = INCBIN_U32("graphics/pokemon/guard/back.4bpp.lz");
+    const u16 gMonPalette_GuardShieldless[] = INCBIN_U16("graphics/pokemon/guard/normal.gbapal");
+    const u16 gMonShinyPalette_GuardShieldless[] = INCBIN_U16("graphics/pokemon/guard/shiny.gbapal");
+    const u8 gMonIcon_GuardShieldless[] = INCBIN_U8("graphics/pokemon/guard/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Guard[] = INCBIN_U8("graphics/pokemon/guard/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_GuardNormal[] = INCBIN_U32("graphics/pokemon/guard/normal/front.4bpp.lz");
+    const u32 gMonBackPic_GuardNormal[] = INCBIN_U32("graphics/pokemon/guard/normal/back.4bpp.lz");
+    const u16 gMonPalette_GuardNormal[] = INCBIN_U16("graphics/pokemon/guard/normal/normal.gbapal");
+    const u16 gMonShinyPalette_GuardNormal[] = INCBIN_U16("graphics/pokemon/guard/normal/shiny.gbapal");
+    const u8 gMonIcon_GuardNormal[] = INCBIN_U8("graphics/pokemon/guard/normal/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardFire[] = INCBIN_U32("graphics/pokemon/guard/fire/front.4bpp.lz");
+    const u32 gMonBackPic_GuardFire[] = INCBIN_U32("graphics/pokemon/guard/fire/back.4bpp.lz");
+    const u16 gMonPalette_GuardFire[] = INCBIN_U16("graphics/pokemon/guard/fire/normal.gbapal");
+    const u16 gMonShinyPalette_GuardFire[] = INCBIN_U16("graphics/pokemon/guard/fire/shiny.gbapal");
+    const u8 gMonIcon_GuardFire[] = INCBIN_U8("graphics/pokemon/guard/fire/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardIce[] = INCBIN_U32("graphics/pokemon/guard/ice/front.4bpp.lz");
+    const u32 gMonBackPic_GuardIce[] = INCBIN_U32("graphics/pokemon/guard/ice/back.4bpp.lz");
+    const u16 gMonPalette_GuardIce[] = INCBIN_U16("graphics/pokemon/guard/ice/normal.gbapal");
+    const u16 gMonShinyPalette_GuardIce[] = INCBIN_U16("graphics/pokemon/guard/ice/shiny.gbapal");
+    const u8 gMonIcon_GuardIce[] = INCBIN_U8("graphics/pokemon/guard/ice/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardWater[] = INCBIN_U32("graphics/pokemon/guard/water/front.4bpp.lz");
+    const u32 gMonBackPic_GuardWater[] = INCBIN_U32("graphics/pokemon/guard/water/back.4bpp.lz");
+    const u16 gMonPalette_GuardWater[] = INCBIN_U16("graphics/pokemon/guard/water/normal.gbapal");
+    const u16 gMonShinyPalette_GuardWater[] = INCBIN_U16("graphics/pokemon/guard/water/shiny.gbapal");
+    const u8 gMonIcon_GuardWater[] = INCBIN_U8("graphics/pokemon/guard/water/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardElectric[] = INCBIN_U32("graphics/pokemon/guard/electric/front.4bpp.lz");
+    const u32 gMonBackPic_GuardElectric[] = INCBIN_U32("graphics/pokemon/guard/electric/back.4bpp.lz");
+    const u16 gMonPalette_GuardElectric[] = INCBIN_U16("graphics/pokemon/guard/electric/normal.gbapal");
+    const u16 gMonShinyPalette_GuardElectric[] = INCBIN_U16("graphics/pokemon/guard/electric/shiny.gbapal");
+    const u8 gMonIcon_GuardElectric[] = INCBIN_U8("graphics/pokemon/guard/electric/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardFlying[] = INCBIN_U32("graphics/pokemon/guard/flying/front.4bpp.lz");
+    const u32 gMonBackPic_GuardFlying[] = INCBIN_U32("graphics/pokemon/guard/flying/back.4bpp.lz");
+    const u16 gMonPalette_GuardFlying[] = INCBIN_U16("graphics/pokemon/guard/flying/normal.gbapal");
+    const u16 gMonShinyPalette_GuardFlying[] = INCBIN_U16("graphics/pokemon/guard/flying/shiny.gbapal");
+    const u8 gMonIcon_GuardFlying[] = INCBIN_U8("graphics/pokemon/guard/flying/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardPsychic[] = INCBIN_U32("graphics/pokemon/guard/psychic/front.4bpp.lz");
+    const u32 gMonBackPic_GuardPsychic[] = INCBIN_U32("graphics/pokemon/guard/psychic/back.4bpp.lz");
+    const u16 gMonPalette_GuardPsychic[] = INCBIN_U16("graphics/pokemon/guard/psychic/normal.gbapal");
+    const u16 gMonShinyPalette_GuardPsychic[] = INCBIN_U16("graphics/pokemon/guard/psychic/shiny.gbapal");
+    const u8 gMonIcon_GuardPsychic[] = INCBIN_U8("graphics/pokemon/guard/psychic/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardRock[] = INCBIN_U32("graphics/pokemon/guard/rock/front.4bpp.lz");
+    const u32 gMonBackPic_GuardRock[] = INCBIN_U32("graphics/pokemon/guard/rock/back.4bpp.lz");
+    const u16 gMonPalette_GuardRock[] = INCBIN_U16("graphics/pokemon/guard/rock/normal.gbapal");
+    const u16 gMonShinyPalette_GuardRock[] = INCBIN_U16("graphics/pokemon/guard/rock/shiny.gbapal");
+    const u8 gMonIcon_GuardRock[] = INCBIN_U8("graphics/pokemon/guard/rock/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardFighting[] = INCBIN_U32("graphics/pokemon/guard/fighting/front.4bpp.lz");
+    const u32 gMonBackPic_GuardFighting[] = INCBIN_U32("graphics/pokemon/guard/fighting/back.4bpp.lz");
+    const u16 gMonPalette_GuardFighting[] = INCBIN_U16("graphics/pokemon/guard/fighting/normal.gbapal");
+    const u16 gMonShinyPalette_GuardFighting[] = INCBIN_U16("graphics/pokemon/guard/fighting/shiny.gbapal");
+    const u8 gMonIcon_GuardFighting[] = INCBIN_U8("graphics/pokemon/guard/fighting/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardFairy[] = INCBIN_U32("graphics/pokemon/guard/fairy/front.4bpp.lz");
+    const u32 gMonBackPic_GuardFairy[] = INCBIN_U32("graphics/pokemon/guard/fairy/back.4bpp.lz");
+    const u16 gMonPalette_GuardFairy[] = INCBIN_U16("graphics/pokemon/guard/fairy/normal.gbapal");
+    const u16 gMonShinyPalette_GuardFairy[] = INCBIN_U16("graphics/pokemon/guard/fairy/shiny.gbapal");
+    const u8 gMonIcon_GuardFairy[] = INCBIN_U8("graphics/pokemon/guard/fairy/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardGrass[] = INCBIN_U32("graphics/pokemon/guard/grass/front.4bpp.lz");
+    const u32 gMonBackPic_GuardGrass[] = INCBIN_U32("graphics/pokemon/guard/grass/back.4bpp.lz");
+    const u16 gMonPalette_GuardGrass[] = INCBIN_U16("graphics/pokemon/guard/grass/normal.gbapal");
+    const u16 gMonShinyPalette_GuardGrass[] = INCBIN_U16("graphics/pokemon/guard/grass/shiny.gbapal");
+    const u8 gMonIcon_GuardGrass[] = INCBIN_U8("graphics/pokemon/guard/grass/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardGround[] = INCBIN_U32("graphics/pokemon/guard/ground/front.4bpp.lz");
+    const u32 gMonBackPic_GuardGround[] = INCBIN_U32("graphics/pokemon/guard/ground/back.4bpp.lz");
+    const u16 gMonPalette_GuardGround[] = INCBIN_U16("graphics/pokemon/guard/ground/normal.gbapal");
+    const u16 gMonShinyPalette_GuardGround[] = INCBIN_U16("graphics/pokemon/guard/ground/shiny.gbapal");
+    const u8 gMonIcon_GuardGround[] = INCBIN_U8("graphics/pokemon/guard/ground/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardPoison[] = INCBIN_U32("graphics/pokemon/guard/poison/front.4bpp.lz");
+    const u32 gMonBackPic_GuardPoison[] = INCBIN_U32("graphics/pokemon/guard/poison/back.4bpp.lz");
+    const u16 gMonPalette_GuardPoison[] = INCBIN_U16("graphics/pokemon/guard/poison/normal.gbapal");
+    const u16 gMonShinyPalette_GuardPoison[] = INCBIN_U16("graphics/pokemon/guard/poison/shiny.gbapal");
+    const u8 gMonIcon_GuardPoison[] = INCBIN_U8("graphics/pokemon/guard/poison/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardSteel[] = INCBIN_U32("graphics/pokemon/guard/steel/front.4bpp.lz");
+    const u32 gMonBackPic_GuardSteel[] = INCBIN_U32("graphics/pokemon/guard/steel/back.4bpp.lz");
+    const u16 gMonPalette_GuardSteel[] = INCBIN_U16("graphics/pokemon/guard/steel/normal.gbapal");
+    const u16 gMonShinyPalette_GuardSteel[] = INCBIN_U16("graphics/pokemon/guard/steel/shiny.gbapal");
+    const u8 gMonIcon_GuardSteel[] = INCBIN_U8("graphics/pokemon/guard/steel/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardDark[] = INCBIN_U32("graphics/pokemon/guard/dark/front.4bpp.lz");
+    const u32 gMonBackPic_GuardDark[] = INCBIN_U32("graphics/pokemon/guard/dark/back.4bpp.lz");
+    const u16 gMonPalette_GuardDark[] = INCBIN_U16("graphics/pokemon/guard/dark/normal.gbapal");
+    const u16 gMonShinyPalette_GuardDark[] = INCBIN_U16("graphics/pokemon/guard/dark/shiny.gbapal");
+    const u8 gMonIcon_GuardDark[] = INCBIN_U8("graphics/pokemon/guard/dark/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardBug[] = INCBIN_U32("graphics/pokemon/guard/bug/front.4bpp.lz");
+    const u32 gMonBackPic_GuardBug[] = INCBIN_U32("graphics/pokemon/guard/bug/back.4bpp.lz");
+    const u16 gMonPalette_GuardBug[] = INCBIN_U16("graphics/pokemon/guard/bug/normal.gbapal");
+    const u16 gMonShinyPalette_GuardBug[] = INCBIN_U16("graphics/pokemon/guard/bug/shiny.gbapal");
+    const u8 gMonIcon_GuardBug[] = INCBIN_U8("graphics/pokemon/guard/bug/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardGhost[] = INCBIN_U32("graphics/pokemon/guard/ghost/front.4bpp.lz");
+    const u32 gMonBackPic_GuardGhost[] = INCBIN_U32("graphics/pokemon/guard/ghost/back.4bpp.lz");
+    const u16 gMonPalette_GuardGhost[] = INCBIN_U16("graphics/pokemon/guard/ghost/normal.gbapal");
+    const u16 gMonShinyPalette_GuardGhost[] = INCBIN_U16("graphics/pokemon/guard/ghost/shiny.gbapal");
+    const u8 gMonIcon_GuardGhost[] = INCBIN_U8("graphics/pokemon/guard/ghost/icon.4bpp");
+
+    const u32 gMonFrontPic_GuardDragon[] = INCBIN_U32("graphics/pokemon/guard/dragon/front.4bpp.lz");
+    const u32 gMonBackPic_GuardDragon[] = INCBIN_U32("graphics/pokemon/guard/dragon/back.4bpp.lz");
+    const u16 gMonPalette_GuardDragon[] = INCBIN_U16("graphics/pokemon/guard/dragon/normal.gbapal");
+    const u16 gMonShinyPalette_GuardDragon[] = INCBIN_U16("graphics/pokemon/guard/dragon/shiny.gbapal");
+    const u8 gMonIcon_GuardDragon[] = INCBIN_U8("graphics/pokemon/guard/dragon/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

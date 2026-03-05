@@ -85,17 +85,17 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_EMBIRD"
+                "species": "SPECIES_GUARD_ICE"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_FLAMER"
+                "species": "SPECIES_GUARD_FIRE"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_BOXIN"
+                "species": "SPECIES_GUARD"
               },
               {
                 "min_level": 3,

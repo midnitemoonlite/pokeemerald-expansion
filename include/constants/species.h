@@ -1789,7 +1789,27 @@
 #define SPECIES_EMBACONDA                               1668
 #define SPECIES_EMBIRD                                  1669
 #define SPECIES_HOT_WINGS                               1670
-#define SPECIES_BATAMON                                 1671
+#define SPECIES_GUARD                                   SPECIES_GUARD_SHIELDLESS
+#define SPECIES_GUARD_SHIELDLESS                        1671
+#define SPECIES_GUARD_NORMAL                            1672
+#define SPECIES_GUARD_FIRE                              1673
+#define SPECIES_GUARD_ICE                               1674
+#define SPECIES_GUARD_WATER                             1675
+#define SPECIES_GUARD_ELECTRIC                          1676
+#define SPECIES_GUARD_FLYING                            1677
+#define SPECIES_GUARD_PSYCHIC                           1678
+#define SPECIES_GUARD_ROCK                              1679
+#define SPECIES_GUARD_FIGHTING                          1680
+#define SPECIES_GUARD_FAIRY                             1681
+#define SPECIES_GUARD_GRASS                             1682
+#define SPECIES_GUARD_GROUND                            1683
+#define SPECIES_GUARD_POISON                            1684
+#define SPECIES_GUARD_STEEL                             1685
+#define SPECIES_GUARD_DARK                              1686
+#define SPECIES_GUARD_BUG                               1687
+#define SPECIES_GUARD_GHOST                             1688
+#define SPECIES_GUARD_DRAGON                            1689
+#define SPECIES_BATAMON                                 1690
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
