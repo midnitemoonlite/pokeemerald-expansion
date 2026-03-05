@@ -7243,7 +7243,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .iconPalIndex = 0,
         FOOTPRINT(Gator)
         .levelUpLearnset = sGatorLevelUpLearnset,
-        .teachableLearnset = sSandileTeachableLearnset,
+        .teachableLearnset = sMaschiffTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_GNAWCODILE, CONDITIONS({IF_KNOWS_MOVE, MOVE_JAW_LOCK})}),
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
@@ -7300,7 +7300,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .iconPalIndex = 0,
         FOOTPRINT(Gnawcodile)
         .levelUpLearnset = sGnawcodileLevelUpLearnset,
-        .teachableLearnset = sKrokorokTeachableLearnset,
+        .teachableLearnset = sMabosstiffTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,

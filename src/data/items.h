@@ -12925,8 +12925,11 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM51] =
     {
         .name = ITEM_NAME("TM51"),
-        .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .price = 2000,
+        .description = COMPOUND_STRING(
+            "Prevents the user\n"
+            "and the target\n"
+            "from escaping."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
