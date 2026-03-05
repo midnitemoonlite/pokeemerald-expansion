@@ -90,27 +90,27 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRANSFORMER"
+                "species": "SPECIES_GATOR"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_PHAN_PHAN"
+                "species": "SPECIES_GLUNK"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_KACTI"
+                "species": "SPECIES_SLIPPY"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_FOLEY"
+                "species": "SPECIES_CRABY"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_CAPPY"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_CAPSULE_J"
               },
               {
                 "min_level": 3,

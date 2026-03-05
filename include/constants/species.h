@@ -1819,7 +1819,17 @@
 #define SPECIES_KACTI                                   1697
 #define SPECIES_STACTUS                                 1698
 #define SPECIES_CRAZY_STACTUS                           1699
-#define SPECIES_BATAMON                                 1700
+#define SPECIES_GATOR                                   1700
+#define SPECIES_GNAWCODILE                              1701
+#define SPECIES_GLUNK                                   1702
+#define SPECIES_DEEPSEE                                 1703
+#define SPECIES_SLIPPY                                  1704
+#define SPECIES_SIR_SLIPPY                              1705
+#define SPECIES_CRABY                                   1706
+#define SPECIES_CAPSULE_J                               1707
+#define SPECIES_CAPSULE_J2                              1708
+#define SPECIES_CAPSULE_J3                              1709
+#define SPECIES_BATAMON                                 1710
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
