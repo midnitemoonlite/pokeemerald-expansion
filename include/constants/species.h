@@ -1809,7 +1809,17 @@
 #define SPECIES_GUARD_BUG                               1687
 #define SPECIES_GUARD_GHOST                             1688
 #define SPECIES_GUARD_DRAGON                            1689
-#define SPECIES_BATAMON                                 1690
+#define SPECIES_SOLITE                                  1690
+#define SPECIES_TRANSFORMER                             1691
+#define SPECIES_FOLEY                                   1692
+#define SPECIES_JUNGLE_BOMB                             1693
+#define SPECIES_COBGOBLIN                               1694
+#define SPECIES_PHAN_PHAN                               1695
+#define SPECIES_FRIDGY                                  1696
+#define SPECIES_KACTI                                   1697
+#define SPECIES_STACTUS                                 1698
+#define SPECIES_CRAZY_STACTUS                           1699
+#define SPECIES_BATAMON                                 1700
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

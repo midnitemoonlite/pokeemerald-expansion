@@ -83,29 +83,29 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_GUARD_ICE"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SOLITE"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_GUARD_FIRE"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_TRANSFORMER"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_GUARD"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_PHAN_PHAN"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_EMBA"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_KACTI"
               },
               {
-                "min_level": 35,
-                "max_level": 35,
-                "species": "SPECIES_BUN"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_FOLEY"
               },
               {
                 "min_level": 3,
