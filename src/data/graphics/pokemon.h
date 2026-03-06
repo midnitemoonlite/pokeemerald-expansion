@@ -28677,6 +28677,95 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_CapsuleJ3[] = INCBIN_U8("graphics/pokemon/capsulej3/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_LaserBall[] = INCBIN_U32("graphics/pokemon/laserball/front.4bpp.lz");
+    const u32 gMonBackPic_LaserBall[] = INCBIN_U32("graphics/pokemon/laserball/back.4bpp.lz");
+    const u16 gMonPalette_LaserBall[] = INCBIN_U16("graphics/pokemon/laserball/normal.gbapal");
+    const u16 gMonShinyPalette_LaserBall[] = INCBIN_U16("graphics/pokemon/laserball/shiny.gbapal");
+    const u8 gMonIcon_LaserBall[] = INCBIN_U8("graphics/pokemon/laserball/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_LaserBall[] = INCBIN_U8("graphics/pokemon/laserball/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_PlasmaWisp[] = INCBIN_U32("graphics/pokemon/plasmawisp/front.4bpp.lz");
+    const u32 gMonBackPic_PlasmaWisp[] = INCBIN_U32("graphics/pokemon/plasmawisp/back.4bpp.lz");
+    const u16 gMonPalette_PlasmaWisp[] = INCBIN_U16("graphics/pokemon/plasmawisp/normal.gbapal");
+    const u16 gMonShinyPalette_PlasmaWisp[] = INCBIN_U16("graphics/pokemon/plasmawisp/shiny.gbapal");
+    const u8 gMonIcon_PlasmaWisp[] = INCBIN_U8("graphics/pokemon/plasmawisp/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_PlasmaWisp[] = INCBIN_U8("graphics/pokemon/plasmawisp/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Sodory[] = INCBIN_U32("graphics/pokemon/sodory/front.4bpp.lz");
+    const u32 gMonBackPic_Sodory[] = INCBIN_U32("graphics/pokemon/sodory/back.4bpp.lz");
+    const u16 gMonPalette_Sodory[] = INCBIN_U16("graphics/pokemon/sodory/normal.gbapal");
+    const u16 gMonShinyPalette_Sodory[] = INCBIN_U16("graphics/pokemon/sodory/shiny.gbapal");
+    const u8 gMonIcon_Sodory[] = INCBIN_U8("graphics/pokemon/sodory/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Sodory[] = INCBIN_U8("graphics/pokemon/sodory/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Helmee[] = INCBIN_U32("graphics/pokemon/helmee/front.4bpp.lz");
+    const u32 gMonBackPic_Helmee[] = INCBIN_U32("graphics/pokemon/helmee/back.4bpp.lz");
+    const u16 gMonPalette_Helmee[] = INCBIN_U16("graphics/pokemon/helmee/normal.gbapal");
+    const u16 gMonShinyPalette_Helmee[] = INCBIN_U16("graphics/pokemon/helmee/shiny.gbapal");
+    const u8 gMonIcon_Helmee[] = INCBIN_U8("graphics/pokemon/helmee/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Helmee[] = INCBIN_U8("graphics/pokemon/helmee/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_GhostKnight[] = INCBIN_U32("graphics/pokemon/ghostknight/front.4bpp.lz");
+    const u32 gMonBackPic_GhostKnight[] = INCBIN_U32("graphics/pokemon/ghostknight/back.4bpp.lz");
+    const u16 gMonPalette_GhostKnight[] = INCBIN_U16("graphics/pokemon/ghostknight/normal.gbapal");
+    const u16 gMonShinyPalette_GhostKnight[] = INCBIN_U16("graphics/pokemon/ghostknight/shiny.gbapal");
+    const u8 gMonIcon_GhostKnight[] = INCBIN_U8("graphics/pokemon/ghostknight/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_GhostKnight[] = INCBIN_U8("graphics/pokemon/ghostknight/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_BangBang[] = INCBIN_U32("graphics/pokemon/bangbang/front.4bpp.lz");
+    const u32 gMonBackPic_BangBang[] = INCBIN_U32("graphics/pokemon/bangbang/back.4bpp.lz");
+    const u16 gMonPalette_BangBang[] = INCBIN_U16("graphics/pokemon/bangbang/normal.gbapal");
+    const u16 gMonShinyPalette_BangBang[] = INCBIN_U16("graphics/pokemon/bangbang/shiny.gbapal");
+    const u8 gMonIcon_BangBang[] = INCBIN_U8("graphics/pokemon/bangbang/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_BangBang[] = INCBIN_U8("graphics/pokemon/bangbang/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_BigMissile[] = INCBIN_U32("graphics/pokemon/bigmissile/front.4bpp.lz");
+    const u32 gMonBackPic_BigMissile[] = INCBIN_U32("graphics/pokemon/bigmissile/back.4bpp.lz");
+    const u16 gMonPalette_BigMissile[] = INCBIN_U16("graphics/pokemon/bigmissile/normal.gbapal");
+    const u16 gMonShinyPalette_BigMissile[] = INCBIN_U16("graphics/pokemon/bigmissile/shiny.gbapal");
+    const u8 gMonIcon_BigMissile[] = INCBIN_U8("graphics/pokemon/bigmissile/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_BigMissile[] = INCBIN_U8("graphics/pokemon/bigmissile/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_MiniMasher[] = INCBIN_U32("graphics/pokemon/minimasher/front.4bpp.lz");
+    const u32 gMonBackPic_MiniMasher[] = INCBIN_U32("graphics/pokemon/minimasher/back.4bpp.lz");
+    const u16 gMonPalette_MiniMasher[] = INCBIN_U16("graphics/pokemon/minimasher/normal.gbapal");
+    const u16 gMonShinyPalette_MiniMasher[] = INCBIN_U16("graphics/pokemon/minimasher/shiny.gbapal");
+    const u8 gMonIcon_MiniMasher[] = INCBIN_U8("graphics/pokemon/minimasher/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_MiniMasher[] = INCBIN_U8("graphics/pokemon/minimasher/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Masher[] = INCBIN_U32("graphics/pokemon/masher/front.4bpp.lz");
+    const u32 gMonBackPic_Masher[] = INCBIN_U32("graphics/pokemon/masher/back.4bpp.lz");
+    const u16 gMonPalette_Masher[] = INCBIN_U16("graphics/pokemon/masher/normal.gbapal");
+    const u16 gMonShinyPalette_Masher[] = INCBIN_U16("graphics/pokemon/masher/shiny.gbapal");
+    const u8 gMonIcon_Masher[] = INCBIN_U8("graphics/pokemon/masher/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Masher[] = INCBIN_U8("graphics/pokemon/masher/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_MegaMasher[] = INCBIN_U32("graphics/pokemon/megamasher/front.4bpp.lz");
+    const u32 gMonBackPic_MegaMasher[] = INCBIN_U32("graphics/pokemon/megamasher/back.4bpp.lz");
+    const u16 gMonPalette_MegaMasher[] = INCBIN_U16("graphics/pokemon/megamasher/normal.gbapal");
+    const u16 gMonShinyPalette_MegaMasher[] = INCBIN_U16("graphics/pokemon/megamasher/shiny.gbapal");
+    const u8 gMonIcon_MegaMasher[] = INCBIN_U8("graphics/pokemon/megamasher/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_MegaMasher[] = INCBIN_U8("graphics/pokemon/megamasher/footprint.1bpp");
+    #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");

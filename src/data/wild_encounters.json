@@ -85,22 +85,22 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SOLITE"
+                "species": "SPECIES_LASER_BALL"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_GATOR"
+                "species": "SPECIES_MINI_MASHER"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_GLUNK"
+                "species": "SPECIES_SODORY"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SLIPPY"
+                "species": "SPECIES_BANG_BANG"
               },
               {
                 "min_level": 20,

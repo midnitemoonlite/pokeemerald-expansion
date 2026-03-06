@@ -1829,7 +1829,17 @@
 #define SPECIES_CAPSULE_J                               1707
 #define SPECIES_CAPSULE_J2                              1708
 #define SPECIES_CAPSULE_J3                              1709
-#define SPECIES_BATAMON                                 1710
+#define SPECIES_LASER_BALL                              1710
+#define SPECIES_PLASMA_WISP                             1711
+#define SPECIES_SODORY                                  1712
+#define SPECIES_HELMEE                                  1713
+#define SPECIES_GHOST_KNIGHT                            1714
+#define SPECIES_BANG_BANG                               1715
+#define SPECIES_BIG_MISSILE                             1716
+#define SPECIES_MINI_MASHER                             1717
+#define SPECIES_MASHER                                  1718
+#define SPECIES_MEGA_MASHER                             1719
+#define SPECIES_BATAMON                                 1720
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
