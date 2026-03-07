@@ -5156,18 +5156,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DOUSE_DRIVE] =
     {
-        .name = ITEM_NAME("Douse Drive"),
+        .name = ITEM_NAME("Rex Engine"),
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
-            "Changes Genesect's\n"
-            "Techno Blast to\n"
-            "Water-type."),
+            "Changes Wheelie's\n"
+            "form when held to\n"
+            "Rex Wheelie."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_WATER,
+        .secondaryId = TYPE_DRAGON,
         .flingPower = 70,
         .iconPic = gItemIcon_Drive,
         .iconPalette = gItemIconPalette_DouseDrive,
@@ -5175,18 +5175,18 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SHOCK_DRIVE] =
     {
-        .name = ITEM_NAME("Shock Drive"),
+        .name = ITEM_NAME("Grand Engine"),
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
-            "Changes Genesect's\n"
-            "Techno Blast to\n"
-            "Electric-type."),
+            "Changes Wheelie's\n"
+            "form when held to\n"
+            "Grand Wheelie."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = TYPE_ELECTRIC,
+        .secondaryId = TYPE_STEEL,
         .flingPower = 70,
         .iconPic = gItemIcon_Drive,
         .iconPalette = gItemIconPalette_ShockDrive,
@@ -5194,13 +5194,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BURN_DRIVE] =
     {
-        .name = ITEM_NAME("Burn Drive"),
+        .name = ITEM_NAME("Blaze Engine"),
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
-            "Changes Genesect's\n"
-            "Techno Blast to\n"
-            "Fire-type."),
+            "Changes Wheelie's\n"
+            "form when held to\n"
+            "Blaze Wheelie."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
@@ -5213,13 +5213,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_CHILL_DRIVE] =
     {
-        .name = ITEM_NAME("Chill Drive"),
+        .name = ITEM_NAME("Scooter Engine"),
         .price = (I_PRICE >= GEN_7) ? 0 : 1000,
         .holdEffect = HOLD_EFFECT_DRIVE,
         .description = COMPOUND_STRING(
-            "Changes Genesect's\n"
-            "Techno Blast to\n"
-            "Ice-type."),
+            "Changes Wheelie's\n"
+            "form when held to\n"
+            "Wheelie Scooter."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,

@@ -28767,6 +28767,39 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_MegaMasher[] = INCBIN_U8("graphics/pokemon/megamasher/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_WheelieBike[] = INCBIN_U32("graphics/pokemon/wheelie/front.4bpp.lz");
+    const u32 gMonBackPic_WheelieBike[] = INCBIN_U32("graphics/pokemon/wheelie/back.4bpp.lz");
+    const u16 gMonPalette_WheelieBike[] = INCBIN_U16("graphics/pokemon/wheelie/normal.gbapal");
+    const u16 gMonShinyPalette_WheelieBike[] = INCBIN_U16("graphics/pokemon/wheelie/shiny.gbapal");
+    const u8 gMonIcon_WheelieBike[] = INCBIN_U8("graphics/pokemon/wheelie/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Wheelie[] = INCBIN_U8("graphics/pokemon/wheelie/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_WheelieRex[] = INCBIN_U32("graphics/pokemon/wheelie/rex/front.4bpp.lz");
+    const u32 gMonBackPic_WheelieRex[] = INCBIN_U32("graphics/pokemon/wheelie/rex/back.4bpp.lz");
+    const u16 gMonPalette_WheelieRex[] = INCBIN_U16("graphics/pokemon/wheelie/rex/normal.gbapal");
+    const u16 gMonShinyPalette_WheelieRex[] = INCBIN_U16("graphics/pokemon/wheelie/rex/shiny.gbapal");
+    const u8 gMonIcon_WheelieRex[] = INCBIN_U8("graphics/pokemon/wheelie/rex/icon.4bpp");
+
+    const u32 gMonFrontPic_WheelieScooter[] = INCBIN_U32("graphics/pokemon/wheelie/scooter/front.4bpp.lz");
+    const u32 gMonBackPic_WheelieScooter[] = INCBIN_U32("graphics/pokemon/wheelie/scooter/back.4bpp.lz");
+    const u16 gMonPalette_WheelieScooter[] = INCBIN_U16("graphics/pokemon/wheelie/scooter/normal.gbapal");
+    const u16 gMonShinyPalette_WheelieScooter[] = INCBIN_U16("graphics/pokemon/wheelie/scooter/shiny.gbapal");
+    const u8 gMonIcon_WheelieScooter[] = INCBIN_U8("graphics/pokemon/wheelie/scooter/icon.4bpp");
+
+    const u32 gMonFrontPic_WheelieGrand[] = INCBIN_U32("graphics/pokemon/wheelie/grand/front.4bpp.lz");
+    const u32 gMonBackPic_WheelieGrand[] = INCBIN_U32("graphics/pokemon/wheelie/grand/back.4bpp.lz");
+    const u16 gMonPalette_WheelieGrand[] = INCBIN_U16("graphics/pokemon/wheelie/grand/normal.gbapal");
+    const u16 gMonShinyPalette_WheelieGrand[] = INCBIN_U16("graphics/pokemon/wheelie/grand/shiny.gbapal");
+    const u8 gMonIcon_WheelieGrand[] = INCBIN_U8("graphics/pokemon/wheelie/grand/icon.4bpp");
+
+    const u32 gMonFrontPic_WheelieBlaze[] = INCBIN_U32("graphics/pokemon/wheelie/blaze/front.4bpp.lz");
+    const u32 gMonBackPic_WheelieBlaze[] = INCBIN_U32("graphics/pokemon/wheelie/blaze/back.4bpp.lz");
+    const u16 gMonPalette_WheelieBlaze[] = INCBIN_U16("graphics/pokemon/wheelie/blaze/normal.gbapal");
+    const u16 gMonShinyPalette_WheelieBlaze[] = INCBIN_U16("graphics/pokemon/wheelie/blaze/shiny.gbapal");
+    const u8 gMonIcon_WheelieBlaze[] = INCBIN_U8("graphics/pokemon/wheelie/blaze/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

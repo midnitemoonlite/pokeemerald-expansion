@@ -85,12 +85,12 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_LASER_BALL"
+                "species": "SPECIES_WHEELIE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_MINI_MASHER"
+                "species": "SPECIES_WHEELIE"
               },
               {
                 "min_level": 20,

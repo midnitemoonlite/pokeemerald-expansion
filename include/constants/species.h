@@ -1839,7 +1839,13 @@
 #define SPECIES_MINI_MASHER                             1717
 #define SPECIES_MASHER                                  1718
 #define SPECIES_MEGA_MASHER                             1719
-#define SPECIES_BATAMON                                 1720
+#define SPECIES_WHEELIE                                 SPECIES_WHEELIE_BIKE
+#define SPECIES_WHEELIE_BIKE                            1720
+#define SPECIES_WHEELIE_REX                             1721
+#define SPECIES_WHEELIE_SCOOTER                         1722
+#define SPECIES_WHEELIE_GRAND                           1723
+#define SPECIES_WHEELIE_BLAZE                           1724
+#define SPECIES_BATAMON                                 1725
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

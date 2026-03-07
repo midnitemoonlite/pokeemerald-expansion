@@ -2610,3 +2610,12 @@ static const u16 sGuardFormSpeciesIdTable[] = {
     SPECIES_GUARD_DRAGON,
     FORM_SPECIES_END,
 };
+
+static const u16 sWheelieFormSpeciesIdTable[] = {
+    SPECIES_WHEELIE_BIKE,
+    SPECIES_WHEELIE_REX,
+    SPECIES_WHEELIE_SCOOTER,
+    SPECIES_WHEELIE_GRAND,
+    SPECIES_WHEELIE_BLAZE,
+    FORM_SPECIES_END,
+};
