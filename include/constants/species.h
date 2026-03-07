@@ -1845,7 +1845,12 @@
 #define SPECIES_WHEELIE_SCOOTER                         1722
 #define SPECIES_WHEELIE_GRAND                           1723
 #define SPECIES_WHEELIE_BLAZE                           1724
-#define SPECIES_BATAMON                                 1725
+#define SPECIES_DIGGUH                                  1725
+#define SPECIES_MOGMOLE                                 1726
+#define SPECIES_MOLEY                                   1727
+#define SPECIES_MOLEY_MR                                1728
+#define SPECIES_MOLEY_MRS                               1729
+#define SPECIES_BATAMON                                 1730
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

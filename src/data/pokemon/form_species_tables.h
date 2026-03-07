@@ -2619,3 +2619,9 @@ static const u16 sWheelieFormSpeciesIdTable[] = {
     SPECIES_WHEELIE_BLAZE,
     FORM_SPECIES_END,
 };
+
+static const u16 sMoleyFormSpeciesIdTable[] = {
+    SPECIES_MOLEY_MR,
+    SPECIES_MOLEY_MRS,
+    FORM_SPECIES_END,
+};

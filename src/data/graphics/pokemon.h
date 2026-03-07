@@ -28800,6 +28800,39 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_WheelieBlaze[] = INCBIN_U16("graphics/pokemon/wheelie/blaze/shiny.gbapal");
     const u8 gMonIcon_WheelieBlaze[] = INCBIN_U8("graphics/pokemon/wheelie/blaze/icon.4bpp");
 
+    const u32 gMonFrontPic_Digguh[] = INCBIN_U32("graphics/pokemon/digguh/front.4bpp.lz");
+    const u32 gMonBackPic_Digguh[] = INCBIN_U32("graphics/pokemon/digguh/back.4bpp.lz");
+    const u16 gMonPalette_Digguh[] = INCBIN_U16("graphics/pokemon/digguh/normal.gbapal");
+    const u16 gMonShinyPalette_Digguh[] = INCBIN_U16("graphics/pokemon/digguh/shiny.gbapal");
+    const u8 gMonIcon_Digguh[] = INCBIN_U8("graphics/pokemon/digguh/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Digguh[] = INCBIN_U8("graphics/pokemon/digguh/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Mogmole[] = INCBIN_U32("graphics/pokemon/mogmole/front.4bpp.lz");
+    const u32 gMonBackPic_Mogmole[] = INCBIN_U32("graphics/pokemon/mogmole/back.4bpp.lz");
+    const u16 gMonPalette_Mogmole[] = INCBIN_U16("graphics/pokemon/mogmole/normal.gbapal");
+    const u16 gMonShinyPalette_Mogmole[] = INCBIN_U16("graphics/pokemon/mogmole/shiny.gbapal");
+    const u8 gMonIcon_Mogmole[] = INCBIN_U8("graphics/pokemon/mogmole/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Mogmole[] = INCBIN_U8("graphics/pokemon/mogmole/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Moley[] = INCBIN_U32("graphics/pokemon/moley/front.4bpp.lz");
+    const u32 gMonBackPic_Moley[] = INCBIN_U32("graphics/pokemon/moley/back.4bpp.lz");
+    const u16 gMonPalette_Moley[] = INCBIN_U16("graphics/pokemon/moley/normal.gbapal");
+    const u16 gMonShinyPalette_Moley[] = INCBIN_U16("graphics/pokemon/moley/shiny.gbapal");
+    const u8 gMonIcon_Moley[] = INCBIN_U8("graphics/pokemon/moley/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Moley[] = INCBIN_U8("graphics/pokemon/moley/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_MrsMoley[] = INCBIN_U32("graphics/pokemon/moley/mrs/front.4bpp.lz");
+    const u32 gMonBackPic_MrsMoley[] = INCBIN_U32("graphics/pokemon/moley/mrs/back.4bpp.lz");
+    const u16 gMonPalette_MrsMoley[] = INCBIN_U16("graphics/pokemon/moley/mrs/normal.gbapal");
+    const u16 gMonShinyPalette_MrsMoley[] = INCBIN_U16("graphics/pokemon/moley/mrs/shiny.gbapal");
+    const u8 gMonIcon_MrsMoley[] = INCBIN_U8("graphics/pokemon/moley/mrs/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");
