@@ -1847,10 +1847,22 @@
 #define SPECIES_WHEELIE_BLAZE                           1724
 #define SPECIES_DIGGUH                                  1725
 #define SPECIES_MOGMOLE                                 1726
-#define SPECIES_MOLEY                                   1727
-#define SPECIES_MOLEY_MR                                1728
-#define SPECIES_MOLEY_MRS                               1729
-#define SPECIES_BATAMON                                 1730
+#define SPECIES_MOLEY                                   SPECIES_MOLEY_MR
+#define SPECIES_MOLEY_MR                                1727
+#define SPECIES_MOLEY_MRS                               1728
+#define SPECIES_KAPAR                                   1729
+#define SPECIES_KNUCKLE_JOE                             1730
+#define SPECIES_SANDRAN                                 1731
+#define SPECIES_WALF                                    1732
+#define SPECIES_CAWCUN                                  1733
+#define SPECIES_FLEURINA                                1734
+#define SPECIES_ACRO                                    1735
+#define SPECIES_FATTY_WHALE                             1736
+#define SPECIES_MOOKIE                                  1737
+#define SPECIES_BONKERS                                 1738
+#define SPECIES_WILD_BONKERS                            1739
+#define SPECIES_SPARK_BONKERS                           1740
+#define SPECIES_BATAMON                                 1741
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

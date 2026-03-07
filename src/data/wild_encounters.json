@@ -85,37 +85,37 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_DIGGUH"
+                "species": "SPECIES_MOOKIE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_WHEELIE"
+                "species": "SPECIES_ACRO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SODORY"
+                "species": "SPECIES_KNUCKLE_JOE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BANG_BANG"
+                "species": "SPECIES_CAWCUN"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CRABY"
+                "species": "SPECIES_SANDRAN"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CAPSULE_J"
+                "species": "SPECIES_WALF"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_GAW_GAW"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_KAPAR"
               },
               {
                 "min_level": 3,

@@ -1584,13 +1584,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_BATTLE_BOND] =
     {
         .name = _("Battle Bond"),
-        .description = COMPOUND_STRING("Changes form after a KO."),
+        .description = COMPOUND_STRING("Increases stats after a KO."),
         .aiRating = 6,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
-        .cantBeSuppressed = TRUE,
-        .cantBeOverwritten = TRUE,
     },
 
     [ABILITY_POWER_CONSTRUCT] =

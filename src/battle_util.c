@@ -4550,7 +4550,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                  || NumFaintedBattlersByAttacker(battler) == 0)
                     break;
 
-                if (GetBattlerPartyState(battler)->battleBondBoost || gBattleMons[battler].species != SPECIES_GRENINJA_BATTLE_BOND)
+                if (GetBattlerPartyState(battler)->battleBondBoost)
                     break;
 
                 if (GetConfig(B_BATTLE_BOND) < GEN_9)
