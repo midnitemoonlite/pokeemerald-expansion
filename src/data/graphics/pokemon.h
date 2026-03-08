@@ -28085,15 +28085,6 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Buttonfly[] = INCBIN_U8("graphics/pokemon/buttonfly/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Buttonbee[] = INCBIN_U32("graphics/pokemon/buttonbee/front.4bpp.lz");
-    const u32 gMonBackPic_Buttonbee[] = INCBIN_U32("graphics/pokemon/buttonbee/back.4bpp.lz");
-    const u16 gMonPalette_Buttonbee[] = INCBIN_U16("graphics/pokemon/buttonbee/normal.gbapal");
-    const u16 gMonShinyPalette_Buttonbee[] = INCBIN_U16("graphics/pokemon/buttonbee/shiny.gbapal");
-    const u8 gMonIcon_Buttonbee[] = INCBIN_U8("graphics/pokemon/buttonbee/icon.4bpp");
-    #if P_FOOTPRINTS
-    const u8 gMonFootprint_Buttonbee[] = INCBIN_U8("graphics/pokemon/buttonbee/footprint.1bpp");
-    #endif //P_FOOTPRINTS
-
     const u32 gMonFrontPic_Orbitfly[] = INCBIN_U32("graphics/pokemon/orbitfly/front.4bpp.lz");
     const u32 gMonBackPic_Orbitfly[] = INCBIN_U32("graphics/pokemon/orbitfly/back.4bpp.lz");
     const u16 gMonPalette_Orbitfly[] = INCBIN_U16("graphics/pokemon/orbitfly/normal.gbapal");

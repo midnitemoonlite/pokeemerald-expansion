@@ -3615,10 +3615,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "This family of bugs comes in a\n"
-            "variety of colors. Buttonflies are\n"
-            "green and relatively harmless, but\n"
-            "they have big aspirations."),
+            "Buttonfly and its relatives come in a\n"
+            "variety of colors. Their dream is\n"
+            "to be able to fly higher into the sky\n"
+            "than any other helper."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3639,64 +3639,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         FOOTPRINT(Buttonfly)
         .levelUpLearnset = sButtonflyLevelUpLearnset,
         .teachableLearnset = sCutieflyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_BUTTONBEE}),
-        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
-        //.formChangeTable = sNoneFormChangeTable,
-        //.perfectIVCount = NUM_STATS,
-    },
-
-    [SPECIES_BUTTONBEE] =
-    {
-        .baseHP        = 41,
-        .baseAttack    = 70,
-        .baseDefense   = 40,
-        .baseSpeed     = 84,
-        .baseSpAttack  = 51,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
-        .catchRate = 190,
-        .expYield = 128,
-        .evYield_Attack = 1,
-        .evYield_Speed = 1,
-        .genderRatio = PERCENT_FEMALE(50.0),
-        .eggCycles = 15,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_SHIELD_DUST, ABILITY_RATTLED},
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Buttonbee"),
-        .cryId = CRY_RIBOMBEE,
-        .natDexNum = NATIONAL_DEX_BUTTONBEE,
-        .categoryName = _("Stinger"),
-        .height = 6, //temp
-        .weight = 16, //temp
-        .description = COMPOUND_STRING(
-            "Compared to Buttonflies, Buttonbees\n"
-            "are yellow and come with a sharp\n"
-            "stinger. They fend off obstacles on\n"
-            "their journey to fly ever higher."),
-        .pokemonScale = 256,
-        .pokemonOffset = 0,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Buttonbee,
-        .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
-        .backPic = gMonBackPic_Buttonbee,
-        .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Buttonbee,
-        .shinyPalette = gMonShinyPalette_Buttonbee,
-        .iconSprite = gMonIcon_Ribombee,
-        .iconPalIndex = 0,
-        FOOTPRINT(Buttonbee)
-        .levelUpLearnset = sButtonbeeLevelUpLearnset,
-        .teachableLearnset = sRibombeeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_ORBITFLY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_ORBITFLY}),
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
@@ -3711,10 +3654,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseSpAttack  = 87,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
-        .catchRate = 75,
+        .catchRate = 120,
         .expYield = 128,
         .evYield_Attack = 1,
-        .evYield_Speed = 2,
+        .evYield_Speed = 1,
         .genderRatio = PERCENT_FEMALE(50.0),
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
@@ -3729,10 +3672,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "At long last, the Buttonfly's\n"
-            "dream of flying past the sky has\n"
-            "been achieved. Orbitflies travel\n"
-            "in swarms through outer space."),
+            "At last, the Buttonfly's dream is\n"
+            "achieved; Orbitflies travel in\n"
+            "swarms through outer space, deftly\n"
+            "weaving past planets and stars."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
