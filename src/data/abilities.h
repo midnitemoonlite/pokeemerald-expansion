@@ -1475,7 +1475,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SHIELDS_DOWN] =
     {
         .name = _("Shields Down"),
-        .description = COMPOUND_STRING("Shell breaks at half HP."),
+        .description = COMPOUND_STRING("Armor breaks at half HP."),
         .aiRating = 6,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -1823,7 +1823,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_GULP_MISSILE] =
     {
         .name = _("Gulp Missile"),
-        .description = COMPOUND_STRING("If hit, spits caught prey."),
+        .description = COMPOUND_STRING("If hit, spits caught food."),
         .aiRating = 3,
         .cantBeCopied = B_UPDATED_MOVE_FLAGS <= GEN_8,
         .cantBeSwapped = B_UPDATED_MOVE_FLAGS <= GEN_8,

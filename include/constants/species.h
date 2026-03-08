@@ -1881,7 +1881,11 @@
 #define SPECIES_SNOOTER_ANGRY                           1755
 #define SPECIES_SNOOTER_GULPING                         1756
 #define SPECIES_SNOOTER_GORGING                         1757
-#define SPECIES_BATAMON                                 1758
+#define SPECIES_IRON_MAM                                1758
+#define SPECIES_GRAND_MAM                               SPECIES_GRAND_MAM_ARMORED
+#define SPECIES_GRAND_MAM_ARMORED                       1759
+#define SPECIES_GRAND_MAM_UNARMORED                     1760
+#define SPECIES_BATAMON                                 1761
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

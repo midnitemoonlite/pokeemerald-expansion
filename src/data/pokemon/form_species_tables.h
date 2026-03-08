@@ -2639,3 +2639,9 @@ static const u16 sSnooterFormSpeciesIdTable[] = {
     SPECIES_SNOOTER_GORGING,
     FORM_SPECIES_END,
 };
+
+static const u16 sGrandMamFormSpeciesIdTable[] = {
+    SPECIES_GRAND_MAM_ARMORED,
+    SPECIES_GRAND_MAM_UNARMORED,
+    FORM_SPECIES_END,
+};

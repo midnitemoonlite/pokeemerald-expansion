@@ -29082,6 +29082,30 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_SnooterGorging[] = INCBIN_U16("graphics/pokemon/snooter/gorging/shiny.gbapal");
     const u8 gMonIcon_SnooterGorging[] = INCBIN_U8("graphics/pokemon/snooter/gorging/icon.4bpp");
 
+    const u32 gMonFrontPic_IronMam[] = INCBIN_U32("graphics/pokemon/ironmam/front.4bpp.lz");
+    const u32 gMonBackPic_IronMam[] = INCBIN_U32("graphics/pokemon/ironmam/back.4bpp.lz");
+    const u16 gMonPalette_IronMam[] = INCBIN_U16("graphics/pokemon/ironmam/normal.gbapal");
+    const u16 gMonShinyPalette_IronMam[] = INCBIN_U16("graphics/pokemon/ironmam/shiny.gbapal");
+    const u8 gMonIcon_IronMam[] = INCBIN_U8("graphics/pokemon/ironmam/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_IronMam[] = INCBIN_U8("graphics/pokemon/ironmam/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_GrandMamArmored[] = INCBIN_U32("graphics/pokemon/grandmam/front.4bpp.lz");
+    const u32 gMonBackPic_GrandMamArmored[] = INCBIN_U32("graphics/pokemon/grandmam/back.4bpp.lz");
+    const u16 gMonPalette_GrandMamArmored[] = INCBIN_U16("graphics/pokemon/grandmam/normal.gbapal");
+    const u16 gMonShinyPalette_GrandMamArmored[] = INCBIN_U16("graphics/pokemon/grandmam/shiny.gbapal");
+    const u8 gMonIcon_GrandMamArmored[] = INCBIN_U8("graphics/pokemon/grandmam/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_GrandMamArmored[] = INCBIN_U8("graphics/pokemon/grandmam/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_GrandMamUnarmored[] = INCBIN_U32("graphics/pokemon/grandmam/unarmored/front.4bpp.lz");
+    const u32 gMonBackPic_GrandMamUnarmored[] = INCBIN_U32("graphics/pokemon/grandmam/unarmored/back.4bpp.lz");
+    const u16 gMonPalette_GrandMamUnarmored[] = INCBIN_U16("graphics/pokemon/grandmam/unarmored/normal.gbapal");
+    const u16 gMonShinyPalette_GrandMamUnarmored[] = INCBIN_U16("graphics/pokemon/grandmam/unarmored/shiny.gbapal");
+    const u8 gMonIcon_GrandMamUnarmored[] = INCBIN_U8("graphics/pokemon/grandmam/unarmored/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");
