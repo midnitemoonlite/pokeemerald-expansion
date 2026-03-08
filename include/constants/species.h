@@ -1862,7 +1862,19 @@
 #define SPECIES_BONKERS                                 1738
 #define SPECIES_WILD_BONKERS                            1739
 #define SPECIES_SPARK_BONKERS                           1740
-#define SPECIES_BATAMON                                 1741
+#define SPECIES_WHIPPY                                  1741
+#define SPECIES_FIRE_LION                               1742
+#define SPECIES_WALKY                                   1743
+#define SPECIES_TICK_TOCK_JR                            1744
+#define SPECIES_MR_TICK_TOCK                            1745
+#define SPECIES_COOKIN                                  1746
+#define SPECIES_CHEF_KAWASAKI                           1747
+#define SPECIES_MOONJA                                  1748
+#define SPECIES_BIO_SPARK                               1749
+#define SPECIES_WAIU                                    1750
+#define SPECIES_BOMBER                                  1751
+#define SPECIES_BALLOON_BOMBER                          1752
+#define SPECIES_BATAMON                                 1753
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
