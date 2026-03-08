@@ -6076,6 +6076,30 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
     {
         return TYPE_DARK;
     }
+    else if (moveEffect == EFFECT_AURA_WHEEL
+          && species == SPECIES_WHEELIE_REX
+          && ability != ABILITY_NORMALIZE)
+    {
+        return TYPE_DRAGON;
+    }
+    else if (moveEffect == EFFECT_AURA_WHEEL
+          && species == SPECIES_WHEELIE_SCOOTER
+          && ability != ABILITY_NORMALIZE)
+    {
+        return TYPE_ICE;
+    }
+    else if (moveEffect == EFFECT_AURA_WHEEL
+          && species == SPECIES_WHEELIE_GRAND
+          && ability != ABILITY_NORMALIZE)
+    {
+        return TYPE_STEEL;
+    }
+    else if (moveEffect == EFFECT_AURA_WHEEL
+          && species == SPECIES_WHEELIE_BLAZE
+          && ability != ABILITY_NORMALIZE)
+    {
+        return TYPE_FIRE;
+    }
     else if (moveType == TYPE_NORMAL
           && ability != ABILITY_NORMALIZE
           && gimmick != GIMMICK_DYNAMAX

@@ -20829,7 +20829,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_BLAZING_TORQUE] =
     {
         .name = COMPOUND_STRING("Blazing Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Acceleration attack that may\n"
+            "burn the target."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_FIRE,
@@ -20858,7 +20860,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_WICKED_TORQUE] =
     {
         .name = COMPOUND_STRING("Wicked Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Acceleration attack that may\n"
+            "put the target to sleep."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_DARK,
@@ -20887,7 +20891,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_NOXIOUS_TORQUE] =
     {
         .name = COMPOUND_STRING("Noxious Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Acceleration attack that may\n"
+            "poison the target."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_POISON,
@@ -20916,7 +20922,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_COMBAT_TORQUE] =
     {
         .name = COMPOUND_STRING("Combat Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Acceleration attack that may\n"
+            "paralyze the target."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FIGHTING,
@@ -20945,7 +20953,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_MAGICAL_TORQUE] =
     {
         .name = COMPOUND_STRING("Magical Torque"),
-        .description = COMPOUND_STRING("---"),
+        .description = COMPOUND_STRING(
+            "Acceleration attack that may\n"
+            "confuse the target."),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FAIRY,

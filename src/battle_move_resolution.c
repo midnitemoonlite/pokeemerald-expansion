@@ -1107,7 +1107,13 @@ static enum CancelerResult CancelerMoveFailure(struct BattleContext *ctx)
         break;
     case EFFECT_AURA_WHEEL:
         if (gBattleMons[ctx->battlerAtk].species != SPECIES_MORPEKO_FULL_BELLY
-         && gBattleMons[ctx->battlerAtk].species != SPECIES_MORPEKO_HANGRY)
+         && gBattleMons[ctx->battlerAtk].species != SPECIES_MORPEKO_HANGRY
+         && gBattleMons[ctx->battlerAtk].species != SPECIES_WHEELIE_BIKE
+         && gBattleMons[ctx->battlerAtk].species != SPECIES_WHEELIE_REX
+         && gBattleMons[ctx->battlerAtk].species != SPECIES_WHEELIE_SCOOTER
+         && gBattleMons[ctx->battlerAtk].species != SPECIES_WHEELIE_GRAND
+         && gBattleMons[ctx->battlerAtk].species != SPECIES_WHEELIE_BLAZE
+        )
             battleScript = BattleScript_PokemonCantUseTheMove;
         break;
     case EFFECT_AURORA_VEIL:
