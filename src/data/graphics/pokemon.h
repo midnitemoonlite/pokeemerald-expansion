@@ -29040,6 +29040,21 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_BalloonBomber[] = INCBIN_U8("graphics/pokemon/balloonbomber/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_ScarfyNormal[] = INCBIN_U32("graphics/pokemon/scarfy/front.4bpp.lz");
+    const u32 gMonBackPic_ScarfyNormal[] = INCBIN_U32("graphics/pokemon/scarfy/back.4bpp.lz");
+    const u16 gMonPalette_ScarfyNormal[] = INCBIN_U16("graphics/pokemon/scarfy/normal.gbapal");
+    const u16 gMonShinyPalette_ScarfyNormal[] = INCBIN_U16("graphics/pokemon/scarfy/shiny.gbapal");
+    const u8 gMonIcon_ScarfyNormal[] = INCBIN_U8("graphics/pokemon/scarfy/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Scarfy[] = INCBIN_U8("graphics/pokemon/scarfy/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_ScarfyAngry[] = INCBIN_U32("graphics/pokemon/scarfy/angry/front.4bpp.lz");
+    const u32 gMonBackPic_ScarfyAngry[] = INCBIN_U32("graphics/pokemon/scarfy/angry/back.4bpp.lz");
+    const u16 gMonPalette_ScarfyAngry[] = INCBIN_U16("graphics/pokemon/scarfy/angry/normal.gbapal");
+    const u16 gMonShinyPalette_ScarfyAngry[] = INCBIN_U16("graphics/pokemon/scarfy/angry/shiny.gbapal");
+    const u8 gMonIcon_ScarfyAngry[] = INCBIN_U8("graphics/pokemon/scarfy/angry/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

@@ -2625,3 +2625,9 @@ static const u16 sMoleyFormSpeciesIdTable[] = {
     SPECIES_MOLEY_MRS,
     FORM_SPECIES_END,
 };
+
+static const u16 sScarfyFormSpeciesIdTable[] = {
+    SPECIES_SCARFY_NORMAL,
+    SPECIES_SCARFY_ANGRY,
+    FORM_SPECIES_END,
+};

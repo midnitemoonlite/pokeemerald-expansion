@@ -10107,6 +10107,120 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         //.perfectIVCount = NUM_STATS,
     },
 
+    [SPECIES_SCARFY_NORMAL] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 105,
+        .baseDefense   = 65,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_DARK),
+        .catchRate = 90,
+        .expYield = 159,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MONSTER),
+        .abilities = { ABILITY_BERSERK, ABILITY_NONE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Scarfy"),
+        .cryId = CRY_SKITTY,
+        .natDexNum = NATIONAL_DEX_SCARFY,
+        .categoryName = _("Deceptive"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Scarfy may look cute and innocent, but\n"
+            "it has an explosive temper. If you make\n"
+            "it mad, it'll transform into a frightening\n"
+            "beast and begin chasing you down!"),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ScarfyNormal,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FIGURE_8,
+        .backPic = gMonBackPic_ScarfyNormal,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_ScarfyNormal,
+        .shinyPalette = gMonShinyPalette_ScarfyNormal,
+        .iconSprite = gMonIcon_MorpekoFullBelly,
+        .iconPalIndex = 0,
+        FOOTPRINT(Scarfy)
+        .levelUpLearnset = sScarfyLevelUpLearnset,
+        .teachableLearnset = sGrimmsnarlTeachableLearnset,
+        .formSpeciesIdTable = sScarfyFormSpeciesIdTable,
+        .formChangeTable = sScarfyFormChangeTable,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_SCARFY_ANGRY] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 140,
+        .baseDefense   = 65,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_DARK),
+        .catchRate = 90,
+        .expYield = 159,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50.0),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MONSTER),
+        .abilities = { ABILITY_BERSERK, ABILITY_NONE, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Scarfy"),
+        .cryId = CRY_SKITTY,
+        .natDexNum = NATIONAL_DEX_SCARFY,
+        .categoryName = _("Deceptive"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Scarfy may look cute and innocent, but\n"
+            "it has an explosive temper. If you make\n"
+            "it mad, it'll transform into a frightening\n"
+            "beast and begin chasing you down!"),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ScarfyAngry,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FIGURE_8,
+        .backPic = gMonBackPic_ScarfyAngry,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_ScarfyAngry,
+        .shinyPalette = gMonShinyPalette_ScarfyAngry,
+        .iconSprite = gMonIcon_MorpekoHangry,
+        .iconPalIndex = 0,
+        FOOTPRINT(Scarfy)
+        .levelUpLearnset = sScarfyLevelUpLearnset,
+        .teachableLearnset = sGrimmsnarlTeachableLearnset,
+        .formSpeciesIdTable = sScarfyFormSpeciesIdTable,
+        .formChangeTable = sScarfyFormChangeTable,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
      [SPECIES_BATAMON] =
     {
         .baseHP        = 86,

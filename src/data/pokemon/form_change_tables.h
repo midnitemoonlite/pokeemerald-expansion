@@ -2249,5 +2249,14 @@ static const struct FormChange sWheelieFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 
+static const struct FormChange sScarfyFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_HP_PERCENT_TURN_END,    SPECIES_SCARFY_ANGRY,   ABILITY_BERSERK,        HP_LOWER_EQ_THAN, 50},
+    {FORM_CHANGE_BATTLE_SWITCH_OUT,             SPECIES_SCARFY_NORMAL},
+    {FORM_CHANGE_FAINT,                         SPECIES_SCARFY_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_SCARFY_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

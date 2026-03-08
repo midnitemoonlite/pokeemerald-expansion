@@ -85,12 +85,12 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BUTTONFLY"
+                "species": "SPECIES_SCARFY"
               },
               {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_BUTTONFLY"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_FRIDGY"
               },
               {
                 "min_level": 20,

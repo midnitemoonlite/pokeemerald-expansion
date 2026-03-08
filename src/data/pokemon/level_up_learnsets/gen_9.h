@@ -25350,6 +25350,26 @@ static const struct LevelUpMove sBalloonBomberLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sScarfyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PLAY_NICE),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 7, MOVE_DISARMING_VOICE),
+    LEVEL_UP_MOVE( 7, MOVE_RAGE),
+    LEVEL_UP_MOVE( 15, MOVE_CHARM),
+    LEVEL_UP_MOVE( 15, MOVE_PURSUIT),
+    LEVEL_UP_MOVE( 23, MOVE_ASSIST),
+    LEVEL_UP_MOVE( 23, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE( 31, MOVE_NUZZLE),
+    LEVEL_UP_MOVE( 31, MOVE_SPIRIT_BREAK),
+    LEVEL_UP_MOVE( 38, MOVE_GUARD_SWAP),
+    LEVEL_UP_MOVE( 38, MOVE_CRUNCH),
+    LEVEL_UP_MOVE( 46, MOVE_POWER_SWAP),
+    LEVEL_UP_MOVE( 46, MOVE_MIND_BLOWN),
+    LEVEL_UP_MOVE( 53, MOVE_PLAY_ROUGH),
+    LEVEL_UP_MOVE( 53, MOVE_SELF_DESTRUCT),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sBatamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_END

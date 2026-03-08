@@ -1873,7 +1873,10 @@
 #define SPECIES_WAIU                                    1749
 #define SPECIES_BOMBER                                  1750
 #define SPECIES_BALLOON_BOMBER                          1751
-#define SPECIES_BATAMON                                 1752
+#define SPECIES_SCARFY                                  SPECIES_SCARFY_NORMAL
+#define SPECIES_SCARFY_NORMAL                           1752
+#define SPECIES_SCARFY_ANGRY                            1753
+#define SPECIES_BATAMON                                 1754
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
