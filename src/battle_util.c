@@ -4407,6 +4407,12 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             case SPECIES_CRAMORANT_GULPING:
                 BattleScriptCall(BattleScript_GulpMissileGulping);
                 break;
+            case SPECIES_SNOOTER_GORGING:
+                BattleScriptCall(BattleScript_GulpMissileGorging);
+                break;
+            case SPECIES_SNOOTER_GULPING:
+                BattleScriptCall(BattleScript_GulpMissileGulping);
+                break;
             default:
                 BattleScriptCall(BattleScript_BattlerFormChange); // Fallback
                 break;

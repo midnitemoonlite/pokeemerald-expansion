@@ -1876,7 +1876,12 @@
 #define SPECIES_SCARFY                                  SPECIES_SCARFY_NORMAL
 #define SPECIES_SCARFY_NORMAL                           1752
 #define SPECIES_SCARFY_ANGRY                            1753
-#define SPECIES_BATAMON                                 1754
+#define SPECIES_SNOOTER                                 SPECIES_SNOOTER_NORMAL
+#define SPECIES_SNOOTER_NORMAL                          1754
+#define SPECIES_SNOOTER_ANGRY                           1755
+#define SPECIES_SNOOTER_GULPING                         1756
+#define SPECIES_SNOOTER_GORGING                         1757
+#define SPECIES_BATAMON                                 1758
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

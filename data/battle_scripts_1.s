@@ -4849,7 +4849,7 @@ BattleScript_GulpMissileGorging::
 	tryfaintmon BS_ATTACKER
 	jumpiffainted BS_ATTACKER, TRUE, BattleScript_GulpMissileNoSecondEffectGorging
 BattleScript_GulpMissileNoDmgGorging:
-	seteffectprimary BS_TARGET, BS_ATTACKER, MOVE_EFFECT_PARALYSIS
+	seteffectprimary BS_TARGET, BS_ATTACKER, MOVE_EFFECT_CONFUSION
 BattleScript_GulpMissileNoSecondEffectGorging:
 	return
 

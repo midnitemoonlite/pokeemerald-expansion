@@ -29055,6 +29055,33 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_ScarfyAngry[] = INCBIN_U16("graphics/pokemon/scarfy/angry/shiny.gbapal");
     const u8 gMonIcon_ScarfyAngry[] = INCBIN_U8("graphics/pokemon/scarfy/angry/icon.4bpp");
 
+    const u32 gMonFrontPic_SnooterNormal[] = INCBIN_U32("graphics/pokemon/snooter/front.4bpp.lz");
+    const u32 gMonBackPic_SnooterNormal[] = INCBIN_U32("graphics/pokemon/snooter/back.4bpp.lz");
+    const u16 gMonPalette_SnooterNormal[] = INCBIN_U16("graphics/pokemon/snooter/normal.gbapal");
+    const u16 gMonShinyPalette_SnooterNormal[] = INCBIN_U16("graphics/pokemon/snooter/shiny.gbapal");
+    const u8 gMonIcon_SnooterNormal[] = INCBIN_U8("graphics/pokemon/snooter/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Snooter[] = INCBIN_U8("graphics/pokemon/snooter/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_SnooterAngry[] = INCBIN_U32("graphics/pokemon/snooter/angry/front.4bpp.lz");
+    const u32 gMonBackPic_SnooterAngry[] = INCBIN_U32("graphics/pokemon/snooter/angry/back.4bpp.lz");
+    const u16 gMonPalette_SnooterAngry[] = INCBIN_U16("graphics/pokemon/snooter/angry/normal.gbapal");
+    const u16 gMonShinyPalette_SnooterAngry[] = INCBIN_U16("graphics/pokemon/snooter/angry/shiny.gbapal");
+    const u8 gMonIcon_SnooterAngry[] = INCBIN_U8("graphics/pokemon/snooter/angry/icon.4bpp");
+
+    const u32 gMonFrontPic_SnooterGulping[] = INCBIN_U32("graphics/pokemon/snooter/gulping/front.4bpp.lz");
+    const u32 gMonBackPic_SnooterGulping[] = INCBIN_U32("graphics/pokemon/snooter/gulping/back.4bpp.lz");
+    const u16 gMonPalette_SnooterGulping[] = INCBIN_U16("graphics/pokemon/snooter/gulping/normal.gbapal");
+    const u16 gMonShinyPalette_SnooterGulping[] = INCBIN_U16("graphics/pokemon/snooter/gulping/shiny.gbapal");
+    const u8 gMonIcon_SnooterGulping[] = INCBIN_U8("graphics/pokemon/snooter/gulping/icon.4bpp");
+
+    const u32 gMonFrontPic_SnooterGorging[] = INCBIN_U32("graphics/pokemon/snooter/gorging/front.4bpp.lz");
+    const u32 gMonBackPic_SnooterGorging[] = INCBIN_U32("graphics/pokemon/snooter/gorging/back.4bpp.lz");
+    const u16 gMonPalette_SnooterGorging[] = INCBIN_U16("graphics/pokemon/snooter/gorging/normal.gbapal");
+    const u16 gMonShinyPalette_SnooterGorging[] = INCBIN_U16("graphics/pokemon/snooter/gorging/shiny.gbapal");
+    const u8 gMonIcon_SnooterGorging[] = INCBIN_U8("graphics/pokemon/snooter/gorging/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

@@ -2631,3 +2631,11 @@ static const u16 sScarfyFormSpeciesIdTable[] = {
     SPECIES_SCARFY_ANGRY,
     FORM_SPECIES_END,
 };
+
+static const u16 sSnooterFormSpeciesIdTable[] = {
+    SPECIES_SNOOTER_NORMAL,
+    SPECIES_SNOOTER_ANGRY,
+    SPECIES_SNOOTER_GULPING,
+    SPECIES_SNOOTER_GORGING,
+    FORM_SPECIES_END,
+};

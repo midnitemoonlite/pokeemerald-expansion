@@ -25370,6 +25370,25 @@ static const struct LevelUpMove sScarfyLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sSnooterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
+    LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
+    LEVEL_UP_MOVE( 6, MOVE_RAGE),
+    LEVEL_UP_MOVE( 11, MOVE_STUFF_CHEEKS),
+    LEVEL_UP_MOVE( 16, MOVE_LICK),
+    LEVEL_UP_MOVE( 21, MOVE_GASTRO_ACID),
+    LEVEL_UP_MOVE( 26, MOVE_BITE),
+    LEVEL_UP_MOVE( 31, MOVE_SMELLING_SALTS),
+    LEVEL_UP_MOVE( 36, MOVE_SWEET_KISS),
+    LEVEL_UP_MOVE( 41, MOVE_LASH_OUT),
+    LEVEL_UP_MOVE( 46, MOVE_DRAINING_KISS),
+    LEVEL_UP_MOVE( 51, MOVE_CRUNCH),
+    LEVEL_UP_MOVE( 56, MOVE_STOMPING_TANTRUM),
+    LEVEL_UP_MOVE( 61, MOVE_BELCH),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sBatamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_END
