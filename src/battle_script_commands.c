@@ -944,7 +944,25 @@ bool32 ProteanTryChangeType(enum BattlerId battler, enum Ability ability, enum M
          && (gBattleMons[battler].types[0] != moveType || gBattleMons[battler].types[1] != moveType
              || (gBattleMons[battler].types[2] != moveType && gBattleMons[battler].types[2] != TYPE_MYSTERY))
          && move != MOVE_STRUGGLE
-         && GetActiveGimmick(battler) != GIMMICK_TERA)
+         && GetActiveGimmick(battler) != GIMMICK_TERA
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_FIRE
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_ICE
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_WATER
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_ELECTRIC
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_FLYING
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_PSYCHIC
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_ROCK
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_FIGHTING
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_FAIRY
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_GRASS
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_GROUND
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_POISON
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_STEEL
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_DARK
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_BUG
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_GHOST
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_DRAGON
+         && gBattleMons[gBattlerAttacker].species != SPECIES_BUKISET_PSYCHIC)
     {
         SET_BATTLER_TYPE(battler, moveType);
         return TRUE;

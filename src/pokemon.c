@@ -563,6 +563,7 @@ static const enum NationalDexOrder sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(SNOWL),
     HOENN_TO_NATIONAL(CORORI),
     HOENN_TO_NATIONAL(PENGY),
+    HOENN_TO_NATIONAL(BUKISET),
     HOENN_TO_NATIONAL(BATAMON),
 };
 
@@ -6752,6 +6753,11 @@ u32 GetFormChangeTargetSpecies_Internal(struct FormChangeContext ctx)
             break;
         case FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY:
             if (formChanges[i].param1 == GetBattleMoveCategory(gCurrentMove)
+                && (formChanges[i].param2 == ABILITY_NONE || formChanges[i].param2 == ctx.ability))
+                targetSpecies = formChanges[i].targetSpecies;
+            break;
+        case FORM_CHANGE_BATTLE_BEFORE_MOVE_TYPE:
+            if (formChanges[i].param1 == GetBattleMoveType(gCurrentMove)
                 && (formChanges[i].param2 == ABILITY_NONE || formChanges[i].param2 == ctx.ability))
                 targetSpecies = formChanges[i].targetSpecies;
             break;

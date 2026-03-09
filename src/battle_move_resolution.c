@@ -49,7 +49,8 @@ static bool32 TryFormChangeBeforeMove(void)
     enum Ability ability = GetBattlerAbility(gBattlerAttacker);
 
     if (TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_BEFORE_MOVE, ability)
-        || TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY, ability))
+        || TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY, ability)
+        || TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_BEFORE_MOVE_TYPE, ability))
     {
         gBattleScripting.battler = gBattlerAttacker;
         BattleScriptCall(BattleScript_BattlerFormChange);

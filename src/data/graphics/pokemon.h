@@ -29250,6 +29250,117 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Pengy[] = INCBIN_U8("graphics/pokemon/pengy/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_BukisetNormal[] = INCBIN_U32("graphics/pokemon/bukiset/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetNormal[] = INCBIN_U32("graphics/pokemon/bukiset/back.4bpp.lz");
+    const u16 gMonPalette_BukisetNormal[] = INCBIN_U16("graphics/pokemon/bukiset/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetNormal[] = INCBIN_U16("graphics/pokemon/bukiset/shiny.gbapal");
+    const u8 gMonIcon_BukisetNormal[] = INCBIN_U8("graphics/pokemon/bukiset/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Bukiset[] = INCBIN_U8("graphics/pokemon/bukiset/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_BukisetFire[] = INCBIN_U32("graphics/pokemon/bukiset/fire/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetFire[] = INCBIN_U32("graphics/pokemon/bukiset/fire/back.4bpp.lz");
+    const u16 gMonPalette_BukisetFire[] = INCBIN_U16("graphics/pokemon/bukiset/fire/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetFire[] = INCBIN_U16("graphics/pokemon/bukiset/fire/shiny.gbapal");
+    const u8 gMonIcon_BukisetFire[] = INCBIN_U8("graphics/pokemon/bukiset/fire/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetIce[] = INCBIN_U32("graphics/pokemon/bukiset/ice/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetIce[] = INCBIN_U32("graphics/pokemon/bukiset/ice/back.4bpp.lz");
+    const u16 gMonPalette_BukisetIce[] = INCBIN_U16("graphics/pokemon/bukiset/ice/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetIce[] = INCBIN_U16("graphics/pokemon/bukiset/ice/shiny.gbapal");
+    const u8 gMonIcon_BukisetIce[] = INCBIN_U8("graphics/pokemon/bukiset/ice/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetWater[] = INCBIN_U32("graphics/pokemon/bukiset/water/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetWater[] = INCBIN_U32("graphics/pokemon/bukiset/water/back.4bpp.lz");
+    const u16 gMonPalette_BukisetWater[] = INCBIN_U16("graphics/pokemon/bukiset/water/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetWater[] = INCBIN_U16("graphics/pokemon/bukiset/water/shiny.gbapal");
+    const u8 gMonIcon_BukisetWater[] = INCBIN_U8("graphics/pokemon/bukiset/water/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetElectric[] = INCBIN_U32("graphics/pokemon/bukiset/electric/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetElectric[] = INCBIN_U32("graphics/pokemon/bukiset/electric/back.4bpp.lz");
+    const u16 gMonPalette_BukisetElectric[] = INCBIN_U16("graphics/pokemon/bukiset/electric/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetElectric[] = INCBIN_U16("graphics/pokemon/bukiset/electric/shiny.gbapal");
+    const u8 gMonIcon_BukisetElectric[] = INCBIN_U8("graphics/pokemon/bukiset/electric/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetFlying[] = INCBIN_U32("graphics/pokemon/bukiset/flying/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetFlying[] = INCBIN_U32("graphics/pokemon/bukiset/flying/back.4bpp.lz");
+    const u16 gMonPalette_BukisetFlying[] = INCBIN_U16("graphics/pokemon/bukiset/flying/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetFlying[] = INCBIN_U16("graphics/pokemon/bukiset/flying/shiny.gbapal");
+    const u8 gMonIcon_BukisetFlying[] = INCBIN_U8("graphics/pokemon/bukiset/flying/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetPsychic[] = INCBIN_U32("graphics/pokemon/bukiset/psychic/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetPsychic[] = INCBIN_U32("graphics/pokemon/bukiset/psychic/back.4bpp.lz");
+    const u16 gMonPalette_BukisetPsychic[] = INCBIN_U16("graphics/pokemon/bukiset/psychic/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetPsychic[] = INCBIN_U16("graphics/pokemon/bukiset/psychic/shiny.gbapal");
+    const u8 gMonIcon_BukisetPsychic[] = INCBIN_U8("graphics/pokemon/bukiset/psychic/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetRock[] = INCBIN_U32("graphics/pokemon/bukiset/rock/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetRock[] = INCBIN_U32("graphics/pokemon/bukiset/rock/back.4bpp.lz");
+    const u16 gMonPalette_BukisetRock[] = INCBIN_U16("graphics/pokemon/bukiset/rock/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetRock[] = INCBIN_U16("graphics/pokemon/bukiset/rock/shiny.gbapal");
+    const u8 gMonIcon_BukisetRock[] = INCBIN_U8("graphics/pokemon/bukiset/rock/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetFighting[] = INCBIN_U32("graphics/pokemon/bukiset/fighting/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetFighting[] = INCBIN_U32("graphics/pokemon/bukiset/fighting/back.4bpp.lz");
+    const u16 gMonPalette_BukisetFighting[] = INCBIN_U16("graphics/pokemon/bukiset/fighting/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetFighting[] = INCBIN_U16("graphics/pokemon/bukiset/fighting/shiny.gbapal");
+    const u8 gMonIcon_BukisetFighting[] = INCBIN_U8("graphics/pokemon/bukiset/fighting/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetFairy[] = INCBIN_U32("graphics/pokemon/bukiset/fairy/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetFairy[] = INCBIN_U32("graphics/pokemon/bukiset/fairy/back.4bpp.lz");
+    const u16 gMonPalette_BukisetFairy[] = INCBIN_U16("graphics/pokemon/bukiset/fairy/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetFairy[] = INCBIN_U16("graphics/pokemon/bukiset/fairy/shiny.gbapal");
+    const u8 gMonIcon_BukisetFairy[] = INCBIN_U8("graphics/pokemon/bukiset/fairy/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetGrass[] = INCBIN_U32("graphics/pokemon/bukiset/grass/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetGrass[] = INCBIN_U32("graphics/pokemon/bukiset/grass/back.4bpp.lz");
+    const u16 gMonPalette_BukisetGrass[] = INCBIN_U16("graphics/pokemon/bukiset/grass/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetGrass[] = INCBIN_U16("graphics/pokemon/bukiset/grass/shiny.gbapal");
+    const u8 gMonIcon_BukisetGrass[] = INCBIN_U8("graphics/pokemon/bukiset/grass/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetGround[] = INCBIN_U32("graphics/pokemon/bukiset/ground/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetGround[] = INCBIN_U32("graphics/pokemon/bukiset/ground/back.4bpp.lz");
+    const u16 gMonPalette_BukisetGround[] = INCBIN_U16("graphics/pokemon/bukiset/ground/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetGround[] = INCBIN_U16("graphics/pokemon/bukiset/ground/shiny.gbapal");
+    const u8 gMonIcon_BukisetGround[] = INCBIN_U8("graphics/pokemon/bukiset/ground/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetPoison[] = INCBIN_U32("graphics/pokemon/bukiset/poison/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetPoison[] = INCBIN_U32("graphics/pokemon/bukiset/poison/back.4bpp.lz");
+    const u16 gMonPalette_BukisetPoison[] = INCBIN_U16("graphics/pokemon/bukiset/poison/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetPoison[] = INCBIN_U16("graphics/pokemon/bukiset/poison/shiny.gbapal");
+    const u8 gMonIcon_BukisetPoison[] = INCBIN_U8("graphics/pokemon/bukiset/poison/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetSteel[] = INCBIN_U32("graphics/pokemon/bukiset/steel/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetSteel[] = INCBIN_U32("graphics/pokemon/bukiset/steel/back.4bpp.lz");
+    const u16 gMonPalette_BukisetSteel[] = INCBIN_U16("graphics/pokemon/bukiset/steel/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetSteel[] = INCBIN_U16("graphics/pokemon/bukiset/steel/shiny.gbapal");
+    const u8 gMonIcon_BukisetSteel[] = INCBIN_U8("graphics/pokemon/bukiset/steel/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetDark[] = INCBIN_U32("graphics/pokemon/bukiset/dark/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetDark[] = INCBIN_U32("graphics/pokemon/bukiset/dark/back.4bpp.lz");
+    const u16 gMonPalette_BukisetDark[] = INCBIN_U16("graphics/pokemon/bukiset/dark/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetDark[] = INCBIN_U16("graphics/pokemon/bukiset/dark/shiny.gbapal");
+    const u8 gMonIcon_BukisetDark[] = INCBIN_U8("graphics/pokemon/bukiset/dark/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetBug[] = INCBIN_U32("graphics/pokemon/bukiset/bug/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetBug[] = INCBIN_U32("graphics/pokemon/bukiset/bug/back.4bpp.lz");
+    const u16 gMonPalette_BukisetBug[] = INCBIN_U16("graphics/pokemon/bukiset/bug/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetBug[] = INCBIN_U16("graphics/pokemon/bukiset/bug/shiny.gbapal");
+    const u8 gMonIcon_BukisetBug[] = INCBIN_U8("graphics/pokemon/bukiset/bug/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetGhost[] = INCBIN_U32("graphics/pokemon/bukiset/ghost/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetGhost[] = INCBIN_U32("graphics/pokemon/bukiset/ghost/back.4bpp.lz");
+    const u16 gMonPalette_BukisetGhost[] = INCBIN_U16("graphics/pokemon/bukiset/ghost/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetGhost[] = INCBIN_U16("graphics/pokemon/bukiset/ghost/shiny.gbapal");
+    const u8 gMonIcon_BukisetGhost[] = INCBIN_U8("graphics/pokemon/bukiset/ghost/icon.4bpp");
+
+    const u32 gMonFrontPic_BukisetDragon[] = INCBIN_U32("graphics/pokemon/bukiset/dragon/front.4bpp.lz");
+    const u32 gMonBackPic_BukisetDragon[] = INCBIN_U32("graphics/pokemon/bukiset/dragon/back.4bpp.lz");
+    const u16 gMonPalette_BukisetDragon[] = INCBIN_U16("graphics/pokemon/bukiset/dragon/normal.gbapal");
+    const u16 gMonShinyPalette_BukisetDragon[] = INCBIN_U16("graphics/pokemon/bukiset/dragon/shiny.gbapal");
+    const u8 gMonIcon_BukisetDragon[] = INCBIN_U8("graphics/pokemon/bukiset/dragon/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

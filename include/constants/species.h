@@ -1901,7 +1901,26 @@
 #define SPECIES_SNOWL                                   1774
 #define SPECIES_CORORI                                  1775
 #define SPECIES_PENGY                                   1776
-#define SPECIES_BATAMON                                 1777
+#define SPECIES_BUKISET                                 SPECIES_BUKISET_NORMAL
+#define SPECIES_BUKISET_NORMAL                          1777
+#define SPECIES_BUKISET_FIRE                            1778
+#define SPECIES_BUKISET_ICE                             1779
+#define SPECIES_BUKISET_WATER                           1780
+#define SPECIES_BUKISET_ELECTRIC                        1781
+#define SPECIES_BUKISET_FLYING                          1782
+#define SPECIES_BUKISET_PSYCHIC                         1783
+#define SPECIES_BUKISET_ROCK                            1784
+#define SPECIES_BUKISET_FIGHTING                        1785
+#define SPECIES_BUKISET_FAIRY                           1786
+#define SPECIES_BUKISET_GRASS                           1787
+#define SPECIES_BUKISET_GROUND                          1788
+#define SPECIES_BUKISET_POISON                          1789
+#define SPECIES_BUKISET_STEEL                           1790
+#define SPECIES_BUKISET_DARK                            1791
+#define SPECIES_BUKISET_BUG                             1792
+#define SPECIES_BUKISET_GHOST                           1793
+#define SPECIES_BUKISET_DRAGON                          1794
+#define SPECIES_BATAMON                                 1795
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
