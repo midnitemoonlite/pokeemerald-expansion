@@ -1920,7 +1920,11 @@
 #define SPECIES_BUKISET_BUG                             1792
 #define SPECIES_BUKISET_GHOST                           1793
 #define SPECIES_BUKISET_DRAGON                          1794
-#define SPECIES_BATAMON                                 1795
+#define SPECIES_ICE_DRAGON                              1795
+#define SPECIES_LOBZILLA                                SPECIES_LOBZILLA_SHRIMP
+#define SPECIES_LOBZILLA_SHRIMP                         1796
+#define SPECIES_LOBZILLA_MONSTER                        1797
+#define SPECIES_BATAMON                                 1798
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

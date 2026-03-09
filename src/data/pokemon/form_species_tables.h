@@ -2667,3 +2667,9 @@ static const u16 sBukisetFormSpeciesIdTable[] = {
     SPECIES_BUKISET_DRAGON,
     FORM_SPECIES_END,
 };
+
+static const u16 sLobzillaFormSpeciesIdTable[] = {
+    SPECIES_LOBZILLA_SHRIMP,
+    SPECIES_LOBZILLA_MONSTER,
+    FORM_SPECIES_END,
+};

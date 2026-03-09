@@ -64,6 +64,7 @@ enum FormChanges
     FORM_CHANGE_END_BATTLE_ENVIRONMENT,
     // Form change that activates when the Pokémon is switched out in battle.
     // param1: (optional) ability to check
+    // param2: (optional) minimum level to do form change
     FORM_CHANGE_BATTLE_SWITCH_OUT,
     // Form change that activates when the Pokémon is switched-in in battle.
     // This form change happens before other abilities like Neutralizing Gas.

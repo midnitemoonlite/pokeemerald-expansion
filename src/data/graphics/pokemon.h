@@ -29361,6 +29361,30 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_BukisetDragon[] = INCBIN_U16("graphics/pokemon/bukiset/dragon/shiny.gbapal");
     const u8 gMonIcon_BukisetDragon[] = INCBIN_U8("graphics/pokemon/bukiset/dragon/icon.4bpp");
 
+    const u32 gMonFrontPic_IceDragon[] = INCBIN_U32("graphics/pokemon/icedragon/front.4bpp.lz");
+    const u32 gMonBackPic_IceDragon[] = INCBIN_U32("graphics/pokemon/icedragon/back.4bpp.lz");
+    const u16 gMonPalette_IceDragon[] = INCBIN_U16("graphics/pokemon/icedragon/normal.gbapal");
+    const u16 gMonShinyPalette_IceDragon[] = INCBIN_U16("graphics/pokemon/icedragon/shiny.gbapal");
+    const u8 gMonIcon_IceDragon[] = INCBIN_U8("graphics/pokemon/icedragon/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_IceDragon[] = INCBIN_U8("graphics/pokemon/icedragon/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_LobzillaShrimp[] = INCBIN_U32("graphics/pokemon/lobzilla/front.4bpp.lz");
+    const u32 gMonBackPic_LobzillaShrimp[] = INCBIN_U32("graphics/pokemon/lobzilla/back.4bpp.lz");
+    const u16 gMonPalette_LobzillaShrimp[] = INCBIN_U16("graphics/pokemon/lobzilla/normal.gbapal");
+    const u16 gMonShinyPalette_LobzillaShrimp[] = INCBIN_U16("graphics/pokemon/lobzilla/shiny.gbapal");
+    const u8 gMonIcon_LobzillaShrimp[] = INCBIN_U8("graphics/pokemon/lobzilla/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_LobzillaShrimp[] = INCBIN_U8("graphics/pokemon/lobzilla/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_LobzillaMonster[] = INCBIN_U32("graphics/pokemon/lobzilla/monster/front.4bpp.lz");
+    const u32 gMonBackPic_LobzillaMonster[] = INCBIN_U32("graphics/pokemon/lobzilla/monster/back.4bpp.lz");
+    const u16 gMonPalette_LobzillaMonster[] = INCBIN_U16("graphics/pokemon/lobzilla/monster/normal.gbapal");
+    const u16 gMonShinyPalette_LobzillaMonster[] = INCBIN_U16("graphics/pokemon/lobzilla/monster/shiny.gbapal");
+    const u8 gMonIcon_LobzillaMonster[] = INCBIN_U8("graphics/pokemon/lobzilla/monster/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

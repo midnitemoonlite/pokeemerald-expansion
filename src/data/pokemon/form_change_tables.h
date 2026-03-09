@@ -2354,5 +2354,12 @@ static const struct FormChange sBukisetProteanFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 
+static const struct FormChange sLobzillaFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_SWITCH_OUT, SPECIES_LOBZILLA_MONSTER, ABILITY_ZERO_TO_HERO, 38},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_LOBZILLA_SHRIMP},
+    {FORM_CHANGE_TERMINATOR},
+};
+
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

@@ -2124,8 +2124,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_ZERO_TO_HERO] =
     {
-        .name = _("Zero to Hero"),
-        .description = COMPOUND_STRING("Changes form on switch out."),
+        .name = _("Hero to Zero"),
+        .description = COMPOUND_STRING("Change on switch if strong."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2138,7 +2138,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_COMMANDER] =
     {
         .name = _("Commander"),
-        .description = COMPOUND_STRING("Commands from Dondozo."),
+        .description = COMPOUND_STRING("Commands from Robo-Rick."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
