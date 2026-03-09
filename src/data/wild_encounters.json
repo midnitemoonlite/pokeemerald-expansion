@@ -85,22 +85,22 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_ICE_DRAGON"
+                "species": "SPECIES_OOHROO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_LOBZILLA"
+                "species": "SPECIES_OOHROO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_FLOATY_THE_CELL_CORE"
+                "species": "SPECIES_OOHROO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_MOPOO"
+                "species": "SPECIES_OOHROO"
               },
               {
                 "min_level": 20,
@@ -120,7 +120,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TOOTLEBAM"
+                "species": "SPECIES_OOHROO"
               },
               {
                 "min_level": 2,

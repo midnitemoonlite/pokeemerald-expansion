@@ -1924,7 +1924,19 @@
 #define SPECIES_LOBZILLA                                SPECIES_LOBZILLA_SHRIMP
 #define SPECIES_LOBZILLA_SHRIMP                         1796
 #define SPECIES_LOBZILLA_MONSTER                        1797
-#define SPECIES_BATAMON                                 1798
+#define SPECIES_SLUSHY                                  1798
+#define SPECIES_SQUIBBY                                 1799
+#define SPECIES_COMO                                    1800
+#define SPECIES_SPIDEROO                                1801
+#define SPECIES_GRIZZO                                  1802
+#define SPECIES_PEPERON                                 1803
+#define SPECIES_OOHROO                                  SPECIES_OOHROO_NORMAL
+#define SPECIES_OOHROO_NORMAL                           1804
+#define SPECIES_OOHROO_ZEN                              1805
+#define SPECIES_GORIATH                                 SPECIES_GORIATH_NORMAL
+#define SPECIES_GORIATH_NORMAL                          1806
+#define SPECIES_GORIATH_ZEN                             1807
+#define SPECIES_BATAMON                                 1808
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

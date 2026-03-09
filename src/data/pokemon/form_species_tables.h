@@ -2673,3 +2673,15 @@ static const u16 sLobzillaFormSpeciesIdTable[] = {
     SPECIES_LOBZILLA_MONSTER,
     FORM_SPECIES_END,
 };
+
+static const u16 sOohrooFormSpeciesIdTable[] = {
+    SPECIES_OOHROO_NORMAL,
+    SPECIES_OOHROO_ZEN,
+    FORM_SPECIES_END,
+};
+
+static const u16 sGoriathFormSpeciesIdTable[] = {
+    SPECIES_GORIATH_NORMAL,
+    SPECIES_GORIATH_ZEN,
+    FORM_SPECIES_END,
+};
