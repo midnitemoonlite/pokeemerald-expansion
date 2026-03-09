@@ -1936,7 +1936,15 @@
 #define SPECIES_GORIATH                                 SPECIES_GORIATH_NORMAL
 #define SPECIES_GORIATH_NORMAL                          1806
 #define SPECIES_GORIATH_ZEN                             1807
-#define SPECIES_BATAMON                                 1808
+#define SPECIES_NESP                                    1808
+#define SPECIES_MADOO                                   1809
+#define SPECIES_VENOGG                                  1810
+#define SPECIES_POISON_CROAKOM                          1811
+#define SPECIES_BOUNCY                                  1812
+#define SPECIES_BOUNCY_SIS                              1813
+#define SPECIES_FISHBONE                                1814
+#define SPECIES_BLISH                                   1815
+#define SPECIES_BATAMON                                 1816
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
