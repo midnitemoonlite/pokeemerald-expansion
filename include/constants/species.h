@@ -1885,7 +1885,23 @@
 #define SPECIES_GRAND_MAM                               SPECIES_GRAND_MAM_ARMORED
 #define SPECIES_GRAND_MAM_ARMORED                       1759
 #define SPECIES_GRAND_MAM_UNARMORED                     1760
-#define SPECIES_BATAMON                                 1761
+#define SPECIES_BLOCKIN                                 1761
+#define SPECIES_OWGULF                                  1762
+#define SPECIES_BOHBOH                                  1763
+#define SPECIES_TOOTLEBAM                               1764
+#define SPECIES_FLOATY_THE_CELL_CORE                    1765
+#define SPECIES_BUBOO                                   1766
+#define SPECIES_GUSSA                                   1767
+#define SPECIES_JOE                                     1768
+#define SPECIES_GOBBLER                                 1769
+#define SPECIES_MOPOO                                   1770
+#define SPECIES_CHILLY                                  1771
+#define SPECIES_SNOWMAN                                 1772
+#define SPECIES_FRIGIS                                  1773
+#define SPECIES_SNOWL                                   1774
+#define SPECIES_CORORI                                  1775
+#define SPECIES_PENGY                                   1776
+#define SPECIES_BATAMON                                 1777
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

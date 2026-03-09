@@ -85,42 +85,42 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_IRON_MAM"
+                "species": "SPECIES_GUSSA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_GRAND_MAM"
+                "species": "SPECIES_OWGULF"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SNOOTER"
+                "species": "SPECIES_FLOATY_THE_CELL_CORE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_WHIPPY"
+                "species": "SPECIES_MOPOO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BOMBER"
+                "species": "SPECIES_CORORI"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_WHEELIE"
+                "species": "SPECIES_FRIGIS"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_KAPAR"
+                "species": "SPECIES_BLOCKIN"
               },
               {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_LOVELY"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_TOOTLEBAM"
               },
               {
                 "min_level": 2,
