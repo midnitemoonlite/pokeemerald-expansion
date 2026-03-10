@@ -1952,7 +1952,11 @@
 #define SPECIES_SLIME                                   1821
 #define SPECIES_PUPPET                                  1822
 #define SPECIES_MAGICIAN                                1823
-#define SPECIES_BATAMON                                 1824
+#define SPECIES_TOREROBO                                1824
+#define SPECIES_ROBO_RICK                               SPECIES_ROBO_RICK_SOLO
+#define SPECIES_ROBO_RICK_SOLO                          1825
+#define SPECIES_ROBO_RICK_COMMANDER                     1826
+#define SPECIES_BATAMON                                 1827
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

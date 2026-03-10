@@ -2685,3 +2685,9 @@ static const u16 sGoriathFormSpeciesIdTable[] = {
     SPECIES_GORIATH_ZEN,
     FORM_SPECIES_END,
 };
+
+static const u16 sRoboRickFormSpeciesIdTable[] = {
+    SPECIES_ROBO_RICK_SOLO,
+    SPECIES_ROBO_RICK_COMMANDER,
+    FORM_SPECIES_END,
+};

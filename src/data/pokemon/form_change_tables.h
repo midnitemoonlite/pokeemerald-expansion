@@ -2381,5 +2381,12 @@ static const struct FormChange sGoriathFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 
+static const struct FormChange sRoboRickFormChangeTable[] =
+{
+    {FORM_CHANGE_FAINT,                      SPECIES_ROBO_RICK_SOLO},
+    {FORM_CHANGE_END_BATTLE,                 SPECIES_ROBO_RICK_SOLO},
+    {FORM_CHANGE_TERMINATOR},
+};
+
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

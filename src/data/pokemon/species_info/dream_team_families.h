@@ -14195,6 +14195,178 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         //.perfectIVCount = NUM_STATS,
     },
 
+    [SPECIES_TOREROBO] =
+    {
+        .baseHP        = 255,
+        .baseAttack    = 5,
+        .baseDefense   = 60,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_NORMAL),
+        .catchRate = 100,
+        .expYield = 300,
+        .evYield_HP = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 40,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DITTO),
+        .abilities = { ABILITY_COMMANDER, ABILITY_NONE, ABILITY_LIGHTNING_ROD},
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Torerobo"),
+        .cryId = CRY_DITTO,
+        .natDexNum = NATIONAL_DEX_TOREROBO,
+        .categoryName = _("Training"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "Torerobo, short for 'training robot',\n"
+            "is made of an incredibly soft but\n"
+            "durable material. It was commissioned\n"
+            "by King Dedede for use as a sandbag."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Torerobo,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FIGURE_8,
+        .backPic = gMonBackPic_Torerobo,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_Torerobo,
+        .shinyPalette = gMonShinyPalette_Torerobo,
+        .iconSprite = gMonIcon_Ditto,
+        .iconPalIndex = 0,
+        FOOTPRINT(Torerobo)
+        .levelUpLearnset = sToreroboLevelUpLearnset,
+        .teachableLearnset = sDittoTeachableLearnset,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_ROBO_RICK_SOLO] =
+    {
+        .baseHP        = 110,
+        .baseAttack    = 70,
+        .baseDefense   = 120,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_STEEL),
+        .catchRate = 45,
+        .expYield = 280,
+        .evYield_HP = 1,
+        .evYield_Defense = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 40,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_CHEEK_POUCH, ABILITY_NONE, ABILITY_MEGA_LAUNCHER},
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Robo-Rick"),
+        .cryId = CRY_PORYGON,
+        .natDexNum = NATIONAL_DEX_ROBO_RICK,
+        .categoryName = _("Robot Ride"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "This mysterious robot was built in the\n"
+            "likeness of Rick, a hamster-esque\n"
+            "resident of Dream Land. It's armed\n"
+            "with a small pellet gun in its mouth."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_RoboRickSolo,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FIGURE_8,
+        .backPic = gMonBackPic_RoboRickSolo,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_RoboRickSolo,
+        .shinyPalette = gMonShinyPalette_RoboRickSolo,
+        .iconSprite = gMonIcon_Porygon,
+        .iconPalIndex = 0,
+        FOOTPRINT(RoboRick)
+        .levelUpLearnset = sRoboRickLevelUpLearnset,
+        .teachableLearnset = sPorygonTeachableLearnset,
+        .formSpeciesIdTable = sRoboRickFormSpeciesIdTable,
+        .formChangeTable = sRoboRickFormChangeTable,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_ROBO_RICK_COMMANDER] =
+    {
+        .baseHP        = 110,
+        .baseAttack    = 70,
+        .baseDefense   = 120,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_ELECTRIC),
+        .catchRate = 45,
+        .expYield = 280,
+        .evYield_HP = 1,
+        .evYield_Defense = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 40,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_CHEEK_POUCH, ABILITY_NONE, ABILITY_MEGA_LAUNCHER},
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Robo-Rick"),
+        .cryId = CRY_PORYGON,
+        .natDexNum = NATIONAL_DEX_ROBO_RICK,
+        .categoryName = _("Robot Ride"),
+        .height = 6, //temp
+        .weight = 16, //temp
+        .description = COMPOUND_STRING(
+            "A mysterious signal broadcasted by\n"
+            "Torerobo's antenna has resonated with\n"
+            "Robo-Rick, causing the former to ride\n"
+            "atop the latter and control it."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_RoboRickCommander,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FIGURE_8,
+        .backPic = gMonBackPic_RoboRickCommander,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_RoboRickCommander,
+        .shinyPalette = gMonShinyPalette_RoboRickCommander,
+        .iconSprite = gMonIcon_Porygon,
+        .iconPalIndex = 3,
+        FOOTPRINT(RoboRick)
+        .levelUpLearnset = sRoboRickLevelUpLearnset,
+        .teachableLearnset = sPorygonTeachableLearnset,
+        .formSpeciesIdTable = sRoboRickFormSpeciesIdTable,
+        .formChangeTable = sRoboRickFormChangeTable,
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+
     [SPECIES_BATAMON] =
     {
         .baseHP        = 86,
