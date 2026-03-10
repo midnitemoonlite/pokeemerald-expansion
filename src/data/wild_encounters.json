@@ -85,22 +85,22 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_NESP"
+                "species": "SPECIES_GALBO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_VENOGG"
+                "species": "SPECIES_GALBO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_FISHBONE"
+                "species": "SPECIES_KEY_DEE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BOUNCY"
+                "species": "SPECIES_SLIME"
               },
               {
                 "min_level": 20,

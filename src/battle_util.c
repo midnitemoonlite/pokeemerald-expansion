@@ -7116,7 +7116,7 @@ static inline u32 CalcAttackStat(struct BattleContext *ctx)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     case HOLD_EFFECT_DEEP_SEA_TOOTH:
-        if (gBattleMons[battlerAtk].species == SPECIES_CLAMPERL && IsBattleMoveSpecial(move))
+        if ((gBattleMons[battlerAtk].species == SPECIES_CLAMPERL || gBattleMons[battlerAtk].species == SPECIES_KEY_DEE) && IsBattleMoveSpecial(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     case HOLD_EFFECT_LIGHT_BALL:
@@ -7300,7 +7300,7 @@ static inline u32 CalcDefenseStat(struct BattleContext *ctx)
     switch (ctx->holdEffectDef)
     {
     case HOLD_EFFECT_DEEP_SEA_SCALE:
-        if (gBattleMons[battlerDef].species == SPECIES_CLAMPERL && !usesDefStat)
+        if ((gBattleMons[battlerDef].species == SPECIES_CLAMPERL || gBattleMons[battlerDef].species == SPECIES_KEY_DEE) && !usesDefStat)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     case HOLD_EFFECT_METAL_POWDER:

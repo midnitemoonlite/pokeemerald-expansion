@@ -1944,7 +1944,15 @@
 #define SPECIES_BOUNCY_SIS                              1813
 #define SPECIES_FISHBONE                                1814
 #define SPECIES_BLISH                                   1815
-#define SPECIES_BATAMON                                 1816
+#define SPECIES_GALBO                                   1816
+#define SPECIES_WATER_GALBOROS                          1817
+#define SPECIES_FLAME_GALBOROS                          1818
+#define SPECIES_MIASMOROS                               1819
+#define SPECIES_KEY_DEE                                 1820
+#define SPECIES_SLIME                                   1821
+#define SPECIES_PUPPET                                  1822
+#define SPECIES_MAGICIAN                                1823
+#define SPECIES_BATAMON                                 1824
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
