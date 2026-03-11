@@ -2691,3 +2691,10 @@ static const u16 sRoboRickFormSpeciesIdTable[] = {
     SPECIES_ROBO_RICK_COMMANDER,
     FORM_SPECIES_END,
 };
+
+static const u16 sHandsFormSpeciesIdTable[] = {
+    SPECIES_SERVER_HANDS,
+    SPECIES_MASTER_HAND,
+    SPECIES_CRAZY_HAND,
+    FORM_SPECIES_END,
+};

@@ -85,62 +85,62 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TOREROBO"
+                "species": "SPECIES_ANGIE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_ROBO_RICK"
+                "species": "SPECIES_CUTFISH"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_KEY_DEE"
+                "species": "SPECIES_HB_002"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SLIME"
+                "species": "SPECIES_SNOOZROOT"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CORORI"
+                "species": "SPECIES_METALUN"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_FRIGIS"
+                "species": "SPECIES_GOLEM_KIRBY"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BLOCKIN"
+                "species": "SPECIES_SNIPPER"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_OOHROO"
+                "species": "SPECIES_BOXY"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_SQUISHY"
+                "species": "SPECIES_SIMIRROR"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_CAPILLER"
+                "species": "SPECIES_MASTER_HAND"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_BURNING_LEO"
+                "species": "SPECIES_CRAZY_HAND"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_BRONTO_BURT"
+                "species": "SPECIES_SERVER_HANDS"
               },
               {
                 "min_level": 10,

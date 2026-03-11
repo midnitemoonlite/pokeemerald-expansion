@@ -1956,7 +1956,28 @@
 #define SPECIES_ROBO_RICK                               SPECIES_ROBO_RICK_SOLO
 #define SPECIES_ROBO_RICK_SOLO                          1825
 #define SPECIES_ROBO_RICK_COMMANDER                     1826
-#define SPECIES_BATAMON                                 1827
+#define SPECIES_BOXY                                    1827
+#define SPECIES_HANDS                                   SPECIES_SERVER_HANDS
+#define SPECIES_SERVER_HANDS                            1828
+#define SPECIES_MASTER_HAND                             1829
+#define SPECIES_CRAZY_HAND                              1830
+#define SPECIES_GOLEM_KIRBY                             1831
+#define SPECIES_KING_GOLEM                              1832
+#define SPECIES_SNOOZROOT                               1833
+#define SPECIES_LADY_IVY                                1834
+#define SPECIES_SNIPPER                                 1835
+#define SPECIES_ANT_DOOM                                1836
+#define SPECIES_METALUN                                 1837
+#define SPECIES_BIG_METALUN                             1838
+#define SPECIES_HB_002                                  1839
+#define SPECIES_HB_007                                  1840
+#define SPECIES_CUTFISH                                 1841
+#define SPECIES_SAWGILL                                 1842
+#define SPECIES_ANGIE                                   1843
+#define SPECIES_CUPIE                                   1844
+#define SPECIES_ANGEL                                   1845
+#define SPECIES_SIMIRROR                                1846
+#define SPECIES_BATAMON                                 1847
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
