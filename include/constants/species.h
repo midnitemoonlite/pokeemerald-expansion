@@ -1977,7 +1977,14 @@
 #define SPECIES_CUPIE                                   1844
 #define SPECIES_ANGEL                                   1845
 #define SPECIES_SIMIRROR                                1846
-#define SPECIES_BATAMON                                 1847
+#define SPECIES_TWISTER                                 1847
+#define SPECIES_WINDWHIPPER                             1848
+#define SPECIES_DUBIOR_JR                               1849
+#define SPECIES_DUBIOR                                  1850
+#define SPECIES_COOL_SPOOK                              1851
+#define SPECIES_TAC                                     1852
+#define SPECIES_CHEMITORY                               1853
+#define SPECIES_BATAMON                                 1854
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
