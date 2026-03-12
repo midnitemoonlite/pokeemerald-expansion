@@ -1984,7 +1984,23 @@
 #define SPECIES_COOL_SPOOK                              1851
 #define SPECIES_TAC                                     1852
 #define SPECIES_CHEMITORY                               1853
-#define SPECIES_BATAMON                                 1854
+#define SPECIES_COTTA                                   1854
+#define SPECIES_CANNON_COTTA                            1855
+#define SPECIES_BASTRON                                 1856
+#define SPECIES_PARA_SORCERESS                          1857
+#define SPECIES_VIVIDRIA                                1858
+#define SPECIES_MIKARIN                                 1859
+#define SPECIES_KAGAMI_MOCCHI                           1860
+#define SPECIES_BLOON                                   1861
+#define SPECIES_STARMAN                                 1862
+#define SPECIES_RINGLE                                  1863
+#define SPECIES_I3                                      1864
+#define SPECIES_ORBSERVOR                               1865
+#define SPECIES_SPYNUM                                  1866
+#define SPECIES_SECTRA_SHOOTER                          1867
+#define SPECIES_PACTO                                   1868
+#define SPECIES_MIRRA                                   1869
+#define SPECIES_BATAMON                                 1870
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

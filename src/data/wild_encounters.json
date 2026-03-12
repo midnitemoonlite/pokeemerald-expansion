@@ -85,52 +85,52 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TWISTER"
+                "species": "SPECIES_COTTA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_DUBIOR_JR"
+                "species": "SPECIES_SPYNUM"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_COOL_SPOOK"
+                "species": "SPECIES_MIKARIN"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TAC"
+                "species": "SPECIES_I3"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CHEMITORY"
+                "species": "SPECIES_SPYNUM"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_GOLEM_KIRBY"
+                "species": "SPECIES_RINGLE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SNIPPER"
+                "species": "SPECIES_PACTO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BOXY"
+                "species": "SPECIES_MIRRA"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_SIMIRROR"
+                "species": "SPECIES_BLOON"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_MASTER_HAND"
+                "species": "SPECIES_STARMAN"
               },
               {
                 "min_level": 3,
