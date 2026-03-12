@@ -2003,7 +2003,13 @@
 #define SPECIES_MR_SHINE                                1870
 #define SPECIES_SHINE_BRIGHT                            1871
 #define SPECIES_MR_BRIGHT                               1872
-#define SPECIES_BATAMON                                 1873
+#define SPECIES_PLUGG                                   1873
+#define SPECIES_META_KNIGHTS                            SPECIES_AXE_KNIGHT
+#define SPECIES_AXE_KNIGHT                              1874
+#define SPECIES_MACE_KNIGHT                             1875
+#define SPECIES_TRIDENT_KNIGHT                          1876
+#define SPECIES_JAVELIN_KNIGHT                          1877
+#define SPECIES_BATAMON                                 1878
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

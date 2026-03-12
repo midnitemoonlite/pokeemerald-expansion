@@ -30042,6 +30042,42 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_MrBright[] = INCBIN_U8("graphics/pokemon/mrbright/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_Plugg[] = INCBIN_U32("graphics/pokemon/plugg/front.4bpp.lz");
+    const u32 gMonBackPic_Plugg[] = INCBIN_U32("graphics/pokemon/plugg/back.4bpp.lz");
+    const u16 gMonPalette_Plugg[] = INCBIN_U16("graphics/pokemon/plugg/normal.gbapal");
+    const u16 gMonShinyPalette_Plugg[] = INCBIN_U16("graphics/pokemon/plugg/shiny.gbapal");
+    const u8 gMonIcon_Plugg[] = INCBIN_U8("graphics/pokemon/plugg/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Plugg[] = INCBIN_U8("graphics/pokemon/plugg/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_AxeKnight[] = INCBIN_U32("graphics/pokemon/metaknights/front.4bpp.lz");
+    const u32 gMonBackPic_AxeKnight[] = INCBIN_U32("graphics/pokemon/metaknights/back.4bpp.lz");
+    const u16 gMonPalette_AxeKnight[] = INCBIN_U16("graphics/pokemon/metaknights/normal.gbapal");
+    const u16 gMonShinyPalette_AxeKnight[] = INCBIN_U16("graphics/pokemon/metaknights/shiny.gbapal");
+    const u8 gMonIcon_AxeKnight[] = INCBIN_U8("graphics/pokemon/metaknights/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_MetaKnights[] = INCBIN_U8("graphics/pokemon/metaknights/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_MaceKnight[] = INCBIN_U32("graphics/pokemon/metaknights/mace/front.4bpp.lz");
+    const u32 gMonBackPic_MaceKnight[] = INCBIN_U32("graphics/pokemon/metaknights/mace/back.4bpp.lz");
+    const u16 gMonPalette_MaceKnight[] = INCBIN_U16("graphics/pokemon/metaknights/mace/normal.gbapal");
+    const u16 gMonShinyPalette_MaceKnight[] = INCBIN_U16("graphics/pokemon/metaknights/mace/shiny.gbapal");
+    const u8 gMonIcon_MaceKnight[] = INCBIN_U8("graphics/pokemon/metaknights/mace/icon.4bpp");
+
+    const u32 gMonFrontPic_TridentKnight[] = INCBIN_U32("graphics/pokemon/metaknights/trident/front.4bpp.lz");
+    const u32 gMonBackPic_TridentKnight[] = INCBIN_U32("graphics/pokemon/metaknights/trident/back.4bpp.lz");
+    const u16 gMonPalette_TridentKnight[] = INCBIN_U16("graphics/pokemon/metaknights/trident/normal.gbapal");
+    const u16 gMonShinyPalette_TridentKnight[] = INCBIN_U16("graphics/pokemon/metaknights/trident/shiny.gbapal");
+    const u8 gMonIcon_TridentKnight[] = INCBIN_U8("graphics/pokemon/metaknights/trident/icon.4bpp");
+
+    const u32 gMonFrontPic_JavelinKnight[] = INCBIN_U32("graphics/pokemon/metaknights/javelin/front.4bpp.lz");
+    const u32 gMonBackPic_JavelinKnight[] = INCBIN_U32("graphics/pokemon/metaknights/javelin/back.4bpp.lz");
+    const u16 gMonPalette_JavelinKnight[] = INCBIN_U16("graphics/pokemon/metaknights/javelin/normal.gbapal");
+    const u16 gMonShinyPalette_JavelinKnight[] = INCBIN_U16("graphics/pokemon/metaknights/javelin/shiny.gbapal");
+    const u8 gMonIcon_JavelinKnight[] = INCBIN_U8("graphics/pokemon/metaknights/javelin/icon.4bpp");
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");
