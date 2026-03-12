@@ -2698,3 +2698,9 @@ static const u16 sHandsFormSpeciesIdTable[] = {
     SPECIES_CRAZY_HAND,
     FORM_SPECIES_END,
 };
+
+static const u16 sMrShineFormSpeciesIdTable[] = {
+    SPECIES_MR_SHINE,
+    SPECIES_SHINE_BRIGHT,
+    FORM_SPECIES_END,
+};

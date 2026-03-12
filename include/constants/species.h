@@ -2000,7 +2000,10 @@
 #define SPECIES_SECTRA_SHOOTER                          1867
 #define SPECIES_PACTO                                   1868
 #define SPECIES_MIRRA                                   1869
-#define SPECIES_BATAMON                                 1870
+#define SPECIES_MR_SHINE                                1870
+#define SPECIES_SHINE_BRIGHT                            1871
+#define SPECIES_MR_BRIGHT                               1872
+#define SPECIES_BATAMON                                 1873
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

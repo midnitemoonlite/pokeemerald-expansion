@@ -13761,8 +13761,8 @@ const struct ItemInfo gItemsInfo[] =
         .importance = 1,
         .description = COMPOUND_STRING(
             "A device to fuse\n"
-            "and split Necrozma\n"
-            "using a Solgaleo."),
+            "and split Mr. Shine\n"
+            "and Mr. Bright."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Fusion,

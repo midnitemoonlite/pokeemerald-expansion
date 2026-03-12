@@ -2388,5 +2388,10 @@ static const struct FormChange sRoboRickFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 
+static const struct Fusion sMrShineFusionTable[] = {
+    {1, ITEM_N_SOLARIZER,    SPECIES_MR_SHINE, SPECIES_MR_BRIGHT,  SPECIES_SHINE_BRIGHT,   MOVE_NONE, FORGET_EXTRA_MOVES},
+    {FUSION_TERMINATOR},
+};
+
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

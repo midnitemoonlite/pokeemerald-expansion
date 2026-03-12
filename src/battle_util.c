@@ -3435,6 +3435,25 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
+        case ABILITY_AS_ONE_SHINE_BRIGHT:
+        if (!shouldAbilityTrigger)
+                break;
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_MISTY_TERRAIN) && TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN, gLastUsedAbility))
+            {
+                BattleScriptCall(BattleScript_MistySurgeActivates);
+                BattleScriptCall(BattleScript_WeatherAbilityActivates);
+                effect++;
+            }
+            else if (gBattleWeather & B_WEATHER_PRIMAL_ANY && HasWeatherEffect())
+            {
+                BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+                if (TryChangeBattleTerrain(battler, STATUS_FIELD_MISTY_TERRAIN))
+                {
+                    BattleScriptCall(BattleScript_MistySurgeActivates);
+                }
+                effect++;
+            }
+            break;
         case ABILITY_INTIMIDATE:
             if (shouldAbilityTrigger && !IsOpposingSideEmpty(battler))
             {

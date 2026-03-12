@@ -32,6 +32,9 @@ const struct Fusion *const gFusionTablePointers[NUM_SPECIES] =
     [SPECIES_GLASTRIER] = sCalyrexFusionTable,
 #endif //P_FAMILY_GLASTRIER
 #endif //P_FAMILY_CALYREX
+    [SPECIES_MR_SHINE] = sMrShineFusionTable,
+    [SPECIES_SHINE_BRIGHT] = sMrShineFusionTable,
+    [SPECIES_MR_BRIGHT] = sMrShineFusionTable,
 #endif //P_FUSION_FORMS
 };
 
