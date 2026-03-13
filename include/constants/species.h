@@ -2034,7 +2034,22 @@
 #define SPECIES_GABON                                   SPECIES_GABON_DISGUISED
 #define SPECIES_GABON_DISGUISED                         1898
 #define SPECIES_GABON_BUSTED                            1899
-#define SPECIES_BATAMON                                 1900
+#define SPECIES_CAPTAIN_STITCH                          1900
+#define SPECIES_HALTWORKER                              1901
+#define SPECIES_MECHAMECH                               1902
+#define SPECIES_INVADER_ARMOR                           1903
+#define SPECIES_BROBO                                   1904
+#define SPECIES_JAMBELIEVER                             1905
+#define SPECIES_JAMMERJAB                               1906
+#define SPECIES_BOOLER                                  1907
+#define SPECIES_NOO                                     1908
+#define SPECIES_SKULLY                                  1909
+#define SPECIES_SKULLION                                1910
+#define SPECIES_NECRODEUS                               1911
+#define SPECIES_DUPA                                    1912
+#define SPECIES_DIPPA                                   1913
+#define SPECIES_DEPPA                                   1914
+#define SPECIES_BATAMON                                 1915
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
