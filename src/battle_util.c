@@ -10782,7 +10782,8 @@ bool32 IsAllowedToUseBag(void)
 bool32 IsMimikyuDisguised(enum BattlerId battler)
 {
     return gBattleMons[battler].species == SPECIES_MIMIKYU_DISGUISED
-        || gBattleMons[battler].species == SPECIES_MIMIKYU_TOTEM_DISGUISED;
+        || gBattleMons[battler].species == SPECIES_MIMIKYU_TOTEM_DISGUISED
+        || gBattleMons[battler].species == SPECIES_GABON_DISGUISED;
 }
 
 #define UNPACK_STARTING_STATUS_TO_EWRAM(_enum, _fieldName, ...) case _enum: gStartingStatuses._fieldName = TRUE; break;

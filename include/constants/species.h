@@ -2023,7 +2023,18 @@
 #define SPECIES_CHAMELEO_ARM_ORANGE                     1887
 #define SPECIES_CHAMELEO_ARM_YELLOW                     1888
 #define SPECIES_NODDY                                   1889
-#define SPECIES_BATAMON                                 1890
+#define SPECIES_NRUFF                                   1890
+#define SPECIES_NRUFF_AND_NELLY                         1891
+#define SPECIES_BUFFAHORN                               1892
+#define SPECIES_ROLLOZER                                1893
+#define SPECIES_SILLYDILLO                              1894
+#define SPECIES_TORTORNER                               1895
+#define SPECIES_TORTUILDING                             1896
+#define SPECIES_BALLOON_MEISTER                         1897
+#define SPECIES_GABON                                   SPECIES_GABON_DISGUISED
+#define SPECIES_GABON_DISGUISED                         1898
+#define SPECIES_GABON_BUSTED                            1899
+#define SPECIES_BATAMON                                 1900
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

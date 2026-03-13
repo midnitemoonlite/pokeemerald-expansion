@@ -2728,3 +2728,9 @@ static const u16 sChameleoArmFormSpeciesIdTable[] = {
     SPECIES_CHAMELEO_ARM_YELLOW,
     FORM_SPECIES_END,
 };
+
+static const u16 sGabonFormSpeciesIdTable[] = {
+    SPECIES_GABON_DISGUISED,
+    SPECIES_GABON_BUSTED,
+    FORM_SPECIES_END,
+};
