@@ -27765,7 +27765,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_BigZombon[] = INCBIN_U32("graphics/pokemon/bigzombon/back.4bpp.lz");
     const u16 gMonPalette_BigZombon[] = INCBIN_U16("graphics/pokemon/bigzombon/normal.gbapal");
     const u16 gMonShinyPalette_BigZombon[] = INCBIN_U16("graphics/pokemon/bigzombon/shiny.gbapal");
-    const u8 gMonIcon_BigZomnbon[] = INCBIN_U8("graphics/pokemon/bigzombon/icon.4bpp");
+    const u8 gMonIcon_BigZombon[] = INCBIN_U8("graphics/pokemon/bigzombon/icon.4bpp");
     #if P_FOOTPRINTS
     const u8 gMonFootprint_BigZombon[] = INCBIN_U8("graphics/pokemon/bigzombon/footprint.1bpp");
     #endif //P_FOOTPRINTS

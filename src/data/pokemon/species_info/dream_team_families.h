@@ -218,7 +218,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_BurningLeo,
         .shinyPalette = gMonShinyPalette_BurningLeo,
-        .iconSprite = gMonIcon_Cyndaquil,
+        .iconSprite = gMonIcon_BurningLeo,
         .iconPalIndex = 0,
         FOOTPRINT(BurningLeo)
         .levelUpLearnset = sBurningLeoLevelUpLearnset,
@@ -274,7 +274,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_Acchi,
         .shinyPalette = gMonShinyPalette_Acchi,
-        .iconSprite = gMonIcon_Magmar,
+        .iconSprite = gMonIcon_Acchi,
         .iconPalIndex = 1,
         FOOTPRINT(Rosely)
         .levelUpLearnset = sAcchiLevelUpLearnset,
@@ -330,7 +330,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Pyribbit,
         .shinyPalette = gMonShinyPalette_Pyribbit,
-        .iconSprite = gMonIcon_Heatran,
+        .iconSprite = gMonIcon_Pyribbit,
         .iconPalIndex = 2,
         FOOTPRINT(Pyribbit)
         .levelUpLearnset = sPyribbitLevelUpLearnset,
@@ -385,7 +385,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Squishy,
         .shinyPalette = gMonShinyPalette_Squishy,
-        .iconSprite = gMonIcon_Tentacool,
+        .iconSprite = gMonIcon_Squishy,
         .iconPalIndex = 0,
         FOOTPRINT(Squishy)
         .levelUpLearnset = sSquishyLevelUpLearnset,
@@ -441,7 +441,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_Squister,
         .shinyPalette = gMonShinyPalette_Squister,
-        .iconSprite = gMonIcon_Tentacool,
+        .iconSprite = gMonIcon_Squister,
         .iconPalIndex = 1,
         FOOTPRINT(Squister)
         .levelUpLearnset = sSquisterLevelUpLearnset,
@@ -497,7 +497,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_Claykken,
         .shinyPalette = gMonShinyPalette_Claykken,
-        .iconSprite = gMonIcon_Tentacruel,
+        .iconSprite = gMonIcon_Claykken,
         .iconPalIndex = 2,
         FOOTPRINT(Claykken)
         .levelUpLearnset = sClaykkenLevelUpLearnset,
@@ -552,7 +552,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Chip,
         .shinyPalette = gMonShinyPalette_Chip,
-        .iconSprite = gMonIcon_Skwovet,
+        .iconSprite = gMonIcon_Chip,
         .iconPalIndex = 0,
         FOOTPRINT(Chip)
         .levelUpLearnset = sChipLevelUpLearnset,
@@ -608,7 +608,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_Chippurus,
         .shinyPalette = gMonShinyPalette_Chippurus,
-        .iconSprite = gMonIcon_Greedent,
+        .iconSprite = gMonIcon_Chippurus,
         .iconPalIndex = 0,
         FOOTPRINT(Chip)
         .levelUpLearnset = sChippurusLevelUpLearnset,
@@ -663,7 +663,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_BrontoBurt,
         .shinyPalette = gMonShinyPalette_BrontoBurt,
-        .iconSprite = gMonIcon_Yanma,
+        .iconSprite = gMonIcon_BrontoBurt,
         .iconPalIndex = 0,
         FOOTPRINT(BrontoBurt)
         .levelUpLearnset = sBrontoBurtLevelUpLearnset,
@@ -719,7 +719,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_HalcantoBurt,
         .shinyPalette = gMonShinyPalette_HalcantoBurt,
-        .iconSprite = gMonIcon_Yanmega,
+        .iconSprite = gMonIcon_HalcantoBurt,
         .iconPalIndex = 0,
         FOOTPRINT(HalcantoBurt)
         .levelUpLearnset = sHalcantoBurtLevelUpLearnset,
@@ -774,7 +774,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Capiller,
         .shinyPalette = gMonShinyPalette_Capiller,
-        .iconSprite = gMonIcon_Scatterbug,
+        .iconSprite = gMonIcon_Capiller,
         .iconPalIndex = 0,
         FOOTPRINT(Capiller)
         .levelUpLearnset = sCapillerLevelUpLearnset,
@@ -830,7 +830,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         .palette = gMonPalette_Pupa,
         .shinyPalette = gMonShinyPalette_Pupa,
-        .iconSprite = gMonIcon_Spewpa,
+        .iconSprite = gMonIcon_Pupa,
         .iconPalIndex = 0,
         FOOTPRINT(Punc)
         .levelUpLearnset = sPupaLevelUpLearnset,
@@ -886,7 +886,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_ButterflySolo,
         .shinyPalette = gMonShinyPalette_ButterflySolo,
-        .iconSprite = gMonIcon_Beautifly,
+        .iconSprite = gMonIcon_ButterflySolo,
         .iconPalIndex = 0,
         FOOTPRINT(Butterfly)
         .levelUpLearnset = sButterflyLevelUpLearnset,
@@ -943,7 +943,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_ButterflySwarm,
         .shinyPalette = gMonShinyPalette_ButterflySwarm,
-        .iconSprite = gMonIcon_Dustox,
+        .iconSprite = gMonIcon_ButterflySwarm,
         .iconPalIndex = 0,
         FOOTPRINT(Butterfly)
         .levelUpLearnset = sButterflyLevelUpLearnset,
@@ -1000,7 +1000,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Chick,
         .shinyPalette = gMonShinyPalette_Chick,
-        .iconSprite = gMonIcon_Togepi,
+        .iconSprite = gMonIcon_Chick,
         .iconPalIndex = 0,
         FOOTPRINT(Chick)
         .levelUpLearnset = sChickLevelUpLearnset,
@@ -1169,7 +1169,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
         .palette = gMonPalette_Pichikuri,
         .shinyPalette = gMonShinyPalette_Pichikuri,
-        .iconSprite = gMonIcon_Mandibuzz,
+        .iconSprite = gMonIcon_Pichikuri,
         .iconPalIndex = 0,
         FOOTPRINT(Pichikuri)
         .levelUpLearnset = sPichikuriLevelUpLearnset,
@@ -1224,7 +1224,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_WaddleDoo,
         .shinyPalette = gMonShinyPalette_WaddleDoo,
-        .iconSprite = gMonIcon_Pikachu,
+        .iconSprite = gMonIcon_WaddleDoo,
         .iconPalIndex = 0,
         FOOTPRINT(WaddleDoo)
         .levelUpLearnset = sWaddleDooLevelUpLearnset,
@@ -1280,7 +1280,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_KingDoo,
         .shinyPalette = gMonShinyPalette_KingDoo,
-        .iconSprite = gMonIcon_Raichu,
+        .iconSprite = gMonIcon_KingDoo,
         .iconPalIndex = 0,
         FOOTPRINT(KingDoo)
         .levelUpLearnset = sKingDooLevelUpLearnset,
@@ -1335,7 +1335,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_BeanbonPlant,
         .shinyPalette = gMonShinyPalette_BeanbonPlant,
-        .iconSprite = gMonIcon_BurmyPlant,
+        .iconSprite = gMonIcon_BeanbonPlant,
         .iconPalIndex = 0,
         FOOTPRINT(Beanbon)
         .levelUpLearnset = sBeanbonLevelUpLearnset,
@@ -1393,7 +1393,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_BeanbonSandy,
         .shinyPalette = gMonShinyPalette_BeanbonSandy,
-        .iconSprite = gMonIcon_BurmySandy,
+        .iconSprite = gMonIcon_BeanbonSandy,
         .iconPalIndex = 0,
         FOOTPRINT(Beanbon)
         .levelUpLearnset = sBeanbonLevelUpLearnset,
@@ -1451,7 +1451,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_BeanbonTrash,
         .shinyPalette = gMonShinyPalette_BeanbonTrash,
-        .iconSprite = gMonIcon_BurmyTrash,
+        .iconSprite = gMonIcon_BeanbonTrash,
         .iconPalIndex = 0,
         FOOTPRINT(Beanbon)
         .levelUpLearnset = sBeanbonLevelUpLearnset,
@@ -1509,7 +1509,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_BigBeanbon,
         .shinyPalette = gMonShinyPalette_BigBeanbon,
-        .iconSprite = gMonIcon_WormadamPlant,
+        .iconSprite = gMonIcon_BigBeanbon,
         .iconPalIndex = 0,
         FOOTPRINT(BigBeanbon)
         .levelUpLearnset = sBigBeanbonLevelUpLearnset,
@@ -1565,7 +1565,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_BiggerBeanbon,
         .shinyPalette = gMonShinyPalette_BiggerBeanbon,
-        .iconSprite = gMonIcon_Mothim,
+        .iconSprite = gMonIcon_BiggerBeanbon,
         .iconPalIndex = 0,
         FOOTPRINT(BiggerBeanbon)
         .levelUpLearnset = sBiggerBeanbonLevelUpLearnset,
@@ -1621,7 +1621,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_BigMummbon,
         .shinyPalette = gMonShinyPalette_BigMummbon,
-        .iconSprite = gMonIcon_WormadamSandy,
+        .iconSprite = gMonIcon_BigMummbon,
         .iconPalIndex = 0,
         FOOTPRINT(BigMummbon)
         .levelUpLearnset = sBigMummbonLevelUpLearnset,
@@ -1677,7 +1677,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_BigZombon,
         .shinyPalette = gMonShinyPalette_BigZombon,
-        .iconSprite = gMonIcon_WormadamTrash,
+        .iconSprite = gMonIcon_BigZombon,
         .iconPalIndex = 0,
         FOOTPRINT(BigZombon)
         .levelUpLearnset = sBigZombonLevelUpLearnset,
@@ -1732,7 +1732,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_GawGaw,
         .shinyPalette = gMonShinyPalette_GawGaw,
-        .iconSprite = gMonIcon_Sandshrew,
+        .iconSprite = gMonIcon_GawGaw,
         .iconPalIndex = 0,
         FOOTPRINT(GawGaw)
         .levelUpLearnset = sGawGawLevelUpLearnset,
@@ -1788,7 +1788,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_GaoGao,
         .shinyPalette = gMonShinyPalette_GaoGao,
-        .iconSprite = gMonIcon_Excadrill,
+        .iconSprite = gMonIcon_GaoGao,
         .iconPalIndex = 0,
         FOOTPRINT(GaoGao)
         .levelUpLearnset = sGaoGaoLevelUpLearnset,
@@ -1843,7 +1843,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Cappy,
         .shinyPalette = gMonShinyPalette_Cappy,
-        .iconSprite = gMonIcon_Paras,
+        .iconSprite = gMonIcon_Cappy,
         .iconPalIndex = 0,
         FOOTPRINT(Cappy)
         .levelUpLearnset = sCappyLevelUpLearnset,
@@ -1900,7 +1900,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_PoisonMash,
         .shinyPalette = gMonShinyPalette_PoisonMash,
-        .iconSprite = gMonIcon_Parasect,
+        .iconSprite = gMonIcon_PoisonMash,
         .iconPalIndex = 0,
         FOOTPRINT(PoisonMash)
         .levelUpLearnset = sPoisonMashLevelUpLearnset,
@@ -1955,7 +1955,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_PoppyBrosJr,
         .shinyPalette = gMonShinyPalette_PoppyBrosJr,
-        .iconSprite = gMonIcon_Aipom,
+        .iconSprite = gMonIcon_PoppyBrosJr,
         .iconPalIndex = 0,
         FOOTPRINT(PoppyBrosJr)
         .levelUpLearnset = sPoppyBrosJrLevelUpLearnset,
@@ -2011,7 +2011,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_PoppyBrosSr,
         .shinyPalette = gMonShinyPalette_PoppyBrosSr,
-        .iconSprite = gMonIcon_Ambipom,
+        .iconSprite = gMonIcon_PoppyBrosSr,
         .iconPalIndex = 0,
         FOOTPRINT(PoppyBrosSr)
         .levelUpLearnset = sPoppyBrosSrLevelUpLearnset,
@@ -2066,7 +2066,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_UFO,
         .shinyPalette = gMonShinyPalette_UFO,
-        .iconSprite = gMonIcon_Elgyem,
+        .iconSprite = gMonIcon_UFO,
         .iconPalIndex = 0,
         FOOTPRINT(UFO)
         .levelUpLearnset = sUFOLevelUpLearnset,
@@ -2121,7 +2121,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_BladeKnight,
         .shinyPalette = gMonShinyPalette_BladeKnight,
-        .iconSprite = gMonIcon_Machop,
+        .iconSprite = gMonIcon_BladeKnight,
         .iconPalIndex = 0,
         FOOTPRINT(BladeKnight)
         .levelUpLearnset = sBladeKnightLevelUpLearnset,
@@ -2178,7 +2178,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_GigantEdge,
         .shinyPalette = gMonShinyPalette_GigantEdge,
-        .iconSprite = gMonIcon_Machoke,
+        .iconSprite = gMonIcon_GigantEdge,
         .iconPalIndex = 0,
         FOOTPRINT(GigantEdge)
         .levelUpLearnset = sGigantEdgeLevelUpLearnset,
@@ -2235,7 +2235,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_IgniteEdge,
         .shinyPalette = gMonShinyPalette_IgniteEdge,
-        .iconSprite = gMonIcon_Machamp,
+        .iconSprite = gMonIcon_IgniteEdge,
         .iconPalIndex = 0,
         FOOTPRINT(IgniteEdge)
         .levelUpLearnset = sIgniteEdgeLevelUpLearnset,
@@ -2290,7 +2290,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_SirKibble,
         .shinyPalette = gMonShinyPalette_SirKibble,
-        .iconSprite = gMonIcon_Aron,
+        .iconSprite = gMonIcon_SirKibble,
         .iconPalIndex = 0,
         FOOTPRINT(SirKibble)
         .levelUpLearnset = sSirKibbleLevelUpLearnset,
@@ -2347,7 +2347,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_KibbleBlade,
         .shinyPalette = gMonShinyPalette_KibbleBlade,
-        .iconSprite = gMonIcon_Lairon,
+        .iconSprite = gMonIcon_KibbleBlade,
         .iconPalIndex = 0,
         FOOTPRINT(KibbleBlade)
         .levelUpLearnset = sKibbleBladeLevelUpLearnset,
@@ -2404,7 +2404,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_FrostKibbleBlade,
         .shinyPalette = gMonShinyPalette_FrostKibbleBlade,
-        .iconSprite = gMonIcon_Aggron,
+        .iconSprite = gMonIcon_FrostKibbleBlade,
         .iconPalIndex = 0,
         FOOTPRINT(FrostKibbleBlade)
         .levelUpLearnset = sFrostKibbleBladeLevelUpLearnset,
@@ -2459,7 +2459,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Needlous,
         .shinyPalette = gMonShinyPalette_Needlous,
-        .iconSprite = gMonIcon_Weedle,
+        .iconSprite = gMonIcon_Needlous,
         .iconPalIndex = 0,
         FOOTPRINT(Needlous)
         .levelUpLearnset = sNeedlousLevelUpLearnset,
@@ -2515,7 +2515,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         .palette = gMonPalette_Punc,
         .shinyPalette = gMonShinyPalette_Punc,
-        .iconSprite = gMonIcon_Kakuna,
+        .iconSprite = gMonIcon_Punc,
         .iconPalIndex = 0,
         FOOTPRINT(Pupa)
         .levelUpLearnset = sPuncLevelUpLearnset,
@@ -2571,7 +2571,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         .palette = gMonPalette_Pierce,
         .shinyPalette = gMonShinyPalette_Pierce,
-        .iconSprite = gMonIcon_Beedrill,
+        .iconSprite = gMonIcon_Pierce,
         .iconPalIndex = 0,
         FOOTPRINT(Pierce)
         .levelUpLearnset = sPierceLevelUpLearnset,
@@ -2626,7 +2626,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_BroomHatter,
         .shinyPalette = gMonShinyPalette_BroomHatter,
-        .iconSprite = gMonIcon_Spritzee,
+        .iconSprite = gMonIcon_BroomHatter,
         .iconPalIndex = 0,
         FOOTPRINT(BroomHatter)
         .levelUpLearnset = sBroomHatterLevelUpLearnset,
@@ -2683,7 +2683,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_Keke,
         .shinyPalette = gMonShinyPalette_Keke,
-        .iconSprite = gMonIcon_Aromatisse,
+        .iconSprite = gMonIcon_Keke,
         .iconPalIndex = 0,
         FOOTPRINT(Aromatisse)
         .levelUpLearnset = sKekeLevelUpLearnset,
@@ -2738,7 +2738,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Awoofy,
         .shinyPalette = gMonShinyPalette_Awoofy,
-        .iconSprite = gMonIcon_Yamper,
+        .iconSprite = gMonIcon_Awoofy,
         .iconPalIndex = 0,
         FOOTPRINT(Awoofy)
         .levelUpLearnset = sAwoofyLevelUpLearnset,
@@ -2795,7 +2795,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_PrimalAwoofy,
         .shinyPalette = gMonShinyPalette_PrimalAwoofy,
-        .iconSprite = gMonIcon_Boltund,
+        .iconSprite = gMonIcon_PrimalAwoofy,
         .iconPalIndex = 0,
         FOOTPRINT(Chip)
         .levelUpLearnset = sPrimalAwoofyLevelUpLearnset,
@@ -2850,7 +2850,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Kabu,
         .shinyPalette = gMonShinyPalette_Kabu,
-        .iconSprite = gMonIcon_Bonsly,
+        .iconSprite = gMonIcon_Kabu,
         .iconPalIndex = 0,
         FOOTPRINT(Kabu)
         .levelUpLearnset = sKabuLevelUpLearnset,
@@ -2906,7 +2906,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_BigKabu,
         .shinyPalette = gMonShinyPalette_BigKabu,
-        .iconSprite = gMonIcon_Sudowoodo,
+        .iconSprite = gMonIcon_BigKabu,
         .iconPalIndex = 0,
         FOOTPRINT(BigKabu)
         .levelUpLearnset = sBigKabuLevelUpLearnset,
@@ -2961,7 +2961,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Blipper,
         .shinyPalette = gMonShinyPalette_Blipper,
-        .iconSprite = gMonIcon_Goldeen,
+        .iconSprite = gMonIcon_Blipper,
         .iconPalIndex = 0,
         FOOTPRINT(Blipper)
         .levelUpLearnset = sBlipperLevelUpLearnset,
@@ -3019,7 +3019,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Mamatee,
         .shinyPalette = gMonShinyPalette_Mamatee,
-        .iconSprite = gMonIcon_Seaking,
+        .iconSprite = gMonIcon_Mamatee,
         .iconPalIndex = 0,
         FOOTPRINT(Mamatee)
         .levelUpLearnset = sMamateeLevelUpLearnset,
@@ -3075,7 +3075,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_BlingBlipper,
         .shinyPalette = gMonShinyPalette_BlingBlipper,
-        .iconSprite = gMonIcon_Suicune,
+        .iconSprite = gMonIcon_BlingBlipper,
         .iconPalIndex = 0,
         FOOTPRINT(BlingBlipper)
         .levelUpLearnset = sBlingBlipperLevelUpLearnset,
@@ -3130,7 +3130,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Leafan,
         .shinyPalette = gMonShinyPalette_Leafan,
-        .iconSprite = gMonIcon_Gossifleur,
+        .iconSprite = gMonIcon_Leafan,
         .iconPalIndex = 0,
         FOOTPRINT(Leafan)
         .levelUpLearnset = sLeafanLevelUpLearnset,
@@ -3187,7 +3187,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Bulby,
         .shinyPalette = gMonShinyPalette_Bulby,
-        .iconSprite = gMonIcon_Eldegoss,
+        .iconSprite = gMonIcon_Bulby,
         .iconPalIndex = 0,
         FOOTPRINT(Bulby)
         .levelUpLearnset = sBulbyLevelUpLearnset,
@@ -3242,7 +3242,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Beetley,
         .shinyPalette = gMonShinyPalette_Beetley,
-        .iconSprite = gMonIcon_Heracross,
+        .iconSprite = gMonIcon_Beetley,
         .iconPalIndex = 0,
         FOOTPRINT(Beetley)
         .levelUpLearnset = sBeetleyLevelUpLearnset,
@@ -3299,7 +3299,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Hornhead,
         .shinyPalette = gMonShinyPalette_Hornhead,
-        .iconSprite = gMonIcon_Heracross,
+        .iconSprite = gMonIcon_Hornhead,
         .iconPalIndex = 2,
         FOOTPRINT(Hornhead)
         .levelUpLearnset = sHornheadLevelUpLearnset,
@@ -3354,7 +3354,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Bugzzy,
         .shinyPalette = gMonShinyPalette_Bugzzy,
-        .iconSprite = gMonIcon_Heracross,
+        .iconSprite = gMonIcon_Bugzzy,
         .iconPalIndex = 3,
         FOOTPRINT(Bugzzy)
         .levelUpLearnset = sBugzzyLevelUpLearnset,
@@ -3409,7 +3409,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_MrAnglep,
         .shinyPalette = gMonShinyPalette_MrAnglep,
-        .iconSprite = gMonIcon_Cacnea,
+        .iconSprite = gMonIcon_MrAnglep,
         .iconPalIndex = 0,
         FOOTPRINT(MrAnglep)
         .levelUpLearnset = sMrAnglepLevelUpLearnset,
@@ -3466,7 +3466,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_MrPUmpkin,
         .shinyPalette = gMonShinyPalette_MrPUmpkin,
-        .iconSprite = gMonIcon_Cacturne,
+        .iconSprite = gMonIcon_MrPUmpkin,
         .iconPalIndex = 0,
         FOOTPRINT(MrPUmpkin)
         .levelUpLearnset = sMrPUmpkinLevelUpLearnset,
@@ -3521,7 +3521,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Sulkworm,
         .shinyPalette = gMonShinyPalette_Sulkworm,
-        .iconSprite = gMonIcon_Shelgon,
+        .iconSprite = gMonIcon_Sulkworm,
         .iconPalIndex = 0,
         FOOTPRINT(Sulkworm)
         .levelUpLearnset = sSulkwormLevelUpLearnset,
@@ -3579,7 +3579,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Fangora,
         .shinyPalette = gMonShinyPalette_Fangora,
-        .iconSprite = gMonIcon_Salamence,
+        .iconSprite = gMonIcon_Fangora,
         .iconPalIndex = 0,
         FOOTPRINT(Fangora)
         .levelUpLearnset = sFangoraLevelUpLearnset,
@@ -3634,7 +3634,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Buttonfly,
         .shinyPalette = gMonShinyPalette_Buttonfly,
-        .iconSprite = gMonIcon_Cutiefly,
+        .iconSprite = gMonIcon_Buttonfly,
         .iconPalIndex = 0,
         FOOTPRINT(Buttonfly)
         .levelUpLearnset = sButtonflyLevelUpLearnset,
@@ -3691,7 +3691,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Orbitfly,
         .shinyPalette = gMonShinyPalette_Orbitfly,
-        .iconSprite = gMonIcon_Dottler,
+        .iconSprite = gMonIcon_Orbitfly,
         .iconPalIndex = 0,
         FOOTPRINT(Orbitfly)
         .levelUpLearnset = sOrbitflyLevelUpLearnset,
@@ -3746,7 +3746,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Maiga,
         .shinyPalette = gMonShinyPalette_Maiga,
-        .iconSprite = gMonIcon_Grimer,
+        .iconSprite = gMonIcon_Maiga,
         .iconPalIndex = 0,
         FOOTPRINT(Maiga)
         .levelUpLearnset = sMaigaLevelUpLearnset,
@@ -3802,7 +3802,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Popon,
         .shinyPalette = gMonShinyPalette_Popon,
-        .iconSprite = gMonIcon_Muk,
+        .iconSprite = gMonIcon_Popon,
         .iconPalIndex = 0,
         FOOTPRINT(Popon)
         .levelUpLearnset = sPoponLevelUpLearnset,
@@ -3857,7 +3857,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Coner,
         .shinyPalette = gMonShinyPalette_Coner,
-        .iconSprite = gMonIcon_Corphish,
+        .iconSprite = gMonIcon_Coner,
         .iconPalIndex = 0,
         FOOTPRINT(Coner)
         .levelUpLearnset = sConerLevelUpLearnset,
@@ -3913,7 +3913,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Drifter,
         .shinyPalette = gMonShinyPalette_Drifter,
-        .iconSprite = gMonIcon_Yamask,
+        .iconSprite = gMonIcon_Drifter,
         .iconPalIndex = 0,
         FOOTPRINT(Drifter)
         .levelUpLearnset = sDrifterLevelUpLearnset,
@@ -3970,7 +3970,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_JumperShoot,
         .shinyPalette = gMonShinyPalette_JumperShoot,
-        .iconSprite = gMonIcon_Cofagrigus,
+        .iconSprite = gMonIcon_JumperShoot,
         .iconPalIndex = 0,
         FOOTPRINT(JumperShoot)
         .levelUpLearnset = sJumperShootLevelUpLearnset,
@@ -4025,7 +4025,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Pierre,
         .shinyPalette = gMonShinyPalette_Pierre,
-        .iconSprite = gMonIcon_MimeJr,
+        .iconSprite = gMonIcon_Pierre,
         .iconPalIndex = 0,
         FOOTPRINT(Pierre)
         .levelUpLearnset = sPierreLevelUpLearnset,
@@ -4081,7 +4081,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_ClownAcrobot,
         .shinyPalette = gMonShinyPalette_ClownAcrobot,
-        .iconSprite = gMonIcon_MrMime,
+        .iconSprite = gMonIcon_ClownAcrobot,
         .iconPalIndex = 0,
         FOOTPRINT(ClownAcrobot)
         .levelUpLearnset = sClownAcrobotLevelUpLearnset,
@@ -4136,7 +4136,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Sparky,
         .shinyPalette = gMonShinyPalette_Sparky,
-        .iconSprite = gMonIcon_Voltorb,
+        .iconSprite = gMonIcon_Sparky,
         .iconPalIndex = 0,
         FOOTPRINT(Sparky)
         .levelUpLearnset = sSparkyLevelUpLearnset,
@@ -4192,7 +4192,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_MasterGreen,
         .shinyPalette = gMonShinyPalette_MasterGreen,
-        .iconSprite = gMonIcon_Electrode,
+        .iconSprite = gMonIcon_MasterGreen,
         .iconPalIndex = 0,
         FOOTPRINT(MasterGreen)
         .levelUpLearnset = sMasterGreenLevelUpLearnset,
@@ -4248,7 +4248,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_MrFloaty,
         .shinyPalette = gMonShinyPalette_MrFloaty,
-        .iconSprite = gMonIcon_Walrein,
+        .iconSprite = gMonIcon_MrFloaty,
         .iconPalIndex = 0,
         FOOTPRINT(MrFloaty)
         .levelUpLearnset = sMrFloatyLevelUpLearnset,
@@ -4305,7 +4305,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_MrFrosty,
         .shinyPalette = gMonShinyPalette_MrFrosty,
-        .iconSprite = gMonIcon_Walrein,
+        .iconSprite = gMonIcon_MrFrosty,
         .iconPalIndex = 3,
         FOOTPRINT(MrFrosty)
         .levelUpLearnset = sMrFrostyLevelUpLearnset,
@@ -4360,7 +4360,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Flotzo,
         .shinyPalette = gMonShinyPalette_Flotzo,
-        .iconSprite = gMonIcon_FrillishF,
+        .iconSprite = gMonIcon_Flotzo,
         .iconPalIndex = 0,
         FOOTPRINT(Flotzo)
         .levelUpLearnset = sFlotzoLevelUpLearnset,
@@ -4417,7 +4417,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_FlotzoBorg,
         .shinyPalette = gMonShinyPalette_FlotzoBorg,
-        .iconSprite = gMonIcon_Alomomola,
+        .iconSprite = gMonIcon_FlotzoBorg,
         .iconPalIndex = 0,
         FOOTPRINT(FlotzoBorg)
         .levelUpLearnset = sFlotzoBorgLevelUpLearnset,
@@ -4474,7 +4474,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GiantFlotzo,
         .shinyPalette = gMonShinyPalette_GiantFlotzo,
-        .iconSprite = gMonIcon_JellicentF,
+        .iconSprite = gMonIcon_GiantFlotzo,
         .iconPalIndex = 0,
         FOOTPRINT(GiantFlotzo)
         .levelUpLearnset = sGiantFlotzoLevelUpLearnset,
@@ -4529,7 +4529,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Rocky,
         .shinyPalette = gMonShinyPalette_Rocky,
-        .iconSprite = gMonIcon_Roggenrola,
+        .iconSprite = gMonIcon_Rocky,
         .iconPalIndex = 0,
         FOOTPRINT(Rocky)
         .levelUpLearnset = sRockyLevelUpLearnset,
@@ -4585,7 +4585,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GiantRocky,
         .shinyPalette = gMonShinyPalette_GiantRocky,
-        .iconSprite = gMonIcon_Boldore,
+        .iconSprite = gMonIcon_GiantRocky,
         .iconPalIndex = 0,
         FOOTPRINT(GiantRocky)
         .levelUpLearnset = sGiantRockyLevelUpLearnset,
@@ -4641,7 +4641,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Moundo,
         .shinyPalette = gMonShinyPalette_Moundo,
-        .iconSprite = gMonIcon_Gigalith,
+        .iconSprite = gMonIcon_Moundo,
         .iconPalIndex = 0,
         FOOTPRINT(Moundo)
         .levelUpLearnset = sMoundoLevelUpLearnset,
@@ -4696,7 +4696,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Batty,
         .shinyPalette = gMonShinyPalette_Batty,
-        .iconSprite = gMonIcon_Zubat,
+        .iconSprite = gMonIcon_Batty,
         .iconPalIndex = 0,
         FOOTPRINT(Batty)
         .levelUpLearnset = sBattyLevelUpLearnset,
@@ -4753,7 +4753,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Pricklebat,
         .shinyPalette = gMonShinyPalette_Pricklebat,
-        .iconSprite = gMonIcon_Golbat,
+        .iconSprite = gMonIcon_Pricklebat,
         .iconPalIndex = 0,
         FOOTPRINT(Pricklebat)
         .levelUpLearnset = sPricklebatLevelUpLearnset,
@@ -4809,7 +4809,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BuzzybatNormal,
         .shinyPalette = gMonShinyPalette_BuzzybatNormal,
-        .iconSprite = gMonIcon_Crobat,
+        .iconSprite = gMonIcon_BuzzybatNormal,
         .iconPalIndex = 0,
         FOOTPRINT(Buzzybat)
         .levelUpLearnset = sBuzzybatLevelUpLearnset,
@@ -4867,7 +4867,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BuzzybatGrave,
         .shinyPalette = gMonShinyPalette_BuzzybatGrave,
-        .iconSprite = gMonIcon_Runerigus,
+        .iconSprite = gMonIcon_BuzzybatGrave,
         .iconPalIndex = 0,
         FOOTPRINT(Buzzybat)
         .levelUpLearnset = sBuzzybatLevelUpLearnset,
@@ -4924,7 +4924,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Flamer,
         .shinyPalette = gMonShinyPalette_Flamer,
-        .iconSprite = gMonIcon_Darumaka,
+        .iconSprite = gMonIcon_Flamer,
         .iconPalIndex = 0,
         FOOTPRINT(Flamer)
         .levelUpLearnset = sFlamerLevelUpLearnset,
@@ -4980,7 +4980,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_ChainFlamer,
         .shinyPalette = gMonShinyPalette_ChainFlamer,
-        .iconSprite = gMonIcon_DarmanitanStandard,
+        .iconSprite = gMonIcon_Flamer,
         .iconPalIndex = 0,
         FOOTPRINT(ChainFlamer)
         .levelUpLearnset = sChainFlamerLevelUpLearnset,
@@ -5035,7 +5035,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Boxin,
         .shinyPalette = gMonShinyPalette_Boxin,
-        .iconSprite = gMonIcon_Timburr,
+        .iconSprite = gMonIcon_Boxin,
         .iconPalIndex = 0,
         FOOTPRINT(Boxin)
         .levelUpLearnset = sBoxinLevelUpLearnset,
@@ -5091,7 +5091,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Bun,
         .shinyPalette = gMonShinyPalette_Bun,
-        .iconSprite = gMonIcon_Gurdurr,
+        .iconSprite = gMonIcon_Bun,
         .iconPalIndex = 0,
         FOOTPRINT(Bun)
         .levelUpLearnset = sBunLevelUpLearnset,
@@ -5149,7 +5149,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BoxBoxer,
         .shinyPalette = gMonShinyPalette_BoxBoxer,
-        .iconSprite = gMonIcon_Conkeldurr,
+        .iconSprite = gMonIcon_BoxBoxer,
         .iconPalIndex = 0,
         FOOTPRINT(BoxBoxer)
         .levelUpLearnset = sBoxBoxerLevelUpLearnset,
@@ -5204,7 +5204,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Emba,
         .shinyPalette = gMonShinyPalette_Emba,
-        .iconSprite = gMonIcon_Magby,
+        .iconSprite = gMonIcon_Emba,
         .iconPalIndex = 0,
         FOOTPRINT(Emba)
         .levelUpLearnset = sEmbaLevelUpLearnset,
@@ -5261,7 +5261,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Candlemander,
         .shinyPalette = gMonShinyPalette_Candlemander,
-        .iconSprite = gMonIcon_Magmar,
+        .iconSprite = gMonIcon_Candlemander,
         .iconPalIndex = 0,
         FOOTPRINT(Candlemander)
         .levelUpLearnset = sCandlemanderLevelUpLearnset,
@@ -5317,7 +5317,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Embaconda,
         .shinyPalette = gMonShinyPalette_Embaconda,
-        .iconSprite = gMonIcon_Magmortar,
+        .iconSprite = gMonIcon_Embaconda,
         .iconPalIndex = 0,
         FOOTPRINT(Embaconda)
         .levelUpLearnset = sEmbacondaLevelUpLearnset,
@@ -5372,7 +5372,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Embird,
         .shinyPalette = gMonShinyPalette_Embird,
-        .iconSprite = gMonIcon_Fletchinder,
+        .iconSprite = gMonIcon_Embird,
         .iconPalIndex = 0,
         FOOTPRINT(Embird)
         .levelUpLearnset = sEmbirdLevelUpLearnset,
@@ -5428,7 +5428,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_HotWings,
         .shinyPalette = gMonShinyPalette_HotWings,
-        .iconSprite = gMonIcon_Talonflame,
+        .iconSprite = gMonIcon_HotWings,
         .iconPalIndex = 0,
         FOOTPRINT(HotWings)
         .levelUpLearnset = sHotWingsLevelUpLearnset,
@@ -5484,7 +5484,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardShieldless,
         .shinyPalette = gMonShinyPalette_GuardShieldless,
-        .iconSprite = gMonIcon_TypeNull,
+        .iconSprite = gMonIcon_GuardShieldless,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -5544,7 +5544,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardNormal,
         .shinyPalette = gMonShinyPalette_GuardNormal,
-        .iconSprite = gMonIcon_ArceusNormal,
+        .iconSprite = gMonIcon_GuardNormal,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -5604,7 +5604,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardFire,
         .shinyPalette = gMonShinyPalette_GuardFire,
-        .iconSprite = gMonIcon_ArceusFire,
+        .iconSprite = gMonIcon_GuardFire,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -5664,7 +5664,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardIce,
         .shinyPalette = gMonShinyPalette_GuardIce,
-        .iconSprite = gMonIcon_ArceusIce,
+        .iconSprite = gMonIcon_GuardIce,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -5724,7 +5724,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardWater,
         .shinyPalette = gMonShinyPalette_GuardWater,
-        .iconSprite = gMonIcon_ArceusWater,
+        .iconSprite = gMonIcon_GuardWater,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -5784,7 +5784,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardElectric,
         .shinyPalette = gMonShinyPalette_GuardElectric,
-        .iconSprite = gMonIcon_ArceusElectric,
+        .iconSprite = gMonIcon_GuardElectric,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -5844,7 +5844,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardFlying,
         .shinyPalette = gMonShinyPalette_GuardFlying,
-        .iconSprite = gMonIcon_ArceusFlying,
+        .iconSprite = gMonIcon_GuardFlying,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -5904,7 +5904,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardPsychic,
         .shinyPalette = gMonShinyPalette_GuardPsychic,
-        .iconSprite = gMonIcon_ArceusPsychic,
+        .iconSprite = gMonIcon_GuardPsychic,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -5964,7 +5964,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardRock,
         .shinyPalette = gMonShinyPalette_GuardRock,
-        .iconSprite = gMonIcon_ArceusRock,
+        .iconSprite = gMonIcon_GuardRock,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6024,7 +6024,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardFighting,
         .shinyPalette = gMonShinyPalette_GuardFighting,
-        .iconSprite = gMonIcon_ArceusFighting,
+        .iconSprite = gMonIcon_GuardFighting,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6084,7 +6084,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardFairy,
         .shinyPalette = gMonShinyPalette_GuardFairy,
-        .iconSprite = gMonIcon_ArceusFairy,
+        .iconSprite = gMonIcon_GuardFairy,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6144,7 +6144,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardGrass,
         .shinyPalette = gMonShinyPalette_GuardGrass,
-        .iconSprite = gMonIcon_ArceusGrass,
+        .iconSprite = gMonIcon_GuardGrass,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6204,7 +6204,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardGround,
         .shinyPalette = gMonShinyPalette_GuardGround,
-        .iconSprite = gMonIcon_ArceusGround,
+        .iconSprite = gMonIcon_GuardGround,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6264,7 +6264,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardPoison,
         .shinyPalette = gMonShinyPalette_GuardPoison,
-        .iconSprite = gMonIcon_ArceusPoison,
+        .iconSprite = gMonIcon_GuardPoison,
         .iconPalIndex = 0,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6324,7 +6324,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardSteel,
         .shinyPalette = gMonShinyPalette_GuardSteel,
-        .iconSprite = gMonIcon_ArceusSteel,
+        .iconSprite = gMonIcon_GuardSteel,
         .iconPalIndex = 2,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6384,7 +6384,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardDark,
         .shinyPalette = gMonShinyPalette_GuardDark,
-        .iconSprite = gMonIcon_ArceusDark,
+        .iconSprite = gMonIcon_GuardDark,
         .iconPalIndex = 2,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6444,7 +6444,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardBug,
         .shinyPalette = gMonShinyPalette_GuardBug,
-        .iconSprite = gMonIcon_ArceusBug,
+        .iconSprite = gMonIcon_GuardBug,
         .iconPalIndex = 2,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6504,7 +6504,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardGhost,
         .shinyPalette = gMonShinyPalette_GuardGhost,
-        .iconSprite = gMonIcon_ArceusGhost,
+        .iconSprite = gMonIcon_GuardGhost,
         .iconPalIndex = 2,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6564,7 +6564,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GuardDragon,
         .shinyPalette = gMonShinyPalette_GuardDragon,
-        .iconSprite = gMonIcon_ArceusDragon,
+        .iconSprite = gMonIcon_GuardDragon,
         .iconPalIndex = 2,
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
@@ -6622,7 +6622,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Solite,
         .shinyPalette = gMonShinyPalette_Solite,
-        .iconSprite = gMonIcon_Tadbulb,
+        .iconSprite = gMonIcon_Solite,
         .iconPalIndex = 0,
         FOOTPRINT(Solite)
         .levelUpLearnset = sSoliteLevelUpLearnset,
@@ -6677,7 +6677,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Transformer,
         .shinyPalette = gMonShinyPalette_Transformer,
-        .iconSprite = gMonIcon_Ditto,
+        .iconSprite = gMonIcon_Transformer,
         .iconPalIndex = 0,
         FOOTPRINT(Transformer)
         .levelUpLearnset = sTransformerLevelUpLearnset,
@@ -6732,7 +6732,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Foley,
         .shinyPalette = gMonShinyPalette_Foley,
-        .iconSprite = gMonIcon_Budew,
+        .iconSprite = gMonIcon_Foley,
         .iconPalIndex = 0,
         FOOTPRINT(Foley)
         .levelUpLearnset = sFoleyLevelUpLearnset,
@@ -6789,7 +6789,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_JungleBomb,
         .shinyPalette = gMonShinyPalette_JungleBomb,
-        .iconSprite = gMonIcon_Capsakid,
+        .iconSprite = gMonIcon_JungleBomb,
         .iconPalIndex = 0,
         FOOTPRINT(JungleBomb)
         .levelUpLearnset = sJungleBombLevelUpLearnset,
@@ -6846,7 +6846,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Cobgoblin,
         .shinyPalette = gMonShinyPalette_Cobgoblin,
-        .iconSprite = gMonIcon_Scovillain,
+        .iconSprite = gMonIcon_Cobgoblin,
         .iconPalIndex = 0,
         FOOTPRINT(Cobgoblin)
         .levelUpLearnset = sCobgoblinLevelUpLearnset,
@@ -6901,7 +6901,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_PhanPhan,
         .shinyPalette = gMonShinyPalette_PhanPhan,
-        .iconSprite = gMonIcon_Piloswine,
+        .iconSprite = gMonIcon_PhanPhan,
         .iconPalIndex = 0,
         FOOTPRINT(PhanPhan)
         .levelUpLearnset = sPhanPhanLevelUpLearnset,
@@ -6958,7 +6958,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Fridgy,
         .shinyPalette = gMonShinyPalette_Fridgy,
-        .iconSprite = gMonIcon_Mamoswine,
+        .iconSprite = gMonIcon_Fridgy,
         .iconPalIndex = 0,
         FOOTPRINT(Fridgy)
         .levelUpLearnset = sFridgyLevelUpLearnset,
@@ -7013,7 +7013,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Kacti,
         .shinyPalette = gMonShinyPalette_Kacti,
-        .iconSprite = gMonIcon_Exeggcute,
+        .iconSprite = gMonIcon_Kacti,
         .iconPalIndex = 0,
         FOOTPRINT(Kacti)
         .levelUpLearnset = sKactiLevelUpLearnset,
@@ -7070,7 +7070,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Stactus,
         .shinyPalette = gMonShinyPalette_Stactus,
-        .iconSprite = gMonIcon_Maractus,
+        .iconSprite = gMonIcon_Stactus,
         .iconPalIndex = 0,
         FOOTPRINT(Stactus)
         .levelUpLearnset = sStactusLevelUpLearnset,
@@ -7127,7 +7127,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_CrazyStactus,
         .shinyPalette = gMonShinyPalette_CrazyStactus,
-        .iconSprite = gMonIcon_Ludicolo,
+        .iconSprite = gMonIcon_CrazyStactus,
         .iconPalIndex = 0,
         FOOTPRINT(CrazyStactus)
         .levelUpLearnset = sCrazyStactusLevelUpLearnset,
@@ -7182,7 +7182,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Gator,
         .shinyPalette = gMonShinyPalette_Gator,
-        .iconSprite = gMonIcon_Sandile,
+        .iconSprite = gMonIcon_Gator,
         .iconPalIndex = 0,
         FOOTPRINT(Gator)
         .levelUpLearnset = sGatorLevelUpLearnset,
@@ -7239,7 +7239,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Gnawcodile,
         .shinyPalette = gMonShinyPalette_Gnawcodile,
-        .iconSprite = gMonIcon_Krokorok,
+        .iconSprite = gMonIcon_Gnawcodile,
         .iconPalIndex = 0,
         FOOTPRINT(Gnawcodile)
         .levelUpLearnset = sGnawcodileLevelUpLearnset,
@@ -7294,7 +7294,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Glunk,
         .shinyPalette = gMonShinyPalette_Glunk,
-        .iconSprite = gMonIcon_Mareanie,
+        .iconSprite = gMonIcon_Glunk,
         .iconPalIndex = 0,
         FOOTPRINT(Glunk)
         .levelUpLearnset = sGlunkLevelUpLearnset,
@@ -7351,7 +7351,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Deepsee,
         .shinyPalette = gMonShinyPalette_Deepsee,
-        .iconSprite = gMonIcon_Toxapex,
+        .iconSprite = gMonIcon_Deepsee,
         .iconPalIndex = 0,
         FOOTPRINT(Deepsee)
         .levelUpLearnset = sDeepseeLevelUpLearnset,
@@ -7406,7 +7406,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Slippy,
         .shinyPalette = gMonShinyPalette_Slippy,
-        .iconSprite = gMonIcon_Croagunk,
+        .iconSprite = gMonIcon_Slippy,
         .iconPalIndex = 0,
         FOOTPRINT(Slippy)
         .levelUpLearnset = sSlippyLevelUpLearnset,
@@ -7463,7 +7463,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_SirSlippy,
         .shinyPalette = gMonShinyPalette_SirSlippy,
-        .iconSprite = gMonIcon_Toxicroak,
+        .iconSprite = gMonIcon_SirSlippy,
         .iconPalIndex = 0,
         FOOTPRINT(SirSlippy)
         .levelUpLearnset = sSirSlippyLevelUpLearnset,
@@ -7519,7 +7519,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Craby,
         .shinyPalette = gMonShinyPalette_Craby,
-        .iconSprite = gMonIcon_Pyukumuku,
+        .iconSprite = gMonIcon_Craby,
         .iconPalIndex = 0,
         FOOTPRINT(Craby)
         .levelUpLearnset = sCrabyLevelUpLearnset,
@@ -7574,7 +7574,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_CapsuleJ,
         .shinyPalette = gMonShinyPalette_CapsuleJ,
-        .iconSprite = gMonIcon_Skarmory,
+        .iconSprite = gMonIcon_CapsuleJ,
         .iconPalIndex = 0,
         FOOTPRINT(CapsuleJ)
         .levelUpLearnset = sCapsuleJLevelUpLearnset,
@@ -7630,7 +7630,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_CapsuleJ2,
         .shinyPalette = gMonShinyPalette_CapsuleJ2,
-        .iconSprite = gMonIcon_Skarmory,
+        .iconSprite = gMonIcon_CapsuleJ2,
         .iconPalIndex = 2,
         FOOTPRINT(CapsuleJ2)
         .levelUpLearnset = sCapsuleJ2LevelUpLearnset,
@@ -7686,7 +7686,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_CapsuleJ3,
         .shinyPalette = gMonShinyPalette_CapsuleJ3,
-        .iconSprite = gMonIcon_Skarmory,
+        .iconSprite = gMonIcon_CapsuleJ3,
         .iconPalIndex = 3,
         FOOTPRINT(CapsuleJ3)
         .levelUpLearnset = sCapsuleJ3LevelUpLearnset,
@@ -7741,7 +7741,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_LaserBall,
         .shinyPalette = gMonShinyPalette_LaserBall,
-        .iconSprite = gMonIcon_Tynamo,
+        .iconSprite = gMonIcon_LaserBall,
         .iconPalIndex = 0,
         FOOTPRINT(LaserBall)
         .levelUpLearnset = sLaserBallLevelUpLearnset,
@@ -7797,7 +7797,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_PlasmaWisp,
         .shinyPalette = gMonShinyPalette_PlasmaWisp,
-        .iconSprite = gMonIcon_Tynamo,
+        .iconSprite = gMonIcon_PlasmaWisp,
         .iconPalIndex = 2,
         FOOTPRINT(PlasmaWisp)
         .levelUpLearnset = sPlasmaWispLevelUpLearnset,
@@ -7852,7 +7852,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Sodory,
         .shinyPalette = gMonShinyPalette_Sodory,
-        .iconSprite = gMonIcon_Doublade,
+        .iconSprite = gMonIcon_Sodory,
         .iconPalIndex = 0,
         FOOTPRINT(Sodory)
         .levelUpLearnset = sSodoryLevelUpLearnset,
@@ -7909,7 +7909,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Helmee,
         .shinyPalette = gMonShinyPalette_Helmee,
-        .iconSprite = gMonIcon_Doublade,
+        .iconSprite = gMonIcon_Helmee,
         .iconPalIndex = 2,
         FOOTPRINT(Helmee)
         .levelUpLearnset = sHelmeeLevelUpLearnset,
@@ -7966,7 +7966,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_GhostKnight,
         .shinyPalette = gMonShinyPalette_GhostKnight,
-        .iconSprite = gMonIcon_Doublade,
+        .iconSprite = gMonIcon_GhostKnight,
         .iconPalIndex = 3,
         FOOTPRINT(GhostKnight)
         .levelUpLearnset = sGhostKnightLevelUpLearnset,
@@ -8021,7 +8021,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_BangBang,
         .shinyPalette = gMonShinyPalette_BangBang,
-        .iconSprite = gMonIcon_Combusken,
+        .iconSprite = gMonIcon_BangBang,
         .iconPalIndex = 0,
         FOOTPRINT(BangBang)
         .levelUpLearnset = sBangBangLevelUpLearnset,
@@ -8078,7 +8078,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_BigMissile,
         .shinyPalette = gMonShinyPalette_BigMissile,
-        .iconSprite = gMonIcon_Combusken,
+        .iconSprite = gMonIcon_BigMissile,
         .iconPalIndex = 2,
         FOOTPRINT(BigMissile)
         .levelUpLearnset = sBigMissileLevelUpLearnset,
@@ -8133,7 +8133,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_MiniMasher,
         .shinyPalette = gMonShinyPalette_MiniMasher,
-        .iconSprite = gMonIcon_Beldum,
+        .iconSprite = gMonIcon_MiniMasher,
         .iconPalIndex = 0,
         FOOTPRINT(MiniMasher)
         .levelUpLearnset = sMiniMasherLevelUpLearnset,
@@ -8189,7 +8189,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Masher,
         .shinyPalette = gMonShinyPalette_Masher,
-        .iconSprite = gMonIcon_Metang,
+        .iconSprite = gMonIcon_Masher,
         .iconPalIndex = 0,
         FOOTPRINT(Masher)
         .levelUpLearnset = sMasherLevelUpLearnset,
@@ -8245,7 +8245,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_MegaMasher,
         .shinyPalette = gMonShinyPalette_MegaMasher,
-        .iconSprite = gMonIcon_Metagross,
+        .iconSprite = gMonIcon_MegaMasher,
         .iconPalIndex = 0,
         FOOTPRINT(MegaMasher)
         .levelUpLearnset = sMegaMasherLevelUpLearnset,
@@ -8300,7 +8300,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_WheelieBike,
         .shinyPalette = gMonShinyPalette_WheelieBike,
-        .iconSprite = gMonIcon_Varoom,
+        .iconSprite = gMonIcon_WheelieBike,
         .iconPalIndex = 0,
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
@@ -8357,7 +8357,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_WheelieRex,
         .shinyPalette = gMonShinyPalette_WheelieRex,
-        .iconSprite = gMonIcon_Revavroom,
+        .iconSprite = gMonIcon_WheelieRex,
         .iconPalIndex = 0,
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
@@ -8414,7 +8414,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_WheelieScooter,
         .shinyPalette = gMonShinyPalette_WheelieScooter,
-        .iconSprite = gMonIcon_Revavroom,
+        .iconSprite = gMonIcon_WheelieScooter,
         .iconPalIndex = 0,
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
@@ -8471,7 +8471,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_WheelieGrand,
         .shinyPalette = gMonShinyPalette_WheelieGrand,
-        .iconSprite = gMonIcon_Revavroom,
+        .iconSprite = gMonIcon_WheelieGrand,
         .iconPalIndex = 0,
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
@@ -8528,7 +8528,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_WheelieBlaze,
         .shinyPalette = gMonShinyPalette_WheelieBlaze,
-        .iconSprite = gMonIcon_Revavroom,
+        .iconSprite = gMonIcon_WheelieBlaze,
         .iconPalIndex = 0,
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
@@ -8585,7 +8585,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Digguh,
         .shinyPalette = gMonShinyPalette_Digguh,
-        .iconSprite = gMonIcon_Drilbur,
+        .iconSprite = gMonIcon_Digguh,
         .iconPalIndex = 0,
         FOOTPRINT(Digguh)
         .levelUpLearnset = sDigguhLevelUpLearnset,
@@ -8641,7 +8641,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Mogmole,
         .shinyPalette = gMonShinyPalette_Mogmole,
-        .iconSprite = gMonIcon_Drilbur,
+        .iconSprite = gMonIcon_Mogmole,
         .iconPalIndex = 1,
         FOOTPRINT(Mogmole)
         .levelUpLearnset = sMogmoleLevelUpLearnset,
@@ -8699,7 +8699,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Moley,
         .shinyPalette = gMonShinyPalette_Moley,
-        .iconSprite = gMonIcon_Drilbur,
+        .iconSprite = gMonIcon_Moley,
         .iconPalIndex = 2,
         FOOTPRINT(Moley)
         .levelUpLearnset = sMoleyLevelUpLearnset,
@@ -8756,7 +8756,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_MrsMoley,
         .shinyPalette = gMonShinyPalette_MrsMoley,
-        .iconSprite = gMonIcon_Drilbur,
+        .iconSprite = gMonIcon_MrsMoley,
         .iconPalIndex = 3,
         FOOTPRINT(Moley)
         .levelUpLearnset = sMoleyLevelUpLearnset,
@@ -8813,7 +8813,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Kapar,
         .shinyPalette = gMonShinyPalette_Kapar,
-        .iconSprite = gMonIcon_Lombre,
+        .iconSprite = gMonIcon_Kapar,
         .iconPalIndex = 3,
         FOOTPRINT(Kapar)
         .levelUpLearnset = sKaparLevelUpLearnset,
@@ -8868,7 +8868,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_KnuckleJoe,
         .shinyPalette = gMonShinyPalette_KnuckleJoe,
-        .iconSprite = gMonIcon_Sawk,
+        .iconSprite = gMonIcon_KnuckleJoe,
         .iconPalIndex = 3,
         FOOTPRINT(KnuckleJoe)
         .levelUpLearnset = sKnuckleJoeLevelUpLearnset,
@@ -8923,7 +8923,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Sandran,
         .shinyPalette = gMonShinyPalette_Sandran,
-        .iconSprite = gMonIcon_Sandaconda,
+        .iconSprite = gMonIcon_Sandran,
         .iconPalIndex = 3,
         FOOTPRINT(Sandran)
         .levelUpLearnset = sSandranLevelUpLearnset,
@@ -8979,7 +8979,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Walf,
         .shinyPalette = gMonShinyPalette_Walf,
-        .iconSprite = gMonIcon_Tirtouga,
+        .iconSprite = gMonIcon_Walf,
         .iconPalIndex = 3,
         FOOTPRINT(Walf)
         .levelUpLearnset = sWalfLevelUpLearnset,
@@ -9034,7 +9034,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Cawcun,
         .shinyPalette = gMonShinyPalette_Cawcun,
-        .iconSprite = gMonIcon_Ducklett,
+        .iconSprite = gMonIcon_Cawcun,
         .iconPalIndex = 0,
         FOOTPRINT(Cawcun)
         .levelUpLearnset = sCawcunLevelUpLearnset,
@@ -9091,7 +9091,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Fleurina,
         .shinyPalette = gMonShinyPalette_Fleurina,
-        .iconSprite = gMonIcon_Swanna,
+        .iconSprite = gMonIcon_Fleurina,
         .iconPalIndex = 0,
         FOOTPRINT(Fleurina)
         .levelUpLearnset = sFleurinaLevelUpLearnset,
@@ -9146,7 +9146,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Acro,
         .shinyPalette = gMonShinyPalette_Acro,
-        .iconSprite = gMonIcon_Wailmer,
+        .iconSprite = gMonIcon_Acro,
         .iconPalIndex = 0,
         FOOTPRINT(Acro)
         .levelUpLearnset = sAcroLevelUpLearnset,
@@ -9202,7 +9202,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_FattyWhale,
         .shinyPalette = gMonShinyPalette_FattyWhale,
-        .iconSprite = gMonIcon_Wailord,
+        .iconSprite = gMonIcon_FattyWhale,
         .iconPalIndex = 0,
         FOOTPRINT(FattyWhale)
         .levelUpLearnset = sFattyWhaleLevelUpLearnset,
@@ -9257,7 +9257,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Mookie,
         .shinyPalette = gMonShinyPalette_Mookie,
-        .iconSprite = gMonIcon_Grookey,
+        .iconSprite = gMonIcon_Mookie,
         .iconPalIndex = 0,
         FOOTPRINT(Mookie)
         .levelUpLearnset = sMookieLevelUpLearnset,
@@ -9313,7 +9313,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Bonkers,
         .shinyPalette = gMonShinyPalette_Bonkers,
-        .iconSprite = gMonIcon_Thwackey,
+        .iconSprite = gMonIcon_Bonkers,
         .iconPalIndex = 0,
         FOOTPRINT(Bonkers)
         .levelUpLearnset = sBonkersLevelUpLearnset,
@@ -9370,7 +9370,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_WildBonkers,
         .shinyPalette = gMonShinyPalette_WildBonkers,
-        .iconSprite = gMonIcon_Rillaboom,
+        .iconSprite = gMonIcon_WildBonkers,
         .iconPalIndex = 0,
         FOOTPRINT(WildBonkers)
         .levelUpLearnset = sWildBonkersLevelUpLearnset,
@@ -9425,7 +9425,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_SparkBonkers,
         .shinyPalette = gMonShinyPalette_SparkBonkers,
-        .iconSprite = gMonIcon_Rillaboom,
+        .iconSprite = gMonIcon_SparkBonkers,
         .iconPalIndex = 3,
         FOOTPRINT(SparkBonkers)
         .levelUpLearnset = sSparkBonkersLevelUpLearnset,
@@ -9480,7 +9480,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Whippy,
         .shinyPalette = gMonShinyPalette_Whippy,
-        .iconSprite = gMonIcon_Litleo,
+        .iconSprite = gMonIcon_Whippy,
         .iconPalIndex = 0,
         FOOTPRINT(Whippy)
         .levelUpLearnset = sWhippyLevelUpLearnset,
@@ -9537,7 +9537,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_FireLion,
         .shinyPalette = gMonShinyPalette_FireLion,
-        .iconSprite = gMonIcon_Litleo,
+        .iconSprite = gMonIcon_FireLion,
         .iconPalIndex = 3,
         FOOTPRINT(FireLion)
         .levelUpLearnset = sFireLionLevelUpLearnset,
@@ -9592,7 +9592,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Walky,
         .shinyPalette = gMonShinyPalette_Walky,
-        .iconSprite = gMonIcon_Whismur,
+        .iconSprite = gMonIcon_Walky,
         .iconPalIndex = 0,
         FOOTPRINT(Walky)
         .levelUpLearnset = sWalkyLevelUpLearnset,
@@ -9648,7 +9648,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_TickTockJr,
         .shinyPalette = gMonShinyPalette_TickTockJr,
-        .iconSprite = gMonIcon_Loudred,
+        .iconSprite = gMonIcon_TickTockJr,
         .iconPalIndex = 0,
         FOOTPRINT(TickTockJr)
         .levelUpLearnset = sTickTockJrLevelUpLearnset,
@@ -9705,7 +9705,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_MrTickTock,
         .shinyPalette = gMonShinyPalette_MrTickTock,
-        .iconSprite = gMonIcon_Exploud,
+        .iconSprite = gMonIcon_MrTickTock,
         .iconPalIndex = 0,
         FOOTPRINT(MrTickTock)
         .levelUpLearnset = sMrTickTockLevelUpLearnset,
@@ -9760,7 +9760,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Cookin,
         .shinyPalette = gMonShinyPalette_Cookin,
-        .iconSprite = gMonIcon_Makuhita,
+        .iconSprite = gMonIcon_Cookin,
         .iconPalIndex = 0,
         FOOTPRINT(Cookin)
         .levelUpLearnset = sCookinLevelUpLearnset,
@@ -9816,7 +9816,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_ChefKawasaki,
         .shinyPalette = gMonShinyPalette_ChefKawasaki,
-        .iconSprite = gMonIcon_Hariyama,
+        .iconSprite = gMonIcon_ChefKawasaki,
         .iconPalIndex = 0,
         FOOTPRINT(ChefKawasaki)
         .levelUpLearnset = sChefKawasakiLevelUpLearnset,
@@ -9871,7 +9871,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Moonja,
         .shinyPalette = gMonShinyPalette_Moonja,
-        .iconSprite = gMonIcon_Greninja,
+        .iconSprite = gMonIcon_Moonja,
         .iconPalIndex = 0,
         FOOTPRINT(Moonja)
         .levelUpLearnset = sMoonjaLevelUpLearnset,
@@ -9928,7 +9928,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_BioSpark,
         .shinyPalette = gMonShinyPalette_BioSpark,
-        .iconSprite = gMonIcon_Greninja,
+        .iconSprite = gMonIcon_BioSpark,
         .iconPalIndex = 1,
         FOOTPRINT(BioSpark)
         .levelUpLearnset = sBioSparkLevelUpLearnset,
@@ -10041,7 +10041,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_Bomber,
         .shinyPalette = gMonShinyPalette_Bomber,
-        .iconSprite = gMonIcon_Cranidos,
+        .iconSprite = gMonIcon_Bomber,
         .iconPalIndex = 0,
         FOOTPRINT(Bomber)
         .levelUpLearnset = sBomberLevelUpLearnset,
@@ -10097,7 +10097,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_BalloonBomber,
         .shinyPalette = gMonShinyPalette_BalloonBomber,
-        .iconSprite = gMonIcon_Cranidos,
+        .iconSprite = gMonIcon_BalloonBomber,
         .iconPalIndex = 2,
         FOOTPRINT(BalloonBomber)
         .levelUpLearnset = sBalloonBomberLevelUpLearnset,
@@ -10152,7 +10152,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_ScarfyNormal,
         .shinyPalette = gMonShinyPalette_ScarfyNormal,
-        .iconSprite = gMonIcon_MorpekoFullBelly,
+        .iconSprite = gMonIcon_ScarfyNormal,
         .iconPalIndex = 0,
         FOOTPRINT(Scarfy)
         .levelUpLearnset = sScarfyLevelUpLearnset,
@@ -10209,7 +10209,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_ScarfyAngry,
         .shinyPalette = gMonShinyPalette_ScarfyAngry,
-        .iconSprite = gMonIcon_MorpekoHangry,
+        .iconSprite = gMonIcon_ScarfyAngry,
         .iconPalIndex = 0,
         FOOTPRINT(Scarfy)
         .levelUpLearnset = sScarfyLevelUpLearnset,
@@ -10267,7 +10267,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_SnooterNormal,
         .shinyPalette = gMonShinyPalette_SnooterNormal,
-        .iconSprite = gMonIcon_Gulpin,
+        .iconSprite = gMonIcon_SnooterNormal,
         .iconPalIndex = 0,
         FOOTPRINT(Snooter)
         .levelUpLearnset = sSnooterLevelUpLearnset,
@@ -10325,7 +10325,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_SnooterAngry,
         .shinyPalette = gMonShinyPalette_SnooterAngry,
-        .iconSprite = gMonIcon_Gulpin,
+        .iconSprite = gMonIcon_SnooterAngry,
         .iconPalIndex = 2,
         FOOTPRINT(Snooter)
         .levelUpLearnset = sSnooterLevelUpLearnset,
@@ -10383,7 +10383,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_SnooterGulping,
         .shinyPalette = gMonShinyPalette_SnooterGulping,
-        .iconSprite = gMonIcon_Gulpin,
+        .iconSprite = gMonIcon_SnooterGulping,
         .iconPalIndex = 2,
         FOOTPRINT(Snooter)
         .levelUpLearnset = sSnooterLevelUpLearnset,
@@ -10441,7 +10441,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_SnooterGorging,
         .shinyPalette = gMonShinyPalette_SnooterGorging,
-        .iconSprite = gMonIcon_Gulpin,
+        .iconSprite = gMonIcon_SnooterGorging,
         .iconPalIndex = 2,
         FOOTPRINT(Snooter)
         .levelUpLearnset = sSnooterLevelUpLearnset,
@@ -10499,7 +10499,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_IronMam,
         .shinyPalette = gMonShinyPalette_IronMam,
-        .iconSprite = gMonIcon_Tinkatuff,
+        .iconSprite = gMonIcon_IronMam,
         .iconPalIndex = 0,
         FOOTPRINT(IronMam)
         .levelUpLearnset = sIronMamLevelUpLearnset,
@@ -10555,7 +10555,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GrandMamArmored,
         .shinyPalette = gMonShinyPalette_GrandMamArmored,
-        .iconSprite = gMonIcon_Tinkaton,
+        .iconSprite = gMonIcon_GrandMamArmored,
         .iconPalIndex = 0,
         FOOTPRINT(GrandMam)
         .levelUpLearnset = sGrandMamLevelUpLearnset,
@@ -10612,7 +10612,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_GrandMamUnarmored,
         .shinyPalette = gMonShinyPalette_GrandMamUnarmored,
-        .iconSprite = gMonIcon_Tinkaton,
+        .iconSprite = gMonIcon_GrandMamUnarmored,
         .iconPalIndex = 2,
         FOOTPRINT(GrandMam)
         .levelUpLearnset = sGrandMamLevelUpLearnset,
@@ -10669,7 +10669,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Blockin,
         .shinyPalette = gMonShinyPalette_Blockin,
-        .iconSprite = gMonIcon_Stakataka,
+        .iconSprite = gMonIcon_Blockin,
         .iconPalIndex = 0,
         FOOTPRINT(Blockin)
         .levelUpLearnset = sBlockinLevelUpLearnset,
@@ -10724,7 +10724,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Owgulf,
         .shinyPalette = gMonShinyPalette_Owgulf,
-        .iconSprite = gMonIcon_Hoothoot,
+        .iconSprite = gMonIcon_Owgulf,
         .iconPalIndex = 0,
         FOOTPRINT(Owgulf)
         .levelUpLearnset = sOwgulfLevelUpLearnset,
@@ -10781,7 +10781,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Bohboh,
         .shinyPalette = gMonShinyPalette_Bohboh,
-        .iconSprite = gMonIcon_Noctowl,
+        .iconSprite = gMonIcon_Bohboh,
         .iconPalIndex = 0,
         FOOTPRINT(Bohboh)
         .levelUpLearnset = sBohbohLevelUpLearnset,
@@ -10837,7 +10837,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Tootlebam,
         .shinyPalette = gMonShinyPalette_Tootlebam,
-        .iconSprite = gMonIcon_Comfey,
+        .iconSprite = gMonIcon_Tootlebam,
         .iconPalIndex = 0,
         FOOTPRINT(Tootlebam)
         .levelUpLearnset = sTootlebamLevelUpLearnset,
@@ -10892,7 +10892,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_FloatyCellCore,
         .shinyPalette = gMonShinyPalette_FloatyCellCore,
-        .iconSprite = gMonIcon_Dewpider,
+        .iconSprite = gMonIcon_FloatyCellCore,
         .iconPalIndex = 0,
         FOOTPRINT(FloatyCellCore)
         .levelUpLearnset = sFloatyTheCellCoreLevelUpLearnset,
@@ -10948,7 +10948,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Buboo,
         .shinyPalette = gMonShinyPalette_Buboo,
-        .iconSprite = gMonIcon_Dewpider,
+        .iconSprite = gMonIcon_Buboo,
         .iconPalIndex = 0,
         FOOTPRINT(Buboo)
         .teachableLearnset = sMewTeachableLearnset,
@@ -11002,7 +11002,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Gussa,
         .shinyPalette = gMonShinyPalette_Gussa,
-        .iconSprite = gMonIcon_Carvanha,
+        .iconSprite = gMonIcon_Gussa,
         .iconPalIndex = 0,
         FOOTPRINT(Gussa)
         .levelUpLearnset = sGussaLevelUpLearnset,
@@ -11059,7 +11059,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Joe,
         .shinyPalette = gMonShinyPalette_Joe,
-        .iconSprite = gMonIcon_Carvanha,
+        .iconSprite = gMonIcon_Joe,
         .iconPalIndex = 1,
         FOOTPRINT(Joe)
         .levelUpLearnset = sJoeLevelUpLearnset,
@@ -11116,7 +11116,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Gobbler,
         .shinyPalette = gMonShinyPalette_Gobbler,
-        .iconSprite = gMonIcon_Carvanha,
+        .iconSprite = gMonIcon_Gobbler,
         .iconPalIndex = 3,
         FOOTPRINT(Gobbler)
         .levelUpLearnset = sGobblerLevelUpLearnset,
@@ -11171,7 +11171,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Mopoo,
         .shinyPalette = gMonShinyPalette_Mopoo,
-        .iconSprite = gMonIcon_Vanillite,
+        .iconSprite = gMonIcon_Mopoo,
         .iconPalIndex = 0,
         FOOTPRINT(Mopoo)
         .levelUpLearnset = sMopooLevelUpLearnset,
@@ -11228,7 +11228,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Chilly,
         .shinyPalette = gMonShinyPalette_Chilly,
-        .iconSprite = gMonIcon_Vanillish,
+        .iconSprite = gMonIcon_Chilly,
         .iconPalIndex = 0,
         FOOTPRINT(Chilly)
         .levelUpLearnset = sChillyLevelUpLearnset,
@@ -11285,7 +11285,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Snowman,
         .shinyPalette = gMonShinyPalette_Snowman,
-        .iconSprite = gMonIcon_Vanilluxe,
+        .iconSprite = gMonIcon_Snowman,
         .iconPalIndex = 0,
         FOOTPRINT(Snowman)
         .levelUpLearnset = sSnowmanLevelUpLearnset,
@@ -11340,7 +11340,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Frigis,
         .shinyPalette = gMonShinyPalette_Frigis,
-        .iconSprite = gMonIcon_Delibird,
+        .iconSprite = gMonIcon_Frigis,
         .iconPalIndex = 2,
         FOOTPRINT(Frigis)
         .levelUpLearnset = sFrigisLevelUpLearnset,
@@ -11396,7 +11396,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Snowl,
         .shinyPalette = gMonShinyPalette_Snowl,
-        .iconSprite = gMonIcon_Delibird,
+        .iconSprite = gMonIcon_Snowl,
         .iconPalIndex = 3,
         FOOTPRINT(Snowl)
         .levelUpLearnset = sSnowlLevelUpLearnset,
@@ -11451,7 +11451,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Corori,
         .shinyPalette = gMonShinyPalette_Corori,
-        .iconSprite = gMonIcon_Cubchoo,
+        .iconSprite = gMonIcon_Corori,
         .iconPalIndex = 1,
         FOOTPRINT(Corori)
         .levelUpLearnset = sCororiLevelUpLearnset,
@@ -11508,7 +11508,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Pengy,
         .shinyPalette = gMonShinyPalette_Pengy,
-        .iconSprite = gMonIcon_Beartic,
+        .iconSprite = gMonIcon_Pengy,
         .iconPalIndex = 1,
         FOOTPRINT(Pengy)
         .levelUpLearnset = sPengyLevelUpLearnset,
@@ -11564,7 +11564,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetNormal,
         .shinyPalette = gMonShinyPalette_BukisetNormal,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetNormal,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -11622,7 +11622,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetFire,
         .shinyPalette = gMonShinyPalette_BukisetFire,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetFire,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -11680,7 +11680,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetIce,
         .shinyPalette = gMonShinyPalette_BukisetIce,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetIce,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -11738,7 +11738,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetWater,
         .shinyPalette = gMonShinyPalette_BukisetWater,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetWater,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -11796,7 +11796,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetElectric,
         .shinyPalette = gMonShinyPalette_BukisetElectric,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetElectric,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -11854,7 +11854,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetFlying,
         .shinyPalette = gMonShinyPalette_BukisetFlying,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetFlying,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -11912,7 +11912,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetPsychic,
         .shinyPalette = gMonShinyPalette_BukisetPsychic,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetPsychic,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -11970,7 +11970,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetRock,
         .shinyPalette = gMonShinyPalette_BukisetRock,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetRock,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12028,7 +12028,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetFighting,
         .shinyPalette = gMonShinyPalette_BukisetFighting,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetFighting,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12086,7 +12086,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetFairy,
         .shinyPalette = gMonShinyPalette_BukisetFairy,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetFairy,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12144,7 +12144,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetGrass,
         .shinyPalette = gMonShinyPalette_BukisetGrass,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetGrass,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12202,7 +12202,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetGround,
         .shinyPalette = gMonShinyPalette_BukisetGround,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetGround,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12260,7 +12260,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetPoison,
         .shinyPalette = gMonShinyPalette_BukisetPoison,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetPoison,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12318,7 +12318,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetSteel,
         .shinyPalette = gMonShinyPalette_BukisetSteel,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetSteel,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12376,7 +12376,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetDark,
         .shinyPalette = gMonShinyPalette_BukisetDark,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetDark,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12434,7 +12434,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetBug,
         .shinyPalette = gMonShinyPalette_BukisetBug,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetBug,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12492,7 +12492,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetGhost,
         .shinyPalette = gMonShinyPalette_BukisetGhost,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetGhost,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12550,7 +12550,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_BukisetDragon,
         .shinyPalette = gMonShinyPalette_BukisetDragon,
-        .iconSprite = gMonIcon_Mew,
+        .iconSprite = gMonIcon_BukisetDragon,
         .iconPalIndex = 0,
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
@@ -12608,7 +12608,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_IceDragon,
         .shinyPalette = gMonShinyPalette_IceDragon,
-        .iconSprite = gMonIcon_Baxcalibur,
+        .iconSprite = gMonIcon_IceDragon,
         .iconPalIndex = 0,
         FOOTPRINT(IceDragon)
         .levelUpLearnset = sIceDragonLevelUpLearnset,
@@ -12664,7 +12664,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_LobzillaShrimp,
         .shinyPalette = gMonShinyPalette_LobzillaShrimp,
-        .iconSprite = gMonIcon_Crawdaunt,
+        .iconSprite = gMonIcon_LobzillaShrimp,
         .iconPalIndex = 0,
         FOOTPRINT(Lobzilla)
         .levelUpLearnset = sLobzillaLevelUpLearnset,
@@ -12722,7 +12722,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_LobzillaMonster,
         .shinyPalette = gMonShinyPalette_LobzillaMonster,
-        .iconSprite = gMonIcon_Crawdaunt,
+        .iconSprite = gMonIcon_LobzillaMonster,
         .iconPalIndex = 3,
         FOOTPRINT(Lobzilla)
         .levelUpLearnset = sLobzillaLevelUpLearnset,
@@ -12779,7 +12779,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Slushy,
         .shinyPalette = gMonShinyPalette_Slushy,
-        .iconSprite = gMonIcon_Finneon,
+        .iconSprite = gMonIcon_Slushy,
         .iconPalIndex = 0,
         FOOTPRINT(Slushy)
         .levelUpLearnset = sSlushyLevelUpLearnset,
@@ -12835,7 +12835,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Squibby,
         .shinyPalette = gMonShinyPalette_Squibby,
-        .iconSprite = gMonIcon_Lumineon,
+        .iconSprite = gMonIcon_Squibby,
         .iconPalIndex = 0,
         FOOTPRINT(Squibby)
         .levelUpLearnset = sSquibbyLevelUpLearnset,
@@ -12890,7 +12890,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Como,
         .shinyPalette = gMonShinyPalette_Como,
-        .iconSprite = gMonIcon_Spinarak,
+        .iconSprite = gMonIcon_Como,
         .iconPalIndex = 0,
         FOOTPRINT(Como)
         .levelUpLearnset = sComoLevelUpLearnset,
@@ -12946,7 +12946,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Spideroo,
         .shinyPalette = gMonShinyPalette_Spideroo,
-        .iconSprite = gMonIcon_Ariados,
+        .iconSprite = gMonIcon_Spideroo,
         .iconPalIndex = 0,
         FOOTPRINT(Spideroo)
         .levelUpLearnset = sSpiderooLevelUpLearnset,
@@ -13001,7 +13001,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Grizzo,
         .shinyPalette = gMonShinyPalette_Grizzo,
-        .iconSprite = gMonIcon_Ursaring,
+        .iconSprite = gMonIcon_Grizzo,
         .iconPalIndex = 0,
         FOOTPRINT(Grizzo)
         .levelUpLearnset = sGrizzoLevelUpLearnset,
@@ -13058,7 +13058,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Peperon,
         .shinyPalette = gMonShinyPalette_Peperon,
-        .iconSprite = gMonIcon_Ursaring,
+        .iconSprite = gMonIcon_Peperon,
         .iconPalIndex = 2,
         FOOTPRINT(Peperon)
         .levelUpLearnset = sPeperonLevelUpLearnset,
@@ -13113,7 +13113,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_OohrooNormal,
         .shinyPalette = gMonShinyPalette_OohrooNormal,
-        .iconSprite = gMonIcon_Aipom,
+        .iconSprite = gMonIcon_OohrooNormal,
         .iconPalIndex = 0,
         FOOTPRINT(Oohroo)
         .levelUpLearnset = sOohrooLevelUpLearnset,
@@ -13171,7 +13171,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_OohrooZen,
         .shinyPalette = gMonShinyPalette_OohrooZen,
-        .iconSprite = gMonIcon_Aipom,
+        .iconSprite = gMonIcon_OohrooZen,
         .iconPalIndex = 2,
         FOOTPRINT(Oohroo)
         .levelUpLearnset = sOohrooLevelUpLearnset,
@@ -13230,7 +13230,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_GoriathNormal,
         .shinyPalette = gMonShinyPalette_GoriathNormal,
-        .iconSprite = gMonIcon_Ambipom,
+        .iconSprite = gMonIcon_GoriathNormal,
         .iconPalIndex = 0,
         FOOTPRINT(Goriath)
         .levelUpLearnset = sGoriathLevelUpLearnset,
@@ -13288,7 +13288,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_GoriathZen,
         .shinyPalette = gMonShinyPalette_GoriathZen,
-        .iconSprite = gMonIcon_Ambipom,
+        .iconSprite = gMonIcon_GoriathZen,
         .iconPalIndex = 0,
         FOOTPRINT(Goriath)
         .levelUpLearnset = sGoriathLevelUpLearnset,
@@ -13345,7 +13345,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_NESP,
         .shinyPalette = gMonShinyPalette_NESP,
-        .iconSprite = gMonIcon_Kadabra,
+        .iconSprite = gMonIcon_NESP,
         .iconPalIndex = 0,
         FOOTPRINT(NESP)
         .levelUpLearnset = sNESPLevelUpLearnset,
@@ -13401,7 +13401,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Madoo,
         .shinyPalette = gMonShinyPalette_Madoo,
-        .iconSprite = gMonIcon_Kadabra,
+        .iconSprite = gMonIcon_Madoo,
         .iconPalIndex = 2,
         FOOTPRINT(Madoo)
         .levelUpLearnset = sMadooLevelUpLearnset,
@@ -13456,7 +13456,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Venogg,
         .shinyPalette = gMonShinyPalette_Venogg,
-        .iconSprite = gMonIcon_Grimer,
+        .iconSprite = gMonIcon_Venogg,
         .iconPalIndex = 0,
         FOOTPRINT(Venogg)
         .levelUpLearnset = sVenoggLevelUpLearnset,
@@ -13513,7 +13513,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_PoisonCroakom,
         .shinyPalette = gMonShinyPalette_PoisonCroakom,
-        .iconSprite = gMonIcon_Muk,
+        .iconSprite = gMonIcon_PoisonCroakom,
         .iconPalIndex = 0,
         FOOTPRINT(PoisonCroakom)
         .levelUpLearnset = sPoisonCroakomLevelUpLearnset,
@@ -13568,7 +13568,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Bouncy,
         .shinyPalette = gMonShinyPalette_Bouncy,
-        .iconSprite = gMonIcon_Jigglypuff,
+        .iconSprite = gMonIcon_Bouncy,
         .iconPalIndex = 0,
         FOOTPRINT(Bouncy)
         .levelUpLearnset = sBouncyLevelUpLearnset,
@@ -13625,7 +13625,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_BouncySis,
         .shinyPalette = gMonShinyPalette_BouncySis,
-        .iconSprite = gMonIcon_Wigglytuff,
+        .iconSprite = gMonIcon_BouncySis,
         .iconPalIndex = 0,
         FOOTPRINT(BouncySis)
         .levelUpLearnset = sBouncySisLevelUpLearnset,
@@ -13680,7 +13680,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Fishbone,
         .shinyPalette = gMonShinyPalette_Fishbone,
-        .iconSprite = gMonIcon_Carvanha,
+        .iconSprite = gMonIcon_Fishbone,
         .iconPalIndex = 0,
         FOOTPRINT(Fishbone)
         .levelUpLearnset = sFishboneLevelUpLearnset,
@@ -13736,7 +13736,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Blish,
         .shinyPalette = gMonShinyPalette_Blish,
-        .iconSprite = gMonIcon_Sharpedo,
+        .iconSprite = gMonIcon_Blish,
         .iconPalIndex = 0,
         FOOTPRINT(Blish)
         .levelUpLearnset = sBlishLevelUpLearnset,
@@ -13791,7 +13791,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Galbo,
         .shinyPalette = gMonShinyPalette_Galbo,
-        .iconSprite = gMonIcon_Axew,
+        .iconSprite = gMonIcon_Galbo,
         .iconPalIndex = 0,
         FOOTPRINT(Galbo)
         .levelUpLearnset = sGalboLevelUpLearnset,
@@ -13850,7 +13850,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_WaterGalboros,
         .shinyPalette = gMonShinyPalette_WaterGalboros,
-        .iconSprite = gMonIcon_Haxorus,
+        .iconSprite = gMonIcon_WaterGalboros,
         .iconPalIndex = 0,
         FOOTPRINT(WaterGalboros)
         .levelUpLearnset = sWaterGalborosLevelUpLearnset,
@@ -13906,7 +13906,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_FlameGalboros,
         .shinyPalette = gMonShinyPalette_FlameGalboros,
-        .iconSprite = gMonIcon_Haxorus,
+        .iconSprite = gMonIcon_FlameGalboros,
         .iconPalIndex = 1,
         FOOTPRINT(FlameGalboros)
         .levelUpLearnset = sFlameGalborosLevelUpLearnset,
@@ -13962,7 +13962,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Miasmoros,
         .shinyPalette = gMonShinyPalette_Miasmoros,
-        .iconSprite = gMonIcon_Haxorus,
+        .iconSprite = gMonIcon_Miasmoros,
         .iconPalIndex = 2,
         FOOTPRINT(Miasmoros)
         .levelUpLearnset = sMiasmorosLevelUpLearnset,
@@ -14017,7 +14017,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_KeyDee,
         .shinyPalette = gMonShinyPalette_KeyDee,
-        .iconSprite = gMonIcon_Axew,
+        .iconSprite = gMonIcon_KeyDee,
         .iconPalIndex = 0,
         FOOTPRINT(KeyDee)
         .levelUpLearnset = sKeyDeeLevelUpLearnset,
@@ -14072,7 +14072,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Slime,
         .shinyPalette = gMonShinyPalette_Slime,
-        .iconSprite = gMonIcon_Porygon,
+        .iconSprite = gMonIcon_Slime,
         .iconPalIndex = 0,
         FOOTPRINT(Slime)
         .levelUpLearnset = sSlimeLevelUpLearnset,
@@ -14128,7 +14128,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Puppet,
         .shinyPalette = gMonShinyPalette_Puppet,
-        .iconSprite = gMonIcon_Porygon,
+        .iconSprite = gMonIcon_Puppet,
         .iconPalIndex = 1,
         FOOTPRINT(Puppet)
         .levelUpLearnset = sPuppetLevelUpLearnset,
@@ -14184,7 +14184,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Magician,
         .shinyPalette = gMonShinyPalette_Magician,
-        .iconSprite = gMonIcon_Porygon,
+        .iconSprite = gMonIcon_Magician,
         .iconPalIndex = 3,
         FOOTPRINT(Magician)
         .levelUpLearnset = sMagicianLevelUpLearnset,
@@ -14239,7 +14239,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Torerobo,
         .shinyPalette = gMonShinyPalette_Torerobo,
-        .iconSprite = gMonIcon_Ditto,
+        .iconSprite = gMonIcon_Torerobo,
         .iconPalIndex = 0,
         FOOTPRINT(Torerobo)
         .levelUpLearnset = sToreroboLevelUpLearnset,
@@ -14295,7 +14295,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_RoboRickSolo,
         .shinyPalette = gMonShinyPalette_RoboRickSolo,
-        .iconSprite = gMonIcon_Porygon,
+        .iconSprite = gMonIcon_RoboRickSolo,
         .iconPalIndex = 0,
         FOOTPRINT(RoboRick)
         .levelUpLearnset = sRoboRickLevelUpLearnset,
@@ -14353,7 +14353,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_RoboRickCommander,
         .shinyPalette = gMonShinyPalette_RoboRickCommander,
-        .iconSprite = gMonIcon_Porygon,
+        .iconSprite = gMonIcon_RoboRickCommander,
         .iconPalIndex = 3,
         FOOTPRINT(RoboRick)
         .levelUpLearnset = sRoboRickLevelUpLearnset,
@@ -14410,7 +14410,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Boxy,
         .shinyPalette = gMonShinyPalette_Boxy,
-        .iconSprite = gMonIcon_Herdier,
+        .iconSprite = gMonIcon_Boxy,
         .iconPalIndex = 0,
         FOOTPRINT(Boxy)
         .levelUpLearnset = sBoxyLevelUpLearnset,
@@ -14636,7 +14636,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_GolemKirby,
         .shinyPalette = gMonShinyPalette_GolemKirby,
-        .iconSprite = gMonIcon_Golem,
+        .iconSprite = gMonIcon_GolemKirby,
         .iconPalIndex = 0,
         FOOTPRINT(GolemKirby)
         .levelUpLearnset = sGolemKirbyLevelUpLearnset,
@@ -14692,7 +14692,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_KingGolem,
         .shinyPalette = gMonShinyPalette_KingGolem,
-        .iconSprite = gMonIcon_Golem,
+        .iconSprite = gMonIcon_KingGolem,
         .iconPalIndex = 2,
         FOOTPRINT(KingGolem)
         .levelUpLearnset = sKingGolemLevelUpLearnset,
@@ -14747,7 +14747,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Snoozroot,
         .shinyPalette = gMonShinyPalette_Snoozroot,
-        .iconSprite = gMonIcon_Roselia,
+        .iconSprite = gMonIcon_Snoozroot,
         .iconPalIndex = 0,
         FOOTPRINT(Snoozroot)
         .levelUpLearnset = sSnoozrootLevelUpLearnset,
@@ -14804,7 +14804,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_LadyIvy,
         .shinyPalette = gMonShinyPalette_LadyIvy,
-        .iconSprite = gMonIcon_Roserade,
+        .iconSprite = gMonIcon_LadyIvy,
         .iconPalIndex = 0,
         FOOTPRINT(LadyIvy)
         .levelUpLearnset = sLadyIvyLevelUpLearnset,
@@ -14859,7 +14859,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Snipper,
         .shinyPalette = gMonShinyPalette_Snipper,
-        .iconSprite = gMonIcon_Trapinch,
+        .iconSprite = gMonIcon_Snipper,
         .iconPalIndex = 0,
         FOOTPRINT(Snipper)
         .levelUpLearnset = sSnipperLevelUpLearnset,
@@ -14915,7 +14915,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_AntDoom,
         .shinyPalette = gMonShinyPalette_AntDoom,
-        .iconSprite = gMonIcon_Vibrava,
+        .iconSprite = gMonIcon_AntDoom,
         .iconPalIndex = 0,
         FOOTPRINT(AntDoom)
         .levelUpLearnset = sAntDoomLevelUpLearnset,
@@ -14970,7 +14970,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Metalun,
         .shinyPalette = gMonShinyPalette_Metalun,
-        .iconSprite = gMonIcon_Meltan,
+        .iconSprite = gMonIcon_Metalun,
         .iconPalIndex = 0,
         FOOTPRINT(Metalun)
         .levelUpLearnset = sMetalunLevelUpLearnset,
@@ -15026,7 +15026,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_BigMetalun,
         .shinyPalette = gMonShinyPalette_BigMetalun,
-        .iconSprite = gMonIcon_Melmetal,
+        .iconSprite = gMonIcon_BigMetalun,
         .iconPalIndex = 0,
         FOOTPRINT(BigMetalun)
         .levelUpLearnset = sBigMetalunLevelUpLearnset,
@@ -15193,7 +15193,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Cutfish,
         .shinyPalette = gMonShinyPalette_Cutfish,
-        .iconSprite = gMonIcon_Chinchou,
+        .iconSprite = gMonIcon_Cutfish,
         .iconPalIndex = 0,
         FOOTPRINT(Cutfish)
         .levelUpLearnset = sCutfishLevelUpLearnset,
@@ -15249,7 +15249,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Sawgill,
         .shinyPalette = gMonShinyPalette_Sawgill,
-        .iconSprite = gMonIcon_Lanturn,
+        .iconSprite = gMonIcon_Sawgill,
         .iconPalIndex = 0,
         FOOTPRINT(Sawgill)
         .levelUpLearnset = sSawgillLevelUpLearnset,
@@ -15304,7 +15304,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Angie,
         .shinyPalette = gMonShinyPalette_Angie,
-        .iconSprite = gMonIcon_Togepi,
+        .iconSprite = gMonIcon_Angie,
         .iconPalIndex = 0,
         FOOTPRINT(Angie)
         .levelUpLearnset = sAngieLevelUpLearnset,
@@ -15361,7 +15361,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Cupie,
         .shinyPalette = gMonShinyPalette_Cupie,
-        .iconSprite = gMonIcon_Togetic,
+        .iconSprite = gMonIcon_Cupie,
         .iconPalIndex = 0,
         FOOTPRINT(Cupie)
         .levelUpLearnset = sCupieLevelUpLearnset,
@@ -15419,7 +15419,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Angel,
         .shinyPalette = gMonShinyPalette_Angel,
-        .iconSprite = gMonIcon_Togekiss,
+        .iconSprite = gMonIcon_Angel,
         .iconPalIndex = 0,
         FOOTPRINT(Angel)
         .levelUpLearnset = sAngelLevelUpLearnset,
@@ -15475,7 +15475,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Simirror,
         .shinyPalette = gMonShinyPalette_Simirror,
-        .iconSprite = gMonIcon_Sigilyph,
+        .iconSprite = gMonIcon_Simirror,
         .iconPalIndex = 0,
         FOOTPRINT(Simirror)
         .levelUpLearnset = sSimirrorLevelUpLearnset,
@@ -15530,7 +15530,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Twister,
         .shinyPalette = gMonShinyPalette_Twister,
-        .iconSprite = gMonIcon_Hitmontop,
+        .iconSprite = gMonIcon_Twister,
         .iconPalIndex = 0,
         FOOTPRINT(Twister)
         .levelUpLearnset = sTwisterLevelUpLearnset,
@@ -15587,7 +15587,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Windwhipper,
         .shinyPalette = gMonShinyPalette_Windwhipper,
-        .iconSprite = gMonIcon_Hitmontop,
+        .iconSprite = gMonIcon_Windwhipper,
         .iconPalIndex = 2,
         FOOTPRINT(Windwhipper)
         .levelUpLearnset = sWindwhipperLevelUpLearnset,
@@ -15642,7 +15642,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_DubiorJr,
         .shinyPalette = gMonShinyPalette_DubiorJr,
-        .iconSprite = gMonIcon_Elgyem,
+        .iconSprite = gMonIcon_DubiorJr,
         .iconPalIndex = 0,
         FOOTPRINT(DubiorJr)
         .levelUpLearnset = sDubiorJrLevelUpLearnset,
@@ -15699,7 +15699,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Dubior,
         .shinyPalette = gMonShinyPalette_Dubior,
-        .iconSprite = gMonIcon_Beheeyem,
+        .iconSprite = gMonIcon_Dubior,
         .iconPalIndex = 0,
         FOOTPRINT(Dubior)
         .levelUpLearnset = sDubiorLevelUpLearnset,
@@ -15809,7 +15809,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Tac,
         .shinyPalette = gMonShinyPalette_Tac,
-        .iconSprite = gMonIcon_Purrloin,
+        .iconSprite = gMonIcon_Tac,
         .iconPalIndex = 3,
         FOOTPRINT(Tac)
         .levelUpLearnset = sTacLevelUpLearnset,
