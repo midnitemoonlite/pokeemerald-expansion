@@ -639,9 +639,7 @@ BattleScript_BothCanNoLongerEscape::
 	return
 
 BattleScript_EffectHyperspaceFury::
-	jumpifspecies SPECIES_HOOPA_UNBOUND, BattleScript_EffectHit
-	jumpifspecies SPECIES_HOOPA_CONFINED, BattleScript_ButHoopaCantUseIt
-	goto BattleScript_PokemonCantUseTheMove
+	goto BattleScript_EffectHit
 
 BattleScript_ButHoopaCantUseIt:
 	printstring STRINGID_BUTHOOPACANTUSEIT
