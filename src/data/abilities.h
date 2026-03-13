@@ -1883,7 +1883,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_ICE_FACE] =
     {
-        .name = _("Ice Face"),
+        .name = _("Icing Face"),
         .description = COMPOUND_STRING("Hail or Snow renew free hit."),
         .aiRating = 4,
         .cantBeCopied = TRUE,

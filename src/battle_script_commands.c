@@ -1424,6 +1424,8 @@ static inline bool32 DoesBattlerNegateDamage(enum BattlerId battler)
         return TRUE;
     if (ability == ABILITY_ICE_FACE && species == SPECIES_EISCUE_ICE && GetBattleMoveCategory(gCurrentMove) == DAMAGE_CATEGORY_PHYSICAL)
         return TRUE;
+    if (ability == ABILITY_ICE_FACE && species == SPECIES_BLOPPER_ICING && GetBattleMoveCategory(gCurrentMove) == DAMAGE_CATEGORY_PHYSICAL)
+        return TRUE;
 
     return FALSE;
 }
@@ -10376,7 +10378,7 @@ bool32 DoesDisguiseBlockMove(enum BattlerId battler, enum Move move)
 
 bool32 DoesIceFaceBlockMove(enum BattlerId battler, enum Move move)
 {
-    if (gBattleMons[battler].species != SPECIES_EISCUE_ICE
+    if ((gBattleMons[battler].species != SPECIES_BLOPPER_ICING && gBattleMons[battler].species != SPECIES_EISCUE_ICE)
      || gBattleMons[battler].volatiles.transformed
      || !IsBattleMovePhysical(move)
      || !IsAbilityAndRecord(battler, GetBattlerAbility(battler), ABILITY_ICE_FACE))

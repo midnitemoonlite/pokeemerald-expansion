@@ -2712,3 +2712,9 @@ static const u16 sMetaKnightsFormSpeciesIdTable[] = {
     SPECIES_JAVELIN_KNIGHT,
     FORM_SPECIES_END,
 };
+
+static const u16 sBlopperFormSpeciesIdTable[] = {
+    SPECIES_BLOPPER_ICING,
+    SPECIES_BLOPPER_ICELESS,
+    FORM_SPECIES_END,
+};

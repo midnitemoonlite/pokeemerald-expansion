@@ -2009,7 +2009,13 @@
 #define SPECIES_MACE_KNIGHT                             1875
 #define SPECIES_TRIDENT_KNIGHT                          1876
 #define SPECIES_JAVELIN_KNIGHT                          1877
-#define SPECIES_BATAMON                                 1878
+#define SPECIES_MINNY                                   1878
+#define SPECIES_MOGGY                                   1879
+#define SPECIES_APOLO                                   1880
+#define SPECIES_BLOPPER                                 SPECIES_BLOPPER_ICING
+#define SPECIES_BLOPPER_ICING                           1881
+#define SPECIES_BLOPPER_ICELESS                         1882
+#define SPECIES_BATAMON                                 1883
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
