@@ -2015,7 +2015,15 @@
 #define SPECIES_BLOPPER                                 SPECIES_BLOPPER_ICING
 #define SPECIES_BLOPPER_ICING                           1881
 #define SPECIES_BLOPPER_ICELESS                         1882
-#define SPECIES_BATAMON                                 1883
+#define SPECIES_CHAMELEO_ARM                            SPECIES_CHAMELEO_ARM_GREEN
+#define SPECIES_CHAMELEO_ARM_GREEN                      1883
+#define SPECIES_CHAMELEO_ARM_BLUE                       1884
+#define SPECIES_CHAMELEO_ARM_PINK                       1885
+#define SPECIES_CHAMELEO_ARM_RED                        1886
+#define SPECIES_CHAMELEO_ARM_ORANGE                     1887
+#define SPECIES_CHAMELEO_ARM_YELLOW                     1888
+#define SPECIES_NODDY                                   1889
+#define SPECIES_BATAMON                                 1890
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

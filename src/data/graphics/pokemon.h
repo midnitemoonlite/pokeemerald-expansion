@@ -30120,6 +30120,40 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_BlopperIceless[] = INCBIN_U16("graphics/pokemon/blopper/iceless/shiny.gbapal");
     const u8 gMonIcon_BlopperIceless[] = INCBIN_U8("graphics/pokemon/blopper/iceless/icon.4bpp");
 
+    const u32 gMonFrontPic_ChameleoArm[] = INCBIN_U32("graphics/pokemon/chameleoarm/front.4bpp.lz");
+    const u32 gMonBackPic_ChameleoArm[] = INCBIN_U32("graphics/pokemon/chameleoarm/back.4bpp.lz");
+    const u16 gMonShinyPalette_ChameleoArm[] = INCBIN_U16("graphics/pokemon/chameleoarm/shiny.gbapal");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_ChameleoArm[] = INCBIN_U8("graphics/pokemon/chameleoarm/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u16 gMonPalette_ChameleoArmGreen[] = INCBIN_U16("graphics/pokemon/chameleoarm/normal.gbapal");
+    const u8 gMonIcon_ChameleoArmGreen[] = INCBIN_U8("graphics/pokemon/chameleoarm/icon.4bpp");
+
+    const u16 gMonPalette_ChameleoArmBlue[] = INCBIN_U16("graphics/pokemon/chameleoarm/blue/normal.gbapal");
+    const u8 gMonIcon_ChameleoArmBlue[] = INCBIN_U8("graphics/pokemon/chameleoarm/blue/icon.4bpp");
+
+    const u16 gMonPalette_ChameleoArmPink[] = INCBIN_U16("graphics/pokemon/chameleoarm/pink/normal.gbapal");
+    const u8 gMonIcon_ChameleoArmPink[] = INCBIN_U8("graphics/pokemon/chameleoarm/pink/icon.4bpp");
+
+    const u16 gMonPalette_ChameleoArmRed[] = INCBIN_U16("graphics/pokemon/chameleoarm/red/normal.gbapal");
+    const u8 gMonIcon_ChameleoArmRed[] = INCBIN_U8("graphics/pokemon/chameleoarm/red/icon.4bpp");
+
+    const u16 gMonPalette_ChameleoArmOrange[] = INCBIN_U16("graphics/pokemon/chameleoarm/orange/normal.gbapal");
+    const u8 gMonIcon_ChameleoArmOrange[] = INCBIN_U8("graphics/pokemon/chameleoarm/orange/icon.4bpp");
+
+    const u16 gMonPalette_ChameleoArmYellow[] = INCBIN_U16("graphics/pokemon/chameleoarm/yellow/normal.gbapal");
+    const u8 gMonIcon_ChameleoArmYellow[] = INCBIN_U8("graphics/pokemon/chameleoarm/yellow/icon.4bpp");
+
+    const u32 gMonFrontPic_Noddy[] = INCBIN_U32("graphics/pokemon/noddy/front.4bpp.lz");
+    const u32 gMonBackPic_Noddy[] = INCBIN_U32("graphics/pokemon/noddy/back.4bpp.lz");
+    const u16 gMonPalette_Noddy[] = INCBIN_U16("graphics/pokemon/noddy/normal.gbapal");
+    const u16 gMonShinyPalette_Noddy[] = INCBIN_U16("graphics/pokemon/noddy/shiny.gbapal");
+    const u8 gMonIcon_Noddy[] = INCBIN_U8("graphics/pokemon/noddy/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Noddy[] = INCBIN_U8("graphics/pokemon/noddy/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");

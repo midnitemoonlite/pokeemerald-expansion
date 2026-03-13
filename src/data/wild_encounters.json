@@ -85,37 +85,37 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_MINNY"
+                "species": "SPECIES_CHAMELEO_ARM"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_APOLO"
+                "species": "SPECIES_NODDY"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRIDENT_KNIGHT"
+                "species": "SPECIES_CHAMELEO_ARM_PINK"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_JAVELIN_KNIGHT"
+                "species": "SPECIES_CHAMELEO_ARM_RED"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SPYNUM"
+                "species": "SPECIES_CHAMELEO_ARM_BLUE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_RINGLE"
+                "species": "SPECIES_CHAMELEO_ARM_ORANGE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_PACTO"
+                "species": "SPECIES_CHAMELEO_ARM_YELLOW"
               },
               {
                 "min_level": 20,
