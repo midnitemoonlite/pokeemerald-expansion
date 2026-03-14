@@ -2049,7 +2049,14 @@
 #define SPECIES_DUPA                                    1912
 #define SPECIES_DIPPA                                   1913
 #define SPECIES_DEPPA                                   1914
-#define SPECIES_BATAMON                                 1915
+#define SPECIES_SPHERE_DOOMER                           SPECIES_SPHERE_DOOMER_NORMAL
+#define SPECIES_SPHERE_DOOMER_NORMAL                    1915
+#define SPECIES_SPHERE_DOOMER_SUN                       1916
+#define SPECIES_SPHERE_DOOMER_RAIN                      1917
+#define SPECIES_SPHERE_DOOMER_SNOW                      1918
+#define SPECIES_PHANTA                                  1919
+#define SPECIES_ACE_PHANTA                              1920
+#define SPECIES_BATAMON                                 1921
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

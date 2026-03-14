@@ -2734,3 +2734,11 @@ static const u16 sGabonFormSpeciesIdTable[] = {
     SPECIES_GABON_BUSTED,
     FORM_SPECIES_END,
 };
+
+static const u16 sSphereDoomerFormSpeciesIdTable[] = {
+    SPECIES_SPHERE_DOOMER_NORMAL,
+    SPECIES_SPHERE_DOOMER_SUN,
+    SPECIES_SPHERE_DOOMER_RAIN,
+    SPECIES_SPHERE_DOOMER_SNOW,
+    FORM_SPECIES_END,
+};

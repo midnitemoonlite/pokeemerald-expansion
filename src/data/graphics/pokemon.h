@@ -30376,6 +30376,51 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Deppa[] = INCBIN_U8("graphics/pokemon/deppa/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
+    const u32 gMonFrontPic_SphereDoomerNormal[] = INCBIN_U32("graphics/pokemon/spheredoomer/front.4bpp.lz");
+    const u32 gMonBackPic_SphereDoomerNormal[] = INCBIN_U32("graphics/pokemon/spheredoomer/back.4bpp.lz");
+    const u16 gMonPalette_SphereDoomerNormal[] = INCBIN_U16("graphics/pokemon/spheredoomer/normal.gbapal");
+    const u16 gMonShinyPalette_SphereDoomerNormal[] = INCBIN_U16("graphics/pokemon/spheredoomer/shiny.gbapal");
+    const u8 gMonIcon_SphereDoomerNormal[] = INCBIN_U8("graphics/pokemon/spheredoomer/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_SphereDoomer[] = INCBIN_U8("graphics/pokemon/spheredoomer/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_SphereDoomerSun[] = INCBIN_U32("graphics/pokemon/spheredoomer/sun/front.4bpp.lz");
+    const u32 gMonBackPic_SphereDoomerSun[] = INCBIN_U32("graphics/pokemon/spheredoomer/sun/back.4bpp.lz");
+    const u16 gMonPalette_SphereDoomerSun[] = INCBIN_U16("graphics/pokemon/spheredoomer/sun/normal.gbapal");
+    const u16 gMonShinyPalette_SphereDoomerSun[] = INCBIN_U16("graphics/pokemon/spheredoomer/sun/shiny.gbapal");
+    const u8 gMonIcon_SphereDoomerSun[] = INCBIN_U8("graphics/pokemon/spheredoomer/sun/icon.4bpp");
+
+    const u32 gMonFrontPic_SphereDoomerRain[] = INCBIN_U32("graphics/pokemon/spheredoomer/rain/front.4bpp.lz");
+    const u32 gMonBackPic_SphereDoomerRain[] = INCBIN_U32("graphics/pokemon/spheredoomer/rain/back.4bpp.lz");
+    const u16 gMonPalette_SphereDoomerRain[] = INCBIN_U16("graphics/pokemon/spheredoomer/rain/normal.gbapal");
+    const u16 gMonShinyPalette_SphereDoomerRain[] = INCBIN_U16("graphics/pokemon/spheredoomer/rain/shiny.gbapal");
+    const u8 gMonIcon_SphereDoomerRain[] = INCBIN_U8("graphics/pokemon/spheredoomer/rain/icon.4bpp");
+
+    const u32 gMonFrontPic_SphereDoomerSnow[] = INCBIN_U32("graphics/pokemon/spheredoomer/snow/front.4bpp.lz");
+    const u32 gMonBackPic_SphereDoomerSnow[] = INCBIN_U32("graphics/pokemon/spheredoomer/snow/back.4bpp.lz");
+    const u16 gMonPalette_SphereDoomerSnow[] = INCBIN_U16("graphics/pokemon/spheredoomer/snow/normal.gbapal");
+    const u16 gMonShinyPalette_SphereDoomerSnow[] = INCBIN_U16("graphics/pokemon/spheredoomer/snow/shiny.gbapal");
+    const u8 gMonIcon_SphereDoomerSnow[] = INCBIN_U8("graphics/pokemon/spheredoomer/snow/icon.4bpp");
+
+    const u32 gMonFrontPic_Phanta[] = INCBIN_U32("graphics/pokemon/phanta/front.4bpp.lz");
+    const u32 gMonBackPic_Phanta[] = INCBIN_U32("graphics/pokemon/phanta/back.4bpp.lz");
+    const u16 gMonPalette_Phanta[] = INCBIN_U16("graphics/pokemon/phanta/normal.gbapal");
+    const u16 gMonShinyPalette_Phanta[] = INCBIN_U16("graphics/pokemon/phanta/shiny.gbapal");
+    const u8 gMonIcon_Phanta[] = INCBIN_U8("graphics/pokemon/phanta/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Phanta[] = INCBIN_U8("graphics/pokemon/phanta/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_AcePhanta[] = INCBIN_U32("graphics/pokemon/acephanta/front.4bpp.lz");
+    const u32 gMonBackPic_AcePhanta[] = INCBIN_U32("graphics/pokemon/acephanta/back.4bpp.lz");
+    const u16 gMonPalette_AcePhanta[] = INCBIN_U16("graphics/pokemon/acephanta/normal.gbapal");
+    const u16 gMonShinyPalette_AcePhanta[] = INCBIN_U16("graphics/pokemon/acephanta/shiny.gbapal");
+    const u8 gMonIcon_AcePhanta[] = INCBIN_U8("graphics/pokemon/acephanta/icon.4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_AcePhanta[] = INCBIN_U8("graphics/pokemon/acephanta/footprint.1bpp");
+    #endif //P_FOOTPRINTS
+
     const u32 gMonFrontPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/front.4bpp.lz");
     const u32 gMonBackPic_Batamon[] = INCBIN_U32("graphics/pokemon/batamon/back.4bpp.lz");
     const u16 gMonPalette_Batamon[] = INCBIN_U16("graphics/pokemon/batamon/normal.gbapal");
