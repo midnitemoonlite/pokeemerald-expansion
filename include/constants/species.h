@@ -2056,7 +2056,17 @@
 #define SPECIES_SPHERE_DOOMER_SNOW                      1918
 #define SPECIES_PHANTA                                  1919
 #define SPECIES_ACE_PHANTA                              1920
-#define SPECIES_BATAMON                                 1921
+#define SPECIES_CAPER                                   1921
+#define SPECIES_TEDHAUN                                 1922
+#define SPECIES_PRANK                                   1923
+#define SPECIES_ESCARDROID                              1924
+#define SPECIES_MAIMAIGON                               1925
+#define SPECIES_CHIBI_DEDEDE                            1926
+#define SPECIES_DEDEDE_ROBO                             1927
+#define SPECIES_GRYLL                                   1928
+#define SPECIES_GEMAINE                                 1929
+#define SPECIES_GALACTAL                                1930
+#define SPECIES_BATAMON                                 1931
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

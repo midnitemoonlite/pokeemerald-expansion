@@ -83,34 +83,34 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_SPHERE_DOOMER"
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_ESCARDROID"
+              },
+              {
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_CHIBI_DEDEDE"
+              },
+              {
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_CAPER"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_PHANTA"
+                "species": "SPECIES_GEMAINE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_LOVELY"
+                "species": "SPECIES_BROOM_HATTER"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_LOVELY"
-              },
-              {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_LOVELY"
-              },
-              {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_LOVELY"
+                "species": "SPECIES_PRANK"
               },
               {
                 "min_level": 20,
