@@ -13756,11 +13756,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_N_SOLARIZER] =
     {
-        .name = ITEM_NAME("N-Solarizer"),
+        .name = ITEM_NAME("Slice 'n' Splicers"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "A device to fuse\n"
+            "Splicers to fuse\n"
             "and split Mr. Shine\n"
             "and Mr. Bright."),
         .pocket = POCKET_KEY_ITEMS,
@@ -13777,8 +13777,8 @@ const struct ItemInfo gItemsInfo[] =
         .importance = 1,
         .description = COMPOUND_STRING(
             "A device to fuse\n"
-            "and split Necrozma\n"
-            "using a Lunala."),
+            "and split Dragoon\n"
+            "and Hydra."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Fusion,
