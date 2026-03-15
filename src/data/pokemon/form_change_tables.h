@@ -2426,6 +2426,20 @@ static const struct FormChange sSphereDoomerFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 
+static const struct FormChange sLandiaFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_HP_PERCENT_TURN_END, SPECIES_LANDIA_SPLIT, ABILITY_POWER_CONSTRUCT, HP_LOWER_EQ_THAN, 50},
+    {FORM_CHANGE_FAINT,                      SPECIES_LANDIA_COMBINED},
+    {FORM_CHANGE_END_BATTLE,                 SPECIES_LANDIA_COMBINED},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNightmareFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NIGHTMARE_WIZARD,    ITEM_PRISON_BOTTLE},
+    {FORM_CHANGE_ITEM_USE, SPECIES_NIGHTMARE_POWER_ORB, ITEM_PRISON_BOTTLE},
+    {FORM_CHANGE_TERMINATOR},
+};
 
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

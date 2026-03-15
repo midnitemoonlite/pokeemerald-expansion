@@ -2742,3 +2742,15 @@ static const u16 sSphereDoomerFormSpeciesIdTable[] = {
     SPECIES_SPHERE_DOOMER_SNOW,
     FORM_SPECIES_END,
 };
+
+static const u16 sLandiaFormSpeciesIdTable[] = {
+    SPECIES_LANDIA_COMBINED,
+    SPECIES_LANDIA_SPLIT,
+    FORM_SPECIES_END,
+};
+
+static const u16 sNightmareFormSpeciesIdTable[] = {
+    SPECIES_NIGHTMARE_POWER_ORB,
+    SPECIES_NIGHTMARE_WIZARD,
+    FORM_SPECIES_END,
+};

@@ -85,67 +85,67 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_ESCARDROID"
+                "species": "SPECIES_LANDIA"
               },
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_CHIBI_DEDEDE"
+                "species": "SPECIES_NIGHTMARE"
               },
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_CAPER"
+                "species": "SPECIES_WHISPY_WOODS"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_GEMAINE"
+                "species": "SPECIES_LOLOLO_LALALA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BROOM_HATTER"
+                "species": "SPECIES_KABULA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_PRANK"
+                "species": "SPECIES_KRACKO"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CHAMELEO_ARM_YELLOW"
+                "species": "SPECIES_ACTI_BLADE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_MIRRA"
+                "species": "SPECIES_DYNA_BLADE"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_BLOON"
+                "species": "SPECIES_DRAGOON"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_STARMAN"
+                "species": "SPECIES_HYDRA"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_CRAZY_HAND"
+                "species": "SPECIES_DARK_MATTER"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SERVER_HANDS"
+                "species": "SPECIES_BATAMON"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_CHIP"
+                "species": "SPECIES_LOVELY"
               }
             ]
           }

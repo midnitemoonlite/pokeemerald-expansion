@@ -2066,7 +2066,22 @@
 #define SPECIES_GRYLL                                   1928
 #define SPECIES_GEMAINE                                 1929
 #define SPECIES_GALACTAL                                1930
-#define SPECIES_BATAMON                                 1931
+#define SPECIES_WHISPY_WOODS                            1931
+#define SPECIES_LOLOLO_LALALA                           1932
+#define SPECIES_KABULA                                  1933
+#define SPECIES_KRACKO                                  1934
+#define SPECIES_ACTI_BLADE                              1935
+#define SPECIES_DYNA_BLADE                              1936
+#define SPECIES_DRAGOON                                 1937
+#define SPECIES_HYDRA                                   1938
+#define SPECIES_LANDIA                                  SPECIES_LANDIA_COMBINED
+#define SPECIES_LANDIA_COMBINED                         1939
+#define SPECIES_LANDIA_SPLIT                            1940
+#define SPECIES_DARK_MATTER                             1941
+#define SPECIES_NIGHTMARE                               SPECIES_NIGHTMARE_POWER_ORB
+#define SPECIES_NIGHTMARE_POWER_ORB                     1942
+#define SPECIES_NIGHTMARE_WIZARD                        1943
+#define SPECIES_BATAMON                                 1944
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)
