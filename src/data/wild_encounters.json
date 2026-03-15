@@ -85,22 +85,22 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_LANDIA"
+                "species": "SPECIES_MR_SHINE"
               },
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_NIGHTMARE"
+                "species": "SPECIES_MR_BRIGHT"
               },
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_WHISPY_WOODS"
+                "species": "SPECIES_DRAGOON"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_LOLOLO_LALALA"
+                "species": "SPECIES_HYDRA"
               },
               {
                 "min_level": 20,

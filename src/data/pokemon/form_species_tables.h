@@ -2705,6 +2705,12 @@ static const u16 sMrShineFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
+static const u16 sMrBrightFormSpeciesIdTable[] = {
+    SPECIES_MR_BRIGHT,
+    SPECIES_SHINE_BRIGHT,
+    FORM_SPECIES_END,
+};
+
 static const u16 sMetaKnightsFormSpeciesIdTable[] = {
     SPECIES_AXE_KNIGHT,
     SPECIES_MACE_KNIGHT,

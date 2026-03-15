@@ -16991,6 +16991,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         FOOTPRINT(MrBright)
         .levelUpLearnset = sMrBrightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
+        .formSpeciesIdTable = sMrBrightFormSpeciesIdTable,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
