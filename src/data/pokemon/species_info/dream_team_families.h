@@ -39,7 +39,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Lovely,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 6,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_SWING_CONCAVE,
         .backPic = gMonBackPic_Lovely,
@@ -10562,7 +10562,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         FOOTPRINT(IronMam)
         .levelUpLearnset = sIronMamLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_AUSPICIOUS_ARMOR, SPECIES_GRAND_MAM}),
+        .evolutions = EVOLUTION({EVO_BATTLE_END, 0, SPECIES_GRAND_MAM, CONDITIONS({IF_USED_MOVE_X_TIMES, MOVE_ANCIENT_POWER, 25})}),
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
