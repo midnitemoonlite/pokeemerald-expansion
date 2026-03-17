@@ -44,12 +44,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontAnimId = ANIM_SWING_CONCAVE,
         .backPic = gMonBackPic_Lovely,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Lovely,
         .shinyPalette = gMonShinyPalette_Lovely,
         .iconSprite = gMonIcon_Lovely,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         NO_SHADOW
         FOOTPRINT(Lovely)
         .levelUpLearnset = sLovelyLevelUpLearnset,
@@ -165,7 +165,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SectoniaVine,
         .shinyPalette = gMonShinyPalette_SectoniaVine,
         .iconSprite = gMonIcon_SectoniaVine,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         FOOTPRINT(SectoniaVine)
         .levelUpLearnset = sSectoniaVineLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
