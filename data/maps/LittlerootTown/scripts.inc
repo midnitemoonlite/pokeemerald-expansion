@@ -2005,7 +2005,7 @@ LittlerootTown_Text_CustomSign:
 # 1003 "data/maps/LittlerootTown/scripts.pory"
 	.string "CONGRATULATIONS!\n"
 # 1004 "data/maps/LittlerootTown/scripts.pory"
-	.string "“Hopefully this works!”$"
+	.string "Hopefully this works!$"
 # 1005 "data/maps/LittlerootTown/scripts.pory"
 
 # 1006 "data/maps/LittlerootTown/scripts.pory"
