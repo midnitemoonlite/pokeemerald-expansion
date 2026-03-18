@@ -308,7 +308,7 @@ static const u8 sTrainerPicFacilityClass[][GENDER_COUNT] =
     },
     [CARD_TYPE_RS] =
     {
-        [MALE]   = FACILITY_CLASS_RS_BRENDAN,
+        [MALE]   = FACILITY_CLASS_BRENDAN,
         [FEMALE] = FACILITY_CLASS_RS_MAY
     },
     [CARD_TYPE_EMERALD] =
@@ -732,7 +732,7 @@ static void SetPlayerCardData(struct TrainerCard *trainerCard, u8 cardType)
     for (i = 0; i < TRAINER_CARD_PROFILE_LENGTH; i++)
         trainerCard->easyChatProfile[i] = gSaveBlock1Ptr->easyChatProfile[i];
 
-    StringCopy(trainerCard->playerName, gSaveBlock2Ptr->playerName);
+    StringCopy(trainerCard->playerName, gText_MenuPlayer);
 
     switch (cardType)
     {

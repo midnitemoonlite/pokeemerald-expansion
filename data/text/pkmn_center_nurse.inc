@@ -30,14 +30,14 @@ gText_NoticesGoldCard::
 	.string "Oh, the gold color is brilliant!\n"
 	.string "The four stars seem to sparkle!\p"
 	.string "I've seen several TRAINERS with\n"
-	.string "a SILVER CARD before, but, {PLAYER},\l"
+	.string "a SILVER CARD before, but, Kirby,\l"
 	.string "you're the first TRAINER I've ever\l"
 	.string "seen with a GOLD CARD!\p"
-	.string "Okay, {PLAYER}, please allow me\n"
+	.string "Okay, Kirby, please allow me\n"
 	.string "the honor of resting your POKéMON!$"
 
 gText_YouWantTheUsual::
-	.string "I'm delighted to see you, {PLAYER}!\n"
+	.string "I'm delighted to see you, Kirby!\n"
 	.string "You want the usual, am I right?$"
 
 gText_IllTakeYourPkmn2::

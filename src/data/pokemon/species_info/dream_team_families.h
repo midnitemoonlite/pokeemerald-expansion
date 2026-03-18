@@ -146,7 +146,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16,
         .description = COMPOUND_STRING(
             "A parasitic influence on the flowers of\n"
-            "a Floralian tree brought these helpers to\n"
+            "a Floralian tree brought these Helpers to\n"
             "life. The blossoms can survive while\n"
             "detached from the stalks temporarily."),
         .pokemonScale = 256,
@@ -256,7 +256,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "A reclusive helper that makes its home\n"
+            "A reclusive Helper that makes its home\n"
             "around active volcanoes. It belches\n"
             "flames indiscriminately without paying\n"
             "much attention to its surroundings."),
@@ -1097,7 +1097,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .description = COMPOUND_STRING(
             "Tookeys communicate to one another\n"
             "with melodious clucks, making them\n"
-            "a favorite helper of those with\n"
+            "a favorite Helper of those with\n"
             "a passion for musicality."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -1937,7 +1937,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "A fun-loving helper, Poppy Bros. Jr.\n"
+            "A fun-loving Helper, Poppy Bros. Jr.\n"
             "tries to bring smiles through circus\n"
             "acts such as throwing bombs, balancing\n"
             "on apples, and riding Grizzos."),
@@ -2103,7 +2103,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "Blade Knight is a helper of few words,\n"
+            "Blade Knight is a Helper of few words,\n"
             "instead communicating its feelings\n"
             "through the art of swordplay. It often\n"
             "tests its skill against Sword Knight."),
@@ -2554,7 +2554,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It has no stinger, but this diligent\n"
-            "helper carries a spear at all times,\n"
+            "Helper carries a spear at all times,\n"
             "which fulfills a similar purpose and\n"
             "should be avoided in much the same way."),
         .pokemonScale = 256,
@@ -3621,7 +3621,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "Fangora is said to be the guardian\n"
             "of a world made of yarn. With hot\n"
             "breath, sharp fangs, and a forked\n"
-            "tongue, it's quite a fearsome helper."),
+            "tongue, it's quite a fearsome Helper."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3676,7 +3676,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "Buttonfly and its relatives come in a\n"
             "variety of colors. Their dream is\n"
             "to be able to fly higher into the sky\n"
-            "than any other helper."),
+            "than any other Helper."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7221,7 +7221,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "This foul-tempered helper will gnash\n"
+            "This foul-tempered Helper will gnash\n"
             "stubbornly at anything it sees. Its\n"
             "favorite objects to chew on are\n"
             "anything round and sturdy."),
@@ -7505,7 +7505,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "It doesn't look much different than\n"
             "Slippy, and it's not much stronger\n"
             "either. The new title along is what\n"
-            "carries this vain helper's ego."),
+            "carries this vain Helper's ego."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7613,7 +7613,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "A robotic helper who can fly with the\n"
+            "A robotic Helper who can fly with the\n"
             "help of its rocket pack. It's been\n"
             "succeeded by newer models, and yet\n"
             "it remains as functional as ever."),
@@ -10594,7 +10594,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "This hulking behemoth of a helper is\n"
+            "This hulking behemoth of a Helper is\n"
             "equipped in nigh-impenetrable armor.\n"
             "Her supreme size and strength have\n"
             "earned her the nickname 'Big Bad Mama'."),
@@ -10987,7 +10987,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "This shy helper obscures its true\n"
+            "This shy Helper obscures its true\n"
             "form within a cluster of bubbles. If\n"
             "one were to pop the bubbles, Buboo\n"
             "would frantically skitter away."),
@@ -13040,7 +13040,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Grizzo is a passive helper who lets\n"
+            "Grizzo is a passive Helper who lets\n"
             "smaller creatures ride on its back.\n"
             "It wears a headband to symbolize\n"
             "the pride it has in its strength."),
@@ -13153,7 +13153,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Oohroo can't get enough of bananas.\n"
-            "This normally stubborn helper\n"
+            "This normally stubborn Helper\n"
             "displays shocking intelligence when\n"
             "it comes to procuring more bananas."),
         .pokemonScale = 256,
@@ -14954,7 +14954,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "This powerful helper has lost all\n"
+            "This powerful Helper has lost all\n"
             "patience when it comes to waiting\n"
             "for prey. If it misses the initial\n"
             "lunge, it flails in frustration."),
@@ -15343,9 +15343,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "A kind-hearted helper who appears\n"
+            "A kind-hearted Helper who appears\n"
             "to those in need of saving. It\n"
-            "lifts helpers even several times\n"
+            "lifts Helpers even several times\n"
             "its size out of bottomless pits."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -17303,7 +17303,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "The smallest of all helpers, Minny\n"
+            "The smallest of all Helpers, Minny\n"
             "uses its small size to avoid fights.\n"
             "It buries tunnels through fruits and\n"
             "feeds off the innards for weeks."),
@@ -17983,7 +17983,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "These rowdy helpers run at wild speeds.\n"
+            "These rowdy Helpers run at wild speeds.\n"
             "Waddle Dees brave enough to try riding\n"
             "on Nruff report it as an exhilarating\n"
             "experience until they're knocked off."),
@@ -18812,7 +18812,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "These devout helpers usually reside on\n"
+            "These devout Helpers usually reside on\n"
             "the great space station Jambandra. They\n"
             "believe their faith to be unshakeable,\n"
             "but in reality are quite curious fellows."),
@@ -19737,7 +19737,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6,
         .weight = 16,
         .description = COMPOUND_STRING(
-            "This elusive helper is normally invisible\n"
+            "This elusive Helper is normally invisible\n"
             "to all, but the bearer of a complete Ghost\n"
             "Medal will reveal it. The nature of the\n"
             "medal's relationship to Tedhaun is untold."),
@@ -20918,7 +20918,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 6, //temp
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "The rarest of helpers, which sparked\n"
+            "The rarest of Helpers, which sparked\n"
             "much confusion due to its more than\n"
             "passing resemblance to Kirby. It doesn't\n"
             "seem to be particularly special..."),

@@ -1,5 +1,5 @@
 gBirchDexRatingText_AreYouCurious::
-	.string "PROF. BIRCH: Ah, {PLAYER}{KUN}!\p"
+	.string "PROF. BIRCH: Ah, Kirby{KUN}!\p"
 	.string "Are you curious about how your\n"
 	.string "POKéDEX is coming along?$"
 
@@ -224,7 +224,7 @@ PokedexRating_Text_Wroooaaarrr::
 	.string "Wroooooooaaaaaarrrr!$"
 
 PokedexRating_Text_ThankYouMadeDreamReality::
-	.string "Thank you, {PLAYER}!\n"
+	.string "Thank you, Kirby!\n"
 	.string "Sincerely, thank you!\l"
 	.string "You've made my dream a reality!$"
 

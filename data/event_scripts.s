@@ -1389,7 +1389,7 @@ gText_PokemonTrainerSchoolEmail::
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC::
-	.string "{PLAYER} booted up the PC.$"
+	.string "Kirby booted up the PC.$"
 
 gText_PokeblockLinkCanceled::
 	.string "The link was canceled.$"
@@ -1399,12 +1399,12 @@ gText_UnusedNicknameReceivedPokemon::
 	.string "the {STR_VAR_2} you received?$"
 
 gText_PlayerWhitedOut::
-	.string "{PLAYER} is out of usable\n"
-	.string "POKéMON!\p{PLAYER} whited out!$"
+	.string "Kirby is out of usable\n"
+	.string "Helpers!\pKirby whited out!$"
 
 gText_FirstShouldRestoreMonsHealth::
 	.string "First, you should restore your\n"
-	.string "POKéMON to full health.$"
+	.string "Helpers to full health.$"
 
 gText_MonsHealedShouldBuyPotions::
 	.string "Your POKéMON have been healed\n"
@@ -1422,7 +1422,7 @@ gText_MonsHealed::
 	.string "We hope you excel!$"
 
 gText_HadQuiteAnExperienceTakeRest::
-	.string "MOM: {PLAYER}!\n"
+	.string "MOM: Kirby!\n"
 	.string "Welcome home.\p"
 	.string "It sounds like you had quite\n"
 	.string "an experience.\p"
@@ -1495,7 +1495,7 @@ gText_SorryRecordCornerPreparation::
 	.string "is under preparation.$"
 
 gText_PlayerHandedOverTheItem::
-	.string "{PLAYER} handed over the\n"
+	.string "Kirby handed over the\n"
 	.string "{STR_VAR_1}.$"
 
 gText_ThankYouForAccessingMysteryGift::
@@ -1503,11 +1503,11 @@ gText_ThankYouForAccessingMysteryGift::
 	.string "MYSTERY GIFT System.$"
 
 gText_PlayerFoundOneTMHM::
-	.string "{PLAYER} found one {STR_VAR_1}\n"
+	.string "Kirby found one {STR_VAR_1}\n"
 	.string "{STR_VAR_2}!$"
 
 gText_PlayerFoundTMHMs::
-	.string "{PLAYER} found {STR_VAR_3} {STR_VAR_1}\n"
+	.string "Kirby found {STR_VAR_3} {STR_VAR_1}\n"
 	.string "{STR_VAR_2}!$"
 
 gText_Sudowoodo_Attacked::
