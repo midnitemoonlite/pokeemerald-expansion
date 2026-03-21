@@ -1320,9 +1320,9 @@ static void UpdateBobbingEffect(struct ObjectEvent *playerObj, struct Sprite *pl
         {
             // Update vertical position of player
             if (!GetSurfBlob_HasPlayerOffset(sprite))
-                playerSprite->y2 = sprite->y2;
+                playerSprite->y2 = sprite->y2 + 8;
             else
-                playerSprite->y2 = sprite->sPlayerOffset + sprite->y2;
+                playerSprite->y2 = sprite->sPlayerOffset + 8 + sprite->y2;
             sprite->x = playerSprite->x;
             sprite->y = playerSprite->y + 8;
         }

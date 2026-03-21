@@ -210,17 +210,18 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_BurningLeo,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SPIN,
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
         .backPic = gMonBackPic_BurningLeo,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_H_SHAKE,
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_H_STRETCH,
         .palette = gMonPalette_BurningLeo,
         .shinyPalette = gMonShinyPalette_BurningLeo,
         .iconSprite = gMonIcon_BurningLeo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BurningLeo)
         .levelUpLearnset = sBurningLeoLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -276,7 +277,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Acchi,
         .shinyPalette = gMonShinyPalette_Acchi,
         .iconSprite = gMonIcon_Acchi,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         FOOTPRINT(Acchi)
         .levelUpLearnset = sAcchiLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -332,7 +333,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Pyribbit,
         .shinyPalette = gMonShinyPalette_Pyribbit,
         .iconSprite = gMonIcon_Pyribbit,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         FOOTPRINT(Pyribbit)
         .levelUpLearnset = sPyribbitLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5051,7 +5052,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BOXIN] =
     {
         .baseHP        = 45,
-        .baseAttack    = 75,
+        .baseAttack    = 70,
         .baseDefense   = 35,
         .baseSpeed     = 56,
         .baseSpAttack  = 34,
@@ -5107,7 +5108,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BUN] =
     {
         .baseHP        = 70,
-        .baseAttack    = 86,
+        .baseAttack    = 70,
         .baseDefense   = 60,
         .baseSpeed     = 56,
         .baseSpAttack  = 35,
@@ -16271,12 +16272,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_KAGAMI_MOCCHI] =
     {
-        .baseHP        = 92,
-        .baseAttack    = 75,
-        .baseDefense   = 82,
+        .baseHP        = 93,
+        .baseAttack    = 62,
+        .baseDefense   = 86,
         .baseSpeed     = 50,
-        .baseSpAttack  = 88,
-        .baseSpDefense = 103,
+        .baseSpAttack  = 89,
+        .baseSpDefense = 107,
         .types = MON_TYPES(TYPE_GRASS, TYPE_ICE),
         .catchRate = 140,
         .expYield = 168,
