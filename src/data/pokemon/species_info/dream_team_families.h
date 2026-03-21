@@ -388,7 +388,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Squishy,
         .shinyPalette = gMonShinyPalette_Squishy,
         .iconSprite = gMonIcon_Squishy,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         FOOTPRINT(Squishy)
         .levelUpLearnset = sSquishyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -444,7 +444,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Squister,
         .shinyPalette = gMonShinyPalette_Squister,
         .iconSprite = gMonIcon_Squister,
-        .iconPalIndex = 1,
+        .iconPalIndex = 3,
         FOOTPRINT(Squister)
         .levelUpLearnset = sSquisterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -500,7 +500,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Claykken,
         .shinyPalette = gMonShinyPalette_Claykken,
         .iconSprite = gMonIcon_Claykken,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         FOOTPRINT(Claykken)
         .levelUpLearnset = sClaykkenLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
