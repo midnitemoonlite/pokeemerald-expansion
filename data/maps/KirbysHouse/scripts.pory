@@ -1,0 +1,12 @@
+raw `
+KirbysHouse_MapScripts::
+	.byte 0
+
+KirbysHouse_EventScript_HouseSign::
+	msgbox KirbysHouse_Text_KirbysHouse, MSGBOX_SIGN
+	end
+
+KirbysHouse_Text_KirbysHouse:
+	.string "KIRBY'S HOUSE\n"
+	.string "Built by thankful Dream Land residents.$"
+`

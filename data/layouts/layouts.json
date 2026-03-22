@@ -9323,6 +9323,26 @@
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_KIRBYS_HOUSE",
+      "name": "KirbysHouse_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/KirbysHouse/border.bin",
+      "blockdata_filepath": "data/layouts/KirbysHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIRBYS_HOUSE_INDOORS",
+      "name": "KirbysHouse_Indoors_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/KirbysHouse_Indoors/border.bin",
+      "blockdata_filepath": "data/layouts/KirbysHouse_Indoors/map.bin"
     }
   ]
 }
