@@ -6,7 +6,21 @@ KirbysHouse_EventScript_HouseSign::
 	msgbox KirbysHouse_Text_KirbysHouse, MSGBOX_SIGN
 	end
 
+KirbysHouse_EventScript_Gooey::
+	msgbox KirbysHouse_Text_Goo, MSGBOX_NPC
+	end
+
+KirbysHouse_EventScript_BandanaDee::
+	msgbox KirbysHouse_Text_HelloKirby, MSGBOX_NPC
+	end
+
 KirbysHouse_Text_KirbysHouse:
 	.string "KIRBY'S HOUSE\n"
 	.string "Built by thankful Dream Land residents.$"
+
+KirbysHouse_Text_Goo:
+	.string "...goo?$"
+
+KirbysHouse_Text_HelloKirby:
+	.string "BANDANA WADDLE DEE: Hiya, Kirby!$"
 `

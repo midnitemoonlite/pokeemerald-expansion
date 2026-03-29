@@ -4399,6 +4399,7 @@ static u8* ConvertMonHeightToMetricString(u32 height)
     u32 index = 0;
     u8* heightString = ConvertMeasurementToMetricString(height, &index);
 
+    heightString[index++] = CHAR_c;
     heightString[index++] = CHAR_m;
     heightString[index++] = EOS;
     return heightString;
@@ -4467,7 +4468,6 @@ static u8* ConvertMonWeightToMetricString(u32 weight)
 
     weightString[index++] = CHAR_k;
     weightString[index++] = CHAR_g;
-    weightString[index++] = CHAR_PERIOD;
     weightString[index++] = EOS;
     return weightString;
 }

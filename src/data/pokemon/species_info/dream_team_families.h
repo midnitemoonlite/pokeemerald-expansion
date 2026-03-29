@@ -26,8 +26,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LOVELY,
         .categoryName = _("Dandelion"),
-        .height = 6,
-        .weight = 16,
+        .height = 470, // Final
+        .weight = 2,
         .description = COMPOUND_STRING(
             "Lovely sways back and forth with a cute\n"
             "face to beguile onlookers. If that doesn't\n"
@@ -84,8 +84,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ROSELY,
         .categoryName = _("Rose Thorn"),
-        .height = 6,
-        .weight = 16,
+        .height = 473, // Final
+        .weight = 2,
         .description = COMPOUND_STRING(
             "Rosely's head is covered in a veil of\n"
             "vivid rose petals. Anyone who tries to\n"
@@ -108,6 +108,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Rosely,
         .iconSprite = gMonIcon_Rosely,
         .iconPalIndex = 1,
+        NO_SHADOW
         FOOTPRINT(Rosely)
         .levelUpLearnset = sRoselyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -142,8 +143,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SECTONIA_VINE,
         .categoryName = _("Dreamstalk"),
-        .height = 6,
-        .weight = 16,
+        .height = 2005, // Final
+        .weight = 89,
         .description = COMPOUND_STRING(
             "A parasitic influence on the flowers of\n"
             "a Floralian tree brought these Helpers to\n"
@@ -166,6 +167,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_SectoniaVine,
         .iconSprite = gMonIcon_SectoniaVine,
         .iconPalIndex = 1,
+        NO_SHADOW
         FOOTPRINT(SectoniaVine)
         .levelUpLearnset = sSectoniaVineLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -197,8 +199,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BURNING_LEO,
         .categoryName = _("Fire Mane"),
-        .height = 6, //temp
-        .weight = 16, //temp
+        .height = 291, // Final
+        .weight = 15, //temp
         .description = COMPOUND_STRING(
             "Proud and kind-hearted, Burning Leo\n"
             "will share its warmth with others in\n"
@@ -254,8 +256,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ACCHI,
         .categoryName = _("Flame"),
-        .height = 6,
-        .weight = 16,
+        .height = 344, // Final
+        .weight = 81,
         .description = COMPOUND_STRING(
             "A reclusive Helper that makes its home\n"
             "around active volcanoes. It belches\n"
@@ -278,6 +280,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Acchi,
         .iconSprite = gMonIcon_Acchi,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Acchi)
         .levelUpLearnset = sAcchiLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -310,8 +313,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PYRIBBIT,
         .categoryName = _("Eruption"),
-        .height = 6,
-        .weight = 16,
+        .height = 929, // Final
+        .weight = 435,
         .description = COMPOUND_STRING(
             "A hot-tempered toad that derives comfort\n"
             "from harsh environmental conditions. It\n"
@@ -334,6 +337,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Pyribbit,
         .iconSprite = gMonIcon_Pyribbit,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Pyribbit)
         .levelUpLearnset = sPyribbitLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -365,8 +369,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SQUISHY,
         .categoryName = _("Sea Squid"),
-        .height = 6, //temp
-        .weight = 16, //temp
+        .height = 231, // Final
+        .weight = 10, //temp
         .description = COMPOUND_STRING(
             "Usually seen underwater, it can also\n"
             "occasionally be seen surfacing or even\n"
@@ -380,15 +384,16 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE_TWICE,
+        .frontAnimId = ANIM_SPRING_RISING,
         .backPic = gMonBackPic_Squishy,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .backPicYOffset = 14,
+        .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_Squishy,
         .shinyPalette = gMonShinyPalette_Squishy,
         .iconSprite = gMonIcon_Squishy,
         .iconPalIndex = 3,
+        NO_SHADOW
         FOOTPRINT(Squishy)
         .levelUpLearnset = sSquishyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -421,8 +426,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SQUISTER,
         .categoryName = _("Torpedo"),
-        .height = 6,
-        .weight = 16,
+        .height = 276, // Final
+        .weight = 11,
         .description = COMPOUND_STRING(
             "By twisting and uncoiling its body,\n"
             "it rockets through the ocean at high\n"
@@ -436,7 +441,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_JOLT_RIGHT_SLOW,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_Squister,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
@@ -445,6 +451,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Squister,
         .iconSprite = gMonIcon_Squister,
         .iconPalIndex = 3,
+        SHADOW(4, 12, SHADOW_SIZE_M)
         FOOTPRINT(Squister)
         .levelUpLearnset = sSquisterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -477,8 +484,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CLAYKKEN,
         .categoryName = _("Pirate"),
-        .height = 6,
-        .weight = 16,
+        .height = 1469, // Final
+        .weight = 818,
         .description = COMPOUND_STRING(
             "This nefarious troublemaker of the sea\n"
             "attacks with spiked tentacles. The wooden\n"
@@ -492,7 +499,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_CONCAVE_ARC_LARGE_TWICE,
+        .frontAnimId = ANIM_TIP_AND_SHAKE,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_Claykken,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
@@ -502,6 +510,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .iconSprite = gMonIcon_Claykken,
         .iconPalIndex = 0,
         FOOTPRINT(Claykken)
+        SHADOW(2, 17, SHADOW_SIZE_L)
         .levelUpLearnset = sClaykkenLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
@@ -532,7 +541,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHIP,
         .categoryName = _("Fox Tail"),
-        .height = 6, //temp
+        .height = 211, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It loves nothing more than spending\n"
@@ -555,7 +564,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Chip,
         .shinyPalette = gMonShinyPalette_Chip,
         .iconSprite = gMonIcon_Chip,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
+        NO_SHADOW
         FOOTPRINT(Chip)
         .levelUpLearnset = sChipLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -588,7 +598,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHIPPURUS,
         .categoryName = _("Grandiose"),
-        .height = 6, //temp
+        .height = 377, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Evolution changed its size and weight\n"
@@ -611,7 +621,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Chippurus,
         .shinyPalette = gMonShinyPalette_Chippurus,
         .iconSprite = gMonIcon_Chippurus,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
+        NO_SHADOW
         FOOTPRINT(Chippurus)
         .levelUpLearnset = sChippurusLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -643,7 +654,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BRONTO_BURT,
         .categoryName = _("Soaring"),
-        .height = 6, //temp
+        .height = 202, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A common sight in the skies of Dream\n"
@@ -699,7 +710,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HALCANTO_BURT,
         .categoryName = _("Gray Sky"),
-        .height = 6, //temp
+        .height = 236, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Halcanto Burt's similar build to Bronto\n"
@@ -754,7 +765,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CAPILLER,
         .categoryName = _("Caterpillar"),
-        .height = 6, //temp
+        .height = 273, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Capillers have a habit of falling from\n"
@@ -777,7 +788,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Capiller,
         .shinyPalette = gMonShinyPalette_Capiller,
         .iconSprite = gMonIcon_Capiller,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
+        NO_SHADOW
         FOOTPRINT(Capiller)
         .levelUpLearnset = sCapillerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -810,7 +822,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PUPA,
         .categoryName = _("Chrysalis"),
-        .height = 6, //temp
+        .height = 170, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Pupa's body is immobile, so it\n"
@@ -833,7 +845,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Pupa,
         .shinyPalette = gMonShinyPalette_Pupa,
         .iconSprite = gMonIcon_Pupa,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         FOOTPRINT(Pupa)
         .levelUpLearnset = sPupaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -866,7 +878,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUTTERFLY,
         .categoryName = _("Papillon"),
-        .height = 6, //temp
+        .height = 145, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The sight of butterflies is often\n"
@@ -889,7 +901,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_ButterflySolo,
         .shinyPalette = gMonShinyPalette_ButterflySolo,
         .iconSprite = gMonIcon_ButterflySolo,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2, // Palette 5?
         FOOTPRINT(Butterfly)
         .levelUpLearnset = sButterflyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -923,7 +935,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUTTERFLY,
         .categoryName = _("Kaleidoscope"),
-        .height = 6, //temp
+        .height = 145, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The sight of a butterfly was once\n"
@@ -946,7 +958,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_ButterflySwarm,
         .shinyPalette = gMonShinyPalette_ButterflySwarm,
         .iconSprite = gMonIcon_ButterflySwarm,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2, // Palette 5?
         FOOTPRINT(Butterfly)
         .levelUpLearnset = sButterflyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -980,7 +992,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHICK,
         .categoryName = _("Eggshell"),
-        .height = 6, //temp
+        .height = 163, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A newborn chick that tends to stay\n"
@@ -1004,11 +1016,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Chick,
         .iconSprite = gMonIcon_Chick,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Chick)
         .levelUpLearnset = sChickLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_PICHIKURI, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_POISON})}, 
-                                {EVO_LEVEL, 0, SPECIES_TWIZZY, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        .evolutions = EVOLUTION( {EVO_LEVEL, 0, SPECIES_TWIZZY, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})},
+                                 {EVO_LEVEL, 0, SPECIES_PICHIKURI, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_POISON})}),
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
@@ -1037,7 +1050,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TWIZZY,
         .categoryName = _("Young Bird"),
-        .height = 6, //temp
+        .height = 173, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "They spend most of their time\n"
@@ -1093,7 +1106,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TOOKEY,
         .categoryName = _("Chicken"),
-        .height = 6, //temp
+        .height = 200, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Tookeys communicate to one another\n"
@@ -1117,6 +1130,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Tookey,
         .iconSprite = gMonIcon_Tookey,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Tookey)
         .levelUpLearnset = sTookeyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1149,7 +1163,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PICHIKURI,
         .categoryName = _("Bad Egg"),
-        .height = 6, //temp
+        .height = 559, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The negative energy absorbed by\n"
@@ -1204,7 +1218,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WADDLE_DOO,
         .categoryName = _("Single Eye"),
-        .height = 6, //temp
+        .height = 189, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A close relative of the Waddle Dee,\n"
@@ -1228,6 +1242,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WaddleDoo,
         .iconSprite = gMonIcon_WaddleDoo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(WaddleDoo)
         .levelUpLearnset = sWaddleDooLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1256,11 +1271,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_FRISK, ABILITY_COSTAR, ABILITY_MOODY},
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Waddle Doo"),
+        .speciesName = _("King Doo"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KING_DOO,
         .categoryName = _("Cycloptic"),
-        .height = 6, //temp
+        .height = 421, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "This self-proclaimed king of Waddle\n"
@@ -1284,6 +1299,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_KingDoo,
         .iconSprite = gMonIcon_KingDoo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(KingDoo)
         .levelUpLearnset = sKingDooLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1315,7 +1331,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BEANBON,
         .categoryName = _("Sprout"),
-        .height = 6, //temp
+        .height = 257, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "An adaptable species that hails from\n"
@@ -1339,6 +1355,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BeanbonPlant,
         .iconSprite = gMonIcon_BeanbonPlant,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Beanbon)
         .levelUpLearnset = sBeanbonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1373,7 +1390,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BEANBON,
         .categoryName = _("Sprout"),
-        .height = 6, //temp
+        .height = 277, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The type of Beanbon seen inhabiting\n"
@@ -1397,6 +1414,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BeanbonSandy,
         .iconSprite = gMonIcon_BeanbonSandy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Beanbon)
         .levelUpLearnset = sBeanbonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1431,7 +1449,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BEANBON,
         .categoryName = _("Sprout"),
-        .height = 6, //temp
+        .height = 267, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The type of Beanbon seen inhabiting\n"
@@ -1455,6 +1473,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BeanbonTrash,
         .iconSprite = gMonIcon_BeanbonTrash,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Beanbon)
         .levelUpLearnset = sBeanbonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1489,7 +1508,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BIG_BEANBON,
         .categoryName = _("Seedbearing"),
-        .height = 6, //temp
+        .height = 505, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "In the right conditions, Beanbons can\n"
@@ -1513,6 +1532,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BigBeanbon,
         .iconSprite = gMonIcon_BigBeanbon,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BigBeanbon)
         .levelUpLearnset = sBigBeanbonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1545,7 +1565,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BIGGER_BEANBON,
         .categoryName = _("Overgrown"),
-        .height = 6, //temp
+        .height = 924, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A hypertrophic specimen among Beanbon,\n"
@@ -1569,6 +1589,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BiggerBeanbon,
         .iconSprite = gMonIcon_BiggerBeanbon,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BiggerBeanbon)
         .levelUpLearnset = sBiggerBeanbonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1601,7 +1622,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BIG_MUMMBON,
         .categoryName = _("Mummified"),
-        .height = 6, //temp
+        .height = 505, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Big Mummbon's bandages lose shape and\n"
@@ -1625,6 +1646,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BigMummbon,
         .iconSprite = gMonIcon_BigMummbon,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BigMummbon)
         .levelUpLearnset = sBigMummbonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1657,7 +1679,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BIG_ZOMBON,
         .categoryName = _("Zombified"),
-        .height = 6, //temp
+        .height = 524, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Big Zombons live deep underground, only\n"
@@ -1681,6 +1703,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BigZombon,
         .iconSprite = gMonIcon_BigZombon,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BigZombon)
         .levelUpLearnset = sBigZombonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1712,7 +1735,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GAW_GAW,
         .categoryName = _("Feral"),
-        .height = 6, //temp
+        .height = 256, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It digs through soil with large claws\n"
@@ -1736,6 +1759,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GawGaw,
         .iconSprite = gMonIcon_GawGaw,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GawGaw)
         .levelUpLearnset = sGawGawLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1768,7 +1792,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GAO_GAO,
         .categoryName = _("Wild Animal"),
-        .height = 6, //temp
+        .height = 378, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Gao Gao's claws are powerful enough to\n"
@@ -1792,6 +1816,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GaoGao,
         .iconSprite = gMonIcon_GaoGao,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GaoGao)
         .levelUpLearnset = sGaoGaoLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1823,7 +1848,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CAPPY,
         .categoryName = _("Mushroom"),
-        .height = 6, //temp
+        .height = 196, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "When hopping around in its large\n"
@@ -1847,6 +1872,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Cappy,
         .iconSprite = gMonIcon_Cappy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Cappy)
         .levelUpLearnset = sCappyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1880,7 +1906,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_POISON_MASH,
         .categoryName = _("Mushroom"),
-        .height = 6, //temp
+        .height = 218, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "As it hops, it scatters spores\n"
@@ -1904,6 +1930,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_PoisonMash,
         .iconSprite = gMonIcon_PoisonMash,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(PoisonMash)
         .levelUpLearnset = sPoisonMashLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1935,7 +1962,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_POPPY_BROS_JR,
         .categoryName = _("Pyrotechnics"),
-        .height = 6, //temp
+        .height = 232, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A fun-loving Helper, Poppy Bros. Jr.\n"
@@ -1959,6 +1986,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_PoppyBrosJr,
         .iconSprite = gMonIcon_PoppyBrosJr,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(PoppyBrosJr)
         .levelUpLearnset = sPoppyBrosJrLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -1991,7 +2019,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_POPPY_BROS_SR,
         .categoryName = _("Jester"),
-        .height = 6, //temp
+        .height = 382, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Poppy Bros. Sr. performs best in\n"
@@ -2015,6 +2043,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_PoppyBrosSr,
         .iconSprite = gMonIcon_PoppyBrosSr,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(PoppyBrosSr)
         .levelUpLearnset = sPoppyBrosSrLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2046,7 +2075,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_UFO,
         .categoryName = _("Unidentified"),
-        .height = 6, //temp
+        .height = 256, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Consider yourself lucky if you\n"
@@ -2101,7 +2130,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BLADE_KNIGHT,
         .categoryName = _("Sword-Swing"),
-        .height = 6,
+        .height = 288, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Blade Knight is a Helper of few words,\n"
@@ -2125,6 +2154,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BladeKnight,
         .iconSprite = gMonIcon_BladeKnight,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BladeKnight)
         .levelUpLearnset = sBladeKnightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2158,7 +2188,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GIGANT_EDGE,
         .categoryName = _("Greatsword"),
-        .height = 6,
+        .height = 496, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "What should be a two-handed sword is\n"
@@ -2182,6 +2212,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GigantEdge,
         .iconSprite = gMonIcon_GigantEdge,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GigantEdge)
         .levelUpLearnset = sGigantEdgeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2215,7 +2246,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_IGNITE_EDGE,
         .categoryName = _("Sizzle Sword"),
-        .height = 6,
+        .height = 698, // Final?
         .weight = 16,
         .description = COMPOUND_STRING(
             "Pillars of flame erupt from the earth\n"
@@ -2239,6 +2270,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_IgniteEdge,
         .iconSprite = gMonIcon_IgniteEdge,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(IgniteEdge)
         .levelUpLearnset = sIgniteEdgeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2270,7 +2302,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SIR_KIBBLE,
         .categoryName = _("Cutter Blade"),
-        .height = 6,
+        .height = 250, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It wields a bladed boomerang known as a\n"
@@ -2294,6 +2326,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_SirKibble,
         .iconSprite = gMonIcon_SirKibble,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(SirKibble)
         .levelUpLearnset = sSirKibbleLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2327,7 +2360,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KIBBLE_BLADE,
         .categoryName = _("Armor Crest"),
-        .height = 6,
+        .height = 492, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "While cutters are best known as throwable\n"
@@ -2351,6 +2384,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_KibbleBlade,
         .iconSprite = gMonIcon_KibbleBlade,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(KibbleBlade)
         .levelUpLearnset = sKibbleBladeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2384,7 +2418,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FROST_KIBBLE_BLADE,
         .categoryName = _("Blizz Cutter"),
-        .height = 6,
+        .height = 529, // Final?
         .weight = 16,
         .description = COMPOUND_STRING(
             "Frost Kibble Blade's ice-coated cutter\n"
@@ -2408,6 +2442,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_FrostKibbleBlade,
         .iconSprite = gMonIcon_FrostKibbleBlade,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(FrostKibbleBlade)
         .levelUpLearnset = sFrostKibbleBladeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2439,7 +2474,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NEEDLOUS,
         .categoryName = _("Larval"),
-        .height = 6, //temp
+        .height = 176, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Don't be fooled by the sight of a\n"
@@ -2463,6 +2498,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Needlous,
         .iconSprite = gMonIcon_Needlous,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Needlous)
         .levelUpLearnset = sNeedlousLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2495,7 +2531,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PUNC,
         .categoryName = _("Cocoon"),
-        .height = 6, //temp
+        .height = 252, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Its plated shell functions like\n"
@@ -2519,6 +2555,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Punc,
         .iconSprite = gMonIcon_Punc,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Punc)
         .levelUpLearnset = sPuncLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2551,7 +2588,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PIERCE,
         .categoryName = _("Bee"),
-        .height = 6, //temp
+        .height = 200, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It has no stinger, but this diligent\n"
@@ -2606,7 +2643,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BROOM_HATTER,
         .categoryName = _("Cleaning"),
-        .height = 6, //temp
+        .height = 205, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It spends day and night sweeping\n"
@@ -2630,6 +2667,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BroomHatter,
         .iconSprite = gMonIcon_BroomHatter,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BroomHatter)
         .levelUpLearnset = sBroomHatterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2663,7 +2701,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KEKE,
         .categoryName = _("Witch"),
-        .height = 6, //temp
+        .height = 233, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Keke spends its days lazily flying\n"
@@ -2720,7 +2758,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GRYLL,
         .categoryName = _("Broom Flier"),
-        .height = 6, //temp
+        .height = 307, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Gryll's motives and origins are unknown.\n"
@@ -2775,7 +2813,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_AWOOFY,
         .categoryName = _("Tame"),
-        .height = 6, //temp
+        .height = 266, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A beast that came from another world.\n"
@@ -2799,6 +2837,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Awoofy,
         .iconSprite = gMonIcon_Awoofy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Awoofy)
         .levelUpLearnset = sAwoofyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2832,7 +2871,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PRIMAL_AWOOFY,
         .categoryName = _("Primeval"),
-        .height = 6, //temp
+        .height = 452, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Normally residing in far-off deserts\n"
@@ -2856,6 +2895,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_PrimalAwoofy,
         .iconSprite = gMonIcon_PrimalAwoofy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(PrimalAwoofy)
         .levelUpLearnset = sPrimalAwoofyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2887,7 +2927,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KABU,
         .categoryName = _("Stone Head"),
-        .height = 6, //temp
+        .height = 213, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A stone sculpture with mysterious\n"
@@ -2911,6 +2951,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Kabu,
         .iconSprite = gMonIcon_Kabu,
         .iconPalIndex = 0,
+                NO_SHADOW
         FOOTPRINT(Kabu)
         .levelUpLearnset = sKabuLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2943,7 +2984,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BIG_KABU,
         .categoryName = _("Stone Tower"),
-        .height = 6, //temp
+        .height = 454, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Those who watch Big Kabu open its\n"
@@ -2967,6 +3008,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BigKabu,
         .iconSprite = gMonIcon_BigKabu,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BigKabu)
         .levelUpLearnset = sBigKabuLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -2998,7 +3040,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BLIPPER,
         .categoryName = _("Goggles"),
-        .height = 6, //temp
+        .height = 198, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Some consider Blipper's goggles\n"
@@ -3056,7 +3098,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MAMATEE,
         .categoryName = _("Maternal"),
-        .height = 6, //temp
+        .height = 403, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It has earned the nickname of\n"
@@ -3112,7 +3154,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BLING_BLIPPER,
         .categoryName = _("Big Catch"),
-        .height = 6, //temp
+        .height = 710, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "This oversized golden Blipper has\n"
@@ -3167,7 +3209,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LEAFAN,
         .categoryName = _("Leaf"),
-        .height = 6, //temp
+        .height = 223, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Leafan is so light the wind is able\n"
@@ -3224,7 +3266,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BULBY,
         .categoryName = _("Flowering"),
-        .height = 6, //temp
+        .height = 452, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Bulby spends most of its day buried\n"
@@ -3248,6 +3290,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Bulby,
         .iconSprite = gMonIcon_Bulby,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bulby)
         .levelUpLearnset = sBulbyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3279,7 +3322,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BEETLEY,
         .categoryName = _("Insectoid"),
-        .height = 6, //temp
+        .height = 205, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It was recently crowned the new king\n"
@@ -3303,6 +3346,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Beetley,
         .iconSprite = gMonIcon_Beetley,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Beetley)
         .levelUpLearnset = sBeetleyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3336,7 +3380,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HORNHEAD,
         .categoryName = _("Rhino Horn"),
-        .height = 6, //temp
+        .height = 361, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Hornhead's horn is stronger than\n"
@@ -3359,7 +3403,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Hornhead,
         .shinyPalette = gMonShinyPalette_Hornhead,
         .iconSprite = gMonIcon_Hornhead,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+                NO_SHADOW
         FOOTPRINT(Hornhead)
         .levelUpLearnset = sHornheadLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3391,7 +3436,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUGZZY,
         .categoryName = _("Mandibles"),
-        .height = 6, //temp
+        .height = 522, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The former king of insects passed\n"
@@ -3414,7 +3459,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Bugzzy,
         .shinyPalette = gMonShinyPalette_Bugzzy,
         .iconSprite = gMonIcon_Bugzzy,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Bugzzy)
         .levelUpLearnset = sBugzzyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3446,7 +3491,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_ANGLEP,
         .categoryName = _("Bad Apple"),
-        .height = 6, //temp
+        .height = 255, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "What appears to be a friendly apple\n"
@@ -3503,7 +3548,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_P_UMPKIN,
         .categoryName = _("Bad Pumpkin"),
-        .height = 6, //temp
+        .height = 220, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Mr. P. Umpkin masquerades itself\n"
@@ -3558,7 +3603,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SULKWORM,
         .categoryName = _("Sluggish"),
-        .height = 6, //temp
+        .height = 828, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Sulkworm develops at a much slower\n"
@@ -3582,6 +3627,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Sulkworm,
         .iconSprite = gMonIcon_Sulkworm,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Sulkworm)
         .levelUpLearnset = sSulkwormLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3616,7 +3662,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FANGORA,
         .categoryName = _("Draconic"),
-        .height = 6, //temp
+        .height = 1515, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Fangora is said to be the guardian\n"
@@ -3640,6 +3686,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Fangora,
         .iconSprite = gMonIcon_Fangora,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Fangora)
         .levelUpLearnset = sFangoraLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3671,7 +3718,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUTTONFLY,
         .categoryName = _("Craft Bug"),
-        .height = 6, //temp
+        .height = 159, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Buttonfly and its relatives come in a\n"
@@ -3728,7 +3775,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ORBITFLY,
         .categoryName = _("Space Bug"),
-        .height = 6, //temp
+        .height = 212, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "At last, the Buttonfly's dream is\n"
@@ -3783,7 +3830,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MAIGA,
         .categoryName = _("Blob"),
-        .height = 6, //temp
+        .height = 167, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Once Maiga sticks to something, it's\n"
@@ -3807,6 +3854,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Maiga,
         .iconSprite = gMonIcon_Maiga,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Maiga)
         .levelUpLearnset = sMaigaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3839,7 +3887,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_POPON,
         .categoryName = _("Glob"),
-        .height = 6, //temp
+        .height = 700, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Popon is capable of stretching and\n"
@@ -3863,6 +3911,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Popon,
         .iconSprite = gMonIcon_Popon,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Popon)
         .levelUpLearnset = sPoponLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3894,7 +3943,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CONER,
         .categoryName = _("Hermit Crab"),
-        .height = 6, //temp
+        .height = 219, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Coner has been a resident of\n"
@@ -3918,6 +3967,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Coner,
         .iconSprite = gMonIcon_Coner,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Coner)
         .levelUpLearnset = sConerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -3950,7 +4000,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DRIFTER,
         .categoryName = _("Parasol"),
-        .height = 6, //temp
+        .height = 212, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Also known as Floaty the Drifter,\n"
@@ -4007,7 +4057,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_JUMPER_SHOOT,
         .categoryName = _("Kasa-obake"),
-        .height = 6, //temp
+        .height = 422, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A spirit that haunts an old umbrella.\n"
@@ -4031,6 +4081,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_JumperShoot,
         .iconSprite = gMonIcon_JumperShoot,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(JumperShoot)
         .levelUpLearnset = sJumperShootLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4062,7 +4113,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PIERRE,
         .categoryName = _("Juggling"),
-        .height = 6, //temp
+        .height = 344, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "This travelling clown is almost\n"
@@ -4086,6 +4137,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Pierre,
         .iconSprite = gMonIcon_Pierre,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Pierre)
         .levelUpLearnset = sPierreLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4118,7 +4170,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CLOWN_ACROBOT,
         .categoryName = _("Performer"),
-        .height = 6, //temp
+        .height = 307, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A master in the art of circus\n"
@@ -4142,6 +4194,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_ClownAcrobot,
         .iconSprite = gMonIcon_ClownAcrobot,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ClownAcrobot)
         .levelUpLearnset = sClownAcrobotLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4173,7 +4226,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SPARKY,
         .categoryName = _("Electric Orb"),
-        .height = 6, //temp
+        .height = 204, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Using the orbs on its body, it can\n"
@@ -4197,6 +4250,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Sparky,
         .iconSprite = gMonIcon_Sparky,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Sparky)
         .levelUpLearnset = sSparkyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4229,7 +4283,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MASTER_GREEN,
         .categoryName = _("Jellyfish"),
-        .height = 6, //temp
+        .height = 288, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A distant, electricity-wielding\n"
@@ -4253,6 +4307,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_MasterGreen,
         .iconSprite = gMonIcon_MasterGreen,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MasterGreen)
         .levelUpLearnset = sMasterGreenLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4285,7 +4340,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_FLOATY,
         .categoryName = _("Moist Walrus"),
-        .height = 6, //temp
+        .height = 554, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "If it doesn't have water to bathe\n"
@@ -4309,6 +4364,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_MrFloaty,
         .iconSprite = gMonIcon_MrFloaty,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MrFloaty)
         .levelUpLearnset = sMrFloatyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4342,7 +4398,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_FROSTY,
         .categoryName = _("Ice Walrus"),
-        .height = 6, //temp
+        .height = 522, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The ever-graceful Mr. Frosty hurls\n"
@@ -4365,7 +4421,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_MrFrosty,
         .shinyPalette = gMonShinyPalette_MrFrosty,
         .iconSprite = gMonIcon_MrFrosty,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MrFrosty)
         .levelUpLearnset = sMrFrostyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4397,7 +4454,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FLOTZO,
         .categoryName = _("Octopus"),
-        .height = 6, //temp
+        .height = 245, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A few key differences separate it\n"
@@ -4421,6 +4478,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Flotzo,
         .iconSprite = gMonIcon_Flotzo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Flotzo)
         .levelUpLearnset = sFlotzoLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4454,7 +4512,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FLOTZO_BORG,
         .categoryName = _("Diver"),
-        .height = 6, //temp
+        .height = 938, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Flotzo Borg's helmet obviously\n"
@@ -4478,6 +4536,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_FlotzoBorg,
         .iconSprite = gMonIcon_FlotzoBorg,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(FlotzoBorg)
         .levelUpLearnset = sFlotzoBorgLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4511,7 +4570,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GIANT_FLOTZO,
         .categoryName = _("Diver"),
-        .height = 6, //temp
+        .height = 2598, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These garguantuan Flotzos terrorize\n"
@@ -4535,6 +4594,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GiantFlotzo,
         .iconSprite = gMonIcon_GiantFlotzo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GiantFlotzo)
         .levelUpLearnset = sGiantFlotzoLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4566,7 +4626,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ROCKY,
         .categoryName = _("Stone"),
-        .height = 6, //temp
+        .height = 243, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Rocky may be small, but its body\n"
@@ -4590,6 +4650,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Rocky,
         .iconSprite = gMonIcon_Rocky,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Rocky)
         .levelUpLearnset = sRockyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4622,7 +4683,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GIANT_ROCKY,
         .categoryName = _("Boulder"),
-        .height = 6, //temp
+        .height = 378, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Giant Rocky is so heavy it can't\n"
@@ -4646,6 +4707,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GiantRocky,
         .iconSprite = gMonIcon_GiantRocky,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GiantRocky)
         .levelUpLearnset = sGiantRockyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4678,7 +4740,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOUNDO,
         .categoryName = _("Mountainous"),
-        .height = 6, //temp
+        .height = 496, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The earth quakes with every step\n"
@@ -4702,6 +4764,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Moundo,
         .iconSprite = gMonIcon_Moundo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Moundo)
         .levelUpLearnset = sMoundoLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -4733,7 +4796,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BATTY,
         .categoryName = _("Mini Bat"),
-        .height = 6, //temp
+        .height = 167, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It has a fickle mind, chasing down\n"
@@ -4790,7 +4853,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PRICKLEBAT,
         .categoryName = _("Thorn Bat"),
-        .height = 6, //temp
+        .height = 438, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Sharp thorns protect its sensitive\n"
@@ -4846,7 +4909,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUZZYBAT,
         .categoryName = _("Leader Bat"),
-        .height = 6, //temp
+        .height = 276, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Though strong, Buzzybat is also\n"
@@ -4904,7 +4967,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUZZYBAT,
         .categoryName = _("Tombstone"),
-        .height = 6, //temp
+        .height = 590, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "When pushed into a corner, Buzzybat\n"
@@ -4961,7 +5024,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FLAMER,
         .categoryName = _("Burning"),
-        .height = 6, //temp
+        .height = 226, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It stores volatile chemicals in its\n"
@@ -5017,7 +5080,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHAIN_FLAMER,
         .categoryName = _("Chainlink"),
-        .height = 6, //temp
+        .height = 1383, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Groups of Flamers travel in lines.\n"
@@ -5072,7 +5135,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BOXIN,
         .categoryName = _("Disciple"),
-        .height = 6, //temp
+        .height = 200, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Boxins are constantly training under\n"
@@ -5096,6 +5159,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Boxin,
         .iconSprite = gMonIcon_Boxin,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Boxin)
         .levelUpLearnset = sBoxinLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5128,7 +5192,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUN,
         .categoryName = _("Toss"),
-        .height = 6, //temp
+        .height = 356, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "In place of arms, Bun uses prehensile\n"
@@ -5152,6 +5216,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Bun,
         .iconSprite = gMonIcon_Bun,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bun)
         .levelUpLearnset = sBunLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5186,7 +5251,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BOX_BOXER,
         .categoryName = _("Martial Arts"),
-        .height = 6, //temp
+        .height = 444, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It can't see well through its fur\n"
@@ -5210,6 +5275,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BoxBoxer,
         .iconSprite = gMonIcon_BoxBoxer,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BoxBoxer)
         .levelUpLearnset = sBoxBoxerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5241,7 +5307,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_EMBA,
         .categoryName = _("Fireball"),
-        .height = 6, //temp
+        .height = 522, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It might look like a simple yarn\n"
@@ -5298,7 +5364,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CANDLEMANDER,
         .categoryName = _("Salamander"),
-        .height = 6, //temp
+        .height = 409, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Candlemander's burning body is a\n"
@@ -5322,6 +5388,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Candlemander,
         .iconSprite = gMonIcon_Candlemander,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Candlemander)
         .levelUpLearnset = sCandlemanderLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5354,7 +5421,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_EMBACONDA,
         .categoryName = _("Fire Snake"),
-        .height = 6, //temp
+        .height = 1872, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Embaconda swallows anything of\n"
@@ -5378,6 +5445,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Embaconda,
         .iconSprite = gMonIcon_Embaconda,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Embaconda)
         .levelUpLearnset = sEmbacondaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5409,7 +5477,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_EMBIRD,
         .categoryName = _("Hatchling"),
-        .height = 6, //temp
+        .height = 167, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Young Embirds are eager to prove\n"
@@ -5465,7 +5533,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HOT_WINGS,
         .categoryName = _("Phoenix"),
-        .height = 6, //temp
+        .height = 1110, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Hot Wings makes its nest deep\n"
@@ -5521,7 +5589,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -5545,6 +5613,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardShieldless,
         .iconSprite = gMonIcon_GuardShieldless,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5581,7 +5650,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -5605,6 +5674,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardNormal,
         .iconSprite = gMonIcon_GuardNormal,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5641,7 +5711,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -5665,6 +5735,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardFire,
         .iconSprite = gMonIcon_GuardFire,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5701,7 +5772,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -5725,6 +5796,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardIce,
         .iconSprite = gMonIcon_GuardIce,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5761,7 +5833,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -5785,6 +5857,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardWater,
         .iconSprite = gMonIcon_GuardWater,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5821,7 +5894,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -5845,6 +5918,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardElectric,
         .iconSprite = gMonIcon_GuardElectric,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5881,7 +5955,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -5905,6 +5979,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardFlying,
         .iconSprite = gMonIcon_GuardFlying,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -5941,7 +6016,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -5965,6 +6040,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardPsychic,
         .iconSprite = gMonIcon_GuardPsychic,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6001,7 +6077,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6025,6 +6101,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardRock,
         .iconSprite = gMonIcon_GuardRock,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6061,7 +6138,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6085,6 +6162,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardFighting,
         .iconSprite = gMonIcon_GuardFighting,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6121,7 +6199,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6145,6 +6223,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardFairy,
         .iconSprite = gMonIcon_GuardFairy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6181,7 +6260,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6205,6 +6284,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardGrass,
         .iconSprite = gMonIcon_GuardGrass,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6241,7 +6321,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6265,6 +6345,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardGround,
         .iconSprite = gMonIcon_GuardGround,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6301,7 +6382,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6325,6 +6406,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GuardPoison,
         .iconSprite = gMonIcon_GuardPoison,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6361,7 +6443,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6384,7 +6466,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GuardSteel,
         .shinyPalette = gMonShinyPalette_GuardSteel,
         .iconSprite = gMonIcon_GuardSteel,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6421,7 +6504,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6444,7 +6527,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GuardDark,
         .shinyPalette = gMonShinyPalette_GuardDark,
         .iconSprite = gMonIcon_GuardDark,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6481,7 +6565,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6504,7 +6588,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GuardBug,
         .shinyPalette = gMonShinyPalette_GuardBug,
         .iconSprite = gMonIcon_GuardBug,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6541,7 +6626,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6564,7 +6649,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GuardGhost,
         .shinyPalette = gMonShinyPalette_GuardGhost,
         .iconSprite = gMonIcon_GuardGhost,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6601,7 +6687,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUARD,
         .categoryName = _("Shield"),
-        .height = 6, //temp
+        .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It relies on plated shields with\n"
@@ -6624,7 +6710,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GuardDragon,
         .shinyPalette = gMonShinyPalette_GuardDragon,
         .iconSprite = gMonIcon_GuardDragon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Guard)
         .levelUpLearnset = sGuardLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6659,7 +6746,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SOLITE,
         .categoryName = _("Luminescent"),
-        .height = 6, //temp
+        .height = 321, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It can live in dark areas without\n"
@@ -6683,6 +6770,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Solite,
         .iconSprite = gMonIcon_Solite,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Solite)
         .levelUpLearnset = sSoliteLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6714,7 +6802,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TRANSFORMER,
         .categoryName = _("Mix"),
-        .height = 6, //temp
+        .height = 230, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It can mimic the look and powers of\n"
@@ -6738,6 +6826,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Transformer,
         .iconSprite = gMonIcon_Transformer,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Transformer)
         .levelUpLearnset = sTransformerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6769,7 +6858,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FOLEY,
         .categoryName = _("Bomb Seed"),
-        .height = 6,
+        .height = 250, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Foley flies through the air by twirling\n"
@@ -6826,7 +6915,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_JUNGLE_BOMB,
         .categoryName = _("Bomb Fruit"),
-        .height = 6,
+        .height = 281, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Rather than seeds, this mischievous fruit\n"
@@ -6850,6 +6939,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_JungleBomb,
         .iconSprite = gMonIcon_JungleBomb,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(JungleBomb)
         .levelUpLearnset = sJungleBombLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6883,7 +6973,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_COBGOBLIN,
         .categoryName = _("Bomb Cob"),
-        .height = 6,
+        .height = 811, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "What looks like leaves on its head are\n"
@@ -6907,6 +6997,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Cobgoblin,
         .iconSprite = gMonIcon_Cobgoblin,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Cobgoblin)
         .levelUpLearnset = sCobgoblinLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6938,7 +7029,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PHAN_PHAN,
         .categoryName = _("Elephant"),
-        .height = 6, //temp
+        .height = 373, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Phan Phan has a carefree and playful\n"
@@ -6962,6 +7053,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_PhanPhan,
         .iconSprite = gMonIcon_PhanPhan,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(PhanPhan)
         .levelUpLearnset = sPhanPhanLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -6995,7 +7087,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FRIDGY,
         .categoryName = _("Mammoth"),
-        .height = 6, //temp
+        .height = 1096, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "With its massive tusks, it can carry\n"
@@ -7019,6 +7111,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Fridgy,
         .iconSprite = gMonIcon_Fridgy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Fridgy)
         .levelUpLearnset = sFridgyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7050,7 +7143,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KACTI,
         .categoryName = _("Cactus"),
-        .height = 6,
+        .height = 225, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Kacti has flexible limbs, allowing them\n"
@@ -7074,6 +7167,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Kacti,
         .iconSprite = gMonIcon_Kacti,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Kacti)
         .levelUpLearnset = sKactiLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7107,7 +7201,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_STACTUS,
         .categoryName = _("Stacking"),
-        .height = 6,
+        .height = 514, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It's rare to see a lone Stactus head;\n"
@@ -7131,6 +7225,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Stactus,
         .iconSprite = gMonIcon_Stactus,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Stactus)
         .levelUpLearnset = sStactusLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7164,7 +7259,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CRAZY_STACTUS,
         .categoryName = _("Shimmy"),
-        .height = 6,
+        .height = 1610, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Several Stactus heads have merged into\n"
@@ -7188,6 +7283,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_CrazyStactus,
         .iconSprite = gMonIcon_CrazyStactus,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(CrazyStactus)
         .levelUpLearnset = sCrazyStactusLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7219,7 +7315,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GATOR,
         .categoryName = _("Alligator"),
-        .height = 6,
+        .height = 181, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This foul-tempered Helper will gnash\n"
@@ -7243,6 +7339,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Gator,
         .iconSprite = gMonIcon_Gator,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Gator)
         .levelUpLearnset = sGatorLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7276,7 +7373,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GNAWCODILE,
         .categoryName = _("Crocodile"),
-        .height = 6,
+        .height = 1154, // Final?
         .weight = 16,
         .description = COMPOUND_STRING(
             "With a thick hide and strong muscles,\n"
@@ -7300,6 +7397,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Gnawcodile,
         .iconSprite = gMonIcon_Gnawcodile,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Gnawcodile)
         .levelUpLearnset = sGnawcodileLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7331,7 +7429,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GLUNK,
         .categoryName = _("Anemone"),
-        .height = 6,
+        .height = 243, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Glunk attacks by shooting pellets\n"
@@ -7355,6 +7453,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Glunk,
         .iconSprite = gMonIcon_Glunk,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Glunk)
         .levelUpLearnset = sGlunkLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7388,7 +7487,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DEEPSEE,
         .categoryName = _("Sea Ferry"),
-        .height = 6,
+        .height = 695, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Deepsee is actually the anemone on\n"
@@ -7412,6 +7511,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Deepsee,
         .iconSprite = gMonIcon_Deepsee,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Deepsee)
         .levelUpLearnset = sDeepseeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7443,7 +7543,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SLIPPY,
         .categoryName = _("Frog"),
-        .height = 6,
+        .height = 218, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Slippy's well-developed feet let it\n"
@@ -7500,7 +7600,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SIR_SLIPPY,
         .categoryName = _("Conceited"),
-        .height = 6,
+        .height = 218, // Final?
         .weight = 16,
         .description = COMPOUND_STRING(
             "It doesn't look much different than\n"
@@ -7556,7 +7656,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CRABY,
         .categoryName = _("Pinchy"),
-        .height = 6,
+        .height = 200, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Debates ensue over which is more\n"
@@ -7580,6 +7680,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Craby,
         .iconSprite = gMonIcon_Craby,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Craby)
         .levelUpLearnset = sCrabyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7611,7 +7712,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CAPSULE_J,
         .categoryName = _("Jetpack"),
-        .height = 6,
+        .height = 209, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A robotic Helper who can fly with the\n"
@@ -7667,7 +7768,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CAPSULE_J2,
         .categoryName = _("Booster"),
-        .height = 6,
+        .height = 218, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Capsule J2 is built off of a heavily\n"
@@ -7723,7 +7824,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CAPSULE_J3,
         .categoryName = _("New Gen"),
-        .height = 6,
+        .height = 284, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "The latest in the Capsule J series, this\n"
@@ -7746,7 +7847,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_CapsuleJ3,
         .shinyPalette = gMonShinyPalette_CapsuleJ3,
         .iconSprite = gMonIcon_CapsuleJ3,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(CapsuleJ3)
         .levelUpLearnset = sCapsuleJ3LevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -7778,7 +7879,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LASER_BALL,
         .categoryName = _("Plasma Globe"),
-        .height = 6,
+        .height = 218, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It rides through the air using\n"
@@ -7834,7 +7935,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PLASMA_WISP,
         .categoryName = _("Static Shock"),
-        .height = 6,
+        .height = 309, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "By building up friction against air\n"
@@ -7889,7 +7990,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SODORY,
         .categoryName = _("Living Sword"),
-        .height = 6,
+        .height = 243, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It moves by stretching and flapping\n"
@@ -7946,7 +8047,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HELMEE,
         .categoryName = _("Living Helm"),
-        .height = 6,
+        .height = 200, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This ensemble of armor is protective\n"
@@ -8003,7 +8104,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GHOST_KNIGHT,
         .categoryName = _("Dead Knight"),
-        .height = 6,
+        .height = 237, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "With no life to fear losing, it charges\n"
@@ -8026,7 +8127,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GhostKnight,
         .shinyPalette = gMonShinyPalette_GhostKnight,
         .iconSprite = gMonIcon_GhostKnight,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GhostKnight)
         .levelUpLearnset = sGhostKnightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8058,7 +8160,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BANG_BANG,
         .categoryName = _("Missile"),
-        .height = 6,
+        .height = 200, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Bang Bang has a nervous disposition,\n"
@@ -8115,7 +8217,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BIG_MISSILE,
         .categoryName = _("Launcher"),
-        .height = 6,
+        .height = 881, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Big Missiles are constructed at factories\n"
@@ -8170,7 +8272,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MINI_MASHER,
         .categoryName = _("Mini Armor"),
-        .height = 6,
+        .height = 388, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Mini Masher may be the smallest of the\n"
@@ -8194,6 +8296,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_MiniMasher,
         .iconSprite = gMonIcon_MiniMasher,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MiniMasher)
         .levelUpLearnset = sMiniMasherLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8226,7 +8329,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MASHER,
         .categoryName = _("Armor"),
-        .height = 6,
+        .height = 498, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These armored brutes are commonly hired\n"
@@ -8250,6 +8353,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Masher,
         .iconSprite = gMonIcon_Masher,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Masher)
         .levelUpLearnset = sMasherLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8282,7 +8386,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MEGA_MASHER,
         .categoryName = _("Mega Armor"),
-        .height = 6,
+        .height = 620, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Mega Masher's golden flail is a sign of\n"
@@ -8306,6 +8410,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_MegaMasher,
         .iconSprite = gMonIcon_MegaMasher,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MegaMasher)
         .levelUpLearnset = sMegaMasherLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8337,7 +8442,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WHEELIE,
         .categoryName = _("Vehicle"),
-        .height = 6, //temp
+        .height = 269, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It travels the countryside at high\n"
@@ -8361,6 +8466,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WheelieBike,
         .iconSprite = gMonIcon_WheelieBike,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8394,7 +8500,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WHEELIE,
         .categoryName = _("Vehicle"),
-        .height = 6, //temp
+        .height = 310, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Rex Wheelie is a beast of a machine,\n"
@@ -8418,6 +8524,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WheelieRex,
         .iconSprite = gMonIcon_WheelieRex,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8451,7 +8558,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WHEELIE,
         .categoryName = _("Vehicle"),
-        .height = 6, //temp
+        .height = 245, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Wheelie Scooter's generous handling\n"
@@ -8475,6 +8582,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WheelieScooter,
         .iconSprite = gMonIcon_WheelieScooter,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8508,7 +8616,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WHEELIE,
         .categoryName = _("Vehicle"),
-        .height = 6, //temp
+        .height = 456, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Grand Wheelie is considered a luxury\n"
@@ -8532,6 +8640,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WheelieGrand,
         .iconSprite = gMonIcon_WheelieGrand,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8565,7 +8674,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WHEELIE,
         .categoryName = _("Vehicle"),
-        .height = 6, //temp
+        .height = 329, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It takes some time to rev up, but\n"
@@ -8589,6 +8698,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WheelieBlaze,
         .iconSprite = gMonIcon_WheelieBlaze,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Wheelie)
         .levelUpLearnset = sWheelieLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8622,7 +8732,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DIGGUH,
         .categoryName = _("Drill"),
-        .height = 6,
+        .height = 366, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It burrows through the ground in search\n"
@@ -8646,6 +8756,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Digguh,
         .iconSprite = gMonIcon_Digguh,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Digguh)
         .levelUpLearnset = sDigguhLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8678,7 +8789,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOGMOLE,
         .categoryName = _("Digging"),
-        .height = 6,
+        .height = 571, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These mischievous moles pop up when you\n"
@@ -8701,7 +8812,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Mogmole,
         .shinyPalette = gMonShinyPalette_Mogmole,
         .iconSprite = gMonIcon_Mogmole,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Mogmole)
         .levelUpLearnset = sMogmoleLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8736,7 +8848,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOLEY,
         .categoryName = _("Hoarding"),
-        .height = 6,
+        .height = 911, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "He collects anything that catches his\n"
@@ -8759,7 +8871,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Moley,
         .shinyPalette = gMonShinyPalette_Moley,
         .iconSprite = gMonIcon_Moley,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Moley)
         .levelUpLearnset = sMoleyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8793,7 +8906,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOLEY,
         .categoryName = _("Hoarding"),
-        .height = 6,
+        .height = 1156, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "She shares a hobby of collecting with\n"
@@ -8816,7 +8929,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_MrsMoley,
         .shinyPalette = gMonShinyPalette_MrsMoley,
         .iconSprite = gMonIcon_MrsMoley,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Moley)
         .levelUpLearnset = sMoleyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8850,7 +8964,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KAPAR,
         .categoryName = _("Kappa"),
-        .height = 6,
+        .height = 222, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "The ring of leaves that grow around\n"
@@ -8873,7 +8987,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Kapar,
         .shinyPalette = gMonShinyPalette_Kapar,
         .iconSprite = gMonIcon_Kapar,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Kapar)
         .levelUpLearnset = sKaparLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8905,7 +9020,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KNUCKLE_JOE,
         .categoryName = _("Fighter"),
-        .height = 6,
+        .height = 284, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This young but accomplished fighter\n"
@@ -8928,7 +9043,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_KnuckleJoe,
         .shinyPalette = gMonShinyPalette_KnuckleJoe,
         .iconSprite = gMonIcon_KnuckleJoe,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(KnuckleJoe)
         .levelUpLearnset = sKnuckleJoeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -8960,7 +9076,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SANDRAN,
         .categoryName = _("Sand Dune"),
-        .height = 6,
+        .height = 299, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It nests in deserts and beaches. When\n"
@@ -8983,7 +9099,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Sandran,
         .shinyPalette = gMonShinyPalette_Sandran,
         .iconSprite = gMonIcon_Sandran,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Sandran)
         .levelUpLearnset = sSandranLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9016,7 +9133,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WALF,
         .categoryName = _("Turtle Shell"),
-        .height = 6,
+        .height = 226, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It waddles across beachfronts looking\n"
@@ -9039,7 +9156,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Walf,
         .shinyPalette = gMonShinyPalette_Walf,
         .iconSprite = gMonIcon_Walf,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Walf)
         .levelUpLearnset = sWalfLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9071,7 +9189,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CAWCUN,
         .categoryName = _("Pelican"),
-        .height = 6, //temp
+        .height = 200, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Watch your head when traveling past\n"
@@ -9128,7 +9246,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FLEURINA,
         .categoryName = _("Swan"),
-        .height = 6, //temp
+        .height = 930, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The twirls of this graceful ballerina can\n"
@@ -9152,6 +9270,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Fleurina,
         .iconSprite = gMonIcon_Fleurina,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Fleurina)
         .levelUpLearnset = sFleurinaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9183,7 +9302,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ACRO,
         .categoryName = _("Orca"),
-        .height = 6, //temp
+        .height = 656, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Acro is a voracious sea predator that\n"
@@ -9239,7 +9358,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FATTY_WHALE,
         .categoryName = _("Splash"),
-        .height = 6, //temp
+        .height = 1136, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It takes great pride in its massive\n"
@@ -9294,7 +9413,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOOKIE,
         .categoryName = _("Monkey"),
-        .height = 6, //temp
+        .height = 257, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Mookie's wide grin may look inviting,\n"
@@ -9318,6 +9437,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Mookie,
         .iconSprite = gMonIcon_Mookie,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Mookie)
         .levelUpLearnset = sMookieLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9350,7 +9470,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BONKERS,
         .categoryName = _("Great Ape"),
-        .height = 6, //temp
+        .height = 581, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Bonker's signature weapon is a strong\n"
@@ -9374,6 +9494,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Bonkers,
         .iconSprite = gMonIcon_Bonkers,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bonkers)
         .levelUpLearnset = sBonkersLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9407,7 +9528,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WILD_BONKERS,
         .categoryName = _("Stone Hammer"),
-        .height = 6, //temp
+        .height = 607, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Wild Bonkers replaced its traditional\n"
@@ -9431,6 +9552,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WildBonkers,
         .iconSprite = gMonIcon_WildBonkers,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(WildBonkers)
         .levelUpLearnset = sWildBonkersLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9462,7 +9584,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SPARK_BONKERS,
         .categoryName = _("Zap Hammer"),
-        .height = 6, //temp
+        .height = 777, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Currents of electricity course through\n"
@@ -9485,7 +9607,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SparkBonkers,
         .shinyPalette = gMonShinyPalette_SparkBonkers,
         .iconSprite = gMonIcon_SparkBonkers,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(SparkBonkers)
         .levelUpLearnset = sSparkBonkersLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9517,7 +9640,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WHIPPY,
         .categoryName = _("Whip Tail"),
-        .height = 6, //temp
+        .height = 439, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Whippy's prehensile tail can grab\n"
@@ -9541,6 +9664,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Whippy,
         .iconSprite = gMonIcon_Whippy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Whippy)
         .levelUpLearnset = sWhippyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9574,7 +9698,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FIRE_LION,
         .categoryName = _("Leo"),
-        .height = 6, //temp
+        .height = 591, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Fire Lion may look fearsome, but it can\n"
@@ -9597,7 +9721,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_FireLion,
         .shinyPalette = gMonShinyPalette_FireLion,
         .iconSprite = gMonIcon_FireLion,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(FireLion)
         .levelUpLearnset = sFireLionLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9629,7 +9754,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WALKY,
         .categoryName = _("Microphone"),
-        .height = 6, //temp
+        .height = 218, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The sound of Walky's songs are an\n"
@@ -9653,6 +9778,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Walky,
         .iconSprite = gMonIcon_Walky,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Walky)
         .levelUpLearnset = sWalkyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9685,7 +9811,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TICK_TOCK_JR,
         .categoryName = _("Clock"),
-        .height = 6, //temp
+        .height = 267, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Tick-Tock Jr. spends so much energy\n"
@@ -9709,6 +9835,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_TickTockJr,
         .iconSprite = gMonIcon_TickTockJr,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(TickTockJr)
         .levelUpLearnset = sTickTockJrLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9742,7 +9869,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_TICK_TOCK,
         .categoryName = _("Clock"),
-        .height = 6, //temp
+        .height = 364, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Mr. Tick-Tock produces a painfully\n"
@@ -9766,6 +9893,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_MrTickTock,
         .iconSprite = gMonIcon_MrTickTock,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MrTickTock)
         .levelUpLearnset = sMrTickTockLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9797,7 +9925,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_COOKIN,
         .categoryName = _("Culinary"),
-        .height = 6, //temp
+        .height = 244, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Each Cookin excels in a small number of\n"
@@ -9821,6 +9949,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Cookin,
         .iconSprite = gMonIcon_Cookin,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Cookin)
         .levelUpLearnset = sCookinLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9853,7 +9982,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHEF_KAWASAKI,
         .categoryName = _("Head Chef"),
-        .height = 6, //temp
+        .height = 613, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The secret to Chef Kawasaki's success is\n"
@@ -9877,6 +10006,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_ChefKawasaki,
         .iconSprite = gMonIcon_ChefKawasaki,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ChefKawasaki)
         .levelUpLearnset = sChefKawasakiLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9908,7 +10038,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOONJA,
         .categoryName = _("Shuriken"),
-        .height = 6, //temp
+        .height = 206, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Moonja knows a number of ninja arts,\n"
@@ -9932,6 +10062,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Moonja,
         .iconSprite = gMonIcon_Moonja,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Moonja)
         .levelUpLearnset = sMoonjaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -9965,7 +10096,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BIO_SPARK,
         .categoryName = _("Ninja"),
-        .height = 6, //temp
+        .height = 268, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "From throwable kunai to a signature\n"
@@ -9988,7 +10119,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_BioSpark,
         .shinyPalette = gMonShinyPalette_BioSpark,
         .iconSprite = gMonIcon_BioSpark,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BioSpark)
         .levelUpLearnset = sBioSparkLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10023,7 +10155,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WAIU,
         .categoryName = _("Shinobi"),
-        .height = 6, //temp
+        .height = 288, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A master among ninjas, Waiu's trained\n"
@@ -10046,7 +10178,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Waiu,
         .shinyPalette = gMonShinyPalette_Waiu,
         .iconSprite = gMonIcon_Waiu,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Waiu)
         .levelUpLearnset = sWaiuLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10078,7 +10211,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BOMBER,
         .categoryName = _("Crash Bomb"),
-        .height = 6, //temp
+        .height = 224, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Beware! Bomber is packed with explosive\n"
@@ -10102,6 +10235,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Bomber,
         .iconSprite = gMonIcon_Bomber,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bomber)
         .levelUpLearnset = sBomberLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10134,7 +10268,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BALLOON_BOMBER,
         .categoryName = _("Rocket Bomb"),
-        .height = 6, //temp
+        .height = 204, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Balloon Bomber is packed to the brim\n"
@@ -10189,7 +10323,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SCARFY,
         .categoryName = _("Deceptive"),
-        .height = 6, //temp
+        .height = 204, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Scarfy may look cute and innocent, but\n"
@@ -10246,7 +10380,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SCARFY,
         .categoryName = _("Deceptive"),
-        .height = 6, //temp
+        .height = 226, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Scarfy may look cute and innocent, but\n"
@@ -10304,7 +10438,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SNOOTER,
         .categoryName = _("Hungry"),
-        .height = 6, //temp
+        .height = 223, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "With its large mouth, it gulps just about\n"
@@ -10328,6 +10462,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_SnooterNormal,
         .iconSprite = gMonIcon_SnooterNormal,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Snooter)
         .levelUpLearnset = sSnooterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10362,7 +10497,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SNOOTER,
         .categoryName = _("Hungry"),
-        .height = 6, //temp
+        .height = 278, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Snooters develop particularly nasty\n"
@@ -10385,7 +10520,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SnooterAngry,
         .shinyPalette = gMonShinyPalette_SnooterAngry,
         .iconSprite = gMonIcon_SnooterAngry,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Snooter)
         .levelUpLearnset = sSnooterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10420,7 +10556,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SNOOTER,
         .categoryName = _("Hungry"),
-        .height = 6, //temp
+        .height = 223, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Snooters will snatch up items to eat\n"
@@ -10443,7 +10579,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SnooterGulping,
         .shinyPalette = gMonShinyPalette_SnooterGulping,
         .iconSprite = gMonIcon_SnooterGulping,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Snooter)
         .levelUpLearnset = sSnooterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10478,7 +10615,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SNOOTER,
         .categoryName = _("Hungry"),
-        .height = 6, //temp
+        .height = 223, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Sometimes, the items that Snooter tries\n"
@@ -10501,7 +10638,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SnooterGorging,
         .shinyPalette = gMonShinyPalette_SnooterGorging,
         .iconSprite = gMonIcon_SnooterGorging,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Snooter)
         .levelUpLearnset = sSnooterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10536,7 +10674,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_IRON_MAM,
         .categoryName = _("Iron Fist"),
-        .height = 6, //temp
+        .height = 255, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Iron Mam prides herself on her armor\n"
@@ -10560,6 +10698,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_IronMam,
         .iconSprite = gMonIcon_IronMam,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(IronMam)
         .levelUpLearnset = sIronMamLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10592,7 +10731,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GRAND_MAM,
         .categoryName = _("Titanic"),
-        .height = 6, //temp
+        .height = 1379, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "This hulking behemoth of a Helper is\n"
@@ -10616,6 +10755,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GrandMamArmored,
         .iconSprite = gMonIcon_GrandMamArmored,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GrandMam)
         .levelUpLearnset = sGrandMamLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10649,7 +10789,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GRAND_MAM,
         .categoryName = _("Exposed"),
-        .height = 6, //temp
+        .height = 1379, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The only known force capable of\n"
@@ -10672,7 +10812,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GrandMamUnarmored,
         .shinyPalette = gMonShinyPalette_GrandMamUnarmored,
         .iconSprite = gMonIcon_GrandMamUnarmored,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GrandMam)
         .levelUpLearnset = sGrandMamLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -10706,7 +10847,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BLOCKIN,
         .categoryName = _("Mimic"),
-        .height = 6, //temp
+        .height = 178, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It nestles itself within gaps of\n"
@@ -10761,7 +10902,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_OWGULF,
         .categoryName = _("Owl"),
-        .height = 6, //temp
+        .height = 236, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Owgulf's eyes are strong enough\n"
@@ -10818,7 +10959,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BOHBOH,
         .categoryName = _("Volcanic"),
-        .height = 6, //temp
+        .height = 678, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Bohboh's talons have incredible grip.\n"
@@ -10874,7 +11015,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TOOTLEBAM,
         .categoryName = _("Celebratory"),
-        .height = 6, //temp
+        .height = 269, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "They are drawn to feelings of festivity\n"
@@ -10929,7 +11070,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FLOATY_THE_CELL_CORE,
         .categoryName = _("Float Bubble"),
-        .height = 6, //temp
+        .height = 590, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Floaty the Cell Core occupies a\n"
@@ -10985,7 +11126,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUBOO,
         .categoryName = _("Bubble Veil"),
-        .height = 6, //temp
+        .height = 544, // Final? 211 without bubbles
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "This shy Helper obscures its true\n"
@@ -11039,7 +11180,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GUSSA,
         .categoryName = _("Dart Fish"),
-        .height = 6, //temp
+        .height = 144, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Gussa swims by rotating its tail fin\n"
@@ -11096,7 +11237,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_JOE,
         .categoryName = _("Shark"),
-        .height = 6, //temp
+        .height = 333, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Despite their tough look, Joe gets\n"
@@ -11153,7 +11294,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GOBBLER,
         .categoryName = _("Great Shark"),
-        .height = 6, //temp
+        .height = 556, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It propels itself through rocky waters\n"
@@ -11176,7 +11317,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Gobbler,
         .shinyPalette = gMonShinyPalette_Gobbler,
         .iconSprite = gMonIcon_Gobbler,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Gobbler)
         .levelUpLearnset = sGobblerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11208,7 +11349,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOPOO,
         .categoryName = _("Frosty"),
-        .height = 6, //temp
+        .height = 253, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Mopoo inhabit elevated places such as\n"
@@ -11265,7 +11406,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHILLY,
         .categoryName = _("Freezing"),
-        .height = 6, //temp
+        .height = 259, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "They're a common sight during the\n"
@@ -11289,6 +11430,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Chilly,
         .iconSprite = gMonIcon_Chilly,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Chilly)
         .levelUpLearnset = sChillyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11322,7 +11464,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SNOWMAN,
         .categoryName = _("Frozen Treat"),
-        .height = 6, //temp
+        .height = 1840, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Snowmen are prone to losing their\n"
@@ -11346,6 +11488,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Snowman,
         .iconSprite = gMonIcon_Snowman,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Snowman)
         .levelUpLearnset = sSnowmanLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11377,7 +11520,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FRIGIS,
         .categoryName = _("Auroral"),
-        .height = 6, //temp
+        .height = 160, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Its body is pure cold; it sheds ice\n"
@@ -11433,7 +11576,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SNOWL,
         .categoryName = _("Snowflake"),
-        .height = 6, //temp
+        .height = 234, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "When flocks of Snowl fly together,\n"
@@ -11456,7 +11599,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Snowl,
         .shinyPalette = gMonShinyPalette_Snowl,
         .iconSprite = gMonIcon_Snowl,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Snowl)
         .levelUpLearnset = sSnowlLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11488,7 +11631,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CORORI,
         .categoryName = _("Snow Roll"),
-        .height = 6, //temp
+        .height = 211, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Corori loves playing in the snow,\n"
@@ -11511,7 +11654,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Corori,
         .shinyPalette = gMonShinyPalette_Corori,
         .iconSprite = gMonIcon_Corori,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Corori)
         .levelUpLearnset = sCororiLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11545,7 +11689,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PENGY,
         .categoryName = _("Penguin"),
-        .height = 6, //temp
+        .height = 223, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "They live in packs atop floating\n"
@@ -11568,7 +11712,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Pengy,
         .shinyPalette = gMonShinyPalette_Pengy,
         .iconSprite = gMonIcon_Pengy,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Pengy)
         .levelUpLearnset = sPengyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11601,7 +11746,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -11625,6 +11770,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetNormal,
         .iconSprite = gMonIcon_BukisetNormal,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11659,7 +11805,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -11683,6 +11829,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetFire,
         .iconSprite = gMonIcon_BukisetFire,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11717,7 +11864,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -11741,6 +11888,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetIce,
         .iconSprite = gMonIcon_BukisetIce,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11775,7 +11923,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -11799,6 +11947,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetWater,
         .iconSprite = gMonIcon_BukisetWater,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11833,7 +11982,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -11857,6 +12006,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetElectric,
         .iconSprite = gMonIcon_BukisetElectric,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11891,7 +12041,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -11915,6 +12065,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetFlying,
         .iconSprite = gMonIcon_BukisetFlying,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -11949,7 +12100,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -11973,6 +12124,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetPsychic,
         .iconSprite = gMonIcon_BukisetPsychic,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12007,7 +12159,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12031,6 +12183,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetRock,
         .iconSprite = gMonIcon_BukisetRock,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12065,7 +12218,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12089,6 +12242,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetFighting,
         .iconSprite = gMonIcon_BukisetFighting,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12123,7 +12277,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12147,6 +12301,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetFairy,
         .iconSprite = gMonIcon_BukisetFairy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12181,7 +12336,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12205,6 +12360,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetGrass,
         .iconSprite = gMonIcon_BukisetGrass,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12239,7 +12395,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12263,6 +12419,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetGround,
         .iconSprite = gMonIcon_BukisetGround,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12297,7 +12454,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12321,6 +12478,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetPoison,
         .iconSprite = gMonIcon_BukisetPoison,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12355,7 +12513,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12379,6 +12537,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetSteel,
         .iconSprite = gMonIcon_BukisetSteel,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12413,7 +12572,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12437,6 +12596,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetDark,
         .iconSprite = gMonIcon_BukisetDark,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12471,7 +12631,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12495,6 +12655,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetBug,
         .iconSprite = gMonIcon_BukisetBug,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12529,7 +12690,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12553,6 +12714,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetGhost,
         .iconSprite = gMonIcon_BukisetGhost,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12587,7 +12749,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUKISET,
         .categoryName = _("Weaponmaster"),
-        .height = 6, //temp
+        .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious knights are weapon\n"
@@ -12611,6 +12773,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BukisetDragon,
         .iconSprite = gMonIcon_BukisetDragon,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Bukiset)
         .levelUpLearnset = sBukisetLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12645,7 +12808,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ICE_DRAGON,
         .categoryName = _("Ice Breath"),
-        .height = 6, //temp
+        .height = 647, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It doesn't produce fire internally,\n"
@@ -12669,6 +12832,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_IceDragon,
         .iconSprite = gMonIcon_IceDragon,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(IceDragon)
         .levelUpLearnset = sIceDragonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12701,7 +12865,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LOBZILLA,
         .categoryName = _("Shrimpy"),
-        .height = 6, //temp
+        .height = 334, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Rumors speak of a gargantuan monster\n"
@@ -12725,6 +12889,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_LobzillaShrimp,
         .iconSprite = gMonIcon_LobzillaShrimp,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Lobzilla)
         .levelUpLearnset = sLobzillaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12759,7 +12924,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LOBZILLA,
         .categoryName = _("Monstrous"),
-        .height = 6, //temp
+        .height = 9999, // Final? 9236 cut off
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "There is a popular theater play in\n"
@@ -12782,7 +12947,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_LobzillaMonster,
         .shinyPalette = gMonShinyPalette_LobzillaMonster,
         .iconSprite = gMonIcon_LobzillaMonster,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Lobzilla)
         .levelUpLearnset = sLobzillaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -12816,7 +12981,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SLUSHY,
         .categoryName = _("Drifting"),
-        .height = 6, //temp
+        .height = 171, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Slushy's pale and translucent body\n"
@@ -12872,7 +13037,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SQUIBBY,
         .categoryName = _("Sea Angel"),
-        .height = 6, //temp
+        .height = 258, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The red spot you can see through\n"
@@ -12927,7 +13092,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_COMO,
         .categoryName = _("Spider"),
-        .height = 6, //temp
+        .height = 196, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Though they resemble arachnids, most\n"
@@ -12983,7 +13148,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SPIDEROO,
         .categoryName = _("Webbing"),
-        .height = 6, //temp
+        .height = 314, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Spideroo collects shiny and alluring\n"
@@ -13038,7 +13203,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GRIZZO,
         .categoryName = _("Plush Bear"),
-        .height = 6, //temp
+        .height = 355, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Grizzo is a passive Helper who lets\n"
@@ -13062,6 +13227,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Grizzo,
         .iconSprite = gMonIcon_Grizzo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Grizzo)
         .levelUpLearnset = sGrizzoLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13095,7 +13261,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PEPERON,
         .categoryName = _("Gargantuan"),
-        .height = 6, //temp
+        .height = 906, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "What was once a small bear was hit\n"
@@ -13118,7 +13284,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Peperon,
         .shinyPalette = gMonShinyPalette_Peperon,
         .iconSprite = gMonIcon_Peperon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Peperon)
         .levelUpLearnset = sPeperonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13150,7 +13317,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_OOHROO,
         .categoryName = _("Gorilla"),
-        .height = 6, //temp
+        .height = 295, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Oohroo can't get enough of bananas.\n"
@@ -13174,6 +13341,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_OohrooNormal,
         .iconSprite = gMonIcon_OohrooNormal,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Oohroo)
         .levelUpLearnset = sOohrooLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13208,7 +13376,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_OOHROO,
         .categoryName = _("Gorilla"),
-        .height = 6, //temp
+        .height = 295, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "To find the tastiest bananas in the\n"
@@ -13231,7 +13399,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_OohrooZen,
         .shinyPalette = gMonShinyPalette_OohrooZen,
         .iconSprite = gMonIcon_OohrooZen,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Oohroo)
         .levelUpLearnset = sOohrooLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13267,7 +13436,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GORIATH,
         .categoryName = _("Yeti"),
-        .height = 6, //temp
+        .height = 605, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Goriath makes its home on snowy\n"
@@ -13291,6 +13460,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GoriathNormal,
         .iconSprite = gMonIcon_GoriathNormal,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Goriath)
         .levelUpLearnset = sGoriathLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13325,7 +13495,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GORIATH,
         .categoryName = _("Yeti"),
-        .height = 6, //temp
+        .height = 605, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "When the going gets tough, Goriath's\n"
@@ -13349,6 +13519,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GoriathZen,
         .iconSprite = gMonIcon_GoriathZen,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Goriath)
         .levelUpLearnset = sGoriathLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13382,7 +13553,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NESP,
         .categoryName = _("PSI"),
-        .height = 6, //temp
+        .height = 223, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "It displays incredible psychokinetic\n"
@@ -13438,7 +13609,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MADOO,
         .categoryName = _("Wizard"),
-        .height = 6, //temp
+        .height = 211, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Madoo wears a robe at all times to\n"
@@ -13493,7 +13664,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_VENOGG,
         .categoryName = _("Toxic Toad"),
-        .height = 6, //temp
+        .height = 273, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Corrosive liquid churns within Venogg.\n"
@@ -13517,6 +13688,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Venogg,
         .iconSprite = gMonIcon_Venogg,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Venogg)
         .levelUpLearnset = sVenoggLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13550,7 +13722,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_POISON_CROAKOM,
         .categoryName = _("Poison Belch"),
-        .height = 6, //temp
+        .height = 1668, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The layer of gunk coating Poison\n"
@@ -13574,6 +13746,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_PoisonCroakom,
         .iconSprite = gMonIcon_PoisonCroakom,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(PoisonCroakom)
         .levelUpLearnset = sPoisonCroakomLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13605,7 +13778,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BOUNCY,
         .categoryName = _("Spring"),
-        .height = 6, //temp
+        .height = 304, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Bouncy can easily deflect and evade\n"
@@ -13662,7 +13835,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BOUNCY_SIS,
         .categoryName = _("Coil"),
-        .height = 6, //temp
+        .height = 606, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Bouncy Sis's spring packs a lot\n"
@@ -13686,6 +13859,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BouncySis,
         .iconSprite = gMonIcon_BouncySis,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BouncySis)
         .levelUpLearnset = sBouncySisLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13717,7 +13891,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FISHBONE,
         .categoryName = _("Arrow Fish"),
-        .height = 6, //temp
+        .height = 286, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Fishbone's body make look colorful,\n"
@@ -13773,7 +13947,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BLISH,
         .categoryName = _("Target Fish"),
-        .height = 6, //temp
+        .height = 457, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Blish's round shape comes from the\n"
@@ -13828,7 +14002,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GALBO,
         .categoryName = _("Young Drake"),
-        .height = 6, //temp
+        .height = 192, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "From the moment it hatches, Galbo\n"
@@ -13852,6 +14026,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Galbo,
         .iconSprite = gMonIcon_Galbo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Galbo)
         .levelUpLearnset = sGalboLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13887,7 +14062,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WATER_GALBOROS,
         .categoryName = _("Water Drake"),
-        .height = 6, //temp
+        .height = 437, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Water Galboros makes its domain in\n"
@@ -13911,6 +14086,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WaterGalboros,
         .iconSprite = gMonIcon_WaterGalboros,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(WaterGalboros)
         .levelUpLearnset = sWaterGalborosLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13943,7 +14119,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FLAME_GALBOROS,
         .categoryName = _("Fire Drake"),
-        .height = 6, //temp
+        .height = 457, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Flame Galboros has a vicious attitude\n"
@@ -13966,7 +14142,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_FlameGalboros,
         .shinyPalette = gMonShinyPalette_FlameGalboros,
         .iconSprite = gMonIcon_FlameGalboros,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(FlameGalboros)
         .levelUpLearnset = sFlameGalborosLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -13999,7 +14176,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MIASMOROS,
         .categoryName = _("Poison Drake"),
-        .height = 6, //temp
+        .height = 424, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Unchecked industrialization and\n"
@@ -14022,7 +14199,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Miasmoros,
         .shinyPalette = gMonShinyPalette_Miasmoros,
         .iconSprite = gMonIcon_Miasmoros,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Miasmoros)
         .levelUpLearnset = sMiasmorosLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14054,7 +14232,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KEY_DEE,
         .categoryName = _("Fleeing"),
-        .height = 6, //temp
+        .height = 277, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A close relative of the Waddle Dee\n"
@@ -14078,6 +14256,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_KeyDee,
         .iconSprite = gMonIcon_KeyDee,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(KeyDee)
         .levelUpLearnset = sKeyDeeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14109,7 +14288,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SLIME,
         .categoryName = _("Virus"),
-        .height = 6, //temp
+        .height = 277, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "One of a series of unusual viruses\n"
@@ -14133,6 +14312,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Slime,
         .iconSprite = gMonIcon_Slime,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Slime)
         .levelUpLearnset = sSlimeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14165,7 +14345,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PUPPET,
         .categoryName = _("Trojan"),
-        .height = 6, //temp
+        .height = 445, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "One of a series of unusual viruses\n"
@@ -14221,7 +14401,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MAGICIAN,
         .categoryName = _("Program"),
-        .height = 6, //temp
+        .height = 464, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "One of a series of unusual viruses\n"
@@ -14244,7 +14424,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Magician,
         .shinyPalette = gMonShinyPalette_Magician,
         .iconSprite = gMonIcon_Magician,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Magician)
         .levelUpLearnset = sMagicianLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14276,7 +14457,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TOREROBO,
         .categoryName = _("Training"),
-        .height = 6, //temp
+        .height = 245, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Torerobo, short for 'training robot',\n"
@@ -14300,6 +14481,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Torerobo,
         .iconSprite = gMonIcon_Torerobo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Torerobo)
         .levelUpLearnset = sToreroboLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14332,7 +14514,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ROBO_RICK,
         .categoryName = _("Robot Ride"),
-        .height = 6, //temp
+        .height = 391, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "This mysterious robot was built in the\n"
@@ -14356,6 +14538,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_RoboRickSolo,
         .iconSprite = gMonIcon_RoboRickSolo,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(RoboRick)
         .levelUpLearnset = sRoboRickLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14390,7 +14573,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ROBO_RICK,
         .categoryName = _("Robot Ride"),
-        .height = 6, //temp
+        .height = 617, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A mysterious signal broadcasted by\n"
@@ -14413,7 +14596,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_RoboRickCommander,
         .shinyPalette = gMonShinyPalette_RoboRickCommander,
         .iconSprite = gMonIcon_RoboRickCommander,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(RoboRick)
         .levelUpLearnset = sRoboRickLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14447,7 +14631,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BOXY,
         .categoryName = _("Gift Wrap"),
-        .height = 6, //temp
+        .height = 389, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Boxy spits up miniature gift boxes with\n"
@@ -14471,6 +14655,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Boxy,
         .iconSprite = gMonIcon_Boxy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Boxy)
         .levelUpLearnset = sBoxyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14503,7 +14688,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HANDS,
         .categoryName = _("Glove"),
-        .height = 6, //temp
+        .height = 500, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious gloved hands may look\n"
@@ -14560,7 +14745,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HANDS,
         .categoryName = _("Glove"),
-        .height = 6, //temp
+        .height = 500, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious gloved hands may look\n"
@@ -14617,7 +14802,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HANDS,
         .categoryName = _("Glove"),
-        .height = 6, //temp
+        .height = 500, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "These mysterious gloved hands may look\n"
@@ -14673,7 +14858,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GOLEM_KIRBY,
         .categoryName = _("Statue"),
-        .height = 6,
+        .height = 356, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It disguises itself as an immobile\n"
@@ -14697,6 +14882,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_GolemKirby,
         .iconSprite = gMonIcon_GolemKirby,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(GolemKirby)
         .levelUpLearnset = sGolemKirbyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14729,7 +14915,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KING_GOLEM,
         .categoryName = _("Figurehead"),
-        .height = 6,
+        .height = 2456, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This royal tower rules over Golems\n"
@@ -14752,7 +14938,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_KingGolem,
         .shinyPalette = gMonShinyPalette_KingGolem,
         .iconSprite = gMonIcon_KingGolem,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(KingGolem)
         .levelUpLearnset = sKingGolemLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14784,7 +14971,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SNOOZROOT,
         .categoryName = _("Vine"),
-        .height = 6,
+        .height = 733, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Snoozroot spends most of its day\n"
@@ -14808,6 +14995,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Snoozroot,
         .iconSprite = gMonIcon_Snoozroot,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Snoozroot)
         .levelUpLearnset = sSnoozrootLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14841,7 +15029,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LADY_IVY,
         .categoryName = _("Thorn"),
-        .height = 6,
+        .height = 1743, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Lady Ivy makes its home in barren\n"
@@ -14865,6 +15053,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_LadyIvy,
         .iconSprite = gMonIcon_LadyIvy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(LadyIvy)
         .levelUpLearnset = sLadyIvyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -14896,7 +15085,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SNIPPER,
         .categoryName = _("Antlion"),
-        .height = 6,
+        .height = 600, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It burrows into quicksand holes,\n"
@@ -14952,7 +15141,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ANT_DOOM,
         .categoryName = _("Sand Pit"),
-        .height = 6,
+        .height = 1734, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This powerful Helper has lost all\n"
@@ -14976,6 +15165,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_AntDoom,
         .iconSprite = gMonIcon_AntDoom,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(AntDoom)
         .levelUpLearnset = sAntDoomLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15007,7 +15197,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_METALUN,
         .categoryName = _("Metal"),
-        .height = 6,
+        .height = 344, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Its metallic body wards off most\n"
@@ -15031,6 +15221,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Metalun,
         .iconSprite = gMonIcon_Metalun,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Metalun)
         .levelUpLearnset = sMetalunLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15063,7 +15254,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BIG_METALUN,
         .categoryName = _("Monolith"),
-        .height = 6,
+        .height = 467, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This hulking heap of metal can\n"
@@ -15087,6 +15278,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BigMetalun,
         .iconSprite = gMonIcon_BigMetalun,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BigMetalun)
         .levelUpLearnset = sBigMetalunLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15118,7 +15310,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HB_002,
         .categoryName = _("Puzzling"),
-        .height = 6,
+        .height = 356, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A peculiar specimen made of finely\n"
@@ -15142,6 +15334,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_HB002,
         .iconSprite = gMonIcon_HB002,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(HB002)
         .levelUpLearnset = sHB002LevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15175,7 +15368,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HB_007,
         .categoryName = _("Archaeology"),
-        .height = 6,
+        .height = 389, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "HB-007's true form is a subject\n"
@@ -15198,7 +15391,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_HB007,
         .shinyPalette = gMonShinyPalette_HB007,
         .iconSprite = gMonIcon_HB007,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(HB007)
         .levelUpLearnset = sHB007LevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15230,7 +15424,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CUTFISH,
         .categoryName = _("Sharp Scale"),
-        .height = 6,
+        .height = 182, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Catching a Cutfish while fishing\n"
@@ -15286,7 +15480,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SAWGILL,
         .categoryName = _("Sawblade"),
-        .height = 6,
+        .height = 1131, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Sawgill's most unpleasant feature\n"
@@ -15341,7 +15535,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ANGIE,
         .categoryName = _("Rescue"),
-        .height = 6,
+        .height = 227, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A kind-hearted Helper who appears\n"
@@ -15398,7 +15592,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CUPIE,
         .categoryName = _("Love Arrow"),
-        .height = 6,
+        .height = 244, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It flies through the air in search\n"
@@ -15456,7 +15650,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ANGEL,
         .categoryName = _("Heavenly"),
-        .height = 6,
+        .height = 333, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Angel loves to sing, blessing others\n"
@@ -15512,7 +15706,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SIMIRROR,
         .categoryName = _("Mirror"),
-        .height = 6,
+        .height = 227, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "With the power of its scepter, Simirror\n"
@@ -15536,6 +15730,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Simirror,
         .iconSprite = gMonIcon_Simirror,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Simirror)
         .levelUpLearnset = sSimirrorLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15567,7 +15762,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TWISTER,
         .categoryName = _("Tornado"),
-        .height = 6,
+        .height = 239, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It moves in a manner similar to a\n"
@@ -15591,6 +15786,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Twister,
         .iconSprite = gMonIcon_Twister,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Twister)
         .levelUpLearnset = sTwisterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15624,7 +15820,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WINDWHIPPER,
         .categoryName = _("Windmill"),
-        .height = 6,
+        .height = 2567, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It conjures storms with the three\n"
@@ -15647,7 +15843,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Windwhipper,
         .shinyPalette = gMonShinyPalette_Windwhipper,
         .iconSprite = gMonIcon_Windwhipper,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Windwhipper)
         .levelUpLearnset = sWindwhipperLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15679,7 +15876,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DUBIOR_JR,
         .categoryName = _("Signal"),
-        .height = 6,
+        .height = 160, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Dubior summons these minions to do its\n"
@@ -15736,7 +15933,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DUBIOR,
         .categoryName = _("Saucer"),
-        .height = 6,
+        .height = 520, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "An alien thought to hail from another\n"
@@ -15791,7 +15988,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_COOL_SPOOK,
         .categoryName = _("Clear Sky"),
-        .height = 6,
+        .height = 333, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This gentle spirit radiates a blinding\n"
@@ -15814,7 +16011,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_CoolSpook,
         .shinyPalette = gMonShinyPalette_CoolSpook,
         .iconSprite = gMonIcon_CoolSpook,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(CoolSpook)
         .levelUpLearnset = sCoolSpookLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15846,7 +16043,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TAC,
         .categoryName = _("Catnap"),
-        .height = 6,
+        .height = 218, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Tac is a notorious burglar who's always\n"
@@ -15869,7 +16066,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Tac,
         .shinyPalette = gMonShinyPalette_Tac,
         .iconSprite = gMonIcon_Tac,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Tac)
         .levelUpLearnset = sTacLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15901,7 +16099,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHEMITORY,
         .categoryName = _("Medicinal"),
-        .height = 6,
+        .height = 272, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "You might be tempted to reach into a\n"
@@ -15924,7 +16122,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Chemitory,
         .shinyPalette = gMonShinyPalette_Chemitory,
         .iconSprite = gMonIcon_Chemitory,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Chemitory)
         .levelUpLearnset = sChemitoryLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -15956,7 +16155,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_COTTA,
         .categoryName = _("Clay Urn"),
-        .height = 6,
+        .height = 241, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Cottas are common foot soldiers in the\n"
@@ -15980,6 +16179,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Cotta,
         .iconSprite = gMonIcon_Cotta,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Cotta)
         .levelUpLearnset = sCottaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16013,7 +16213,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CANNON_COTTA,
         .categoryName = _("Clay Weapon"),
-        .height = 6,
+        .height = 248, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Cotta soldiers follow strict rules, and\n"
@@ -16036,7 +16236,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_CannonCotta,
         .shinyPalette = gMonShinyPalette_CannonCotta,
         .iconSprite = gMonIcon_CannonCotta,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(CannonCotta)
         .levelUpLearnset = sCannonCottaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16070,7 +16271,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BASTRON,
         .categoryName = _("Clay Fleet"),
-        .height = 6,
+        .height = 3831, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This battleship was fashioned entirely\n"
@@ -16125,7 +16326,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PARA_SORCERESS,
         .categoryName = _("Little Witch"),
-        .height = 6,
+        .height = 513, // Final - Vividria
         .weight = 16,
         .description = COMPOUND_STRING(
             "Para Sorceresses are underlings who\n"
@@ -16148,7 +16349,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_ParaSorceress,
         .shinyPalette = gMonShinyPalette_ParaSorceress,
         .iconSprite = gMonIcon_ParaSorceress,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(ParaSorceress)
         .levelUpLearnset = sParaSorceressLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16182,7 +16383,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_VIVIDRIA,
         .categoryName = _("Painter"),
-        .height = 6,
+        .height = 800, // Final - Drawcia
         .weight = 16,
         .description = COMPOUND_STRING(
             "Using her ponytail as a paintbrush,\n"
@@ -16205,7 +16406,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Vividria,
         .shinyPalette = gMonShinyPalette_Vividria,
         .iconSprite = gMonIcon_Vividria,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Vividria)
         .levelUpLearnset = sVividriaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16237,7 +16439,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MIKARIN,
         .categoryName = _("Orange"),
-        .height = 6,
+        .height = 178, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This sentient orange's best friend\n"
@@ -16260,7 +16462,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Mikarin,
         .shinyPalette = gMonShinyPalette_Mikarin,
         .iconSprite = gMonIcon_Mikarin,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Mikarin)
         .levelUpLearnset = sMikarinLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16294,7 +16497,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KAGAMI_MOCCHI,
         .categoryName = _("Mochi"),
-        .height = 6,
+        .height = 400, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Now that Kagami Mocchi and Mikarin\n"
@@ -16317,7 +16520,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_KagamiMocchi,
         .shinyPalette = gMonShinyPalette_KagamiMocchi,
         .iconSprite = gMonIcon_KagamiMocchi,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(KagamiMocchi)
         .levelUpLearnset = sKagamiMocchiLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16349,7 +16553,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BLOON,
         .categoryName = _("Balloon"),
-        .height = 6,
+        .height = 257, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "When asked if the reason its cheeks are\n"
@@ -16372,7 +16576,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Bloon,
         .shinyPalette = gMonShinyPalette_Bloon,
         .iconSprite = gMonIcon_Bloon,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Bloon)
         .levelUpLearnset = sBloonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16405,7 +16609,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_STARMAN,
         .categoryName = _("Superhero"),
-        .height = 6,
+        .height = 202, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Starman models its appearance after a\n"
@@ -16428,7 +16632,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Starman,
         .shinyPalette = gMonShinyPalette_Starman,
         .iconSprite = gMonIcon_Starman,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
         FOOTPRINT(Starman)
         .levelUpLearnset = sStarmanLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16460,7 +16664,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_RINGLE,
         .categoryName = _("Bell"),
-        .height = 6,
+        .height = 261, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It releases pleasant chimes as it\n"
@@ -16515,7 +16719,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_I3,
         .categoryName = _("Crushing"),
-        .height = 6,
+        .height = 420, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Appropriately known as 'eye-cubed'\n"
@@ -16539,7 +16743,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_I3,
         .iconSprite = gMonIcon_I3,
         .iconPalIndex = 0,
-        FOOTPRINT(Ringle)
+        FOOTPRINT(I3)
         .levelUpLearnset = sI3LevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_ORBSERVOR}),
@@ -16571,7 +16775,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ORBSERVOR,
         .categoryName = _("Watching"),
-        .height = 6,
+        .height = 345, // Final?
         .weight = 16,
         .description = COMPOUND_STRING(
             "Orbservors of various colors are often\n"
@@ -16594,7 +16798,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Orbservor,
         .shinyPalette = gMonShinyPalette_Orbservor,
         .iconSprite = gMonIcon_Orbservor,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Orbservor)
         .levelUpLearnset = sOrbservorLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16626,7 +16831,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SPYNUM,
         .categoryName = _("Sharpshoot"),
-        .height = 6,
+        .height = 248, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Spynums are habitual loners, keeping to\n"
@@ -16649,7 +16854,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Spynum,
         .shinyPalette = gMonShinyPalette_Spynum,
         .iconSprite = gMonIcon_Spynum,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Spynum)
         .levelUpLearnset = sSpynumLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16682,7 +16888,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SECTRA_SHOOTER,
         .categoryName = _("Archer"),
-        .height = 6,
+        .height = 244, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Once upon a time, these insectoid\n"
@@ -16705,7 +16911,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SectraShooter,
         .shinyPalette = gMonShinyPalette_SectraShooter,
         .iconSprite = gMonIcon_SectraShooter,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(SectraShooter)
         .levelUpLearnset = sSectraShooterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16738,7 +16945,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PACTO,
         .categoryName = _("Chomp"),
-        .height = 6,
+        .height = 459, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "If you hear the sound of crunching\n"
@@ -16761,7 +16968,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Pacto,
         .shinyPalette = gMonShinyPalette_Pacto,
         .iconSprite = gMonIcon_Pacto,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
         FOOTPRINT(Pacto)
         .levelUpLearnset = sPactoLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16794,7 +17001,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MIRRA,
         .categoryName = _("Doorframe"),
-        .height = 6,
+        .height = 278, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "They wrap themselves around doorframes,\n"
@@ -16818,6 +17025,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Mirra,
         .iconSprite = gMonIcon_Mirra,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Mirra)
         .levelUpLearnset = sMirraLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16850,7 +17058,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_SHINE,
         .categoryName = _("Moon"),
-        .height = 6,
+        .height = 433, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It resembles a moon and is often seen\n"
@@ -16873,7 +17081,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_MrShine,
         .shinyPalette = gMonShinyPalette_MrShine,
         .iconSprite = gMonIcon_MrShine,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MrShine)
         .levelUpLearnset = sMrShineLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16908,7 +17117,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_SHINE,
         .categoryName = _("Celestial"),
-        .height = 6,
+        .height = 889, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "The ultimate combination of Mr. Shine and\n"
@@ -16931,7 +17140,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_ShineBright,
         .shinyPalette = gMonShinyPalette_ShineBright,
         .iconSprite = gMonIcon_ShineBright,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MrShine)
         .levelUpLearnset = sShineBrightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -16965,7 +17175,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_BRIGHT,
         .categoryName = _("Sun"),
-        .height = 6,
+        .height = 578, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It resembles a sun and is often seen\n"
@@ -16988,7 +17198,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_MrBright,
         .shinyPalette = gMonShinyPalette_MrBright,
         .iconSprite = gMonIcon_MrBright,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MrBright)
         .levelUpLearnset = sMrBrightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17022,7 +17233,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PLUGG,
         .categoryName = _("Voltage"),
-        .height = 6,
+        .height = 283, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Pluggs are often seen powering all\n"
@@ -17046,6 +17257,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Plugg,
         .iconSprite = gMonIcon_Plugg,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Plugg)
         .levelUpLearnset = sPluggLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17077,7 +17289,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_META_KNIGHTS,
         .categoryName = _("Soldier"),
-        .height = 6,
+        .height = 227, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "One of the hardworking members of the\n"
@@ -17100,7 +17312,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_AxeKnight,
         .shinyPalette = gMonShinyPalette_AxeKnight,
         .iconSprite = gMonIcon_AxeKnight,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MetaKnights)
         .levelUpLearnset = sAxeKnightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17133,7 +17346,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_META_KNIGHTS,
         .categoryName = _("Soldier"),
-        .height = 6,
+        .height = 255, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "One of the hardworking members of the\n"
@@ -17156,7 +17369,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_MaceKnight,
         .shinyPalette = gMonShinyPalette_MaceKnight,
         .iconSprite = gMonIcon_MaceKnight,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MetaKnights)
         .levelUpLearnset = sMaceKnightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17189,7 +17403,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_META_KNIGHTS,
         .categoryName = _("Soldier"),
-        .height = 6,
+        .height = 218, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "One of the hardworking members of the\n"
@@ -17212,7 +17426,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_TridentKnight,
         .shinyPalette = gMonShinyPalette_TridentKnight,
         .iconSprite = gMonIcon_TridentKnight,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(MetaKnights)
         .levelUpLearnset = sTridentKnightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17245,7 +17460,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_META_KNIGHTS,
         .categoryName = _("Soldier"),
-        .height = 6,
+        .height = 218, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "One of the hardworking members of the\n"
@@ -17268,7 +17483,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_JavelinKnight,
         .shinyPalette = gMonShinyPalette_JavelinKnight,
         .iconSprite = gMonIcon_JavelinKnight,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
         FOOTPRINT(MetaKnights)
         .levelUpLearnset = sJavelinKnightLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17301,7 +17516,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MINNY,
         .categoryName = _("Microscopic"),
-        .height = 6,
+        .height = 122, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "The smallest of all Helpers, Minny\n"
@@ -17324,7 +17539,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Minny,
         .shinyPalette = gMonShinyPalette_Minny,
         .iconSprite = gMonIcon_Minny,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Minny)
         .levelUpLearnset = sMinnyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17358,7 +17574,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOGGY,
         .categoryName = _("Fruit Gather"),
-        .height = 6,
+        .height = 1886, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It scavenges for fruit and preserves\n"
@@ -17381,7 +17597,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Moggy,
         .shinyPalette = gMonShinyPalette_Moggy,
         .iconSprite = gMonIcon_Moggy,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Moggy)
         .levelUpLearnset = sMoggyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17413,7 +17630,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_APOLO,
         .categoryName = _("Candy"),
-        .height = 6,
+        .height = 178, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "If you get lost in the forest, Apolo's\n"
@@ -17436,7 +17653,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Apolo,
         .shinyPalette = gMonShinyPalette_Apolo,
         .iconSprite = gMonIcon_Apolo,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Apolo)
         .levelUpLearnset = sApoloLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17469,7 +17686,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BLOPPER,
         .categoryName = _("Faux Cake"),
-        .height = 6,
+        .height = 200, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "If you spot a cake out in the open that\n"
@@ -17492,7 +17709,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_BlopperIcing,
         .shinyPalette = gMonShinyPalette_BlopperIcing,
         .iconSprite = gMonIcon_BlopperIcing,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Blopper)
         .levelUpLearnset = sBlopperLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17526,7 +17744,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BLOPPER,
         .categoryName = _("Faux Cake"),
-        .height = 6,
+        .height = 200, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "If you spot a cake out in the open that\n"
@@ -17550,6 +17768,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_BlopperIceless,
         .iconSprite = gMonIcon_BlopperIceless,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Blopper)
         .levelUpLearnset = sBlopperLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17584,7 +17803,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHAMELEO_ARM,
         .categoryName = _("Palette"),
-        .height = 6,
+        .height = 436, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Chameleo Arm comes in many colors. It\n"
@@ -17608,6 +17827,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_ChameleoArm,
         .iconSprite = gMonIcon_ChameleoArmGreen,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ChameleoArm)
         .levelUpLearnset = sChameleoArmLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17641,7 +17861,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHAMELEO_ARM,
         .categoryName = _("Palette"),
-        .height = 6,
+        .height = 436, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Chameleo Arm comes in many colors. It\n"
@@ -17665,6 +17885,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_ChameleoArm,
         .iconSprite = gMonIcon_ChameleoArmBlue,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ChameleoArm)
         .levelUpLearnset = sChameleoArmLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17698,7 +17919,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHAMELEO_ARM,
         .categoryName = _("Palette"),
-        .height = 6,
+        .height = 436, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Chameleo Arm comes in many colors. It\n"
@@ -17722,6 +17943,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_ChameleoArm,
         .iconSprite = gMonIcon_ChameleoArmPink,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ChameleoArm)
         .levelUpLearnset = sChameleoArmLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17755,7 +17977,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHAMELEO_ARM,
         .categoryName = _("Palette"),
-        .height = 6,
+        .height = 436, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Chameleo Arm comes in many colors. It\n"
@@ -17779,6 +18001,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_ChameleoArm,
         .iconSprite = gMonIcon_ChameleoArmRed,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ChameleoArm)
         .levelUpLearnset = sChameleoArmLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17812,7 +18035,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHAMELEO_ARM,
         .categoryName = _("Palette"),
-        .height = 6,
+        .height = 436, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Chameleo Arm comes in many colors. It\n"
@@ -17836,6 +18059,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_ChameleoArm,
         .iconSprite = gMonIcon_ChameleoArmOrange,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ChameleoArm)
         .levelUpLearnset = sChameleoArmLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17869,7 +18093,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHAMELEO_ARM,
         .categoryName = _("Palette"),
-        .height = 6,
+        .height = 436, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Chameleo Arm comes in many colors. It\n"
@@ -17893,6 +18117,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_ChameleoArm,
         .iconSprite = gMonIcon_ChameleoArmYellow,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ChameleoArm)
         .levelUpLearnset = sChameleoArmLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17926,7 +18151,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NODDY,
         .categoryName = _("Drowsy"),
-        .height = 6,
+        .height = 194, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Noddy spends almost all of its time\n"
@@ -17950,6 +18175,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Noddy,
         .iconSprite = gMonIcon_Noddy,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Noddy)
         .levelUpLearnset = sNoddyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -17981,7 +18207,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NRUFF,
         .categoryName = _("Pig"),
-        .height = 6,
+        .height = 312, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These rowdy Helpers run at wild speeds.\n"
@@ -18005,6 +18231,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Nruff,
         .iconSprite = gMonIcon_Nruff,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Nruff)
         .levelUpLearnset = sNruffLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18039,7 +18266,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NRUFF_AND_NELLY,
         .categoryName = _("Boar Family"),
-        .height = 6,
+        .height = 300, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Nruff's appearance has become more\n"
@@ -18062,7 +18289,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_NruffAndNelly,
         .shinyPalette = gMonShinyPalette_NruffAndNelly,
         .iconSprite = gMonIcon_NruffAndNelly,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(NruffAndNelly)
         .levelUpLearnset = sNruffAndNellyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18095,7 +18323,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BUFFAHORN,
         .categoryName = _("Buffalo"),
-        .height = 6,
+        .height = 826, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Buffahorn curls its horns in and charges\n"
@@ -18118,7 +18346,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Buffahorn,
         .shinyPalette = gMonShinyPalette_Buffahorn,
         .iconSprite = gMonIcon_Buffahorn,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Buffahorn)
         .levelUpLearnset = sBuffahornLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18150,7 +18379,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ROLLOZER,
         .categoryName = _("Steel Ball"),
-        .height = 6,
+        .height = 661, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It's normally a rather slow crawler, but\n"
@@ -18173,7 +18402,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Rollozer,
         .shinyPalette = gMonShinyPalette_Rollozer,
         .iconSprite = gMonIcon_Rollozer,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Rollozer)
         .levelUpLearnset = sRollozerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18207,7 +18437,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SILLYDILLO,
         .categoryName = _("Armadillo"),
-        .height = 6,
+        .height = 1026, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A member of the Beast Council, Sillydillo\n"
@@ -18230,7 +18460,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Sillydillo,
         .shinyPalette = gMonShinyPalette_Sillydillo,
         .iconSprite = gMonIcon_Sillydillo,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Sillydillo)
         .levelUpLearnset = sSillydilloLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18262,7 +18493,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TORTORNER,
         .categoryName = _("Cement Shell"),
-        .height = 6,
+        .height = 491, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Tortorner's head is thick and thorny,\n"
@@ -18286,6 +18517,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Tortorner,
         .iconSprite = gMonIcon_Tortorner,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Tortorner)
         .levelUpLearnset = sTortornerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18318,7 +18550,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TORTUILDING,
         .categoryName = _("Shellscraper"),
-        .height = 6,
+        .height = 1248, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Wearing an entire building for a shell,\n"
@@ -18341,7 +18573,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Tortuilding,
         .shinyPalette = gMonShinyPalette_Tortuilding,
         .iconSprite = gMonIcon_Tortuilding,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Tortuilding)
         .levelUpLearnset = sTortuildingLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18373,8 +18606,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .speciesName = _("Bln-Meister"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BALLOON_MEISTER,
-        .categoryName = _("Shellscraper"),
-        .height = 6,
+        .categoryName = _("Pinniped"),
+        .height = 725, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Balloon-Meister loves to draw attention by\n"
@@ -18397,7 +18630,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_BalloonMeister,
         .shinyPalette = gMonShinyPalette_BalloonMeister,
         .iconSprite = gMonIcon_BalloonMeister,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(BalloonMeister)
         .levelUpLearnset = sBalloonMeisterLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18430,7 +18664,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GABON,
         .categoryName = _("Bone"),
-        .height = 6,
+        .height = 239, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Gabon wields scavenged bones as weapons,\n"
@@ -18453,7 +18687,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GabonDisguised,
         .shinyPalette = gMonShinyPalette_GabonDisguised,
         .iconSprite = gMonIcon_GabonDisguised,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Gabon)
         .levelUpLearnset = sGabonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18486,7 +18721,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GABON,
         .categoryName = _("Bone"),
-        .height = 6,
+        .height = 196, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "When this bully's helmet breaks, its\n"
@@ -18509,7 +18744,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_GabonBusted,
         .shinyPalette = gMonShinyPalette_GabonBusted,
         .iconSprite = gMonIcon_GabonBusted,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Gabon)
         .levelUpLearnset = sGabonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18541,7 +18777,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CAPTAIN_STITCH,
         .categoryName = _("Impervious"),
-        .height = 6,
+        .height = 289, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Captain Stitch is an aggressive relative\n"
@@ -18565,6 +18801,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_CaptainStitch,
         .iconSprite = gMonIcon_CaptainStitch,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(CaptainStitch)
         .levelUpLearnset = sCaptainStitchLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18594,7 +18831,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HALTWORKER,
         .categoryName = _("Employee"),
-        .height = 6,
+        .height = 206, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "The most basic members of the Haltmann\n"
@@ -18617,7 +18854,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Haltworker,
         .shinyPalette = gMonShinyPalette_Haltworker,
         .iconSprite = gMonIcon_Haltworker,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Haltworker)
         .levelUpLearnset = sHaltworkerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18648,7 +18886,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MECHAMECH,
         .categoryName = _("Trooper"),
-        .height = 6,
+        .height = 235, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "An advanced android equipped with a small\n"
@@ -18704,13 +18942,13 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_INVADER_ARMOR,
         .categoryName = _("Mech Pilot"),
-        .height = 6,
-        .weight = 16,
+        .height = 527, // Final
+        .weight = 9999,
         .description = COMPOUND_STRING(
-            "High-ranking Haltworkers are given the\n"
-            "honors of piloting the Invader Armor,\n"
-            "which is made of durable Haltonium and\n"
-            "packs enough punch to demolish buildings."),
+            "High-ranking Haltworkers pilot Invader\n"
+            "Armors. These 8.6-ton mechs are made\n"
+            "of durable Haltonium alloys and have\n"
+            "arms 100 times stronger than Bonkers'."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18727,7 +18965,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_InvaderArmor,
         .shinyPalette = gMonShinyPalette_InvaderArmor,
         .iconSprite = gMonIcon_InvaderArmor,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(InvaderArmor)
         .levelUpLearnset = sInvaderArmorLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18757,7 +18996,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BROBO,
         .categoryName = _("Mech Body"),
-        .height = 6,
+        .height = 375, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Brobo's head locks into the hollow top of\n"
@@ -18780,7 +19019,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Brobo,
         .shinyPalette = gMonShinyPalette_Brobo,
         .iconSprite = gMonIcon_Brobo,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Brobo)
         .levelUpLearnset = sBroboLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18810,7 +19050,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_JAMBELIEVER,
         .categoryName = _("Faithful"),
-        .height = 6,
+        .height = 244, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These devout Helpers usually reside on\n"
@@ -18834,6 +19074,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Jambeliever,
         .iconSprite = gMonIcon_Jambeliever,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Jambeliever)
         .levelUpLearnset = sJambelieverLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18865,7 +19106,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_JAMMERJAB,
         .categoryName = _("Awakened"),
-        .height = 6,
+        .height = 294, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Upon learning the value of friendship,\n"
@@ -18888,7 +19129,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Jammerjab,
         .shinyPalette = gMonShinyPalette_Jammerjab,
         .iconSprite = gMonIcon_Jammerjab,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Jammerjab)
         .levelUpLearnset = sJammerjabLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -18918,7 +19160,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BOOLER,
         .categoryName = _("Wisp Tail"),
-        .height = 6,
+        .height = 188, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Booler tries to act spooky like a typical\n"
@@ -18972,7 +19214,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NOO,
         .categoryName = _("Wisp Toss"),
-        .height = 6,
+        .height = 197, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Noo hides in the crevices of dark castles\n"
@@ -19025,7 +19267,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SKULLY,
         .categoryName = _("Skull"),
-        .height = 6,
+        .height = 286, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "The nefarious Skull Gang is primarily\n"
@@ -19075,14 +19317,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_PERISH_BODY, ABILITY_NONE, ABILITY_NEUTRALIZING_GAS},
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Skullion"),
+        .speciesName = _("Skullseer"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SKULLION,
         .categoryName = _("Commanding"),
-        .height = 6,
+        .height = 457, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
-            "Skullions aren't much stronger than\n"
+            "Skullseers aren't much stronger than\n"
             "the average Skully, but thanks to\n"
             "their high intellect, they've been\n"
             "promoted to a very high rank."),
@@ -19102,7 +19344,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Skullion,
         .shinyPalette = gMonShinyPalette_Skullion,
         .iconSprite = gMonIcon_Skullion,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Skullion)
         .levelUpLearnset = sSkullionLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19134,7 +19376,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NECRODEUS,
         .categoryName = _("Destruction"),
-        .height = 6,
+        .height = 1210, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "All of the Skull Gang answers to\n"
@@ -19157,7 +19399,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Necrodeus,
         .shinyPalette = gMonShinyPalette_Necrodeus,
         .iconSprite = gMonIcon_Necrodeus,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
         FOOTPRINT(Necrodeus)
         .levelUpLearnset = sNecrodeusLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19187,7 +19429,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DUPA,
         .categoryName = _("Mini Doomer"),
-        .height = 6,
+        .height = 340, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A miniature member of the Doomers.\n"
@@ -19210,7 +19452,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Dupa,
         .shinyPalette = gMonShinyPalette_Dupa,
         .iconSprite = gMonIcon_Dupa,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Dupa)
         .levelUpLearnset = sDupaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19241,7 +19484,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DIPPA,
         .categoryName = _("Wing Doomer"),
-        .height = 6,
+        .height = 372, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A medium-sized member of the Doomers.\n"
@@ -19264,7 +19507,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Dippa,
         .shinyPalette = gMonShinyPalette_Dippa,
         .iconSprite = gMonIcon_Dippa,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Dippa)
         .levelUpLearnset = sDippaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19295,7 +19538,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DEPPA,
         .categoryName = _("Giga Doomer"),
-        .height = 6,
+        .height = 1172,  // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A gargantuan member of the Doomers.\n"
@@ -19318,7 +19561,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Deppa,
         .shinyPalette = gMonShinyPalette_Deppa,
         .iconSprite = gMonIcon_Deppa,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
         FOOTPRINT(Deppa)
         .levelUpLearnset = sDeppaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19349,7 +19592,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SPHERE_DOOMER,
         .categoryName = _("Dimensional"),
-        .height = 6,
+        .height = 440, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These mysterious winged Doomers come\n"
@@ -19372,7 +19615,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SphereDoomerNormal,
         .shinyPalette = gMonShinyPalette_SphereDoomerNormal,
         .iconSprite = gMonIcon_SphereDoomerNormal,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
         FOOTPRINT(SphereDoomer)
         .levelUpLearnset = sSphereDoomerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19405,7 +19648,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SPHERE_DOOMER,
         .categoryName = _("Dimensional"),
-        .height = 6,
+        .height = 440, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These mysterious winged Doomers come\n"
@@ -19428,7 +19671,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SphereDoomerSun,
         .shinyPalette = gMonShinyPalette_SphereDoomerSun,
         .iconSprite = gMonIcon_SphereDoomerSun,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(SphereDoomer)
         .levelUpLearnset = sSphereDoomerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19461,7 +19704,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SPHERE_DOOMER,
         .categoryName = _("Dimensional"),
-        .height = 6,
+        .height = 440, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These mysterious winged Doomers come\n"
@@ -19484,7 +19727,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SphereDoomerRain,
         .shinyPalette = gMonShinyPalette_SphereDoomerRain,
         .iconSprite = gMonIcon_SphereDoomerRain,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(SphereDoomer)
         .levelUpLearnset = sSphereDoomerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19517,7 +19760,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SPHERE_DOOMER,
         .categoryName = _("Dimensional"),
-        .height = 6,
+        .height = 440, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These mysterious winged Doomers come\n"
@@ -19540,7 +19783,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_SphereDoomerSnow,
         .shinyPalette = gMonShinyPalette_SphereDoomerSnow,
         .iconSprite = gMonIcon_SphereDoomerSnow,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(SphereDoomer)
         .levelUpLearnset = sSphereDoomerLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19572,7 +19815,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PHANTA,
         .categoryName = _("Shady"),
-        .height = 6,
+        .height = 219, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Phantas frequent long-abandoned spots\n"
@@ -19627,7 +19870,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ACE_PHANTA,
         .categoryName = _("Possessor"),
-        .height = 6,
+        .height = 601, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This high-ranking Phanta distinguishes\n"
@@ -19680,7 +19923,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CAPER,
         .categoryName = _("Creeping"),
-        .height = 6,
+        .height = 211, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "They may look see-through, but Capers are\n"
@@ -19735,7 +19978,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TEDHAUN,
         .categoryName = _("Haunting"),
-        .height = 6,
+        .height = 500, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This elusive Helper is normally invisible\n"
@@ -19788,7 +20031,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PRANK,
         .categoryName = _("Mischievous"),
-        .height = 6,
+        .height = 233, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Prank doesn't mean any real harm when it\n"
@@ -19811,7 +20054,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Prank,
         .shinyPalette = gMonShinyPalette_Prank,
         .iconSprite = gMonIcon_Prank,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Prank)
         .levelUpLearnset = sPrankLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19841,7 +20085,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ESCARDROID,
         .categoryName = _("Servant"),
-        .height = 6,
+        .height = 342, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These robots were built as servants for\n"
@@ -19864,7 +20108,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_EscarDroid,
         .shinyPalette = gMonShinyPalette_EscarDroid,
         .iconSprite = gMonIcon_EscarDroid,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(EscarDroid)
         .levelUpLearnset = sEscarDroidLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19896,7 +20141,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MAIMAIGON,
         .categoryName = _("Power Shell"),
-        .height = 6,
+        .height = 1764, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This horrifying monster is equipped with\n"
@@ -19919,7 +20164,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Maimaigon,
         .shinyPalette = gMonShinyPalette_Maimaigon,
         .iconSprite = gMonIcon_Maimaigon,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Maimaigon)
         .levelUpLearnset = sMaimaigonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -19949,7 +20195,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CHIBI_DEDEDE,
         .categoryName = _("Wind-Up"),
-        .height = 6,
+        .height = 240, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A toy-like automaton in the image of King\n"
@@ -19972,7 +20218,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_ChibiDedede,
         .shinyPalette = gMonShinyPalette_ChibiDedede,
         .iconSprite = gMonIcon_ChibiDedede,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(ChibiDedede)
         .levelUpLearnset = sChibiDededeLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -20005,7 +20252,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DEDEDE_ROBO,
         .categoryName = _("War Machine"),
-        .height = 6,
+        .height = 1964, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Out of all the metal monstrosities King\n"
@@ -20028,7 +20275,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_DededeRobo,
         .shinyPalette = gMonShinyPalette_DededeRobo,
         .iconSprite = gMonIcon_DededeRobo,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(DededeRobo)
         .levelUpLearnset = sDededeRoboLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -20058,7 +20306,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GEMAINE,
         .categoryName = _("Last Chance"),
-        .height = 6,
+        .height = 177, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A tremendous amount of power is sealed in\n"
@@ -20081,7 +20329,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Gemaine,
         .shinyPalette = gMonShinyPalette_Gemaine,
         .iconSprite = gMonIcon_Gemaine,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         FOOTPRINT(Gemaine)
         .levelUpLearnset = sGemaineLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -20113,7 +20361,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GALACTAL,
         .categoryName = _("Crystalline"),
-        .height = 6,
+        .height = 767, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "The crystal that seals Galactal's body\n"
@@ -20136,7 +20384,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .palette = gMonPalette_Galactal,
         .shinyPalette = gMonShinyPalette_Galactal,
         .iconSprite = gMonIcon_Galactal,
-        .iconPalIndex = 4,
+        .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Galactal)
         .levelUpLearnset = sGalactalLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -20167,7 +20416,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WHISPY_WOODS,
         .categoryName = _("Great Tree"),
-        .height = 6,
+        .height = 1753, // Final?
         .weight = 16,
         .description = COMPOUND_STRING(
             "The guardian of the forest watches over\n"
@@ -20191,6 +20440,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_WhispyWoods,
         .iconSprite = gMonIcon_WhispyWoods,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(WhispyWoods)
         .levelUpLearnset = sWhispyWoodsLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -20224,7 +20474,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LOLOLO_LALALA,
         .categoryName = _("Tag Team"),
-        .height = 6,
+        .height = 236, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This inseparable duo live in Castle\n"
@@ -20248,6 +20498,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_LololoLalala,
         .iconSprite = gMonIcon_LololoLalala,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(LololoLalala)
         .levelUpLearnset = sLololoLalalaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -20280,7 +20531,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KABULA,
         .categoryName = _("Blimp"),
-        .height = 6,
+        .height = 1300, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Patrolling the skies of Mt. Dedede, this\n"
@@ -20336,7 +20587,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_KRACKO,
         .categoryName = _("Stormcloud"),
-        .height = 6,
+        .height = 618, // Final?
         .weight = 16,
         .description = COMPOUND_STRING(
             "Wherever there is sky, Kracko is bound\n"
@@ -20393,7 +20644,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_ACTI_BLADE,
         .categoryName = _("Sky Wings"),
-        .height = 6,
+        .height = 945, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "It uses its incredibly soft down to\n"
@@ -20450,7 +20701,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DYNA_BLADE,
         .categoryName = _("White Wings"),
-        .height = 6,
+        .height = 945, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "This gargantuan bird's feathers are as\n"
@@ -20506,7 +20757,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DRAGOON,
         .categoryName = _("Glide Star"),
-        .height = 6,
+        .height = 782, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A legendary Air Ride machine heralded as\n"
@@ -20564,7 +20815,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HYDRA,
         .categoryName = _("Boost Star"),
-        .height = 6,
+        .height = 906, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A legendary Air Ride machine heralded as\n"
@@ -20622,7 +20873,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LANDIA,
         .categoryName = _("Four-Headed"),
-        .height = 6,
+        .height = 1092, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Landia is known as the four-headed\n"
@@ -20646,6 +20897,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_LandiaCombined,
         .iconSprite = gMonIcon_LandiaCombined,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(LandiaCombined)
         .levelUpLearnset = sLandiaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
@@ -20682,7 +20934,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_LANDIA,
         .categoryName = _("Four-Bodied"),
-        .height = 6,
+        .height = 500, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Landia's four heads can split into four\n"
@@ -20742,7 +20994,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DARK_MATTER,
         .categoryName = _("Clone"),
-        .height = 6,
+        .height = 539, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "A flawed copy of a possessor who took\n"
@@ -20798,7 +21050,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NIGHTMARE,
         .categoryName = _("Bad Dreams"),
-        .height = 6,
+        .height = 444, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Nightmare's Power Orb is much like an\n"
@@ -20856,7 +21108,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NIGHTMARE,
         .categoryName = _("Bad Dreams"),
-        .height = 6,
+        .height = 1411, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "Dreams can be good or bad; and so, with\n"
@@ -20916,7 +21168,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_BATAMON,
         .categoryName = _("Mythical"),
-        .height = 6, //temp
+        .height = 200, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The rarest of Helpers, which sparked\n"
@@ -20940,6 +21192,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Batamon,
         .iconSprite = gMonIcon_Batamon,
         .iconPalIndex = 0,
+        NO_SHADOW
         FOOTPRINT(Batamon)
         .levelUpLearnset = sBatamonLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,

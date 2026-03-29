@@ -1253,7 +1253,7 @@ void CB2_Pokemon_Sprite_Visualizer(void)
         AllocateMonSpritesGfx();
 
         LoadPalette(sBgColor, BG_PLTT_ID(0), 2);
-        LoadMonIconPalette(SPECIES_LOVELY);
+        LoadMonIconPalette(SPECIES_BURNING_LEO);
 
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
         ShowBg(0);
@@ -1267,7 +1267,7 @@ void CB2_Pokemon_Sprite_Visualizer(void)
         data = AllocZeroed(sizeof(struct PokemonSpriteVisualizer));
         SetStructPtr(taskId, data);
 
-        data->currentmonId = SPECIES_LOVELY;
+        data->currentmonId = SPECIES_BURNING_LEO;
         species = SanitizeSpeciesId(data->currentmonId);
 
         //Print instructions
@@ -1774,8 +1774,8 @@ static void HandleInput_PokemonSpriteVisualizer(u8 taskId)
                 UpdateBattlerValue(data);
                 ResetShadowSettings(data);
                 ReloadPokemonSprites(data);
-                data->animIdBack = GetSpeciesBackAnimSet(species) + 1;
-                data->animIdFront = gSpeciesInfo[species].frontAnimId;
+                data->animIdBack = GetSpeciesBackAnimSet(data->modifyArrows.currValue) + 1;
+                data->animIdFront = gSpeciesInfo[data->modifyArrows.currValue].frontAnimId;
                 UpdateMonAnimNames(taskId);
                 ResetOffsetSpriteValues(data);
             }
@@ -1791,8 +1791,8 @@ static void HandleInput_PokemonSpriteVisualizer(u8 taskId)
                 UpdateBattlerValue(data);
                 ResetShadowSettings(data);
                 ReloadPokemonSprites(data);
-                data->animIdBack = GetSpeciesBackAnimSet(species) + 1;
-                data->animIdFront = gSpeciesInfo[species].frontAnimId;
+                data->animIdBack = GetSpeciesBackAnimSet(data->modifyArrows.currValue) + 1;
+                data->animIdFront = gSpeciesInfo[data->modifyArrows.currValue].frontAnimId;
                 UpdateMonAnimNames(taskId);
                 ResetOffsetSpriteValues(data);
             }
