@@ -67,3 +67,297 @@ KirbysHouse_Indoors_Text_ClockIsStopped:
 	.string "It's a brand-new clock.\p"
 	.string "Let's set it and start it!$"
 `
+
+script KirbysHouse_Indoors_TalkToGooey
+{
+	faceplayer
+	lock
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 0)
+	{
+		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo?
+				
+				It's Gooey. He lives here too.")
+		release
+	}
+	elif(var(VAR_KIRBYS_HOUSE_STATE) == 1)
+	{
+		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo...
+				
+				It's Gooey. He's fixated on the
+				television.")
+		release
+		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP)
+		turnobject(LOCALID_GOOEY, DIR_NORTH)
+	}
+	elif(var(VAR_KIRBYS_HOUSE_STATE) == 2)
+	{
+		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo!
+				
+				It's Gooey. Doesn't seem like he
+				understood the news at all...")
+		release
+	}
+}
+
+script KirbysHouse_Indoors_TalkToBandanaWaddleDee
+{
+    faceplayer
+	lock
+	msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} What are you
+			waiting for? Let's turn on the TV!")
+	release
+	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+}
+
+script KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 0)
+	{
+		lockall
+		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP)
+		setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 6, 13)
+		addobject(LOCALID_BANDANA_WADDLE_DEE)
+		playse(SE_EXIT)
+		delay(35)
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_WEST)
+		applymovement(LOCALID_PLAYER, moves(
+			walk_in_place_faster_right
+		))
+		waitmovement(0)
+		msgbox(KirbysHouse_Indoors_BandanaDeeIntroduction)
+		closemessage
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
+			walk_right * 2
+			walk_up * 8
+		))
+		waitmovement(0)
+		setvar(VAR_KIRBYS_HOUSE_STATE, 1)
+		releaseall
+	}
+}
+
+script KirbysHouse_Indoors_BandanaDeeEntranceTopLeft
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 0)
+	{
+		lockall
+		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP)
+		setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 6, 13)
+		addobject(LOCALID_BANDANA_WADDLE_DEE)
+		playse(SE_EXIT)
+		delay(35)
+		msgbox(KirbysHouse_Indoors_BandanaDeeIntroduction)
+		closemessage
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
+			walk_right * 2
+			walk_up * 8
+		))
+		waitmovement(0)
+		setvar(VAR_KIRBYS_HOUSE_STATE, 1)
+		releaseall
+	}
+}
+
+script KirbysHouse_Indoors_BandanaDeeEntranceTopRight
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 0)
+	{
+		lockall
+		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP)
+		setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 7, 13)
+		addobject(LOCALID_BANDANA_WADDLE_DEE)
+		playse(SE_EXIT)
+		delay(35)
+		msgbox(KirbysHouse_Indoors_BandanaDeeIntroduction)
+		closemessage
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
+			walk_right
+			walk_up * 8
+		))
+		waitmovement(0)
+		setvar(VAR_KIRBYS_HOUSE_STATE, 1)
+		releaseall
+	}
+}
+
+script KirbysHouse_Indoors_BandanaDeeEntranceBottomRight
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 0)
+	{
+		lockall
+		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP)
+		setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 7, 13)
+		addobject(LOCALID_BANDANA_WADDLE_DEE)
+		playse(SE_EXIT)
+		delay(35)
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_EAST)
+		applymovement(LOCALID_PLAYER, moves(
+			walk_in_place_faster_left
+		))
+		waitmovement(0)
+		msgbox(KirbysHouse_Indoors_BandanaDeeIntroduction)
+		closemessage
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
+			walk_up
+			walk_right
+			walk_up * 7
+		))
+		waitmovement(0)
+		setvar(VAR_KIRBYS_HOUSE_STATE, 1)
+		releaseall
+	}
+}
+
+script KirbysHouse_Indoors_EventScript_DontLeave
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 1)
+	{
+		lock
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_SOUTH)
+		applymovement(LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
+		waitmovement(0)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!
+				Where are you going?
+				
+				Turn on the TV so we can see
+				what the king has to say!")
+		closemessage
+		applymovement(LOCALID_PLAYER, moves(
+			walk_up
+		))
+		waitmovement(0)
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+		release
+	}
+}
+
+script KirbysHouse_Indoors_EventScript_Television
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 1)
+	{
+		lockall
+		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_LOOK_AROUND)
+		fadenewbgm(MUS_DUMMY)
+		special(TurnOnTVScreen)
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+		turnobject(LOCALID_GOOEY, DIR_NORTH)
+		applymovement(LOCALID_PLAYER, moves(
+			walk_down
+			walk_in_place_faster_up
+		))
+		delay(60)
+		playbgm(MUS_ENCOUNTER_INTERVIEWER, FALSE)
+		msgbox("You're watching Channel PPP!
+
+				I'm Reporter Waddle Dee, here to bring
+				you breaking news from none other than
+				the king of Dream Land! Take it away,
+				Your Highness!
+				
+				{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} Howdy, everyone! Now
+				listen up; have you ever wondered what
+				being king is like? Working hard to
+				make sure everyone else gets to live
+				carefree, peaceful lives?
+				
+				Well, now you've got the chance to
+				find out for yourself! Introducing...
+				
+				{COLOR RED}DEDEDE'S ROYAL ROYALE!{COLOR DARK_GRAY}")
+		playSE(SE_PIN)
+		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
+		waitmovement(0)
+		msgbox("{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} That's right! I've
+				organized a little game to test the
+				qualities that make a great king.
+				
+				Strong leadership! A sharp mind! And
+				the ability to command others well!
+				
+				All over Dream Land, Helpers with
+				special powers have popped up.
+				
+				If you can forge a bond with them,
+				they'll join your side! Then, you
+				can pit your team against others
+				at the various Arenas I've built.
+				
+				You'll earn Brooches for each Arena
+				you conquer. The first competitor
+				to bring all the Brooches to Mt.
+				Dedede and win at my Dedede Arena
+				will win a veeery special prize...
+				
+				Why, you'll be crowned the brand
+				new {COLOR RED}KING OF DREAM LAND{COLOR DARK_GRAY}! Ha ha ha!")
+		playSE(SE_PIN)
+		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
+		waitmovement(0)
+		msgbox("{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} ...psst, assistant! That
+				fine print saying 'for one day only'
+				should be smaller! Fix that, yeah!?
+				
+				Ahem... anyways, that's all I've
+				got for now. I'll be explainin'
+				more at Waddle Dee Town soon.
+				
+				I want you all to learn about the
+				trust between leader and subject,
+				work together to prove your skill,
+				and come to appreciate what it
+				takes to be a king! Peace!")
+		special(TurnOffTVScreen)
+		fadedefaultbgm
+		delay(35)
+		applymovement(LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_WalkInPlaceFasterLeft)
+		waitmovement(0)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Wow...
+				That was a lot to take in, huh?
+
+				I wonder what led the Great
+				King to this game of his.
+				
+				And what did he mean by
+				Helpers appearing here?
+
+				I guess I should head back
+				to Waddle Dee Town and
+				find out more there...")
+		closemessage
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
+			walk_down * 8
+		))
+		waitmovement(0)
+		playse(SE_EXIT)
+		removeobject(LOCALID_BANDANA_WADDLE_DEE)
+		setvar(VAR_KIRBYS_HOUSE_STATE, 2)
+		delay(35)
+		releaseall
+	}
+	else
+	{
+		lockall
+		msgbox("It's a television. It's not used much...")
+		releaseall
+	}
+}
+
+text KirbysHouse_Indoors_BandanaDeeIntroduction
+{
+	"{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Hey, Kirby!
+
+	Glad to see you're awake. I was
+	worried you'd oversleep again!
+				
+	I came over because there's an
+	important broadcast from King
+	Dedede airing soon.
+
+	I'm not sure what's going on,
+	but the whole town's been in
+	an uproar, so it must be big!
+	Let's check it out!"
+}

@@ -147,9 +147,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 89,
         .description = COMPOUND_STRING(
             "A parasitic influence on the flowers of\n"
-            "a Floralian tree brought these Helpers to\n"
-            "life. The blossoms can survive while\n"
-            "detached from the stalks temporarily."),
+            "a Floralian tree brought this Helper to\n"
+            "life. Its multi-headed blossoms can\n"
+            "temporarily detach from their stalks."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -445,7 +445,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .enemyMonElevation = 4,
         .backPic = gMonBackPic_Squister,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_Squister,
         .shinyPalette = gMonShinyPalette_Squister,
@@ -480,6 +480,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_NONE, ABILITY_TORRENT, ABILITY_DRY_SKIN},
         .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = TRUE,
         .speciesName = _("Claykken"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_CLAYKKEN,
@@ -503,7 +504,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .enemyMonElevation = 5,
         .backPic = gMonBackPic_Claykken,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_Claykken,
         .shinyPalette = gMonShinyPalette_Claykken,
@@ -554,19 +555,19 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Chip,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 1,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .frontAnimId = ANIM_V_JUMPS_BIG,
         .backPic = gMonBackPic_Chip,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_V_SHAKE,
+        .backPicYOffset = 19,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Chip,
         .shinyPalette = gMonShinyPalette_Chip,
         .iconSprite = gMonIcon_Chip,
         .iconPalIndex = 1,
-        NO_SHADOW
         FOOTPRINT(Chip)
+        SHADOW(0, 7, SHADOW_SIZE_S)
         .levelUpLearnset = sChipLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_CHIPPURUS}),
@@ -611,13 +612,13 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Chippurus,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 1,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Chippurus,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_SHRINK_GROW,
         .palette = gMonPalette_Chippurus,
         .shinyPalette = gMonShinyPalette_Chippurus,
         .iconSprite = gMonIcon_Chippurus,
@@ -658,9 +659,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A common sight in the skies of Dream\n"
-            "Land. it enjoys the thrill of dive-\n"
+            "Land. It enjoys the thrill of dive-\n"
             "bombing from high above, but often\n"
-            "accidentally collides with others."),
+            "collides into others accidentally."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -669,16 +670,17 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_PIVOT_SHAKE,
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
         .backPic = gMonBackPic_BrontoBurt,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,
         .palette = gMonPalette_BrontoBurt,
         .shinyPalette = gMonShinyPalette_BrontoBurt,
         .iconSprite = gMonIcon_BrontoBurt,
         .iconPalIndex = 0,
         FOOTPRINT(BrontoBurt)
+        SHADOW(-2, 10, SHADOW_SIZE_S)
         .levelUpLearnset = sBrontoBurtLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_HALCANTO_BURT}),
@@ -716,7 +718,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "Halcanto Burt's similar build to Bronto\n"
             "Burt despite hailing from the distant\n"
             "planet of Halcandra seems to indicate\n"
-            "the possibility of convergent evolution."),
+            "the possiblity of convergent evolution."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -725,16 +727,17 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_ZIGZAG_FAST,
+        .frontAnimId = ANIM_BACK_FLIP_BIG,
         .backPic = gMonBackPic_HalcantoBurt,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_HalcantoBurt,
         .shinyPalette = gMonShinyPalette_HalcantoBurt,
         .iconSprite = gMonIcon_HalcantoBurt,
         .iconPalIndex = 0,
         FOOTPRINT(HalcantoBurt)
+        SHADOW(3, 11, SHADOW_SIZE_S)
         .levelUpLearnset = sHalcantoBurtLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
@@ -780,11 +783,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SHRINK_GROW_VIBRATE,
+        .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
         .backPic = gMonBackPic_Capiller,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_H_VIBRATE,
+        .backPicYOffset = 16,
+        .backAnimId = BACK_ANIM_H_STRETCH,
         .palette = gMonPalette_Capiller,
         .shinyPalette = gMonShinyPalette_Capiller,
         .iconSprite = gMonIcon_Capiller,
@@ -825,10 +828,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 170, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Pupa's body is immobile, so it\n"
-            "spews string from its rear end\n"
-            "to dangle from heights and uses\n"
-            "swinging momentum to move around."),
+            "Pupa's body is completely immobile.\n"
+            "It spews string from its rear to\n"
+            "dangle off of surfaces, building\n"
+            "momentum by swinging to move around."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -882,9 +885,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "The sight of butterflies is often\n"
-            "viewed as a symbol of peace in\n"
-            "Dream Land. Under most circumstances,\n"
-            "they are harmless creatures."),
+            "viewed as a symbol of peace in Dream\n"
+            "Land. Under most circumstances, they\n"
+            "are passive and harmless creatures."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -995,10 +998,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 163, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "A newborn chick that tends to stay\n"
-            "inside its egg. It is highly\n"
+            "A newborn chick that stays inside\n"
+            "its egg for comfort. It is highly\n"
             "impressional, so to see it leave its\n"
-            "shell, please show it kindness!"),
+            "shell, please be a positive influence!"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1049,14 +1052,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .speciesName = _("Twizzy"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TWIZZY,
-        .categoryName = _("Young Bird"),
+        .categoryName = _("Chirping"),
         .height = 173, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "They spend most of their time\n"
-            "roosting, so it's said to be\n"
-            "an omen of good weather if you\n"
-            "see a flock of flying Twizzies."),
+            "They spend most of their time roosting\n"
+            "rather than flying. It's said to be\n"
+            "an omen of good weather if you happen\n"
+            "to see a flock of flying Twizzies."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1109,10 +1112,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 200, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Tookeys communicate to one another\n"
-            "with melodious clucks, making them\n"
-            "a favorite Helper of those with\n"
-            "a passion for musicality."),
+            "Tookeys communicate to Twizzies and\n"
+            "one another with melodious clucks,\n"
+            "making them a favorite Helper of those\n"
+            "with a passion for musicality."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1166,10 +1169,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 559, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "The negative energy absorbed by\n"
-            "its eggshell caused it to harden\n"
-            "and grow spikes, turning it into\n"
-            "a dangerous helmet."),
+            "The helmet Pichikuri wears is actually\n"
+            "a remnant of its old eggshell; toxic\n"
+            "influences caused it to harden and\n"
+            "grow dangerous spikes."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1627,8 +1630,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .description = COMPOUND_STRING(
             "Big Mummbon's bandages lose shape and\n"
             "unravel upon defeat. Though it appears\n"
-            "to have no internals, some believe they,\n"
-            "may be within the bandages themselves."),
+            "to have no internals, some believe they\n"
+            "may be contained within the bandages."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1851,10 +1854,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 196, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "When hopping around in its large\n"
-            "spotted cap, it resembles a walking\n"
-            "mushroom. When its cap is off,\n"
-            "Cappy won't stop sulking."),
+            "It's unclear whether Cappy is really a\n"
+            "walking mushroom, or if it just looks\n"
+            "like one when wearing its cap. When its\n"
+            "cap gets lost, Cappy won't stop sulking."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -1909,9 +1912,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 218, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "As it hops, it scatters spores\n"
-            "that propagate other mushrooms.\n"
-            "The vibrant colors of its cap are\n"
+            "As it hops, it scatters spores that\n"
+            "propagate other mushrooms. The vivid\n"
+            "colors of its cap are a deterrent\n"
             "meant to drive others away."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -2025,7 +2028,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "Poppy Bros. Sr. performs best in\n"
             "pairs with one another. The younger\n"
             "Poppy Bros. Jr. is too volatile and\n"
-            "inexperienced to join their senior."),
+            "inexperienced to work with their senior."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2078,10 +2081,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 256, // Final?
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Consider yourself lucky if you\n"
-            "capture a UFO! These mysterious\n"
-            "saucers zip around so fast even\n"
-            "glimpsing them is a rarity."),
+            "Consider yourself lucky if you recruit\n"
+            "a UFO! These mysterious flying saucers\n"
+            "zip around at such high speeds that\n"
+            "even glimpsing them is a rarity."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2184,6 +2187,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_JUSTIFIED, ABILITY_INNER_FOCUS, ABILITY_STALWART},
         .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = TRUE,
         .speciesName = _("Gigant Edge"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GIGANT_EDGE,
@@ -2242,6 +2246,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_JUSTIFIED, ABILITY_INNER_FOCUS, ABILITY_STALWART},
         .bodyColor = BODY_COLOR_RED,
+        .noFlip = TRUE,
         .speciesName = _("Ignite Edge"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_IGNITE_EDGE,
@@ -2477,10 +2482,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 176, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Don't be fooled by the sight of a\n"
-            "Needlous inching slowly along the\n"
-            "ground. It can curl into a ball\n"
-            "and roll forward at high speeds."),
+            "Don't be fooled by the sight of Needlous\n"
+            "inching slowly along the ground. It can\n"
+            "curl its body up and roll like a\n"
+            "treaded tire at high speeds."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2534,10 +2539,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 252, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Its plated shell functions like\n"
-            "a cocoon, shielding the vulnerable\n"
-            "inside. When it feels safe, Punc\n"
-            "will uncurl and walk around."),
+            "Its plated shell functions like a\n"
+            "cocoon, shielding the vulnerable\n"
+            "insides. When it feels safe, Punc will\n"
+            "unfurl its shell and walk on foot."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2646,10 +2651,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 205, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It spends day and night sweeping\n"
+            "It spends day and night sweeping up\n"
             "everything it sees. It's so busy\n"
-            "cleaning with its broom that it\n"
-            "often forgets how to ride it."),
+            "cleaning with its broom that it forgets\n"
+            "how to ride it regularly."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -2989,7 +2994,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .description = COMPOUND_STRING(
             "Those who watch Big Kabu open its\n"
             "mouth and release Kabus from inside\n"
-            "become convinced there may actually\n"
+            "become convinced that there must\n"
             "be a portal inside Big Kabu's mouth."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -3043,10 +3048,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 198, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Some consider Blipper's goggles\n"
-            "to be a cutting-edge fashion\n"
-            "statement. Others find the accessory\n"
-            "to be tacky and redundant."),
+            "The most common resident of Dream Land's\n"
+            "waters. Some think Blipper's goggles\n"
+            "are the cutting edge of fashion, while\n"
+            "others find them tacky and redundant."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3101,10 +3106,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 403, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It has earned the nickname of\n"
+            "Mamatee has earned the nickname of\n"
             "'Mother of the Blippers' for its\n"
             "passive nature and kind heart\n"
-            "towards anyone it meets."),
+            "towards anyone it encounters."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3212,10 +3217,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 223, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Leafan is so light the wind is able\n"
-            "to carry it. It floats like a\n"
-            "propeller, scattering its seeds\n"
-            "wherever the winds take it."),
+            "Leafan is so light the wind is able to\n"
+            "carry it. It floats like a propeller,\n"
+            "scattering its seeds wherever the\n"
+            "wind blows it."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3386,7 +3391,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "Hornhead's horn is stronger than\n"
             "Beetley's several times over, but it\n"
             "isn't the king of insects because\n"
-            "it's normally docile and clumsy."),
+            "it's clumsy and usually docile."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3551,10 +3556,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 220, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Mr. P. Umpkin masquerades itself\n"
-            "on walls, watching unsuspecting\n"
-            "passerby until their backs are\n"
-            "turned and chasing them down."),
+            "Mr. P. Umpkin masquerades itself to\n"
+            "scare others. It rests on walls like\n"
+            "a mask, waiting for passerby to turn\n"
+            "their backs before chasing them."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -3946,10 +3951,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 219, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Coner has been a resident of\n"
-            "Dream Land for a very long time.\n"
-            "It's endured a lot of change\n"
-            "thanks to its sturdy shell."),
+            "Coner is said to be one of the oldest\n"
+            "residents of Dream Land. Thanks to\n"
+            "its sturdy shell, it's managed to\n"
+            "endure the passage of time unchanged."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4004,9 +4009,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Also known as Floaty the Drifter,\n"
-            "this living parasol will disguise\n"
-            "itself as a normal item. It\n"
-            "dislikes being lodged in sand."),
+            "this living parasol disguises itself\n"
+            "as the lifeless article. It dislikes\n"
+            "being lodged in the sand at beaches."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4061,8 +4066,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "A spirit that haunts an old umbrella.\n"
-            "It gets tired quickly from hopping\n"
-            "around on one leg, so it regularly\n"
+            "It gets tired from hopping around\n"
+            "on one leg so much, so it regularly\n"
             "kicks its sandal off in frustration."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -4116,10 +4121,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 344, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "This travelling clown is almost\n"
-            "always seeing juggling blocks\n"
-            "of various shapes. It also has\n"
-            "a knack for solving puzzles."),
+            "This travelling clown is almost always\n"
+            "seen juggling blocks of various shapes;\n"
+            "little can break its concentration. It\n"
+            "also has a knack for solving puzzles."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4173,10 +4178,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 307, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "A master in the art of circus\n"
-            "tricks, Clown Acrobot wants\n"
-            "nothing more than to put on a\n"
-            "good show and make others smile."),
+            "A master in the art of circus tricks,\n"
+            "Clown Acrobot wants nothing more than\n"
+            "to put on a good show for others. It\n"
+            "desires a ringmaster to perform for."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4286,10 +4291,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 288, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "A distant, electricity-wielding\n"
-            "cousin of Squishy. Contrary\n"
-            "to its name, it is mostly\n"
-            "seen in colors other than green."),
+            "A distant, electricity-wielding cousin\n"
+            "of Squishy. Contrary to what its name\n"
+            "suggests, it rarely comes in the color\n"
+            "green; white or yellow are more common."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4336,6 +4341,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_DAMP, ABILITY_HYDRATION, ABILITY_WATER_ABSORB},
         .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = TRUE,
         .speciesName = _("Mr. Floaty"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MR_FLOATY,
@@ -4346,7 +4352,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "If it doesn't have water to bathe\n"
             "in, it gets panicked and agitated.\n"
             "Mr. Floaty is very particular about\n"
-            "what kinds of swimwear it will don."),
+            "what kinds of swimwear it uses."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4457,10 +4463,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 245, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "A few key differences separate it\n"
-            "and Squishy; it lurks in deeper\n"
-            "waters, spends less time on land,\n"
-            "and has a moodier temperament."),
+            "It's normally rarer than Squishy, but\n"
+            "has made a resurgence lately. It has\n"
+            "a moody temperament and spends most\n"
+            "of its time lurking in deep waters."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4515,9 +4521,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 938, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Flotzo Borg's helmet obviously\n"
-            "isn't for breathing underwater;\n"
-            "instead, the helmet's nozzle\n"
+            "Flotzo Borg's helmet obviously isn't\n"
+            "for breathing underwater; rather,\n"
+            "it uses the helmet's nozzle to\n"
             "pressurizes the ink it shoots."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -4566,6 +4572,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SUCTION_CUPS, ABILITY_LIQUID_OOZE, ABILITY_VESSEL_OF_RUIN},
         .bodyColor = BODY_COLOR_PINK,
+        .noFlip = TRUE,
         .speciesName = _("Giant Flotzo"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GIANT_FLOTZO,
@@ -4686,10 +4693,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 378, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Giant Rocky is so heavy it can't\n"
-            "even walk on its feet. It causes\n"
-            "tremors as it moves by hopping\n"
-            "before landing with a thud."),
+            "Giant Rocky is so heavy, it can't lift\n"
+            "itself up with its feet. Instead of\n"
+            "walking, it uses its mass to hop into\n"
+            "the air before landing hard."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4736,6 +4743,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_STURDY, ABILITY_SHEER_FORCE, ABILITY_SOLID_ROCK},
         .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
         .speciesName = _("Moundo"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MOUNDO,
@@ -5536,10 +5544,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 1110, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Hot Wings makes its nest deep\n"
-            "with volcanic craters. It will\n"
-            "go on a fiery rampage should\n"
-            "anything befall its baby Embirds."),
+            "Hot Wings makes its nest deep within\n"
+            "volcanic craters. It will go on\n"
+            "a fiery rampage should anything\n"
+            "endanger its baby Embirds."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5653,10 +5661,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield that is\n"
+            "lightweight but otherwise basic."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5714,10 +5722,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield that is\n"
+            "wreathed in temperate flames."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5775,10 +5783,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield made\n"
+            "entirely out of ice."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5836,10 +5844,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield that is\n"
+            "coated in sticky blobs of water."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5897,10 +5905,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield with\n"
+            "electricity coursing through it."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5958,10 +5966,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield that\n"
+            "draws in strong gales of wind."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6019,10 +6027,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield charged\n"
+            "with supernatural energy."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6080,10 +6088,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield that has\n"
+            "been chiseled out of stone."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6141,10 +6149,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield lined\n"
+            "with megaton brick slabs."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6202,10 +6210,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield coated\n"
+            "in splashes of magical paint."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6263,10 +6271,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield carefully\n"
+            "crafted through the art of topiary."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6324,10 +6332,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield that uses\n"
+            "sand hardened with water as its base."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6385,10 +6393,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield sprayed\n"
+            "with various toxic chemicals."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6446,10 +6454,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield made of\n"
+            "incredibly heavy and durable steel."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6507,10 +6515,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield with an\n"
+            "angry visage painted on to scare foes."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6568,10 +6576,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield that evokes\n"
+            "the former king of insects in its style."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6629,10 +6637,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield haunted\n"
+            "by grudge-bearing wisps."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6690,10 +6698,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 416, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "It relies on plated shields with\n"
-            "elemental powers to defend itself.\n"
-            "Without plates, its smug facade fades,\n"
-            "revealing cowardice and fear."),
+            "Any shield Guard uses has its own\n"
+            "strengths and weaknesses to consider.\n"
+            "This Guard carries a shield with spikes\n"
+            "that is preferred by wild fighters."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6751,8 +6759,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .description = COMPOUND_STRING(
             "It can live in dark areas without\n"
             "issue thanks to the light on its\n"
-            "head. Solite's cranium is fragile,\n"
-            "so it tends to move slowly."),
+            "head. Solite's cranium is fragile\n"
+            "and easily prone to burning out."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6969,6 +6977,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_MONSTER),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_NO_GUARD},
         .bodyColor = BODY_COLOR_YELLOW,
+        .noFlip = TRUE,
         .speciesName = _("Cobgoblin"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_COBGOBLIN,
@@ -7318,8 +7327,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 181, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
-            "This foul-tempered Helper will gnash\n"
-            "stubbornly at anything it sees. Its\n"
+            "This foul-tempered Helper will gnaw\n"
+            "stubbornly on anything it sees. Its\n"
             "favorite objects to chew on are\n"
             "anything round and sturdy."),
         .pokemonScale = 256,
@@ -7483,6 +7492,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3, EGG_GROUP_GRASS),
         .abilities = { ABILITY_TANGLING_HAIR, ABILITY_STORM_DRAIN, ABILITY_SYMBIOSIS},
         .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = TRUE,
         .speciesName = _("Deepsee"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DEEPSEE,
@@ -7605,7 +7615,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .description = COMPOUND_STRING(
             "It doesn't look much different than\n"
             "Slippy, and it's not much stronger\n"
-            "either. The new title along is what\n"
+            "either. The new title alone is what\n"
             "carries this vain Helper's ego."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -8382,6 +8392,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE, EGG_GROUP_MONSTER),
         .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_STURDY, ABILITY_STEELY_SPIRIT},
         .bodyColor = BODY_COLOR_RED,
+        .noFlip = TRUE,
         .speciesName = _("Mega Masher"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MEGA_MASHER,
@@ -8620,9 +8631,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16, //temp
         .description = COMPOUND_STRING(
             "Grand Wheelie is considered a luxury\n"
-            "upgrade to the classic Wheelie bike\n"
+            "upgrade to the classic Wheelie Bike\n"
             "thanks to its larger size, tighter\n"
-            "steering, and durable crest."),
+            "steering, and impressive crest."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -10383,10 +10394,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 226, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "Scarfy may look cute and innocent, but\n"
-            "it has an explosive temper. If you make\n"
-            "it mad, it'll transform into a frightening\n"
-            "beast and begin chasing you down!"),
+            "The longer Scarfy stays angry, the more\n"
+            "its blood boils. Eventually, the pressure\n"
+            "becomes so strong that Scarfy will\n"
+            "literally explode out of rage."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11011,6 +11022,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_FLYING),
         .abilities = { ABILITY_FRIEND_GUARD, ABILITY_NONE, ABILITY_MULTISCALE},
         .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = TRUE,
         .speciesName = _("Tootlebam"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TOOTLEBAM,
@@ -11749,10 +11761,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a standard-model lance."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11808,10 +11820,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a blade which can cast flames."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11867,10 +11879,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a blade that can cast ice shards."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11926,10 +11938,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a dewdrop-covered parasol."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -11985,10 +11997,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a pointed wand that casts lightning."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12044,10 +12056,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a broom that whips up twisters."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12103,10 +12115,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a round wand that shoots cutters."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12162,10 +12174,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a stone club from ages past."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12221,10 +12233,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a staff with an extendable fist."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12280,10 +12292,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a trident with crescent magic."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12339,10 +12351,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a thorned log known as Splinter."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12398,10 +12410,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a Doka-branded shovel."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12457,10 +12469,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a twisted wand that casts acids."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12516,10 +12528,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a high-tech spinning drill."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12575,10 +12587,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a blade that can cast darkness."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12634,10 +12646,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a horn fashioned after the Hydra."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12693,10 +12705,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a scythe used to reap souls."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -12752,10 +12764,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 222, // Final
         .weight = 16, //temp
         .description = COMPOUND_STRING(
-            "These mysterious knights are weapon\n"
-            "masters, capable of wielding a variety\n"
-            "of combat tools and adapting to\n"
-            "whatever the situation is."),
+            "These mysterious knights can adapt\n"
+            "mid-battle by switching weapons.\n"
+            "This Bukiset is depicted wielding\n"
+            "a cannon modeled after Gobblin."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -14115,6 +14127,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON, EGG_GROUP_MONSTER),
         .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_NONE, ABILITY_MOXIE},
         .bodyColor = BODY_COLOR_RED,
+        .noFlip = TRUE,
         .speciesName = _("F. Galboros"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_FLAME_GALBOROS,
@@ -14172,6 +14185,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_TOXIC_DEBRIS, ABILITY_NONE, ABILITY_STENCH},
         .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = TRUE,
         .speciesName = _("Miasmoros"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_MIASMOROS,
@@ -14741,6 +14755,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_IRON_FIST, ABILITY_NONE, ABILITY_NONE},
         .bodyColor = BODY_COLOR_WHITE,
+        .noFlip = TRUE,
         .speciesName = _("Master Hand"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HANDS,
@@ -14798,6 +14813,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_CONTRARY, ABILITY_NONE, ABILITY_NONE},
         .bodyColor = BODY_COLOR_WHITE,
+        .noFlip = TRUE,
         .speciesName = _("Crazy Hand"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_HANDS,
@@ -15816,6 +15832,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_MONSTER),
         .abilities = { ABILITY_WIND_POWER, ABILITY_NONE, ABILITY_STEELWORKER},
         .bodyColor = BODY_COLOR_WHITE,
+        .noFlip = TRUE,
         .speciesName = _("Windwhipper"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_WINDWHIPPER,
@@ -16322,6 +16339,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_TRACE, ABILITY_TANGLING_HAIR, ABILITY_SOUL_HEART},
         .bodyColor = BODY_COLOR_PURPLE,
+        .noFlip = TRUE,
         .speciesName = _("P. Sorceress"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_PARA_SORCERESS,
@@ -16379,6 +16397,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_TRACE, ABILITY_TANGLING_HAIR, ABILITY_SOUL_HEART},
         .bodyColor = BODY_COLOR_PINK,
+        .noFlip = TRUE,
         .speciesName = _("Vividria"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_VIVIDRIA,
@@ -18327,9 +18346,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .weight = 16,
         .description = COMPOUND_STRING(
             "Buffahorn curls its horns in and charges\n"
-            "at anyone that looks suspicious. Its bulky\n"
-            "bulkybody allows it to remain unscathed\n"
-            "even when charging off of cliffs."),
+            "at anyone that looks suspicious. Its\n"
+            "bulky body remains unscathed even if\n"
+            "it ends up charging off a cliff."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -18433,6 +18452,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_MONSTER),
         .abilities = { ABILITY_BULLETPROOF, ABILITY_KLUTZ, ABILITY_SHELL_ARMOR},
         .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
         .speciesName = _("Sillydillo"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_SILLYDILLO,
@@ -18489,6 +18509,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON, EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SHELL_ARMOR, ABILITY_ANGER_SHELL, ABILITY_BEAST_BOOST},
         .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
         .speciesName = _("Tortorner"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TORTORNER,
@@ -18546,6 +18567,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON, EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SHELL_ARMOR, ABILITY_ANGER_SHELL, ABILITY_BEAST_BOOST},
         .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = TRUE,
         .speciesName = _("Tortuilding"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_TORTUILDING,
@@ -18610,10 +18632,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 725, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
-            "Balloon-Meister loves to draw attention by\n"
-            "performing tricks. It chose to use bombs\n"
-            "over beach balls thinking the added risk\n"
-            "would make its performances flashier."),
+            "Balloon-Meister loves to draw attention\n"
+            " byperforming tricks. It chose to use\n"
+            "bombs over beach balls, thinking the\n"
+            "added risk would make its act flashier."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19651,10 +19673,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 440, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
-            "These mysterious winged Doomers come\n"
-            "in various elemental forms based on\n"
-            "the environment they inhabit. Their\n"
-            "favorite food to eat is Energy Spheres."),
+            "A red-colored Sphere Doomer that took\n"
+            "on this form from inhabiting a hot\n"
+            "climate. It resembles a fireball as\n"
+            "it flies at high speeds."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19707,10 +19729,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 440, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
-            "These mysterious winged Doomers come\n"
-            "in various elemental forms based on\n"
-            "the environment they inhabit. Their\n"
-            "favorite food to eat is Energy Spheres."),
+            "A green-colored Sphere Doomer that took\n"
+            "on this form from inhabiting a wet\n"
+            "climate. It rains down electric sparks\n"
+            "in much the same way as a thundercloud."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -19763,10 +19785,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .height = 440, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
-            "These mysterious winged Doomers come\n"
-            "in various elemental forms based on\n"
-            "the environment they inhabit. Their\n"
-            "favorite food to eat is Energy Spheres."),
+            "A silver-colored Sphere Doomer that took\n"
+            "on this form from inhabiting a frozen\n"
+            "climate. It also makes its home in\n"
+            "places that have underwent ruin."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -20248,6 +20270,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SLOW_START, ABILITY_NONE, ABILITY_PRESSURE},
         .bodyColor = BODY_COLOR_RED,
+        .noFlip = TRUE,
         .speciesName = _("Dedede Robo"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_DEDEDE_ROBO,
@@ -20302,6 +20325,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_PRISM_ARMOR, ABILITY_TERA_SHELL, ABILITY_AURA_BREAK},
         .bodyColor = BODY_COLOR_PINK,
+        .noFlip = TRUE,
         .speciesName = _("Gemaine"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_GEMAINE,
@@ -20312,7 +20336,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "A tremendous amount of power is sealed in\n"
             "its crystalline body, so it makes itself\n"
             "scarce, only appearing to those in dire\n"
-            "straits as a sign to never give up."),
+            "straits as a symbol of perserverance."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,

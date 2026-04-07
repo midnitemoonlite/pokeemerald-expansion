@@ -13,7 +13,36 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_INDOOR_1",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_BANDANA_WADDLE_DEE",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 7,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "KirbysHouse_Indoors_TalkToBandanaWaddleDee",
+      "flag": "FLAG_HIDE_BANDANA_WADDLE_DEE_KIRBYS_HOUSE_INDOORS"
+    },
+    {
+      "local_id": "LOCALID_GOOEY",
+      "graphics_id": "OBJ_EVENT_GFX_MOM",
+      "x": 6,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "KirbysHouse_Indoors_TalkToGooey",
+      "flag": "0"
+    }
+  ],
   "warp_events": [
     {
       "x": 6,
@@ -30,7 +59,62 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_KIRBYS_HOUSE_STATE",
+      "var_value": "0",
+      "script": "KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_KIRBYS_HOUSE_STATE",
+      "var_value": "0",
+      "script": "KirbysHouse_Indoors_BandanaDeeEntranceTopLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_KIRBYS_HOUSE_STATE",
+      "var_value": "0",
+      "script": "KirbysHouse_Indoors_BandanaDeeEntranceTopRight"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_KIRBYS_HOUSE_STATE",
+      "var_value": "0",
+      "script": "KirbysHouse_Indoors_BandanaDeeEntranceBottomRight"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_KIRBYS_HOUSE_STATE",
+      "var_value": "1",
+      "script": "KirbysHouse_Indoors_EventScript_DontLeave"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_KIRBYS_HOUSE_STATE",
+      "var_value": "1",
+      "script": "KirbysHouse_Indoors_EventScript_DontLeave"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",
@@ -63,6 +147,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "KirbysHouse_Indoors_EventScript_GameCube"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "KirbysHouse_Indoors_EventScript_Television"
     }
   ]
 }
