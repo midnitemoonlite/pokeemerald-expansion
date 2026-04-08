@@ -2005,7 +2005,10 @@ bool8 ScrCmd_showmonpic(struct ScriptContext *ctx)
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
 
-    ScriptMenu_ShowPokemonPic(species, x, y);
+    if (!gPaletteFade.active)
+    {
+        ScriptMenu_ShowPokemonPic(species, x, y);
+    }
     return FALSE;
 }
 

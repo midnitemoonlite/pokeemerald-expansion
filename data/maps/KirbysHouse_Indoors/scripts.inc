@@ -51,629 +51,647 @@ KirbysHouse_Indoors_EventScript_GameCube::
 # 26 "data/maps/KirbysHouse_Indoors/scripts.pory"
 
 # 27 "data/maps/KirbysHouse_Indoors/scripts.pory"
-KirbysHouse_Indoors_EventScript_Fridge::
-# 28 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_Text_TheFridge, MSGBOX_SIGN
-# 29 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	end
-# 30 "data/maps/KirbysHouse_Indoors/scripts.pory"
-
-# 31 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_EventScript_WallClock::
-# 32 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 28 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	goto_if_set FLAG_SET_WALL_CLOCK, KirbysHouse_Indoors_EventScript_CheckWallClock
-# 33 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 29 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_Text_ClockIsStopped, MSGBOX_DEFAULT
-# 34 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 30 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	call KirbysHouse_Indoors_EventScript_SetWallClock
-# 35 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 31 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	delay 30
-# 36 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 32 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	setflag FLAG_SET_WALL_CLOCK
-# 37 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 33 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	playse SE_EXIT
-# 38 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 34 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	removeobject VAR_0x8008
-# 39 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 35 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
-# 40 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 36 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	end
-# 41 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 37 "data/maps/KirbysHouse_Indoors/scripts.pory"
 
-# 42 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 38 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_EventScript_CheckWallClock::
-# 43 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 39 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	incrementgamestat GAME_STAT_CHECKED_CLOCK
-# 44 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 40 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 45 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 41 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	special Special_ViewWallClock
-# 46 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 42 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	waitstate
-# 47 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 43 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
-# 48 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 44 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	end
-# 49 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 45 "data/maps/KirbysHouse_Indoors/scripts.pory"
 
-# 50 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 46 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_EventScript_SetWallClock::
-# 51 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 47 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	fadescreen FADE_TO_BLACK
-# 52 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 48 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	special StartWallClock
-# 53 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 49 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	waitstate
-# 54 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 50 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	return
-# 55 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 51 "data/maps/KirbysHouse_Indoors/scripts.pory"
 
-# 56 "data/maps/KirbysHouse_Indoors/scripts.pory"
-KirbysHouse_Indoors_Text_TheFridge:
-# 57 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "The fridge is packed to the brim\n"
-# 58 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "with delicious-looking foods...!\p"
-# 59 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "You resist the temptation.$"
-# 60 "data/maps/KirbysHouse_Indoors/scripts.pory"
-
-# 61 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 52 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_Text_ItsAGameCube:
-# 62 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 53 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "It's a Nintendo GameCube.\p"
-# 63 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 54 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "A Game Boy Advance is connected to\n"
-# 64 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 55 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "serve as the Controller.$"
-# 65 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 56 "data/maps/KirbysHouse_Indoors/scripts.pory"
 
-# 66 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 57 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_Text_ClockIsStopped:
-# 67 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 58 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "It's a brand-new clock.\p"
-# 68 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 59 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "Let's set it and start it!$"
 
-KirbysHouse_Indoors_TalkToGooey::
-# 73 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	faceplayer
-# 74 "data/maps/KirbysHouse_Indoors/scripts.pory"
+KirbysHouse_Indoors_EventScript_Fridge::
+# 64 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	lock
-# 75 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 65 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_EventScript_Fridge_Text_0
+# 71 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	release
+	return
+
+
+KirbysHouse_Indoors_TalkToGooey::
+# 76 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	faceplayer
+# 77 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	lock
+# 78 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 0
 	goto_if_eq KirbysHouse_Indoors_TalkToGooey_1
-# 82 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 85 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 1
 	goto_if_eq KirbysHouse_Indoors_TalkToGooey_2
-# 92 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 95 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 2
 	goto_if_eq KirbysHouse_Indoors_TalkToGooey_3
+# 103 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	compare VAR_KIRBYS_HOUSE_STATE, 3
+	goto_if_eq KirbysHouse_Indoors_TalkToGooey_4
 	return
 
 KirbysHouse_Indoors_TalkToGooey_1:
-# 77 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_TalkToGooey_Text_0
 # 80 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_TalkToGooey_Text_0
+# 83 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	release
 	return
 
 KirbysHouse_Indoors_TalkToGooey_2:
-# 84 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 87 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_TalkToGooey_Text_1
-# 88 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 91 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	release
-# 89 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 92 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
-# 90 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 93 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	turnobject LOCALID_GOOEY, DIR_NORTH
 	return
 
 KirbysHouse_Indoors_TalkToGooey_3:
-# 94 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 97 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_TalkToGooey_Text_2
-# 98 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 101 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	release
+	return
+
+KirbysHouse_Indoors_TalkToGooey_4:
+# 105 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_TalkToGooey_Text_3
+# 109 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	release
 	return
 
 
 KirbysHouse_Indoors_TalkToBandanaWaddleDee::
-# 104 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 115 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	faceplayer
-# 105 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 116 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	lock
-# 106 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 117 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_TalkToBandanaWaddleDee_Text_0
-# 108 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 119 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	release
-# 109 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 120 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH
 	return
 
 
 KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft::
-# 114 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 125 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 0
 	goto_if_eq KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_1
 	return
 
 KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_1:
-# 116 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	lockall
-# 117 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
-# 118 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setobjectxyperm LOCALID_BANDANA_WADDLE_DEE, 6, 13
-# 119 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	addobject LOCALID_BANDANA_WADDLE_DEE
-# 120 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	playse SE_EXIT
-# 121 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	delay 35
-# 122 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_WEST
-# 123 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_PLAYER, KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_Movement_0
-# 126 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
 # 127 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_BandanaDeeIntroduction
+	lockall
 # 128 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	closemessage
+	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
 # 129 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_Movement_1
+	setobjectxyperm LOCALID_BANDANA_WADDLE_DEE, 6, 13
+# 130 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	addobject LOCALID_BANDANA_WADDLE_DEE
+# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	playse SE_EXIT
+# 132 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	delay 35
 # 133 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
+	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_WEST
 # 134 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_PLAYER, KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_Movement_0
+# 137 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 138 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_BandanaDeeIntroduction
+# 139 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	closemessage
+# 140 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_Movement_1
+# 144 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 145 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	setvar VAR_KIRBYS_HOUSE_STATE, 1
-# 135 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 146 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
 	return
 
 
 KirbysHouse_Indoors_BandanaDeeEntranceTopLeft::
-# 141 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 152 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 0
 	goto_if_eq KirbysHouse_Indoors_BandanaDeeEntranceTopLeft_1
 	return
 
 KirbysHouse_Indoors_BandanaDeeEntranceTopLeft_1:
-# 143 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 154 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	lockall
-# 144 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
-# 145 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setobjectxyperm LOCALID_BANDANA_WADDLE_DEE, 6, 13
-# 146 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	addobject LOCALID_BANDANA_WADDLE_DEE
-# 147 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	playse SE_EXIT
-# 148 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	delay 35
-# 149 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_BandanaDeeIntroduction
-# 150 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	closemessage
-# 151 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_Movement_1
 # 155 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
+	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
 # 156 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setvar VAR_KIRBYS_HOUSE_STATE, 1
+	setobjectxyperm LOCALID_BANDANA_WADDLE_DEE, 6, 13
 # 157 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	addobject LOCALID_BANDANA_WADDLE_DEE
+# 158 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	playse SE_EXIT
+# 159 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	delay 35
+# 160 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_SOUTH
+# 161 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_BandanaDeeIntroduction
+# 162 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	closemessage
+# 163 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_Movement_1
+# 167 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 168 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	setvar VAR_KIRBYS_HOUSE_STATE, 1
+# 169 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
 	return
 
 
 KirbysHouse_Indoors_BandanaDeeEntranceTopRight::
-# 163 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 0
 	goto_if_eq KirbysHouse_Indoors_BandanaDeeEntranceTopRight_1
 	return
 
 KirbysHouse_Indoors_BandanaDeeEntranceTopRight_1:
-# 165 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	lockall
-# 166 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
-# 167 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setobjectxyperm LOCALID_BANDANA_WADDLE_DEE, 7, 13
-# 168 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	addobject LOCALID_BANDANA_WADDLE_DEE
-# 169 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	playse SE_EXIT
-# 170 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	delay 35
-# 171 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_BandanaDeeIntroduction
-# 172 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	closemessage
-# 173 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_BandanaDeeEntranceTopRight_Movement_0
 # 177 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
+	lockall
 # 178 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setvar VAR_KIRBYS_HOUSE_STATE, 1
+	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
 # 179 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	setobjectxyperm LOCALID_BANDANA_WADDLE_DEE, 7, 13
+# 180 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	addobject LOCALID_BANDANA_WADDLE_DEE
+# 181 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	playse SE_EXIT
+# 182 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	delay 35
+# 183 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_SOUTH
+# 184 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_BandanaDeeIntroduction
+# 185 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	closemessage
+# 186 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_BandanaDeeEntranceTopRight_Movement_0
+# 190 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 191 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	setvar VAR_KIRBYS_HOUSE_STATE, 1
+# 192 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
 	return
 
 
 KirbysHouse_Indoors_BandanaDeeEntranceBottomRight::
-# 185 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 198 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 0
 	goto_if_eq KirbysHouse_Indoors_BandanaDeeEntranceBottomRight_1
 	return
 
 KirbysHouse_Indoors_BandanaDeeEntranceBottomRight_1:
-# 187 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	lockall
-# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
-# 189 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setobjectxyperm LOCALID_BANDANA_WADDLE_DEE, 7, 13
-# 190 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	addobject LOCALID_BANDANA_WADDLE_DEE
-# 191 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	playse SE_EXIT
-# 192 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	delay 35
-# 193 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_EAST
-# 194 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_PLAYER, KirbysHouse_Indoors_BandanaDeeEntranceBottomRight_Movement_0
-# 197 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
-# 198 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_BandanaDeeIntroduction
-# 199 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	closemessage
 # 200 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_BandanaDeeEntranceBottomRight_Movement_1
+	lockall
+# 201 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP
+# 202 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	setobjectxyperm LOCALID_BANDANA_WADDLE_DEE, 7, 13
+# 203 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	addobject LOCALID_BANDANA_WADDLE_DEE
+# 204 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	playse SE_EXIT
 # 205 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
+	delay 35
 # 206 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setvar VAR_KIRBYS_HOUSE_STATE, 1
+	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_EAST
 # 207 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_PLAYER, KirbysHouse_Indoors_BandanaDeeEntranceBottomRight_Movement_0
+# 210 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 211 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_BandanaDeeIntroduction
+# 212 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	closemessage
+# 213 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_BandanaDeeEntranceBottomRight_Movement_1
+# 218 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 219 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	setvar VAR_KIRBYS_HOUSE_STATE, 1
+# 220 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
 	return
 
 
 KirbysHouse_Indoors_EventScript_DontLeave::
-# 213 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 226 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 1
 	goto_if_eq KirbysHouse_Indoors_EventScript_DontLeave_1
 	return
 
 KirbysHouse_Indoors_EventScript_DontLeave_1:
-# 215 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	lock
-# 216 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_SOUTH
-# 217 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
-# 218 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
-# 219 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_EventScript_DontLeave_Text_0
-# 224 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	closemessage
-# 225 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_PLAYER, KirbysHouse_Indoors_EventScript_DontLeave_Movement_0
 # 228 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
+	lock
 # 229 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH
+	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_SOUTH
 # 230 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+# 231 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 232 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_EventScript_DontLeave_Text_0
+# 237 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	closemessage
+# 238 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_PLAYER, KirbysHouse_Indoors_EventScript_DontLeave_Movement_0
+# 241 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 242 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH
+# 243 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	release
 	return
 
 
 KirbysHouse_Indoors_EventScript_Television::
-# 236 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 249 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 1
 	goto_if_eq KirbysHouse_Indoors_EventScript_Television_1
-# 342 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 362 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	lockall
-# 343 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 363 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_4
-# 344 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 364 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
 	return
 
 KirbysHouse_Indoors_EventScript_Television_1:
-# 238 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 251 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	lockall
-# 239 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 252 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	setobjectmovementtype LOCALID_GOOEY, MOVEMENT_TYPE_LOOK_AROUND
-# 240 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 253 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	fadenewbgm MUS_DUMMY
-# 241 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 254 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	special TurnOnTVScreen
-# 242 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 255 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH
-# 243 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 256 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	turnobject LOCALID_GOOEY, DIR_NORTH
-# 244 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 257 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_PLAYER, KirbysHouse_Indoors_EventScript_Television_Movement_0
-# 248 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 261 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	delay 60
-# 249 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 262 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	playbgm MUS_ENCOUNTER_INTERVIEWER, FALSE
-# 250 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 263 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_0
-# 267 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 284 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	playSE SE_PIN
-# 268 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 285 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
-# 269 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 286 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark
-# 270 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 287 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	waitmovement 0
-# 271 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 288 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_1
-# 294 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	playSE SE_PIN
-# 295 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
-# 296 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark
-# 297 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
-# 298 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_EventScript_Television_Text_2
-# 311 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	special TurnOffTVScreen
-# 312 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	fadedefaultbgm
-# 313 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	delay 35
 # 314 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	playSE SE_PIN
 # 315 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, Common_Movement_WalkInPlaceFasterLeft
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
 # 316 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark
 # 317 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	msgbox KirbysHouse_Indoors_EventScript_Television_Text_3
-# 329 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	closemessage
-# 330 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_EventScript_Television_Movement_1
-# 333 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	waitmovement 0
+# 318 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_EventScript_Television_Text_2
+# 332 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	special TurnOffTVScreen
+# 333 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	fadedefaultbgm
 # 334 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	playse SE_EXIT
-# 335 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	removeobject LOCALID_BANDANA_WADDLE_DEE
-# 336 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	setvar VAR_KIRBYS_HOUSE_STATE, 2
-# 337 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	delay 35
+# 335 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+# 336 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_BANDANA_WADDLE_DEE, Common_Movement_WalkInPlaceFasterLeft
+# 337 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
 # 338 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	msgbox KirbysHouse_Indoors_EventScript_Television_Text_3
+# 349 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	closemessage
+# 350 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_EventScript_Television_Movement_1
+# 353 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
+# 354 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	playse SE_EXIT
+# 355 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	removeobject LOCALID_BANDANA_WADDLE_DEE
+# 356 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	setvar VAR_KIRBYS_HOUSE_STATE, 2
+# 357 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	delay 35
+# 358 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
 	return
 
 
-# 123 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 134 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_Movement_0:
-# 124 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 135 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 129 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 140 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft_Movement_1:
-# 130 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 141 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_right
-# 130 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 141 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_right
-# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 142 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 142 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 142 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 142 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 142 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 142 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 142 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 131 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 142 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
 	step_end
 
-# 173 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 186 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_BandanaDeeEntranceTopRight_Movement_0:
-# 174 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 187 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_right
-# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 175 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 188 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
 	step_end
 
-# 194 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 207 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_BandanaDeeEntranceBottomRight_Movement_0:
-# 195 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 208 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 200 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 213 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_BandanaDeeEntranceBottomRight_Movement_1:
-# 201 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 214 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 202 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 215 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_right
-# 203 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 216 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 203 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 216 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 203 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 216 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 203 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 216 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 203 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 216 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 203 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 216 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
-# 203 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 216 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
 	step_end
 
-# 225 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 238 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_EventScript_DontLeave_Movement_0:
-# 226 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 239 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_up
 	step_end
 
-# 244 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 257 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_EventScript_Television_Movement_0:
-# 245 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 258 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 246 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 259 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 330 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 350 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_EventScript_Television_Movement_1:
-# 331 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 351 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 331 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 351 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 331 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 351 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 331 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 351 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 331 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 351 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 331 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 351 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 331 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 351 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 331 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 351 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
 	step_end
 
+KirbysHouse_Indoors_EventScript_Fridge_Text_0:
+# 65 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "The fridge is packed to the brim with\n"
+	.string "delicious-looking foods…!\p"
+	.string "You resist your urges and close the\n"
+	.string "fridge door.$"
+
 KirbysHouse_Indoors_TalkToGooey_Text_0:
-# 77 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 80 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo?\p"
 	.string "It's Gooey. He lives here too.$"
 
 KirbysHouse_Indoors_TalkToGooey_Text_1:
-# 84 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo...\p"
-	.string "It's Gooey. He's fixated on the\n"
+# 87 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo…\p"
+	.string "It's Gooey. He's staring intently at the\n"
 	.string "television.$"
 
 KirbysHouse_Indoors_TalkToGooey_Text_2:
-# 94 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 97 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo!\p"
 	.string "It's Gooey. Doesn't seem like he\n"
-	.string "understood the news at all...$"
+	.string "understood the news at all…$"
+
+KirbysHouse_Indoors_TalkToGooey_Text_3:
+# 105 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goooo?\p"
+	.string "It's Gooey. He seems curious about\n"
+	.string "the noise outside.$"
 
 KirbysHouse_Indoors_TalkToBandanaWaddleDee_Text_0:
-# 106 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 117 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} What are you\n"
 	.string "waiting for? Let's turn on the TV!$"
 
 KirbysHouse_Indoors_EventScript_DontLeave_Text_0:
-# 219 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!\n"
-	.string "Where are you going?\p"
-	.string "Turn on the TV so we can see\n"
-	.string "what the king has to say!$"
+# 232 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby! Where are\n"
+	.string "you going? Don't walk out on me!\p"
+	.string "This broadcast is supposed to be\n"
+	.string "important. We gotta watch it!$"
 
 KirbysHouse_Indoors_EventScript_Television_Text_0:
-# 250 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 263 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "You're watching Channel PPP!\p"
-	.string "I'm Reporter Waddle Dee, here to bring\n"
-	.string "you breaking news from none other than\l"
-	.string "the king of Dream Land! Take it away,\l"
-	.string "Your Highness!\p"
-	.string "{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} Howdy, everyone! Now\n"
-	.string "listen up; have you ever wondered what\l"
-	.string "being king is like? Working hard to\l"
-	.string "make sure everyone else gets to live\l"
-	.string "carefree, peaceful lives?\p"
-	.string "Well, now you've got the chance to\n"
-	.string "find out for yourself! Introducing...\p"
+	.string "I'm Reporter Waddle Dee, here to deliver\n"
+	.string "breaking news from none other than the\l"
+	.string "king of Dream Land himself!\p"
+	.string "Take it away, Your Highness!\p"
+	.string "{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} Howdy, everyone! I've got\n"
+	.string "a big announcement, so listen up!\p"
+	.string "Have ya ever wondered what goes into\n"
+	.string "being a great king?\p"
+	.string "Working hard to make sure everyone\n"
+	.string "else lives carefree, peaceful lives?\p"
+	.string "Well, now I'm giving ya the chance to\n"
+	.string "find out for yourself! Introducing…\p"
 	.string "{COLOR RED}DEDEDE'S ROYAL ROYALE!{COLOR DARK_GRAY}$"
 
 KirbysHouse_Indoors_EventScript_Television_Text_1:
-# 271 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 288 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} That's right! I've\n"
-	.string "organized a little game to test the\l"
-	.string "qualities that make a great king.\p"
-	.string "Strong leadership! A sharp mind! And\n"
-	.string "the ability to command others well!\p"
-	.string "All over Dream Land, Helpers with\n"
-	.string "special powers have popped up.\p"
-	.string "If you can forge a bond with them,\n"
-	.string "they'll join your side! Then, you\l"
-	.string "can pit your team against others\l"
-	.string "at the various Arenas I've built.\p"
+	.string "organized a little game to test you all\l"
+	.string "on the qualities that make a good ruler.\p"
+	.string "Impressive strength! A sharp mind! And\n"
+	.string "a knack for decisive leadership!\p"
+	.string "Maybe you noticed these special\n"
+	.string "Helpers popping up all over Dream Land.\p"
+	.string "Recruit them to your side, and you can\n"
+	.string "command their special powers!\p"
+	.string "Then, you can pit your teams against\n"
+	.string "others' in some friendly competition at\l"
+	.string "the various Arenas my crew are building.\p"
 	.string "You'll earn Brooches for each Arena\n"
-	.string "you conquer. The first competitor\l"
-	.string "to bring all the Brooches to Mt.\l"
-	.string "Dedede and win at my Dedede Arena\l"
-	.string "will win a veeery special prize...\p"
-	.string "Why, you'll be crowned the brand\n"
-	.string "new {COLOR RED}KING OF DREAM LAND{COLOR DARK_GRAY}! Ha ha ha!$"
+	.string "you conquer. \p"
+	.string "The first competitor to bring all the\n"
+	.string "Brooches to Mt. Dedede and win at my\l"
+	.string "Dedede Arena will win a little prize…\p"
+	.string "Why, you'll be crowned the brand new\n"
+	.string "{COLOR RED}KING OF DREAM LAND{COLOR DARK_GRAY}! Ha ha ha!$"
 
 KirbysHouse_Indoors_EventScript_Television_Text_2:
-# 298 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} ...psst, assistant! That\n"
-	.string "fine print saying 'for one day only'\l"
-	.string "should be smaller! Fix that, yeah!?\p"
-	.string "Ahem... anyways, that's all I've\n"
-	.string "got for now. I'll be explainin'\l"
-	.string "more at Waddle Dee Town soon.\p"
-	.string "I want you all to learn about the\n"
-	.string "trust between leader and subject,\l"
-	.string "work together to prove your skill,\l"
-	.string "and come to appreciate what it\l"
-	.string "takes to be a king! Peace!$"
+# 318 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} …psst, hey! That fine\n"
+	.string "print saying “ for one day only” should\l"
+	.string "be smaller! Fix that, yeah!?\p"
+	.string "Ahem… anywho, that's all I got for now.\p"
+	.string "I'll be making an appearance at Waddle\n"
+	.string "Dee Town soon if you have questions.\p"
+	.string "I want you all to learn about the trust\n"
+	.string "and skill it takes to be a real leader!\p"
+	.string "Maybe then you'll thank me for all my\n"
+	.string "hard work! Ha ha ha! Peace!$"
 
 KirbysHouse_Indoors_EventScript_Television_Text_3:
-# 317 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Wow...\n"
+# 338 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Wow…\n"
 	.string "That was a lot to take in, huh?\p"
-	.string "I wonder what led the Great\n"
-	.string "King to this game of his.\p"
-	.string "And what did he mean by\n"
-	.string "Helpers appearing here?\p"
-	.string "I guess I should head back\n"
-	.string "to Waddle Dee Town and\l"
-	.string "find out more there...$"
+	.string "I wonder how the Great King came up\n"
+	.string "with this little game of his.\p"
+	.string "And what did he mean by “Helpers”\n"
+	.string "appearing all over Dream Land, anyways?\p"
+	.string "I guess I should head back to Waddle\n"
+	.string "Dee Town and learn what I can…$"
 
 KirbysHouse_Indoors_EventScript_Television_Text_4:
-# 343 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "It's a television. It's not used much...$"
+# 363 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "It's a television. It's not used much…$"
 
 KirbysHouse_Indoors_BandanaDeeIntroduction::
-# 348 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 368 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Hey, Kirby!\p"
-	.string "Glad to see you're awake. I was\n"
-	.string "worried you'd oversleep again!\p"
-	.string "I came over because there's an\n"
-	.string "important broadcast from King\l"
-	.string "Dedede airing soon.\p"
-	.string "I'm not sure what's going on,\n"
-	.string "but the whole town's been in\l"
-	.string "an uproar, so it must be big!\l"
-	.string "Let's check it out!$"
+	.string "Glad to see you're awake. I thought you\n"
+	.string "might have overslept again!\p"
+	.string "I came by because I heard there's an\n"
+	.string "important broadcast airing soon.\p"
+	.string "I'm not sure what it's about, but it had\n"
+	.string "the whole town in an uproar!\p"
+	.string "What do you say we check it out\n"
+	.string "tgoether and see what's going on, yeah?$"

@@ -840,16 +840,18 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_SWING_CONVEX,
+        .frontAnimId = ANIM_V_SHAKE_SLOW,
+        .enemyMonElevation = 13,
         .backPic = gMonBackPic_Pupa,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         .palette = gMonPalette_Pupa,
         .shinyPalette = gMonShinyPalette_Pupa,
         .iconSprite = gMonIcon_Pupa,
         .iconPalIndex = 2,
         FOOTPRINT(Pupa)
+        SHADOW(-1, 20, SHADOW_SIZE_S)
         .levelUpLearnset = sPupaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 13, SPECIES_BUTTERFLY_SOLO}),
@@ -12883,7 +12885,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "Rumors speak of a gargantuan monster\n"
             "that unleashes swarms of minions with\n"
             "its ice breath, but Lobzilla hardly\n"
-            "seems capable of such disasters..."),
+            "seems capable of such disasters…"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -21198,7 +21200,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
             "The rarest of Helpers, which sparked\n"
             "much confusion due to its more than\n"
             "passing resemblance to Kirby. It doesn't\n"
-            "seem to be particularly special..."),
+            "seem to be particularly special…"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,

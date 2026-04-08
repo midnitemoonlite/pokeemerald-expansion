@@ -24,10 +24,6 @@ KirbysHouse_Indoors_EventScript_GameCube::
 	msgbox KirbysHouse_Indoors_Text_ItsAGameCube, MSGBOX_SIGN
 	end
 
-KirbysHouse_Indoors_EventScript_Fridge::
-	msgbox KirbysHouse_Indoors_Text_TheFridge, MSGBOX_SIGN
-	end
-
 KirbysHouse_Indoors_EventScript_WallClock::
 	goto_if_set FLAG_SET_WALL_CLOCK, KirbysHouse_Indoors_EventScript_CheckWallClock
 	msgbox KirbysHouse_Indoors_Text_ClockIsStopped, MSGBOX_DEFAULT
@@ -53,11 +49,6 @@ KirbysHouse_Indoors_EventScript_SetWallClock::
 	waitstate
 	return
 
-KirbysHouse_Indoors_Text_TheFridge:
-	.string "The fridge is packed to the brim\n"
-	.string "with delicious-looking foods...!\p"
-	.string "You resist the temptation.$"
-
 KirbysHouse_Indoors_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"
 	.string "A Game Boy Advance is connected to\n"
@@ -67,6 +58,18 @@ KirbysHouse_Indoors_Text_ClockIsStopped:
 	.string "It's a brand-new clock.\p"
 	.string "Let's set it and start it!$"
 `
+
+script KirbysHouse_Indoors_EventScript_Fridge
+{
+	lock
+	msgbox("The fridge is packed to the brim with
+			delicious-looking foods\.!
+			
+			You resist your urges and close the
+			fridge door."
+			)
+	release
+}
 
 script KirbysHouse_Indoors_TalkToGooey
 {
@@ -81,9 +84,9 @@ script KirbysHouse_Indoors_TalkToGooey
 	}
 	elif(var(VAR_KIRBYS_HOUSE_STATE) == 1)
 	{
-		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo...
+		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo\.
 				
-				It's Gooey. He's fixated on the
+				It's Gooey. He's staring intently at the
 				television.")
 		release
 		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP)
@@ -94,7 +97,15 @@ script KirbysHouse_Indoors_TalkToGooey
 		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo!
 				
 				It's Gooey. Doesn't seem like he
-				understood the news at all...")
+				understood the news at all\.")
+		release
+	}
+	elif(var(VAR_KIRBYS_HOUSE_STATE) == 3)
+	{
+		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goooo?
+				
+				It's Gooey. He seems curious about
+				the noise outside.")
 		release
 	}
 }
@@ -146,6 +157,7 @@ script KirbysHouse_Indoors_BandanaDeeEntranceTopLeft
 		addobject(LOCALID_BANDANA_WADDLE_DEE)
 		playse(SE_EXIT)
 		delay(35)
+		turnobject(LOCALID_PLAYER, DIR_SOUTH)
 		msgbox(KirbysHouse_Indoors_BandanaDeeIntroduction)
 		closemessage
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
@@ -168,6 +180,7 @@ script KirbysHouse_Indoors_BandanaDeeEntranceTopRight
 		addobject(LOCALID_BANDANA_WADDLE_DEE)
 		playse(SE_EXIT)
 		delay(35)
+		turnobject(LOCALID_PLAYER, DIR_SOUTH)
 		msgbox(KirbysHouse_Indoors_BandanaDeeIntroduction)
 		closemessage
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
@@ -216,11 +229,11 @@ script KirbysHouse_Indoors_EventScript_DontLeave
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_SOUTH)
 		applymovement(LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
 		waitmovement(0)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!
-				Where are you going?
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby! Where are
+				you going? Don't walk out on me!
 				
-				Turn on the TV so we can see
-				what the king has to say!")
+				This broadcast is supposed to be
+				important. We gotta watch it!")
 		closemessage
 		applymovement(LOCALID_PLAYER, moves(
 			walk_up
@@ -249,19 +262,23 @@ script KirbysHouse_Indoors_EventScript_Television
 		playbgm(MUS_ENCOUNTER_INTERVIEWER, FALSE)
 		msgbox("You're watching Channel PPP!
 
-				I'm Reporter Waddle Dee, here to bring
-				you breaking news from none other than
-				the king of Dream Land! Take it away,
-				Your Highness!
+				I'm Reporter Waddle Dee, here to deliver
+				breaking news from none other than the
+				king of Dream Land himself!
+
+				Take it away, Your Highness!
 				
-				{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} Howdy, everyone! Now
-				listen up; have you ever wondered what
-				being king is like? Working hard to
-				make sure everyone else gets to live
-				carefree, peaceful lives?
+				{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} Howdy, everyone! I've got
+				a big announcement, so listen up!
 				
-				Well, now you've got the chance to
-				find out for yourself! Introducing...
+				Have ya ever wondered what goes into
+				being a great king?
+
+				Working hard to make sure everyone
+				else lives carefree, peaceful lives?
+				
+				Well, now I'm giving ya the chance to
+				find out for yourself! Introducing\.
 				
 				{COLOR RED}DEDEDE'S ROYAL ROYALE!{COLOR DARK_GRAY}")
 		playSE(SE_PIN)
@@ -269,63 +286,66 @@ script KirbysHouse_Indoors_EventScript_Television
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
 		msgbox("{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} That's right! I've
-				organized a little game to test the
-				qualities that make a great king.
+				organized a little game to test you all
+				on the qualities that make a good ruler.
 				
-				Strong leadership! A sharp mind! And
-				the ability to command others well!
+				Impressive strength! A sharp mind! And
+				a knack for decisive leadership!
 				
-				All over Dream Land, Helpers with
-				special powers have popped up.
+				Maybe you noticed these special
+				Helpers popping up all over Dream Land.
+
+				Recruit them to your side, and you can
+				command their special powers!
 				
-				If you can forge a bond with them,
-				they'll join your side! Then, you
-				can pit your team against others
-				at the various Arenas I've built.
+				Then, you can pit your teams against
+				others' in some friendly competition at
+				the various Arenas my crew are building.
 				
 				You'll earn Brooches for each Arena
-				you conquer. The first competitor
-				to bring all the Brooches to Mt.
-				Dedede and win at my Dedede Arena
-				will win a veeery special prize...
+				you conquer. 
 				
-				Why, you'll be crowned the brand
-				new {COLOR RED}KING OF DREAM LAND{COLOR DARK_GRAY}! Ha ha ha!")
+				The first competitor to bring all the
+				Brooches to Mt. Dedede and win at my
+				Dedede Arena will win a little prize\.
+				
+				Why, you'll be crowned the brand new
+				{COLOR RED}KING OF DREAM LAND{COLOR DARK_GRAY}! Ha ha ha!")
 		playSE(SE_PIN)
 		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
-		msgbox("{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} ...psst, assistant! That
-				fine print saying 'for one day only'
-				should be smaller! Fix that, yeah!?
+		msgbox("{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} \.psst, hey! That fine
+				print saying \qo for one day only\qc should
+				be smaller! Fix that, yeah!?
 				
-				Ahem... anyways, that's all I've
-				got for now. I'll be explainin'
-				more at Waddle Dee Town soon.
+				Ahem\. anywho, that's all I got for now.
+
+				I'll be making an appearance at Waddle
+				Dee Town soon if you have questions.
 				
-				I want you all to learn about the
-				trust between leader and subject,
-				work together to prove your skill,
-				and come to appreciate what it
-				takes to be a king! Peace!")
+				I want you all to learn about the trust
+				and skill it takes to be a real leader!
+				
+				Maybe then you'll thank me for all my
+				hard work! Ha ha ha! Peace!")
 		special(TurnOffTVScreen)
 		fadedefaultbgm
 		delay(35)
 		applymovement(LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_WalkInPlaceFasterLeft)
 		waitmovement(0)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Wow...
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Wow\.
 				That was a lot to take in, huh?
 
-				I wonder what led the Great
-				King to this game of his.
+				I wonder how the Great King came up
+				with this little game of his.
 				
-				And what did he mean by
-				Helpers appearing here?
+				And what did he mean by \qoHelpers\qc
+				appearing all over Dream Land, anyways?
 
-				I guess I should head back
-				to Waddle Dee Town and
-				find out more there...")
+				I guess I should head back to Waddle
+				Dee Town and learn what I can\.")
 		closemessage
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
 			walk_down * 8
@@ -340,7 +360,7 @@ script KirbysHouse_Indoors_EventScript_Television
 	else
 	{
 		lockall
-		msgbox("It's a television. It's not used much...")
+		msgbox("It's a television. It's not used much\.")
 		releaseall
 	}
 }
@@ -349,15 +369,15 @@ text KirbysHouse_Indoors_BandanaDeeIntroduction
 {
 	"{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Hey, Kirby!
 
-	Glad to see you're awake. I was
-	worried you'd oversleep again!
+	Glad to see you're awake. I thought you
+	might have overslept again!
 				
-	I came over because there's an
-	important broadcast from King
-	Dedede airing soon.
+	I came by because I heard there's an
+	important broadcast airing soon.
 
-	I'm not sure what's going on,
-	but the whole town's been in
-	an uproar, so it must be big!
-	Let's check it out!"
+	I'm not sure what it's about, but it had
+	the whole town in an uproar!
+
+	What do you say we check it out
+	tgoether and see what's going on, yeah?"
 }

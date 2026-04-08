@@ -1,26 +1,313 @@
 raw `
 KirbysHouse_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, KirbysHouse_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, KirbysHouse_OnFrame
 	.byte 0
+
+KirbysHouse_OnTransition:
+	call_if_eq VAR_KIRBYS_HOUSE_STATE, 3, KirbysHouse_EventScript_MoveIntroObjects
+	end
+
+KirbysHouse_OnFrame::
+	map_script_2 VAR_KIRBYS_HOUSE_STATE, 2, KirbysHouse_EventScript_ExitHouseFirstTime
+	.2byte 0
 
 KirbysHouse_EventScript_HouseSign::
 	msgbox KirbysHouse_Text_KirbysHouse, MSGBOX_SIGN
 	end
 
-KirbysHouse_EventScript_Gooey::
-	msgbox KirbysHouse_Text_Goo, MSGBOX_NPC
-	end
-
-KirbysHouse_EventScript_BandanaDee::
-	msgbox KirbysHouse_Text_HelloKirby, MSGBOX_NPC
-	end
-
 KirbysHouse_Text_KirbysHouse:
 	.string "KIRBY'S HOUSE\n"
 	.string "Built by thankful Dream Land residents.$"
-
-KirbysHouse_Text_Goo:
-	.string "...goo?$"
-
-KirbysHouse_Text_HelloKirby:
-	.string "BANDANA WADDLE DEE: Hiya, Kirby!$"
 `
+script KirbysHouse_EventScript_MoveIntroObjects
+{
+	setobjectxy(LOCALID_WISE_WADDLE_DEE, 11, 5)
+	setobjectxy(LOCALID_BANDANA_WADDLE_DEE, 11, 6)
+	setobjectxyperm(LOCALID_WISE_WADDLE_DEE, 11, 5)
+	setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 11, 6)
+	setobjectmovementtype(LOCALID_BANDANA_WADDLE_DEE, MOVEMENT_TYPE_FACE_UP)
+	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+	return
+}
+
+script KirbysHouse_EventScript_ExitHouseFirstTime
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 2)
+	{
+		lock
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Whoa! Check it out!")
+		closemessage
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
+				walk_right * 2
+				walk_up
+				walk_in_place_right
+			))
+		applymovement(LOCALID_PLAYER, moves(
+				walk_down
+				walk_right * 4
+			))
+		waitmovement(0)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} I thought you and
+				Gooey were the only ones who live here!")
+		closemessage
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
+			walk_up * 7
+			walk_right
+			))
+		applymovement(LOCALID_PLAYER, moves(
+			walk_up * 8
+			walk_in_place_left
+			))
+		waitmovement(0)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} And even more
+				up here\.")
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_EAST)
+		turnobject(LOCALID_PLAYER, DIR_WEST)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Are these some of
+				those Helpers the king mentioned?
+				
+				{COLOR BLUE}???:{COLOR DARK_GRAY} Indeed they are!")
+		closemessage
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+		turnobject(LOCALID_PLAYER, DIR_NORTH)
+		playSE(SE_PIN)
+		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
+		waitmovement(0)
+		playbgm(MUS_BIRCH_LAB, FALSE)
+		applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_down * 5))
+		waitmovement(0)
+		setobjectxyperm(LOCALID_WISE_WADDLE_DEE, 11, 5)
+		setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 11, 6)
+		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(walk_in_place_up))
+		waitmovement(0)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Hm? I don't think
+				we've met before\.
+				
+				{COLOR BLUE}???:{COLOR DARK_GRAY} Allow me to introduce myself. I am
+				known as Wise Waddle Dee.
+				
+				{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Per the Great King's
+				request, I have been appointed to keep
+				track of and study Helpers.
+				
+				As the leading expert on them, you may
+				call me something of a professor!
+				
+				{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} I see\. do you
+				know where they came from too?
+				
+				{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Alas, I have no clue.
+				I'm looking into it on my own behalf.
+				
+				My official duties pertain only to info
+				of use for Royal Royale participants.
+				
+				Speaking of, surely the hero of Dream
+				Land and his best friend plan to join?")
+		closemessage
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_WEST)
+		turnobject(LOCALID_PLAYER, DIR_EAST)
+		delay(35)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Um\. I guess
+				it sounds kind of fun, but I dunno\.")
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+		turnobject(LOCALID_PLAYER, DIR_NORTH)
+		playse(SE_LEDGE)
+		applymovement(LOCALID_WISE_WADDLE_DEE, moves(jump_in_place_down))
+		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Ah! My apologies. I
+				suppose it must be a lot to take in.
+				
+				It is for me as well\. that's why I'm
+				trying to onboard new participants.")
+		closemessage
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_EAST)
+		delay(60)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Well\. I guess I
+				also want to see how many Helpers there
+				are, in case things get out of hand\.
+
+				And I suppose it's not fair for me to
+				doubt the Great King's intentions\.
+				
+				\.and maybe taking part in this
+				competition will make me stronger too\.")
+		closemessage
+		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+		waitmovement(0)
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Okay, sure! I'll
+				try the Royal Royale out!
+
+				{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} A most excellent
+				response! Thank you kindly!
+				
+				First, we must get you two situated
+				with some Helpers of your own.
+				
+				Luckily, it appears some rare specimens
+				are situated here in Kirby's backyard!
+				
+				Go on and pick which one you'd like. I'll
+				show you after how to befriend them.")
+		closemessage
+		fadedefaultbgm
+		setvar(VAR_KIRBYS_HOUSE_STATE, 3)
+		release
+	}
+}
+
+script KirbysHouse_EventScript_TalkToWiseWaddleDee
+{
+	lock
+	faceplayer
+	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Choosing your first
+			Helper is no trivial matter.
+			
+			I suggest observing them carefully
+			before you make your decision.")
+	release
+}
+
+script KirbysHouse_EventScript_TalkToBandanaWaddleDee
+{
+	lock
+	faceplayer
+	msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} If you already
+			know which one you want, go on ahead.
+			
+			I don't mind. I'm still thinking through
+			who I want as my first partner\.")
+	release
+}
+
+script KirbysHouse_EventScript_TryToLeave
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) == 3)
+	{
+		lockall
+		turnobject(LOCALID_WISE_WADDLE_DEE, DIR_NORTH)
+		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Hold on now! You can't
+				simply leave without a Helper!")
+		closemessage
+		applymovement(LOCALID_PLAYER, moves(walk_down))
+		waitmovement(0)
+		releaseall
+	}
+}
+
+script KirbysHouse_EventScript_ChooseLovely
+{
+	lockall
+	faceplayer
+	setvar(VAR_STARTER_MON, 0)
+	showmonpic(SPECIES_LOVELY, 10, 3)
+	playmoncry(SPECIES_LOVELY, CRY_MODE_NORMAL)
+	waitmoncry()
+	delay(35)
+	msgbox("It's {COLOR GREEN}Lovely{COLOR DARK_GRAY}, the {COLOR GREEN}Grass-type{COLOR DARK_GRAY} Helper!
+	
+			Will you choose Lovely?", MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES)
+	{
+		setflag(FLAG_SYS_POKEMON_GET)
+		givemon(SPECIES_LOVELY, 5)
+		msgbox("Kirby chose Lovely!")
+		waitmessage()
+		playfanfare(MUS_EVOLVED)
+		waitfanfare()
+		hidemonpic()
+		msgbox("Would you like to give a nickname to
+				Lovely?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES)
+		{
+			call(Common_EventScript_GetGiftMonPartySlot)
+			call(Common_EventScript_NameReceivedPartyMon)
+			goto(KirbysHouse_EventScript_AfterChoosingStarter)
+		}
+	}
+	if(var(VAR_RESULT) == NO)
+	{
+		hidemonpic()
+		releaseall
+	}
+}
+
+script KirbysHouse_EventScript_ChooseBurningLeo
+{
+	lockall
+	faceplayer
+	setvar(VAR_STARTER_MON, 1)
+	showmonpic(SPECIES_BURNING_LEO, 10, 3)
+	playmoncry(SPECIES_BURNING_LEO, CRY_MODE_NORMAL)
+	waitmoncry()
+	delay(35)
+	msgbox("It's {COLOR RED}Burning Leo{COLOR DARK_GRAY}, the {COLOR RED}Fire-type{COLOR DARK_GRAY} Helper!
+	
+			Will you choose Burning Leo?", MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES)
+	{
+		setflag(FLAG_SYS_POKEMON_GET)
+		givemon(SPECIES_BURNING_LEO, 5)
+		msgbox("Kirby chose Burning Leo!")
+		waitmessage()
+		playfanfare(MUS_EVOLVED)
+		waitfanfare()
+		hidemonpic()
+		msgbox("Would you like to give a nickname to
+				Burning Leo?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES)
+		{
+			call(Common_EventScript_GetGiftMonPartySlot)
+			call(Common_EventScript_NameReceivedPartyMon)
+			goto(KirbysHouse_EventScript_AfterChoosingStarter)
+		}
+	}
+	if(var(VAR_RESULT) == NO)
+	{
+		hidemonpic()
+		releaseall
+	}
+}
+
+script KirbysHouse_EventScript_ChooseSquishy
+{
+	lockall
+	faceplayer
+	setvar(VAR_STARTER_MON, 2)
+	showmonpic(SPECIES_SQUISHY, 10, 3)
+	playmoncry(SPECIES_SQUISHY, CRY_MODE_NORMAL)
+	waitmoncry()
+	delay(35)
+	msgbox("It's {COLOR BLUE}Squishy{COLOR DARK_GRAY}, the {COLOR BLUE}Water-type{COLOR DARK_GRAY} Helper!
+	
+			Will you choose Squishy?", MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES)
+	{
+		setflag(FLAG_SYS_POKEMON_GET)
+		givemon(SPECIES_SQUISHY, 5)
+		msgbox("Kirby chose Squishy!")
+		waitmessage()
+		playfanfare(MUS_EVOLVED)
+		waitfanfare()
+		hidemonpic()
+		msgbox("Would you like to give a nickname to
+				Squishy?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == YES)
+		{
+			call(Common_EventScript_GetGiftMonPartySlot)
+			call(Common_EventScript_NameReceivedPartyMon)
+			goto(KirbysHouse_EventScript_AfterChoosingStarter)
+		}
+	}
+	if(var(VAR_RESULT) == NO)
+	{
+		hidemonpic()
+		releaseall
+	}
+}
+
+script KirbysHouse_EventScript_AfterChoosingStarter
+{
+	releaseall
+}
