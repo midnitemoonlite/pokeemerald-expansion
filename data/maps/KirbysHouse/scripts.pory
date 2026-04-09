@@ -1,12 +1,7 @@
 raw `
 KirbysHouse_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, KirbysHouse_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, KirbysHouse_OnFrame
 	.byte 0
-
-KirbysHouse_OnTransition:
-	call_if_eq VAR_KIRBYS_HOUSE_STATE, 3, KirbysHouse_EventScript_MoveIntroObjects
-	end
 
 KirbysHouse_OnFrame::
 	map_script_2 VAR_KIRBYS_HOUSE_STATE, 2, KirbysHouse_EventScript_ExitHouseFirstTime
@@ -20,16 +15,6 @@ KirbysHouse_Text_KirbysHouse:
 	.string "KIRBY'S HOUSE\n"
 	.string "Built by thankful Dream Land residents.$"
 `
-script KirbysHouse_EventScript_MoveIntroObjects
-{
-	setobjectxy(LOCALID_WISE_WADDLE_DEE, 11, 5)
-	setobjectxy(LOCALID_BANDANA_WADDLE_DEE, 11, 6)
-	setobjectxyperm(LOCALID_WISE_WADDLE_DEE, 11, 5)
-	setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 11, 6)
-	setobjectmovementtype(LOCALID_BANDANA_WADDLE_DEE, MOVEMENT_TYPE_FACE_UP)
-	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
-	return
-}
 
 script KirbysHouse_EventScript_ExitHouseFirstTime
 {
@@ -148,8 +133,8 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 				Luckily, it appears some rare specimens
 				are situated here in Kirby's backyard!
 				
-				Go on and pick which one you'd like. I'll
-				show you after how to befriend them.")
+				Go on and pick which one you'd like. Let
+				me know after you make your choice.")
 		closemessage
 		fadedefaultbgm
 		setvar(VAR_KIRBYS_HOUSE_STATE, 3)
@@ -161,153 +146,268 @@ script KirbysHouse_EventScript_TalkToWiseWaddleDee
 {
 	lock
 	faceplayer
-	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Choosing your first
-			Helper is no trivial matter.
-			
-			I suggest observing them carefully
-			before you make your decision.")
-	release
+	if(!flag(FLAG_SYS_POKEMON_GET))
+	{
+		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Choosing your first
+				Helper is no trivial matter.
+				
+				I suggest observing them carefully
+				before you make your decision.")
+		release
+	}
+	else
+	{
+		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Ah, you've returned! A
+				most excellent choice, my friend!
+				
+				Now then, let's move on to the
+				next lesson.")
+		goto(KirbysHouse_EventScript_AfterChoosingStarter)
+	}
 }
 
 script KirbysHouse_EventScript_TalkToBandanaWaddleDee
 {
 	lock
 	faceplayer
-	msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} If you already
+	if(!flag(FLAG_SYS_POKEMON_GET))
+	{
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} If you already
 			know which one you want, go on ahead.
 			
 			I don't mind. I'm still thinking through
 			who I want as my first partner\.")
+	}
+	else
+	{
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Nice choice, buddy!
+			I just got my very own Helper too!
+			
+			Let's talk to Wise Waddle Dee to see
+			what he has to say next.")
+	}
 	release
 }
 
 script KirbysHouse_EventScript_TryToLeave
 {
-	if(var(VAR_KIRBYS_HOUSE_STATE) == 3)
+	lockall
+	turnobject(LOCALID_WISE_WADDLE_DEE, DIR_NORTH)
+	if(!flag(FLAG_SYS_POKEMON_GET))
 	{
-		lockall
-		turnobject(LOCALID_WISE_WADDLE_DEE, DIR_NORTH)
 		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Hold on now! You can't
 				simply leave without a Helper!")
-		closemessage
+	}
+	elif(flag(FLAG_SYS_POKEMON_GET) && var(VAR_KIRBYS_HOUSE_STATE) == 3)
+	{
+		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Kirby! Did you
+				choose a Helper yet?")
+	}
+	closemessage
 		applymovement(LOCALID_PLAYER, moves(walk_down))
 		waitmovement(0)
 		releaseall
-	}
 }
 
 script KirbysHouse_EventScript_ChooseLovely
 {
-	lockall
+	lock
 	faceplayer
 	setvar(VAR_STARTER_MON, 0)
-	showmonpic(SPECIES_LOVELY, 10, 3)
-	playmoncry(SPECIES_LOVELY, CRY_MODE_NORMAL)
-	waitmoncry()
-	delay(35)
-	msgbox("It's {COLOR GREEN}Lovely{COLOR DARK_GRAY}, the {COLOR GREEN}Grass-type{COLOR DARK_GRAY} Helper!
-	
-			Will you choose Lovely?", MSGBOX_YESNO)
-	if(var(VAR_RESULT) == YES)
+	if(!flag(FLAG_SYS_POKEMON_GET))
 	{
-		setflag(FLAG_SYS_POKEMON_GET)
-		givemon(SPECIES_LOVELY, 5)
-		msgbox("Kirby chose Lovely!")
-		waitmessage()
-		playfanfare(MUS_EVOLVED)
-		waitfanfare()
-		hidemonpic()
-		msgbox("Would you like to give a nickname to
-				Lovely?", MSGBOX_YESNO)
+		showmonpic(SPECIES_LOVELY, 10, 3)
+		playmoncry(SPECIES_LOVELY, CRY_MODE_NORMAL)
+		waitmoncry()
+		delay(35)
+		msgbox("It's {COLOR GREEN}Lovely{COLOR DARK_GRAY}, the {COLOR GREEN}Grass-type{COLOR DARK_GRAY} Helper!
+		
+				Will you choose Lovely?", MSGBOX_YESNO)
 		if(var(VAR_RESULT) == YES)
 		{
-			call(Common_EventScript_GetGiftMonPartySlot)
-			call(Common_EventScript_NameReceivedPartyMon)
-			goto(KirbysHouse_EventScript_AfterChoosingStarter)
+			setflag(FLAG_SYS_POKEMON_GET)
+			removeobject(LOCALID_LOVELY)
+			removeobject(LOCALID_BURNINGLEO)
+			removeobject(LOCALID_SQUISHY)
+			givemon(SPECIES_LOVELY, 5)
+			msgbox("Kirby chose Lovely!")
+			waitmessage()
+			playfanfare(MUS_EVOLVED)
+			waitfanfare()
+			hidemonpic()
+			msgbox("Would you like to give a nickname to
+					Lovely?", MSGBOX_YESNO)
+			if(var(VAR_RESULT) == YES)
+			{
+				call(Common_EventScript_GetGiftMonPartySlot)
+				call(Common_EventScript_NameReceivedPartyMon)
+				release
+			}
+			if(var(VAR_RESULT) == NO)
+			{
+				release
+			}
+		}
+		if(var(VAR_RESULT) == NO)
+		{
+			hidemonpic()
+			release
 		}
 	}
-	if(var(VAR_RESULT) == NO)
+	else
 	{
-		hidemonpic()
-		releaseall
+		msgbox(KirbysHouse_Text_AlreadyChoseStarter)
+		release
 	}
 }
 
 script KirbysHouse_EventScript_ChooseBurningLeo
 {
-	lockall
+	lock
 	faceplayer
-	setvar(VAR_STARTER_MON, 1)
-	showmonpic(SPECIES_BURNING_LEO, 10, 3)
-	playmoncry(SPECIES_BURNING_LEO, CRY_MODE_NORMAL)
-	waitmoncry()
-	delay(35)
-	msgbox("It's {COLOR RED}Burning Leo{COLOR DARK_GRAY}, the {COLOR RED}Fire-type{COLOR DARK_GRAY} Helper!
-	
-			Will you choose Burning Leo?", MSGBOX_YESNO)
-	if(var(VAR_RESULT) == YES)
+	if(!flag(FLAG_SYS_POKEMON_GET))
 	{
-		setflag(FLAG_SYS_POKEMON_GET)
-		givemon(SPECIES_BURNING_LEO, 5)
-		msgbox("Kirby chose Burning Leo!")
-		waitmessage()
-		playfanfare(MUS_EVOLVED)
-		waitfanfare()
-		hidemonpic()
-		msgbox("Would you like to give a nickname to
-				Burning Leo?", MSGBOX_YESNO)
+		setvar(VAR_STARTER_MON, 1)
+		showmonpic(SPECIES_BURNING_LEO, 10, 3)
+		playmoncry(SPECIES_BURNING_LEO, CRY_MODE_NORMAL)
+		waitmoncry()
+		delay(35)
+		msgbox("It's {COLOR RED}Burning Leo{COLOR DARK_GRAY}, the {COLOR RED}Fire-type{COLOR DARK_GRAY} Helper!
+		
+				Will you choose Burning Leo?", MSGBOX_YESNO)
 		if(var(VAR_RESULT) == YES)
 		{
-			call(Common_EventScript_GetGiftMonPartySlot)
-			call(Common_EventScript_NameReceivedPartyMon)
-			goto(KirbysHouse_EventScript_AfterChoosingStarter)
+			setflag(FLAG_SYS_POKEMON_GET)
+			removeobject(LOCALID_LOVELY)
+			removeobject(LOCALID_BURNINGLEO)
+			removeobject(LOCALID_SQUISHY)
+			givemon(SPECIES_BURNING_LEO, 5)
+			msgbox("Kirby chose Burning Leo!")
+			waitmessage()
+			playfanfare(MUS_EVOLVED)
+			waitfanfare()
+			hidemonpic()
+			msgbox("Would you like to give a nickname to
+					Burning Leo?", MSGBOX_YESNO)
+			if(var(VAR_RESULT) == YES)
+			{
+				call(Common_EventScript_GetGiftMonPartySlot)
+				call(Common_EventScript_NameReceivedPartyMon)
+				release
+			}
+			if(var(VAR_RESULT) == NO)
+			{
+				release
+			}
+		}
+		if(var(VAR_RESULT) == NO)
+		{
+			hidemonpic()
+			release
 		}
 	}
-	if(var(VAR_RESULT) == NO)
+	else
 	{
-		hidemonpic()
-		releaseall
+		msgbox(KirbysHouse_Text_AlreadyChoseStarter)
+		release
 	}
 }
 
 script KirbysHouse_EventScript_ChooseSquishy
 {
-	lockall
+	lock
 	faceplayer
-	setvar(VAR_STARTER_MON, 2)
-	showmonpic(SPECIES_SQUISHY, 10, 3)
-	playmoncry(SPECIES_SQUISHY, CRY_MODE_NORMAL)
-	waitmoncry()
-	delay(35)
-	msgbox("It's {COLOR BLUE}Squishy{COLOR DARK_GRAY}, the {COLOR BLUE}Water-type{COLOR DARK_GRAY} Helper!
-	
-			Will you choose Squishy?", MSGBOX_YESNO)
-	if(var(VAR_RESULT) == YES)
+	if(!flag(FLAG_SYS_POKEMON_GET))
 	{
-		setflag(FLAG_SYS_POKEMON_GET)
-		givemon(SPECIES_SQUISHY, 5)
-		msgbox("Kirby chose Squishy!")
-		waitmessage()
-		playfanfare(MUS_EVOLVED)
-		waitfanfare()
-		hidemonpic()
-		msgbox("Would you like to give a nickname to
-				Squishy?", MSGBOX_YESNO)
+		setvar(VAR_STARTER_MON, 2)
+		showmonpic(SPECIES_SQUISHY, 10, 3)
+		playmoncry(SPECIES_SQUISHY, CRY_MODE_NORMAL)
+		waitmoncry()
+		delay(35)
+		msgbox("It's {COLOR BLUE}Squishy{COLOR DARK_GRAY}, the {COLOR BLUE}Water-type{COLOR DARK_GRAY} Helper!
+		
+				Will you choose Squishy?", MSGBOX_YESNO)
 		if(var(VAR_RESULT) == YES)
 		{
-			call(Common_EventScript_GetGiftMonPartySlot)
-			call(Common_EventScript_NameReceivedPartyMon)
-			goto(KirbysHouse_EventScript_AfterChoosingStarter)
+			setflag(FLAG_SYS_POKEMON_GET)
+			removeobject(LOCALID_LOVELY)
+			removeobject(LOCALID_BURNINGLEO)
+			removeobject(LOCALID_SQUISHY)
+			givemon(SPECIES_SQUISHY, 5)
+			msgbox("Kirby chose Squishy!")
+			waitmessage()
+			playfanfare(MUS_EVOLVED)
+			waitfanfare()
+			hidemonpic()
+			msgbox("Would you like to give a nickname to
+					Squishy?", MSGBOX_YESNO)
+			if(var(VAR_RESULT) == YES)
+			{
+				call(Common_EventScript_GetGiftMonPartySlot)
+				call(Common_EventScript_NameReceivedPartyMon)
+				release
+			}
+			if(var(VAR_RESULT) == NO)
+			{
+				release
+			}
+		}
+		if(var(VAR_RESULT) == NO)
+		{
+			hidemonpic()
+			release
 		}
 	}
-	if(var(VAR_RESULT) == NO)
+	else
 	{
-		hidemonpic()
-		releaseall
+		msgbox(KirbysHouse_Text_AlreadyChoseStarter)
+		release
 	}
+}
+
+text KirbysHouse_Text_AlreadyChoseStarter
+{
+	"You've already picked a Helper! Make
+	sure to let Wise Waddle Dee know."
+}
+
+script KirbysHouse_EventScript_DontEnterHouse
+{
+		lock
+		msgbox("You can't go home and nap now! There's
+				still unfinished business to handle.")
+		closemessage
+		applymovement(LOCALID_PLAYER, moves(walk_down))
+		waitmovement(0)
+		release
 }
 
 script KirbysHouse_EventScript_AfterChoosingStarter
 {
+	turnobject(LOCALID_WISE_WADDLE_DEE, DIR_SOUTH)
+	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+	getobjectfacingdirection(LOCALID_PLAYER, VAR_TEMP_0)
+	if(var(VAR_TEMP_0) == DIR_NORTH)
+	{
+		applymovement(LOCALID_PLAYER, moves(walk_left, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_SOUTH)
+	{
+		applymovement(LOCALID_PLAYER, moves(walk_left, walk_down * 2, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_WEST)
+	{
+		applymovement(LOCALID_PLAYER, moves(walk_up, walk_left * 2, walk_down * 2, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_EAST)
+	{
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_in_place_up))
+		waitmovement()
+	}
+	msgbox("If you're seeing this, hopefully
+			everything works right!")
 	releaseall
 }

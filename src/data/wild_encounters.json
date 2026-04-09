@@ -36582,6 +36582,95 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_KIRBYS_HOUSE",
+          "base_label": "gKirbysHouse",
+          "fishing_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 1,
+                "max_level": 100,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 1,
+                "max_level": 100,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 2,
+            "mons": [
+              {
+                "min_level": 1,
+                "max_level": 100,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 1,
+                "max_level": 100,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 1,
+                "max_level": 100,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 1,
+                "max_level": 100,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 1,
+                "max_level": 100,
+                "species": "SPECIES_BLIPPER"
+              }
+            ]
+          }
         }
       ]
     },

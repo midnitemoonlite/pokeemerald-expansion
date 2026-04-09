@@ -1,6 +1,11 @@
 raw `
 KirbysHouse_Indoors_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, KirbysHouse_Indoors_OnTransition
 	.byte 0
+
+KirbysHouse_Indoors_OnTransition:
+	setrespawn HEAL_LOCATION_KIRBYS_HOUSE
+	end
 
 KirbysHouse_Indoors_EventScript_PC::
 	lockall
@@ -69,6 +74,24 @@ script KirbysHouse_Indoors_EventScript_Fridge
 			fridge door."
 			)
 	release
+}
+
+script KirbysHouse_Indoors_GoToSleep
+{
+	if(var(VAR_KIRBYS_HOUSE_STATE) >= 4)
+	{
+		lock
+		msgbox("It's your bed... time to take a nap!")
+		closemessage
+		fadescreenswapbuffers(FADE_TO_BLACK)
+		playfanfare(MUS_HEAL)
+		waitfanfare()
+		special(HealPlayerParty)
+		fadescreenswapbuffers(FADE_FROM_BLACK)
+		msgbox("You and your Helpers are all rested up!")
+		closemessage
+		release
+	}
 }
 
 script KirbysHouse_Indoors_TalkToGooey
