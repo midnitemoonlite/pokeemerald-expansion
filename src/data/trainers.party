@@ -81,48 +81,56 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_SAWYER_1 ===
-Name: SAWYER
-Class: Hiker
-Pic: Hiker
-Gender: Male
-Music: Hiker
+/* Wise Waddle Dee - Kirby's House (Lovely) */
+=== TRAINER_SAWYER_1 === 
+Name: WADDLE DEE
+Class: Collector
+Pic: Collector
+Music: Suspicious
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Geodude
-Level: 21
+Burning Leo
+Level: 5
+Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ball: Poke
+- Pound
+- Growl
 
+/* Wise Waddle Dee - Kirby's House (Burning Leo) */
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+Name: WADDLE DEE
+Class: Collector
+Pic: Collector
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 32
+Squishy
+Level: 5
+Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ball: Poke
+- Tackle
+- Leer
 
+/* Wise Waddle Dee - Kirby's House (Squishy) */
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+Name: WADDLE DEE
+Class: Collector
+Pic: Collector
+Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 31
+Lovely
+Level: 5
+Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ball: Poke
+- Tackle
+- Play Nice
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
 Name: GRUNT

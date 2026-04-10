@@ -131,6 +131,14 @@ script KirbysHouse_Indoors_TalkToGooey
 				the noise outside.")
 		release
 	}
+	elif(var(VAR_KIRBYS_HOUSE_STATE) == 4)
+	{
+		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goooo!
+				
+				It's Gooey. He seems curious about
+				your Helpers.")
+		release
+	}
 }
 
 script KirbysHouse_Indoors_TalkToBandanaWaddleDee

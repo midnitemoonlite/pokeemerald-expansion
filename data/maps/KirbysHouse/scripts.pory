@@ -60,11 +60,11 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
-		playbgm(MUS_BIRCH_LAB, FALSE)
 		applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_down * 5))
 		waitmovement(0)
 		setobjectxyperm(LOCALID_WISE_WADDLE_DEE, 11, 5)
 		setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 11, 6)
+		playbgm(MUS_BIRCH_LAB, FALSE)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(walk_in_place_up))
 		waitmovement(0)
 		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Hm? I don't think
@@ -162,6 +162,7 @@ script KirbysHouse_EventScript_TalkToWiseWaddleDee
 				
 				Now then, let's move on to the
 				next lesson.")
+		closemessage
 		goto(KirbysHouse_EventScript_AfterChoosingStarter)
 	}
 }
@@ -230,7 +231,7 @@ script KirbysHouse_EventScript_ChooseLovely
 			removeobject(LOCALID_BURNINGLEO)
 			removeobject(LOCALID_SQUISHY)
 			givemon(SPECIES_LOVELY, 5)
-			msgbox("Kirby chose Lovely!")
+			message("Kirby chose Lovely!")
 			waitmessage()
 			playfanfare(MUS_EVOLVED)
 			waitfanfare()
@@ -282,7 +283,7 @@ script KirbysHouse_EventScript_ChooseBurningLeo
 			removeobject(LOCALID_BURNINGLEO)
 			removeobject(LOCALID_SQUISHY)
 			givemon(SPECIES_BURNING_LEO, 5)
-			msgbox("Kirby chose Burning Leo!")
+			message("Kirby chose Burning Leo!")
 			waitmessage()
 			playfanfare(MUS_EVOLVED)
 			waitfanfare()
@@ -334,7 +335,7 @@ script KirbysHouse_EventScript_ChooseSquishy
 			removeobject(LOCALID_BURNINGLEO)
 			removeobject(LOCALID_SQUISHY)
 			givemon(SPECIES_SQUISHY, 5)
-			msgbox("Kirby chose Squishy!")
+			message("Kirby chose Squishy!")
 			waitmessage()
 			playfanfare(MUS_EVOLVED)
 			waitfanfare()
@@ -407,7 +408,113 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 		applymovement(LOCALID_PLAYER, moves(walk_down, walk_in_place_up))
 		waitmovement()
 	}
-	msgbox("If you're seeing this, hopefully
-			everything works right!")
+	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} To chronicle Helpers
+			you encounter, I'll loan you these.")
+	closemessage
+	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_in_place_down, walk_left, face_player, walk_in_place_down))
+	waitmovement()
+	playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+	msgbox("Kirby received an {COLOR RED}Info Card Binder{COLOR DARK_GRAY}!")
+	waitfanfare
+	setflag(FLAG_SYS_POKEDEX_GET)
+	special(SetUnlockedPokedexFlags)
+	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} These info cards will
+			hold data on any Helpers you encounter
+			and recruit to your side.
+			
+			As for how to recruit Helpers, you'll
+			want to use Helper Hearts!")
+	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_in_place_down))
+	waitmovement()
+	giveitem(ITEM_POKE_BALL, 10)
+	if(var(VAR_RESULT) == FALSE)
+	{
+		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} \.oh dear! Kirby,
+		you've got a full sack already?")
+	}
+	closemessage
+	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_right, walk_in_place_down))
+	waitmovement()
+	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} More Helper Hearts are
+			always available to buy at Rest Areas.
+			
+			They're invaluable places for stocking
+			up on items and healing your Helpers.
+			
+			Speaking of, our last subject to cover
+			is none other than Helper battles!
+			
+			Rather than lecturing, I think a proper
+			demonstration ought to serve you well.
+			
+			How about one of you take me on?")
+	closemessage
+	turnobject(LOCALID_PLAYER, DIR_EAST)
+	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_WEST)
+	delay(15)
+	msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Are you up for
+			this, Kirby?
+			
+			I think I'd learn a lot from watching
+			someone like you.")
+	closemessage
+	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_left, walk_in_place_down))
+	waitmovement()
+	turnobject(LOCALID_PLAYER, DIR_NORTH)
+	waitmovement()
+	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Very well then.
+			I shall be your first opponent!")
+	closemessage
+	switch(var(VAR_STARTER_MON)) {
+		case 0:
+			trainerbattle_earlyrival(TRAINER_SAWYER_1, RIVAL_BATTLE_TUTORIAL, KirbysHouse_Text_WiseWaddleDeeDefeat, KirbysHouse_Text_WiseWaddleDeeVictory)
+		case 1:
+			trainerbattle_earlyrival(TRAINER_GRUNT_AQUA_HIDEOUT_1, RIVAL_BATTLE_TUTORIAL, KirbysHouse_Text_WiseWaddleDeeDefeat, KirbysHouse_Text_WiseWaddleDeeVictory)
+		case 2:
+			trainerbattle_earlyrival(TRAINER_GRUNT_AQUA_HIDEOUT_2, RIVAL_BATTLE_TUTORIAL, KirbysHouse_Text_WiseWaddleDeeDefeat, KirbysHouse_Text_WiseWaddleDeeVictory)
+	}
+	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
+	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} I hope that was an
+			insightful experience.
+			
+			Now then, I do believe I should return
+			to my lab in Waddle Dee Town.
+			
+			If you make any progress on your Info
+			Cards, don't hesitate to drop on by!
+			
+			Enjoy the Royal Royale, you two!")
+	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_up * 5))
+	waitmovement()
+	delay(35)
+	applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
+	applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(walk_in_place_left))
+	waitmovement()
+	msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Calling this Royal
+			Royale a game makes it sound simple\.
+			
+			But I guess it's like the Great King to
+			make a spectacle of whatever he does.
+			
+			For now, I'm heading back to town.
+			You should come too!")
+	applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
+	applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(walk_up * 6))
+	waitmovement()
+	removeobject(LOCALID_WISE_WADDLE_DEE)
+	removeobject(LOCALID_BANDANA_WADDLE_DEE)
+	setflag(FLAG_HIDE_KIRBYS_HOUSE_INTRO_CHARACTERS)
+	setvar(VAR_KIRBYS_HOUSE_STATE, 4)
 	releaseall
+}
+
+text KirbysHouse_Text_WiseWaddleDeeDefeat
+{
+	"It seems I still have much to learn!"
+}
+
+text KirbysHouse_Text_WiseWaddleDeeVictory
+{
+	"So close! I can tell you're beginning
+	to grasp the depth of Helper battles."
 }

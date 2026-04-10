@@ -728,16 +728,17 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_BACK_FLIP_BIG,
+        .enemyMonElevation = 6,
         .backPic = gMonBackPic_HalcantoBurt,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_HalcantoBurt,
         .shinyPalette = gMonShinyPalette_HalcantoBurt,
         .iconSprite = gMonIcon_HalcantoBurt,
         .iconPalIndex = 0,
         FOOTPRINT(HalcantoBurt)
-        SHADOW(3, 11, SHADOW_SIZE_S)
+        SHADOW(2, 16, SHADOW_SIZE_M)
         .levelUpLearnset = sHalcantoBurtLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
