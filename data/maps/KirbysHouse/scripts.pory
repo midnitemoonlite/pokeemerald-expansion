@@ -102,19 +102,18 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 		playse(SE_LEDGE)
 		applymovement(LOCALID_WISE_WADDLE_DEE, moves(jump_in_place_down))
 		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Ah! My apologies. I
-				suppose it must be a lot to take in.
+				understand it is a lot to take in.
 				
-				It is for me as well\. that's why I'm
-				trying to onboard new participants.")
+				I merely assumed you would be enticed
+				by the grand prize the king has set up.")
 		closemessage
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_EAST)
 		delay(60)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Well\. I guess I
-				also want to see how many Helpers there
-				are, in case things get out of hand\.
+		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Well\. I guess the
+				king seems pretty excited about it\.
 
-				And I suppose it's not fair for me to
-				doubt the Great King's intentions\.
+				And seeing all these Helpers does make
+				me curious how many there are\.
 				
 				\.and maybe taking part in this
 				competition will make me stronger too\.")
@@ -157,11 +156,11 @@ script KirbysHouse_EventScript_TalkToWiseWaddleDee
 	}
 	else
 	{
-		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Ah, you've returned! A
-				most excellent choice, my friend!
+		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Ah, you've returned!
+				And accompanied by a Helper, no less!
 				
 				Now then, let's move on to the
-				next lesson.")
+				next subject.")
 		closemessage
 		goto(KirbysHouse_EventScript_AfterChoosingStarter)
 	}
@@ -409,7 +408,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 		waitmovement()
 	}
 	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} To chronicle Helpers
-			you encounter, I'll loan you these.")
+			you find, I'll loan you these.")
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_in_place_down, walk_left, face_player, walk_in_place_down))
 	waitmovement()
@@ -456,7 +455,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 			this, Kirby?
 			
 			I think I'd learn a lot from watching
-			someone like you.")
+			someone like you take this on.")
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_left, walk_in_place_down))
 	waitmovement()
@@ -484,6 +483,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 			Cards, don't hesitate to drop on by!
 			
 			Enjoy the Royal Royale, you two!")
+	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_up * 5))
 	waitmovement()
 	delay(35)
@@ -498,6 +498,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 			
 			For now, I'm heading back to town.
 			You should come too!")
+	closemessage
 	applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
 	applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(walk_up * 6))
 	waitmovement()

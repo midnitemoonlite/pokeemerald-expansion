@@ -741,7 +741,7 @@ KirbysHouse_Indoors_EventScript_Television_Text_3:
 	.string "That was a lot to take in, huh?\p"
 	.string "I wonder how the Great King came up\n"
 	.string "with this little game of his.\p"
-	.string "And what did he mean by “Helpers”\n"
+	.string "And what did he mean by Helpers\n"
 	.string "appearing all over Dream Land, anyways?\p"
 	.string "I guess I should head back to Waddle\n"
 	.string "Dee Town and learn what I can…$"
