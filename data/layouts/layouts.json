@@ -9343,6 +9343,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/KirbysHouse_Indoors/border.bin",
       "blockdata_filepath": "data/layouts/KirbysHouse_Indoors/map.bin"
+    },
+    {
+      "id": "LAYOUT_GREEN_GREENS",
+      "name": "GreenGreens_Layout",
+      "width": 30,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GreenGreens/border.bin",
+      "blockdata_filepath": "data/layouts/GreenGreens/map.bin"
     }
   ]
 }

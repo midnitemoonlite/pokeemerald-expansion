@@ -12,7 +12,13 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": [
+    {
+      "map": "MAP_GREEN_GREENS",
+      "offset": -6,
+      "direction": "up"
+    }
+  ],
   "object_events": [
     {
       "local_id": "LOCALID_BANDANA_WADDLE_DEE",
@@ -97,24 +103,6 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 8,
-      "y": 1,
-      "elevation": 0,
-      "var": "VAR_KIRBYS_HOUSE_STATE",
-      "var_value": "3",
-      "script": "KirbysHouse_EventScript_TryToLeave"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 1,
-      "elevation": 0,
-      "var": "VAR_KIRBYS_HOUSE_STATE",
-      "var_value": "3",
-      "script": "KirbysHouse_EventScript_TryToLeave"
-    },
-    {
-      "type": "trigger",
       "x": 10,
       "y": 1,
       "elevation": 0,
@@ -125,24 +113,6 @@
     {
       "type": "trigger",
       "x": 11,
-      "y": 1,
-      "elevation": 0,
-      "var": "VAR_KIRBYS_HOUSE_STATE",
-      "var_value": "3",
-      "script": "KirbysHouse_EventScript_TryToLeave"
-    },
-    {
-      "type": "trigger",
-      "x": 12,
-      "y": 1,
-      "elevation": 0,
-      "var": "VAR_KIRBYS_HOUSE_STATE",
-      "var_value": "3",
-      "script": "KirbysHouse_EventScript_TryToLeave"
-    },
-    {
-      "type": "trigger",
-      "x": 13,
       "y": 1,
       "elevation": 0,
       "var": "VAR_KIRBYS_HOUSE_STATE",

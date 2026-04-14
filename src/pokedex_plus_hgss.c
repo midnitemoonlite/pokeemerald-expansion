@@ -7571,7 +7571,7 @@ static void LoadPlayArrowPalette(bool8 cryPlaying)
 {
     u16 color;
 
-    if (!HGSS_DARK_MODE)
+    if (!HGSS_DARK)
     {
         if (cryPlaying)
             color = RGB(29, 9, 4);
@@ -8891,7 +8891,7 @@ static void ClearSearchParameterBoxText(void)
 
 static void TryLoadDarkModeArrowPalette(void)
 {
-    if (!HGSS_DARK_MODE)
+    if (!HGSS_DARK)
         return;
 
     u32 index = IndexOfSpritePaletteTag(gSpritePalette_Arrow.tag);

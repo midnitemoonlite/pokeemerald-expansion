@@ -1630,6 +1630,10 @@
     {
       "id": "MAPSEC_KIRBYS_HOUSE",
       "name": "KIRBY'S HOUSE"
+    },
+    {
+      "id": "MAPSEC_GREEN_GREENS",
+      "name": "GREEN GREENS"
     }
   ]
 }

@@ -1,0 +1,52 @@
+raw `
+GreenGreens_MapScripts::
+	.byte 0
+`
+
+script GreenGreens_EventScript_Sign
+{
+    msgbox("GREEN GREENS
+            Where the spring breeze always blows.")
+    closemessage
+}
+
+script GreenGreens_EventScript_WaddleDeeTalk1
+{
+    lock
+    faceplayer
+    msgbox("Hi, Kirby! Did you know?
+    
+            Wild Helpers hide in this grass! They'll
+            jump out when you walk through it!
+            
+            I had no idea. I hope I taught you
+            something valuable!")
+    release
+}
+
+script GreenGreens_EventScript_WaddleDeeTalk2
+{
+    lock
+    faceplayer
+    msgbox("This place is so peaceful. It's my
+            favorite spot to nap.
+            
+            The energy here feels a lot more
+            active than usual now, though\.")
+    release
+}
+
+script GreenGreens_EventScript_WaddleDeeTalk3
+{
+    lock
+    faceplayer
+    msgbox("I'm trying out this game the
+            Great King told me about\.
+            
+            He said I have to throw these hearts at
+            any Helpers I want to befriend.
+            
+            The king has real strong arms. I hope
+            I can throw like him someday!")
+    release
+}

@@ -636,6 +636,8 @@ KirbysHouse_EventScript_AfterChoosingStarter_13:
 # 508 "data/maps/KirbysHouse/scripts.pory"
 	setvar VAR_KIRBYS_HOUSE_STATE, 4
 # 509 "data/maps/KirbysHouse/scripts.pory"
+	special HealPlayerParty
+# 510 "data/maps/KirbysHouse/scripts.pory"
 	releaseall
 	return
 
@@ -1138,10 +1140,10 @@ KirbysHouse_Text_AlreadyChoseStarter::
 	.string "sure to let Wise Waddle Dee know.$"
 
 KirbysHouse_Text_WiseWaddleDeeDefeat::
-# 512 "data/maps/KirbysHouse/scripts.pory"
+# 513 "data/maps/KirbysHouse/scripts.pory"
 	.string "It seems I still have much to learn!$"
 
 KirbysHouse_Text_WiseWaddleDeeVictory::
-# 517 "data/maps/KirbysHouse/scripts.pory"
+# 518 "data/maps/KirbysHouse/scripts.pory"
 	.string "So close! I can tell you're beginning\n"
 	.string "to grasp the depth of Helper battles.$"

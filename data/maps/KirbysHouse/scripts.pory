@@ -506,6 +506,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	removeobject(LOCALID_BANDANA_WADDLE_DEE)
 	setflag(FLAG_HIDE_KIRBYS_HOUSE_INTRO_CHARACTERS)
 	setvar(VAR_KIRBYS_HOUSE_STATE, 4)
+	special(HealPlayerParty)
 	releaseall
 }
 
