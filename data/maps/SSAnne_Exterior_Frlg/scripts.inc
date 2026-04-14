@@ -36,9 +36,7 @@ SSAnne_Exterior_ExitSSAnne::
 	call_if_le VAR_0x8005, 6, SSAnne_Exterior_WalkDown
 # 19 "data/maps/SSAnne_Exterior_Frlg/scripts.pory"
 	call_if_ge VAR_0x8005, 7, SSAnne_Exterior_WalkInPlaceDown
-# 20 "data/maps/SSAnne_Exterior_Frlg/scripts.pory"
-	fadenewbgm MUS_SURF
-# 21 "data/maps/SSAnne_Exterior_Frlg/scripts.pory"
+	fadenewbgm MUS_RG_SURF
 	delay 50
 # 22 "data/maps/SSAnne_Exterior_Frlg/scripts.pory"
 	special DoSSAnneDepartureCutscene
