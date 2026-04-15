@@ -1634,6 +1634,10 @@
     {
       "id": "MAPSEC_GREEN_GREENS",
       "name": "GREEN GREENS"
+    },
+    {
+      "id": "MAPSEC_GREEN_REST_AREA",
+      "name": "GREEN REST AREA"
     }
   ]
 }

@@ -17,6 +17,11 @@
       "map": "MAP_KIRBYS_HOUSE",
       "offset": 6,
       "direction": "down"
+    },
+    {
+      "map": "MAP_GREEN_REST_AREA",
+      "offset": 6,
+      "direction": "up"
     }
   ],
   "object_events": [

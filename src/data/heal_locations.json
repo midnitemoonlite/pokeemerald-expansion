@@ -353,6 +353,20 @@
       "map": "MAP_KIRBYS_HOUSE",
       "x": 6,
       "y": 13
+    },
+    {
+      "id": "HEAL_LOCATION_GREEN_GREENS",
+      "map": "MAP_GREEN_GREENS",
+      "x": 15,
+      "y": 12
+    },
+    {
+      "id": "HEAL_LOCATION_GREEN_REST_AREA",
+      "map": "MAP_GREEN_REST_AREA",
+      "x": 2,
+      "y": 12,
+      "respawn_map": "MAP_GREEN_REST_AREA_CENTER",
+      "respawn_npc": "LOCALID_GREEN_REST_AREA_NURSE"
     }
   ]
 }

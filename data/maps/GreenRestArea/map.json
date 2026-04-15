@@ -1,0 +1,158 @@
+{
+  "id": "MAP_GREEN_REST_AREA",
+  "name": "GreenRestArea",
+  "layout": "LAYOUT_GREEN_REST_AREA",
+  "music": "MUS_OLDALE",
+  "region_map_section": "MAPSEC_GREEN_REST_AREA",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GREEN_GREENS",
+      "offset": -6,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 2,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EXP_CANDY_XS",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_105_IRON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "x": 9,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GreenRestArea_EventScript_WaddleDeeShopEmployee",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "x": 6,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GreenRestArea_EventScript_WaddleDeeTalk",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_GREEN_REST_AREA_BWD",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GreenRestArea_EventScript_RivalTalk",
+      "flag": "FLAG_DEFEATED_RIVAL_GREEN_REST_AREA"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_GREEN_REST_AREA_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_GREEN_REST_AREA_MART",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_GREEN_REST_AREA_STATE",
+      "var_value": "0",
+      "script": "GreenRestArea_RivalTrigger1"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_GREEN_REST_AREA_STATE",
+      "var_value": "0",
+      "script": "GreenRestArea_RivalTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_GREEN_REST_AREA_STATE",
+      "var_value": "0",
+      "script": "GreenRestArea_RivalTrigger3"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_GREEN_REST_AREA_STATE",
+      "var_value": "0",
+      "script": "GreenRestArea_RivalTrigger4"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_GREEN_REST_AREA_STATE",
+      "var_value": "0",
+      "script": "GreenRestArea_RivalTrigger5"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "GreenRestArea_EventScript_Sign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 5,
+      "elevation": 0,
+      "item": "ITEM_MUSCLE_FEATHER",
+      "flag": "FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET"
+    }
+  ]
+}

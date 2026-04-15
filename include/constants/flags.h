@@ -51,9 +51,9 @@
 
 #else
 
-#define FLAG_HIDE_KIRBYS_HOUSE_INTRO_CHARACTERS    0x20 // Unused Flag
-#define FLAG_HIDE_KIRBYS_HOUSE_INTRO_STARTERS      0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
+#define FLAG_HIDE_KIRBYS_HOUSE_INTRO_CHARACTERS    0x20 // Kirby's House - Bandana Waddle Dee and Wise Waddle Dee
+#define FLAG_HIDE_KIRBYS_HOUSE_INTRO_STARTERS      0x21 // Kirby's House - Overworld starter sprites
+#define FLAG_DEFEATED_RIVAL_GREEN_REST_AREA        0x22 // Green Rest Area - Bandana Waddle Dee sprite and triggers
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
@@ -159,7 +159,7 @@
 #define FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN  0x81
 #define FLAG_DEFEATED_RIVAL_ROUTE103         0x82
 #define FLAG_RECEIVED_DOLL_LANETTE           0x83
-#define FLAG_RECEIVED_POTION_OLDALE          0x84
+#define FLAG_RECEIVED_POTION_OLDALE          0x84 // Green Rest Area - Potion from mart employee
 #define FLAG_RECEIVED_AMULET_COIN            0x85
 #define FLAG_PENDING_DAYCARE_EGG             0x86
 #define FLAG_THANKED_FOR_PLAYING_WITH_WALLY  0x87
@@ -552,7 +552,7 @@
 // Hidden Items
 #define FLAG_HIDDEN_ITEMS_START                                                         0x1F4
 #define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00) // Green Greens - Hidden Item 1
-#define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01)
+#define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01) // Green Rest Area - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02)
 #define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03)
 #define FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS                    (FLAG_HIDDEN_ITEMS_START + 0x04)
@@ -776,7 +776,7 @@
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_HIDE_BANDANA_WADDLE_DEE_KIRBYS_HOUSE_INDOORS           0x2D9 // Unused Flag
+#define FLAG_HIDE_BANDANA_WADDLE_DEE_KIRBYS_HOUSE_INDOORS           0x2D9 // Kirby's House - Bandana Waddle Dee intro cutscene
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
@@ -1053,7 +1053,7 @@
 #define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8 // Green Greens - Item 1
 #define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9 // Green Greens - Item 2
 #define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA // Green Greens - Item 3
-#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB
+#define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB // Green Rest Area - Item 1
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE

@@ -1743,3 +1743,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/KirbysHouse_Indoors/scripts.inc"
 
 	.include "data/maps/GreenGreens/scripts.inc"
+
+	.include "data/maps/GreenRestArea/scripts.inc"
+
+	.include "data/maps/GreenRestArea_Center/scripts.inc"
+
+	.include "data/maps/GreenRestArea_Mart/scripts.inc"

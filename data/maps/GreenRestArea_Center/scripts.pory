@@ -1,0 +1,77 @@
+raw `
+GreenRestArea_Center_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, GreenRestArea_Center_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+GreenRestArea_Center_OnTransition:
+	setrespawn HEAL_LOCATION_GREEN_REST_AREA
+	end
+`
+
+script GreenRestArea_Center_EventScript_WaddleDeeNight
+{
+    lock
+    faceplayer
+    msgbox("I'm impressed how swiftly the king has
+            gotten this Royal Royale running.
+            
+            But I shouldn't be surprised. He does
+            work best late at night!")
+    release
+}
+
+script GreenRestArea_Center_EventScript_WaddleDeeHopscotch
+{
+    lock
+    faceplayer
+    msgbox("If I were king\. what would I do?
+            
+            Hmm\. maybe I could order everyone
+            to play hopscotch with me.
+            That's my favorite game.
+            
+            Wow! Being king sounds fun!")
+    release
+}
+
+script GreenRestArea_Center_EventScript_WaddleDeePC
+{
+    lock
+    faceplayer
+    msgbox("Kirby, have you seen that tall machine
+            by the corner?")
+    turnobject(LOCALID_PC_WADDLE_DEE, DIR_NORTH)
+    delay(15)
+    msgbox("Apparently, it's called a \qoPC\qc. There's a
+            limit to how many Helpers you can take
+            with you, so the rest go in there.")
+    faceplayer
+    delay(15)
+    msgbox("It seems a little small, doesn't it?
+            How do you fit Helpers inside a PC?
+            
+            Oh, do you think maybe there's a
+            tunnel underneath it?")
+    release
+}
+
+script GreenRestArea_Center_EventScript_WaddleDeeMap
+{
+    lock
+    faceplayer
+    msgbox("I'm planning a trip to Ice Cream Island!
+            Going to the beach sounds fun!")
+    turnobject(LOCALID_MAP_WADDLE_DEE, DIR_NORTH)
+    release
+}
+
+script GreenRestArea_Center_1F_EventScript_Nurse
+{
+    setvar(VAR_0x800B, LOCALID_GREEN_REST_AREA_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}

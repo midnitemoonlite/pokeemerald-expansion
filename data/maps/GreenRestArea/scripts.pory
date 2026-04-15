@@ -1,0 +1,176 @@
+raw `
+GreenRestArea_MapScripts::
+	.byte 0
+`
+
+script GreenRestArea_EventScript_Sign
+{
+    msgbox("GREEN REST AREA
+            A pit stop in the rolling plains.")
+    closemessage
+}
+
+script GreenRestArea_EventScript_WaddleDeeShopEmployee
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_POTION_OLDALE))
+    {
+        msgbox("We're selling helpful items to Royal
+            Royale participants here.
+            
+            Here's a freebie to get you started!")
+        giveitem(ITEM_POTION)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox(gText_TooBadBagIsFull)
+        }
+        giveitem(ITEM_INFINITE_CANDY)
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox(gText_TooBadBagIsFull)
+        }
+        setflag(FLAG_RECEIVED_POTION_OLDALE)
+    }
+    msgbox("May you find everything you need to
+            succeed at our shop!")
+    release
+}
+
+script GreenRestArea_EventScript_WaddleDeeTalk
+{
+    lock
+    faceplayer
+    msgbox("Finding a Rest Area on your adventure
+            always feels so nice, doesn't it?
+            
+            I always make sure to heal up and
+            save before I head out again.")
+    release
+}
+
+script GreenRestArea_RivalTrigger1
+{
+    lock
+    turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
+    playSE(SE_PIN)
+    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, moves(walk_left * 2))
+    waitmovement
+    goto(GreenRestArea_EventScript_RivalBattle)
+}
+
+script GreenRestArea_RivalTrigger2
+{
+    lock
+    turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, moves(walk_left))
+    waitmovement
+    goto(GreenRestArea_EventScript_RivalBattle)
+}
+
+script GreenRestArea_RivalTrigger3
+{
+    lock
+    turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
+    waitmovement
+    goto(GreenRestArea_EventScript_RivalBattle)
+}
+
+script GreenRestArea_RivalTrigger4
+{
+    lock
+    turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_EAST)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
+    waitmovement
+    goto(GreenRestArea_EventScript_RivalBattle)
+}
+
+script GreenRestArea_RivalTrigger5
+{
+    lock
+    turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_EAST)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, moves(walk_right))
+    waitmovement
+    goto(GreenRestArea_EventScript_RivalBattle)
+}
+
+script GreenRestArea_EventScript_RivalTalk
+{
+    lock
+    turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_SOUTH)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    goto(GreenRestArea_EventScript_RivalBattle)
+}
+
+script GreenRestArea_EventScript_RivalBattle
+{
+    playbgm(MUS_ENCOUNTER_MAY, TRUE)
+    msgbox("I think I'm starting to get the hang
+            of battling with my Helpers.
+            
+            So\. uh\. if it's okay with you\.
+            can I please ask for a battle?
+            
+            My team and I are feeling pretty
+            confident about this!")
+    closemessage
+    switch(var(VAR_STARTER_MON)) {
+		case 0:
+			trainerbattle_no_intro(TRAINER_GRUNT_AQUA_HIDEOUT_3, GreenRestArea_Text_BandanaWaddleDeeDefeat)
+		case 1:
+			trainerbattle_no_intro(TRAINER_GRUNT_AQUA_HIDEOUT_4, GreenRestArea_Text_BandanaWaddleDeeDefeat)
+		case 2:
+			trainerbattle_no_intro(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, GreenRestArea_Text_BandanaWaddleDeeDefeat)
+	}
+    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} That was a good
+            battle, Kirby. I could learn from you.
+            
+            There's a lot more nuance to the Royal
+            Royale's rules than I expected\.
+            
+            I'll have to round out my team more to
+            get the upper hand. And of course,
+            that'll fill out my Info Cards too!
+            
+            Waddle Dee Town isn't too far from here.
+            I'll see you back at the town, Kirby!")
+    closemessage
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, moves(walk_up * 6))
+    waitmovement()
+    removeobject(LOCALID_GREEN_REST_AREA_BWD)
+    setflag(FLAG_DEFEATED_RIVAL_GREEN_REST_AREA)
+    setvar(VAR_GREEN_REST_AREA_STATE, 1)
+    fadedefaultbgm
+    release
+}
+
+text GreenRestArea_Text_BandanaWaddleDeeDefeat
+{
+	"Even though I trained, I'm still at
+    a disadvantage against your team\."
+}

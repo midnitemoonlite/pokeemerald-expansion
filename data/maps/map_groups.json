@@ -75,7 +75,8 @@
     "gMapGroup_IndoorTwoIslandRoute_Frlg",
     "gMapGroup_IndoorSixIslandRoute_Frlg",
     "gMapGroup_IndoorSevenIslandRoute_Frlg",
-    "gMapGroup_IndoorKirbysHouse"
+    "gMapGroup_IndoorKirbysHouse",
+    "gMapGroup_IndoorGreenRestArea"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -136,7 +137,8 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "KirbysHouse",
-    "GreenGreens"
+    "GreenGreens",
+    "GreenRestArea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -1166,5 +1168,9 @@
   ],
   "gMapGroup_IndoorKirbysHouse": [
     "KirbysHouse_Indoors"
+  ],
+  "gMapGroup_IndoorGreenRestArea": [
+    "GreenRestArea_Center",
+    "GreenRestArea_Mart"
   ]
 }

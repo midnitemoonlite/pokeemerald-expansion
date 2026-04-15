@@ -1,0 +1,54 @@
+raw `
+GreenRestArea_Mart_MapScripts::
+	.byte 0
+`
+script GreenRestArea_Mart_EventScript_Clerk
+{
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(GreenRestArea_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart GreenRestArea_Mart
+{
+    ITEM_POKE_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+}
+
+script GreenRestArea_EventScript_WaddleDeeJuice
+{
+    lock
+    faceplayer
+    msgbox("I know that Cherry Juice is supposed to
+            be for your Helpers, but\.
+            
+            I can't help it! It tastes so good!
+            I love juice!!")
+    release
+}
+
+script GreenRestArea_EventScript_WaddleDeeSell
+{
+    lock
+    faceplayer
+    msgbox("I grow crops in Vegetable Valley, then
+            bring them down here to sell.
+            
+            Those crops get used to make hearty
+            meals and drinks.
+            
+            After a long day of work, there's
+            nothing better to refresh yourself
+            with. It's nature's blessing!")
+    release
+}

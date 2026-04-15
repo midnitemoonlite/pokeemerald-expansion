@@ -461,7 +461,7 @@ KirbysHouse_Indoors_EventScript_Television_1:
 # 294 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_0
 # 315 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	playSE SE_PIN
+	playse SE_PIN
 # 316 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
 # 317 "data/maps/KirbysHouse_Indoors/scripts.pory"
@@ -471,7 +471,7 @@ KirbysHouse_Indoors_EventScript_Television_1:
 # 319 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_1
 # 345 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	playSE SE_PIN
+	playse SE_PIN
 # 346 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
 # 347 "data/maps/KirbysHouse_Indoors/scripts.pory"

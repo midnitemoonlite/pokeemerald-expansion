@@ -312,7 +312,7 @@ script KirbysHouse_Indoors_EventScript_Television
 				find out for yourself! Introducing\.
 				
 				{COLOR RED}DEDEDE'S ROYAL ROYALE!{COLOR DARK_GRAY}")
-		playSE(SE_PIN)
+		playse(SE_PIN)
 		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
@@ -342,7 +342,7 @@ script KirbysHouse_Indoors_EventScript_Television
 				
 				Why, you'll be crowned the brand new
 				{COLOR RED}KING OF DREAM LAND{COLOR DARK_GRAY}! Ha ha ha!")
-		playSE(SE_PIN)
+		playse(SE_PIN)
 		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
