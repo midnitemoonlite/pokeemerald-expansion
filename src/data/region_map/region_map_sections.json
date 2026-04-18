@@ -1638,6 +1638,10 @@
     {
       "id": "MAPSEC_GREEN_REST_AREA",
       "name": "GREEN REST AREA"
+    },
+    {
+      "id": "MAPSEC_PRISM_PLAINS",
+      "name": "PRISM PLAINS"
     }
   ]
 }

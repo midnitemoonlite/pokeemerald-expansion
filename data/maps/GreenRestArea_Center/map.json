@@ -30,7 +30,7 @@
     },
     {
       "local_id": "LOCALID_PC_WADDLE_DEE",
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
       "x": 10,
       "y": 6,
       "elevation": 0,
@@ -43,7 +43,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
       "x": 1,
       "y": 8,
       "elevation": 0,
@@ -70,7 +70,7 @@
     },
     {
       "local_id": "LOCALID_MAP_WADDLE_DEE",
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
       "x": 12,
       "y": 2,
       "elevation": 0,

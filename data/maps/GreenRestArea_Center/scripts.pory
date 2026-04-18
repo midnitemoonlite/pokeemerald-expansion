@@ -7,6 +7,10 @@ GreenRestArea_Center_MapScripts::
 GreenRestArea_Center_OnTransition:
 	setrespawn HEAL_LOCATION_GREEN_REST_AREA
 	end
+
+Common_Text_LookCloserAtMap:
+	.string "Kirby took a closer look at the\n"
+	.string "map of Dream Land.$"
 `
 
 script GreenRestArea_Center_EventScript_WaddleDeeNight
@@ -14,7 +18,7 @@ script GreenRestArea_Center_EventScript_WaddleDeeNight
     lock
     faceplayer
     msgbox("I'm impressed how swiftly the king has
-            gotten this Royal Royale running.
+            gotten his Royal Royale running.
             
             But I shouldn't be surprised. He does
             work best late at night!")
@@ -40,19 +44,17 @@ script GreenRestArea_Center_EventScript_WaddleDeePC
     lock
     faceplayer
     msgbox("Kirby, have you seen that tall machine
-            by the corner?")
-    turnobject(LOCALID_PC_WADDLE_DEE, DIR_NORTH)
-    delay(15)
-    msgbox("Apparently, it's called a \qoPC\qc. There's a
-            limit to how many Helpers you can take
-            with you, so the rest go in there.")
-    faceplayer
-    delay(15)
-    msgbox("It seems a little small, doesn't it?
-            How do you fit Helpers inside a PC?
+            by the corner?
             
-            Oh, do you think maybe there's a
-            tunnel underneath it?")
+            Apparently, it's called a \qoPC\qc. There's a
+            limit to how many Helpers you can take
+            with you, so the rest go in there.
+            
+            I've never seen anything like it. I wish
+            I could take it apart to understand it.
+            
+            But that would certainly disqualify me
+            from Dedede's Royal Royale. Sigh\.")
     release
 }
 

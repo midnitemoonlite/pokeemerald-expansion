@@ -6,7 +6,7 @@ GreenRestArea_MapScripts::
 script GreenRestArea_EventScript_Sign
 {
     msgbox("GREEN REST AREA
-            A pit stop in the rolling plains.")
+            A pit stop in the rolling plains.", MSGBOX_SIGN)
     closemessage
 }
 

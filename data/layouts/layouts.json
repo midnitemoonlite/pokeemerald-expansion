@@ -9383,6 +9383,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/GreenRestArea_Mart/border.bin",
       "blockdata_filepath": "data/layouts/GreenRestArea_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRISM_PLAINS",
+      "name": "PrismPlains_Layout",
+      "width": 24,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/PrismPlains/border.bin",
+      "blockdata_filepath": "data/layouts/PrismPlains/map.bin"
     }
   ]
 }

@@ -6364,7 +6364,7 @@ static void DeleteInvalidFusionMoves(struct Pokemon *mon, u32 species)
             DeleteMove(mon, move);
     }
 }
-
+/*
 #if P_FUSION_FORMS
 static void SwapFusionMonMoves(struct Pokemon *mon, const u16 moveTable[][2], u32 mode)
 {
@@ -6395,7 +6395,7 @@ static void SwapFusionMonMoves(struct Pokemon *mon, const u16 moveTable[][2], u3
 
 }
 #endif //P_FUSION_FORMS
-
+*/
 static void Task_TryItemUseFusionChange(u8 taskId)
 {
     struct Pokemon *mon = &gPlayerParty[gTasks[taskId].firstFusionSlot];

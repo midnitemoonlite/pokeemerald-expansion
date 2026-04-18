@@ -17,6 +17,11 @@
       "map": "MAP_GREEN_GREENS",
       "offset": -6,
       "direction": "down"
+    },
+    {
+      "map": "MAP_PRISM_PLAINS",
+      "offset": -4,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -34,7 +39,7 @@
       "flag": "FLAG_ITEM_ROUTE_105_IRON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
       "x": 9,
       "y": 12,
       "elevation": 0,
@@ -47,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
       "x": 6,
       "y": 10,
       "elevation": 0,
@@ -72,6 +77,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "GreenRestArea_EventScript_RivalTalk",
       "flag": "FLAG_DEFEATED_RIVAL_GREEN_REST_AREA"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_StrengthBoulder",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -80,7 +98,7 @@
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_GREEN_REST_AREA_CENTER",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
       "x": 10,

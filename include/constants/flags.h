@@ -553,8 +553,8 @@
 #define FLAG_HIDDEN_ITEMS_START                                                         0x1F4
 #define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00) // Green Greens - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01) // Green Rest Area - Hidden Item 1
-#define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02)
-#define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03)
+#define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02) // Prism Plains - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03) // Prism Plains - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS                    (FLAG_HIDDEN_ITEMS_START + 0x04)
 #define FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM                   (FLAG_HIDDEN_ITEMS_START + 0x05)
 #define FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL                (FLAG_HIDDEN_ITEMS_START + 0x06)
@@ -1054,11 +1054,11 @@
 #define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9 // Green Greens - Item 2
 #define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA // Green Greens - Item 3
 #define FLAG_ITEM_ROUTE_105_IRON                                    0x3EB // Green Rest Area - Item 1
-#define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC
-#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED
-#define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0
+#define FLAG_ITEM_ROUTE_106_PROTEIN                                 0x3EC // Prism Plains - Item 1
+#define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED // Prism Plains - Item 2
+#define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE // Prism Plains - Item 3
+#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF // Prism Plains - Item 4
+#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0 
 #define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3

@@ -974,7 +974,7 @@ KirbysHouse_EventScript_ExitHouseFirstTime_Text_7:
 KirbysHouse_EventScript_ExitHouseFirstTime_Text_8:
 # 123 "data/maps/KirbysHouse/scripts.pory"
 	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Okay, sure! I'll\n"
-	.string "try the Royal Royale out!\p"
+	.string "try Dedede's Royal Royale out!\p"
 	.string "{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} A most excellent\n"
 	.string "response! Thank you kindly!\p"
 	.string "First, we must get you two situated\n"
@@ -1123,7 +1123,7 @@ KirbysHouse_EventScript_AfterChoosingStarter_Text_7:
 	.string "to my lab in Waddle Dee Town.\p"
 	.string "If you make any progress on your Info\n"
 	.string "Cards, don't hesitate to drop on by!\p"
-	.string "Enjoy the Royal Royale, you two!$"
+	.string "Enjoy Dedede's Royal Royale, you two!$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_8:
 # 493 "data/maps/KirbysHouse/scripts.pory"

@@ -7,7 +7,7 @@ GreenGreens_MapScripts::
 
 GreenGreens_EventScript_Sign::
 # 8 "data/maps/GreenGreens/scripts.pory"
-	msgbox GreenGreens_EventScript_Sign_Text_0
+	msgbox GreenGreens_EventScript_Sign_Text_0, MSGBOX_SIGN
 # 10 "data/maps/GreenGreens/scripts.pory"
 	closemessage
 	return

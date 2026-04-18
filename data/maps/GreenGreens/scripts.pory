@@ -6,7 +6,7 @@ GreenGreens_MapScripts::
 script GreenGreens_EventScript_Sign
 {
     msgbox("GREEN GREENS
-            Where the spring breeze always blows.")
+            Where the spring breeze always blows.", MSGBOX_SIGN)
     closemessage
 }
 

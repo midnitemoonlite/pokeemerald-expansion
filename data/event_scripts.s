@@ -1357,11 +1357,11 @@ Common_EventScript_PlayerHandedOverTheItem::
 @ The below and surf.inc could be split into some text/notices.inc
 gText_PokemartSign::
 	.string "“Selected items for your convenience!”\n"
-	.string "POKéMON MART$"
+	.string "ITEM SHOP$"
 
 gText_PokemonCenterSign::
-	.string "“Rejuvenate your tired partners!”\n"
-	.string "POKéMON CENTER$"
+	.string "“Rejuvenate your tired Helpers!”\n"
+	.string "HEALING CENTER$"
 
 gText_MomOrDadMightLikeThisProgram::
 	.string "Gooey might like this program.\n"
@@ -1381,12 +1381,12 @@ gText_SelectWithoutRegisteredItem::
 	.string "registered to SELECT for easy use.$"
 
 gText_PokemonTrainerSchoolEmail::
-	.string "There's an e-mail from POKéMON TRAINER\n"
-	.string "SCHOOL.\p"
+	.string "There's an e-mail from Dedede\n"
+	.string "Academy.\p"
 	.string "… … … … … …\p"
-	.string "A POKéMON may learn up to four moves.\p"
-	.string "A TRAINER's expertise is tested on the\n"
-	.string "move sets chosen for POKéMON.\p"
+	.string "A Helper may learn up to four moves.\p"
+	.string "A leader's expertise is tested on the\n"
+	.string "move sets chosen for Helpers.\p"
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC::
@@ -1408,17 +1408,17 @@ gText_FirstShouldRestoreMonsHealth::
 	.string "Helpers to full health.$"
 
 gText_MonsHealedShouldBuyPotions::
-	.string "Your POKéMON have been healed\n"
+	.string "Your Helpers have been healed\n"
 	.string "to perfect health.\p"
-	.string "If your POKéMON's energy, HP,\n"
+	.string "If your Helpers' energy, HP,\n"
 	.string "is down, please come see us.\p"
 	.string "If you're planning to go far in the\n"
-	.string "field, you should buy some POTIONS\l"
-	.string "at the POKéMON MART.\p"
+	.string "field, you should buy some items\l"
+	.string "at the item shop.\p"
 	.string "We hope you excel!$"
 
 gText_MonsHealed::
-	.string "Your POKéMON have been healed\n"
+	.string "Your Helpers have been healed\n"
 	.string "to perfect health.\p"
 	.string "We hope you excel!$"
 
@@ -1432,16 +1432,16 @@ gText_HadQuiteAnExperienceTakeRest::
 
 gText_MomExplainHPGetPotions::
 	.string "MOM: Oh, good! You and your\n"
-	.string "POKéMON are looking great.\p"
+	.string "Helpers are looking great.\p"
 	.string "I just heard from {STR_VAR_1}.\p"
-	.string "He said that POKéMON's energy is\n"
+	.string "He said that Helpers' energy is\n"
 	.string "measured in HP.\p"
-	.string "If your POKéMON lose their HP,\n"
+	.string "If your Helpers lose their HP,\n"
 	.string "you can restore them at any\l"
-	.string "POKéMON CENTER.\p"
+	.string "HEALING CENTER.\p"
 	.string "If you're going to travel far away,\n"
 	.string "the smart TRAINER stocks up on\l"
-	.string "POTIONS at the POKéMON MART.\p"
+	.string "POTIONS at the ITEM SHOP.\p"
 	.string "Make me proud, honey!\p"
 	.string "Take care!$"
 
@@ -1459,12 +1459,12 @@ gText_ComeBackWithSecretPower::
 	.string "you good stuff in secrecy.$"
 
 gText_PokerusExplanation::
-	.string "Your POKéMON may be infected with\n"
+	.string "Your Helper may be infected with\n"
 	.string "POKéRUS.\p"
 	.string "Little is known about the POKéRUS\n"
 	.string "except that they are microscopic life-\l"
-	.string "forms that attach to POKéMON.\p"
-	.string "While infected, POKéMON are said to\n"
+	.string "forms that attach to Helpers.\p"
+	.string "While infected, Helpers are said to\n"
 	.string "grow exceptionally well.$"
 
 	.include "data/text/surf.inc"
@@ -1478,7 +1478,7 @@ gText_BigHoleInTheWall::
 
 gText_SorryWirelessClubAdjustments::
 	.string "I'm terribly sorry.\n"
-	.string "The POKéMON WIRELESS CLUB is\l"
+	.string "The HELPER WIRELESS CLUB is\l"
 	.string "undergoing adjustments now.$"
 
 gText_UndergoingAdjustments::
@@ -1749,3 +1749,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/GreenRestArea_Center/scripts.inc"
 
 	.include "data/maps/GreenRestArea_Mart/scripts.inc"
+
+	.include "data/maps/PrismPlains/scripts.inc"

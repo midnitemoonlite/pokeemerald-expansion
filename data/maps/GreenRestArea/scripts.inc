@@ -7,7 +7,7 @@ GreenRestArea_MapScripts::
 
 GreenRestArea_EventScript_Sign::
 # 8 "data/maps/GreenRestArea/scripts.pory"
-	msgbox GreenRestArea_EventScript_Sign_Text_0
+	msgbox GreenRestArea_EventScript_Sign_Text_0, MSGBOX_SIGN
 # 10 "data/maps/GreenRestArea/scripts.pory"
 	closemessage
 	return

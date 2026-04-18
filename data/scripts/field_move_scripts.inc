@@ -8,7 +8,7 @@ EventScript_CutTree::
 	buffermovename STR_VAR_2, MOVE_CUT
 	msgbox Text_WantToCut, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
-	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	msgbox Text_MonUsedCut, MSGBOX_DEFAULT
 	closemessage
 EventScript_CutTreeCommon:
 	isfollowerfieldmoveuser VAR_0x8004
@@ -44,16 +44,19 @@ EventScript_CancelCut::
 	end
 
 Text_WantToCut:
-	.string "This tree looks like it can be\n"
-	.string "CUT down!\p"
-	.string "Would you like to CUT it?$"
+	.string "A small, wobbly tree is planted here.\n"
+	.string "Something sharp could cut it down.\p"
+	.string "Would you like to call Pitch?$"
 
 Text_MonUsedFieldMove:
 	.string "{STR_VAR_1} used {STR_VAR_2}!$"
 
+Text_MonUsedCut:
+	.string "Pitch answered your call!$"
+
 Text_CantCut:
-	.string "This tree looks like it can be\n"
-	.string "CUT down!$"
+	.string "A small, wobbly tree is planted here.\n"
+	.string "Something sharp could cut it down.$"
 
 @ Use rock smash from party menu
 EventScript_UseRockSmash::
@@ -70,7 +73,7 @@ EventScript_RockSmash::
 	buffermovename STR_VAR_2, MOVE_ROCK_SMASH
 	msgbox Text_WantToSmash, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
-	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	msgbox Text_MonUsedRockSmash, MSGBOX_DEFAULT
 	closemessage
 EventScript_RockSmashCommon:
 	@ check if follower should use the field move
@@ -214,12 +217,15 @@ EventScript_CancelSmash::
 	end
 
 Text_WantToSmash:
-	.string "This rock appears to be breakable.\n"
-	.string "Would you like to use ROCK SMASH?$"
+	.string "There's a breakable Star Block here.\n"
+	.string "Would you like to call Nago?$"
+
+Text_MonUsedRockSmash:
+	.string "Nago answered your call!$"
 
 Text_CantSmash:
-	.string "It's a rugged rock, but a POKéMON\n"
-	.string "may be able to smash it.$"
+	.string "This Star Block is unusually sturdy.\n"
+	.string "You can't break it as you are now.$"
 
 EventScript_StrengthBoulder::
 	lockall
@@ -264,22 +270,22 @@ EventScript_CancelStrength::
 	end
 
 Text_WantToStrength:
-	.string "It's a big boulder, but a POKéMON\n"
-	.string "may be able to push it aside.\p"
-	.string "Would you like to use STRENGTH?$"
+	.string "A Gordo stubbornly blocks your path.\n"
+	.string "Its spikes are sharp to the touch.\p"
+	.string "Would you like to call Rick?$"
 
 Text_MonUsedStrength:
-	.string "{STR_VAR_1} used STRENGTH!\p"
-	.string "{STR_VAR_1}'s STRENGTH made it\n"
-	.string "possible to move boulders around!$"
+	.string "Rick answers your call!\p"
+	.string "With Rick's help, you can now safely\n"
+	.string "push Gordos out of your way!$"
 
 Text_CantStrength:
-	.string "It's a big boulder, but a POKéMON\n"
-	.string "may be able to push it aside.$"
+	.string "A Gordo stubbornly blocks your path.\n"
+	.string "Its spikes are sharp to the touch.$"
 
 Text_StrengthActivated:
-	.string "STRENGTH made it possible to move\n"
-	.string "boulders around.$"
+	.string "With Rick's help, you can now safely\n"
+	.string "push Gordos out of your way.$"
 
 EventScript_UseWaterfall::
 	lockall
@@ -311,10 +317,10 @@ Text_CantWaterfall:
 
 Text_WantToWaterfall:
 	.string "It's a large waterfall.\n"
-	.string "Would you like to use WATERFALL?$"
+	.string "Would you like to call Chuchu?$"
 
 Text_MonUsedWaterfall:
-	.string "{STR_VAR_1} used WATERFALL.$"
+	.string "Chuchu answers your call!$"
 
 EventScript_UseDive::
 	lockall
@@ -400,7 +406,7 @@ EventScript_UseCutGrass::
 	goto EventScript_CutGrassCommon
 
 Text_CantDive:
-	.string "The sea is deep here. A POKéMON\n"
+	.string "The sea is deep here. A Helper\n"
 	.string "may be able to go underwater.$"
 
 Text_WantToDive:
@@ -412,7 +418,7 @@ Text_MonUsedDive:
 
 Text_CantSurface:
 	.string "Light is filtering down from above.\n"
-	.string "A POKéMON may be able to surface.$"
+	.string "A Helper may be able to surface.$"
 
 Text_WantToSurface:
 	.string "Light is filtering down from above.\n"
@@ -473,4 +479,4 @@ Text_MonUsedRockClimb:
 
 Text_CantRockClimb:
 	.string "The cliff is steep.\n"
-	.string "A Pokémon may be able to climb it.$"
+	.string "A Helper may be able to climb it.$"

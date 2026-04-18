@@ -589,18 +589,10 @@ PlayersHouse_2F_Text_Notebook:
 # 295 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 
 # 296 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-Common_Text_LookCloserAtMap:
-# 297 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "{PLAYER} took a closer look at the\n"
-# 298 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	.string "{REGION} region map.$"
-# 299 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-
-# 300 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 PlayersHouse_2F_Text_ItsAGameCube:
-# 301 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 297 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "It's a Nintendo GameCube.\p"
-# 302 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 298 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "A Game Boy Advance is connected to\n"
-# 303 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
+# 299 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	.string "serve as the Controller.$"

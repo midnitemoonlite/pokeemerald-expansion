@@ -16,92 +16,88 @@ GreenRestArea_Center_OnTransition:
 	setrespawn HEAL_LOCATION_GREEN_REST_AREA
 # 9 "data/maps/GreenRestArea_Center/scripts.pory"
 	end
+# 10 "data/maps/GreenRestArea_Center/scripts.pory"
+
+# 11 "data/maps/GreenRestArea_Center/scripts.pory"
+Common_Text_LookCloserAtMap:
+# 12 "data/maps/GreenRestArea_Center/scripts.pory"
+	.string "Kirby took a closer look at the\n"
+# 13 "data/maps/GreenRestArea_Center/scripts.pory"
+	.string "map of Dream Land.$"
 
 GreenRestArea_Center_EventScript_WaddleDeeNight::
-# 14 "data/maps/GreenRestArea_Center/scripts.pory"
+# 18 "data/maps/GreenRestArea_Center/scripts.pory"
 	lock
-# 15 "data/maps/GreenRestArea_Center/scripts.pory"
+# 19 "data/maps/GreenRestArea_Center/scripts.pory"
 	faceplayer
-# 16 "data/maps/GreenRestArea_Center/scripts.pory"
+# 20 "data/maps/GreenRestArea_Center/scripts.pory"
 	msgbox GreenRestArea_Center_EventScript_WaddleDeeNight_Text_0
-# 21 "data/maps/GreenRestArea_Center/scripts.pory"
+# 25 "data/maps/GreenRestArea_Center/scripts.pory"
 	release
 	return
 
 
 GreenRestArea_Center_EventScript_WaddleDeeHopscotch::
-# 26 "data/maps/GreenRestArea_Center/scripts.pory"
+# 30 "data/maps/GreenRestArea_Center/scripts.pory"
 	lock
-# 27 "data/maps/GreenRestArea_Center/scripts.pory"
+# 31 "data/maps/GreenRestArea_Center/scripts.pory"
 	faceplayer
-# 28 "data/maps/GreenRestArea_Center/scripts.pory"
+# 32 "data/maps/GreenRestArea_Center/scripts.pory"
 	msgbox GreenRestArea_Center_EventScript_WaddleDeeHopscotch_Text_0
-# 35 "data/maps/GreenRestArea_Center/scripts.pory"
+# 39 "data/maps/GreenRestArea_Center/scripts.pory"
 	release
 	return
 
 
 GreenRestArea_Center_EventScript_WaddleDeePC::
-# 40 "data/maps/GreenRestArea_Center/scripts.pory"
-	lock
-# 41 "data/maps/GreenRestArea_Center/scripts.pory"
-	faceplayer
-# 42 "data/maps/GreenRestArea_Center/scripts.pory"
-	msgbox GreenRestArea_Center_EventScript_WaddleDeePC_Text_0
 # 44 "data/maps/GreenRestArea_Center/scripts.pory"
-	turnobject LOCALID_PC_WADDLE_DEE, DIR_NORTH
+	lock
 # 45 "data/maps/GreenRestArea_Center/scripts.pory"
-	delay 15
-# 46 "data/maps/GreenRestArea_Center/scripts.pory"
-	msgbox GreenRestArea_Center_EventScript_WaddleDeePC_Text_1
-# 49 "data/maps/GreenRestArea_Center/scripts.pory"
 	faceplayer
-# 50 "data/maps/GreenRestArea_Center/scripts.pory"
-	delay 15
-# 51 "data/maps/GreenRestArea_Center/scripts.pory"
-	msgbox GreenRestArea_Center_EventScript_WaddleDeePC_Text_2
-# 56 "data/maps/GreenRestArea_Center/scripts.pory"
+# 46 "data/maps/GreenRestArea_Center/scripts.pory"
+	msgbox GreenRestArea_Center_EventScript_WaddleDeePC_Text_0
+# 58 "data/maps/GreenRestArea_Center/scripts.pory"
 	release
 	return
 
 
 GreenRestArea_Center_EventScript_WaddleDeeMap::
-# 61 "data/maps/GreenRestArea_Center/scripts.pory"
-	lock
-# 62 "data/maps/GreenRestArea_Center/scripts.pory"
-	faceplayer
 # 63 "data/maps/GreenRestArea_Center/scripts.pory"
-	msgbox GreenRestArea_Center_EventScript_WaddleDeeMap_Text_0
+	lock
+# 64 "data/maps/GreenRestArea_Center/scripts.pory"
+	faceplayer
 # 65 "data/maps/GreenRestArea_Center/scripts.pory"
+	msgbox GreenRestArea_Center_EventScript_WaddleDeeMap_Text_0
+# 67 "data/maps/GreenRestArea_Center/scripts.pory"
 	turnobject LOCALID_MAP_WADDLE_DEE, DIR_NORTH
-# 66 "data/maps/GreenRestArea_Center/scripts.pory"
+# 68 "data/maps/GreenRestArea_Center/scripts.pory"
 	release
 	return
 
 
 GreenRestArea_Center_1F_EventScript_Nurse::
-# 71 "data/maps/GreenRestArea_Center/scripts.pory"
-	setvar VAR_0x800B, LOCALID_GREEN_REST_AREA_NURSE
-# 72 "data/maps/GreenRestArea_Center/scripts.pory"
-	call Common_EventScript_PkmnCenterNurse
 # 73 "data/maps/GreenRestArea_Center/scripts.pory"
-	waitmessage
+	setvar VAR_0x800B, LOCALID_GREEN_REST_AREA_NURSE
 # 74 "data/maps/GreenRestArea_Center/scripts.pory"
-	waitbuttonpress
+	call Common_EventScript_PkmnCenterNurse
 # 75 "data/maps/GreenRestArea_Center/scripts.pory"
+	waitmessage
+# 76 "data/maps/GreenRestArea_Center/scripts.pory"
+	waitbuttonpress
+# 77 "data/maps/GreenRestArea_Center/scripts.pory"
 	release
 	end
 
 
 GreenRestArea_Center_EventScript_WaddleDeeNight_Text_0:
-# 16 "data/maps/GreenRestArea_Center/scripts.pory"
+# 20 "data/maps/GreenRestArea_Center/scripts.pory"
 	.string "I'm impressed how swiftly the king has\n"
-	.string "gotten this Royal Royale running.\p"
+	.string "gotten his Royal Royale running.\p"
 	.string "But I shouldn't be surprised. He does\n"
 	.string "work best late at night!$"
 
 GreenRestArea_Center_EventScript_WaddleDeeHopscotch_Text_0:
-# 28 "data/maps/GreenRestArea_Center/scripts.pory"
+# 32 "data/maps/GreenRestArea_Center/scripts.pory"
 	.string "If I were king… what would I do?\p"
 	.string "Hmm… maybe I could order everyone\n"
 	.string "to play hopscotch with me.\l"
@@ -109,24 +105,18 @@ GreenRestArea_Center_EventScript_WaddleDeeHopscotch_Text_0:
 	.string "Wow! Being king sounds fun!$"
 
 GreenRestArea_Center_EventScript_WaddleDeePC_Text_0:
-# 42 "data/maps/GreenRestArea_Center/scripts.pory"
-	.string "Kirby, have you seen that tall machine\n"
-	.string "by the corner?$"
-
-GreenRestArea_Center_EventScript_WaddleDeePC_Text_1:
 # 46 "data/maps/GreenRestArea_Center/scripts.pory"
+	.string "Kirby, have you seen that tall machine\n"
+	.string "by the corner?\p"
 	.string "Apparently, it's called a “PC”. There's a\n"
 	.string "limit to how many Helpers you can take\l"
-	.string "with you, so the rest go in there.$"
-
-GreenRestArea_Center_EventScript_WaddleDeePC_Text_2:
-# 51 "data/maps/GreenRestArea_Center/scripts.pory"
-	.string "It seems a little small, doesn't it?\n"
-	.string "How do you fit Helpers inside a PC?\p"
-	.string "Oh, do you think maybe there's a\n"
-	.string "tunnel underneath it?$"
+	.string "with you, so the rest go in there.\p"
+	.string "I've never seen anything like it. I wish\n"
+	.string "I could take it apart to understand it.\p"
+	.string "But that would certainly disqualify me\n"
+	.string "from Dedede's Royal Royale. Sigh…$"
 
 GreenRestArea_Center_EventScript_WaddleDeeMap_Text_0:
-# 63 "data/maps/GreenRestArea_Center/scripts.pory"
+# 65 "data/maps/GreenRestArea_Center/scripts.pory"
 	.string "I'm planning a trip to Ice Cream Island!\n"
 	.string "Going to the beach sounds fun!$"

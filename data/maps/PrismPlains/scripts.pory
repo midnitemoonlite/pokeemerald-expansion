@@ -1,0 +1,232 @@
+raw `
+PrismPlains_MapScripts::
+	.byte 0
+`
+
+script PrismPlains_EventScript_Sign
+{
+    msgbox("PRISM PLAINS
+            Mind your step on this hilltop road.", MSGBOX_SIGN)
+    closemessage
+}
+
+script PrismPlains_EventScript_WaddleDeeRunning
+{
+    lock
+    faceplayer
+    msgbox("Hup, hup\.
+    
+            I like to jog up and down the hills, but
+            today it's been nothing but others
+            asking for Helper battles.
+            
+            Hup, hup\. can't they see I'm just an
+            ordinary Waddle Dee?
+            
+            If you're moving forward, be ready
+            for challenges. Hup, hup\.")
+    release
+}
+
+script PrismPlains_EventScript_WaddleDeeLedgeJump
+{
+    if(!flag(FLAG_TEMP_16))
+    {
+        lock
+        msgbox("One\.
+                
+                Two\.
+                
+                Three!")
+        closemessage
+        applymovement(LOCALID_LEDGE_WADDLE_DEE, moves(jump_2_down, walk_down))
+        waitmovement()
+        setobjectxyperm(LOCALID_LEDGE_WADDLE_DEE, 5, 29)
+        setflag(FLAG_TEMP_16)
+        release
+    } elif(flag(FLAG_TEMP_16))
+    {
+        lock
+        faceplayer
+        msgbox("Jumping down ledges is so much fun!")
+        release
+    }
+ }
+
+script PrismPlains_EventScript_WaddleDeeRocky
+{
+    lock
+    faceplayer
+    msgbox("I'm surprised you found your way
+            through here.
+            
+            This place is my secret spot\. I like
+            navigating around all the rocks here.")
+    release
+}
+
+script PrismPlains_EventScript_EnteringTown1
+{
+    lock
+    faceplayer
+    msgbox("You are now approaching one of the
+            Great King's many castles.
+            
+            His Majesty has recently arrived in
+            town. Don't try anything funny!")
+    release
+}
+
+script PrismPlains_EventScript_EnteringTown2
+{
+    lock
+    faceplayer
+    msgbox("Waddle Dee Town is just up ahead.
+            I doubt I need to tell you, Kirby, but\.
+            Be on your best behavior, okay?")
+    release
+}
+
+script PrismPlains_EventScript_Trainer1
+{
+    trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_2, PrismPlains_Text_Trainer1Intro, PrismPlains_Text_Trainer1Defeated)
+    msgbox(PrismPlains_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+
+}
+
+script PrismPlains_EventScript_Trainer2
+{
+    trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_3, PrismPlains_Text_Trainer2Intro, PrismPlains_Text_Trainer2Defeated)
+    msgbox(PrismPlains_Text_Trainer2Post, MSGBOX_AUTOCLOSE)
+
+}
+
+script PrismPlains_EventScript_Trainer3
+{
+    trainerbattle_single(TRAINER_GABRIELLE_1, PrismPlains_Text_Trainer3Intro, PrismPlains_Text_Trainer3Defeated)
+    msgbox(PrismPlains_Text_Trainer3Post, MSGBOX_AUTOCLOSE)
+
+}
+
+script PrismPlains_EventScript_Trainer4
+{
+    trainerbattle_single(TRAINER_GRUNT_PETALBURG_WOODS, PrismPlains_Text_Trainer4Intro, PrismPlains_Text_Trainer4Defeated)
+    msgbox(PrismPlains_Text_Trainer4Post, MSGBOX_AUTOCLOSE)
+
+}
+
+script PrismPlains_EventScript_Trainer5
+{
+    trainerbattle_single(TRAINER_MARCEL, PrismPlains_Text_Trainer5Intro, PrismPlains_Text_Trainer5Defeated)
+    msgbox(PrismPlains_Text_Trainer5Post, MSGBOX_AUTOCLOSE)
+
+}
+
+script PrismPlains_EventScript_Trainer6
+{
+    trainerbattle_single(TRAINER_ALBERTO, PrismPlains_Text_Trainer6Intro, PrismPlains_Text_Trainer6Defeated)
+    msgbox(PrismPlains_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+
+}
+
+text PrismPlains_Text_Trainer1Intro
+{
+    "Alright! It's time for my very first
+     battle of Dedede's Royal Royale!"
+}
+
+text PrismPlains_Text_Trainer1Defeated
+{
+    "Maybe having my first battle against
+     Kirby was a lopsided matchup\."
+}
+
+text PrismPlains_Text_Trainer1Post
+{
+    "Oh well, there's no shame in losing.
+     You did great, Kirby!"
+}
+
+text PrismPlains_Text_Trainer2Intro
+{
+    "Doesn't a battle on a bridge
+     sound exciting?"
+}
+
+text PrismPlains_Text_Trainer2Defeated
+{
+    "Whoa! I almost fell off!"
+}
+
+text PrismPlains_Text_Trainer2Post
+{
+    "Always watch where you walk!"
+}
+
+text PrismPlains_Text_Trainer3Intro
+{
+    "I tried challenging the Castle Arena,
+     but it was really tough\."
+}
+
+text PrismPlains_Text_Trainer3Defeated
+{
+    "Looks like I'll need to train more."
+}
+
+text PrismPlains_Text_Trainer3Post
+{
+    "How should I make my Helpers stronger?
+     Maybe I can teach them new moves\."
+}
+
+text PrismPlains_Text_Trainer4Intro
+{
+    "I've got a bunch of Helpers already!
+     I can win this battle easily!"
+}
+
+text PrismPlains_Text_Trainer4Defeated
+{
+    "Whaaaat? That didn't work?"
+}
+
+text PrismPlains_Text_Trainer4Post
+{
+    "I understand my weakness now\.
+     I need to catch MORE Beanbons!"
+}
+
+text PrismPlains_Text_Trainer5Intro
+{
+    "Surprise!"
+}
+
+text PrismPlains_Text_Trainer5Defeated
+{
+    "Did I shock you?"
+}
+
+text PrismPlains_Text_Trainer5Post
+{
+    "It's hard to see down those ledges
+    thanks to the rocks. This is the
+    perfect spot to surprise them!"
+}
+
+text PrismPlains_Text_Trainer6Intro
+{
+    "Hup, hup! Hi, Kirby! Are you up for a
+     Helper battle?"
+}
+
+text PrismPlains_Text_Trainer6Defeated
+{
+    "Hup, hup\. stumble\. you got me!"
+}
+
+text PrismPlains_Text_Trainer6Post
+{
+    "Jogging up and down these hills is more
+     exciting than ever now. Hup, hup...!"
+}

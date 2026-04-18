@@ -121,7 +121,7 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
 		waitmovement(0)
 		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Okay, sure! I'll
-				try the Royal Royale out!
+				try Dedede's Royal Royale out!
 
 				{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} A most excellent
 				response! Thank you kindly!
@@ -482,7 +482,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 			If you make any progress on your Info
 			Cards, don't hesitate to drop on by!
 			
-			Enjoy the Royal Royale, you two!")
+			Enjoy Dedede's Royal Royale, you two!")
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_up * 5))
 	waitmovement()
