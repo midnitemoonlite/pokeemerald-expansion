@@ -55,7 +55,7 @@ script GreenRestArea_RivalTrigger1
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
     applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playSE(SE_PIN)
-    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
     applymovement(LOCALID_GREEN_REST_AREA_BWD, moves(walk_left * 2))
@@ -69,7 +69,7 @@ script GreenRestArea_RivalTrigger2
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
     applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
-    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
     applymovement(LOCALID_GREEN_REST_AREA_BWD, moves(walk_left))
@@ -83,7 +83,7 @@ script GreenRestArea_RivalTrigger3
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
     applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
-    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
     waitmovement
@@ -96,7 +96,7 @@ script GreenRestArea_RivalTrigger4
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_EAST)
     applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
-    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
     waitmovement
@@ -109,7 +109,7 @@ script GreenRestArea_RivalTrigger5
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_EAST)
     applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
-    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
     applymovement(LOCALID_GREEN_REST_AREA_BWD, moves(walk_right))
@@ -123,21 +123,26 @@ script GreenRestArea_EventScript_RivalTalk
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_SOUTH)
     applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
-    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby!")
+    msgbox(GreenRestArea_BandanaDeeIntro)
     goto(GreenRestArea_EventScript_RivalBattle)
+}
+
+text GreenRestArea_BandanaDeeIntro
+{
+    "{SPEAKER NAME_BANDANA}Kirby!"
 }
 
 script GreenRestArea_EventScript_RivalBattle
 {
     playbgm(MUS_ENCOUNTER_MAY, TRUE)
-    msgbox("I think I'm starting to get the hang
-            of battling with my Helpers.
+    msgbox("{SPEAKER NAME_BANDANA}I think I'm starting to get the hang of
+            battling with my Helpers.
             
             So\. uh\. if it's okay with you\.
-            can I please ask for a battle?
+            can I ask for a battle?
             
             My team and I are feeling pretty
-            confident about this!")
+            confident about our synergy!")
     closemessage
     switch(var(VAR_STARTER_MON)) {
 		case 0:
@@ -147,18 +152,15 @@ script GreenRestArea_EventScript_RivalBattle
 		case 2:
 			trainerbattle_no_intro(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, GreenRestArea_Text_BandanaWaddleDeeDefeat)
 	}
-    msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} That was a good
-            battle, Kirby. I could learn from you.
-            
-            There's a lot more nuance to the Royal
-            Royale's rules than I expected\.
+    msgbox("{SPEAKER NAME_BANDANA}That was a good battle, Kirby. I guess
+            I've still got a lot to learn, huh?
             
             I'll have to round out my team more to
             get the upper hand. And of course,
             that'll fill out my Info Cards too!
             
             Waddle Dee Town isn't too far from here.
-            I'll see you back at the town, Kirby!")
+            I'll see you there, Kirby!")
     closemessage
     applymovement(LOCALID_GREEN_REST_AREA_BWD, moves(walk_up * 6))
     waitmovement()
@@ -171,6 +173,6 @@ script GreenRestArea_EventScript_RivalBattle
 
 text GreenRestArea_Text_BandanaWaddleDeeDefeat
 {
-	"Even though I trained, I'm still at
-    a disadvantage against your team\."
+	"Even though we trained, I guess it's
+    not that simple\."
 }

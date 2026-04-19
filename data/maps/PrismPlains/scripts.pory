@@ -137,8 +137,8 @@ text PrismPlains_Text_Trainer1Intro
 
 text PrismPlains_Text_Trainer1Defeated
 {
-    "Maybe having my first battle against
-     Kirby was a lopsided matchup\."
+    "Maybe making my first battle against
+     Kirby was bound to end like this\."
 }
 
 text PrismPlains_Text_Trainer1Post
@@ -149,8 +149,8 @@ text PrismPlains_Text_Trainer1Post
 
 text PrismPlains_Text_Trainer2Intro
 {
-    "Doesn't a battle on a bridge
-     sound exciting?"
+    "A battle on a bridge!
+     Doesn't it sound exciting?"
 }
 
 text PrismPlains_Text_Trainer2Defeated
@@ -160,7 +160,8 @@ text PrismPlains_Text_Trainer2Defeated
 
 text PrismPlains_Text_Trainer2Post
 {
-    "Always watch where you walk!"
+    "Don't worry! Even if I did fall, my
+    parasol would keep me safe!"
 }
 
 text PrismPlains_Text_Trainer3Intro
@@ -171,7 +172,7 @@ text PrismPlains_Text_Trainer3Intro
 
 text PrismPlains_Text_Trainer3Defeated
 {
-    "Looks like I'll need to train more."
+    "Is that what a good leader is like?"
 }
 
 text PrismPlains_Text_Trainer3Post

@@ -431,11 +431,11 @@ KirbysHouse_Indoors_EventScript_Television::
 # 280 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	compare VAR_KIRBYS_HOUSE_STATE, 1
 	goto_if_eq KirbysHouse_Indoors_EventScript_Television_1
-# 393 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 391 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	lockall
-# 394 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 392 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_4
-# 395 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 393 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
 	return
 
@@ -470,45 +470,45 @@ KirbysHouse_Indoors_EventScript_Television_1:
 	waitmovement 0
 # 319 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_1
-# 345 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 344 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	playse SE_PIN
-# 346 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 345 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
-# 347 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 346 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark
+# 347 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
 # 348 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
-# 349 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_2
-# 363 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 362 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	special TurnOffTVScreen
-# 364 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 363 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	fadedefaultbgm
+# 364 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	delay 35
 # 365 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	delay 35
-# 366 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
-# 367 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 366 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_BANDANA_WADDLE_DEE, Common_Movement_WalkInPlaceFasterLeft
+# 367 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	waitmovement 0
 # 368 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	waitmovement 0
-# 369 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	msgbox KirbysHouse_Indoors_EventScript_Television_Text_3
-# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 378 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	closemessage
-# 381 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 379 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_Indoors_EventScript_Television_Movement_1
-# 384 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	waitmovement 0
-# 385 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 383 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	playse SE_EXIT
-# 386 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 384 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	removeobject LOCALID_BANDANA_WADDLE_DEE
-# 387 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 385 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	setvar VAR_KIRBYS_HOUSE_STATE, 2
-# 388 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 386 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	delay 35
-# 389 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 387 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	releaseall
 	return
 
@@ -607,23 +607,23 @@ KirbysHouse_Indoors_EventScript_Television_Movement_0:
 	walk_in_place_faster_up
 	step_end
 
-# 381 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 379 "data/maps/KirbysHouse_Indoors/scripts.pory"
 KirbysHouse_Indoors_EventScript_Television_Movement_1:
-# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
-# 382 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 380 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	walk_down
 	step_end
 
@@ -644,42 +644,42 @@ KirbysHouse_Indoors_GoToSleep_Text_1:
 
 KirbysHouse_Indoors_TalkToGooey_Text_0:
 # 103 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo?\p"
-	.string "It's Gooey. He lives here too.$"
+	.string "{SPEAKER NAME_GOOEY}Goo?\p"
+	.string "{SPEAKER NAME_NONE}It's Gooey. He lives here too.$"
 
 KirbysHouse_Indoors_TalkToGooey_Text_1:
 # 110 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo…\p"
-	.string "It's Gooey. He's staring intently at the\n"
+	.string "{SPEAKER NAME_GOOEY}Goo…\p"
+	.string "{SPEAKER NAME_NONE}It's Gooey. He's staring intently at the\n"
 	.string "television.$"
 
 KirbysHouse_Indoors_TalkToGooey_Text_2:
 # 120 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo!\p"
-	.string "It's Gooey. Doesn't seem like he\n"
+	.string "{SPEAKER NAME_GOOEY}Goo!\p"
+	.string "{SPEAKER NAME_NONE}It's Gooey. Doesn't seem like he\n"
 	.string "understood the news at all…$"
 
 KirbysHouse_Indoors_TalkToGooey_Text_3:
 # 128 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goooo?\p"
-	.string "It's Gooey. He seems curious about\n"
+	.string "{SPEAKER NAME_GOOEY}Goooo?\p"
+	.string "{SPEAKER NAME_NONE}It's Gooey. He seems curious about\n"
 	.string "the noise outside.$"
 
 KirbysHouse_Indoors_TalkToGooey_Text_4:
 # 136 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goooo!\p"
-	.string "It's Gooey. He seems curious about\n"
+	.string "{SPEAKER NAME_GOOEY}Goooo!\p"
+	.string "{SPEAKER NAME_NONE}It's Gooey. He seems curious about\n"
 	.string "your Helpers.$"
 
 KirbysHouse_Indoors_TalkToBandanaWaddleDee_Text_0:
 # 148 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} What are you\n"
-	.string "waiting for? Let's turn on the TV!$"
+	.string "{SPEAKER NAME_BANDANA}What are you waiting for?\n"
+	.string "Let's turn on the TV!$"
 
 KirbysHouse_Indoors_EventScript_DontLeave_Text_0:
 # 263 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby! Where are\n"
-	.string "you going? Don't walk out on me!\p"
+	.string "{SPEAKER NAME_BANDANA}Kirby! Where are you going?\n"
+	.string "Don't walk out on me!\p"
 	.string "This broadcast is supposed to be\n"
 	.string "important. We gotta watch it!$"
 
@@ -690,8 +690,8 @@ KirbysHouse_Indoors_EventScript_Television_Text_0:
 	.string "breaking news from none other than the\l"
 	.string "king of Dream Land himself!\p"
 	.string "Take it away, Your Highness!\p"
-	.string "{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} Howdy, everyone! I've got\n"
-	.string "a big announcement, so listen up!\p"
+	.string "{SPEAKER NAME_DEDEDE}Howdy, everyone! I've got a big\n"
+	.string "announcement to make, so listen up!\p"
 	.string "Have ya ever wondered what goes into\n"
 	.string "being a great king?\p"
 	.string "Working hard to make sure everyone\n"
@@ -702,15 +702,14 @@ KirbysHouse_Indoors_EventScript_Television_Text_0:
 
 KirbysHouse_Indoors_EventScript_Television_Text_1:
 # 319 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} That's right! I've\n"
-	.string "organized a little game to test you all\l"
-	.string "on the qualities that make a good ruler.\p"
+	.string "{SPEAKER NAME_DEDEDE}I've organized a little game to test you\n"
+	.string "all on the traits that make a good king..\p"
 	.string "Impressive strength! A sharp mind! And\n"
 	.string "a knack for decisive leadership!\p"
-	.string "Maybe you noticed these special\n"
-	.string "Helpers popping up all over Dream Land.\p"
-	.string "Recruit them to your side, and you can\n"
-	.string "command their special powers!\p"
+	.string "Maybe ya noticed those Helpers poppin'\n"
+	.string "up all over Dream Land as of late, yeah?\p"
+	.string "Well, if ya recruit them to your side,\n"
+	.string "you can command their special powers!\p"
 	.string "Then, you can pit your teams against\n"
 	.string "others' in some friendly competition at\l"
 	.string "the various Arenas my crew are building.\p"
@@ -723,10 +722,10 @@ KirbysHouse_Indoors_EventScript_Television_Text_1:
 	.string "{COLOR RED}KING OF DREAM LAND{COLOR DARK_GRAY}! Ha ha ha!$"
 
 KirbysHouse_Indoors_EventScript_Television_Text_2:
-# 349 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} …psst, hey! That fine\n"
-	.string "print saying “ for one day only” should\l"
-	.string "be smaller! Fix that, yeah!?\p"
+# 348 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "{SPEAKER NAME_DEDEDE}…psst, hey! Why's that fine print\n"
+	.string "saying “ for one day only” so big?\l"
+	.string "It should be smaller! Fix that, yeah!?\p"
 	.string "Ahem… anywho, that's all I got for now.\p"
 	.string "I'll be making an appearance at Waddle\n"
 	.string "Dee Town soon if you have questions.\p"
@@ -736,9 +735,8 @@ KirbysHouse_Indoors_EventScript_Television_Text_2:
 	.string "hard work! Ha ha ha! Peace!$"
 
 KirbysHouse_Indoors_EventScript_Television_Text_3:
-# 369 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Wow…\n"
-	.string "That was a lot to take in, huh?\p"
+# 368 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "{SPEAKER NAME_BANDANA}Wow… that was a lot to take in, huh?\p"
 	.string "I wonder how the Great King came up\n"
 	.string "with this little game of his.\p"
 	.string "And what did he mean by Helpers\n"
@@ -747,12 +745,12 @@ KirbysHouse_Indoors_EventScript_Television_Text_3:
 	.string "Dee Town and learn what I can…$"
 
 KirbysHouse_Indoors_EventScript_Television_Text_4:
-# 394 "data/maps/KirbysHouse_Indoors/scripts.pory"
+# 392 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "It's a television. It's not used much…$"
 
 KirbysHouse_Indoors_BandanaDeeIntroduction::
-# 399 "data/maps/KirbysHouse_Indoors/scripts.pory"
-	.string "{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Hey, Kirby!\p"
+# 397 "data/maps/KirbysHouse_Indoors/scripts.pory"
+	.string "{SPEAKER NAME_BANDANA}Hey, Kirby!\p"
 	.string "Glad to see you're awake. I thought you\n"
 	.string "might have overslept again!\p"
 	.string "I came by because I heard there's an\n"

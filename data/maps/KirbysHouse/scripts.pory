@@ -21,7 +21,7 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 	if(var(VAR_KIRBYS_HOUSE_STATE) == 2)
 	{
 		lock
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Whoa! Check it out!")
+		msgbox("{SPEAKER NAME_BANDANA}Whoa! Check it out!")
 		closemessage
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
 				walk_right * 2
@@ -33,8 +33,8 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 				walk_right * 4
 			))
 		waitmovement(0)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} I thought you and
-				Gooey were the only ones who live here!")
+		msgbox("{SPEAKER NAME_BANDANA}I thought you and Gooey were the only
+				ones who lived here!")
 		closemessage
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(
 			walk_up * 7
@@ -45,14 +45,13 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 			walk_in_place_left
 			))
 		waitmovement(0)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} And even more
-				up here\.")
+		msgbox("{SPEAKER NAME_BANDANA}And even more up here\.")
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_EAST)
 		turnobject(LOCALID_PLAYER, DIR_WEST)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Are these some of
-				those Helpers the king mentioned?
+		msgbox("{SPEAKER NAME_BANDANA}Is this what the Great King meant when
+				he was talking about Helpers?
 				
-				{COLOR BLUE}???:{COLOR DARK_GRAY} Indeed they are!")
+				{SPEAKER NAME_UNKNOWN}Indeed it is!")
 		closemessage
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
 		turnobject(LOCALID_PLAYER, DIR_NORTH)
@@ -67,27 +66,21 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 		playbgm(MUS_BIRCH_LAB, FALSE)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(walk_in_place_up))
 		waitmovement(0)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Hm? I don't think
-				we've met before\.
+		msgbox("{SPEAKER NAME_BANDANA}Ah, you're\.
 				
-				{COLOR BLUE}???:{COLOR DARK_GRAY} Allow me to introduce myself. I am
-				known as Wise Waddle Dee.
+				{SPEAKER NAME_UNKNOWN}Wise Waddle Dee, at your service. Per
+				the Great King's request, I have been
+				appointed to track and study Helpers.
 				
-				{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Per the Great King's
-				request, I have been appointed to keep
-				track of and study Helpers.
+				{SPEAKER NAME_WISE}As the leading expert on them, you may
+				call me something of a professor.
 				
-				As the leading expert on them, you may
-				call me something of a professor!
+				{SPEAKER NAME_BANDANA}A professor of Helpers, huh? Say,
+				do you know where they came from?
 				
-				{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} I see\. do you
-				know where they came from too?
-				
-				{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Alas, I have no clue.
-				I'm looking into it on my own behalf.
-				
-				My official duties pertain only to info
-				of use for Royal Royale participants.
+				{SPEAKER NAME_WISE}Alas, I've no clue. I'm looking into it on
+				my own time, but my knowledge pertains
+				mainly to matters for the Royal Royale.
 				
 				Speaking of, surely the hero of Dream
 				Land and his best friend plan to join?")
@@ -95,39 +88,35 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_WEST)
 		turnobject(LOCALID_PLAYER, DIR_EAST)
 		delay(35)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Um\. I guess
-				it sounds kind of fun, but I dunno\.")
+		msgbox("{SPEAKER NAME_BANDANA}Um\. well, I guess it sounds fun, but\.")
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
 		turnobject(LOCALID_PLAYER, DIR_NORTH)
 		playse(SE_LEDGE)
 		applymovement(LOCALID_WISE_WADDLE_DEE, moves(jump_in_place_down))
-		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Ah! My apologies. I
-				understand it is a lot to take in.
+		msgbox("{SPEAKER NAME_WISE}The Great King's right-hand subject is
+				hesitant? Why, color me surprised!
 				
-				I merely assumed you would be enticed
-				by the grand prize the king has set up.")
+				If not for his sake, then surely the
+				grand prize must appeal to you, no?")
 		closemessage
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_EAST)
 		delay(60)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Well\. I guess the
-				king seems pretty excited about it\.
+		msgbox("{SPEAKER NAME_BANDANA}Well\. I guess the Great King does seem
+				pretty excited about this game of his\.
 
-				And seeing all these Helpers does make
-				me curious how many there are\.
+				And this is probably the easiest way
+				to get answers to all my questions\.
 				
 				\.and maybe taking part in this
 				competition will make me stronger too\.")
 		closemessage
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
 		waitmovement(0)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Okay, sure! I'll
-				try Dedede's Royal Royale out!
+		msgbox("{SPEAKER NAME_BANDANA}Okay, sure! I'll try Dedede's Royal
+				Royale!
 
-				{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} A most excellent
-				response! Thank you kindly!
-				
-				First, we must get you two situated
-				with some Helpers of your own.
+				{SPEAKER NAME_WISE}A most excellent response! First, we
+				must get you Helpers of your own.
 				
 				Luckily, it appears some rare specimens
 				are situated here in Kirby's backyard!
@@ -147,8 +136,8 @@ script KirbysHouse_EventScript_TalkToWiseWaddleDee
 	faceplayer
 	if(!flag(FLAG_SYS_POKEMON_GET))
 	{
-		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Choosing your first
-				Helper is no trivial matter.
+		msgbox("{SPEAKER NAME_WISE}Choosing your first Helper is no trivial
+				matter.
 				
 				I suggest observing them carefully
 				before you make your decision.")
@@ -156,8 +145,8 @@ script KirbysHouse_EventScript_TalkToWiseWaddleDee
 	}
 	else
 	{
-		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Ah, you've returned!
-				And accompanied by a Helper, no less!
+		msgbox("{SPEAKER NAME_WISE}Ah, you've returned! And accompanied
+				by a Helper, no less!
 				
 				Now then, let's move on to the
 				next subject.")
@@ -172,19 +161,15 @@ script KirbysHouse_EventScript_TalkToBandanaWaddleDee
 	faceplayer
 	if(!flag(FLAG_SYS_POKEMON_GET))
 	{
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} If you already
-			know which one you want, go on ahead.
+		msgbox("{SPEAKER NAME_BANDANA}If you already know which one you want,
+			go on ahead. I don't mind.
 			
-			I don't mind. I'm still thinking through
-			who I want as my first partner\.")
+			I'm still thinking through my choice\.")
 	}
 	else
 	{
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Nice choice, buddy!
-			I just got my very own Helper too!
-			
-			Let's talk to Wise Waddle Dee to see
-			what he has to say next.")
+		msgbox("{SPEAKER NAME_BANDANA}Nice choice, pal! I just got mine. Let's
+				see what Wise Waddle Dee has to say.")
 	}
 	release
 }
@@ -195,13 +180,12 @@ script KirbysHouse_EventScript_TryToLeave
 	turnobject(LOCALID_WISE_WADDLE_DEE, DIR_NORTH)
 	if(!flag(FLAG_SYS_POKEMON_GET))
 	{
-		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Hold on now! You can't
-				simply leave without a Helper!")
+		msgbox("{SPEAKER NAME_WISE}Hold on now! You can't simply leave
+				without a Helper!")
 	}
 	elif(flag(FLAG_SYS_POKEMON_GET) && var(VAR_KIRBYS_HOUSE_STATE) == 3)
 	{
-		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Kirby! Did you
-				choose a Helper yet?")
+		msgbox("{SPEAKER NAME_WISE}Kirby! Did you choose a Helper yet?")
 	}
 	closemessage
 		applymovement(LOCALID_PLAYER, moves(walk_down))
@@ -407,8 +391,8 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 		applymovement(LOCALID_PLAYER, moves(walk_down, walk_in_place_up))
 		waitmovement()
 	}
-	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} To chronicle Helpers
-			you find, I'll loan you these.")
+	msgbox("{SPEAKER NAME_WISE}To chronicle any Helpers you encounter,
+			I'll give you these.")
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_in_place_down, walk_left, face_player, walk_in_place_down))
 	waitmovement()
@@ -417,9 +401,8 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	waitfanfare
 	setflag(FLAG_SYS_POKEDEX_GET)
 	special(SetUnlockedPokedexFlags)
-	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} These info cards will
-			hold data on any Helpers you encounter
-			and recruit to your side.
+	msgbox("{SPEAKER NAME_WISE}These info cards hold data on Helpers
+			you find and recruit to your side.
 			
 			As for how to recruit Helpers, you'll
 			want to use Helper Hearts!")
@@ -428,14 +411,13 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	giveitem(ITEM_POKE_BALL, 10)
 	if(var(VAR_RESULT) == FALSE)
 	{
-		msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} \.oh dear! Kirby,
-		you've got a full sack already?")
+		msgbox("{SPEAKER NAME_WISE}\.oh dear! Kirby, your sack is full?")
 	}
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_right, walk_in_place_down))
 	waitmovement()
-	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} More Helper Hearts are
-			always available to buy at Rest Areas.
+	msgbox("{SPEAKER NAME_WISE}More Helper Hearts are always available
+			to purchase at Rest Areas.
 			
 			They're invaluable places for stocking
 			up on items and healing your Helpers.
@@ -451,8 +433,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	turnobject(LOCALID_PLAYER, DIR_EAST)
 	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_WEST)
 	delay(15)
-	msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Are you up for
-			this, Kirby?
+	msgbox("{SPEAKER NAME_BANDANA}Are you up for this, Kirby?
 			
 			I think I'd learn a lot from watching
 			someone like you take this on.")
@@ -461,7 +442,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	waitmovement()
 	turnobject(LOCALID_PLAYER, DIR_NORTH)
 	waitmovement()
-	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} Very well then.
+	msgbox("{SPEAKER NAME_WISE}Very well then.
 			I shall be your first opponent!")
 	closemessage
 	switch(var(VAR_STARTER_MON)) {
@@ -473,16 +454,16 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 			trainerbattle_earlyrival(TRAINER_GRUNT_AQUA_HIDEOUT_2, RIVAL_BATTLE_TUTORIAL, KirbysHouse_Text_WiseWaddleDeeDefeat, KirbysHouse_Text_WiseWaddleDeeVictory)
 	}
 	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
-	msgbox("{COLOR BLUE}WISE WADDLE DEE:{COLOR DARK_GRAY} I hope that was an
-			insightful experience.
+	msgbox("{SPEAKER NAME_WISE}I hope that was an insightful
+			experience for you two.
 			
-			Now then, I do believe I should return
-			to my lab in Waddle Dee Town.
+			Now then, I do believe I should be
+			returning to my lab in Waddle Dee Town.
 			
 			If you make any progress on your Info
 			Cards, don't hesitate to drop on by!
 			
-			Enjoy Dedede's Royal Royale, you two!")
+			Enjoy Dedede's Royal Royale!")
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_up * 5))
 	waitmovement()
@@ -490,14 +471,14 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
 	applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(walk_in_place_left))
 	waitmovement()
-	msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Calling this Royal
-			Royale a game makes it sound simple\.
+	msgbox("{SPEAKER NAME_BANDANA}A tournament with Helpers to determine
+			who could be Dream Land's next king...
 			
-			But I guess it's like the Great King to
-			make a spectacle of whatever he does.
+			The Great King sure loves to make a big
+			spectacle of whatever he does, huh?
 			
-			For now, I'm heading back to town.
-			You should come too!")
+			Speaking of, I should head back to town
+			too. Let's see if he's still there!")
 	closemessage
 	applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
 	applymovement(LOCALID_BANDANA_WADDLE_DEE, moves(walk_up * 6))

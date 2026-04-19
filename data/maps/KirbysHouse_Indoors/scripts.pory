@@ -100,16 +100,16 @@ script KirbysHouse_Indoors_TalkToGooey
 	lock
 	if(var(VAR_KIRBYS_HOUSE_STATE) == 0)
 	{
-		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo?
+		msgbox("{SPEAKER NAME_GOOEY}Goo?
 				
-				It's Gooey. He lives here too.")
+				{SPEAKER NAME_NONE}It's Gooey. He lives here too.")
 		release
 	}
 	elif(var(VAR_KIRBYS_HOUSE_STATE) == 1)
 	{
-		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo\.
+		msgbox("{SPEAKER NAME_GOOEY}Goo\.
 				
-				It's Gooey. He's staring intently at the
+				{SPEAKER NAME_NONE}It's Gooey. He's staring intently at the
 				television.")
 		release
 		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP)
@@ -117,25 +117,25 @@ script KirbysHouse_Indoors_TalkToGooey
 	}
 	elif(var(VAR_KIRBYS_HOUSE_STATE) == 2)
 	{
-		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goo!
+		msgbox("{SPEAKER NAME_GOOEY}Goo!
 				
-				It's Gooey. Doesn't seem like he
+				{SPEAKER NAME_NONE}It's Gooey. Doesn't seem like he
 				understood the news at all\.")
 		release
 	}
 	elif(var(VAR_KIRBYS_HOUSE_STATE) == 3)
 	{
-		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goooo?
+		msgbox("{SPEAKER NAME_GOOEY}Goooo?
 				
-				It's Gooey. He seems curious about
+				{SPEAKER NAME_NONE}It's Gooey. He seems curious about
 				the noise outside.")
 		release
 	}
 	elif(var(VAR_KIRBYS_HOUSE_STATE) == 4)
 	{
-		msgbox("{COLOR BLUE}GOOEY:{COLOR DARK_GRAY} Goooo!
+		msgbox("{SPEAKER NAME_GOOEY}Goooo!
 				
-				It's Gooey. He seems curious about
+				{SPEAKER NAME_NONE}It's Gooey. He seems curious about
 				your Helpers.")
 		release
 	}
@@ -145,8 +145,8 @@ script KirbysHouse_Indoors_TalkToBandanaWaddleDee
 {
     faceplayer
 	lock
-	msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} What are you
-			waiting for? Let's turn on the TV!")
+	msgbox("{SPEAKER NAME_BANDANA}What are you waiting for?
+			Let's turn on the TV!")
 	release
 	turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH)
 }
@@ -260,8 +260,8 @@ script KirbysHouse_Indoors_EventScript_DontLeave
 		turnobject(LOCALID_BANDANA_WADDLE_DEE, DIR_SOUTH)
 		applymovement(LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp)
 		waitmovement(0)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Kirby! Where are
-				you going? Don't walk out on me!
+		msgbox("{SPEAKER NAME_BANDANA}Kirby! Where are you going?
+				Don't walk out on me!
 				
 				This broadcast is supposed to be
 				important. We gotta watch it!")
@@ -299,8 +299,8 @@ script KirbysHouse_Indoors_EventScript_Television
 
 				Take it away, Your Highness!
 				
-				{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} Howdy, everyone! I've got
-				a big announcement, so listen up!
+				{SPEAKER NAME_DEDEDE}Howdy, everyone! I've got a big
+				announcement to make, so listen up!
 				
 				Have ya ever wondered what goes into
 				being a great king?
@@ -316,18 +316,17 @@ script KirbysHouse_Indoors_EventScript_Television
 		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
-		msgbox("{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} That's right! I've
-				organized a little game to test you all
-				on the qualities that make a good ruler.
+		msgbox("{SPEAKER NAME_DEDEDE}I've organized a little game to test you
+				all on the traits that make a good king..
 				
 				Impressive strength! A sharp mind! And
 				a knack for decisive leadership!
 				
-				Maybe you noticed these special
-				Helpers popping up all over Dream Land.
+				Maybe ya noticed those Helpers poppin'
+				up all over Dream Land as of late, yeah?
 
-				Recruit them to your side, and you can
-				command their special powers!
+				Well, if ya recruit them to your side,
+				you can command their special powers!
 				
 				Then, you can pit your teams against
 				others' in some friendly competition at
@@ -346,9 +345,9 @@ script KirbysHouse_Indoors_EventScript_Television
 		applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
-		msgbox("{COLOR BLUE}KING DEDEDE:{COLOR DARK_GRAY} \.psst, hey! That fine
-				print saying \qo for one day only\qc should
-				be smaller! Fix that, yeah!?
+		msgbox("{SPEAKER NAME_DEDEDE}\.psst, hey! Why's that fine print
+				saying \qo for one day only\qc so big?
+				It should be smaller! Fix that, yeah!?
 				
 				Ahem\. anywho, that's all I got for now.
 
@@ -366,8 +365,7 @@ script KirbysHouse_Indoors_EventScript_Television
 		applymovement(LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight)
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_WalkInPlaceFasterLeft)
 		waitmovement(0)
-		msgbox("{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Wow\.
-				That was a lot to take in, huh?
+		msgbox("{SPEAKER NAME_BANDANA}Wow\. that was a lot to take in, huh?
 
 				I wonder how the Great King came up
 				with this little game of his.
@@ -398,7 +396,7 @@ script KirbysHouse_Indoors_EventScript_Television
 
 text KirbysHouse_Indoors_BandanaDeeIntroduction
 {
-	"{COLOR BLUE}BANDANA WADDLE DEE:{COLOR DARK_GRAY} Hey, Kirby!
+	"{SPEAKER NAME_BANDANA}Hey, Kirby!
 
 	Glad to see you're awake. I thought you
 	might have overslept again!

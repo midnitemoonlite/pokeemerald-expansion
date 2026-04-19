@@ -149,7 +149,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Tackle
 
 Squishy
-Level: 7
+Level: 6
 Ability: Torrent
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -170,7 +170,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Tackle
 
 Lovely
-Level: 7
+Level: 6
 Ability: Overgrow
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -187,16 +187,18 @@ Waddle Doo
 Level: 5
 Ability: Frisk
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+- Leer
+- Tackle
 
 Burning Leo
-Level: 7
+Level: 6
 Ability: Blaze
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 /* Prism Plains - Trainer 1 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: WADDLE DEE
-Class: Collector
+Class: Youngster
 Pic: Collector
 Gender: Male
 Music: Male
@@ -204,14 +206,14 @@ Double Battle: No
 AI: Check Bad Move
 
 Chip
-Level: 6
+Level: 5
 Ability: Friend Guard
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 2 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: WADDLE DEE
-Class: Collector
+Class: Parasol Lady
 Pic: Collector
 Gender: Female
 Music: Female
@@ -219,19 +221,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Bronto Burt
-Level: 5
+Level: 4
 Ability: Keen Eye
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Twizzy
-Level: 6
+Level: 4
 Ability: Early Bird
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 3 */
 === TRAINER_GABRIELLE_1 ===
 Name: WADDLE DEE
-Class: Collector
+Class: Youngster
 Pic: Collector
 Gender: Male
 Music: Male
@@ -239,14 +241,14 @@ Double Battle: No
 AI: Check Bad Move
 
 Gaw Gaw
-Level: 7
+Level: 6
 Ability: Sand Force
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 4 */
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: WADDLE DEE
-Class: Collector
+Class: Aroma Lady
 Pic: Collector
 Gender: Female
 Music: Female
@@ -271,7 +273,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 /* Prism Plains - Trainer 5 */
 === TRAINER_MARCEL ===
 Name: WADDLE DEE
-Class: Collector
+Class: Lass
 Pic: Collector
 Gender: Female
 Music: Female
@@ -279,19 +281,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Capiller
-Level: 6
+Level: 5
 Ability: Swarm
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Maiga
-Level: 6
+Level: 5
 Ability: Regenerator
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 6 */
 === TRAINER_ALBERTO ===
 Name: WADDLE DEE
-Class: Collector
+Class: Bird Keeper
 Pic: Collector
 Gender: Female
 Music: Female
@@ -299,12 +301,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Twizzy
-Level: 7
+Level: 5
 Ability: Big Pecks
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Chip
-Level: 6
+Level: 7
 Ability: Fluffy
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
