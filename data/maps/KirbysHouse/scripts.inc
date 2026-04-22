@@ -272,11 +272,11 @@ KirbysHouse_EventScript_ChooseLovely_5:
 # 216 "data/maps/KirbysHouse/scripts.pory"
 	givemon SPECIES_LOVELY, 5
 # 217 "data/maps/KirbysHouse/scripts.pory"
-	message KirbysHouse_EventScript_ChooseLovely_Text_1
-# 218 "data/maps/KirbysHouse/scripts.pory"
-	waitmessage
-# 219 "data/maps/KirbysHouse/scripts.pory"
 	playfanfare MUS_EVOLVED
+# 218 "data/maps/KirbysHouse/scripts.pory"
+	message KirbysHouse_EventScript_ChooseLovely_Text_1
+# 219 "data/maps/KirbysHouse/scripts.pory"
+	waitmessage
 # 220 "data/maps/KirbysHouse/scripts.pory"
 	waitfanfare
 # 221 "data/maps/KirbysHouse/scripts.pory"
@@ -361,11 +361,11 @@ KirbysHouse_EventScript_ChooseBurningLeo_5:
 # 268 "data/maps/KirbysHouse/scripts.pory"
 	givemon SPECIES_BURNING_LEO, 5
 # 269 "data/maps/KirbysHouse/scripts.pory"
-	message KirbysHouse_EventScript_ChooseBurningLeo_Text_1
-# 270 "data/maps/KirbysHouse/scripts.pory"
-	waitmessage
-# 271 "data/maps/KirbysHouse/scripts.pory"
 	playfanfare MUS_EVOLVED
+# 270 "data/maps/KirbysHouse/scripts.pory"
+	message KirbysHouse_EventScript_ChooseBurningLeo_Text_1
+# 271 "data/maps/KirbysHouse/scripts.pory"
+	waitmessage
 # 272 "data/maps/KirbysHouse/scripts.pory"
 	waitfanfare
 # 273 "data/maps/KirbysHouse/scripts.pory"
@@ -450,11 +450,11 @@ KirbysHouse_EventScript_ChooseSquishy_5:
 # 320 "data/maps/KirbysHouse/scripts.pory"
 	givemon SPECIES_SQUISHY, 5
 # 321 "data/maps/KirbysHouse/scripts.pory"
-	message KirbysHouse_EventScript_ChooseSquishy_Text_1
-# 322 "data/maps/KirbysHouse/scripts.pory"
-	waitmessage
-# 323 "data/maps/KirbysHouse/scripts.pory"
 	playfanfare MUS_EVOLVED
+# 322 "data/maps/KirbysHouse/scripts.pory"
+	message KirbysHouse_EventScript_ChooseSquishy_Text_1
+# 323 "data/maps/KirbysHouse/scripts.pory"
+	waitmessage
 # 324 "data/maps/KirbysHouse/scripts.pory"
 	waitfanfare
 # 325 "data/maps/KirbysHouse/scripts.pory"
@@ -968,7 +968,7 @@ KirbysHouse_EventScript_ExitHouseFirstTime_Text_7:
 KirbysHouse_EventScript_ExitHouseFirstTime_Text_8:
 # 115 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}Okay, sure! I'll try Dedede's Royal\n"
-	.string "Royal Royale!\p"
+	.string "Royale!\p"
 	.string "{SPEAKER NAME_WISE}A most excellent response! First, we\n"
 	.string "must get you Helpers of your own.\p"
 	.string "Luckily, it appears some rare specimens\n"
@@ -1016,7 +1016,7 @@ KirbysHouse_EventScript_ChooseLovely_Text_0:
 	.string "Will you choose Lovely?$"
 
 KirbysHouse_EventScript_ChooseLovely_Text_1:
-# 217 "data/maps/KirbysHouse/scripts.pory"
+# 218 "data/maps/KirbysHouse/scripts.pory"
 	.string "Kirby chose Lovely!$"
 
 KirbysHouse_EventScript_ChooseLovely_Text_2:
@@ -1030,7 +1030,7 @@ KirbysHouse_EventScript_ChooseBurningLeo_Text_0:
 	.string "Will you choose Burning Leo?$"
 
 KirbysHouse_EventScript_ChooseBurningLeo_Text_1:
-# 269 "data/maps/KirbysHouse/scripts.pory"
+# 270 "data/maps/KirbysHouse/scripts.pory"
 	.string "Kirby chose Burning Leo!$"
 
 KirbysHouse_EventScript_ChooseBurningLeo_Text_2:
@@ -1044,7 +1044,7 @@ KirbysHouse_EventScript_ChooseSquishy_Text_0:
 	.string "Will you choose Squishy?$"
 
 KirbysHouse_EventScript_ChooseSquishy_Text_1:
-# 321 "data/maps/KirbysHouse/scripts.pory"
+# 322 "data/maps/KirbysHouse/scripts.pory"
 	.string "Kirby chose Squishy!$"
 
 KirbysHouse_EventScript_ChooseSquishy_Text_2:

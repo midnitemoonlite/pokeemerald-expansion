@@ -1,0 +1,386 @@
+raw `
+    WaddleDeeTown_MapScripts::
+	.byte 0
+`
+
+script WaddleDeeTown_EventScript_TownSign
+{
+    msgbox("WADDLE DEE TOWN
+            A castle town for the king's subjects.", MSGBOX_SIGN)
+    closemessage
+}
+
+script WaddleDeeTown_EventScript_CafeSign
+{
+    msgbox("WADDLE DEE CAFÉ
+            Delicious Times, Precious Memories", MSGBOX_SIGN)
+    closemessage
+}
+
+script WaddleDeeTown_EventScript_ArcadeSign
+{
+    msgbox("MERRY MAGOCADE
+            Enjoy various subgames here!", MSGBOX_SIGN)
+    closemessage
+}
+
+script WaddleDeeTown_EventScript_ShopSign
+{
+    msgbox("MACHINE SHOP
+            Offering new wares and repairs.", MSGBOX_SIGN)
+    closemessage
+}
+
+script WaddleDeeTown_EventScript_DaycareSign
+{
+    msgbox("HELPER DAY CARE
+            We'll help raise your Helpers!", MSGBOX_SIGN)
+    closemessage
+}
+
+script WaddleDeeTown_EventScript_StoreSign
+{
+    msgbox("MAGOLOR'S DEPARTMENT STORE
+            One-stop shop for all your item needs!", MSGBOX_SIGN)
+    closemessage
+}
+
+script WaddleDeeTown_EventScript_LabSign
+{
+    msgbox("WADDLE DEE LIBRARY
+            Please use your indoor voice.", MSGBOX_SIGN)
+    closemessage
+}
+
+script WaddleDeeTown_EventScript_ParkSign
+{
+    msgbox("DEDEDE PARK", MSGBOX_SIGN)
+    closemessage
+}
+
+script WaddleDeeTown_EventScript_Fisherman
+{
+    lock
+    faceplayer
+    setvar(VAR_0x8004, SPECIES_BLING_BLIPPER)
+	specialvar(VAR_RESULT, DoesPlayerPartyContainSpecies)
+    if (!flag(FLAG_RECEIVED_SUPER_ROD))
+    {
+        msgbox("I've heard rumors of a glimmering golden
+            fish living in this humble pond.
+            
+            I haven't caught a glimpse of it yet,
+            but that's alright. Fishing is relaxing\.
+            
+            You wanna try, Kirby? Here, I'll lend
+            you one of my spare rods.")
+        playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+	    msgbox("Kirby received a {COLOR RED}Fishing Rod{COLOR DARK_GRAY}!")
+	    waitfanfare
+        msgbox("Kirby put away the Fishing Rod
+                in the KEY ITEMS POCKET.")
+        additem(ITEM_SUPER_ROD)
+        msgbox("Cast your line into any body of water,
+                and you might hook up something.")
+        setflag(FLAG_RECEIVED_SUPER_ROD)
+    }
+    elif (flag(FLAG_RECEIVED_SUPER_ROD) && !flag(FLAG_SHOWN_BLING_BLIPPER) && !var(VAR_RESULT))
+    {
+        msgbox("How's fishing treating you, Kirby?
+        
+                Me? Well, that golden catch I'm looking
+                for still eludes me, I'm afraid.
+                
+                Oh, what I'd give to see for myself
+                if the rumors are true\.")
+    }
+    elif (flag(FLAG_RECEIVED_SUPER_ROD) && !flag(FLAG_SHOWN_BLING_BLIPPER) && var(VAR_RESULT))
+    {
+        msgbox("Huh? Is that\.?")
+        playse(SE_PIN)
+        applymovement(LOCALID_FISHERMAN_WADDLE_DEE, Common_Movement_ExclamationMark)
+        delay(60)
+        getobjectfacingdirection(LOCALID_FISHERMAN_WADDLE_DEE, VAR_RESULT)
+        if (var(VAR_RESULT) == DIR_NORTH)
+        {
+            applymovement(LOCALID_FISHERMAN_WADDLE_DEE, moves(walk_in_place_fast_up * 4, walk_in_place_faster_up * 4))
+            waitmovement()
+            playse(SE_LEDGE)
+            applymovement(LOCALID_FISHERMAN_WADDLE_DEE, moves(jump_in_place_up))
+            waitmovement()
+        }
+        elif (var(VAR_RESULT) == DIR_WEST)
+        {
+            applymovement(LOCALID_FISHERMAN_WADDLE_DEE, moves(walk_in_place_fast_left * 4, walk_in_place_faster_left * 4))
+            waitmovement()
+            playse(SE_LEDGE)
+            applymovement(LOCALID_FISHERMAN_WADDLE_DEE, moves(jump_in_place_left))
+            waitmovement()
+        }
+        elif (var(VAR_RESULT) == DIR_SOUTH)
+        {
+            applymovement(LOCALID_FISHERMAN_WADDLE_DEE, moves(walk_in_place_fast_down * 4, walk_in_place_faster_down * 4))
+            waitmovement()
+            playse(SE_LEDGE)
+            applymovement(LOCALID_FISHERMAN_WADDLE_DEE, moves(jump_in_place_down))
+            waitmovement()
+        }
+        msgbox("No! It c-can't be...! Kirby, you CAUGHT
+                the legendary golden fish?!
+                
+                Unbelievable! It's HUGE! And that sheen
+                is even shinier than I imagined!
+                
+                Ahaha\. it's real! The glimmering
+                golden Bling Blipper is actually real!
+                
+                I may not have caught one myself, but
+                just seeing it is enough to satisfy me.
+                
+                Here, let me give you a little
+                token of my appreciation.")
+        giveitem(ITEM_BIG_NUGGET, 10)
+        msgbox("It might seem like a lot, but trust me:
+                this gold is nothing compared to the 
+                legendary Bling Blipper.
+                
+                You can put the treasure I've fished
+                up to better use than I could.")
+        setflag(FLAG_SHOWN_BLING_BLIPPER)
+    }
+    else
+    {
+        msgbox("Thank you, Kirby. Seeing that Bling
+        Blipper has given me peace of mind.
+        
+        And fishing is already peaceful\. I
+        couldn't be more relaxed if I tried!")
+    }
+    turnobject(LOCALID_FISHERMAN_WADDLE_DEE, DIR_EAST)
+    release
+}
+
+script WaddleDeeTown_EventScript_ParkWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("The Great King made this garden for us
+            to enjoy with his own two hands.
+            
+            I heard he's thinking about building a
+            playground here too. I'd love that!")
+    release
+}
+
+script WaddleDeeTown_EventScript_CastleGuardLeft
+{
+    lock
+    faceplayer
+    msgbox("The Great King doesn't visit often;
+            this is like a vacation home to him.
+            
+            In exchange for maintaining the place
+            while he's gone, we're allowed to
+            reside within the castle walls.")
+    release
+}
+
+script WaddleDeeTown_EventScript_CastleGuardRight
+{
+    lock
+    faceplayer
+    msgbox("The Great King has all sorts of castles,
+            but his favorite is up on Mt. Dedede.
+            
+            Must be nice to serve as a guard there.
+            You'd get a great view of Dream Land!")
+    release
+}
+
+script WaddleDeeTown_EventScript_CafeClosed
+{
+    lock
+    faceplayer
+    msgbox("Our sincerest apologies. Waddle Dee
+            Café is currently under renovation.
+            We hope to open our doors again soon.")
+    release
+}
+
+script WaddleDeeTown_EventScript_ArcadeClosed
+{
+    lock
+    faceplayer
+    msgbox("Sorry, Kirby! We're getting some new
+            games in the arcade set up right now.
+            Check back in a bit later!")
+    release
+}
+
+script WaddleDeeTown_EventScript_StoreClosed
+{
+    lock
+    faceplayer
+    msgbox("Magolor helped us build a department
+            store. Our grand opening will be soon.
+            
+            We're still setting up inventory, so
+            please wait a little longer, alright?")
+    release
+}
+
+script WaddleDeeTown_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    msgbox("First, a game shop\.
+            Then, a luxury department store\.
+            
+            He's a skilled craftsman, but soon this
+            place will be more Magolor than Dedede!
+            Does noone else find this concerning?")
+    release
+}
+
+script WaddleDeeTown_EventScript_Socialite
+{
+    lock
+    faceplayer
+    msgbox("I think it's rather nice seeing
+            Waddle Dee Town develop and flourish.
+            
+            Why would I be worried about Magolor?
+            He's such a hardworking, honest fellow!")
+    release
+}
+
+script WaddleDeeTown_EventScript_HeadChef
+{
+    lock
+    faceplayer
+    msgbox("I heard the café's head chef is out
+            on an ingredient-gathering voyage.
+            
+            What kind of ingredients? My tummy's
+            getting hungry just thinking about it\.")
+    release
+}
+
+script WaddleDeeTown_EventScript_WorkerLeft
+{
+    lock
+    faceplayer
+    msgbox("Just our luck\. right as the Great King
+            opens his tournament, our town gets hit
+            with an avalanche of garbage blocks!
+            
+            It'll be a while before we can clean
+            it all up. Sorry, kiddo.")
+    release
+}
+
+script WaddleDeeTown_EventScript_WorkerRight
+{
+    lock
+    faceplayer
+    msgbox("Supposedly the Great King gave out an
+            order to restrict the town's north exit.
+            
+            But when he saw all these blockades, he
+            cried out, \qothis is way too far!\qc
+            
+            Does he think we're the ones who
+            caused this mess\.?")
+    release
+}
+
+script WaddleDeeTown_EventScript_TagGirl1
+{
+    lockall
+    msgbox("Heeey! Come here! I've got a heart
+            for you!")
+    release
+}
+
+script WaddleDeeTown_EventScript_TagGirl2
+{
+    lockall
+    msgbox("Eeek! I'm gonna be caught! Ha ha ha!")
+    release
+}
+
+script WaddleDeeTown_EventScript_EggDealer
+{
+    lock
+    faceplayer
+    if (!flag(FLAG_RECEIVED_CHICK_EGG))
+    {
+        msgbox("Oh, hello, Kirby! You're helping fill out
+            Info Cards for Wise Waddle Dee, right?
+            Could I ask you for a favor?
+            
+            I found this egg caught in the rubble
+            cutting off the north half of town.
+            I think it might be a Helper's egg.
+            
+            There's just one problem\. Helper eggs
+            incubate as you travel with them.
+            
+            I couldn't possibly hatch this egg
+            when I'm cooped up in a lab all day!
+            
+            Do you think you could take this
+            egg off my hands for me?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox("Oh, thank you! Here you go, then!")
+            giveegg(SPECIES_CHICK)
+            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY)
+            {
+                playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+                message("Kirby received the egg.")
+                waitmessage()
+                waitfanfare()
+                setflag(FLAG_RECEIVED_CHICK_EGG)
+                call(Common_EventScript_GetGiftMonPartySlot)
+                release
+            }
+            elif(var(VAR_RESULT) == MON_GIVEN_TO_PC)
+            {
+                playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+                message("Kirby received an egg in the PC.")
+                waitmessage()
+                waitfanfare()
+                setflag(FLAG_RECEIVED_CHICK_EGG)
+                call(Common_EventScript_TransferredToPC)
+                release
+            }
+            elif(var(VAR_RESULT) == MON_CANT_GIVE)
+            {
+                call(Common_EventScript_NoMoreRoomForPokemon)
+                release
+            }
+        }
+        elif(var(VAR_RESULT) == NO)
+        {
+            msgbox("Oh, alright\. I guess this egg will stay
+                    unhatched for a long time then\.")
+            release
+        }
+    }
+    elif(flag(FLAG_RECEIVED_CHICK_EGG))
+    {
+        msgbox("There's a lot we're still learning about
+                how Helpers propagate.
+                
+                Thanks to the newly opened Day Care, we
+                know that Helpers can hatch from eggs\.
+                
+                But there haven't been any signs of
+                eggs from outside this town.
+                
+                It begs the question; do the original
+                Helpers come from something else?")
+        release
+    }    
+}

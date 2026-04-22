@@ -52,6 +52,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .iconPalIndex = 1,
         NO_SHADOW
         FOOTPRINT(Lovely)
+        OVERWORLD(
+            sPicTable_Lovely,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following_Asym,
+            gOverworldPalette_Lovely,
+            gShinyOverworldPalette_Lovely
+        )
         .levelUpLearnset = sLovelyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_ROSELY}),
@@ -16324,63 +16333,6 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         //.perfectIVCount = NUM_STATS,
     },
 
-    [SPECIES_PARA_SORCERESS] =
-    {
-        .baseHP        = 38,
-        .baseAttack    = 34,
-        .baseDefense   = 41,
-        .baseSpeed     = 52,
-        .baseSpAttack  = 72,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_FAIRY),
-        .catchRate = 60,
-        .expYield = 70,
-        .evYield_SpAttack = 1,
-        .genderRatio = MON_FEMALE,
-        .eggCycles = 30,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_TRACE, ABILITY_TANGLING_HAIR, ABILITY_SOUL_HEART},
-        .bodyColor = BODY_COLOR_PURPLE,
-        .noFlip = TRUE,
-        .speciesName = _("P. Sorceress"),
-        .cryId = CRY_BULBASAUR,
-        .natDexNum = NATIONAL_DEX_PARA_SORCERESS,
-        .categoryName = _("Little Witch"),
-        .height = 513, // Final - Vividria
-        .weight = 16,
-        .description = COMPOUND_STRING(
-            "Para Sorceresses are underlings who\n"
-            "work for Drawcia, a great witch that\n"
-            "came from a world of art and once tried\n"
-            "to turn Planet Popstar into a painting."),
-        .pokemonScale = 256,
-        .pokemonOffset = 0,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ParaSorceress,
-        .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_FIGURE_8,
-        .backPic = gMonBackPic_ParaSorceress,
-        .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_ParaSorceress,
-        .shinyPalette = gMonShinyPalette_ParaSorceress,
-        .iconSprite = gMonIcon_ParaSorceress,
-        .iconPalIndex = 0,
-        FOOTPRINT(ParaSorceress)
-        .levelUpLearnset = sParaSorceressLevelUpLearnset,
-        .teachableLearnset = sMewTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_VIVIDRIA}),
-        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
-        //.formChangeTable = sNoneFormChangeTable,
-        //.perfectIVCount = NUM_STATS,
-    },
-
     [SPECIES_VIVIDRIA] =
     {
         .baseHP        = 84,
@@ -16393,7 +16345,6 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .catchRate = 60,
         .expYield = 174,
         .evYield_SpAttack = 1,
-        .evYield_SpDefense = 1,
         .genderRatio = MON_FEMALE,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
@@ -16405,8 +16356,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .speciesName = _("Vividria"),
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_VIVIDRIA,
-        .categoryName = _("Painter"),
-        .height = 800, // Final - Drawcia
+        .categoryName = _("Artist"),
+        .height = 513, // Final - Vividria
         .weight = 16,
         .description = COMPOUND_STRING(
             "Using her ponytail as a paintbrush,\n"
@@ -16430,9 +16381,67 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .shinyPalette = gMonShinyPalette_Vividria,
         .iconSprite = gMonIcon_Vividria,
         .iconPalIndex = 0,
-        NO_SHADOW
         FOOTPRINT(Vividria)
         .levelUpLearnset = sVividriaLevelUpLearnset,
+        .teachableLearnset = sMewTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_DRAWCIA}),
+        //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
+        //.formChangeTable = sNoneFormChangeTable,
+        //.perfectIVCount = NUM_STATS,
+    },
+
+    [SPECIES_DRAWCIA] =
+    {
+        .baseHP        = 84,
+        .baseAttack    = 70,
+        .baseDefense   = 60,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 101,
+        .types = MON_TYPES(TYPE_FAIRY),
+        .catchRate = 15,
+        .expYield = 174,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .genderRatio = MON_FEMALE,
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_TRACE, ABILITY_TANGLING_HAIR, ABILITY_SOUL_HEART},
+        .bodyColor = BODY_COLOR_PURPLE,
+        .noFlip = TRUE,
+        .speciesName = _("Drawcia"),
+        .cryId = CRY_BULBASAUR,
+        .natDexNum = NATIONAL_DEX_DRAWCIA,
+        .categoryName = _("Painterly"),
+        .height = 800, // Final - Drawcia
+        .weight = 16,
+        .description = COMPOUND_STRING(
+            "Far beyond creating living works of art,\n"
+            "Drawcia's artistic powers can transform\n"
+            "reality itself. She once tried to turn\n"
+            "Planet Popstar into a painting."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Drawcia,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FIGURE_8,
+        .backPic = gMonBackPic_Drawcia,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_Drawcia,
+        .shinyPalette = gMonShinyPalette_Drawcia,
+        .iconSprite = gMonIcon_Drawcia,
+        .iconPalIndex = 0,
+        NO_SHADOW
+        FOOTPRINT(Drawcia)
+        .levelUpLearnset = sDrawciaLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
@@ -18230,7 +18239,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .cryId = CRY_BULBASAUR,
         .natDexNum = NATIONAL_DEX_NRUFF,
         .categoryName = _("Pig"),
-        .height = 312, // Final
+        .height = 244, // Final
         .weight = 16,
         .description = COMPOUND_STRING(
             "These rowdy Helpers run at wild speeds.\n"

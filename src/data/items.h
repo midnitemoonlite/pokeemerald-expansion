@@ -13943,19 +13943,19 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SUPER_ROD] =
     {
-        .name = ITEM_NAME("Super Rod"),
+        .name = ITEM_NAME("Fishing Rod"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "The best fishing\n"
-            "rod for catching\n"
+            "Use by any body of\n"
+            "water to fish for\n"
             "wild Helpers."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
         .secondaryId = SUPER_ROD,
-        .iconPic = gItemIcon_SuperRod,
-        .iconPalette = gItemIconPalette_SuperRod,
+        .iconPic = gItemIcon_OldRod,
+        .iconPalette = gItemIconPalette_OldRod,
     },
 
     [ITEM_DOWSING_MACHINE] =

@@ -1751,3 +1751,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/GreenRestArea_Mart/scripts.inc"
 
 	.include "data/maps/PrismPlains/scripts.inc"
+
+	.include "data/maps/WaddleDeeTown/scripts.inc"

@@ -1642,6 +1642,10 @@
     {
       "id": "MAPSEC_PRISM_PLAINS",
       "name": "PRISM PLAINS"
+    },
+    {
+      "id": "MAPSEC_WADDLE_DEE_TOWN",
+      "name": "WADDLE DEE TOWN"
     }
   ]
 }

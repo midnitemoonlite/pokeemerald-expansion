@@ -27517,6 +27517,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     #if P_FOOTPRINTS
     const u8 gMonFootprint_Lovely[] = INCBIN_U8("graphics/pokemon/lovely/footprint.1bpp");
     #endif //P_FOOTPRINTS
+    #if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Lovely[] = INCBIN_COMP("graphics/pokemon/lovely/overworld.4bpp");
+    #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Lovely[] = INCBIN_U16("graphics/pokemon/lovely/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Lovely[] = INCBIN_U16("graphics/pokemon/lovely/overworld_shiny.gbapal");
+    #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+    #endif //OW_POKEMON_OBJECT_EVENTS
 
     const u32 gMonFrontPic_Rosely[] = INCBIN_U32("graphics/pokemon/rosely/front.4bpp.lz");
     const u32 gMonBackPic_Rosely[] = INCBIN_U32("graphics/pokemon/rosely/back.4bpp.lz");
@@ -29901,13 +29908,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Bastron[] = INCBIN_U8("graphics/pokemon/bastron/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_ParaSorceress[] = INCBIN_U32("graphics/pokemon/parasorceress/front.4bpp.lz");
-    const u32 gMonBackPic_ParaSorceress[] = INCBIN_U32("graphics/pokemon/parasorceress/back.4bpp.lz");
-    const u16 gMonPalette_ParaSorceress[] = INCBIN_U16("graphics/pokemon/parasorceress/normal.gbapal");
-    const u16 gMonShinyPalette_ParaSorceress[] = INCBIN_U16("graphics/pokemon/parasorceress/shiny.gbapal");
-    const u8 gMonIcon_ParaSorceress[] = INCBIN_U8("graphics/pokemon/parasorceress/icon.4bpp");
+    const u32 gMonFrontPic_Drawcia[] = INCBIN_U32("graphics/pokemon/drawcia/front.4bpp.lz");
+    const u32 gMonBackPic_Drawcia[] = INCBIN_U32("graphics/pokemon/drawcia/back.4bpp.lz");
+    const u16 gMonPalette_Drawcia[] = INCBIN_U16("graphics/pokemon/drawcia/normal.gbapal");
+    const u16 gMonShinyPalette_Drawcia[] = INCBIN_U16("graphics/pokemon/drawcia/shiny.gbapal");
+    const u8 gMonIcon_Drawcia[] = INCBIN_U8("graphics/pokemon/drawcia/icon.4bpp");
     #if P_FOOTPRINTS
-    const u8 gMonFootprint_ParaSorceress[] = INCBIN_U8("graphics/pokemon/parasorceress/footprint.1bpp");
+    const u8 gMonFootprint_Drawcia[] = INCBIN_U8("graphics/pokemon/drawcia/footprint.1bpp");
     #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Vividria[] = INCBIN_U32("graphics/pokemon/vividria/front.4bpp.lz");

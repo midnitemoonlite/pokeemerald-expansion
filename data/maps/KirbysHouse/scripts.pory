@@ -214,9 +214,9 @@ script KirbysHouse_EventScript_ChooseLovely
 			removeobject(LOCALID_BURNINGLEO)
 			removeobject(LOCALID_SQUISHY)
 			givemon(SPECIES_LOVELY, 5)
+			playfanfare(MUS_EVOLVED)
 			message("Kirby chose Lovely!")
 			waitmessage()
-			playfanfare(MUS_EVOLVED)
 			waitfanfare()
 			hidemonpic()
 			msgbox("Would you like to give a nickname to
@@ -266,9 +266,9 @@ script KirbysHouse_EventScript_ChooseBurningLeo
 			removeobject(LOCALID_BURNINGLEO)
 			removeobject(LOCALID_SQUISHY)
 			givemon(SPECIES_BURNING_LEO, 5)
+			playfanfare(MUS_EVOLVED)
 			message("Kirby chose Burning Leo!")
 			waitmessage()
-			playfanfare(MUS_EVOLVED)
 			waitfanfare()
 			hidemonpic()
 			msgbox("Would you like to give a nickname to
@@ -318,9 +318,9 @@ script KirbysHouse_EventScript_ChooseSquishy
 			removeobject(LOCALID_BURNINGLEO)
 			removeobject(LOCALID_SQUISHY)
 			givemon(SPECIES_SQUISHY, 5)
+			playfanfare(MUS_EVOLVED)
 			message("Kirby chose Squishy!")
 			waitmessage()
-			playfanfare(MUS_EVOLVED)
 			waitfanfare()
 			hidemonpic()
 			msgbox("Would you like to give a nickname to

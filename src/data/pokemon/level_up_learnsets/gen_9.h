@@ -26837,7 +26837,7 @@ static const struct LevelUpMove sBastronLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sParaSorceressLevelUpLearnset[] = {
+static const struct LevelUpMove sVividriaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DOODLE),
     LEVEL_UP_MOVE( 6, MOVE_FAIRY_WIND),
     LEVEL_UP_MOVE( 12, MOVE_PSYWAVE),
@@ -26852,7 +26852,7 @@ static const struct LevelUpMove sParaSorceressLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sVividriaLevelUpLearnset[] = {
+static const struct LevelUpMove sDrawciaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DOODLE),
     LEVEL_UP_MOVE( 6, MOVE_FAIRY_WIND),
     LEVEL_UP_MOVE( 12, MOVE_PSYWAVE),

@@ -9388,11 +9388,21 @@
       "id": "LAYOUT_PRISM_PLAINS",
       "name": "PrismPlains_Layout",
       "width": 24,
-      "height": 60,
+      "height": 64,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/PrismPlains/border.bin",
       "blockdata_filepath": "data/layouts/PrismPlains/map.bin"
+    },
+    {
+      "id": "LAYOUT_WADDLE_DEE_TOWN",
+      "name": "WaddleDeeTown_Layout",
+      "width": 61,
+      "height": 52,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/WaddleDeeTown/border.bin",
+      "blockdata_filepath": "data/layouts/WaddleDeeTown/map.bin"
     }
   ]
 }

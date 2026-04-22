@@ -1987,8 +1987,8 @@
 #define SPECIES_COTTA                                   1854
 #define SPECIES_CANNON_COTTA                            1855
 #define SPECIES_BASTRON                                 1856
-#define SPECIES_PARA_SORCERESS                          1857
-#define SPECIES_VIVIDRIA                                1858
+#define SPECIES_VIVIDRIA                                1857
+#define SPECIES_DRAWCIA                                 1858
 #define SPECIES_MIKARIN                                 1859
 #define SPECIES_KAGAMI_MOCCHI                           1860
 #define SPECIES_BLOON                                   1861

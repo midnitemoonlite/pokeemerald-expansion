@@ -54,8 +54,8 @@
 #define FLAG_HIDE_KIRBYS_HOUSE_INTRO_CHARACTERS    0x20 // Kirby's House - Bandana Waddle Dee and Wise Waddle Dee
 #define FLAG_HIDE_KIRBYS_HOUSE_INTRO_STARTERS      0x21 // Kirby's House - Overworld starter sprites
 #define FLAG_DEFEATED_RIVAL_GREEN_REST_AREA        0x22 // Green Rest Area - Bandana Waddle Dee sprite and triggers
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
+#define FLAG_SHOWN_BLING_BLIPPER    0x23 // Waddle Dee Town - Fisherman who wants to see Bling Blipper
+#define FLAG_RECEIVED_CHICK_EGG    0x24 // Waddle Dee Town - Astronomer who wants to give Chick egg
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
