@@ -47,7 +47,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_SUPER_POTION",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_106_PROTEIN"
     },
@@ -60,7 +60,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_TINY_MUSHROOM",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_109_PP_UP"
     },
@@ -73,7 +73,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_FLOAT_STONE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_110_DIRE_HIT"
     },
@@ -86,7 +86,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_LAGGING_TAIL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_110_RARE_CANDY"
     },
@@ -303,7 +303,7 @@
       "x": 18,
       "y": 35,
       "elevation": 0,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_HEAL_POWDER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST"
     },
     {
@@ -311,7 +311,7 @@
       "x": 2,
       "y": 37,
       "elevation": 0,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_HARD_STONE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_ETHER"
     }
   ]

@@ -1,0 +1,56 @@
+raw `
+WaddleDeeTown_House1_MapScripts::
+	.byte 0
+`
+
+script WaddleDeeTown_House1_EventScript_InBed
+{
+    lock
+    faceplayer
+    msgbox("I heard about Dedede's Royal Royale
+            going on, but\. I'm too tired for it.
+            
+            There wasn't a single star in the
+            sky last night. I couldn't sleep.")
+    release
+}
+
+script WaddleDeeTown_House1_EventScript_Worker
+{
+    lock
+    faceplayer
+    msgbox("First, Helpers appear all over town\.
+            Then, Dedede's Royal Royale begins\.
+            
+            Today's been an exciting day! I wonder
+            what new things tomorrow will bring.")
+    release
+}
+
+script WaddleDeeTown_House1_EventScript_GiveQuickClaw
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_QUICK_CLAW))
+    {
+        msgbox("Did you know that sometimes Helpers
+                can be encountered holding items?
+                
+                I caught a Gaw Gaw with this
+                item in its paws.")
+        giveitem(ITEM_QUICK_CLAW)
+        msgbox("It seems this claw can sometimes
+                give your Helper the first move.
+                
+                But my Gaw Gaw's already pretty
+                speedy, so you can have it.")
+        setflag(FLAG_RECEIVED_QUICK_CLAW)
+        release
+    }
+    elif(flag(FLAG_RECEIVED_QUICK_CLAW))
+    {
+        msgbox("Who knows what other types of items
+                might have use in Helper battles?")
+        release
+    }
+}

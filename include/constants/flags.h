@@ -56,7 +56,7 @@
 #define FLAG_DEFEATED_RIVAL_GREEN_REST_AREA        0x22 // Green Rest Area - Bandana Waddle Dee sprite and triggers
 #define FLAG_SHOWN_BLING_BLIPPER    0x23 // Waddle Dee Town - Fisherman who wants to see Bling Blipper
 #define FLAG_RECEIVED_CHICK_EGG    0x24 // Waddle Dee Town - Astronomer who wants to give Chick egg
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
+#define FLAG_RECEIVED_DEDEDE_DOLL    0x25 // Waddle Dee Town Center - Dedede Doll from Fisherman
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
@@ -306,7 +306,7 @@
 #define FLAG_RECEIVED_EXP_SHARE              0x110
 #define FLAG_POKERUS_EXPLAINED               0x111
 #define FLAG_RECEIVED_RUNNING_SHOES          0x112
-#define FLAG_RECEIVED_QUICK_CLAW             0x113
+#define FLAG_RECEIVED_QUICK_CLAW             0x113 // Waddle Dee Town - Quick Claw from cafe staff
 #define FLAG_RECEIVED_KINGS_ROCK             0x114
 #define FLAG_RECEIVED_MACHO_BRACE            0x115
 #define FLAG_RECEIVED_SOOTHE_BELL            0x116

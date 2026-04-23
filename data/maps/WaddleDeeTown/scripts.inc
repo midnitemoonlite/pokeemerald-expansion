@@ -320,140 +320,152 @@ WaddleDeeTown_EventScript_HeadChef::
 	return
 
 
-WaddleDeeTown_EventScript_WorkerLeft::
+WaddleDeeTown_EventScript_Astronomer::
 # 271 "data/maps/WaddleDeeTown/scripts.pory"
 	lock
 # 272 "data/maps/WaddleDeeTown/scripts.pory"
 	faceplayer
 # 273 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_Astronomer_Text_0
+# 278 "data/maps/WaddleDeeTown/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_EventScript_WorkerLeft::
+# 283 "data/maps/WaddleDeeTown/scripts.pory"
+	lock
+# 284 "data/maps/WaddleDeeTown/scripts.pory"
+	faceplayer
+# 285 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_WorkerLeft_Text_0
-# 279 "data/maps/WaddleDeeTown/scripts.pory"
+# 291 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_EventScript_WorkerRight::
-# 284 "data/maps/WaddleDeeTown/scripts.pory"
+# 296 "data/maps/WaddleDeeTown/scripts.pory"
 	lock
-# 285 "data/maps/WaddleDeeTown/scripts.pory"
+# 297 "data/maps/WaddleDeeTown/scripts.pory"
 	faceplayer
-# 286 "data/maps/WaddleDeeTown/scripts.pory"
+# 298 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_WorkerRight_Text_0
-# 294 "data/maps/WaddleDeeTown/scripts.pory"
+# 306 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_EventScript_TagGirl1::
-# 299 "data/maps/WaddleDeeTown/scripts.pory"
+# 311 "data/maps/WaddleDeeTown/scripts.pory"
 	lockall
-# 300 "data/maps/WaddleDeeTown/scripts.pory"
+# 312 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_TagGirl1_Text_0
-# 302 "data/maps/WaddleDeeTown/scripts.pory"
+# 314 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_EventScript_TagGirl2::
-# 307 "data/maps/WaddleDeeTown/scripts.pory"
+# 319 "data/maps/WaddleDeeTown/scripts.pory"
 	lockall
-# 308 "data/maps/WaddleDeeTown/scripts.pory"
+# 320 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_TagGirl2_Text_0
-# 309 "data/maps/WaddleDeeTown/scripts.pory"
+# 321 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_EventScript_EggDealer::
-# 314 "data/maps/WaddleDeeTown/scripts.pory"
+# 326 "data/maps/WaddleDeeTown/scripts.pory"
 	lock
-# 315 "data/maps/WaddleDeeTown/scripts.pory"
+# 327 "data/maps/WaddleDeeTown/scripts.pory"
 	faceplayer
-# 316 "data/maps/WaddleDeeTown/scripts.pory"
+# 328 "data/maps/WaddleDeeTown/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_CHICK_EGG, WaddleDeeTown_EventScript_EggDealer_1
-# 371 "data/maps/WaddleDeeTown/scripts.pory"
+# 383 "data/maps/WaddleDeeTown/scripts.pory"
 	goto_if_set FLAG_RECEIVED_CHICK_EGG, WaddleDeeTown_EventScript_EggDealer_2
 	return
 
 WaddleDeeTown_EventScript_EggDealer_1:
-# 318 "data/maps/WaddleDeeTown/scripts.pory"
+# 330 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_0, MSGBOX_YESNO
-# 334 "data/maps/WaddleDeeTown/scripts.pory"
+# 346 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_5
-# 364 "data/maps/WaddleDeeTown/scripts.pory"
+# 376 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_6
 	return
 
 WaddleDeeTown_EventScript_EggDealer_2:
-# 373 "data/maps/WaddleDeeTown/scripts.pory"
+# 385 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_5
-# 384 "data/maps/WaddleDeeTown/scripts.pory"
+# 396 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_5:
-# 336 "data/maps/WaddleDeeTown/scripts.pory"
+# 348 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_1
-# 337 "data/maps/WaddleDeeTown/scripts.pory"
+# 349 "data/maps/WaddleDeeTown/scripts.pory"
 	giveegg SPECIES_CHICK
-# 338 "data/maps/WaddleDeeTown/scripts.pory"
+# 350 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_9
-# 348 "data/maps/WaddleDeeTown/scripts.pory"
+# 360 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_10
-# 358 "data/maps/WaddleDeeTown/scripts.pory"
+# 370 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, MON_CANT_GIVE
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_11
 	return
 
 WaddleDeeTown_EventScript_EggDealer_6:
-# 366 "data/maps/WaddleDeeTown/scripts.pory"
+# 378 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_4
-# 368 "data/maps/WaddleDeeTown/scripts.pory"
+# 380 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_9:
-# 340 "data/maps/WaddleDeeTown/scripts.pory"
+# 352 "data/maps/WaddleDeeTown/scripts.pory"
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
-# 341 "data/maps/WaddleDeeTown/scripts.pory"
+# 353 "data/maps/WaddleDeeTown/scripts.pory"
 	message WaddleDeeTown_EventScript_EggDealer_Text_2
-# 342 "data/maps/WaddleDeeTown/scripts.pory"
+# 354 "data/maps/WaddleDeeTown/scripts.pory"
 	waitmessage
-# 343 "data/maps/WaddleDeeTown/scripts.pory"
+# 355 "data/maps/WaddleDeeTown/scripts.pory"
 	waitfanfare
-# 344 "data/maps/WaddleDeeTown/scripts.pory"
+# 356 "data/maps/WaddleDeeTown/scripts.pory"
 	setflag FLAG_RECEIVED_CHICK_EGG
-# 345 "data/maps/WaddleDeeTown/scripts.pory"
+# 357 "data/maps/WaddleDeeTown/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 346 "data/maps/WaddleDeeTown/scripts.pory"
+# 358 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_10:
-# 350 "data/maps/WaddleDeeTown/scripts.pory"
+# 362 "data/maps/WaddleDeeTown/scripts.pory"
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
-# 351 "data/maps/WaddleDeeTown/scripts.pory"
+# 363 "data/maps/WaddleDeeTown/scripts.pory"
 	message WaddleDeeTown_EventScript_EggDealer_Text_3
-# 352 "data/maps/WaddleDeeTown/scripts.pory"
+# 364 "data/maps/WaddleDeeTown/scripts.pory"
 	waitmessage
-# 353 "data/maps/WaddleDeeTown/scripts.pory"
+# 365 "data/maps/WaddleDeeTown/scripts.pory"
 	waitfanfare
-# 354 "data/maps/WaddleDeeTown/scripts.pory"
+# 366 "data/maps/WaddleDeeTown/scripts.pory"
 	setflag FLAG_RECEIVED_CHICK_EGG
-# 355 "data/maps/WaddleDeeTown/scripts.pory"
+# 367 "data/maps/WaddleDeeTown/scripts.pory"
 	call Common_EventScript_TransferredToPC
-# 356 "data/maps/WaddleDeeTown/scripts.pory"
+# 368 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_11:
-# 360 "data/maps/WaddleDeeTown/scripts.pory"
+# 372 "data/maps/WaddleDeeTown/scripts.pory"
 	call Common_EventScript_NoMoreRoomForPokemon
-# 361 "data/maps/WaddleDeeTown/scripts.pory"
+# 373 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
@@ -701,8 +713,15 @@ WaddleDeeTown_EventScript_HeadChef_Text_0:
 	.string "What kind of ingredients? My tummy's\n"
 	.string "getting hungry just thinking about it…$"
 
-WaddleDeeTown_EventScript_WorkerLeft_Text_0:
+WaddleDeeTown_EventScript_Astronomer_Text_0:
 # 273 "data/maps/WaddleDeeTown/scripts.pory"
+	.string "If you're planning on challenging the\n"
+	.string "Arenas, you should stop by the castle.\p"
+	.string "The Waddle Dee Arena is inside there.\n"
+	.string "It's the perfect place to start!$"
+
+WaddleDeeTown_EventScript_WorkerLeft_Text_0:
+# 285 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Just our luck… right as the Great King\n"
 	.string "opens his tournament, our town gets hit\l"
 	.string "with an avalanche of garbage blocks!\p"
@@ -710,7 +729,7 @@ WaddleDeeTown_EventScript_WorkerLeft_Text_0:
 	.string "it all up. Sorry, kiddo.$"
 
 WaddleDeeTown_EventScript_WorkerRight_Text_0:
-# 286 "data/maps/WaddleDeeTown/scripts.pory"
+# 298 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Supposedly the Great King gave out an\n"
 	.string "order to restrict the town's north exit.\p"
 	.string "But when he saw all these blockades, he\n"
@@ -719,16 +738,16 @@ WaddleDeeTown_EventScript_WorkerRight_Text_0:
 	.string "caused this mess…?$"
 
 WaddleDeeTown_EventScript_TagGirl1_Text_0:
-# 300 "data/maps/WaddleDeeTown/scripts.pory"
+# 312 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Heeey! Come here! I've got a heart\n"
 	.string "for you!$"
 
 WaddleDeeTown_EventScript_TagGirl2_Text_0:
-# 308 "data/maps/WaddleDeeTown/scripts.pory"
+# 320 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Eeek! I'm gonna be caught! Ha ha ha!$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_0:
-# 318 "data/maps/WaddleDeeTown/scripts.pory"
+# 330 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Oh, hello, Kirby! You're helping fill out\n"
 	.string "Info Cards for Wise Waddle Dee, right?\l"
 	.string "Could I ask you for a favor?\p"
@@ -743,24 +762,24 @@ WaddleDeeTown_EventScript_EggDealer_Text_0:
 	.string "egg off my hands for me?$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_1:
-# 336 "data/maps/WaddleDeeTown/scripts.pory"
+# 348 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Oh, thank you! Here you go, then!$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_2:
-# 341 "data/maps/WaddleDeeTown/scripts.pory"
+# 353 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Kirby received the egg.$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_3:
-# 351 "data/maps/WaddleDeeTown/scripts.pory"
+# 363 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Kirby received an egg in the PC.$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_4:
-# 366 "data/maps/WaddleDeeTown/scripts.pory"
+# 378 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Oh, alright… I guess this egg will stay\n"
 	.string "unhatched for a long time then…$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_5:
-# 373 "data/maps/WaddleDeeTown/scripts.pory"
+# 385 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "There's a lot we're still learning about\n"
 	.string "how Helpers propagate.\p"
 	.string "Thanks to the newly opened Day Care, we\n"

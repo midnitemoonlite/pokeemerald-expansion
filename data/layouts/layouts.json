@@ -9403,6 +9403,36 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/WaddleDeeTown/border.bin",
       "blockdata_filepath": "data/layouts/WaddleDeeTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_WADDLE_DEE_TOWN_CENTER",
+      "name": "WaddleDeeTown_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/WaddleDeeTown_Center/border.bin",
+      "blockdata_filepath": "data/layouts/WaddleDeeTown_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_WADDLE_DEE_TOWN_MART",
+      "name": "WaddleDeeTown_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/WaddleDeeTown_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/WaddleDeeTown_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_WADDLE_DEE_TOWN_HOUSE1",
+      "name": "WaddleDeeTown_House1_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/WaddleDeeTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/WaddleDeeTown_House1/map.bin"
     }
   ]
 }

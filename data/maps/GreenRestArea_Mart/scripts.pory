@@ -17,6 +17,7 @@ script GreenRestArea_Mart_EventScript_Clerk
 mart GreenRestArea_Mart
 {
     ITEM_POKE_BALL
+    ITEM_NET_BALL
     ITEM_POTION
     ITEM_ANTIDOTE
     ITEM_PARALYZE_HEAL

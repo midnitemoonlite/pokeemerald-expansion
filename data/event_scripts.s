@@ -1361,7 +1361,7 @@ gText_PokemartSign::
 
 gText_PokemonCenterSign::
 	.string "“Rejuvenate your tired Helpers!”\n"
-	.string "HEALING CENTER$"
+	.string "REST AREA$"
 
 gText_MomOrDadMightLikeThisProgram::
 	.string "Gooey might like this program.\n"
@@ -1438,7 +1438,7 @@ gText_MomExplainHPGetPotions::
 	.string "measured in HP.\p"
 	.string "If your Helpers lose their HP,\n"
 	.string "you can restore them at any\l"
-	.string "HEALING CENTER.\p"
+	.string "rest area.\p"
 	.string "If you're going to travel far away,\n"
 	.string "the smart TRAINER stocks up on\l"
 	.string "POTIONS at the ITEM SHOP.\p"
@@ -1753,3 +1753,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/PrismPlains/scripts.inc"
 
 	.include "data/maps/WaddleDeeTown/scripts.inc"
+
+	.include "data/maps/WaddleDeeTown_Center/scripts.inc"
+
+	.include "data/maps/WaddleDeeTown_Mart/scripts.inc"
+
+	.include "data/maps/WaddleDeeTown_House1/scripts.inc"

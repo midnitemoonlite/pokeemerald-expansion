@@ -367,6 +367,14 @@
       "y": 12,
       "respawn_map": "MAP_GREEN_REST_AREA_CENTER",
       "respawn_npc": "LOCALID_GREEN_REST_AREA_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_WADDLE_DEE_TOWN",
+      "map": "MAP_WADDLE_DEE_TOWN",
+      "x": 24,
+      "y": 39,
+      "respawn_map": "MAP_WADDLE_DEE_TOWN_CENTER",
+      "respawn_npc": "LOCALID_WADDLE_DEE_TOWN_NURSE"
     }
   ]
 }

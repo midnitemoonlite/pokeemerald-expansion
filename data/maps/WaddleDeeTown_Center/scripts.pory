@@ -1,0 +1,67 @@
+raw `
+WaddleDeeTown_Center_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, WaddleDeeTown_Center_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+WaddleDeeTown_Center_OnTransition:
+	setrespawn HEAL_LOCATION_WADDLE_DEE_TOWN
+	end
+`
+
+script WaddleDeeTown_Center_1F_EventScript_Nurse
+{
+    setvar(VAR_0x800B, LOCALID_WADDLE_DEE_TOWN_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script WaddleDeeTown_Center_1F_EventScript_Fisher
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_DEDEDE_DOLL))
+    {
+        msgbox("Before Dedede's Royal Royale, the talk
+                of the town was the park's pond.
+                
+                Supposedly there's a golden fish in
+                its depths, waiting to be hooked\.
+                
+                Now, just between you and me, a fish
+                like that must be one tough catch.
+                
+                So it's always good to have a backup
+                plan against a fearsome encounter.")
+        giveitem(ITEM_POKE_DOLL)
+        setflag(FLAG_RECEIVED_DEDEDE_DOLL)
+    }
+    msgbox("In a pinch, a Dedede Doll can help you
+            escape from a wild Helper battle.")
+    release
+}
+
+script WaddleDeeTown_Center_1F_EventScript_Youngster
+{
+    lock
+    faceplayer
+    msgbox("Did you also see the Great King in town?
+            Isn't he the coolest?")
+    release
+}
+
+script WaddleDeeTown_Center_1F_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("When I woke up and saw Helpers all over
+            the place, I was worried\.
+            
+            But it seems the Great King has made a
+            fun game out of their appearance.
+            Just what I'd expect from him!")
+    release
+}

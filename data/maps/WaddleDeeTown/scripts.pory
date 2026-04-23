@@ -266,6 +266,18 @@ script WaddleDeeTown_EventScript_HeadChef
     release
 }
 
+script WaddleDeeTown_EventScript_Astronomer
+{
+    lock
+    faceplayer
+    msgbox("If you're planning on challenging the
+            Arenas, you should stop by the castle.
+            
+            The Waddle Dee Arena is inside there.
+            It's the perfect place to start!")
+    release
+}
+
 script WaddleDeeTown_EventScript_WorkerLeft
 {
     lock

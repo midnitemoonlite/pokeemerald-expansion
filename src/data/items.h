@@ -531,7 +531,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_DREAM_BALL] =
     {
         .name = ITEM_NAME("Dream Heart"),
-        .price = 0,
+        .price = 300,
         .description = COMPOUND_STRING(
         #if B_DREAM_BALL_MODIFIER >= GEN_8
             "A Heart that works\n"
@@ -598,7 +598,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_BEAST_BALL] =
     {
-        .name = ITEM_NAME("Tough Heart"),
+        .name = ITEM_NAME("Challenge Heart"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A Heart with an\n"
@@ -2624,7 +2624,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKE_DOLL] =
     {
-        .name = ITEM_NAME("Poké Doll"),
+        .name = ITEM_NAME("Dedede Doll"),
     #if I_PRICE >= GEN_8
         .price = 300,
     #elif I_PRICE == GEN_7
@@ -9808,8 +9808,8 @@ const struct ItemInfo gItemsInfo[] =
             "effects."),
         #else
             "A hold item that\n"
-            "snaps Helper out\n"
-            "of infatuation."),
+            "cures disabling\n"
+            "effects."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,

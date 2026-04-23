@@ -1,0 +1,55 @@
+raw `
+WaddleDeeTown_Mart_MapScripts::
+	.byte 0
+`
+
+script WaddleDeeTown_Mart_EventScript_Clerk
+{
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(WaddleDeeTown_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart WaddleDeeTown_Mart
+{
+    ITEM_POKE_BALL
+    ITEM_HEAL_BALL
+    ITEM_DREAM_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_POKE_DOLL
+}
+
+script WaddleDeeTown_Mart_EventScript_Delivery
+{
+    lock
+    faceplayer
+    msgbox("There's a department store being built
+            in the northeast corner of town.
+            
+            It'll be hard for this shop to compete
+            with the variety of items sold there\.")
+    release
+}
+
+script WaddleDeeTown_Mart_EventScript_Socialite
+{
+    lock
+    faceplayer
+    msgbox("Even when the department store opens,
+            I'll keep coming back to this shop.
+            
+            I come by often enough for the clerks
+            to recognize me. It's hard to beat
+            that level of familiarity!")
+    release
+}

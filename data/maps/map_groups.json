@@ -76,7 +76,8 @@
     "gMapGroup_IndoorSixIslandRoute_Frlg",
     "gMapGroup_IndoorSevenIslandRoute_Frlg",
     "gMapGroup_IndoorKirbysHouse",
-    "gMapGroup_IndoorGreenRestArea"
+    "gMapGroup_IndoorGreenRestArea",
+    "gMapGroup_IndoorWaddleDeeTown"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1174,5 +1175,10 @@
   "gMapGroup_IndoorGreenRestArea": [
     "GreenRestArea_Center",
     "GreenRestArea_Mart"
+  ],
+  "gMapGroup_IndoorWaddleDeeTown": [
+    "WaddleDeeTown_Center",
+    "WaddleDeeTown_Mart",
+    "WaddleDeeTown_House1"
   ]
 }
