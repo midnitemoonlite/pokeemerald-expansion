@@ -3244,8 +3244,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 10,
         .description = COMPOUND_STRING(
             "An ornament that\n"
-            "depicts a Helper\n"
-            "from Alola."),
+            "depicts a certain\n"
+            "Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
@@ -4286,8 +4286,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 2200,
         .description = COMPOUND_STRING(
             "A very sweet apple\n"
-            "that makes certain\n"
-            "Helpers evolve."),
+            "that can be sold\n"
+            "for a good price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -4304,8 +4304,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 2200,
         .description = COMPOUND_STRING(
             "A very tart apple\n"
-            "that makes certain\n"
-            "Helpers evolve."),
+            "that can be sold\n"
+            "for a good price."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
@@ -4579,9 +4579,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Oval Stone"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 2100,
         .description = COMPOUND_STRING(
-            "Peculiar stone\n"
-            "that evolves a\n"
-            "certain Helper."),
+            "A round stone\n"
+            "carried by\n"
+            "certain Helpers."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
@@ -8478,14 +8478,14 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_GRISEOUS_ORB] =
     {
-        .name = ITEM_NAME("Griseous Orb"),
+        .name = ITEM_NAME("Energy Sphere"),
         .price = (I_PRICE >= GEN_7) ? 0 : 10000,
         .holdEffect = HOLD_EFFECT_GRISEOUS_ORB,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
-            "Boosts Giratina's\n"
-            "Dragon and Ghost-\n"
-            "type moves."),
+            "Boosts Psychic-\n"
+            "and Flying-type\n"
+            "moves of Doomers."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,

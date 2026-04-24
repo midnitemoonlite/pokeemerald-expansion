@@ -6806,7 +6806,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
     case HOLD_EFFECT_GRISEOUS_ORB:
-        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_GIRATINA && (moveType == TYPE_GHOST || moveType == TYPE_DRAGON))
+        if ((GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_DUPA || GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_DIPPA || GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_DEPPA || GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_SPHERE_DOOMER) && (moveType == TYPE_PSYCHIC || moveType == TYPE_FLYING))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
     case HOLD_EFFECT_SOUL_DEW:
