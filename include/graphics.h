@@ -385,6 +385,7 @@ extern const u16 gItemIconPalette_DiveBall[];
 extern const u32 gItemIcon_DuskBall[];
 extern const u16 gItemIconPalette_DuskBall[];
 extern const u32 gItemIcon_TimerBall[];
+extern const u16 gItemIconPalette_TimerBall[];
 extern const u32 gItemIcon_QuickBall[];
 extern const u16 gItemIconPalette_QuickBall[];
 extern const u32 gItemIcon_RepeatBall[];

@@ -450,7 +450,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_CIRCULAR_VIBRATE,
         .enemyMonElevation = 4,
         .backPic = gMonBackPic_Squister,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -913,15 +913,17 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_FIGURE_8,
+        .enemyMonElevation = 1,
         .backPic = gMonBackPic_ButterflySolo,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .backPicYOffset = 18,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ButterflySolo,
         .shinyPalette = gMonShinyPalette_ButterflySolo,
         .iconSprite = gMonIcon_ButterflySolo,
         .iconPalIndex = 2, // Palette 5?
         FOOTPRINT(Butterfly)
+        SHADOW(0, 11, SHADOW_SIZE_S)
         .levelUpLearnset = sButterflyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .formSpeciesIdTable = sButterflyFormSpeciesIdTable,
@@ -969,16 +971,18 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_FIGURE_8,
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_ButterflySwarm,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ButterflySwarm,
         .shinyPalette = gMonShinyPalette_ButterflySwarm,
         .iconSprite = gMonIcon_ButterflySwarm,
         .iconPalIndex = 2, // Palette 5?
         FOOTPRINT(Butterfly)
+        SHADOW(2, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         .levelUpLearnset = sButterflyLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         .formSpeciesIdTable = sButterflyFormSpeciesIdTable,
@@ -2113,7 +2117,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .natDexNum = NATIONAL_DEX_UFO,
         .categoryName = _("Unidentified"),
         .height = 256, // Final?
-        .weight = 16, //temp
+        .weight = 427, //temp
         .description = COMPOUND_STRING(
             "Consider yourself lucky if you recruit\n"
             "a UFO! These mysterious flying saucers\n"
@@ -2127,16 +2131,18 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .frontAnimId = ANIM_ZIGZAG_FAST,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_UFO,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_V_SHAKE,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_UFO,
         .shinyPalette = gMonShinyPalette_UFO,
         .iconSprite = gMonIcon_UFO,
         .iconPalIndex = 0,
         FOOTPRINT(UFO)
+        SHADOW(-1, 15, SHADOW_SIZE_M)
         .levelUpLearnset = sUFOLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
@@ -3899,15 +3905,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
         .backPic = gMonBackPic_Maiga,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_V_SHAKE,
+        .backPicYOffset = 16,
+        .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_Maiga,
         .shinyPalette = gMonShinyPalette_Maiga,
         .iconSprite = gMonIcon_Maiga,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         NO_SHADOW
         FOOTPRINT(Maiga)
         .levelUpLearnset = sMaigaLevelUpLearnset,
@@ -3956,15 +3962,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Popon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
-        .backAnimId = BACK_ANIM_V_SHAKE,
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_H_SPRING_REPEATED,
         .palette = gMonPalette_Popon,
         .shinyPalette = gMonShinyPalette_Popon,
         .iconSprite = gMonIcon_Popon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         NO_SHADOW
         FOOTPRINT(Popon)
         .levelUpLearnset = sPoponLevelUpLearnset,

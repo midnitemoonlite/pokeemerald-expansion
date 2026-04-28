@@ -549,95 +549,97 @@ KirbysHouse_EventScript_AfterChoosingStarter_1:
 # 404 "data/maps/KirbysHouse/scripts.pory"
 	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_2
 # 409 "data/maps/KirbysHouse/scripts.pory"
-	applymovement LOCALID_WISE_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_5
+	closemessage
 # 410 "data/maps/KirbysHouse/scripts.pory"
-	waitmovement
+	applymovement LOCALID_WISE_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_5
 # 411 "data/maps/KirbysHouse/scripts.pory"
-	giveitem ITEM_POKE_BALL, 10
+	waitmovement
 # 412 "data/maps/KirbysHouse/scripts.pory"
+	giveitem ITEM_POKE_BALL, 10
+# 413 "data/maps/KirbysHouse/scripts.pory"
 	compare VAR_RESULT, FALSE
 	goto_if_eq KirbysHouse_EventScript_AfterChoosingStarter_11
 KirbysHouse_EventScript_AfterChoosingStarter_10:
-# 416 "data/maps/KirbysHouse/scripts.pory"
-	closemessage
 # 417 "data/maps/KirbysHouse/scripts.pory"
-	applymovement LOCALID_WISE_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_6
+	closemessage
 # 418 "data/maps/KirbysHouse/scripts.pory"
-	waitmovement
+	applymovement LOCALID_WISE_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_6
 # 419 "data/maps/KirbysHouse/scripts.pory"
+	waitmovement
+# 420 "data/maps/KirbysHouse/scripts.pory"
 	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_4
-# 432 "data/maps/KirbysHouse/scripts.pory"
-	closemessage
 # 433 "data/maps/KirbysHouse/scripts.pory"
-	turnobject LOCALID_PLAYER, DIR_EAST
+	closemessage
 # 434 "data/maps/KirbysHouse/scripts.pory"
-	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_WEST
+	turnobject LOCALID_PLAYER, DIR_EAST
 # 435 "data/maps/KirbysHouse/scripts.pory"
-	delay 15
+	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_WEST
 # 436 "data/maps/KirbysHouse/scripts.pory"
+	delay 15
+# 437 "data/maps/KirbysHouse/scripts.pory"
 	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_5
-# 440 "data/maps/KirbysHouse/scripts.pory"
-	closemessage
 # 441 "data/maps/KirbysHouse/scripts.pory"
-	applymovement LOCALID_WISE_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_7
-# 442 "data/maps/KirbysHouse/scripts.pory"
-	waitmovement
-# 443 "data/maps/KirbysHouse/scripts.pory"
-	turnobject LOCALID_PLAYER, DIR_NORTH
-# 444 "data/maps/KirbysHouse/scripts.pory"
-	waitmovement
-# 445 "data/maps/KirbysHouse/scripts.pory"
-	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_6
-# 447 "data/maps/KirbysHouse/scripts.pory"
 	closemessage
+# 442 "data/maps/KirbysHouse/scripts.pory"
+	applymovement LOCALID_WISE_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_7
+# 443 "data/maps/KirbysHouse/scripts.pory"
+	waitmovement
+# 444 "data/maps/KirbysHouse/scripts.pory"
+	turnobject LOCALID_PLAYER, DIR_NORTH
+# 445 "data/maps/KirbysHouse/scripts.pory"
+	waitmovement
+# 446 "data/maps/KirbysHouse/scripts.pory"
+	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_6
 # 448 "data/maps/KirbysHouse/scripts.pory"
-	switch VAR_STARTER_MON
+	closemessage
 # 449 "data/maps/KirbysHouse/scripts.pory"
+	switch VAR_STARTER_MON
+# 450 "data/maps/KirbysHouse/scripts.pory"
 	case 0, KirbysHouse_EventScript_AfterChoosingStarter_15
-# 451 "data/maps/KirbysHouse/scripts.pory"
+# 452 "data/maps/KirbysHouse/scripts.pory"
 	case 1, KirbysHouse_EventScript_AfterChoosingStarter_16
-# 453 "data/maps/KirbysHouse/scripts.pory"
+# 454 "data/maps/KirbysHouse/scripts.pory"
 	case 2, KirbysHouse_EventScript_AfterChoosingStarter_17
 KirbysHouse_EventScript_AfterChoosingStarter_13:
-# 456 "data/maps/KirbysHouse/scripts.pory"
-	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH
 # 457 "data/maps/KirbysHouse/scripts.pory"
+	turnobject LOCALID_BANDANA_WADDLE_DEE, DIR_NORTH
+# 458 "data/maps/KirbysHouse/scripts.pory"
 	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_7
-# 467 "data/maps/KirbysHouse/scripts.pory"
-	closemessage
 # 468 "data/maps/KirbysHouse/scripts.pory"
-	applymovement LOCALID_WISE_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_8
-# 469 "data/maps/KirbysHouse/scripts.pory"
-	waitmovement
-# 470 "data/maps/KirbysHouse/scripts.pory"
-	delay 35
-# 471 "data/maps/KirbysHouse/scripts.pory"
-	applymovement LOCALID_PLAYER, KirbysHouse_EventScript_AfterChoosingStarter_Movement_9
-# 472 "data/maps/KirbysHouse/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_10
-# 473 "data/maps/KirbysHouse/scripts.pory"
-	waitmovement
-# 474 "data/maps/KirbysHouse/scripts.pory"
-	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_8
-# 482 "data/maps/KirbysHouse/scripts.pory"
 	closemessage
-# 483 "data/maps/KirbysHouse/scripts.pory"
-	applymovement LOCALID_PLAYER, KirbysHouse_EventScript_ExitHouseFirstTime_Movement_5
-# 484 "data/maps/KirbysHouse/scripts.pory"
-	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_11
-# 485 "data/maps/KirbysHouse/scripts.pory"
+# 469 "data/maps/KirbysHouse/scripts.pory"
+	applymovement LOCALID_WISE_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_8
+# 470 "data/maps/KirbysHouse/scripts.pory"
 	waitmovement
+# 471 "data/maps/KirbysHouse/scripts.pory"
+	delay 35
+# 472 "data/maps/KirbysHouse/scripts.pory"
+	applymovement LOCALID_PLAYER, KirbysHouse_EventScript_AfterChoosingStarter_Movement_9
+# 473 "data/maps/KirbysHouse/scripts.pory"
+	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_10
+# 474 "data/maps/KirbysHouse/scripts.pory"
+	waitmovement
+# 475 "data/maps/KirbysHouse/scripts.pory"
+	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_8
+# 483 "data/maps/KirbysHouse/scripts.pory"
+	closemessage
+# 484 "data/maps/KirbysHouse/scripts.pory"
+	applymovement LOCALID_PLAYER, KirbysHouse_EventScript_ExitHouseFirstTime_Movement_5
+# 485 "data/maps/KirbysHouse/scripts.pory"
+	applymovement LOCALID_BANDANA_WADDLE_DEE, KirbysHouse_EventScript_AfterChoosingStarter_Movement_11
 # 486 "data/maps/KirbysHouse/scripts.pory"
-	removeobject LOCALID_WISE_WADDLE_DEE
+	waitmovement
 # 487 "data/maps/KirbysHouse/scripts.pory"
-	removeobject LOCALID_BANDANA_WADDLE_DEE
+	removeobject LOCALID_WISE_WADDLE_DEE
 # 488 "data/maps/KirbysHouse/scripts.pory"
-	setflag FLAG_HIDE_KIRBYS_HOUSE_INTRO_CHARACTERS
+	removeobject LOCALID_BANDANA_WADDLE_DEE
 # 489 "data/maps/KirbysHouse/scripts.pory"
-	setvar VAR_KIRBYS_HOUSE_STATE, 4
+	setflag FLAG_HIDE_KIRBYS_HOUSE_INTRO_CHARACTERS
 # 490 "data/maps/KirbysHouse/scripts.pory"
-	special HealPlayerParty
+	setvar VAR_KIRBYS_HOUSE_STATE, 4
 # 491 "data/maps/KirbysHouse/scripts.pory"
+	special HealPlayerParty
+# 492 "data/maps/KirbysHouse/scripts.pory"
 	releaseall
 	return
 
@@ -670,22 +672,22 @@ KirbysHouse_EventScript_AfterChoosingStarter_5:
 	goto KirbysHouse_EventScript_AfterChoosingStarter_1
 
 KirbysHouse_EventScript_AfterChoosingStarter_11:
-# 414 "data/maps/KirbysHouse/scripts.pory"
+# 415 "data/maps/KirbysHouse/scripts.pory"
 	msgbox KirbysHouse_EventScript_AfterChoosingStarter_Text_3
 	goto KirbysHouse_EventScript_AfterChoosingStarter_10
 
 KirbysHouse_EventScript_AfterChoosingStarter_15:
-# 450 "data/maps/KirbysHouse/scripts.pory"
+# 451 "data/maps/KirbysHouse/scripts.pory"
 	trainerbattle_earlyrival TRAINER_SAWYER_1, RIVAL_BATTLE_TUTORIAL, KirbysHouse_Text_WiseWaddleDeeDefeat, KirbysHouse_Text_WiseWaddleDeeVictory
 	goto KirbysHouse_EventScript_AfterChoosingStarter_13
 
 KirbysHouse_EventScript_AfterChoosingStarter_16:
-# 452 "data/maps/KirbysHouse/scripts.pory"
+# 453 "data/maps/KirbysHouse/scripts.pory"
 	trainerbattle_earlyrival TRAINER_GRUNT_AQUA_HIDEOUT_1, RIVAL_BATTLE_TUTORIAL, KirbysHouse_Text_WiseWaddleDeeDefeat, KirbysHouse_Text_WiseWaddleDeeVictory
 	goto KirbysHouse_EventScript_AfterChoosingStarter_13
 
 KirbysHouse_EventScript_AfterChoosingStarter_17:
-# 454 "data/maps/KirbysHouse/scripts.pory"
+# 455 "data/maps/KirbysHouse/scripts.pory"
 	trainerbattle_earlyrival TRAINER_GRUNT_AQUA_HIDEOUT_2, RIVAL_BATTLE_TUTORIAL, KirbysHouse_Text_WiseWaddleDeeDefeat, KirbysHouse_Text_WiseWaddleDeeVictory
 	goto KirbysHouse_EventScript_AfterChoosingStarter_13
 
@@ -846,67 +848,67 @@ KirbysHouse_EventScript_AfterChoosingStarter_Movement_4:
 	walk_in_place_down
 	step_end
 
-# 409 "data/maps/KirbysHouse/scripts.pory"
+# 410 "data/maps/KirbysHouse/scripts.pory"
 KirbysHouse_EventScript_AfterChoosingStarter_Movement_5:
-# 409 "data/maps/KirbysHouse/scripts.pory"
+# 410 "data/maps/KirbysHouse/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 417 "data/maps/KirbysHouse/scripts.pory"
+# 418 "data/maps/KirbysHouse/scripts.pory"
 KirbysHouse_EventScript_AfterChoosingStarter_Movement_6:
-# 417 "data/maps/KirbysHouse/scripts.pory"
+# 418 "data/maps/KirbysHouse/scripts.pory"
 	walk_right
-# 417 "data/maps/KirbysHouse/scripts.pory"
+# 418 "data/maps/KirbysHouse/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 441 "data/maps/KirbysHouse/scripts.pory"
+# 442 "data/maps/KirbysHouse/scripts.pory"
 KirbysHouse_EventScript_AfterChoosingStarter_Movement_7:
-# 441 "data/maps/KirbysHouse/scripts.pory"
+# 442 "data/maps/KirbysHouse/scripts.pory"
 	walk_left
-# 441 "data/maps/KirbysHouse/scripts.pory"
+# 442 "data/maps/KirbysHouse/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 468 "data/maps/KirbysHouse/scripts.pory"
+# 469 "data/maps/KirbysHouse/scripts.pory"
 KirbysHouse_EventScript_AfterChoosingStarter_Movement_8:
-# 468 "data/maps/KirbysHouse/scripts.pory"
+# 469 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 468 "data/maps/KirbysHouse/scripts.pory"
+# 469 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 468 "data/maps/KirbysHouse/scripts.pory"
+# 469 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 468 "data/maps/KirbysHouse/scripts.pory"
+# 469 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 468 "data/maps/KirbysHouse/scripts.pory"
+# 469 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
 	step_end
 
-# 471 "data/maps/KirbysHouse/scripts.pory"
+# 472 "data/maps/KirbysHouse/scripts.pory"
 KirbysHouse_EventScript_AfterChoosingStarter_Movement_9:
-# 471 "data/maps/KirbysHouse/scripts.pory"
+# 472 "data/maps/KirbysHouse/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 472 "data/maps/KirbysHouse/scripts.pory"
+# 473 "data/maps/KirbysHouse/scripts.pory"
 KirbysHouse_EventScript_AfterChoosingStarter_Movement_10:
-# 472 "data/maps/KirbysHouse/scripts.pory"
+# 473 "data/maps/KirbysHouse/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 484 "data/maps/KirbysHouse/scripts.pory"
+# 485 "data/maps/KirbysHouse/scripts.pory"
 KirbysHouse_EventScript_AfterChoosingStarter_Movement_11:
-# 484 "data/maps/KirbysHouse/scripts.pory"
+# 485 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 484 "data/maps/KirbysHouse/scripts.pory"
+# 485 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 484 "data/maps/KirbysHouse/scripts.pory"
+# 485 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 484 "data/maps/KirbysHouse/scripts.pory"
+# 485 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 484 "data/maps/KirbysHouse/scripts.pory"
+# 485 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
-# 484 "data/maps/KirbysHouse/scripts.pory"
+# 485 "data/maps/KirbysHouse/scripts.pory"
 	walk_up
 	step_end
 
@@ -1074,11 +1076,11 @@ KirbysHouse_EventScript_AfterChoosingStarter_Text_2:
 	.string "want to use Helper Hearts!$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_3:
-# 414 "data/maps/KirbysHouse/scripts.pory"
+# 415 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_WISE}…oh dear! Kirby, your sack is full?$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_4:
-# 419 "data/maps/KirbysHouse/scripts.pory"
+# 420 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_WISE}More Helper Hearts are always available\n"
 	.string "to purchase at Rest Areas.\p"
 	.string "They're invaluable places for stocking\n"
@@ -1090,18 +1092,18 @@ KirbysHouse_EventScript_AfterChoosingStarter_Text_4:
 	.string "How about one of you take me on?$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_5:
-# 436 "data/maps/KirbysHouse/scripts.pory"
+# 437 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}Are you up for this, Kirby?\p"
 	.string "I think I'd learn a lot from watching\n"
 	.string "someone like you take this on.$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_6:
-# 445 "data/maps/KirbysHouse/scripts.pory"
+# 446 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Very well then.\n"
 	.string "I shall be your first opponent!$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_7:
-# 457 "data/maps/KirbysHouse/scripts.pory"
+# 458 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_WISE}I hope that was an insightful\n"
 	.string "experience for you two.\p"
 	.string "Now then, I do believe I should be\n"
@@ -1111,7 +1113,7 @@ KirbysHouse_EventScript_AfterChoosingStarter_Text_7:
 	.string "Enjoy Dedede's Royal Royale!$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_8:
-# 474 "data/maps/KirbysHouse/scripts.pory"
+# 475 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}A tournament with Helpers to determine\n"
 	.string "who could be Dream Land's next king...\p"
 	.string "The Great King sure loves to make a big\n"
@@ -1125,10 +1127,10 @@ KirbysHouse_Text_AlreadyChoseStarter::
 	.string "sure to let Wise Waddle Dee know.$"
 
 KirbysHouse_Text_WiseWaddleDeeDefeat::
-# 494 "data/maps/KirbysHouse/scripts.pory"
+# 495 "data/maps/KirbysHouse/scripts.pory"
 	.string "It seems I still have much to learn!$"
 
 KirbysHouse_Text_WiseWaddleDeeVictory::
-# 499 "data/maps/KirbysHouse/scripts.pory"
+# 500 "data/maps/KirbysHouse/scripts.pory"
 	.string "So close! I can tell you're beginning\n"
 	.string "to grasp the depth of Helper battles.$"

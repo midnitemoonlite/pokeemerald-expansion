@@ -697,7 +697,7 @@ WaddleDeeTown_EventScript_Gentleman_Text_0:
 	.string "Then, a luxury department store…\p"
 	.string "He's a skilled craftsman, but soon this\n"
 	.string "place will be more Magolor than Dedede!\l"
-	.string "Does noone else find this concerning?$"
+	.string "Does no one else find this concerning?$"
 
 WaddleDeeTown_EventScript_Socialite_Text_0:
 # 249 "data/maps/WaddleDeeTown/scripts.pory"

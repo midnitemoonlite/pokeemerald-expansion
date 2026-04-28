@@ -346,7 +346,7 @@ script KirbysHouse_Indoors_EventScript_Television
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
 		msgbox("{SPEAKER NAME_DEDEDE}\.psst, hey! Why's that fine print
-				saying \qo for one day only\qc so big?
+				saying \qofor one day only\qc so big?
 				It should be smaller! Fix that, yeah!?
 				
 				Ahem\. anywho, that's all I got for now.

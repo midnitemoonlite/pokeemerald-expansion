@@ -406,6 +406,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 			
 			As for how to recruit Helpers, you'll
 			want to use Helper Hearts!")
+	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_in_place_down))
 	waitmovement()
 	giveitem(ITEM_POKE_BALL, 10)

@@ -724,7 +724,7 @@ KirbysHouse_Indoors_EventScript_Television_Text_1:
 KirbysHouse_Indoors_EventScript_Television_Text_2:
 # 348 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}…psst, hey! Why's that fine print\n"
-	.string "saying “ for one day only” so big?\l"
+	.string "saying “for one day only” so big?\l"
 	.string "It should be smaller! Fix that, yeah!?\p"
 	.string "Ahem… anywho, that's all I got for now.\p"
 	.string "I'll be making an appearance at Waddle\n"
