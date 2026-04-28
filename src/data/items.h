@@ -290,7 +290,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_NET_BALL] =
     {
-        .name = ITEM_NAME("Spider Heart"),
+        .name = ITEM_NAME("Web Heart"),
         .price = 1000,
         .description = COMPOUND_STRING(
             "A Heart that works\n"
