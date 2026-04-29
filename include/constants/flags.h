@@ -57,9 +57,9 @@
 #define FLAG_SHOWN_BLING_BLIPPER    0x23 // Waddle Dee Town - Fisherman who wants to see Bling Blipper
 #define FLAG_RECEIVED_CHICK_EGG    0x24 // Waddle Dee Town - Astronomer who wants to give Chick egg
 #define FLAG_RECEIVED_DEDEDE_DOLL    0x25 // Waddle Dee Town Center - Dedede Doll from Fisherman
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
+#define FLAG_TOGGLE_EXP_SHARE    0x26 // Dream Team General - Exp. Share
+#define FLAG_TOGGLE_VS_SEEKER    0x27 // Dream Team General - Vs. Seeker
+#define FLAG_WADDLE_DEE_TOWN_SOUTH_TRADE_COMPLETED    0x28 // Waddle Dee Town - Worker who wants to trade
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag

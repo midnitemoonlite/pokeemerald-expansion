@@ -1211,7 +1211,119 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_PONYTA
-    }
+    },
+    [INGAME_TRADE_SIR_KIBBLE] =
+    {
+        .nickname = _("Lord Kibble"),
+        .species = SPECIES_SIR_KIBBLE,
+        .ivs = {16, 7, 15, 24, 7, 18},
+        .abilityNum = 2,
+        .otId = 41883,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x62,
+        .heldItem = ITEM_ORAN_BERRY,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
+    [INGAME_TRADE_SOLITE] =
+    {
+        .nickname = _("Dale"),
+        .species = SPECIES_SOLITE,
+        .ivs = {27, 1, 18, 26, 21, 0},
+        .abilityNum = 2,
+        .otId = 6413,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x9b,
+        .heldItem = ITEM_ORAN_BERRY,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
+    [INGAME_TRADE_STARMAN] =
+    {
+        .nickname = _("Ultra Star"),
+        .species = SPECIES_STARMAN,
+        .ivs = {16, 24, 9, 3, 12, 19},
+        .abilityNum = 2,
+        .otId = 57425,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0xa6,
+        .heldItem = ITEM_STAR_PIECE,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
+    [INGAME_TRADE_SNOOTER] =
+    {
+        .nickname = _("Snoosnum"),
+        .species = SPECIES_SNOOTER_NORMAL,
+        .ivs = {15, 23, 30, 18, 19, 26},
+        .abilityNum = 2,
+        .otId = 52007,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x22,
+        .heldItem = ITEM_MOOMOO_MILK,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
+    [INGAME_TRADE_BOOLER] =
+    {
+        .nickname = _("Boo Boo"),
+        .species = SPECIES_BOOLER,
+        .ivs = {18, 26, 0, 27, 0, 22},
+        .abilityNum = 2,
+        .otId = 80012,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x83,
+        .heldItem = ITEM_SPELL_TAG,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
+    [INGAME_TRADE_DUPA] =
+    {
+        .nickname = _("Dupalor"),
+        .species = SPECIES_SNOOTER_NORMAL,
+        .ivs = {5, 31, 22, 11, 19, 0},
+        .abilityNum = 2,
+        .otId = 1504,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0xc0,
+        .heldItem = ITEM_GRISEOUS_ORB,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
+    [INGAME_TRADE_TORTUILDING] =
+    {
+        .nickname = _("Architurt"),
+        .species = SPECIES_TORTUILDING,
+        .ivs = {15, 23, 30, 18, 19, 26},
+        .abilityNum = 2,
+        .otId = 9928,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x47,
+        .heldItem = ITEM_HEAT_ROCK,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
 };
 
 static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =

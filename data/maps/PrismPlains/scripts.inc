@@ -143,7 +143,7 @@ PrismPlains_EventScript_Trainer6::
 # 127 "data/maps/PrismPlains/scripts.pory"
 	trainerbattle_single TRAINER_ALBERTO, PrismPlains_Text_Trainer6Intro, PrismPlains_Text_Trainer6Defeated
 # 128 "data/maps/PrismPlains/scripts.pory"
-	msgbox PrismPlains_Text_Trainer1Post, MSGBOX_AUTOCLOSE
+	msgbox PrismPlains_Text_Trainer6Post, MSGBOX_AUTOCLOSE
 	return
 
 

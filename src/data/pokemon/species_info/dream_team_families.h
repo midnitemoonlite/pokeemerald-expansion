@@ -18367,12 +18367,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_NODDY] =
     {
-        .baseHP        = 160,
-        .baseAttack    = 45,
-        .baseDefense   = 70,
+        .baseHP        = 108,
+        .baseAttack    = 32,
+        .baseDefense   = 72,
         .baseSpeed     = 20,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 105,
+        .baseSpAttack  = 82,
+        .baseSpDefense = 106,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 255,
         .expYield = 156,

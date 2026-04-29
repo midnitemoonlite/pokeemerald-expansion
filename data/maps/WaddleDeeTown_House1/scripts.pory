@@ -19,12 +19,54 @@ script WaddleDeeTown_House1_EventScript_Worker
 {
     lock
     faceplayer
-    msgbox("First, Helpers appear all over town\.
-            Then, Dedede's Royal Royale begins\.
-            
-            Today's been an exciting day! I wonder
-            what new things tomorrow will bring.")
+    if(flag(FLAG_WADDLE_DEE_TOWN_SOUTH_TRADE_COMPLETED))
+    {
+        msgbox("Solite has its own advantages that
+                could help you out at the Arena.
+                
+                You should check what moves it can
+                relearn through your Helpers menu.")
+    }
+    elif(!flag(FLAG_WADDLE_DEE_TOWN_SOUTH_TRADE_COMPLETED))
+    {
+        ingame_trade(INGAME_TRADE_SOLITE, WaddleDeeTown_House1_TradeMessage, WaddleDeeTown_House1_DeclineScript, WaddleDeeTown_House1_WrongScript, WaddleDeeTown_House1_CompleteMessage)
+        setflag(FLAG_WADDLE_DEE_TOWN_SOUTH_TRADE_COMPLETED)
+    }
     release
+}
+
+text WaddleDeeTown_House1_TradeMessage
+{
+    "I took my team to the Waddle Dee Arena, 
+    but I lost to an opponent's Gaw Gaw.
+    
+    I bet some kind of flying Helper like a
+    Twizzy could round out my team\.
+    
+    If you have one, could we trade for it?
+    I'll lend you my Solite in exchange."
+}
+
+script WaddleDeeTown_House1_DeclineScript
+{
+    msgbox("No dice, huh? I wonder where I can
+            recruit a Twizzy at\.")
+    release
+}
+
+script WaddleDeeTown_House1_WrongScript
+{
+    msgbox("Hm? That's not what I'm looking for.
+            Twizzies are the yellow birdy Helpers.")
+    release
+}
+
+text WaddleDeeTown_House1_CompleteMessage
+{
+    "Thank you so much, Kirby! I'm sure this
+    will help me out at the Arena.
+    
+    Please take good care of my Solite!"
 }
 
 script WaddleDeeTown_House1_EventScript_GiveQuickClaw

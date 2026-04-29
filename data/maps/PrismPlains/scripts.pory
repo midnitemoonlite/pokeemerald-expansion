@@ -125,7 +125,7 @@ script PrismPlains_EventScript_Trainer5
 script PrismPlains_EventScript_Trainer6
 {
     trainerbattle_single(TRAINER_ALBERTO, PrismPlains_Text_Trainer6Intro, PrismPlains_Text_Trainer6Defeated)
-    msgbox(PrismPlains_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+    msgbox(PrismPlains_Text_Trainer6Post, MSGBOX_AUTOCLOSE)
 
 }
 
