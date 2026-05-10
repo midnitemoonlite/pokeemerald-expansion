@@ -40,7 +40,7 @@ const u32 gItemIcon_DuskBall[] = INCGFX_U32("graphics/items/icons/dusk_ball.png"
 const u16 gItemIconPalette_DuskBall[] = INCGFX_U16("graphics/items/icon_palettes/dusk_ball.pal", ".gbapal");
 
 const u32 gItemIcon_TimerBall[] = INCGFX_U32("graphics/items/icons/timer_ball.png", ".4bpp.smol");
-const u16 gItemIconPalette_TimerBall[] = INCBIN_U16("graphics/items/icon_palettes/timer_ball.gbapal");
+const u16 gItemIconPalette_TimerBall[] = INCGFX_U16("graphics/items/icon_palettes/timer_ball.pal", ".gbapal");
 
 const u32 gItemIcon_QuickBall[] = INCGFX_U32("graphics/items/icons/quick_ball.png", ".4bpp.smol");
 const u16 gItemIconPalette_QuickBall[] = INCGFX_U16("graphics/items/icon_palettes/quick_ball.pal", ".gbapal");
