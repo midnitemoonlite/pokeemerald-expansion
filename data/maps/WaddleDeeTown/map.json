@@ -280,6 +280,34 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "WaddleDeeTown_EventScript_ArcadeClosed",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_TOWN_KING_DEDEDE",
+      "graphics_id": "OBJ_EVENT_GFX_QUINTY_PLUMP",
+      "x": 29,
+      "y": 32,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_TOWN_BWD",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 30,
+      "y": 42,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_EventScript_Bandana",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -396,7 +424,17 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 42,
+      "elevation": 0,
+      "var": "VAR_WADDLE_DEE_TOWN_STATE",
+      "var_value": "0",
+      "script": "WaddleDeeTown_Trigger_FirstCutscene"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

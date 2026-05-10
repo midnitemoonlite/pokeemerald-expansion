@@ -580,6 +580,7 @@
 #define METATILE_PokemonMansion_Wall_EndPost_Mid                         0x2A5
 
 // gTileset_Rustboro
+#define METATILE_Rustboro_Blockade   0x201
 #define METATILE_Rustboro_Door_Gray  0x21F
 #define METATILE_Rustboro_Door_Tan   0x22F
 

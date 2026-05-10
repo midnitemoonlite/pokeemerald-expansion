@@ -405,7 +405,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 			you find and recruit to your side.
 			
 			As for how to recruit Helpers, you'll
-			want to use Helper Hearts!")
+			want to use Friend Hearts!")
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_in_place_down))
 	waitmovement()
@@ -417,7 +417,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_right, walk_in_place_down))
 	waitmovement()
-	msgbox("{SPEAKER NAME_WISE}More Helper Hearts are always available
+	msgbox("{SPEAKER NAME_WISE}More Friend Hearts are always available
 			to purchase at Rest Areas.
 			
 			They're invaluable places for stocking

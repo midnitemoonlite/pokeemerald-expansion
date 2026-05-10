@@ -1,7 +1,46 @@
 raw `
-    WaddleDeeTown_MapScripts::
-	.byte 0
+WaddleDeeTown_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, WaddleDeeTown_OnLoad
+    .byte 0
+
+WaddleDeeTown_OnTransition:
+    end
+
+WaddleDeeTown_OnLoad:
+	call_if_unset FLAG_WADDLE_DEE_TOWN_BLOCK_NORTHERN_HALF, WaddleDeeTown_EventScript_Avalanche
+	end
 `
+
+script WaddleDeeTown_EventScript_Avalanche
+{
+    setmetatile(6, 29, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(7, 29, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(8, 29, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(9, 29, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(10, 29, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(11, 29, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(12, 29, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(13, 29, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(14, 29, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(15, 29, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(16, 29, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(17, 29, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(18, 29, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(41, 18, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(42, 18, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(43, 18, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(44, 18, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(45, 18, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(46, 18, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(47, 18, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(48, 18, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(49, 18, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(50, 18, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(51, 18, METATILE_Rustboro_Blockade, TRUE)
+	setmetatile(52, 18, METATILE_Rustboro_Blockade, TRUE)
+    setmetatile(53, 18, METATILE_Rustboro_Blockade, TRUE)
+	return
+}
 
 script WaddleDeeTown_EventScript_TownSign
 {
@@ -395,4 +434,73 @@ script WaddleDeeTown_EventScript_EggDealer
                 Helpers come from something else?")
         release
     }    
+}
+
+script WaddleDeeTown_Trigger_FirstCutscene
+{
+    lockall
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
+    applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_left))
+    waitmovement
+    delay(15)
+    msgbox("{SPEAKER NAME_BANDANA}We're just in time, Kirby. Come here!")
+    closemessage
+    setvar(VAR_WADDLE_DEE_TOWN_STATE, 1)
+    goto(WaddleDeeTown_EventScript_DededeSpeech)
+}
+
+script WaddleDeeTown_EventScript_Bandana
+{
+    lock
+    faceplayer
+    msgbox("{SPEAKER NAME_BANDANA}We're just in time, Kirby. Come here!")
+    closemessage
+    setvar(VAR_WADDLE_DEE_TOWN_STATE, 1)
+    applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_left))
+    applymovement(LOCALID_PLAYER, moves(walk_left, walk_up))
+    waitmovement()
+    goto(WaddleDeeTown_EventScript_DededeSpeech)
+}
+
+script WaddleDeeTown_EventScript_DededeSpeech
+{
+    applymovement(LOCALID_PLAYER, moves(walk_up * 7))
+    applymovement(LOCALID_TOWN_BWD, moves(walk_up * 7))
+    delay(12)
+    playse(SE_EXIT)
+    //fadescreenswapbuffers(FADE_TO_BLACK)
+    call(WaddleDeeTown_EventScript_PopulateTown)
+    delay(60)
+    //fadescreenswapbuffers(FADE_FROM_BLACK)
+    waitmovement()
+    delay(20)
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_slow_up * 3))
+    fadeoutbgm(2)
+    waitmovement()
+    delay(15)
+}
+
+script WaddleDeeTown_EventScript_PopulateTown
+{
+    createvobject(OBJ_EVENT_GFX_BOY_1, 0, 26, 31, 3, DIR_EAST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 1, 27, 31, 3, DIR_EAST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 2, 32, 31, 3, DIR_WEST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 3, 33, 31, 3, DIR_WEST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 4, 26, 32, 3, DIR_EAST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 5, 27, 32, 3, DIR_EAST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 6, 32, 32, 3, DIR_WEST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 7, 33, 32, 3, DIR_WEST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 8, 26, 33, 3, DIR_EAST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 9, 27, 33, 3, DIR_EAST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 10, 32, 33, 3, DIR_WEST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 11, 33, 33, 3, DIR_WEST)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 12, 27, 34, 3, DIR_NORTH)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 13, 28, 34, 3, DIR_NORTH)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 14, 29, 34, 3, DIR_NORTH)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 15, 30, 34, 3, DIR_NORTH)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 16, 31, 34, 3, DIR_NORTH)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 17, 32, 34, 3, DIR_NORTH)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 18, 28, 35, 3, DIR_NORTH)
+    createvobject(OBJ_EVENT_GFX_BOY_1, 19, 31, 35, 3, DIR_NORTH)
 }

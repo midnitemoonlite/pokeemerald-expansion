@@ -60,7 +60,7 @@
 #define FLAG_TOGGLE_EXP_SHARE    0x26 // Dream Team General - Exp. Share
 #define FLAG_TOGGLE_VS_SEEKER    0x27 // Dream Team General - Vs. Seeker
 #define FLAG_WADDLE_DEE_TOWN_SOUTH_TRADE_COMPLETED    0x28 // Waddle Dee Town - Worker who wants to trade
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
+#define FLAG_WADDLE_DEE_TOWN_BLOCK_NORTHERN_HALF 0x29 // Waddle Dee Town - Metatiles to block northern half of town until visiting Dream Palace
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag

@@ -1073,7 +1073,7 @@ KirbysHouse_EventScript_AfterChoosingStarter_Text_2:
 	.string "{SPEAKER NAME_WISE}These info cards hold data on Helpers\n"
 	.string "you find and recruit to your side.\p"
 	.string "As for how to recruit Helpers, you'll\n"
-	.string "want to use Helper Hearts!$"
+	.string "want to use Friend Hearts!$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_3:
 # 415 "data/maps/KirbysHouse/scripts.pory"
@@ -1081,7 +1081,7 @@ KirbysHouse_EventScript_AfterChoosingStarter_Text_3:
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_4:
 # 420 "data/maps/KirbysHouse/scripts.pory"
-	.string "{SPEAKER NAME_WISE}More Helper Hearts are always available\n"
+	.string "{SPEAKER NAME_WISE}More Friend Hearts are always available\n"
 	.string "to purchase at Rest Areas.\p"
 	.string "They're invaluable places for stocking\n"
 	.string "up on items and healing your Helpers.\p"
