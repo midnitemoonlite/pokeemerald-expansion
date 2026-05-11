@@ -61,9 +61,9 @@
 #define FLAG_TOGGLE_VS_SEEKER    0x27 // Dream Team General - Vs. Seeker
 #define FLAG_WADDLE_DEE_TOWN_SOUTH_TRADE_COMPLETED    0x28 // Waddle Dee Town - Worker who wants to trade
 #define FLAG_WADDLE_DEE_TOWN_BLOCK_NORTHERN_HALF 0x29 // Waddle Dee Town - Metatiles to block northern half of town until visiting Dream Palace
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
+#define FLAG_HIDE_CROWD_WADDLE_DEE_TOWN    0x2A // Waddle Dee Town - Crowd on first visit
+#define FLAG_HIDE_DEDEDE_WADDLE_DEE_TOWN    0x2B // Waddle Dee Town - King Dedede
+#define FLAG_HIDE_BWD_WADDLE_DEE_TOWN    0x2C // Waddle Dee Town - Bandana Waddle Dee
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag

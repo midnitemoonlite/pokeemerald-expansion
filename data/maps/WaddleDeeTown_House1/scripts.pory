@@ -37,8 +37,8 @@ script WaddleDeeTown_House1_EventScript_Worker
 
 text WaddleDeeTown_House1_TradeMessage
 {
-    "I took my team to the Waddle Dee Arena, 
-    but I lost to an opponent's Gaw Gaw.
+    "I had a practice battle to prepare for
+    the Arena, but lost against a Gaw Gaw.
     
     I bet some kind of flying Helper like a
     Twizzy could round out my team\.

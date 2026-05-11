@@ -1,6 +1,6 @@
 gText_WouldYouLikeToRestYourPkmn::
 	.string "Hello, and welcome to\n"
-	.string "the rest area.\p"
+	.string "the break room.\p"
 	.string "We restore your tired Helpers\n"
 	.string "to full health.\p"
 	.string "Would you like to rest your Helpers?$"
@@ -19,7 +19,7 @@ gText_WeHopeToSeeYouAgain::
 
 gText_WelcomeCutShort::
 	.string "Hello, and welcome to\n"
-	.string "the rest area.\p"
+	.string "the break room.\p"
 	.string "We restore your tired Helpers\n"
 	.string "to full health.\p"
 	.string "Would you like to…$"

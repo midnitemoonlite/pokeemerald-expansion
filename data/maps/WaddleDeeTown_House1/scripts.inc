@@ -137,8 +137,8 @@ WaddleDeeTown_House1_EventScript_GiveQuickClaw_Text_2:
 
 WaddleDeeTown_House1_TradeMessage::
 # 38 "data/maps/WaddleDeeTown_House1/scripts.pory"
-	.string "I took my team to the Waddle Dee Arena, \n"
-	.string "but I lost to an opponent's Gaw Gaw.\p"
+	.string "I had a practice battle to prepare for\n"
+	.string "the Arena, but lost against a Gaw Gaw.\p"
 	.string "I bet some kind of flying Helper like a\n"
 	.string "Twizzy could round out my team…\p"
 	.string "If you have one, could we trade for it?\n"

@@ -1361,7 +1361,7 @@ gText_PokemartSign::
 
 gText_PokemonCenterSign::
 	.string "“Rejuvenate your tired Helpers!”\n"
-	.string "REST AREA$"
+	.string "BREAK ROOM$"
 
 gText_MomOrDadMightLikeThisProgram::
 	.string "Gooey might like this program.\n"
@@ -1438,7 +1438,7 @@ gText_MomExplainHPGetPotions::
 	.string "measured in HP.\p"
 	.string "If your Helpers lose their HP,\n"
 	.string "you can restore them at any\l"
-	.string "rest area.\p"
+	.string "break room.\p"
 	.string "If you're going to travel far away,\n"
 	.string "the smart TRAINER stocks up on\l"
 	.string "POTIONS at the ITEM SHOP.\p"

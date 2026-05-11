@@ -14046,11 +14046,11 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_POKEMON_BOX_LINK] =
     {
-        .name = ITEM_NAME("{PKMN} Box Link"),
+        .name = ITEM_NAME("Helper Box Link"),
         .price = 0,
         .description = COMPOUND_STRING(
             "This device grants\n"
-            "access to the {PKMN}\n"
+            "access to the Helper\n"
             "Storage System."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,

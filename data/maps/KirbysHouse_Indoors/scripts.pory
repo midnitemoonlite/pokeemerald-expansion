@@ -317,7 +317,7 @@ script KirbysHouse_Indoors_EventScript_Television
 		applymovement(LOCALID_BANDANA_WADDLE_DEE, Common_Movement_ExclamationMark)
 		waitmovement(0)
 		msgbox("{SPEAKER NAME_DEDEDE}I've organized a little game to test you
-				all on the traits that make a good king..
+				all on the traits that make a good king.
 				
 				Impressive strength! A sharp mind! And
 				a knack for decisive leadership!

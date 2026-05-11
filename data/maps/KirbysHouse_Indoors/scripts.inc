@@ -703,7 +703,7 @@ KirbysHouse_Indoors_EventScript_Television_Text_0:
 KirbysHouse_Indoors_EventScript_Television_Text_1:
 # 319 "data/maps/KirbysHouse_Indoors/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}I've organized a little game to test you\n"
-	.string "all on the traits that make a good king..\p"
+	.string "all on the traits that make a good king.\p"
 	.string "Impressive strength! A sharp mind! And\n"
 	.string "a knack for decisive leadership!\p"
 	.string "Maybe ya noticed those Helpers poppin'\n"

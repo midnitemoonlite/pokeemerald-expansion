@@ -309,11 +309,14 @@ script WaddleDeeTown_EventScript_Astronomer
 {
     lock
     faceplayer
-    msgbox("If you're planning on challenging the
-            Arenas, you should stop by the castle.
+    msgbox("So the Waddle Dee Arena was built in the
+            back room of the town's castle, huh?
             
-            The Waddle Dee Arena is inside there.
-            It's the perfect place to start!")
+            It was blocked off before. Last I saw,
+            there was a strange teleporter inside.
+            
+            Do you think it had to be moved
+            elsewhere to make way for the Arena?")
     release
 }
 
@@ -443,7 +446,8 @@ script WaddleDeeTown_Trigger_FirstCutscene
     applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_left))
     waitmovement
     delay(15)
-    msgbox("{SPEAKER NAME_BANDANA}We're just in time, Kirby. Come here!")
+    msgbox("{SPEAKER NAME_BANDANA}The Great King's up ahead, Kirby.
+            Let's hurry!")
     closemessage
     setvar(VAR_WADDLE_DEE_TOWN_STATE, 1)
     goto(WaddleDeeTown_EventScript_DededeSpeech)
@@ -453,7 +457,8 @@ script WaddleDeeTown_EventScript_Bandana
 {
     lock
     faceplayer
-    msgbox("{SPEAKER NAME_BANDANA}We're just in time, Kirby. Come here!")
+    msgbox("{SPEAKER NAME_BANDANA}The Great King's up ahead, Kirby.
+            Let's hurry!")
     closemessage
     setvar(VAR_WADDLE_DEE_TOWN_STATE, 1)
     applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_left))
@@ -467,40 +472,264 @@ script WaddleDeeTown_EventScript_DededeSpeech
     applymovement(LOCALID_PLAYER, moves(walk_up * 7))
     applymovement(LOCALID_TOWN_BWD, moves(walk_up * 7))
     delay(12)
-    playse(SE_EXIT)
+    //playse(SE_EXIT)
     //fadescreenswapbuffers(FADE_TO_BLACK)
-    call(WaddleDeeTown_EventScript_PopulateTown)
-    delay(60)
+    //call(WaddleDeeTown_EventScript_PopulateTown)
+    //delay(60)
     //fadescreenswapbuffers(FADE_FROM_BLACK)
     waitmovement()
     delay(20)
     special(SpawnCameraObject)
-    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_slow_up * 3))
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_slow_up * 2))
     fadeoutbgm(2)
     waitmovement()
     delay(15)
+    playbgm(MUS_ENCOUNTER_INTERVIEWER, FALSE)
+    delay(15)
+    msgbox("{SPEAKER NAME_DEDEDE}Looks like some of you have already got
+            your own Helpers! Not bad, not bad!
+            
+            Now, I can't really stop 'ya if you'd
+            rather keep 'em as companions\.")
+    closemessage
+    applymovement(LOCALID_TOWN_KING_DEDEDE, moves(walk_slow_right, walk_in_place_slow_down))
+    waitmovement()
+    msgbox("{SPEAKER NAME_DEDEDE}\.but what I really wanna see are
+            leaders and teams pushed to the limit!
+            
+            And so, I'm proud to cut the ribbon for
+            this town's very own Waddle Dee Arena!
+            
+            This here castle behind me has a new
+            room in the back where the Arena is at.
+            
+            If ya choose to enter, you'd better be
+            ready for a gauntlet of Helper battles!
+
+            Only tournament winners get to go home
+            with a shiny new Brooch to their name.")
+    closemessage
+    applymovement(LOCALID_TOWN_KING_DEDEDE, moves(walk_slow_left, walk_in_place_slow_down))
+    waitmovement()
+    msgbox("{SPEAKER NAME_DEDEDE}Now then, you're all dismissed!")
+    closemessage
+    playse(SE_APPLAUSE)
+    // Crowd animation
+    applymovement(LOCALID_CROWD_2, moves(jump_in_place_up * 6))
+    applymovement(LOCALID_CROWD_3, moves(walk_in_place_up * 5))
+    applymovement(LOCALID_CROWD_8, moves(walk_in_place_fast_up * 11))
+    turnobject(LOCALID_CROWD_1, DIR_WEST)
+    turnobject(LOCALID_CROWD_4, DIR_SOUTH)
+    delay(6)
+    applymovement(LOCALID_CROWD_5, moves(walk_in_place_right))
+    applymovement(LOCALID_CROWD_6, moves(walk_in_place_left))
+    applymovement(LOCALID_CROWD_9, moves(jump_in_place_up))
+    turnobject(LOCALID_CROWD_7, DIR_EAST)
+    delay(30)
+    turnobject(LOCALID_CROWD_7, DIR_SOUTH)
+    turnobject(LOCALID_CROWD_4, DIR_WEST)
+    delay(30)
+    turnobject(LOCALID_CROWD_1, DIR_EAST)
+    applymovement(LOCALID_CROWD_9, moves(jump_in_place_up))
+    turnobject(LOCALID_CROWD_7, DIR_WEST)
+    delay(30)
+    turnobject(LOCALID_CROWD_7, DIR_NORTH)
+    applymovement(LOCALID_CROWD_5, moves(walk_in_place_up))
+    applymovement(LOCALID_CROWD_6, moves(walk_in_place_up))
+    delay(15)
+    applymovement(LOCALID_CROWD_9, moves(jump_in_place_up))
+    turnobject(LOCALID_CROWD_4, DIR_NORTH)
+    delay(15)
+    turnobject(LOCALID_CROWD_1, DIR_NORTH)
+    delay(15)
+    message("Yes, Great King!
+            Thank you, Great King!")
+    delay(140)
+    closemessage()
+    applymovement(LOCALID_CROWD_1, moves(walk_left * 2, walk_up * 2, walk_left * 7))
+    applymovement(LOCALID_CROWD_2, moves(walk_left, walk_down * 3, walk_right, walk_down * 4))
+    applymovement(LOCALID_CROWD_5, moves(walk_left * 3, walk_up * 2, walk_left * 6))
+    applymovement(LOCALID_CROWD_6, moves(walk_left * 3, walk_up * 2, walk_left * 7))
+    applymovement(LOCALID_CROWD_9, moves(walk_down * 8))
+    applymovement(LOCALID_CROWD_8, moves(walk_right * 7))
+    applymovement(LOCALID_CROWD_7, moves(walk_right, walk_up, walk_right, walk_up, walk_right, walk_up, walk_right * 5))
+    applymovement(LOCALID_CROWD_10, moves(walk_right, walk_up * 3, walk_right * 7))
+    applymovement(LOCALID_CROWD_4, moves(walk_up, walk_left * 12))
+    applymovement(LOCALID_CROWD_3, moves(walk_slow_right))
+    waitmovement()
+    playse(SE_LEDGE)
+    applymovement(LOCALID_CROWD_3, moves(jump_left))
+    waitse()
+    delay(20)
+    applymovement(LOCALID_CROWD_3, moves(walk_in_place_right))
+    waitmovement()
+    applymovement(LOCALID_CROWD_3, moves(walk_in_place_left))
+    waitmovement()
+    delay(20)
+    applymovement(LOCALID_CROWD_3, moves(walk_in_place_down))
+    waitmovement()
+    applymovement(LOCALID_CROWD_3, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    delay(60)
+    waitmovement()
+    applymovement(LOCALID_CROWD_3, moves(walk_fast_right, walk_fast_down * 7))
+    waitmovement()
+    applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_slow_down * 2))
+    fadeoutbgm(1)
+    waitmovement()
+    delay(15)
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
+    applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_left))
+    playbgm(MUS_RUSTBORO, FALSE)
+    setflag(FLAG_HIDE_CROWD_WADDLE_DEE_TOWN)
+    removeobject(LOCALID_CROWD_1)
+    removeobject(LOCALID_CROWD_2)
+    removeobject(LOCALID_CROWD_3)
+    removeobject(LOCALID_CROWD_4)
+    removeobject(LOCALID_CROWD_5)
+    removeobject(LOCALID_CROWD_6)
+    removeobject(LOCALID_CROWD_7)
+    removeobject(LOCALID_CROWD_8)
+    removeobject(LOCALID_CROWD_9)
+    removeobject(LOCALID_CROWD_10)
+    waitmovement()
+    msgbox("{SPEAKER NAME_BANDANA}Ah, looks like we only caught the end of
+            the Great King's speech\.
+            
+            I wonder how tough the challengers at
+            the Arena here will be?")
+    applymovement(LOCALID_TOWN_KING_DEDEDE, moves(walk_down * 2))
+    msgbox("{SPEAKER NAME_DEDEDE}Well, well, well!
+            If it isn't my favorite lil' nuisance!")
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
+    applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_up))
+    waitmovement()
+    playse(SE_PIN)
+    applymovement(LOCALID_TOWN_BWD, Common_Movement_ExclamationMark)
+    waitmovement()
+    delay(20)
+    playbgm(MUS_ENCOUNTER_BRENDAN, FALSE)
+    msgbox("{SPEAKER NAME_BANDANA}G-Great King!
+    
+            {SPEAKER NAME_DEDEDE}And ol' Bandana too! Well? How about it?
+            Ya enjoying the Royal Royale so far?")
+    applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_up * 2))
+    msgbox("{SPEAKER NAME_BANDANA}Um, it's\. you really put your all into
+            this game, Great King! It's impressive!
+    
+            I'm still learning all sorts of things
+            as I go, but I'm enjoying it.
+            
+            Wise Waddle Dee taught us the basics,
+            so now we're helping him in exchange\.")
+    applymovement(LOCALID_TOWN_KING_DEDEDE, moves(walk_in_place_slow_down))
+    msgbox("{SPEAKER NAME_DEDEDE}Ohh, filling out the Info Cards, ain't
+            ya? That's some real great news!
+            Even I don't know all the Helpers yet!
+            
+            {SPEAKER NAME_BANDANA}That reminds me, Wise Waddle Dee said he
+            didn't know where Helpers came from.
+            Great King, do you\.?")
+    playse(SE_LEDGE)
+    applymovement(LOCALID_TOWN_KING_DEDEDE, moves(jump_in_place_down))
+    waitmovement()
+    setvar(VAR_0x8004, 2)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    msgbox("{SPEAKER NAME_DEDEDE}Nope! Nuh uh! Couldn't tell ya!
+    
+            Don't sweat the small details, yeah?
+            The most important thing is having fun!")
+    closemessage()
+    applymovement(LOCALID_TOWN_KING_DEDEDE, moves(walk_in_place_slow_up))
+    waitmovement()
+    delay(20)
+    msgbox("{SPEAKER NAME_DEDEDE}The road to becoming a Great King isn't
+            easy. I don't expect most to make it.
+    
+            But I wanted to put something together
+            that could be enjoyed regardless.
+            
+            I want my subjects to come away from
+            this with something new\.")
+    closemessage()
+    delay(20)
+    applymovement(LOCALID_TOWN_KING_DEDEDE, moves(walk_in_place_down))
+    msgbox("{SPEAKER NAME_DEDEDE}So, Kirby, huh? Why, I shudder to think
+            what HE would be like as king!
+            
+            I can picture it now... he'd order all
+            of Dream Land's food be for himself!
+            
+            Ha ha haaaa! Whew\.
+
+            Well, that was entertaining enough.
+            I'm a busy king, with places to be.
+            You'll have to excuse me for now.
+            
+            Peace!")
+    closemessage()
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_TOWN_BWD, moves(walk_right * 2, walk_in_place_left))
+    applymovement(LOCALID_TOWN_KING_DEDEDE, moves(walk_down * 10))
+    fadeoutbgm(1)
+    delay(30)
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_in_place_down))
+    applymovement(LOCALID_TOWN_BWD, moves(walk_left * 2, walk_in_place_down))
+    delay(60)
+    playbgm(MUS_RUSTBORO, FALSE)
+    special(RemoveCameraObject)
+    msgbox("{SPEAKER NAME_BANDANA}I hate having to say this, but\.
+            He's definitely hiding something, right?
+            
+            Looks like it's up to us to figure out
+            why Dream Land is full of Helpers\.")
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
+    applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_left))
+    msgbox("{SPEAKER NAME_BANDANA}I'm gonna ask around town and see if I
+            can figure anything out for myself.
+            
+            Kirby, why don't you check out the
+            Waddle Dee Arena?
+            
+            You're better at battling than I am, so
+            you might have a shot at victory there.
+            
+            If you can score some Brooches, I'm
+            sure the Great King'll recognize you
+            as a real contender for the crown!")
+    closemessage
+    applymovement(LOCALID_TOWN_BWD, moves(walk_up * 3, walk_right * 9))
+    waitmovement()
+    setflag(FLAG_HIDE_DEDEDE_WADDLE_DEE_TOWN)
+    setflag(FLAG_HIDE_BWD_WADDLE_DEE_TOWN)
+    removeobject(LOCALID_TOWN_BWD)
+    removeobject(LOCALID_TOWN_KING_DEDEDE)
+    release
 }
 
-script WaddleDeeTown_EventScript_PopulateTown
-{
-    createvobject(OBJ_EVENT_GFX_BOY_1, 0, 26, 31, 3, DIR_EAST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 1, 27, 31, 3, DIR_EAST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 2, 32, 31, 3, DIR_WEST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 3, 33, 31, 3, DIR_WEST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 4, 26, 32, 3, DIR_EAST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 5, 27, 32, 3, DIR_EAST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 6, 32, 32, 3, DIR_WEST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 7, 33, 32, 3, DIR_WEST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 8, 26, 33, 3, DIR_EAST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 9, 27, 33, 3, DIR_EAST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 10, 32, 33, 3, DIR_WEST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 11, 33, 33, 3, DIR_WEST)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 12, 27, 34, 3, DIR_NORTH)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 13, 28, 34, 3, DIR_NORTH)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 14, 29, 34, 3, DIR_NORTH)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 15, 30, 34, 3, DIR_NORTH)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 16, 31, 34, 3, DIR_NORTH)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 17, 32, 34, 3, DIR_NORTH)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 18, 28, 35, 3, DIR_NORTH)
-    createvobject(OBJ_EVENT_GFX_BOY_1, 19, 31, 35, 3, DIR_NORTH)
-}
+// script WaddleDeeTown_EventScript_PopulateTown
+//{
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 0, 26, 31, 3, DIR_EAST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 1, 27, 31, 3, DIR_EAST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 2, 32, 31, 3, DIR_WEST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 3, 33, 31, 3, DIR_WEST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 4, 26, 32, 3, DIR_EAST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 5, 27, 32, 3, DIR_EAST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 6, 32, 32, 3, DIR_WEST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 7, 33, 32, 3, DIR_WEST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 8, 26, 33, 3, DIR_EAST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 9, 27, 33, 3, DIR_EAST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 10, 32, 33, 3, DIR_WEST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 11, 33, 33, 3, DIR_WEST)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 12, 27, 34, 3, DIR_NORTH)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 13, 28, 34, 3, DIR_NORTH)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 14, 29, 34, 3, DIR_NORTH)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 15, 30, 34, 3, DIR_NORTH)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 16, 31, 34, 3, DIR_NORTH)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 17, 32, 34, 3, DIR_NORTH)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 18, 28, 35, 3, DIR_NORTH)
+//    createvobject(OBJ_EVENT_GFX_BOY_1, 19, 31, 35, 3, DIR_NORTH)
+//}
