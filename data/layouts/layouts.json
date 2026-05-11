@@ -9433,6 +9433,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/WaddleDeeTown_House1/border.bin",
       "blockdata_filepath": "data/layouts/WaddleDeeTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WADDLE_DEE_TOWN_CASTLE_LOBBY",
+      "name": "WaddleDeeTown_CastleLobby_Layout",
+      "width": 22,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/WaddleDeeTown_CastleLobby/border.bin",
+      "blockdata_filepath": "data/layouts/WaddleDeeTown_CastleLobby/map.bin"
     }
   ]
 }

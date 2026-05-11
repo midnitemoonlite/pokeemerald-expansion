@@ -1759,3 +1759,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/WaddleDeeTown_Mart/scripts.inc"
 
 	.include "data/maps/WaddleDeeTown_House1/scripts.inc"
+
+	.include "data/maps/WaddleDeeTown_CastleLobby/scripts.inc"

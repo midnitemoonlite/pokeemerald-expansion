@@ -64,7 +64,7 @@
 #define FLAG_HIDE_CROWD_WADDLE_DEE_TOWN    0x2A // Waddle Dee Town - Crowd on first visit
 #define FLAG_HIDE_DEDEDE_WADDLE_DEE_TOWN    0x2B // Waddle Dee Town - King Dedede
 #define FLAG_HIDE_BWD_WADDLE_DEE_TOWN    0x2C // Waddle Dee Town - Bandana Waddle Dee
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
+#define FLAG_RECEIVED_DARK_TM    0x2D // Waddle Dee Town - Park Staff in Castle Lobby
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag
