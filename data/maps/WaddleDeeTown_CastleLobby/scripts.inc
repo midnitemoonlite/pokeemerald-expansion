@@ -35,32 +35,32 @@ WaddleDeeTown_CastleLobby_EventScript_Staff_2:
 # 40 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Staff_Text_0, MSGBOX_NPC
 # 50 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
-	giveitem ITEM_TM63
+	giveitem ITEM_TM65
 # 51 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	setflag FLAG_RECEIVED_DARK_TM
 	goto WaddleDeeTown_CastleLobby_EventScript_Staff_1
 
 
 WaddleDeeTown_CastleLobby_EventScript_Builder::
-# 63 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 62 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Builder_Text_0, MSGBOX_NPC
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Left::
-# 72 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 71 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Soldier_Left_Text_0, MSGBOX_NPC
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Right::
-# 84 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 83 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Soldier_Right_Text_0, MSGBOX_NPC
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Middle::
-# 96 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 95 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Soldier_Middle_Text_0, MSGBOX_NPC
 	return
 
@@ -101,21 +101,20 @@ WaddleDeeTown_CastleLobby_EventScript_Staff_Text_0:
 
 WaddleDeeTown_CastleLobby_EventScript_Staff_Text_1:
 # 53 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
-	.string "Thief doesn't just deal damage; it can\n"
-	.string "also steal the held item of the target\l"
-	.string "if the user isn't holding anything.\p"
+	.string "Snarl doesn't just deal damage; it also\n"
+	.string "lowers the targets' Special Attack.\p"
 	.string "If you want more TMs, do your best to\n"
 	.string "win at the various Arenas!$"
 
 WaddleDeeTown_CastleLobby_EventScript_Builder_Text_0:
-# 63 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 62 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "Have you seen the northern part of\n"
 	.string "town? It's completely blocked off.\p"
 	.string "I wonder what kinds of Helpers\n"
 	.string "await on the other side…$"
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Left_Text_0:
-# 72 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 71 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "This is the entrance to the Great King's\n"
 	.string "personal treasury.\p"
 	.string "…\n"
@@ -124,7 +123,7 @@ WaddleDeeTown_CastleLobby_EventScript_Soldier_Left_Text_0:
 	.string "I can't let you in.$"
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Right_Text_0:
-# 84 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 83 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "A certain someone has tasked me with\n"
 	.string "guarding this door.\p"
 	.string "What's that? Why am I being so coy\n"
@@ -133,7 +132,7 @@ WaddleDeeTown_CastleLobby_EventScript_Soldier_Right_Text_0:
 	.string "why would I be coy about it?$"
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Middle_Text_0:
-# 96 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 95 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "The entrance to the Waddle Dee Arena\n"
 	.string "is right through here.\p"
 	.string "I want to enter, but I've been told\n"

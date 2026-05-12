@@ -1072,7 +1072,7 @@ WaddleDeeArena_EventScript_TalkToMagolor_3:
 # 782 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_TalkToMagolor_Text_1
 # 793 "data/maps/WaddleDeeArena/scripts.pory"
-	giveitem ITEM_TM60
+	giveitem ITEM_TM53
 # 794 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_TalkToMagolor_Text_2
 # 802 "data/maps/WaddleDeeArena/scripts.pory"
@@ -1973,8 +1973,8 @@ WaddleDeeArena_EventScript_Staff_Text_0:
 
 WaddleDeeArena_EventScript_Hiker_Text_0:
 # 46 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "Supposedly, each of the different\n"
-	.string "Arenas have slightly differnt rules.\p"
+	.string "Supposedly, each of the various\n"
+	.string "Arenas have slightly different rules.\p"
 	.string "Whenever you get to a new Arena, it\n"
 	.string "might not be a bad idea to scope out\l"
 	.string "what you'll be getting into.$"

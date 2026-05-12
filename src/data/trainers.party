@@ -83,7 +83,7 @@ Double Battle: No
 
 /* Wise Waddle Dee - Kirby's House (Lovely) */
 === TRAINER_SAWYER_1 === 
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Collector
 Pic: Collector
 Music: Suspicious
@@ -100,7 +100,7 @@ Ball: Poke
 
 /* Wise Waddle Dee - Kirby's House (Burning Leo) */
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Collector
 Pic: Collector
 Music: Suspicious
@@ -117,7 +117,7 @@ Ball: Poke
 
 /* Wise Waddle Dee - Kirby's House (Squishy) */
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Collector
 Pic: Collector
 Music: Suspicious
@@ -134,7 +134,7 @@ Ball: Poke
 
 /* Bandana Waddle Dee - Green Rest Area (Lovely) */
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Rival
 Pic: Wally
 Music: Male
@@ -155,7 +155,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 /* Bandana Waddle Dee - Green Rest Area (Burning Leo) */
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Rival
 Pic: Wally
 Music: Male
@@ -176,7 +176,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 /* Bandana Waddle Dee - Green Rest Area (Squishy) */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Rival
 Pic: Wally
 Music: Male
@@ -197,7 +197,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 /* Prism Plains - Trainer 1 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Youngster
 Pic: Collector
 Gender: Male
@@ -212,7 +212,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 2 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Parasol Lady
 Pic: Collector
 Gender: Female
@@ -232,7 +232,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 3 */
 === TRAINER_GABRIELLE_1 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Youngster
 Pic: Collector
 Gender: Male
@@ -247,7 +247,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 4 */
 === TRAINER_GRUNT_PETALBURG_WOODS ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Aroma Lady
 Pic: Collector
 Gender: Female
@@ -272,7 +272,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 5 */
 === TRAINER_MARCEL ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Lass
 Pic: Collector
 Gender: Female
@@ -292,7 +292,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Prism Plains - Trainer 6 */
 === TRAINER_ALBERTO ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Bird Keeper
 Pic: Collector
 Gender: Female
@@ -317,7 +317,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Waddle Dee Arena - Trainer 1 */
 === TRAINER_ED ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Youngster
 Pic: Collector
 Gender: Male
@@ -337,7 +337,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Waddle Dee Arena - Trainer 2 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Lass
 Pic: Collector
 Gender: Female
@@ -357,7 +357,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Waddle Dee Arena - Trainer 3 */
 === TRAINER_DECLAN ===
-Name: WADDLE DEE
+Name: Waddle Dee
 Class: Pokemaniac
 Pic: Collector
 Gender: Male
@@ -372,7 +372,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 /* Waddle Dee Arena - Magolor (Lovely) */
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
-Name: MAGOLOR
+Name: Magolor
 Class: Salon Maiden
 Pic: Collector
 Gender: Male
@@ -409,7 +409,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 /* Waddle Dee Arena - Magolor (Burning Leo) */
 === TRAINER_GRUNT_WEATHER_INST_1 ===
-Name: MAGOLOR
+Name: Magolor
 Class: Salon Maiden
 Pic: Collector
 Gender: Male
@@ -446,7 +446,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 /* Waddle Dee Arena - Magolor (Squishy) */
 === TRAINER_GRUNT_WEATHER_INST_2 ===
-Name: MAGOLOR
+Name: Magolor
 Class: Salon Maiden
 Pic: Collector
 Gender: Male

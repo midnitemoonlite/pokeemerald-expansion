@@ -38,11 +38,6 @@ static EWRAM_DATA u8 sStorytellerWindowId = 0;
 
 static const u16 sDefaultBardSongLyrics[NUM_BARD_SONG_WORDS] = {
     EC_WORD_SHAKE,
-    EC_WORD_IT,
-    EC_WORD_DO,
-    EC_WORD_THE,
-    EC_WORD_DIET,
-    EC_WORD_DANCE
 };
 
 static const u8 *const sGiddyAdjectives[] = {
@@ -61,13 +56,6 @@ static const u8 *const sGiddyAdjectives[] = {
 // a Yes/No prompt afterwards regardless.
 static const u8 *const sGiddyQuestions[GIDDY_MAX_QUESTIONS] = {
     GiddyText_ISoWantToGoOnAVacation,
-    GiddyText_IBoughtCrayonsWith120Colors,
-    GiddyText_WouldntItBeNiceIfWeCouldFloat,
-    GiddyText_WhenYouWriteOnASandyBeach,
-    GiddyText_WhatsTheBottomOfTheSeaLike,
-    GiddyText_WhenYouSeeTheSettingSunDoesIt,
-    GiddyText_LyingBackInTheGreenGrass,
-    GiddyText_SecretBasesAreSoWonderful
 };
 
 static void SetupBard(void)

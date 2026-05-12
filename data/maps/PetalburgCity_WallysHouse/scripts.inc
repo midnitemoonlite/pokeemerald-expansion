@@ -43,7 +43,7 @@ PetalburgCity_WallysHouse_EventScript_GiveHMSurf::
 # 22 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	msgbox PetalburgCity_WallysHouse_Text_PleaseExcuseUs, MSGBOX_DEFAULT
 # 23 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
-	giveitem ITEM_HM_SURF
+	giveitem ITEM_HM03
 # 24 "data/maps/PetalburgCity_WallysHouse/scripts.pory"
 	setflag FLAG_RECEIVED_HM_SURF
 # 25 "data/maps/PetalburgCity_WallysHouse/scripts.pory"

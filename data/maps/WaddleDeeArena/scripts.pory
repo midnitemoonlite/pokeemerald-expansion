@@ -790,7 +790,7 @@ script WaddleDeeArena_EventScript_TalkToMagolor
                 
                 Here, let me give you a little souvenir
                 to mark our battle.")
-        giveitem(ITEM_TM60)
+        giveitem(ITEM_TM53)
         msgbox("Trick is a move that swaps your Helper's
                 item with the target's.
                 

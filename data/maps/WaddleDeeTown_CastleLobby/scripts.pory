@@ -47,12 +47,11 @@ script WaddleDeeTown_CastleLobby_EventScript_Staff
         
         Here's a TM that might help you out
         during your Arena battles!", MSGBOX_NPC)
-        giveitem(ITEM_TM63)
+        giveitem(ITEM_TM65)
         setflag(FLAG_RECEIVED_DARK_TM)
     }
-        msgbox("Thief doesn't just deal damage; it can
-        also steal the held item of the target
-        if the user isn't holding anything.
+        msgbox("Snarl doesn't just deal damage; it also
+        lowers the targets' Special Attack.
         
         If you want more TMs, do your best to
         win at the various Arenas!", MSGBOX_NPC)

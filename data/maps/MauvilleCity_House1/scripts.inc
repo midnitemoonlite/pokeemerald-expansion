@@ -17,7 +17,7 @@ MauvilleCity_House1_EventScript_RockSmashDude::
 # 9 "data/maps/MauvilleCity_House1/scripts.pory"
 	msgbox MauvilleCity_House1_Text_ImRockSmashDudeTakeThis, MSGBOX_DEFAULT
 # 10 "data/maps/MauvilleCity_House1/scripts.pory"
-	giveitem ITEM_HM_ROCK_SMASH
+	giveitem ITEM_HM06
 # 11 "data/maps/MauvilleCity_House1/scripts.pory"
 	setflag FLAG_RECEIVED_HM_ROCK_SMASH
 # 12 "data/maps/MauvilleCity_House1/scripts.pory"
