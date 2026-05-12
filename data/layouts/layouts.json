@@ -9443,6 +9443,16 @@
       "secondary_tileset": "gTileset_Contest",
       "border_filepath": "data/layouts/WaddleDeeTown_CastleLobby/border.bin",
       "blockdata_filepath": "data/layouts/WaddleDeeTown_CastleLobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_WADDLE_DEE_ARENA",
+      "name": "WaddleDeeArena_Layout",
+      "width": 21,
+      "height": 24,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/WaddleDeeArena/border.bin",
+      "blockdata_filepath": "data/layouts/WaddleDeeArena/map.bin"
     }
   ]
 }

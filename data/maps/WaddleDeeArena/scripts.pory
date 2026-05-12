@@ -1,0 +1,849 @@
+raw `
+WaddleDeeArena_MapScripts::
+    .byte 0
+`
+
+script WaddleDeeArena_EventScript_Youngster
+{
+    lock
+    faceplayer
+    msgbox("If you need more time to prepare before
+            taking on the Arena, there's a nurse
+            and PC waiting in the back.")
+    release
+}
+
+script WaddleDeeArena_EventScript_Cafe
+{
+    lock
+    faceplayer
+    msgbox("I've got some time off, so I came to
+            see what the Arenas were like.
+            
+            I can't wait to see what kinds of
+            battles will take place in here!")
+    release
+}
+
+script WaddleDeeArena_EventScript_Staff
+{
+    lock
+    faceplayer
+    msgbox("My boss is planning on challenging the
+            Arena, so I'm here to cheer him on.
+            
+            His Psychic-type Helpers are something
+            else, I tell ya!
+            
+            Gooooo, boss! You've got this!")
+    release
+}
+
+script WaddleDeeArena_EventScript_Hiker
+{
+    lock
+    faceplayer
+    msgbox("Supposedly, each of the various
+            Arenas have slightly different rules.
+            
+            Whenever you get to a new Arena, it
+            might not be a bad idea to scope out
+            what you'll be getting into.")
+    release
+}
+
+script WaddleDeeArena_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    msgbox("Raising Helpers is quite difficult\.
+            I'm not sure I've got what it takes.
+            
+            But watching others battle with their
+            Helpers is even more exciting!
+            
+            There might be some serious candidates
+            for the new king of Dream Land here!")
+    release
+}
+
+script WaddleDeeArena_EventScript_Nurse
+{
+    lock
+    faceplayer
+    msgbox("Are you planning on entering the Arena?
+            I can heal up your Helpers first!", MSGBOX_YESNO)
+    if(var(VAR_RESULT))
+    {
+        closemessage
+		fadescreenswapbuffers(FADE_TO_BLACK)
+		playfanfare(MUS_HEAL)
+		waitfanfare()
+		special(HealPlayerParty)
+		fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("You and your Helpers are in top form.
+                Best of luck in the Arena!")
+    }
+    release
+}
+
+script WaddleDeeArena_EventScript_Commentator
+{
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE01_GET))
+    {
+        msgbox("Once more: congraaaaatulations on your
+                fantaaaaabulous win, Kirby!
+                
+                It's no small feat, overcoming Magolor
+                and his magical bag of tricks!
+                
+                I'll be rooting for you at the other
+                Arenas! Good luck, Kirby of the Stars!")
+    }
+    elif(!flag(FLAG_BADGE01_GET))
+    {
+        lock
+        faceplayer
+        msgbox("Wwwwwelcome to the Waddle Dee
+                Arenaaaaa!
+                
+                I'm your host, Commentator Waddle Dee,
+                here to officiate heated Helper brawls!")
+        if(!flag(FLAG_GRAND_FINALS_ACTIVE))
+        {
+            goto(WaddleDeeArena_EventScript_CommentatorChoice)
+        }
+        elif(flag(FLAG_GRAND_FINALS_ACTIVE))
+        {
+            msgbox("Next up: grand finals!
+                    Are you prepared for the last battle?", MSGBOX_YESNO)
+            if(var(VAR_RESULT))
+            {
+                closemessage
+                goto(WaddleDeeArena_EventScript_GrandFinalsPreparation)
+            }
+            elif(!var(VAR_RESULT))
+            {
+                closemessage
+                goto(WaddleDeeArena_EventScript_CommentatorBye)
+            }
+        }
+	}
+    release
+}
+
+script WaddleDeeArena_EventScript_GrandFinalsPreparation
+{
+    getobjectfacingdirection(LOCALID_PLAYER, VAR_TEMP_0)
+	if(var(VAR_TEMP_0) == DIR_SOUTH)
+	{
+        applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_left, walk_down * 2, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_WEST)
+	{
+		applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_EAST)
+	{
+		applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_in_place_up))
+		waitmovement()
+	}
+    special(SpawnCameraObject)
+    applymovement(LOCALID_CAMERA, moves(walk_up * 6))
+    applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_up * 7, walk_in_place_down))
+    applymovement(LOCALID_PLAYER, moves(walk_up * 6, walk_left * 3, walk_in_place_right))
+    waitmovement()
+    special(RemoveCameraObject)
+    goto(WaddleDeeArena_EventScript_GrandFinals)
+}
+
+script WaddleDeeArena_EventScript_CommentatorChoice
+{
+    message("Today's challenge: a sweet breeze!
+            How can I help you?")
+    waitmessage
+    multichoice(17, 6, MULTI_CHALLENGEINFO, FALSE)
+    switch(var(VAR_RESULT)) {
+	case 0:
+		goto(WaddleDeeArena_EventScript_BeginChallenge)
+	case 1:
+		goto(WaddleDeeArena_EventScript_CommentatorInfo)
+	case 2:
+		goto(WaddleDeeArena_EventScript_CommentatorBye)
+    case MULTI_B_PRESSED:
+        goto(WaddleDeeArena_EventScript_CommentatorBye)
+    }
+}
+
+script WaddleDeeArena_EventScript_CommentatorBye
+{
+    if(flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        msgbox("When you're ready for the grand finals,
+                you know the Waddle Dee to talk to!")
+    }
+    else
+    {
+        msgbox("If you ever want to brave the Arena,
+                you know the Waddle Dee to talk to!")
+    }
+    release
+}
+
+script WaddleDeeArena_EventScript_CommentatorInfo
+{
+    msgbox("Arenas host gauntlet-styled
+            tournaments of Helper battles.
+            
+            Eager challengers are first pooled into
+            a preliminary bracket. Win more battles
+            to climb up the ranks!
+            
+            In between bouts, leaders are offered
+            the chance to rest their Helpers\.
+            
+            But beware! You only get a limited
+            number of heals per attempt!
+            
+            In this Arena, you'll have to survive
+            {COLOR BLUE}3 rounds{COLOR DARK_GRAY} with {COLOR RED}1 full-party heal{COLOR DARK_GRAY}.
+            
+            If you top the preliminary bracket,
+            you'll be entered into grand finals!
+            
+            You'll have the chance to adjust your
+            team and save before the last fight.
+            
+            Defeat the final opponent, and you'll
+            be awarded one Waddle Dee Brooch!
+            
+            Now then\.")
+    goto(WaddleDeeArena_EventScript_CommentatorChoice)
+}
+
+script WaddleDeeArena_EventScript_BeginChallenge
+{
+    msgbox("Alright, you've been signed up.
+            Come with me onto the stage, please!")
+    closemessage
+    setvar(VAR_ARENA_HEALS, 1)
+    setvar(VAR_ARENA_BATTLES, 0)
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    getobjectfacingdirection(LOCALID_PLAYER, VAR_TEMP_0)
+	if(var(VAR_TEMP_0) == DIR_SOUTH)
+	{
+        applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_left, walk_down * 2, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_WEST)
+	{
+		applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_EAST)
+	{
+		applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+    special(SpawnCameraObject)
+    applymovement(LOCALID_CAMERA, moves(walk_up * 6))
+    applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_up * 7, walk_in_place_down))
+    applymovement(LOCALID_PLAYER, moves(walk_up * 6, walk_left * 3, walk_in_place_right))
+    waitmovement()
+    applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down * 2))
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Welcome, one and all, to the brand-new
+            Waddle Dee Arena!
+            
+            We've got some exciting battles today!
+            Starring none other than our hero...
+            it's the pink pugilist, Kirbyyy!!!")
+    }
+    elif(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Welcome, one and all, to the brand-new
+            Waddle Dee Arena!
+            
+            Unable to settle for anything other
+            than victory, Kirby has returned!
+            Is it time for his first big win?")
+    }
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(face_left, delay_16, delay_16, face_right, delay_16, delay_16, face_down))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(face_up, delay_16, delay_16, face_down, delay_16, delay_16, face_right))
+    delay(60)
+    call(WaddleDeeArena_EventScript_Challenger1)
+}
+
+script WaddleDeeArena_EventScript_Challenger1
+{
+    msgbox("Let's have our first challenger, please!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(face_right, delay_16, delay_16, face_left, delay_16, delay_16, face_down))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(face_down, delay_16, delay_16, face_up, delay_16, delay_16,face_right))
+    addobject(LOCALID_WADDLE_CHALLENGER_1)
+    applymovement(LOCALID_WADDLE_CHALLENGER_1, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(30)
+    applymovement(LOCALID_WADDLE_CHALLENGER_1, moves(walk_in_place_left * 2))
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("We're both having our first Arena
+                battle here. Let's make it a good one!")
+    }
+    elif(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("We both couldn't reach the top of the
+                tournament last time\.
+                
+                Let's see if one of us will be able to
+                accomplish it this time!")
+    }
+    closemessage
+    setflag(FLAG_ARENA_RETRY)
+    applymovement(LOCALID_WADDLE_CHALLENGER_1, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_ED, WaddleDeeArena_Text_Challenger1)
+    msgbox("This could be the start of something
+            big! Kirby takes the first win!")
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(walk_in_place_down * 5))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(walk_in_place_right * 4))
+    playse(SE_APPLAUSE)
+    closemessage
+    setvar(VAR_ARENA_BATTLES, 1)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_WADDLE_CHALLENGER_1, moves(walk_left, walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_WADDLE_CHALLENGER_1)
+    goto(WaddleDeeArena_EventScript_Break)
+}
+
+script WaddleDeeArena_EventScript_Challenger2
+{
+    msgbox("Challenger number two, step right up!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(face_left, delay_16, face_right, delay_16, face_up, delay_16, face_down))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(walk_in_place_right * 7))
+    addobject(LOCALID_WADDLE_CHALLENGER_2)
+    applymovement(LOCALID_WADDLE_CHALLENGER_2, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(30)
+    applymovement(LOCALID_WADDLE_CHALLENGER_2, moves(walk_in_place_left * 2))
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    msgbox("Prepare to be dazzled by my adorable
+            little Helpers!")
+    closemessage
+    special(SpawnCameraObject)
+    applymovement(LOCALID_WADDLE_CHALLENGER_2, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_GRUNT_SEAFLOOR_CAVERN_4, WaddleDeeArena_Text_Challenger2)
+    msgbox("Things are starting to heat up!
+            Kirby has scored a second victory!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(walk_in_place_fast_down * 8))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(walk_in_place_right * 6))
+    setvar(VAR_ARENA_BATTLES, 2)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_WADDLE_CHALLENGER_2, moves(walk_left, walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_WADDLE_CHALLENGER_2)
+    goto(WaddleDeeArena_EventScript_Break)
+}
+
+script WaddleDeeArena_EventScript_Challenger3
+{
+    msgbox("Everyone welcome our final challenger!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(walk_in_place_down * 6))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(jump_in_place_right * 4))
+    addobject(LOCALID_WADDLE_CHALLENGER_3)
+    applymovement(LOCALID_WADDLE_CHALLENGER_3, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(30)
+    applymovement(LOCALID_WADDLE_CHALLENGER_3, moves(walk_in_place_left * 2))
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    msgbox("My Helper and I have made it so far.
+            We can't back down now!")
+    closemessage
+    special(SpawnCameraObject)
+    applymovement(LOCALID_WADDLE_CHALLENGER_3, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_DECLAN, WaddleDeeArena_Text_Challenger3)
+    msgbox("What an amazing battle! Kirby has swept
+            the preliminary bracket!!")
+    closemessage
+    clearflag(FLAG_ARENA_RETRY)
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(walk_in_place_fast_down * 10))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(face_up, delay_16, face_left, delay_16, face_down, delay_16, face_right, delay_16, face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, delay_8))
+    setvar(VAR_ARENA_BATTLES, 3)
+    setflag(FLAG_GRAND_FINALS_ACTIVE)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_WADDLE_CHALLENGER_3, moves(walk_left, walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_WADDLE_CHALLENGER_3)
+    msgbox("All that's left now is the grand finals!
+    
+            Now that you've conquered the bracket,
+            your options have changed slightly.
+
+            We'll give you a complimentary
+            full-party heal if you choose {COLOR RED}HEAL{COLOR DARK_GRAY}.
+            
+            Alternatively, choose {COLOR RED}RETIRE{COLOR DARK_GRAY} if you
+            want to take a break and save first.
+            
+            Don't worry! Talk to me again, and we'll
+            set up the grand finals immediately.
+            
+            Of course, if you're feeling confident,
+            we can get started right now!")
+    goto(WaddleDeeArena_EventScript_Break)
+}
+
+script WaddleDeeArena_EventScript_GrandFinals
+{
+    fadeoutbgm(1)
+    applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down * 2))
+    waitmovement()
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Can you feel it? The tension in the air?
+            The electric buzz from the crowd?
+            
+            That can only mean one thing:
+            it's GRAND FINALS time!
+            
+            On my right, this little pink hero
+            is making his Royal Royale debut\.
+            
+            Everyone give it up for Kirbyyyyy!!!")
+    }
+    elif(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Can you feel it? The tension in the air?
+            The electric buzz from the crowd?
+            
+            That can only mean one thing:
+            it's GRAND FINALS time!
+            
+            On my right, this little pink hero
+            is back and hungry for a Brooch\.
+            
+            Everyone give it up for Kirbyyyyy!!!")
+    }
+    closemessage()
+    applymovement(LOCALID_PLAYER, moves(jump_in_place_right * 5))
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(jump_in_place_down * 6))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(walk_in_place_fast_right * 7))
+    delay(60)
+    msgbox("And to my left, the other undefeated
+            challenger who made it to grand finals!
+            
+            This sly spell caster hasn't just made a
+            name for himself through construction.
+            
+            It turns out he's also a dangerously
+            devious opponent in Helper battles!
+            
+            Everyone welcome {COLOR BLUE}Magolor{COLOR DARK_GRAY} to the stage!")
+    closemessage()
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(jump_in_place_right * 7))
+    addobject(LOCALID_ARENA_MAGOLOR)
+    applymovement(LOCALID_ARENA_MAGOLOR, moves(walk_right, walk_up * 8, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(60)
+    applymovement(LOCALID_ARENA_MAGOLOR, moves(walk_in_place_left * 2))
+    waitmovement()
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("{SPEAKER NAME_MAGOLOR}Hey, Kirby! Surprised to see me?
+    
+            I've been working hard setting up a
+            load of shops here in Waddle Dee Town!
+            
+            But with that pesky avalanche blocking
+            most of them, I've had to change plans\.
+            
+            So now I'm tearing up the Arena scene!
+            Hee hee hee!
+            
+            I'll warn you, Kirby, my Helpers are
+            a real cut above the rest\.
+            
+            Prepare to bow before the might of
+            my magical team!")
+    }
+    if(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("{SPEAKER NAME_MAGOLOR}Good to see you again, Kirby!
+    
+            I had a hunch you might enter this
+            Arena again. You're a persistent one!
+            
+            Do you know why I came back, hoping
+            to challenge you again?
+            
+            It's because Helper battles are sooo
+            much fun! I gotta hand it to Dedede,
+            he really knows how to make a game.
+            
+            And the best part is seeing your foe's
+            face when their team's been cornered!
+            
+            So go on, Kirby! Give me an exhilarating
+            battle I won't ever forget!")
+    }
+    closemessage()
+    applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_fast_down * 5))
+    msgbox("It's come down to Kirby vs. Magolor!
+            Who will reign supreme in the Arena?!
+            
+            Everyone make some noiseeeee!!!!!")
+    closemessage
+    setflag(FLAG_ARENA_RETRY)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_ARENA_MAGOLOR, moves(walk_slow_right, walk_fast_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_slow_left, walk_fast_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    switch(var(VAR_STARTER_MON)) {
+		case 0:
+			trainerbattle_no_intro(TRAINER_GRUNT_RUSTURF_TUNNEL, WaddleDeeArena_Text_Magolor)
+		case 1:
+			trainerbattle_no_intro(TRAINER_GRUNT_WEATHER_INST_1, WaddleDeeArena_Text_Magolor)
+		case 2:
+			trainerbattle_no_intro(TRAINER_GRUNT_WEATHER_INST_2, WaddleDeeArena_Text_Magolor)
+	}
+    playbgm(MUS_DUMMY, FALSE)
+    delay(60)
+    msgbox("Folks\. we've witnessed history today.
+            Claiming his first Arena championship\.
+            
+            It's the pink puffball himself!
+            KIRBY WINS!")
+    closemessage()
+    playbgm(MUS_B_FRONTIER, FALSE)
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_WADDLE_CROWD_1, moves(walk_in_place_faster_down * 13, jump_in_place_down * 5))
+    applymovement(LOCALID_WADDLE_CROWD_2, moves(face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, walk_in_place_fast_right * 10))
+    applymovement(LOCALID_PLAYER, moves(jump_in_place_right, jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right, jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right))
+    waitmovement()
+    message("KIRBY! KIRBY! KIRBY! KIRBY!")
+    waitmessage()
+    delay(60)
+    closemessage()
+    applymovement(LOCALID_ARENA_MAGOLOR, moves(walk_in_place_slow_left * 2))
+    waitmovement()
+    msgbox("{SPEAKER NAME_MAGOLOR}What a humbling loss\. I'll just have to
+            try harder next time! Hee hee hee\.!")
+    closemessage()
+    applymovement(LOCALID_ARENA_MAGOLOR, moves(walk_left * 2, walk_down * 9, walk_left))
+    waitmovement()
+    setobjectxyperm(LOCALID_ARENA_MAGOLOR, 9, 18)
+    addobject(LOCALID_WADDLE_TUTOR)
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    clearflag(FLAG_ARENA_RETRY)
+    clearflag(FLAG_GRAND_FINALS_ACTIVE)
+    setvar(VAR_ARENA_BATTLES, 0)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_down * 6, walk_in_place_up))
+    delay(60)
+    applymovement(LOCALID_CAMERA, moves(walk_down * 6))
+    applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    goto(WaddleDeeArena_EventScript_Victory)
+}
+
+script WaddleDeeArena_EventScript_Victory
+{
+    msgbox("Congratulations again on conquering
+            the Waddle Dee Arena, Kirby!
+            
+            Here's your reward to commemorate the
+            occasion: the Waddle Dee Brooch!")
+    message("Kirby received the Waddle Dee Brooch
+            from Commentator Waddle Dee!")
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+    setflag(FLAG_BADGE01_GET)
+    clearflag(FLAG_HIDE_WADDLE_DEE_ARENA_PARTICIPANTS)
+    setvar(VAR_WADDLE_DEE_TOWN_STATE, 2)
+    msgbox("This Brooch certifies that you'll be
+            able to safely train stronger Helpers.
+            
+            I hope you'll keep visiting different
+            Arenas and claiming more Brooches!")
+    release
+}
+
+script WaddleDeeArena_EventScript_Break
+{
+    if(var(VAR_ARENA_BATTLES) == 1)
+    {
+        message("There's just two rounds to go now.
+                 Are you ready for the next battle?")
+    }
+    elif(var(VAR_ARENA_BATTLES) == 2)
+    {
+        message("The last battle in the preliminary
+                bracket awaits! Are you prepared?")
+    }
+    elif(var(VAR_ARENA_BATTLES) == 3)
+    {
+        message("Now then, Kirby: the grand finals await!
+                Are you ready for the TRUE final bout?")
+    }
+    waitmessage()
+    multichoice(17, 6, MULTI_GO_ON_REST_RETIRE, 0)
+    switch(var(VAR_RESULT)) {
+	case 0:
+        if(var(VAR_ARENA_BATTLES) == 1)
+        {
+            goto(WaddleDeeArena_EventScript_Challenger2)
+        }
+		elif(var(VAR_ARENA_BATTLES) == 2)
+        {
+            goto(WaddleDeeArena_EventScript_Challenger3)
+        }
+        elif(var(VAR_ARENA_BATTLES) == 3)
+        {
+            goto(WaddleDeeArena_EventScript_GrandFinals)
+        }
+	case 1:
+		goto(WaddleDeeArena_EventScript_ArenaHeal)
+	case 2:
+		goto(WaddleDeeArena_EventScript_ForfeitConfirmation)
+    }
+}
+
+script WaddleDeeArena_EventScript_ArenaHeal
+{
+    if(!flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        if(!flag(FLAG_ARENA_HEALED_THIS_ROUND))
+        {
+            if(var(VAR_ARENA_HEALS) > 0)
+            {
+                msgbox("You have {COLOR RED}one full-party heal{COLOR DARK_GRAY} left.
+                        Would you like to use it now?", MSGBOX_YESNO)
+                if(var(VAR_RESULT))
+                {
+                    special(HealPlayerParty)
+                    playse(SE_USE_ITEM)
+                    subvar(VAR_ARENA_HEALS, 1)
+                    setflag(FLAG_ARENA_HEALED_THIS_ROUND)
+                    message("Your party has been fully healed!")
+                    waitmessage()
+                    delay(60)
+                    goto(WaddleDeeArena_EventScript_Break)
+                }
+                if(!var(VAR_RESULT))
+                {
+                    goto(WaddleDeeArena_EventScript_Break)
+                }
+            }
+            else
+            {
+                msgbox("Unfortunately, you've already used up
+                        all of your heals, Kirby.
+                        
+                        You'll have to tough out the remaining
+                        battles with your party as they are!")
+                goto(WaddleDeeArena_EventScript_Break)
+            }
+        }
+        elif(flag(FLAG_ARENA_HEALED_THIS_ROUND))
+        {
+            msgbox("You already healed up this round, Kirby!
+                    If you have any heals remaining,
+                    let's save them for future rounds, OK?")
+            goto(WaddleDeeArena_EventScript_Break)
+        }
+    }
+    elif(flag(FLAG_GRAND_FINALS_ACTIVE))
+        {
+            msgbox("Alright, one complimentary full-party
+                    heal for our pink warrior, coming up!")
+            special(HealPlayerParty)
+                    playse(SE_USE_ITEM)
+                    message("Your party has been fully healed!")
+                    waitmessage()
+                    delay(60)
+                    goto(WaddleDeeArena_EventScript_Break)
+        }
+}
+
+script WaddleDeeArena_EventScript_ForfeitConfirmation
+{
+    if(!flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        msgbox("Are you really sure you want to
+            throw in the towel now?
+            
+            Just a heads up; {COLOR RED}you'll have to start
+            the tournament anew if you do{COLOR DARK_GRAY}!
+            
+            Are you absolutely, positively sure
+            you want to retire now?", MSGBOX_YESNO)
+        if(var(VAR_RESULT))
+        {
+            msgbox("Well, sorry, folks! Looks like this
+                    promising run is being cut short!")
+            closemessage
+            special(SpawnCameraObject)
+            applymovement(LOCALID_PLAYER, moves(walk_right * 3, walk_down * 6, walk_in_place_up))
+            delay(60)
+            applymovement(LOCALID_CAMERA, moves(walk_down * 6))
+            applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_down * 7))
+            waitmovement()
+            special(RemoveCameraObject)
+            goto(WaddleDeeArena_EventScript_CommentatorBye)
+        }
+        elif(!var(VAR_RESULT))
+        {
+            goto(WaddleDeeArena_EventScript_Break)
+        }
+    }
+    elif(flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+            msgbox("Alright, folks! Stay tuned! The grand
+                    finals will begin after a short break!")
+            closemessage
+            special(SpawnCameraObject)
+            applymovement(LOCALID_PLAYER, moves(walk_right * 3, walk_down * 6, walk_in_place_up))
+            delay(60)
+            applymovement(LOCALID_CAMERA, moves(walk_down * 6))
+            applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_down * 7))
+            waitmovement()
+            special(RemoveCameraObject)
+            goto(WaddleDeeArena_EventScript_CommentatorBye)
+            release
+    }
+}
+
+script WaddleDeeArena_EventScript_TalkToMagolor
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TM_ROCK_TOMB))
+    {
+        msgbox("I should study up on what makes the
+                Royal Royale so fun to play.
+                
+                That knowledge could be put to good
+                use for improving my own games!
+                
+                Oh, yes! Kirby, you'll find my arcade
+                on the northwest section of town.
+                
+                There's lots of fun games to play
+                inside. I hope you'll check it out!")
+    }
+    elif(!flag(FLAG_RECEIVED_TM_ROCK_TOMB))
+    {
+        msgbox("Huh? You're checking in on me to see
+                if I'm doing alright?
+                
+                Gee, Kirby, you're one silly fellow.
+                Of course I'm not upset!
+                
+                \.well, okay, maybe a little\.
+                \.but it's fine! A loss is a loss.
+                
+                Here, let me give you a little souvenir
+                to mark our battle.")
+        giveitem(ITEM_TM60)
+        msgbox("Trick is a move that swaps your Helper's
+                item with the target's.
+                
+                You might find items on your journey
+                you think you may have no use for\.
+                
+                But you can always make them someone
+                else's problem! Hee hee hee!")
+        setflag(FLAG_RECEIVED_TM_ROCK_TOMB)
+    }
+    release
+}
+
+script WaddleDeeArena_EventScript_Tutor
+{
+    lock
+    faceplayer
+    msgbox("Having watched your recent victory\.
+            I feel so invigorated! Wroaaar!
+            
+            I know some special moves that can
+            be taught to your Helpers.
+            
+            For the price of ¥500, I'll train
+            them these new techniques.
+            
+            What do you say?
+            Which move are you interested in?")
+    release   
+}
+
+text WaddleDeeArena_Text_Challenger1
+{
+    "For every battle that has a winner,
+    there must be another who doesn't\."
+}
+
+text WaddleDeeArena_Text_Challenger2
+{
+    "Oh no?! My darling Helpers!"
+}
+
+text WaddleDeeArena_Text_Challenger3
+{
+    "So this is the strength of someone
+    who can reach grand finals\."
+}
+
+text WaddleDeeArena_Text_Magolor
+{
+    "Bravo, Kirby! I'll admit, I didn't think
+    you had it in you to defeat me.
+    
+    But I suppose bringing the best out of
+    your friends is what you do, right?"
+}

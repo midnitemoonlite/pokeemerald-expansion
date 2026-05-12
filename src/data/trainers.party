@@ -315,95 +315,171 @@ Level: 5
 Ability: Tough Claws
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+/* Waddle Dee Arena - Trainer 1 */
 === TRAINER_ED ===
-Name: ED
-Class: Collector
+Name: WADDLE DEE
+Class: Youngster
 Pic: Collector
 Gender: Male
-Music: Suspicious
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zangoose
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Bronto Burt
+Level: 9
+Ability: Reckless
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Seviper
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cappy
+Level: 10
+Ability: Anticipation
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+/* Waddle Dee Arena - Trainer 2 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Name: WADDLE DEE
+Class: Lass
+Pic: Collector
 Gender: Female
-Music: Aqua
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Waddle Doo
+Level: 9
+Ability: Frisk
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+Awoofy
+Level: 10
+Ability: Run Away
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+
+/* Waddle Dee Arena - Trainer 3 */
 === TRAINER_DECLAN ===
-Name: DECLAN
-Class: Swimmer M
-Pic: Swimmer M
+Name: WADDLE DEE
+Class: Pokemaniac
+Pic: Collector
 Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Noddy @ Oran Berry
+Level: 9
+Ability: Comatose
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
+/* Waddle Dee Arena - Magolor (Lovely) */
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: MAGOLOR
+Class: Salon Maiden
+Pic: Collector
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Poochyena
+Dupa
 Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Unnerve
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Growl
+- Stored Power
+- Teleport
 
+NESP @ Black Sludge
+Level: 11
+Ability: Neuroforce
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confusion
+- Astonish
+- Trick
+- Imprison
+
+Sphere Doomer @ Icy Rock
+Level: 12
+Ability: Forecast
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Snowscape
+- Icy Wind
+- Bite
+- Psywave
+
+/* Waddle Dee Arena - Magolor (Burning Leo) */
 === TRAINER_GRUNT_WEATHER_INST_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: MAGOLOR
+Class: Salon Maiden
+Pic: Collector
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Zubat
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dupa
+Level: 11
+Ability: Unnerve
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Growl
+- Stored Power
+- Teleport
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+NESP @ Black Sludge
+Level: 11
+Ability: Neuroforce
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confusion
+- Astonish
+- Trick
+- Imprison
 
+Sphere Doomer @ Heat Rock
+Level: 12
+Ability: Forecast
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Sunny Day
+- Fire Spin
+- Bite
+- Psywave
+
+/* Waddle Dee Arena - Magolor (Squishy) */
 === TRAINER_GRUNT_WEATHER_INST_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: MAGOLOR
+Class: Salon Maiden
+Pic: Collector
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Dupa
+Level: 11
+Ability: Unnerve
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Growl
+- Stored Power
+- Teleport
 
-Carvanha
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+NESP @ Black Sludge
+Level: 11
+Ability: Neuroforce
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Confusion
+- Astonish
+- Trick
+- Imprison
+
+Sphere Doomer @ Damp Rock
+Level: 12
+Ability: Forecast
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Rain Dance
+- Thunder Shock
+- Bite
+- Psywave
 
 === TRAINER_GRUNT_WEATHER_INST_3 ===
 Name: GRUNT

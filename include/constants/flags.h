@@ -65,7 +65,7 @@
 #define FLAG_HIDE_DEDEDE_WADDLE_DEE_TOWN    0x2B // Waddle Dee Town - King Dedede
 #define FLAG_HIDE_BWD_WADDLE_DEE_TOWN    0x2C // Waddle Dee Town - Bandana Waddle Dee
 #define FLAG_RECEIVED_DARK_TM    0x2D // Waddle Dee Town - Park Staff in Castle Lobby
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
+#define FLAG_HIDE_WADDLE_DEE_ARENA_PARTICIPANTS 0x2E // Waddle Dee Arena - Magolor and Waddle Tutor
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
@@ -106,8 +106,8 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_ARENA_RETRY                    0x54   // Various Arenas - marked when beginning an arena attempt for return dialogue
+#define FLAG_GRAND_FINALS_ACTIVE            0x55  // Various Arenas - marked when grand finals is available
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -128,7 +128,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
+#define FLAG_ARENA_HEALED_THIS_ROUND         0x68  // Various Arenas - Tracks if you used a heal
 
 #define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
 #define FLAG_RECEIVED_HM_STRENGTH            0x6A
@@ -192,7 +192,7 @@
 #define FLAG_CUTE_PAINTING_MADE              0xA2
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
-#define FLAG_RECEIVED_TM_ROCK_TOMB           0xA5
+#define FLAG_RECEIVED_TM_ROCK_TOMB           0xA5 // Waddle Dee Arena - Magolor's TM
 #define FLAG_RECEIVED_TM_BULK_UP             0xA6
 #define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7
 #define FLAG_RECEIVED_TM_OVERHEAT            0xA8

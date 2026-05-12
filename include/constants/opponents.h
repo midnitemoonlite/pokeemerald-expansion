@@ -17,12 +17,12 @@
 #define TRAINER_GRUNT_PETALBURG_WOODS        10 // Prism Plains - Trainer 4
 #define TRAINER_MARCEL                       11 // Prism Plains - Trainer 5
 #define TRAINER_ALBERTO                      12 // Prism Plains - Trainer 6
-#define TRAINER_ED                           13
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
-#define TRAINER_DECLAN                       15
-#define TRAINER_GRUNT_RUSTURF_TUNNEL         16
-#define TRAINER_GRUNT_WEATHER_INST_1         17
-#define TRAINER_GRUNT_WEATHER_INST_2         18
+#define TRAINER_ED                           13 // Waddle Dee Arena - Trainer 1
+#define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14 // Waddle Dee Arena - Trainer 2
+#define TRAINER_DECLAN                       15 // Waddle Dee Arena - Trainer 3
+#define TRAINER_GRUNT_RUSTURF_TUNNEL         16 // Waddle Dee Arena - Magolor (Lovely)
+#define TRAINER_GRUNT_WEATHER_INST_1         17 // Waddle Dee Arena - Magolor (Burning Leo)
+#define TRAINER_GRUNT_WEATHER_INST_2         18 // Waddle Dee Arena - Magolor (Squishy)
 #define TRAINER_GRUNT_WEATHER_INST_3         19
 #define TRAINER_GRUNT_MUSEUM_1               20
 #define TRAINER_GRUNT_MUSEUM_2               21

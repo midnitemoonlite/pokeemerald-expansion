@@ -1646,6 +1646,10 @@
     {
       "id": "MAPSEC_WADDLE_DEE_TOWN",
       "name": "WADDLE DEE TOWN"
+    },
+    {
+      "id": "MAPSEC_WADDLE_DEE_ARENA",
+      "name": "WADDLE DEE ARENA"
     }
   ]
 }

@@ -326,7 +326,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_LADY] = { _("SOCIALITE"), 50 },
     [TRAINER_CLASS_BEAUTY] = { _("BEAUTY"), 20, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_GREAT : BALL_POKE },
     [TRAINER_CLASS_RICH_BOY] = { _("GENTLEMAN"), 50 },
-    [TRAINER_CLASS_POKEMANIAC] = { _("POKéMANIAC"), 15 },
+    [TRAINER_CLASS_POKEMANIAC] = { _("SHOP"), 15 },
     [TRAINER_CLASS_GUITARIST] = { _("GUITARIST"), 8 },
     [TRAINER_CLASS_KINDLER] = { _("KINDLER"), 8 },
     [TRAINER_CLASS_CAMPER] = { _("WINTER"), 4 },
@@ -361,7 +361,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_YOUNG_COUPLE] = { _("YOUNG COUPLE"), 8 },
     [TRAINER_CLASS_OLD_COUPLE] = { _("OLD COUPLE"), 10 },
     [TRAINER_CLASS_SIS_AND_BRO] = { _("SIS AND BRO"), 3 },
-    [TRAINER_CLASS_SALON_MAIDEN] = { _("SALON MAIDEN"), 5, BALL_ULTRA },
+    [TRAINER_CLASS_SALON_MAIDEN] = { _("GRAND LEADER"), 25, BALL_ULTRA },
     [TRAINER_CLASS_DOME_ACE] = { _("DOME ACE") },
     [TRAINER_CLASS_PALACE_MAVEN] = { _("PALACE MAVEN") },
     [TRAINER_CLASS_ARENA_TYCOON] = { _("ARENA TYCOON") },
@@ -5438,6 +5438,7 @@ static void HandleEndTurn_BattleWon(void)
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
         case TRAINER_CLASS_LEADER:
+        case TRAINER_CLASS_SALON_MAIDEN:
             PlayBGM(MUS_VICTORY_GYM_LEADER);
             break;
         default:
