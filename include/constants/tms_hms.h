@@ -14,7 +14,7 @@
     F(SUBSTITUTE) \
     F(ROAR) \
     F(FIRE_SPIN) \
-    F(FIRE_FANG) \
+    F(FIRE_PUNCH) \
     F(BLAZE_KICK) \
     F(FLAMETHROWER) \
     F(FIRE_BLAST) \
@@ -31,7 +31,7 @@
     F(SOLAR_BEAM) \
     F(LEECH_SEED) \
     F(CHARGE_BEAM) \
-    F(THUNDER_FANG) \
+    F(THUNDER_PUNCH) \
     F(THUNDERBOLT) \
     F(SUPERCELL_SLAM) \
     F(THUNDER) \
@@ -81,7 +81,7 @@
     F(DIG) \
     F(EARTHQUAKE) \
     F(SPIKES) \
-    F(GYRO_BALL) \
+    F(HEAVY_SLAM) \
     F(FLASH_CANNON) \
     F(IRON_TAIL) \
     F(IRON_DEFENSE) \
@@ -92,7 +92,7 @@
     F(BREAKING_SWIPE) \
     F(DRAGON_PULSE) \
     F(DRAGON_HAMMER) \
-    F(ICE_FANG) \
+    F(ICE_PUNCH) \
     F(ICE_SPINNER) \
     F(ICE_BEAM) \
     F(BLIZZARD) \

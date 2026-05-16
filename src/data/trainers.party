@@ -199,7 +199,7 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: Waddle Dee
 Class: Youngster
-Pic: Collector
+Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -214,7 +214,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: Waddle Dee
 Class: Parasol Lady
-Pic: Collector
+Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -249,7 +249,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: Waddle Dee
 Class: Aroma Lady
-Pic: Collector
+Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -274,7 +274,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_MARCEL ===
 Name: Waddle Dee
 Class: Lass
-Pic: Collector
+Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -294,7 +294,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ALBERTO ===
 Name: Waddle Dee
 Class: Bird Keeper
-Pic: Collector
+Pic: Youngster
 Gender: Female
 Music: Female
 Double Battle: No
@@ -319,7 +319,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ED ===
 Name: Waddle Dee
 Class: Youngster
-Pic: Collector
+Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -339,7 +339,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
 Name: Waddle Dee
 Class: Lass
-Pic: Collector
+Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: No
@@ -374,7 +374,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: Magolor
 Class: Salon Maiden
-Pic: Collector
+Pic: Leader Roxanne
 Gender: Male
 Music: Male
 Double Battle: No

@@ -232,16 +232,16 @@ PrismPlains_Text_Trainer2Post::
 
 PrismPlains_Text_Trainer3Intro::
 # 167 "data/maps/PrismPlains/scripts.pory"
-	.string "I tried challenging the Castle Arena,\n"
-	.string "but it was really tough…$"
+	.string "Are you also looking for the Arenas?\n"
+	.string "How about a quick battle first?$"
 
 PrismPlains_Text_Trainer3Defeated::
 # 173 "data/maps/PrismPlains/scripts.pory"
-	.string "Is that what a good leader is like?$"
+	.string "Wow, you've got a strong Helper there!$"
 
 PrismPlains_Text_Trainer3Post::
 # 178 "data/maps/PrismPlains/scripts.pory"
-	.string "How should I make my Helpers stronger?\n"
+	.string "How can I make my Helper stronger?\n"
 	.string "Maybe I can teach them new moves…$"
 
 PrismPlains_Text_Trainer4Intro::
@@ -268,9 +268,9 @@ PrismPlains_Text_Trainer5Defeated::
 
 PrismPlains_Text_Trainer5Post::
 # 211 "data/maps/PrismPlains/scripts.pory"
-	.string "It's hard to see down those ledges\n"
-	.string "thanks to the rocks. This is the\l"
-	.string "perfect spot to surprise them!$"
+	.string "The hilly terrain can make it hard to\n"
+	.string "see where you're walking sometimes.\l"
+	.string "It's the perfect place to hide!$"
 
 PrismPlains_Text_Trainer6Intro::
 # 218 "data/maps/PrismPlains/scripts.pory"

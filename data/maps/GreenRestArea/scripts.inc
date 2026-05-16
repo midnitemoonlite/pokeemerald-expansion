@@ -75,9 +75,9 @@ GreenRestArea_RivalTrigger1::
 # 55 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_WEST
 # 56 "data/maps/GreenRestArea/scripts.pory"
-	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 57 "data/maps/GreenRestArea/scripts.pory"
-	playSE SE_PIN
+	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
 # 58 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
 # 59 "data/maps/GreenRestArea/scripts.pory"
@@ -99,9 +99,9 @@ GreenRestArea_RivalTrigger2::
 # 69 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_WEST
 # 70 "data/maps/GreenRestArea/scripts.pory"
-	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 71 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
+# 71 "data/maps/GreenRestArea/scripts.pory"
+	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
 # 72 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
 # 73 "data/maps/GreenRestArea/scripts.pory"
@@ -123,9 +123,9 @@ GreenRestArea_RivalTrigger3::
 # 83 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_WEST
 # 84 "data/maps/GreenRestArea/scripts.pory"
-	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 85 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
+# 85 "data/maps/GreenRestArea/scripts.pory"
+	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
 # 86 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
 # 87 "data/maps/GreenRestArea/scripts.pory"
@@ -145,9 +145,9 @@ GreenRestArea_RivalTrigger4::
 # 96 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_EAST
 # 97 "data/maps/GreenRestArea/scripts.pory"
-	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 98 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
+# 98 "data/maps/GreenRestArea/scripts.pory"
+	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
 # 99 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
 # 100 "data/maps/GreenRestArea/scripts.pory"
@@ -167,9 +167,9 @@ GreenRestArea_RivalTrigger5::
 # 109 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_EAST
 # 110 "data/maps/GreenRestArea/scripts.pory"
-	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 111 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
+# 111 "data/maps/GreenRestArea/scripts.pory"
+	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
 # 112 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
 # 113 "data/maps/GreenRestArea/scripts.pory"
@@ -191,9 +191,9 @@ GreenRestArea_EventScript_RivalTalk::
 # 123 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_SOUTH
 # 124 "data/maps/GreenRestArea/scripts.pory"
-	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 125 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
+# 125 "data/maps/GreenRestArea/scripts.pory"
+	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
 # 126 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
 # 127 "data/maps/GreenRestArea/scripts.pory"

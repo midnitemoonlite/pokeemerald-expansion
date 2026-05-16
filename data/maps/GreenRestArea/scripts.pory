@@ -53,8 +53,8 @@ script GreenRestArea_RivalTrigger1
 {
     lock
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
+    playse(SE_PIN)
     applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
-    playSE(SE_PIN)
     msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
@@ -67,8 +67,8 @@ script GreenRestArea_RivalTrigger2
 {
     lock
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
-    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
@@ -81,8 +81,8 @@ script GreenRestArea_RivalTrigger3
 {
     lock
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_WEST)
-    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
@@ -94,8 +94,8 @@ script GreenRestArea_RivalTrigger4
 {
     lock
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_EAST)
-    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
@@ -107,8 +107,8 @@ script GreenRestArea_RivalTrigger5
 {
     lock
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_EAST)
-    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     msgbox(GreenRestArea_BandanaDeeIntro)
     closemessage
     applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
@@ -121,8 +121,8 @@ script GreenRestArea_EventScript_RivalTalk
 {
     lock
     turnobject(LOCALID_GREEN_REST_AREA_BWD, DIR_SOUTH)
-    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     playse(SE_PIN)
+    applymovement(LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark)
     msgbox(GreenRestArea_BandanaDeeIntro)
     goto(GreenRestArea_EventScript_RivalBattle)
 }

@@ -166,18 +166,18 @@ text PrismPlains_Text_Trainer2Post
 
 text PrismPlains_Text_Trainer3Intro
 {
-    "I tried challenging the Castle Arena,
-     but it was really tough\."
+    "Are you also looking for the Arenas?
+     How about a quick battle first?"
 }
 
 text PrismPlains_Text_Trainer3Defeated
 {
-    "Is that what a good leader is like?"
+    "Wow, you've got a strong Helper there!"
 }
 
 text PrismPlains_Text_Trainer3Post
 {
-    "How should I make my Helpers stronger?
+    "How can I make my Helper stronger?
      Maybe I can teach them new moves\."
 }
 
@@ -210,9 +210,9 @@ text PrismPlains_Text_Trainer5Defeated
 
 text PrismPlains_Text_Trainer5Post
 {
-    "It's hard to see down those ledges
-    thanks to the rocks. This is the
-    perfect spot to surprise them!"
+    "The hilly terrain can make it hard to
+    see where you're walking sometimes.
+    It's the perfect place to hide!"
 }
 
 text PrismPlains_Text_Trainer6Intro
