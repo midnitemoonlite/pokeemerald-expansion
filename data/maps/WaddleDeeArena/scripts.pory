@@ -546,11 +546,12 @@ script WaddleDeeArena_EventScript_GrandFinals
 		case 0:
 			trainerbattle_no_intro(TRAINER_GRUNT_RUSTURF_TUNNEL, WaddleDeeArena_Text_Magolor)
 		case 1:
-			trainerbattle_no_intro(TRAINER_GRUNT_WEATHER_INST_1, WaddleDeeArena_Text_Magolor)
+            trainerbattle_no_intro(TRAINER_GRUNT_WEATHER_INST_1, WaddleDeeArena_Text_Magolor)
 		case 2:
 			trainerbattle_no_intro(TRAINER_GRUNT_WEATHER_INST_2, WaddleDeeArena_Text_Magolor)
+            
 	}
-    playbgm(MUS_DUMMY, FALSE)
+    fadeoutbgm(1)
     delay(60)
     msgbox("Folks\. we've witnessed history today.
             Claiming his first Arena championship\.
@@ -651,6 +652,8 @@ script WaddleDeeArena_EventScript_Break
 		goto(WaddleDeeArena_EventScript_ArenaHeal)
 	case 2:
 		goto(WaddleDeeArena_EventScript_ForfeitConfirmation)
+    case MULTI_B_PRESSED:
+        goto(WaddleDeeArena_EventScript_ForfeitConfirmation)
     }
 }
 

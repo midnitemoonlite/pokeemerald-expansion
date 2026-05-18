@@ -326,7 +326,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_LADY] = { _("Socialite"), 50 },
     [TRAINER_CLASS_BEAUTY] = { _("BEAUTY"), 20, B_TRAINER_CLASS_POKE_BALLS >= GEN_8 ? BALL_GREAT : BALL_POKE },
     [TRAINER_CLASS_RICH_BOY] = { _("Gentleman"), 50 },
-    [TRAINER_CLASS_POKEMANIAC] = { _("Staff"), 15 },
+    [TRAINER_CLASS_POKEMANIAC] = { _("Vendor"), 15 },
     [TRAINER_CLASS_GUITARIST] = { _("GUITARIST"), 8 },
     [TRAINER_CLASS_KINDLER] = { _("KINDLER"), 8 },
     [TRAINER_CLASS_CAMPER] = { _("Wintry"), 4 },

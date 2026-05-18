@@ -1332,7 +1332,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_STANCE_CHANGE] =
     {
         .name = _("Stance Change"),
-        .description = COMPOUND_STRING("Transforms as it battles."),
+        .description = COMPOUND_STRING("Baneful Bunker swaps form."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,

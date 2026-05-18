@@ -234,7 +234,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_GABRIELLE_1 ===
 Name: Waddle Dee
 Class: Youngster
-Pic: Collector
+Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
@@ -359,7 +359,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_DECLAN ===
 Name: Waddle Dee
 Class: Pokemaniac
-Pic: Collector
+Pic: Pokemaniac
 Gender: Male
 Music: Swimmer
 Double Battle: No
@@ -411,7 +411,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: Magolor
 Class: Salon Maiden
-Pic: Collector
+Pic: Leader Roxanne
 Gender: Male
 Music: Male
 Double Battle: No
@@ -448,7 +448,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 === TRAINER_GRUNT_WEATHER_INST_2 ===
 Name: Magolor
 Class: Salon Maiden
-Pic: Collector
+Pic: Leader Roxanne
 Gender: Male
 Music: Male
 Double Battle: No
