@@ -2158,7 +2158,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_COMMANDER] =
     {
         .name = _("Commander"),
-        .description = COMPOUND_STRING("Commands from Robo-Rick."),
+        .description = COMPOUND_STRING("Commands from Mecha-Rick."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,

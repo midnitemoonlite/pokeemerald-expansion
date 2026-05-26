@@ -19992,8 +19992,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Order Up"),
         .description = COMPOUND_STRING(
-            "Boosts a user's stats\n"
-            "depending on Tatsugiri."),
+            "The user attacks with\n"
+            "elegant poise."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_DRAGON,
