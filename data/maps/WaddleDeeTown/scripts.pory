@@ -1,7 +1,12 @@
 raw `
 WaddleDeeTown_MapScripts::
     map_script MAP_SCRIPT_ON_LOAD, WaddleDeeTown_OnLoad
-    .byte 0
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, WaddleDeeTown_OnFrame
+    .byte 
+    
+WaddleDeeTown_OnFrame::
+	map_script_2 VAR_WADDLE_DEE_TOWN_STATE, 2, WaddleDeeTown_EventScript_LabIsOpen
+	.2byte 0
 
 WaddleDeeTown_OnTransition:
     end
@@ -40,6 +45,47 @@ script WaddleDeeTown_EventScript_Avalanche
 	setmetatile(52, 18, METATILE_Rustboro_Blockade, TRUE)
     setmetatile(53, 18, METATILE_Rustboro_Blockade, TRUE)
 	return
+}
+
+script WaddleDeeTown_EventScript_LabIsOpen
+{
+    lockall
+    checkobjectat(29, 28)
+    if(var(VAR_RESULT))
+    {
+        addobject(LOCALID_TOWN_BWD)
+        setobjectxy(LOCALID_TOWN_BWD, 29, 35)
+    }
+    else
+    {
+        addobject(LOCALID_TOWN_BWD)
+        setobjectxy(LOCALID_TOWN_BWD, 30, 35)
+    }
+    applymovement(LOCALID_TOWN_BWD, moves(walk_up * 6))
+    waitmovement()
+    msgbox("{SPEAKER NAME_BANDANA}There you are, Kirby! What were you\.
+            Wait, what's that you've got there?")
+    closemessage()
+    playse(SE_LEDGE)
+    applymovement(LOCALID_TOWN_BWD, moves(jump_in_place_up))
+    waitmovement()
+    msgbox("{SPEAKER NAME_BANDANA}Is that a Brooch?!
+            So you already cleared an Arena\.
+            
+            You're really something, Kirby!
+            Congratulations!
+            
+            I saw Wise Waddle Dee return to his lab,
+            so he asked me to call you over.
+            
+            It's the building on the right side of
+            town. Let's catch up there!")
+    closemessage()
+    applymovement(LOCALID_TOWN_BWD, moves(walk_down * 6))
+    waitmovement()
+    removeobject(LOCALID_TOWN_BWD)
+    setvar(VAR_WADDLE_DEE_TOWN_STATE, 3)
+    release
 }
 
 script WaddleDeeTown_EventScript_TownSign
@@ -208,6 +254,47 @@ script WaddleDeeTown_EventScript_ParkWaddleDee
             
             I heard he's thinking about building a
             playground here too. I'd love that!")
+    release
+}
+
+script WaddleDeeTown_EventScript_BorderWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Oooooh, yes! I've been waiting for
+            somebody to come talk to me!
+            
+            Amazing! My new text box border
+            looks so stylish!
+            
+            Huh? You can't see what I mean?
+            Have you checked your options?
+            
+            There's so many types to choose from!
+            Try giving your border a makeover!")
+    release
+}
+
+script WaddleDeeTown_EventScript_LabWaddleDee
+{
+    lock
+    faceplayer
+    applymovement(LOCALID_CROWD_3, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    msgbox("Oh, hello, Kirby!
+            I've been expecting you!
+            
+            Wise Waddle Dee's lab is inside. He
+            mentioned you were likely to pass by.
+            
+            He thought you would be a bit longer,
+            though, so he's handling more errands.
+            
+            I'm sorry to ask, but do you mind
+            waiting until he comes back?
+            
+            I'll let you know when he returns, so
+            feel free to wander the town for now.")
     release
 }
 
@@ -707,6 +794,41 @@ script WaddleDeeTown_EventScript_DededeSpeech
     setflag(FLAG_HIDE_BWD_WADDLE_DEE_TOWN)
     removeobject(LOCALID_TOWN_BWD)
     removeobject(LOCALID_TOWN_KING_DEDEDE)
+    release
+}
+
+script WaddleDeeTown_EventScript_EastGuard
+{
+    lock
+    faceplayer
+    msgbox("I'm sorry, but I can't let you pass
+            through to Vegetable Valley just yet.
+            
+            We're doing inspections in the area
+            to make sure it's safe for traversal
+            following the recent avalanche.")
+    release
+}
+
+script WaddleDeeTown_EventScript_EastExitBlocked
+{
+    lock
+    playse(SE_PIN)
+    applymovement(LOCALID_TOWN_EAST_GUARD, Common_Movement_ExclamationMark)
+    waitmovement()
+    applymovement(LOCALID_TOWN_EAST_GUARD, moves(walk_in_place_down))
+    waitmovement()
+    msgbox("Excuse me!
+
+            I'm sorry, but I can't let you pass
+            through to Vegetable Valley just yet.
+            
+            We're doing inspections in the area
+            to make sure it's safe for traversal
+            following the recent avalanche.")
+    closemessage()
+    applymovement(LOCALID_PLAYER, moves(walk_left))
+    waitmovement()
     release
 }
 

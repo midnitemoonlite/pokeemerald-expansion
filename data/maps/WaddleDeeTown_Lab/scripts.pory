@@ -1,0 +1,786 @@
+raw `
+WaddleDeeTown_Lab_MapScripts::
+	.byte 0
+`
+
+script WaddleDeeTown_Lab_EventScript_LeftReceptionist
+{
+    lock
+    faceplayer
+    msgbox("Welcome to the Waddle Dee Library. 
+            If you're looking for Wise Waddle Dee,
+            his lab is located in the back.")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_RightReceptionist
+{
+    lock
+    faceplayer
+    msgbox("Welcome to the labrary!
+    
+            Do you get it? \qoLab\qcrary? Like a library
+            and a laboratory in one?
+            
+            Ah ha haaa\. ahem.")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Chef
+{
+    lock
+    faceplayer
+    msgbox("I'm in charge of keeping all of the
+            library's books organized.
+            
+            Make sure to place any books you
+            take out back where they belong!")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Youngster
+{
+    lock
+    faceplayer
+    msgbox("I love playing games on the computer.
+            They're tons of fun!")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    msgbox("I've made many visits to this library
+            over the years, but I feel like there's
+            still so much I haven't read here\.")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_LeftAstronomer
+{
+    lock
+    faceplayer
+    msgbox("Have you been checking your Info Cards
+            as you catch more Helpers?
+            
+            You'll find comprehensive data on
+            movesets, evolutions, and the like\.
+            
+            It's hard to fit so much into those
+            small cards, but we make it work!")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("The number of discovered Helpers so
+            far is close to 300.
+            
+            Wouldn't it be nice if it were 300
+            on the dot? What a nice, round number!")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_RightAstronomer
+{
+    lock
+    faceplayer
+    msgbox("I've been trying to reverse engineer
+            these PCs, thinking it might help
+            us understand Helpers better\.
+            
+            Are you curious to hear what
+            I've learned so far?", MSGBOX_YESNO)
+    if(var(VAR_RESULT))
+    {
+        msgbox("You might be surprised to learn this,
+                but they're King Dedede's design.
+                
+                It seems this was his stopgap solution
+                for curbing wild Helper numbers.
+                
+                Though, for as brilliant a mechanic as
+                the Great King is, it seems that
+                even he couldn't do this alone.
+                
+                It seems he contracted some parts to a
+                group I don't recognize.
+                
+                Specifically, they handled operations
+                for the PC's \qomemory banks\qc.
+                
+                Now, there's no physical storage
+                involved with the PC networks.
+                
+                Instead, Helpers go through a process
+                of conversion when placed inside\.
+                
+                But it's no simple data conversion,
+                meaning Helpers aren't synthetic.
+                
+                It might be plausible they aren't
+                entirely natural creatures either\.
+                
+                As if they were brought to Dream
+                Land through some other force.
+                
+                That would explain their rather
+                abrupt appearance, wouldn't it?")
+                setflag(FLAG_SYS_PC_LANETTE)
+    }
+    elif(!var(VAR_RESULT))
+    {
+        msgbox("I get it\. it's complicated stuff!")
+    }
+    turnobject(LOCALID_LAB_PC_DEE, DIR_NORTH)
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_BWD
+{
+    lock
+    faceplayer
+    msgbox("{SPEAKER NAME_BANDANA}So, Kirby, what's next for you? Are you
+            planning on challenging more Arenas?
+            
+            Once I score a Brooch in town, my plan
+            was to head up north\.
+            
+            With the town in the state it is now,
+            though, I'll have to go the long way
+            by heading eastward first.
+            
+            I overheard someone say the Great King
+            has a lot of soldiers up there\.
+            did something happen there, I wonder?")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_WiseWaddleDee
+{
+    goto_if_eq(VAR_WADDLE_DEE_TOWN_STATE, 3, WaddleDeeTown_Lab_EventScript_WiseGateCheck)
+    goto_if_eq(VAR_WADDLE_DEE_TOWN_STATE, 4, WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry)
+    goto_if_ge(VAR_WADDLE_DEE_TOWN_STATE, 5, WaddleDeeTown_Lab_EventScript_InfoCardRating)
+}
+
+script WaddleDeeTown_Lab_EventScript_WiseGateCheck
+{
+    lockall
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+    if(var(VAR_RESULT) == DIR_NORTH)
+    {
+        turnobject(LOCALID_LAB_BWD, DIR_NORTH)
+        applymovement(LOCALID_PLAYER, moves(walk_down, walk_in_place_up))
+    }
+    elif(var(VAR_RESULT) == DIR_WEST)
+    {
+        turnobject(LOCALID_LAB_BWD, DIR_NORTH)
+        applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_down, walk_in_place_up))
+    }
+    waitmovement()
+    delay(15)
+    setvar(VAR_WADDLE_DEE_TOWN_STATE, 4)
+    applymovement(LOCALID_LAB_WISE, moves(walk_in_place_down))
+    waitmovement()
+    msgbox("{SPEAKER NAME_WISE}It's good to see you again, Kirby!
+    
+            Bandana Waddle Dee has filled me in.
+            Congratulations on your first Brooch!
+            
+            Collecting the Brooches will take
+            you all across Dream Land.
+            
+            I'm positive you'll meet all sorts
+            of Helpers along the way.
+            
+            Now, there's a certain matter I wished
+            to discuss with you, Kirby\.
+            
+            It seems the king has taken a great
+            interest in your Info Card collection.
+            
+            So much so, in fact, that he wants
+            to personally oversee its completion!
+            
+            As you'll travel, you'll encounter
+            fellow Helper researchers who will
+            {COLOR RED}check your cards for progress{COLOR DARK_GRAY}.
+            
+            Please make sure not to neglect your
+            card-completing duties!
+            
+            In exchange for these progress checks,
+            we'll provide you with care packages.
+            
+            In fact, I have one right here!
+            Kirby, have you recruited {COLOR RED}6 Helpers{COLOR DARK_GRAY}?")
+    call(WaddleDeeTown_Lab_EvaluateCards)
+    if(var(VAR_0x8009) >= 6)
+    {
+        goto(WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess)
+    }
+    elif(var(VAR_0x8009) < 6)
+    {
+        goto(WaddleDeeTown_Lab_EventScript_WiseGateCheckFailure)
+    }
+}
+
+text WaddleDeeTown_Lab_ReceivedHelperBoxLink
+{
+    "Obtained the {COLOR BLUE}Helper Box Link{COLOR DARK_GRAY}!"
+}
+
+text WaddleDeeTown_Lab_ReceivedExpShare
+{
+    "Obtained the {COLOR BLUE}Exp. Share{COLOR DARK_GRAY}!"
+}
+
+text WaddleDeeTown_Lab_ReceivedOvalCharm
+{
+    "Obtained the {COLOR BLUE}Oval Charm{COLOR DARK_GRAY}!"
+}
+
+text WaddleDeeTown_Lab_ReceivedCatchingCharm
+{
+    "Obtained the {COLOR BLUE}Catching Charm{COLOR DARK_GRAY}!"
+}
+
+text WaddleDeeTown_Lab_ReceivedShinyCharm
+{
+    "Obtained the {COLOR BLUE}Shiny Charm{COLOR DARK_GRAY}!"
+}
+
+text WaddleDeeTown_Lab_ReceivedExpCharm
+{
+    "Obtained the {COLOR BLUE}Exp. Charm{COLOR DARK_GRAY}!"
+}
+
+script WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess
+{
+    msgbox("{SPEAKER NAME_WISE}Excellent! You've already recruited
+            {STR_VAR_2} Helpers so far!
+            
+            As promised, here's your care package!")
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedHelperBoxLink, ITEM_POKEMON_BOX_LINK, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem(ITEM_TM02)
+    giveitem(ITEM_STARDUST)
+    giveitem(ITEM_POKE_BALL, 10)
+    setflag(FLAG_BINDER_GATE_01)
+    msgbox("{SPEAKER NAME_WISE}A rather generous selection, is it not?
+            The Helper Box Link is especially handy.
+            
+            Use it, and you can access your Helper
+            boxes anywhere, without needing a PC!
+            
+            Hopefully this serves as an added
+            incentive to work on your Info Cards\.
+            not that knowledge isn't reward enough!")
+    closemessage()
+    applymovement(LOCALID_LAB_WISE, moves(walk_in_place_down * 2))
+    waitmovement()
+    msgbox("{SPEAKER NAME_WISE}And as for you, Bandana Waddle Dee\.
+            I've told the king that I would bring
+            you on as a personal assistant.
+            
+            You and I are both eager to uncover
+            where all these Helpers came from, yes?
+            
+            {SPEAKER NAME_BANDANA}Yes! About that, actually\.
+            I got some intel asking around town.
+            
+            It seems the Great King has ordered for
+            the town's top exit to be sealed off.
+            
+            Perhaps something unusual has
+            happened in that area?
+            
+            {SPEAKER NAME_WISE}Hm\. even so, the town has been divided
+            by an unscrupulous avalanche.
+            
+            You'll have to approach from the other
+            side. That should also put you in
+            the path of a few more Arenas.
+            
+            Perhaps then, you might become ready
+            to face whatever threat lies ahead.
+            
+            But do be careful. I don't wish for
+            either of you to endanger yourselves\.
+            
+            {SPEAKER NAME_BANDANA}Don't sweat it! Kirby's plenty strong,
+            and I can keep up with him just fine!")
+    closemessage()
+    turnobject(LOCALID_PLAYER, DIR_EAST)
+    turnobject(LOCALID_LAB_BWD, DIR_WEST)
+    delay(30)
+    msgbox("{SPEAKER NAME_BANDANA}First things first, though.
+            My team and I need to visit the Arena!
+            
+            Kirby, why don't you get a head start
+            over to the next Arena?
+            
+            The only way out of town right now is
+            through Vegetable Valley to the east.
+            
+            Hopefully I can catch up with you
+            soon enough!")
+    closemessage()
+    applymovement(LOCALID_LAB_BWD, moves(walk_right * 5, walk_down * 7))
+    waitmovement()
+    removeobject(LOCALID_LAB_BWD)
+    setvar(VAR_WADDLE_DEE_TOWN_STATE, 5)
+    setvar(VAR_WADDLE_DEE_TOWN_EAST_GATE, 1)
+}
+
+script WaddleDeeTown_Lab_EventScript_WiseGateCheckFailure
+{
+    msgbox("{SPEAKER NAME_WISE}Unfortunately, it seems you have only
+            recruited {STR_VAR_2} Helpers\.
+            
+            Waddle Dee Town's park should have
+            more than enough to meet this goal.
+            
+            Why don't you fill out your cards a
+            bit, and then return here? I'll gift
+            you your care package once you do.")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry
+{
+    lockall
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+    if(var(VAR_RESULT) == DIR_NORTH)
+    {
+        turnobject(LOCALID_LAB_BWD, DIR_NORTH)
+        applymovement(LOCALID_PLAYER, moves(walk_down, walk_in_place_up))
+    }
+    elif(var(VAR_RESULT) == DIR_WEST)
+    {
+        turnobject(LOCALID_LAB_BWD, DIR_NORTH)
+        applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_down, walk_in_place_up))
+    }
+    waitmovement()
+    delay(15)
+    applymovement(LOCALID_LAB_WISE, moves(walk_in_place_down))
+    waitmovement()
+    msgbox("{SPEAKER NAME_WISE}Welcome back, Kirby.
+            Have you recruited {COLOR RED}6 Helpers{COLOR DARK_GRAY}?")
+            call(WaddleDeeTown_Lab_EvaluateCards)
+    if(var(VAR_0x8009) >= 6)
+    {
+        goto(WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess)
+    }
+    elif(var(VAR_0x8009) < 6)
+    {
+        goto(WaddleDeeTown_Lab_EventScript_WiseGateCheckFailure)
+    }
+}
+
+script WaddleDeeTown_Lab_EventScript_InfoCardRating
+{
+    lock
+    faceplayer
+    msgbox("{SPEAKER NAME_WISE}Good to see you again, Kirby! Do you
+            wish to present your Info Card Binder?", MSGBOX_YESNO)
+    if(var(VAR_RESULT))
+    {
+        call(WaddleDeeTown_Lab_EvaluateCards)
+        msgbox("{SPEAKER NAME_WISE}Let's see... you've recruited
+                {STR_VAR_2} Helpers thus far.")
+        if(var(VAR_0x8009) >= 15 && !flag(FLAG_BINDER_GATE_02))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck2)
+        }
+        if(var(VAR_0x8009) >= 30 && !flag(FLAG_BINDER_GATE_03))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck3)
+        }
+        if(var(VAR_0x8009) >= 50 && !flag(FLAG_BINDER_GATE_04))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck4)
+        }
+        if(var(VAR_0x8009) >= 75 && !flag(FLAG_BINDER_GATE_05))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck5)
+        }
+        if(var(VAR_0x8009) >= 100 && !flag(FLAG_BINDER_GATE_06))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck6)
+        }
+        if(var(VAR_0x8009) >= 150 && !flag(FLAG_BINDER_GATE_07))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck7)
+        }
+        goto_if_le(VAR_0x8009, 25, WaddleDeeTown_Lab_WiseAdvice01)
+        goto_if_le(VAR_0x8009, 50, WaddleDeeTown_Lab_WiseAdvice02)
+        goto_if_le(VAR_0x8009, 75, WaddleDeeTown_Lab_WiseAdvice03)
+        goto_if_le(VAR_0x8009, 100, WaddleDeeTown_Lab_WiseAdvice04)
+        goto_if_le(VAR_0x8009, 125, WaddleDeeTown_Lab_WiseAdvice05)
+        goto_if_le(VAR_0x8009, 150, WaddleDeeTown_Lab_WiseAdvice06)
+        goto_if_le(VAR_0x8009, 175, WaddleDeeTown_Lab_WiseAdvice07)
+        goto_if_le(VAR_0x8009, 200, WaddleDeeTown_Lab_WiseAdvice08)
+        goto_if_le(VAR_0x8009, 225, WaddleDeeTown_Lab_WiseAdvice09)
+        goto_if_le(VAR_0x8009, 250, WaddleDeeTown_Lab_WiseAdvice10)
+        goto_if_le(VAR_0x8009, 275, WaddleDeeTown_Lab_WiseAdvice11)
+        goto_if_le(VAR_0x8009, 299, WaddleDeeTown_Lab_WiseAdvice11)
+    }
+    else
+    {
+        msgbox("{SPEAKER NAME_WISE}Still working hard on it, hm?
+                Best of luck to you then!")
+    }
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice01
+{
+    msgbox("{SPEAKER NAME_WISE}You're still in the early stages of
+            filling out your Info Card Binder.
+            
+            It may seem daunting, but don't fret!
+            We believe in you, Kirby!")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice02
+{
+    msgbox("{SPEAKER NAME_WISE}Good, good. You're making steady
+            progress on your Info Cards.
+            
+            If you spot a Helper you haven't yet
+            recruited, the Info Cards can point
+            you to their potential locations!")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice03
+{
+    msgbox("{SPEAKER NAME_WISE}Have you looked in places other than
+            tall grass for Helpers, Kirby?
+            
+            Many fishers in town have reported
+            hooking up Helpers, for example.")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice04
+{
+    msgbox("{SPEAKER NAME_WISE}Recently, I received a new report about
+            the locations of certain Helpers.
+            
+            Apparently some hide within or disguise
+            themselves as Star Blocks. Surprising!
+            
+            Kirby, do you have any means of
+            investigating those?")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice05
+{
+    msgbox("{SPEAKER NAME_WISE}If you need new leads, retracing your
+            steps may be a viable solution.
+            
+            You've travelled quite far now, and
+            picked up a number of new tools.
+            
+            Try applying them to older areas; they
+            may uncover new paths for you!")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice06
+{
+    msgbox("{SPEAKER NAME_WISE}By any chance, have you heard of the
+            Merry Magocade?
+            
+            Games aren't quite my style, but I've
+            heard there are certain Helpers you can
+            only obtain in those walls.
+            
+            There's no harm in popping in for a quick
+            visit, is there?")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice07
+{
+    msgbox("{SPEAKER NAME_WISE}What a major milestone! You're
+            closer to the end than the beginning.
+            
+            Since you've come this far, I hope you'll
+            see it through to the finish line!")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice08
+{
+    msgbox("{SPEAKER NAME_WISE}If you haven't hit it yet, there may
+            come a time where you've recruited
+            most wild Helpers already.
+            
+            The Info Cards can help you uncover 
+            how to evolve Helpers you obtained.
+            
+            Some conditions are rather obtuse,
+            so give it a look if you're stumped!")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice09
+{
+    msgbox("{SPEAKER NAME_WISE}Stronger wild Helpers are likely to
+            have already evolved at least once.
+            
+            To register their unevolved forms,
+            you'll need to obtain their Helper Egg.
+            
+            That would lead you to the Helper
+            Day Care, where eggs are oft found.")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice10
+{
+    msgbox("{SPEAKER NAME_WISE}I've heard rumors of especially strong
+            wild Helpers in remote locations\.
+            
+            We've been referring to them as
+            \qoBig Boss Helpers\qc.
+            
+            They'll be tough to find, and even
+            tougher to recruit, certainly.
+            
+            There must be some group out there
+            that knows a thing or two about
+            tracing legendary finds like that\.")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice11
+{
+    msgbox("{SPEAKER NAME_WISE}This might come across as a rather
+            silly point of advice, but\.
+            remember you're not alone, Kirby.
+            
+            If there's an empty spot in your
+            Info Cards you just can't fill out,
+            why not ask a friend for help?
+            
+            Talk to everyone and work together.
+            Friendship is important!")
+    release
+}
+
+script WaddleDeeTown_Lab_WiseAdvice12
+{
+    msgbox("{SPEAKER NAME_WISE}This is it, Kirby. You're in the
+            homestretch now!
+            
+            I'm optimistic - nay, COMPELTELY
+            confident you'll finish the job.
+            
+            Go forth, Kirby! Complete the
+            Info Card Binder and make me proud!")
+    release
+}
+
+script WaddleDeeTown_Lab_BinderCheck2
+{
+    msgbox("{SPEAKER NAME_WISE}Wonderful! You've already registered
+            15 Helpers!
+            
+            As proof of your hard work, please
+            accept this care package from me!")
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedExpShare, ITEM_EXP_SHARE, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem(ITEM_TM09)
+    giveitem(ITEM_BIG_PEARL)
+    giveitem(ITEM_DIVE_BALL, 10)
+    msgbox("{SPEAKER NAME_WISE}It includes a TM, new Hearts, some
+            valuables, and most importantly:
+            the Experience Share!
+            
+            This tool simplifies training Helpers by
+            giving experience to your whole party.
+            
+            Hopefully it makes filling out your
+            Info Card Binder a bit easier!")
+    setflag(FLAG_BINDER_GATE_02)
+    if(var(VAR_0x8009) >= 30 && !flag(FLAG_BINDER_GATE_03))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck3)
+        }
+}
+
+script WaddleDeeTown_Lab_BinderCheck3
+{
+    msgbox("{SPEAKER NAME_WISE}Stupendous! You've already registered
+            30 Helpers!
+            
+            As proof of your hard work, please
+            accept this care package from me!")
+    giveitem(ITEM_LUCKY_EGG)
+    giveitem(ITEM_TM12)
+    giveitem(ITEM_NUGGET)
+    giveitem(ITEM_GREAT_BALL, 10)
+    msgbox("{SPEAKER NAME_WISE}It includes a TM, new Hearts, some
+            valuables, and most importantly:
+            the Lucky Egg!
+            
+            Hand this item to a Helper, and they
+            shall accrue extra experience.
+            
+            Combined with the Exp. Share, you can
+            level up Helpers even faster now!")
+    setflag(FLAG_BINDER_GATE_03)
+    if(var(VAR_0x8009) >= 50 && !flag(FLAG_BINDER_GATE_04))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck4)
+        }
+}
+
+script WaddleDeeTown_Lab_BinderCheck4
+{
+    msgbox("{SPEAKER NAME_WISE}Incredible! You've already registered
+            50 Helpers!
+            
+            As proof of your hard work, please
+            accept this care package from me!")
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedOvalCharm, ITEM_OVAL_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem(ITEM_TM01)
+    giveitem(ITEM_STAR_PIECE)
+    giveitem(ITEM_QUICK_BALL, 10)
+    msgbox("{SPEAKER NAME_WISE}It includes a TM, new Hearts, some
+            valuables, and most importantly:
+            the Oval Charm!
+            
+            This mysterious charm increases your
+            chance of obtaining Helper Eggs.
+            
+            Have you visited the Helper Day Care
+            in the northwest corner of town?
+            
+            If you're looking for Helper Eggs,
+            that should be your destination.")
+    setflag(FLAG_BINDER_GATE_04)
+    if(var(VAR_0x8009) >= 75 && !flag(FLAG_BINDER_GATE_05))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck5)
+        }
+}
+
+script WaddleDeeTown_Lab_BinderCheck5
+{
+    msgbox("{SPEAKER NAME_WISE}Marvelous! You've already registered
+            75 Helpers!
+            
+            As proof of your hard work, please
+            accept this care package from me!")
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedCatchingCharm, ITEM_CATCHING_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem(ITEM_TM34)
+    giveitem(ITEM_PEARL_STRING)
+    giveitem(ITEM_ULTRA_BALL, 10)
+    msgbox("{SPEAKER NAME_WISE}It includes a TM, new Hearts, some
+            valuables, and most importantly:
+            the Catching Charm!
+            
+            This mysterious charm increases your
+            odds at recruiting Helpers.
+            
+            Did you know your odds also gradually
+            increase as your Binder is filled out?
+            
+            I hope this helps you encounter some
+            especially hard-to-nab Helpers!")
+    setflag(FLAG_BINDER_GATE_05)
+    if(var(VAR_0x8009) >= 100 && !flag(FLAG_BINDER_GATE_06))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck6)
+        }
+}
+
+script WaddleDeeTown_Lab_BinderCheck6
+{
+    msgbox("{SPEAKER NAME_WISE}Phenomenal! You've already registered
+            100 Helpers!
+            
+            As proof of your hard work, please
+            accept this care package from me!")
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedShinyCharm, ITEM_SHINY_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem(ITEM_TM10)
+    giveitem(ITEM_COMET_SHARD)
+    giveitem(ITEM_DUSK_BALL, 10)
+    msgbox("{SPEAKER NAME_WISE}It includes a TM, new Hearts, some
+            valuables, and most importantly:
+            the Shiny Charm!
+            
+            There have been scarce reports of
+            differently-colored Helpers.
+            
+            We call them Shiny Helpers due to
+            their brilliant sheen.
+            
+            May the Shiny Charm grant you the
+            luck to find one for yourself!")
+    setflag(FLAG_BINDER_GATE_06)
+    if(var(VAR_0x8009) >= 150 && !flag(FLAG_BINDER_GATE_07))
+        {
+            call(WaddleDeeTown_Lab_BinderCheck7)
+        }
+}
+
+script WaddleDeeTown_Lab_BinderCheck7
+{
+    msgbox("{SPEAKER NAME_WISE}Magnificent! You've already registered
+            150 Helpers!
+            
+            As proof of your hard work, please
+            accept this care package from me!")
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedExpCharm, ITEM_EXP_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem(ITEM_TM06)
+    giveitem(ITEM_BIG_NUGGET)
+    giveitem(ITEM_MASTER_BALL)
+    msgbox("{SPEAKER NAME_WISE}It includes a TM, a new Heart, some
+            valuables, and most importantly:
+            the Experience Charm!
+            
+            This is the ultimate tool to bolster
+            your party's experience gains.
+            
+            Evolving Helpers should be easier
+            than ever with this by your side.
+            
+            And if there any uncaptured Helpers
+            still eluding you, I've bestowed
+            the ultimate Heart unto you as well.
+            
+            The Master Heart can never fail.
+            Use it wisely, my good friend!")
+    setflag(FLAG_BINDER_GATE_07)
+}
+
+script WaddleDeeTown_Lab_EvaluateCards
+{
+    setvar(VAR_0x8004, 0)
+	specialvar(VAR_RESULT, ScriptGetPokedexInfo)
+	copyvar(VAR_0x8008, VAR_0x8005)
+	copyvar(VAR_0x8009, VAR_0x8006)
+	copyvar(VAR_0x800A, VAR_RESULT)
+	buffernumberstring(STR_VAR_2, VAR_0x8009)
+}
+
+script WaddleDeeTown_Lab_EventScript_TurnLeft
+{
+    turnobject(LOCALID_LAB_RECEPTIONIST_LEFT, DIR_EAST)
+    goto(WaddleDeeTown_Lab_EventScript_LeftReceptionist)
+}
+
+script WaddleDeeTown_Lab_EventScript_TurnRight
+{
+    turnobject(LOCALID_LAB_RECEPTIONIST_RIGHT, DIR_WEST)
+    goto(WaddleDeeTown_Lab_EventScript_RightReceptionist)
+}

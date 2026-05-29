@@ -161,7 +161,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "WaddleDeeTown_EventScript_BorderWaddleDee",
       "flag": "0"
     },
     {
@@ -448,6 +448,47 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_CROWD_WADDLE_DEE_TOWN"
+    },
+    {
+      "local_id": "LOCALID",
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "x": 44,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_EventScript_LabWaddleDee",
+      "flag": "FLAG_BADGE01_GET"
+    },
+    {
+      "local_id": "LOCALID_TOWN_EAST_GUARD",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 56,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_EventScript_EastGuard",
+      "flag": "FLAG_BINDER_GATE_01"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 56,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_EventScript_EastGuard",
+      "flag": "FLAG_BINDER_GATE_01"
     }
   ],
   "warp_events": [
@@ -553,7 +594,7 @@
       "x": 44,
       "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_WADDLE_DEE_TOWN",
+      "dest_map": "MAP_WADDLE_DEE_TOWN_LAB",
       "dest_warp_id": "0"
     },
     {
@@ -573,6 +614,51 @@
       "var": "VAR_WADDLE_DEE_TOWN_STATE",
       "var_value": "0",
       "script": "WaddleDeeTown_Trigger_FirstCutscene"
+    },
+    {
+      "type": "trigger",
+      "x": 56,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_WADDLE_DEE_TOWN_EAST_GATE",
+      "var_value": "0",
+      "script": "WaddleDeeTown_EventScript_EastExitBlocked"
+    },
+    {
+      "type": "trigger",
+      "x": 56,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_WADDLE_DEE_TOWN_EAST_GATE",
+      "var_value": "0",
+      "script": "WaddleDeeTown_EventScript_EastExitBlocked"
+    },
+    {
+      "type": "trigger",
+      "x": 56,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_WADDLE_DEE_TOWN_EAST_GATE",
+      "var_value": "0",
+      "script": "WaddleDeeTown_EventScript_EastExitBlocked"
+    },
+    {
+      "type": "trigger",
+      "x": 56,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_WADDLE_DEE_TOWN_EAST_GATE",
+      "var_value": "0",
+      "script": "WaddleDeeTown_EventScript_EastExitBlocked"
+    },
+    {
+      "type": "trigger",
+      "x": 56,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_WADDLE_DEE_TOWN_EAST_GATE",
+      "var_value": "0",
+      "script": "WaddleDeeTown_EventScript_EastExitBlocked"
     }
   ],
   "bg_events": [

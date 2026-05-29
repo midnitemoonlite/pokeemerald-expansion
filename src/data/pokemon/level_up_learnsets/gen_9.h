@@ -25378,7 +25378,7 @@ static const struct LevelUpMove sSnooterLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sIronMamLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE( 0, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_TAUNT),
     LEVEL_UP_MOVE( 1, MOVE_BULK_UP),
@@ -25400,8 +25400,6 @@ static const struct LevelUpMove sIronMamLevelUpLearnset[] = {
 static const struct LevelUpMove sGrandMamLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_GIGA_IMPACT),
     LEVEL_UP_MOVE( 1, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE( 1, MOVE_HEAT_CRASH),
-    LEVEL_UP_MOVE( 1, MOVE_HEADLONG_RUSH),
     LEVEL_UP_MOVE( 1, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_TAUNT),

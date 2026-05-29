@@ -1,0 +1,188 @@
+{
+  "id": "MAP_WADDLE_DEE_TOWN_LAB",
+  "name": "WaddleDeeTown_Lab",
+  "layout": "LAYOUT_WADDLE_DEE_TOWN_LAB",
+  "music": "MUS_BIRCH_LAB",
+  "region_map_section": "MAPSEC_WADDLE_DEE_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_INDOOR_1",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_LAB_WISE",
+      "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_WiseWaddleDee",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LAB_PC_DEE",
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "x": 17,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_RightAstronomer",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LAB_RECEPTIONIST_RIGHT",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_RightReceptionist",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 8,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_Youngster",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LAB_RECEPTIONIST_LEFT",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 7,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_LeftReceptionist",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 18,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_Gentleman",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_2",
+      "x": 3,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_Chef",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_LeftAstronomer",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_WaddleDee",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LAB_BWD",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 10,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "WaddleDeeTown_Lab_EventScript_BWD",
+      "flag": "FLAG_BINDER_GATE_01"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_WADDLE_DEE_TOWN",
+      "dest_warp_id": "14"
+    },
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_WADDLE_DEE_TOWN",
+      "dest_warp_id": "14"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
+      "script": "WaddleDeeTown_Lab_EventScript_TurnLeft"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
+      "script": "WaddleDeeTown_Lab_EventScript_TurnRight"
+    }
+  ]
+}

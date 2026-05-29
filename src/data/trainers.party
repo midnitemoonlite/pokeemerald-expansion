@@ -214,7 +214,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: Waddle Dee
 Class: Parasol Lady
-Pic: Lass
+Pic: Parasol Lady
 Gender: Female
 Music: Female
 Double Battle: No
@@ -249,7 +249,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: Waddle Dee
 Class: Aroma Lady
-Pic: Lass
+Pic: Aroma Lady
 Gender: Female
 Music: Female
 Double Battle: No
@@ -294,7 +294,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_ALBERTO ===
 Name: Waddle Dee
 Class: Bird Keeper
-Pic: Youngster
+Pic: Bird Keeper
 Gender: Female
 Music: Female
 Double Battle: No

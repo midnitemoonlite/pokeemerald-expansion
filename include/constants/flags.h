@@ -66,15 +66,15 @@
 #define FLAG_HIDE_BWD_WADDLE_DEE_TOWN    0x2C // Waddle Dee Town - Bandana Waddle Dee
 #define FLAG_RECEIVED_DARK_TM    0x2D // Waddle Dee Town - Park Staff in Castle Lobby
 #define FLAG_HIDE_WADDLE_DEE_ARENA_PARTICIPANTS 0x2E // Waddle Dee Arena - Magolor and Waddle Tutor
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
+#define FLAG_HIDE_BWD_LAB    0x2F // Waddle Dee Town (Lab) - Bandana Waddle Dee 
+#define FLAG_BINDER_GATE_01    0x30 // Caught 6 Helpers
+#define FLAG_BINDER_GATE_02    0x31 // Caught 15 Helpers
+#define FLAG_BINDER_GATE_03    0x32 // Caught 30 Helpers
+#define FLAG_BINDER_GATE_04    0x33 // Caught 50 Helpers
+#define FLAG_BINDER_GATE_05    0x34 // Caught 75 Helpers
+#define FLAG_BINDER_GATE_06    0x35 // Caught 100 Helpers
+#define FLAG_BINDER_GATE_07    0x36 // Caught 150 Helpers
+#define FLAG_BINDER_GATE_08    0x37 // Caught 300 Helpers
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag
 #define FLAG_UNUSED_0x039    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag

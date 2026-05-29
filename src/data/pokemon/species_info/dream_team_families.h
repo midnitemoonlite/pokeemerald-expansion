@@ -2055,12 +2055,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
         .backPic = gMonBackPic_PoppyBrosJr,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_PoppyBrosJr,
         .shinyPalette = gMonShinyPalette_PoppyBrosJr,
         .iconSprite = gMonIcon_PoppyBrosJr,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         NO_SHADOW
         FOOTPRINT(PoppyBrosJr)
         .levelUpLearnset = sPoppyBrosJrLevelUpLearnset,
@@ -2113,12 +2113,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
         .backPic = gMonBackPic_PoppyBrosSr,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_PoppyBrosSr,
         .shinyPalette = gMonShinyPalette_PoppyBrosSr,
         .iconSprite = gMonIcon_PoppyBrosSr,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         NO_SHADOW
         FOOTPRINT(PoppyBrosSr)
         .levelUpLearnset = sPoppyBrosSrLevelUpLearnset,
@@ -11402,8 +11402,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 42,
         .baseDefense   = 48,
         .baseSpeed     = 35,
-        .baseSpAttack  = 63,
-        .baseSpDefense = 87,
+        .baseSpAttack  = 66,
+        .baseSpDefense = 84,
         .types = MON_TYPES(TYPE_WATER, TYPE_PSYCHIC),
         .catchRate = 100,
         .expYield = 68,
@@ -11455,12 +11455,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BUBOO] =
     {
-        .baseHP        = 93,
+        .baseHP        = 96,
         .baseAttack    = 63,
         .baseDefense   = 48,
-        .baseSpeed     = 62,
-        .baseSpAttack  = 84,
-        .baseSpDefense = 112,
+        .baseSpeed     = 56,
+        .baseSpAttack  = 72,
+        .baseSpDefense = 127,
         .types = MON_TYPES(TYPE_WATER, TYPE_PSYCHIC),
         .catchRate = 80,
         .expYield = 164,

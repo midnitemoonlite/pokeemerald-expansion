@@ -866,11 +866,11 @@ struct {
     const u8 *desc;
 } static const sMainMenuTexts[OPTIONS_COUNT] =
 {
-    [OPTION_WITHDRAW]   = {COMPOUND_STRING("WITHDRAW HELPERS"), COMPOUND_STRING("Move Helpers stored in boxes to\nyour party.")},
-    [OPTION_DEPOSIT]    = {COMPOUND_STRING("DEPOSIT HELPERS"),  COMPOUND_STRING("Store Helpers in your party in boxes.")},
-    [OPTION_MOVE_MONS]  = {COMPOUND_STRING("MOVE HELPERS"),     COMPOUND_STRING("Organize the Helpers in boxes and\nin your party.")},
-    [OPTION_MOVE_ITEMS] = {COMPOUND_STRING("MOVE ITEMS"),       COMPOUND_STRING("Move items held by any Helpers\nin a box or your party.")},
-    [OPTION_EXIT]       = {COMPOUND_STRING("SEE YA!"),          COMPOUND_STRING("Return to the previous menu.")}
+    [OPTION_WITHDRAW]   = {COMPOUND_STRING("Withdraw Helpers"), COMPOUND_STRING("Move Helpers stored in boxes to\nyour party.")},
+    [OPTION_DEPOSIT]    = {COMPOUND_STRING("Deposit Helpers"),  COMPOUND_STRING("Store Helpers in your party in boxes.")},
+    [OPTION_MOVE_MONS]  = {COMPOUND_STRING("Move Helpers"),     COMPOUND_STRING("Organize the Helpers in boxes and\nin your party.")},
+    [OPTION_MOVE_ITEMS] = {COMPOUND_STRING("Move items"),       COMPOUND_STRING("Move items held by any Helpers\nin a box or your party.")},
+    [OPTION_EXIT]       = {COMPOUND_STRING("See ya!"),          COMPOUND_STRING("Return to the previous menu.")}
 };
 
 static const struct WindowTemplate sWindowTemplate_MainMenu =
