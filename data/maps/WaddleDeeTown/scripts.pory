@@ -261,10 +261,9 @@ script WaddleDeeTown_EventScript_BorderWaddleDee
 {
     lock
     faceplayer
-    msgbox("Oooooh, yes! I've been waiting for
-            somebody to come talk to me!
-            
-            Amazing! My new text box border
+    msgbox("Oooooh, yes! Do you know how long I've
+            been waiting for someone to talk to me?", MSGBOX_YESNO)
+    msgbox( "Amazing! My new menu border
             looks so stylish!
             
             Huh? You can't see what I mean?
