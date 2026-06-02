@@ -176,7 +176,7 @@ VegetableValley_Farmhouse_EventScript_Lass_Text_0:
 
 VegetableValley_Farmhouse_EventScript_Lass_Text_1:
 # 103 "data/maps/VegetableValley_Farmhouse/scripts.pory"
-	.string "I like to go picking for apples in the\n"
+	.string "I like to go picking for apples in\n"
 	.string "Fruity Forest!\p"
 	.string "Hey, would you and your Helpers like\n"
 	.string "to go picking for fruit too?\l"

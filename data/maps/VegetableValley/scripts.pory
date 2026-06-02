@@ -181,6 +181,7 @@ text VegetableValley_Text_Trainer6Post
 
 script VegetableValley_EventScript_TriggerLeft
 {
+    lock
     playbgm(MUS_ENCOUNTER_MAY, TRUE)
     addobject(LOCALID_BWD_VEGETABLE)
     applymovement(LOCALID_BWD_VEGETABLE, moves(walk_right * 8, walk_up * 2))
@@ -190,6 +191,7 @@ script VegetableValley_EventScript_TriggerLeft
 
 script VegetableValley_EventScript_TriggerRight
 {
+    lock
     playbgm(MUS_ENCOUNTER_MAY, TRUE)
     addobject(LOCALID_BWD_VEGETABLE)
     applymovement(LOCALID_BWD_VEGETABLE, moves(walk_faster_right, walk_right * 8, walk_up * 2))
@@ -224,7 +226,7 @@ script VegetableValley_EventScript_BandanaWaddleDee
 	}
     msgbox("{SPEAKER NAME_BANDANA}Oh yeah, I almost forgot. Here, Kirby,
             this is for you!")
-    giveitem(ITEM_ESCAPE_ROPE)
+    giveitem_msg(VegetableValley_Text_ReceivedEscapeRope, ITEM_ESCAPE_ROPE, 1, MUS_RG_OBTAIN_KEY_ITEM)
     msgbox("{SPEAKER NAME_BANDANA}If you get lost in the forest, you can
             use this as an emergency exit.
             
@@ -238,7 +240,7 @@ script VegetableValley_EventScript_BandanaWaddleDee
     }
     else
     {
-        applymovement(LOCALID_BWD_VEGETABLE, moves(walk_right, walk_up * 4))
+        applymovement(LOCALID_BWD_VEGETABLE, moves(walk_left, walk_up * 4))
         waitmovement()
     }
     removeobject(LOCALID_BWD_VEGETABLE)
@@ -247,6 +249,11 @@ script VegetableValley_EventScript_BandanaWaddleDee
     setvar(VAR_VEGETABLE_VALLEY_STATE, 1)
     fadedefaultbgm
     release
+}
+
+text VegetableValley_Text_ReceivedEscapeRope
+{
+    "{SPEAKER NAME_NONE}Obtained the {COLOR BLUE}Escape Rope{COLOR DARK_GRAY}!"
 }
 
 text VegetableValley_Text_BandanaWaddleDeeDefeat
