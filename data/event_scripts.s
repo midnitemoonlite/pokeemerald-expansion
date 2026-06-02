@@ -1765,3 +1765,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/WaddleDeeArena/scripts.inc"
 
 	.include "data/maps/WaddleDeeTown_Lab/scripts.inc"
+
+	.include "data/maps/VegetableValley/scripts.inc"
+
+	.include "data/maps/VegetableValley_Farmhouse/scripts.inc"

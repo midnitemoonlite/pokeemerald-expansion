@@ -1,9 +1,9 @@
 {
-  "id": "MAP_GREEN_REST_AREA_MART",
-  "name": "GreenRestArea_Mart",
-  "layout": "LAYOUT_GREEN_REST_AREA_MART",
-  "music": "MUS_POKE_MART",
-  "region_map_section": "MAPSEC_GREEN_REST_AREA",
+  "id": "MAP_VEGETABLE_VALLEY_FARMHOUSE",
+  "name": "VegetableValley_Farmhouse",
+  "layout": "LAYOUT_VEGETABLE_VALLEY_FARMHOUSE",
+  "music": "MUS_ROUTE110",
+  "region_map_section": "MAPSEC_VEGETABLE_VALLEY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -15,61 +15,60 @@
   "connections": null,
   "object_events": [
     {
-      "local_id": "LOCALID_GREEN_REST_AREA_MART_CLERK",
-      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
-      "x": 1,
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 3,
       "y": 3,
-      "elevation": 3,
+      "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "GreenRestArea_Mart_EventScript_Clerk",
+      "script": "VegetableValley_Farmhouse_EventScript_Camper",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
-      "x": 8,
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 6,
       "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VegetableValley_Farmhouse_EventScript_Lass",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LUMBERJACK_FARMHOUSE",
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 4,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "GreenRestArea_EventScript_WaddleDeeJuice",
-      "flag": "0"
-    },
-    {
-      "local_id": "LOCALID_LUMBERJACK_MART",
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 6,
-      "y": 2,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "GreenRestArea_EventScript_WaddleDeeSell",
-      "flag": "FLAG_HIDE_LUMBERJACK_MART"
+      "script": "VegetableValley_Farmhouse_EventScript_Lumberjack",
+      "flag": "FLAG_HIDE_LUMBERJACK_FARMHOUSE"
     }
   ],
   "warp_events": [
     {
+      "x": 2,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_VEGETABLE_VALLEY",
+      "dest_warp_id": "0"
+    },
+    {
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_GREEN_REST_AREA",
-      "dest_warp_id": "1"
-    },
-    {
-      "x": 4,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_GREEN_REST_AREA",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_VEGETABLE_VALLEY",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

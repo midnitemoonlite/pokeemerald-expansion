@@ -105,7 +105,7 @@
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_WADDLE_DEE_TOWN_STATE                        0x4055 // Waddle Dee Town - Keep track of progress state
-#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var
+#define VAR_VEGETABLE_VALLEY_STATE                       0x4056 // Vegetable Valley - Keep track of progress state
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
 #define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
@@ -174,7 +174,7 @@
 #define VAR_PETALBURG_WOODS_STATE                        0x4098
 #define VAR_LILYCOVE_CONTEST_LOBBY_STATE                 0x4099
 #define VAR_RUSTURF_TUNNEL_STATE                         0x409A
-#define VAR_UNUSED_0x409B                                0x409B // Unused Var
+#define VAR_LUMBERJACK_QUEST                             0x409B // Vegetable Valley - Used to keep track of lumberjack sidequest state
 #define VAR_ELITE_4_STATE                                0x409C
 #define VAR_UNUSED_0x409D                                0x409D // Unused Var
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E

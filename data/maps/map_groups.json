@@ -77,7 +77,8 @@
     "gMapGroup_IndoorSevenIslandRoute_Frlg",
     "gMapGroup_IndoorKirbysHouse",
     "gMapGroup_IndoorGreenRestArea",
-    "gMapGroup_IndoorWaddleDeeTown"
+    "gMapGroup_IndoorWaddleDeeTown",
+    "gMapGroup_IndoorVegetableValley"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -142,7 +143,8 @@
     "GreenRestArea",
     "PrismPlains",
     "WaddleDeeTown",
-    "WaddleDeeArena"
+    "WaddleDeeArena",
+    "VegetableValley"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -1183,5 +1185,8 @@
     "WaddleDeeTown_House1",
     "WaddleDeeTown_CastleLobby",
     "WaddleDeeTown_Lab"
+  ],
+  "gMapGroup_IndoorVegetableValley": [
+    "VegetableValley_Farmhouse"
   ]
 }

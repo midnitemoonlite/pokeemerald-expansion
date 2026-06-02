@@ -1,0 +1,263 @@
+{
+  "id": "MAP_VEGETABLE_VALLEY",
+  "name": "VegetableValley",
+  "layout": "LAYOUT_VEGETABLE_VALLEY",
+  "music": "MUS_ROUTE110",
+  "region_map_section": "MAPSEC_VEGETABLE_VALLEY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_WADDLE_DEE_TOWN",
+      "offset": -4,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 9,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "VegetableValley_EventScript_Trainer1",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 16,
+      "y": 29,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "VegetableValley_EventScript_Trainer2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 17,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VegetableValley_EventScript_Trainer5",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 41,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "VegetableValley_EventScript_Trainer6",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 32,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 8,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "VegetableValley_EventScript_Trainer4",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 17,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+      "movement_range_x": 15,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "VegetableValley_EventScript_Trainer3",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 63,
+      "y": 26,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MENTAL_HERB",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_111_HP_UP"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 35,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_EARTH_PLATE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_111_STARDUST"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ANTIDOTE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ROUTE_111_TM_SANDSTORM"
+    },
+    {
+      "local_id": "LOCALID_BWD_VEGETABLE",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 51,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_BANDANA_WADDLE_DEE_KIRBYS_HOUSE_INDOORS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "x": 25,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VegetableValley_EventScript_WaddleDee",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 57,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_VEGETABLE_VALLEY_FARMHOUSE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 59,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_VEGETABLE_VALLEY_STATE",
+      "var_value": "0",
+      "script": "VegetableValley_EventScript_TriggerLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 60,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "VegetableValley_EventScript_TriggerRight"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 64,
+      "y": 10,
+      "elevation": 0,
+      "item": "ITEM_STICKY_BARB",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM"
+    },
+    {
+      "type": "sign",
+      "x": 58,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "VegetableValley_EventScript_ForestSign"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "VegetableValley_EventScript_Sign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 22,
+      "y": 2,
+      "elevation": 0,
+      "item": "ITEM_BALM_MUSHROOM",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS"
+    },
+    {
+      "type": "hidden_item",
+      "x": 21,
+      "y": 27,
+      "elevation": 0,
+      "item": "ITEM_GRASSY_SEED",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 51,
+      "y": 22,
+      "elevation": 0,
+      "item": "ITEM_ELECTRIC_SEED",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS"
+    },
+    {
+      "type": "hidden_item",
+      "x": 57,
+      "y": 26,
+      "elevation": 0,
+      "item": "ITEM_PSYCHIC_SEED",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD"
+    },
+    {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 14,
+      "elevation": 0,
+      "item": "ITEM_MISTY_SEED",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL"
+    }
+  ]
+}

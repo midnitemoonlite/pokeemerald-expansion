@@ -75,9 +75,9 @@
 #define FLAG_BINDER_GATE_06    0x35 // Caught 100 Helpers
 #define FLAG_BINDER_GATE_07    0x36 // Caught 150 Helpers
 #define FLAG_BINDER_GATE_08    0x37 // Caught 300 Helpers
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
+#define FLAG_RECEIVED_PLUCK_TM    0x38 // Vegetable Valley - Lass in Farmhouse
+#define FLAG_HIDE_LUMBERJACK_MART    0x39 // Green Rest Area - Lumberjack in Mart
+#define FLAG_HIDE_LUMBERJACK_FARMHOUSE    0x3A // Vegetable Valley - Lumberjack in Farmhouse
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
@@ -555,14 +555,14 @@
 #define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01) // Green Rest Area - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02) // Prism Plains - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03) // Prism Plains - Hidden Item 2
-#define FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS                    (FLAG_HIDDEN_ITEMS_START + 0x04)
-#define FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM                   (FLAG_HIDDEN_ITEMS_START + 0x05)
-#define FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL                (FLAG_HIDDEN_ITEMS_START + 0x06)
-#define FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL               (FLAG_HIDDEN_ITEMS_START + 0x07)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS               (FLAG_HIDDEN_ITEMS_START + 0x08)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD          (FLAG_HIDDEN_ITEMS_START + 0x09)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x0A)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B)
+#define FLAG_HIDDEN_ITEM_ROUTE_114_CARBOS                    (FLAG_HIDDEN_ITEMS_START + 0x04) // Vegetable Valley - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_ROUTE_119_CALCIUM                   (FLAG_HIDDEN_ITEMS_START + 0x05) // Vegetable Valley - Hidden Item 2
+#define FLAG_HIDDEN_ITEM_ROUTE_119_ULTRA_BALL                (FLAG_HIDDEN_ITEMS_START + 0x06) // Vegetable Valley - Hidden Item 3
+#define FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL               (FLAG_HIDDEN_ITEMS_START + 0x07) // Vegetable Valley - Hidden Item 4
+#define FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS               (FLAG_HIDDEN_ITEMS_START + 0x08) // Vegetable Valley - Hidden Item 5
+#define FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD          (FLAG_HIDDEN_ITEMS_START + 0x09) // Vegetable Valley - Hidden Item 6
+#define FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x0A) 
+#define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B) 
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E)
@@ -1058,9 +1058,9 @@
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0x3ED // Prism Plains - Item 2
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0x3EE // Prism Plains - Item 3
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF // Prism Plains - Item 4
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0 
-#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
-#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
+#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0 // Vegetable Valley - Item 1
+#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1 // Vegetable Valley - Item 2
+#define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2 // Vegetable Valley - Item 3
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
 #define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5

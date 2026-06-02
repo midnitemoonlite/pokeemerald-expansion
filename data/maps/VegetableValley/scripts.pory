@@ -1,0 +1,256 @@
+raw `
+VegetableValley_MapScripts::
+	.byte 0
+`
+
+script VegetableValley_EventScript_Sign
+{
+    msgbox("VEGETABLE VALLEY
+            A verdant farmland with fresh crops.", MSGBOX_SIGN)
+    closemessage
+}
+
+script VegetableValley_EventScript_ForestSign
+{
+    msgbox("Now approaching: FRUITY FOREST
+            Be mindful of the forest's guardian.", MSGBOX_SIGN)
+    closemessage
+}
+
+script VegetableValley_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Between Vegetable Valley and Fruity
+            Forest, harvests are plentiful here!
+            
+            If you're looking to grow locally, you
+            might be able to find some seeds
+            left over in the dirt patches.")
+    release
+}
+
+script VegetableValley_EventScript_Trainer1
+{
+    trainerbattle_single(TRAINER_GRUNT_WEATHER_INST_3, VegetableValley_Text_Trainer1Intro, VegetableValley_Text_Trainer1Defeated)
+    msgbox(VegetableValley_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+}
+
+text VegetableValley_Text_Trainer1Intro
+{
+    "Phew, I'm bushed! Hey, how about a
+    battle on my break?"
+}
+
+text VegetableValley_Text_Trainer1Defeated
+{
+    "So much for unwinding\. that was tense!"
+}
+
+text VegetableValley_Text_Trainer1Post
+{
+    "After the avalanche in Waddle Dee Town,
+    we held inspections in nearby areas.
+    
+    I can confirm this place is unscatched.
+    Safe travels!"
+}
+
+script VegetableValley_EventScript_Trainer2
+{
+    trainerbattle_single(TRAINER_GRUNT_MUSEUM_1, VegetableValley_Text_Trainer2Intro, VegetableValley_Text_Trainer2Defeated)
+    msgbox(VegetableValley_Text_Trainer2Post, MSGBOX_AUTOCLOSE)
+}
+
+text VegetableValley_Text_Trainer2Intro
+{
+    "I'm all about Bug-type Helpers!
+    Let's go!"
+}
+
+text VegetableValley_Text_Trainer2Defeated
+{
+    "My brilliant bugs\.!"
+}
+
+text VegetableValley_Text_Trainer2Post
+{
+    "It seems Bug-types aren't very
+    popular\. I wish I knew someone
+    else who liked them like I do!"
+}
+
+script VegetableValley_EventScript_Trainer3
+{
+    trainerbattle_single(TRAINER_GRUNT_MUSEUM_2, VegetableValley_Text_Trainer3Intro, VegetableValley_Text_Trainer3Defeated)
+    msgbox(VegetableValley_Text_Trainer3Post, MSGBOX_AUTOCLOSE)
+}
+
+text VegetableValley_Text_Trainer3Intro
+{
+    "La la la! Let's play in the fields!"
+}
+
+text VegetableValley_Text_Trainer3Defeated
+{
+    "Ha ha ha! That was so much fun!"
+}
+
+text VegetableValley_Text_Trainer3Post
+{
+    "Isn't running around all this greenery
+    soooo relaxing?"
+}
+
+script VegetableValley_EventScript_Trainer4
+{
+    trainerbattle_single(TRAINER_GRUNT_SPACE_CENTER_1, VegetableValley_Text_Trainer4Intro, VegetableValley_Text_Trainer4Defeated)
+    msgbox(VegetableValley_Text_Trainer4Post, MSGBOX_AUTOCLOSE)
+}
+
+text VegetableValley_Text_Trainer4Intro
+{
+    "I heard it from the forest! A new Arena
+    has opened up in Waddle Dee Town!
+    
+    Before I challenge it, I'll be taking
+    you on!"
+}
+
+text VegetableValley_Text_Trainer4Defeated
+{
+    "Wait\. you already got a Brooch from
+    that Arena?"
+}
+
+text VegetableValley_Text_Trainer4Post
+{
+    "Well, no wonder I lost! You're plenty
+    strong, it seems!"
+}
+
+script VegetableValley_EventScript_Trainer5
+{
+    trainerbattle_single(TRAINER_GRUNT_MT_PYRE_1, VegetableValley_Text_Trainer5Intro, VegetableValley_Text_Trainer5Defeated)
+    msgbox(VegetableValley_Text_Trainer5Post, MSGBOX_AUTOCLOSE)
+}
+
+text VegetableValley_Text_Trainer5Intro
+{
+    "Yowza! I just hooked a snazzy-looking
+    Helper! Wanna see what it can do?"
+}
+
+text VegetableValley_Text_Trainer5Defeated
+{
+    "Maybe freshly-caught isn't the best
+    when it comes to Helper battles\."
+}
+
+text VegetableValley_Text_Trainer5Post
+{
+    "I'm sure with enough love and care,
+    my Blipper will grow big and strong!"
+}
+
+script VegetableValley_EventScript_Trainer6
+{
+    trainerbattle_single(TRAINER_GRUNT_MT_PYRE_2, VegetableValley_Text_Trainer6Intro, VegetableValley_Text_Trainer6Defeated)
+    msgbox(VegetableValley_Text_Trainer6Post, MSGBOX_AUTOCLOSE)
+}
+
+text VegetableValley_Text_Trainer6Intro
+{
+    "You're planning to go into the forest?
+    I'd be careful if I were you\."
+}
+
+text VegetableValley_Text_Trainer6Defeated
+{
+    "Don't say I didn't warn you!"
+}
+
+text VegetableValley_Text_Trainer6Post
+{
+    "It may sound nice, but that forest is
+    dark and murky and easy to get lost in.
+    
+    Plus, I heard there's a scary guardian
+    in there who punishes trespassers!"
+}
+
+script VegetableValley_EventScript_TriggerLeft
+{
+    playbgm(MUS_ENCOUNTER_MAY, TRUE)
+    addobject(LOCALID_BWD_VEGETABLE)
+    applymovement(LOCALID_BWD_VEGETABLE, moves(walk_right * 8, walk_up * 2))
+    waitmovement()
+    goto(VegetableValley_EventScript_BandanaWaddleDee)
+}
+
+script VegetableValley_EventScript_TriggerRight
+{
+    playbgm(MUS_ENCOUNTER_MAY, TRUE)
+    addobject(LOCALID_BWD_VEGETABLE)
+    applymovement(LOCALID_BWD_VEGETABLE, moves(walk_faster_right, walk_right * 8, walk_up * 2))
+    waitmovement()
+    goto(VegetableValley_EventScript_BandanaWaddleDee)
+}
+
+script VegetableValley_EventScript_BandanaWaddleDee
+{
+    turnobject(LOCALID_PLAYER, DIR_SOUTH)
+    msgbox("{SPEAKER NAME_BANDANA}Looks like I caught up to you just in
+            time, Kirby!
+            
+            Check it out! I got a Brooch from the
+            Waddle Dee Arena!
+            
+            I'm really proud of my Helpers. They're
+            a cut above the rest!
+            
+            Say, now that we both have a Brooch,
+            why don't we have another battle?
+            
+            This time, I'm confident I can win!")
+    closemessage
+    switch(var(VAR_STARTER_MON)) {
+		case 0:
+			trainerbattle_no_intro(TRAINER_GRUNT_MT_PYRE_3, VegetableValley_Text_BandanaWaddleDeeDefeat)
+		case 1:
+			trainerbattle_no_intro(TRAINER_GRUNT_WEATHER_INST_4, VegetableValley_Text_BandanaWaddleDeeDefeat)
+		case 2:
+			trainerbattle_no_intro(TRAINER_GRUNT_AQUA_HIDEOUT_5, VegetableValley_Text_BandanaWaddleDeeDefeat)
+	}
+    msgbox("{SPEAKER NAME_BANDANA}Oh yeah, I almost forgot. Here, Kirby,
+            this is for you!")
+    giveitem(ITEM_ESCAPE_ROPE)
+    msgbox("{SPEAKER NAME_BANDANA}If you get lost in the forest, you can
+            use this as an emergency exit.
+            
+            Catch you later, Kirby!")
+    closemessage
+    checkobjectat(59, 9)
+    if(var(VAR_RESULT))
+    {
+        applymovement(LOCALID_BWD_VEGETABLE, moves(walk_right, walk_up * 4))
+        waitmovement()
+    }
+    else
+    {
+        applymovement(LOCALID_BWD_VEGETABLE, moves(walk_right, walk_up * 4))
+        waitmovement()
+    }
+    removeobject(LOCALID_BWD_VEGETABLE)
+    playse(SE_EXIT)
+    waitse
+    setvar(VAR_VEGETABLE_VALLEY_STATE, 1)
+    fadedefaultbgm
+    release
+}
+
+text VegetableValley_Text_BandanaWaddleDeeDefeat
+{
+    "Aww\. I thought things would be
+    different this time. Good battle, Kirby!"
+}

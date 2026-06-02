@@ -1,7 +1,19 @@
 raw `
 GreenRestArea_Mart_MapScripts::
+    map_script MAP_SCRIPT_ON_RESUME, GreenRestArea_Mart_OnResume
 	.byte 0
+
+GreenRestArea_Mart_OnResume:
+	call_if_ge VAR_LUMBERJACK_QUEST, 2, GreenRestArea_Mart_EventScript_HideLumberjack
+	end
 `
+
+script GreenRestArea_Mart_EventScript_HideLumberjack
+{
+    removeobject(LOCALID_LUMBERJACK_MART)
+    return
+}
+
 script GreenRestArea_Mart_EventScript_Clerk
 {
 	lock
@@ -42,7 +54,44 @@ script GreenRestArea_EventScript_WaddleDeeSell
 {
     lock
     faceplayer
-    msgbox("I grow crops in Vegetable Valley, then
+    if(var(VAR_LUMBERJACK_QUEST) == 1)
+    {
+        msgbox("Hm? You want to know if I live at the
+                farmhouse in Vegetable Valley?
+                
+                Why, yes I do. Can I help you?
+                
+                What's that? My partner asked you
+                to look for me?
+                
+                Oh dear! How long has it been since
+                I left? She must be worried sick!
+                
+                Thank you, my friend. No more lounging
+                around for me. I have to hurry back!")
+                closemessage()
+                checkobjectat(59, 9)
+        checkobjectat(5, 2)
+        if(var(VAR_RESULT))
+        {
+            applymovement(LOCALID_LUMBERJACK_MART, moves(walk_down, walk_left * 2, walk_down * 4))
+            waitmovement()
+        }
+        else
+        {
+            applymovement(LOCALID_LUMBERJACK_MART, moves(walk_left * 2, walk_down * 5))
+            waitmovement()
+        }
+        removeobject(LOCALID_LUMBERJACK_MART)
+        setflag(FLAG_HIDE_LUMBERJACK_MART)
+        clearflag(FLAG_HIDE_LUMBERJACK_FARMHOUSE)
+        playse(SE_EXIT)
+        waitse()
+        setvar(VAR_LUMBERJACK_QUEST, 2)
+    }
+    else
+    {
+        msgbox("I grow crops in Vegetable Valley, then
             bring them down here to sell.
             
             Those crops get used to make hearty
@@ -51,5 +100,6 @@ script GreenRestArea_EventScript_WaddleDeeSell
             After a long day of work, there's
             nothing better to refresh yourself
             with. It's nature's blessing!")
+    }
     release
 }

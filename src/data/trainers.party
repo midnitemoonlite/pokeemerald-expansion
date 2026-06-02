@@ -281,12 +281,12 @@ Double Battle: No
 AI: Check Bad Move
 
 Capiller
-Level: 5
+Level: 6
 Ability: Swarm
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Maiga
-Level: 5
+Level: 6
 Ability: Regenerator
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -301,17 +301,17 @@ Double Battle: No
 AI: Check Bad Move
 
 Twizzy
-Level: 5
+Level: 6
 Ability: Big Pecks
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Chip
-Level: 7
+Level: 6
 Ability: Fluffy
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Gaw Gaw
-Level: 5
+Level: 6
 Ability: Tough Claws
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -331,7 +331,7 @@ Ability: Reckless
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Cappy
-Level: 10
+Level: 9
 Ability: Anticipation
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -351,7 +351,7 @@ Ability: Frisk
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 Awoofy
-Level: 10
+Level: 9
 Ability: Run Away
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -366,7 +366,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Noddy @ Oran Berry
-Level: 9
+Level: 10
 Ability: Comatose
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -381,16 +381,16 @@ Double Battle: No
 AI: Basic Trainer
 
 Dupa
-Level: 11
+Level: 10
 Ability: Unnerve
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Bite
 - Growl
 - Stored Power
-- Teleport
+- Trick
 
 NESP @ Black Sludge
-Level: 11
+Level: 10
 Ability: Neuroforce
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Confusion
@@ -399,7 +399,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Imprison
 
 Sphere Doomer @ Icy Rock
-Level: 12
+Level: 11
 Ability: Forecast
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Snowscape
@@ -418,7 +418,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Dupa
-Level: 11
+Level: 10
 Ability: Unnerve
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Bite
@@ -427,7 +427,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Teleport
 
 NESP @ Black Sludge
-Level: 11
+Level: 10
 Ability: Neuroforce
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Confusion
@@ -436,7 +436,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Imprison
 
 Sphere Doomer @ Heat Rock
-Level: 12
+Level: 11
 Ability: Forecast
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Sunny Day
@@ -455,7 +455,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Dupa
-Level: 11
+Level: 10
 Ability: Unnerve
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Bite
@@ -464,7 +464,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Teleport
 
 NESP @ Black Sludge
-Level: 11
+Level: 10
 Ability: Neuroforce
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Confusion
@@ -473,7 +473,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Imprison
 
 Sphere Doomer @ Damp Rock
-Level: 12
+Level: 11
 Ability: Forecast
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Rain Dance
@@ -481,138 +481,215 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Bite
 - Psywave
 
+/* Vegetable Valley - Trainer 1 */
 === TRAINER_GRUNT_WEATHER_INST_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Waddle Dee
+Class: Black Belt
+Pic: Black Belt
 Gender: Male
-Music: Aqua
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sir Kibble
+Level: 11
+Ability: Justified
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Zubat
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Carvanha
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
+/* Vegetable Valley - Trainer 2 */
 === TRAINER_GRUNT_MUSEUM_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Waddle Dee
+Class: Youngster
+Pic: Youngster
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Needlous
+Level: 10
+Ability: Poison Point
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+Pupa
+Level: 10
+Ability: Shed Skin
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Struggle Bug
+- Infestation
+- Harden
+- String Shot
+
+/* Vegetable Valley - Trainer 3 */
 === TRAINER_GRUNT_MUSEUM_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+Name: Waddle Dee
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Leafan
+Level: 10
+Ability: Seed Sower
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Carvanha
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Beanbon
+Level: 10
+Ability: Supersweet Syrup
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+
+/* Vegetable Valley - Trainer 4 */
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
-Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt M
+Name: Waddle Dee
+Class: Hiker
+Pic: Hiker
 Gender: Male
-Music: Magma
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Blade Knight
+Level: 12
+Ability: Justified
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+/* Vegetable Valley - Trainer 5 */
 === TRAINER_GRUNT_MT_PYRE_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Waddle Dee
+Class: Fisherman
+Pic: Fisherman
 Gender: Male
-Music: Aqua
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Blipper
+Level: 12
+Ability: Water Veil
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+/* Vegetable Valley - Trainer 6 */
 === TRAINER_GRUNT_MT_PYRE_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+Name: Waddle Dee
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Awoofy
+Level: 11
+Ability: Run Away
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Pursuit
+- Snarl
+- Tackle
+- Growl
 
+Broom Hatter
+Level: 11
+Ability: Overcoat
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+/* Vegetable Valley - Bandana Waddle Dee (Lovely) */
 === TRAINER_GRUNT_MT_PYRE_3 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
-Music: Aqua
+Name: Waddle Dee
+Class: Rival
+Pic: Wally
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Poochyena
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Waddle Doo
+Level: 11
+Ability: Frisk
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Thunder Shock
+- Tackle
+- Tearful Look
+- Charge
 
-Carvanha
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mr. Anglep
+Level: 10
+Ability: Intimidate
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
+Squishy
+Level: 12
+Ability: Torrent
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Tackle
+- Leer
+- Water Gun
+- Water Sport
+
+/* Vegetable Valley - Bandana Waddle Dee (Burning Leo) */
 === TRAINER_GRUNT_WEATHER_INST_4 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
-Music: Aqua
+Name: Waddle Dee
+Class: Rival
+Pic: Wally
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Carvanha
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Waddle Doo
+Level: 11
+Ability: Frisk
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Thunder Shock
+- Tackle
+- Tearful Look
+- Charge
 
+Blipper
+Level: 10
+Ability: Tinted Lens
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Lovely
+Level: 12
+Ability: Overgrow
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bind
+- Play Nice
+- Vine Whip
+- Stun Spore
+
+/* Vegetable Valley - Bandana Waddle Dee (Squishy) */
 === TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
-Music: Aqua
+Name: Waddle Dee
+Class: Rival
+Pic: Wally
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Waddle Doo
+Level: 11
+Ability: Frisk
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Thunder Shock
+- Tackle
+- Tearful Look
+- Charge
+
+Blipper
+Level: 10
+Ability: Tinted Lens
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Burning Leo
+Level: 12
+Ability: Blaze
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Pound
+- Ember
+- Defense Curl
+- Rollout
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
 Name: GRUNT

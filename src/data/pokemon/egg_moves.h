@@ -8000,4 +8000,129 @@ static const u16 sSlushyEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 }; 
 
+static const u16 sComoEggMoveLearnset[] = {
+    MOVE_BOUNCE,
+    MOVE_FEINT_ATTACK,
+    MOVE_PSYCHO_SHIFT,
+    MOVE_RAGE_POWDER,
+    MOVE_THUNDER_FANG,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sGrizzoEggMoveLearnset[] = {
+    MOVE_BODY_SLAM,
+    MOVE_BULLDOZE,
+    MOVE_FOCUS_ENERGY,
+    MOVE_HEADBUTT,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sOohrooEggMoveLearnset[] = {
+    MOVE_BULK_UP,
+    MOVE_EXTRASENSORY,
+    MOVE_FOCUS_PUNCH,
+    MOVE_HAMMER_ARM,
+    MOVE_IRON_HEAD,
+    MOVE_RAGE_FIST,
+    MOVE_TELEPORT,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sGoriathEggMoveLearnset[] = {
+    MOVE_AVALANCHE,
+    MOVE_BULK_UP,
+    MOVE_EXTRASENSORY,
+    MOVE_FOCUS_PUNCH,
+    MOVE_HAMMER_ARM,
+    MOVE_ICE_HAMMER,
+    MOVE_IRON_HEAD,
+    MOVE_RAGE_FIST,
+    MOVE_SURGING_STRIKES,
+    MOVE_TELEPORT,
+    MOVE_WICKED_BLOW,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sNESPEggMoveLearnset[] = {
+    MOVE_COSMIC_POWER,
+    MOVE_IMPRISON,
+    MOVE_MAGIC_ROOM,
+    MOVE_WONDER_ROOM,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sVenoggEggMoveLearnset[] = {
+    MOVE_HYDRO_PUMP,
+    MOVE_RECYCLE,
+    MOVE_SCREECH,
+    MOVE_SLACK_OFF,
+    MOVE_WATER_PULSE,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sBouncyEggMoveLearnset[] = {
+    MOVE_DECORATE,
+    MOVE_ENDURE,
+    MOVE_FLYING_PRESS,
+    MOVE_SAFEGUARD,
+    MOVE_SWEET_KISS,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sFishboneEggMoveLearnset[] = {
+    MOVE_AQUA_CUTTER,
+    MOVE_AQUA_RING,
+    MOVE_AQUA_TAIL,
+    MOVE_ENDEAVOR,
+    MOVE_FILLET_AWAY,
+    MOVE_PAIN_SPLIT,
+    MOVE_TRIPLE_ARROWS,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sGalboEggMoveLearnset[] = {
+    MOVE_OUTRAGE,
+    MOVE_RAGE,
+    MOVE_SPIT_UP,
+    MOVE_STOCKPILE,
+    MOVE_SWALLOW,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sWaterGalborosEggMoveLearnset[] = {
+    MOVE_FISHIOUS_REND,
+    MOVE_FLIP_TURN,
+    MOVE_OUTRAGE,
+    MOVE_RAGE,
+    MOVE_SPIT_UP,
+    MOVE_STOCKPILE,
+    MOVE_SWALLOW,
+    MOVE_YAWN,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sFlameGalborosEggMoveLearnset[] = {
+    MOVE_ERUPTION,
+    MOVE_NOBLE_ROAR,
+    MOVE_OUTRAGE,
+    MOVE_RAGE,
+    MOVE_SPIT_UP,
+    MOVE_STOCKPILE,
+    MOVE_SWALLOW,
+    MOVE_YAWN,
+    MOVE_UNAVAILABLE,
+}; 
+
+static const u16 sMiasmorosEggMoveLearnset[] = {
+    MOVE_CRUNCH,
+    MOVE_NOBLE_ROAR,
+    MOVE_OUTRAGE,
+    MOVE_RAGE,
+    MOVE_SPIT_UP,
+    MOVE_STOCKPILE,
+    MOVE_SWALLOW,
+    MOVE_VENOM_DRENCH,
+    MOVE_UNAVAILABLE,
+}; 
+
 // Precipice Blades FOR Whispy Woods

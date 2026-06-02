@@ -37147,6 +37147,160 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_VEGETABLE_VALLEY",
+          "base_label": "gVegetableValley",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_NEEDLOUS"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_POPPY_BROS_JR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 11,
+                "species": "SPECIES_NEEDLOUS"
+              },
+              {
+                "min_level": 9,
+                "max_level": 10,
+                "species": "SPECIES_CAPPY"
+              },
+              {
+                "min_level": 9,
+                "max_level": 10,
+                "species": "SPECIES_SIR_KIBBLE"
+              },
+              {
+                "min_level": 9,
+                "max_level": 10,
+                "species": "SPECIES_BLADE_KNIGHT"
+              },
+              {
+                "min_level": 10,
+                "max_level": 11,
+                "species": "SPECIES_SIR_KIBBLE"
+              },
+              {
+                "min_level": 10,
+                "max_level": 11,
+                "species": "SPECIES_BLADE_KNIGHT"
+              },
+              {
+                "min_level": 9,
+                "max_level": 11,
+                "species": "SPECIES_POPPY_BROS_JR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_BRONTO_BURT"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_POPPY_BROS_JR"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_UFO"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 2,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 15,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 10,
+                "max_level": 20,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_MAMATEE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 25,
+                "species": "SPECIES_BLIPPER"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 9,
+                "max_level": 10,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 10,
+                "max_level": 11,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 12,
+                "max_level": 12,
+                "species": "SPECIES_BLIPPER"
+              }
+            ]
+          }
         }
       ]
     },

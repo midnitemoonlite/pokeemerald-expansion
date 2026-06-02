@@ -23,15 +23,15 @@
 #define TRAINER_GRUNT_RUSTURF_TUNNEL         16 // Waddle Dee Arena - Magolor (Lovely)
 #define TRAINER_GRUNT_WEATHER_INST_1         17 // Waddle Dee Arena - Magolor (Burning Leo)
 #define TRAINER_GRUNT_WEATHER_INST_2         18 // Waddle Dee Arena - Magolor (Squishy)
-#define TRAINER_GRUNT_WEATHER_INST_3         19
-#define TRAINER_GRUNT_MUSEUM_1               20
-#define TRAINER_GRUNT_MUSEUM_2               21
-#define TRAINER_GRUNT_SPACE_CENTER_1         22
-#define TRAINER_GRUNT_MT_PYRE_1              23
-#define TRAINER_GRUNT_MT_PYRE_2              24
-#define TRAINER_GRUNT_MT_PYRE_3              25
-#define TRAINER_GRUNT_WEATHER_INST_4         26
-#define TRAINER_GRUNT_AQUA_HIDEOUT_5         27
+#define TRAINER_GRUNT_WEATHER_INST_3         19 // Vegetable Valley - Trainer 1
+#define TRAINER_GRUNT_MUSEUM_1               20 // Vegetable Valley - Trainer 2
+#define TRAINER_GRUNT_MUSEUM_2               21 // Vegetable Valley - Trainer 3
+#define TRAINER_GRUNT_SPACE_CENTER_1         22 // Vegetable Valley - Trainer 4
+#define TRAINER_GRUNT_MT_PYRE_1              23 // Vegetable Valley - Trainer 5
+#define TRAINER_GRUNT_MT_PYRE_2              24 // Vegetable Valley - Trainer 6
+#define TRAINER_GRUNT_MT_PYRE_3              25 // Vegetable Valley - Bandana Waddle Dee (Lovely)
+#define TRAINER_GRUNT_WEATHER_INST_4         26 // Vegetable Valley - Bandana Waddle Dee (Burning Leo)
+#define TRAINER_GRUNT_AQUA_HIDEOUT_5         27 // Vegetable Valley - Bandana Waddle Dee (Squishy)
 #define TRAINER_GRUNT_AQUA_HIDEOUT_6         28
 #define TRAINER_FREDRICK                     29
 #define TRAINER_MATT                         30

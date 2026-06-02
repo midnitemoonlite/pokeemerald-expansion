@@ -91,42 +91,36 @@ script PrismPlains_EventScript_Trainer1
 {
     trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_2, PrismPlains_Text_Trainer1Intro, PrismPlains_Text_Trainer1Defeated)
     msgbox(PrismPlains_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
-
 }
 
 script PrismPlains_EventScript_Trainer2
 {
     trainerbattle_single(TRAINER_GRUNT_SEAFLOOR_CAVERN_3, PrismPlains_Text_Trainer2Intro, PrismPlains_Text_Trainer2Defeated)
     msgbox(PrismPlains_Text_Trainer2Post, MSGBOX_AUTOCLOSE)
-
 }
 
 script PrismPlains_EventScript_Trainer3
 {
     trainerbattle_single(TRAINER_GABRIELLE_1, PrismPlains_Text_Trainer3Intro, PrismPlains_Text_Trainer3Defeated)
     msgbox(PrismPlains_Text_Trainer3Post, MSGBOX_AUTOCLOSE)
-
 }
 
 script PrismPlains_EventScript_Trainer4
 {
     trainerbattle_single(TRAINER_GRUNT_PETALBURG_WOODS, PrismPlains_Text_Trainer4Intro, PrismPlains_Text_Trainer4Defeated)
     msgbox(PrismPlains_Text_Trainer4Post, MSGBOX_AUTOCLOSE)
-
 }
 
 script PrismPlains_EventScript_Trainer5
 {
     trainerbattle_single(TRAINER_MARCEL, PrismPlains_Text_Trainer5Intro, PrismPlains_Text_Trainer5Defeated)
     msgbox(PrismPlains_Text_Trainer5Post, MSGBOX_AUTOCLOSE)
-
 }
 
 script PrismPlains_EventScript_Trainer6
 {
     trainerbattle_single(TRAINER_ALBERTO, PrismPlains_Text_Trainer6Intro, PrismPlains_Text_Trainer6Defeated)
     msgbox(PrismPlains_Text_Trainer6Post, MSGBOX_AUTOCLOSE)
-
 }
 
 text PrismPlains_Text_Trainer1Intro

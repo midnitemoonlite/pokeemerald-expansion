@@ -1650,6 +1650,10 @@
     {
       "id": "MAPSEC_WADDLE_DEE_ARENA",
       "name": "WADDLE DEE ARENA"
+    },
+    {
+      "id": "MAPSEC_VEGETABLE_VALLEY",
+      "name": "VEGETABLE VALLEY"
     }
   ]
 }

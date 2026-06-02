@@ -108,41 +108,41 @@ PrismPlains_EventScript_Trainer1::
 
 
 PrismPlains_EventScript_Trainer2::
-# 99 "data/maps/PrismPlains/scripts.pory"
+# 98 "data/maps/PrismPlains/scripts.pory"
 	trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_3, PrismPlains_Text_Trainer2Intro, PrismPlains_Text_Trainer2Defeated
-# 100 "data/maps/PrismPlains/scripts.pory"
+# 99 "data/maps/PrismPlains/scripts.pory"
 	msgbox PrismPlains_Text_Trainer2Post, MSGBOX_AUTOCLOSE
 	return
 
 
 PrismPlains_EventScript_Trainer3::
-# 106 "data/maps/PrismPlains/scripts.pory"
+# 104 "data/maps/PrismPlains/scripts.pory"
 	trainerbattle_single TRAINER_GABRIELLE_1, PrismPlains_Text_Trainer3Intro, PrismPlains_Text_Trainer3Defeated
-# 107 "data/maps/PrismPlains/scripts.pory"
+# 105 "data/maps/PrismPlains/scripts.pory"
 	msgbox PrismPlains_Text_Trainer3Post, MSGBOX_AUTOCLOSE
 	return
 
 
 PrismPlains_EventScript_Trainer4::
-# 113 "data/maps/PrismPlains/scripts.pory"
+# 110 "data/maps/PrismPlains/scripts.pory"
 	trainerbattle_single TRAINER_GRUNT_PETALBURG_WOODS, PrismPlains_Text_Trainer4Intro, PrismPlains_Text_Trainer4Defeated
-# 114 "data/maps/PrismPlains/scripts.pory"
+# 111 "data/maps/PrismPlains/scripts.pory"
 	msgbox PrismPlains_Text_Trainer4Post, MSGBOX_AUTOCLOSE
 	return
 
 
 PrismPlains_EventScript_Trainer5::
-# 120 "data/maps/PrismPlains/scripts.pory"
+# 116 "data/maps/PrismPlains/scripts.pory"
 	trainerbattle_single TRAINER_MARCEL, PrismPlains_Text_Trainer5Intro, PrismPlains_Text_Trainer5Defeated
-# 121 "data/maps/PrismPlains/scripts.pory"
+# 117 "data/maps/PrismPlains/scripts.pory"
 	msgbox PrismPlains_Text_Trainer5Post, MSGBOX_AUTOCLOSE
 	return
 
 
 PrismPlains_EventScript_Trainer6::
-# 127 "data/maps/PrismPlains/scripts.pory"
+# 122 "data/maps/PrismPlains/scripts.pory"
 	trainerbattle_single TRAINER_ALBERTO, PrismPlains_Text_Trainer6Intro, PrismPlains_Text_Trainer6Defeated
-# 128 "data/maps/PrismPlains/scripts.pory"
+# 123 "data/maps/PrismPlains/scripts.pory"
 	msgbox PrismPlains_Text_Trainer6Post, MSGBOX_AUTOCLOSE
 	return
 
@@ -202,86 +202,86 @@ PrismPlains_EventScript_EnteringTown2_Text_0:
 	.string "Be on your best behavior, okay?$"
 
 PrismPlains_Text_Trainer1Intro::
-# 132 "data/maps/PrismPlains/scripts.pory"
+# 126 "data/maps/PrismPlains/scripts.pory"
 	.string "Alright! It's time for my very first\n"
 	.string "battle of Dedede's Royal Royale!$"
 
 PrismPlains_Text_Trainer1Defeated::
-# 138 "data/maps/PrismPlains/scripts.pory"
+# 132 "data/maps/PrismPlains/scripts.pory"
 	.string "Maybe making my first battle against\n"
 	.string "Kirby was bound to end like this…$"
 
 PrismPlains_Text_Trainer1Post::
-# 144 "data/maps/PrismPlains/scripts.pory"
+# 138 "data/maps/PrismPlains/scripts.pory"
 	.string "Oh well, there's no shame in losing.\n"
 	.string "You did great, Kirby!$"
 
 PrismPlains_Text_Trainer2Intro::
-# 150 "data/maps/PrismPlains/scripts.pory"
+# 144 "data/maps/PrismPlains/scripts.pory"
 	.string "A battle on a bridge!\n"
 	.string "Doesn't it sound exciting?$"
 
 PrismPlains_Text_Trainer2Defeated::
-# 156 "data/maps/PrismPlains/scripts.pory"
+# 150 "data/maps/PrismPlains/scripts.pory"
 	.string "Whoa! I almost fell off!$"
 
 PrismPlains_Text_Trainer2Post::
-# 161 "data/maps/PrismPlains/scripts.pory"
+# 155 "data/maps/PrismPlains/scripts.pory"
 	.string "Don't worry! Even if I did fall, my\n"
 	.string "parasol would keep me safe!$"
 
 PrismPlains_Text_Trainer3Intro::
-# 167 "data/maps/PrismPlains/scripts.pory"
+# 161 "data/maps/PrismPlains/scripts.pory"
 	.string "Are you also looking for the Arenas?\n"
 	.string "How about a quick battle first?$"
 
 PrismPlains_Text_Trainer3Defeated::
-# 173 "data/maps/PrismPlains/scripts.pory"
+# 167 "data/maps/PrismPlains/scripts.pory"
 	.string "Wow, you've got a strong Helper there!$"
 
 PrismPlains_Text_Trainer3Post::
-# 178 "data/maps/PrismPlains/scripts.pory"
+# 172 "data/maps/PrismPlains/scripts.pory"
 	.string "How can I make my Helper stronger?\n"
 	.string "Maybe I can teach them new moves…$"
 
 PrismPlains_Text_Trainer4Intro::
-# 184 "data/maps/PrismPlains/scripts.pory"
+# 178 "data/maps/PrismPlains/scripts.pory"
 	.string "I've got a bunch of Helpers already!\n"
 	.string "I can win this battle easily!$"
 
 PrismPlains_Text_Trainer4Defeated::
-# 190 "data/maps/PrismPlains/scripts.pory"
+# 184 "data/maps/PrismPlains/scripts.pory"
 	.string "Whaaaat? That didn't work?$"
 
 PrismPlains_Text_Trainer4Post::
-# 195 "data/maps/PrismPlains/scripts.pory"
+# 189 "data/maps/PrismPlains/scripts.pory"
 	.string "I understand my weakness now…\n"
 	.string "I need to catch MORE Beanbons!$"
 
 PrismPlains_Text_Trainer5Intro::
-# 201 "data/maps/PrismPlains/scripts.pory"
+# 195 "data/maps/PrismPlains/scripts.pory"
 	.string "Surprise!$"
 
 PrismPlains_Text_Trainer5Defeated::
-# 206 "data/maps/PrismPlains/scripts.pory"
+# 200 "data/maps/PrismPlains/scripts.pory"
 	.string "Did I shock you?$"
 
 PrismPlains_Text_Trainer5Post::
-# 211 "data/maps/PrismPlains/scripts.pory"
+# 205 "data/maps/PrismPlains/scripts.pory"
 	.string "The hilly terrain can make it hard to\n"
 	.string "see where you're walking sometimes.\l"
 	.string "It's the perfect place to hide!$"
 
 PrismPlains_Text_Trainer6Intro::
-# 218 "data/maps/PrismPlains/scripts.pory"
+# 212 "data/maps/PrismPlains/scripts.pory"
 	.string "Hup, hup! Hi, Kirby! Are you up for a\n"
 	.string "Helper battle?$"
 
 PrismPlains_Text_Trainer6Defeated::
-# 224 "data/maps/PrismPlains/scripts.pory"
+# 218 "data/maps/PrismPlains/scripts.pory"
 	.string "Hup, hup… stumble… you got me!$"
 
 PrismPlains_Text_Trainer6Post::
-# 229 "data/maps/PrismPlains/scripts.pory"
+# 223 "data/maps/PrismPlains/scripts.pory"
 	.string "Jogging up and down these hills is more\n"
 	.string "exciting than ever now. Hup, hup...!$"

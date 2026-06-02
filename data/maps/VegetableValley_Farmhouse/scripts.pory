@@ -1,0 +1,118 @@
+raw `
+VegetableValley_Farmhouse_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, VegetableValley_Farmhouse_OnTransition
+	.byte 0
+
+VegetableValley_Farmhouse_OnTransition:
+	call_if_le VAR_LUMBERJACK_QUEST, 1, VegetableValley_Farmhouse_EventScript_HideLumberjack
+	end
+`
+
+script VegetableValley_Farmhouse_EventScript_HideLumberjack
+{
+    setflag(FLAG_HIDE_LUMBERJACK_FARMHOUSE)
+    return
+}
+
+script VegetableValley_Farmhouse_EventScript_Camper
+{
+    lock
+    faceplayer
+    if(var(VAR_LUMBERJACK_QUEST) == 0)
+    {
+        msgbox("Oh? You came here all the way from
+            Green Greens?
+            
+            Hm\. this might be a long shot, but did
+            you see a lumberjack on your way here?
+
+            He went off to deliver our latest
+            haul of crops a while ago, but I'm
+            starting to get worried about him\.
+            
+            If you happen to see him, please tell
+            him to hurry on home soon!")
+            setvar(VAR_LUMBERJACK_QUEST, 1)
+    }
+    elif(var(VAR_LUMBERJACK_QUEST) == 1)
+    {
+        msgbox("My partner\. his trademark item is a
+                feathered green cap.
+                
+                If you've seen anyone who looks like
+                that, please check to see if it's him!")
+    }
+    elif(var(VAR_LUMBERJACK_QUEST) == 2)
+    {
+        msgbox("Oh, thank you so much! I'm so happy
+                now that my partner is back home!
+                
+                I don't know how else to express
+                my gratitude\. oh, here, maybe this?")
+        giveitem(ITEM_CHARCOAL)
+        msgbox("It looks like you're taking part in that
+                royale that's the talk of the town.
+                
+                This fire-ready wood might be a good
+                fit for some of your helpers!")
+        setvar(VAR_LUMBERJACK_QUEST, 3)
+    }
+    elif(var(VAR_LUMBERJACK_QUEST) == 3)
+    {
+        msgbox("Our family lives a cozy life here,
+                collecting wood and growing crops.
+                
+                Nature has given us so much, so we do
+                our part to take care of it in turn.")
+    }
+    release
+}
+
+script VegetableValley_Farmhouse_EventScript_Lumberjack
+{
+    lock
+    faceplayer
+    msgbox("Hey there! Sorry to have caused you
+            so much trouble.
+            
+            Looks like I got a little carried away
+            enjoying the fruits of my labor\.
+            
+            But it's great to be back! I'm raring
+            to get to work again!")
+    release
+}
+
+script VegetableValley_Farmhouse_EventScript_Lass
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_PLUCK_TM))
+    {
+        msgbox("I've heard some pretty nasty things
+                about the guardian of the forest\.
+                
+                But I've never run into trouble.
+                Do you know why?
+                
+                Because I make sure not to take too
+                much, and always say thank you after!")
+    }
+    if(!flag(FLAG_RECEIVED_PLUCK_TM))
+    {
+        msgbox("I like to go picking for apples in
+                Fruity Forest!
+                
+                Hey, would you and your Helpers like
+                to go picking for fruit too?
+                Maybe you can use this!")
+        giveitem(ITEM_TM84)
+        msgbox("This fell into my last basket, but I
+                don't have any Helpers.
+                
+                I hope you and your Helpers have fun
+                picking all sorts of things!")
+        setflag(FLAG_RECEIVED_PLUCK_TM)
+    }
+    release
+}

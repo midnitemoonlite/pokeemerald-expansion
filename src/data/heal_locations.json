@@ -372,7 +372,7 @@
       "id": "HEAL_LOCATION_WADDLE_DEE_TOWN",
       "map": "MAP_WADDLE_DEE_TOWN",
       "x": 24,
-      "y": 39,
+      "y": 45,
       "respawn_map": "MAP_WADDLE_DEE_TOWN_CENTER",
       "respawn_npc": "LOCALID_WADDLE_DEE_TOWN_NURSE"
     }

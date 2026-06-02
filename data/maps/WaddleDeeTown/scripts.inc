@@ -33,57 +33,57 @@ WaddleDeeTown_OnLoad:
 
 WaddleDeeTown_EventScript_Avalanche::
 # 21 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 6, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 6, 35, METATILE_Rustboro_Blockade, TRUE
 # 22 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 7, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 7, 35, METATILE_Rustboro_Blockade, TRUE
 # 23 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 8, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 8, 35, METATILE_Rustboro_Blockade, TRUE
 # 24 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 9, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 9, 35, METATILE_Rustboro_Blockade, TRUE
 # 25 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 10, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 10, 35, METATILE_Rustboro_Blockade, TRUE
 # 26 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 11, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 11, 35, METATILE_Rustboro_Blockade, TRUE
 # 27 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 12, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 12, 35, METATILE_Rustboro_Blockade, TRUE
 # 28 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 13, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 13, 35, METATILE_Rustboro_Blockade, TRUE
 # 29 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 14, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 14, 35, METATILE_Rustboro_Blockade, TRUE
 # 30 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 15, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 15, 35, METATILE_Rustboro_Blockade, TRUE
 # 31 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 16, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 16, 35, METATILE_Rustboro_Blockade, TRUE
 # 32 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 17, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 17, 35, METATILE_Rustboro_Blockade, TRUE
 # 33 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 18, 29, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 18, 35, METATILE_Rustboro_Blockade, TRUE
 # 34 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 41, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 41, 24, METATILE_Rustboro_Blockade, TRUE
 # 35 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 42, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 42, 24, METATILE_Rustboro_Blockade, TRUE
 # 36 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 43, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 43, 24, METATILE_Rustboro_Blockade, TRUE
 # 37 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 44, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 44, 24, METATILE_Rustboro_Blockade, TRUE
 # 38 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 45, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 45, 24, METATILE_Rustboro_Blockade, TRUE
 # 39 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 46, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 46, 24, METATILE_Rustboro_Blockade, TRUE
 # 40 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 47, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 47, 24, METATILE_Rustboro_Blockade, TRUE
 # 41 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 48, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 48, 24, METATILE_Rustboro_Blockade, TRUE
 # 42 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 49, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 49, 24, METATILE_Rustboro_Blockade, TRUE
 # 43 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 50, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 50, 24, METATILE_Rustboro_Blockade, TRUE
 # 44 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 51, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 51, 24, METATILE_Rustboro_Blockade, TRUE
 # 45 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 52, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 52, 24, METATILE_Rustboro_Blockade, TRUE
 # 46 "data/maps/WaddleDeeTown/scripts.pory"
-	setmetatile 53, 18, METATILE_Rustboro_Blockade, TRUE
+	setmetatile 53, 24, METATILE_Rustboro_Blockade, TRUE
 	return
 
 
@@ -91,14 +91,14 @@ WaddleDeeTown_EventScript_LabIsOpen::
 # 52 "data/maps/WaddleDeeTown/scripts.pory"
 	lockall
 # 53 "data/maps/WaddleDeeTown/scripts.pory"
-	checkobjectat 29, 28
+	checkobjectat 29, 34
 # 54 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne WaddleDeeTown_EventScript_LabIsOpen_2
 # 61 "data/maps/WaddleDeeTown/scripts.pory"
 	addobject LOCALID_TOWN_BWD
 # 62 "data/maps/WaddleDeeTown/scripts.pory"
-	setobjectxy LOCALID_TOWN_BWD, 30, 35
+	setobjectxy LOCALID_TOWN_BWD, 30, 41
 WaddleDeeTown_EventScript_LabIsOpen_1:
 # 64 "data/maps/WaddleDeeTown/scripts.pory"
 	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_LabIsOpen_Movement_0
@@ -134,7 +134,7 @@ WaddleDeeTown_EventScript_LabIsOpen_2:
 # 56 "data/maps/WaddleDeeTown/scripts.pory"
 	addobject LOCALID_TOWN_BWD
 # 57 "data/maps/WaddleDeeTown/scripts.pory"
-	setobjectxy LOCALID_TOWN_BWD, 29, 35
+	setobjectxy LOCALID_TOWN_BWD, 29, 41
 	goto WaddleDeeTown_EventScript_LabIsOpen_1
 
 

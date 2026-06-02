@@ -9398,7 +9398,7 @@
       "id": "LAYOUT_WADDLE_DEE_TOWN",
       "name": "WaddleDeeTown_Layout",
       "width": 61,
-      "height": 52,
+      "height": 58,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/WaddleDeeTown/border.bin",
@@ -9463,6 +9463,26 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/WaddleDeeTown_Lab/border.bin",
       "blockdata_filepath": "data/layouts/WaddleDeeTown_Lab/map.bin"
+    },
+    {
+      "id": "LAYOUT_VEGETABLE_VALLEY",
+      "name": "VegetableValley_Layout",
+      "width": 70,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/VegetableValley/border.bin",
+      "blockdata_filepath": "data/layouts/VegetableValley/map.bin"
+    },
+    {
+      "id": "LAYOUT_VEGETABLE_VALLEY_FARMHOUSE",
+      "name": "VegetableValley_Farmhouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/VegetableValley_Farmhouse/border.bin",
+      "blockdata_filepath": "data/layouts/VegetableValley_Farmhouse/map.bin"
     }
   ]
 }
