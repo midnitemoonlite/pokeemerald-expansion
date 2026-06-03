@@ -104,14 +104,14 @@
     F(CHARM)
 
 #define FOREACH_HM(F) \
-    F(CUT) \
-    F(FLY) \
-    F(WAVE_CRASH) \
-    F(STRENGTH) \
-    F(FLASH) \
-    F(SUBMISSION) \
-    F(WATERFALL) \
-    F(DIVE)
+    F(ZIPPY_ZAP) \
+    F(SPLISHY_SPLASH) \
+    F(FLOATY_FALL) \
+    F(PIKA_PAPOW) \
+    F(BOUNCY_BUBBLE) \
+    F(BUZZY_BUZZ) \
+    F(SIZZLY_SLIDE) \
+    F(GLITZY_GLOW)
 
 #define FOREACH_TMHM(F) \
     FOREACH_TM(F) \

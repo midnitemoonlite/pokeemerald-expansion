@@ -247,6 +247,7 @@ script VegetableValley_EventScript_BandanaWaddleDee
     playse(SE_EXIT)
     waitse
     setvar(VAR_VEGETABLE_VALLEY_STATE, 1)
+    savebgm(MUS_DUMMY)
     fadedefaultbgm
     release
 }

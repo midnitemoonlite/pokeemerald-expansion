@@ -2587,7 +2587,7 @@ SootopolisCity_EventScript_GiveWaterfall::
 # 1294 "data/maps/SootopolisCity/scripts.pory"
 	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
 # 1295 "data/maps/SootopolisCity/scripts.pory"
-	giveitem ITEM_HM_WATERFALL
+	giveitem ITEM_HM01
 # 1296 "data/maps/SootopolisCity/scripts.pory"
 	setflag FLAG_RECEIVED_HM_WATERFALL
 # 1297 "data/maps/SootopolisCity/scripts.pory"

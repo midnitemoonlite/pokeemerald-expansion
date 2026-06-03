@@ -32,14 +32,14 @@
 #define TRAINER_GRUNT_MT_PYRE_3              25 // Vegetable Valley - Bandana Waddle Dee (Lovely)
 #define TRAINER_GRUNT_WEATHER_INST_4         26 // Vegetable Valley - Bandana Waddle Dee (Burning Leo)
 #define TRAINER_GRUNT_AQUA_HIDEOUT_5         27 // Vegetable Valley - Bandana Waddle Dee (Squishy)
-#define TRAINER_GRUNT_AQUA_HIDEOUT_6         28
-#define TRAINER_FREDRICK                     29
-#define TRAINER_MATT                         30
-#define TRAINER_ZANDER                       31
-#define TRAINER_SHELLY_WEATHER_INSTITUTE     32
-#define TRAINER_SHELLY_SEAFLOOR_CAVERN       33
-#define TRAINER_ARCHIE                       34
-#define TRAINER_LEAH                         35
+#define TRAINER_GRUNT_AQUA_HIDEOUT_6         28 // Fruity Forest - Trainer 1
+#define TRAINER_FREDRICK                     29 // Fruity Forest - Trainer 2
+#define TRAINER_MATT                         30 // Fruity Forest - Trainer 3
+#define TRAINER_ZANDER                       31 // Fruity Forest - Trainer 4
+#define TRAINER_SHELLY_WEATHER_INSTITUTE     32 // Fruity Forest - Trainer 5
+#define TRAINER_SHELLY_SEAFLOOR_CAVERN       33 // Fruity Forest - Trainer 6
+#define TRAINER_ARCHIE                       34 // Fruity Forest - Trainer 7
+#define TRAINER_LEAH                         35 // Fruity Forest - Trainer 8
 #define TRAINER_DAISY                        36
 #define TRAINER_ROSE_1                       37
 #define TRAINER_FELIX                        38

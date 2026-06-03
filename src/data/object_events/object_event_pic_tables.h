@@ -70,11 +70,11 @@ static const struct SpriteFrameImage sPicTable_Girl2[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_LittleBoy[] = {
-    overworld_ascending_frames(gObjectEventPic_LittleBoy, 2, 2),
+    overworld_ascending_frames(gObjectEventPic_LittleBoy, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_LittleGirl[] = {
-    overworld_ascending_frames(gObjectEventPic_LittleGirl, 2, 2),
+    overworld_ascending_frames(gObjectEventPic_LittleGirl, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Boy3[] = {

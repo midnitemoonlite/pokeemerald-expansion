@@ -17,7 +17,7 @@ RustboroCity_CuttersHouse_EventScript_Cutter::
 # 9 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	msgbox RustboroCity_CuttersHouse_Text_YouCanPutThisHMToGoodUse, MSGBOX_DEFAULT
 # 10 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
-	giveitem ITEM_HM_CUT
+	giveitem ITEM_HM01
 # 11 "data/maps/RustboroCity_CuttersHouse/scripts.pory"
 	setflag FLAG_RECEIVED_HM_CUT
 # 12 "data/maps/RustboroCity_CuttersHouse/scripts.pory"

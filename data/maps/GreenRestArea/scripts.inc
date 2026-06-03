@@ -232,8 +232,10 @@ GreenRestArea_EventScript_RivalBattle_1:
 # 169 "data/maps/GreenRestArea/scripts.pory"
 	setvar VAR_GREEN_REST_AREA_STATE, 1
 # 170 "data/maps/GreenRestArea/scripts.pory"
-	fadedefaultbgm
+	savebgm MUS_DUMMY
 # 171 "data/maps/GreenRestArea/scripts.pory"
+	fadedefaultbgm
+# 172 "data/maps/GreenRestArea/scripts.pory"
 	release
 	return
 
@@ -348,6 +350,6 @@ GreenRestArea_BandanaDeeIntro::
 	.string "{SPEAKER NAME_BANDANA}Kirby!$"
 
 GreenRestArea_Text_BandanaWaddleDeeDefeat::
-# 174 "data/maps/GreenRestArea/scripts.pory"
+# 175 "data/maps/GreenRestArea/scripts.pory"
 	.string "Even though we trained, I guess it's\n"
 	.string "not that simple…$"

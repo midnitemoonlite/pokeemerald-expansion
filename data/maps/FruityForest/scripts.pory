@@ -1,0 +1,449 @@
+raw `
+FruityForest_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, FruityForest_OnFrame
+	.byte 0
+
+FruityForest_OnFrame::
+	map_script_2 VAR_FRUITY_FOREST_STATE, 0, FruityForest_EventScript_FirstEntrance
+	.2byte 0
+`
+script FruityForest_EventScript_Trainer1
+{
+    trainerbattle_single(TRAINER_GRUNT_AQUA_HIDEOUT_6, FruityForest_Text_Trainer1Intro, FruityForest_Text_Trainer1Defeated)
+    msgbox(FruityForest_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+}
+
+text FruityForest_Text_Trainer1Intro
+{
+    "You're wondering why I would bring a
+    parasol to a shaded place like this?"
+}
+
+text FruityForest_Text_Trainer1Defeated
+{
+    "Tee hee! Okay, I'll tell you my secret!"
+}
+
+text FruityForest_Text_Trainer1Post
+{
+    "You see, Capillers are known to drop
+    from trees and startle travelers.
+    
+    My trusty parasol makes sure they
+    don't land on top of me!"
+}
+
+script FruityForest_EventScript_Trainer2
+{
+    trainerbattle_single(TRAINER_FREDRICK, FruityForest_Text_Trainer2Intro, FruityForest_Text_Trainer2Defeated)
+    msgbox(FruityForest_Text_Trainer2Post, MSGBOX_AUTOCLOSE)
+}
+
+text FruityForest_Text_Trainer2Intro
+{
+    "Nomf nomf\. hrmf? Fyou wanf a baffle?"
+}
+
+text FruityForest_Text_Trainer2Defeated
+{
+    "Buf I'm buffy eafing\. nomf chomf\."
+}
+
+text FruityForest_Text_Trainer2Post
+{
+    "Gulp\. ahh, that was delicious!
+    Nothing like a freshly picked apple!"
+}
+
+script FruityForest_EventScript_Trainer3
+{
+    trainerbattle_single(TRAINER_MATT, FruityForest_Text_Trainer3Intro, FruityForest_Text_Trainer3Defeated)
+    msgbox(FruityForest_Text_Trainer3Post, MSGBOX_AUTOCLOSE)
+}
+
+text FruityForest_Text_Trainer3Intro
+{
+    "If I beat you in a Helper battle, do
+    you think you could tell me the way out?"
+}
+
+text FruityForest_Text_Trainer3Defeated
+{
+    "I'm gonna be late\."
+}
+
+text FruityForest_Text_Trainer3Post
+{
+    "I got lost in the forest while trying
+    to make a delivery.
+    
+    I feel like I must be getting close to
+    the exit, though\."
+}
+
+script FruityForest_EventScript_Trainer4
+{
+    trainerbattle_single(TRAINER_ZANDER, FruityForest_Text_Trainer4Intro, FruityForest_Text_Trainer4Defeated)
+    msgbox(FruityForest_Text_Trainer4Post, MSGBOX_AUTOCLOSE)
+}
+
+text FruityForest_Text_Trainer4Intro
+{
+    "Well, would you look at that! Seems like
+    I've run into a hungry customer!"
+}
+
+text FruityForest_Text_Trainer4Defeated
+{
+    "You've got a real appetite for Helper
+    battles, don't you?"
+}
+
+text FruityForest_Text_Trainer4Post
+{
+    "I'm picking fresh forest ingredients
+    while the Waddle Dee Café is closed.
+    
+    It should reopen soon\. I hope you'll
+    stop by Waddle Dee Town when it does!"
+}
+
+script FruityForest_EventScript_Trainer5
+{
+    trainerbattle_single(TRAINER_SHELLY_WEATHER_INSTITUTE, FruityForest_Text_Trainer5Intro, FruityForest_Text_Trainer5Defeated)
+    msgbox(FruityForest_Text_Trainer5Post, MSGBOX_AUTOCLOSE)
+}
+
+text FruityForest_Text_Trainer5Intro
+{
+    "Bug-type Helpers are my favorite!
+    Let me show you why!"
+}
+
+text FruityForest_Text_Trainer5Defeated
+{
+    "My beautiful bugs\.!"
+}
+
+text FruityForest_Text_Trainer5Post
+{
+    "None of my friends understand
+    Bug-types the way I do\.
+    
+    If only I knew someone who loved
+    Bug-types as much as me!"
+}
+
+script FruityForest_EventScript_Trainer6
+{
+    trainerbattle_single(TRAINER_SHELLY_SEAFLOOR_CAVERN, FruityForest_Text_Trainer6Intro, FruityForest_Text_Trainer6Defeated)
+    msgbox(FruityForest_Text_Trainer6Post, MSGBOX_AUTOCLOSE)
+}
+
+text FruityForest_Text_Trainer6Intro
+{
+    "How dare you intrude upon the sacred
+    forest?"
+}
+
+text FruityForest_Text_Trainer6Defeated
+{
+    "No\.! The forest's power\. failed me\.!"
+}
+
+text FruityForest_Text_Trainer6Post
+{
+    "I imagine the guardian of the forest
+    would sound something like that.
+    
+    To be honest, though, I've never even
+    seen what they look like\."
+}
+
+script FruityForest_EventScript_Trainer7
+{
+    trainerbattle_single(TRAINER_ARCHIE, FruityForest_Text_Trainer7Intro, FruityForest_Text_Trainer7Defeated)
+    msgbox(FruityForest_Text_Trainer7Post, MSGBOX_AUTOCLOSE)
+}
+
+text FruityForest_Text_Trainer7Intro
+{
+    "Waaaah! A scary forest monster!"
+}
+
+text FruityForest_Text_Trainer7Defeated
+{
+    "Huh\.? Wait, that's just Kirby!"
+}
+
+text FruityForest_Text_Trainer7Post
+{
+    "Sorry for mistaking you for a monster,
+    Kirby!
+    
+    There's so many creepy Helpers in this
+    place, it's put me on edge.
+    
+    Apples that chase you down, enormous
+    worms\. ugh, I need to get out of here!"
+}
+
+script FruityForest_EventScript_Trainer8
+{
+    trainerbattle_single(TRAINER_LEAH, FruityForest_Text_Trainer8Intro, FruityForest_Text_Trainer8Defeated)
+    msgbox(FruityForest_Text_Trainer8Post, MSGBOX_AUTOCLOSE)
+}
+
+text FruityForest_Text_Trainer8Intro
+{
+    "So you know a thing or two about
+    cutting down trees, eh?
+    
+    Swell! Let's have a battle between
+    lumberjacks then!"
+}
+
+text FruityForest_Text_Trainer8Defeated
+{
+    "Hohoho! Your Helpers are grand!"
+}
+
+text FruityForest_Text_Trainer8Post
+{
+    "Gnarled little trees can show up in
+    the most inconvenient of spots.
+    
+    It's good you can handle them, but
+    leave the real logging to me!"
+}
+
+script FruityForest_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("This forest is really dense\. even the
+            little plants are tough to get around.
+            
+            You probably won't make it far if you
+            don't have a good way to get past them.")
+    release
+}
+
+script FruityForest_EventScript_BandanaWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("{SPEAKER NAME_BANDANA}\.well, I didn't expect to run into you
+            again so soon, Kirby!
+            
+            Do you think you can go deeper into the
+            forest and look for Pitch?
+            
+            I'm watching the exit on this end just
+            in case he comes this way\.")
+    release
+}
+
+script FruityForest_EventScript_FirstEntrance
+{
+    lock
+    turnobject(LOCALID_PITCH_MAMA, DIR_SOUTH)
+    turnobject(LOCALID_BWD_FOREST, DIR_SOUTH)
+    playse(SE_PIN)
+    applymovement(LOCALID_PITCH_MAMA, Common_Movement_ExclamationMark)
+    waitmovement()
+    msgbox("Oh, you there! Please help me!")
+    closemessage()
+    applymovement(LOCALID_PLAYER, moves(walk_up))
+    waitmovement()
+    applymovement(LOCALID_PITCH_MAMA, moves(walk_in_place_faster_down * 6))
+    waitmovement()
+    msgbox("Sniffle\. my poor little baby has gone
+            missing in the forest!
+            
+            I've looked everywhere, and I haven't
+            been able to find him.
+            
+            Please! You must help me find my
+            darling Pitch!")
+    setvar(VAR_FRUITY_FOREST_STATE, 1)
+    release
+}
+
+script FruityForest_EventScript_PitchMama
+{
+    lock
+    if(flag(FLAG_FOUND_PITCH))
+    {
+        getobjectfacingdirection(LOCALID_PLAYER, VAR_RESULT)
+        if(var(VAR_RESULT) == DIR_SOUTH)
+        {
+            applymovement(LOCALID_PLAYER, moves(walk_left, walk_down * 2, walk_right, walk_in_place_up))
+            waitmovement()
+        }
+        if(var(VAR_RESULT) == DIR_EAST)
+        {
+            applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, walk_in_place_up))
+            waitmovement()
+        }
+        addobject(LOCALID_PITCH)
+        setobjectxy(LOCALID_PITCH, 18, 42)
+        applymovement(LOCALID_PITCH, moves(walk_left, walk_up, walk_in_place_right))
+        waitmovement()
+        turnobject(LOCALID_PITCH_MAMA, DIR_WEST)
+        turnobject(LOCALID_BWD_FOREST, DIR_WEST)
+        msgbox("{SPEAKER NAME_PITCH}Mama!")
+        closemessage()
+        applymovement(LOCALID_PITCH_MAMA, moves(walk_in_place_faster_left * 6))
+        waitmovement()
+        msgbox("My baby Pitch! Ohh, I'm so relieved to
+                see you! You're not hurt, are you?")
+        turnobject(LOCALID_PITCH_MAMA, DIR_SOUTH)
+        msgbox("I can't thank you enough for finding
+                my darling son!")
+        msgbox("{SPEAKER NAME_PITCH}Mama, Kirby's going on an adventure with
+                Helpers! Can I pleaaaase go with him?
+                
+                I promise I'll be safe with him! We
+                worked together to get here!")
+        closemessage()
+        applymovement(LOCALID_PITCH_MAMA, moves(face_left, delay_16, delay_16, face_down, delay_16, delay_16, face_left, delay_16, delay_16))
+        waitmovement()
+        msgbox("After all this trouble you caused,
+                you're asking to leave AGAIN?
+                
+                \.")
+        applymovement(LOCALID_PITCH_MAMA, moves(face_down, delay_16, delay_16))
+        msgbox("\.Kirby. As much as I hate to admit it,
+                I'm worried Pitch won't sit still.
+                
+                It might be time to let him spread his
+                wings a little bit. As long as you're
+                willing to supervise him, of course!")
+        closemessage()
+        playse(SE_LEDGE)
+        applymovement(LOCALID_PITCH, moves(jump_in_place_right))
+        waitmovement()
+        msgbox("{SPEAKER NAME_PITCH}Yaaaaaaay! Thank you, Mama!")
+        turnobject(LOCALID_PITCH, DIR_SOUTH)
+        msgbox("{SPEAKER NAME_PITCH}I know! Kirby, I'll give you my number!
+                That way, I can come whenever you want!")
+        setspeaker(NULL)
+        playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+        msgbox("Obtained {COLOR RED}Pitch's phone number{COLOR DARK_GRAY}!
+                Now you can call for Pitch's help!")
+        waitfanfare()
+        waitmessage()
+        turnobject(LOCALID_PITCH, DIR_EAST)
+        turnobject(LOCALID_PITCH_MAMA, DIR_WEST)
+        msgbox("Now then, my little birdie, we must be on
+                our way! Say bye to your friends!")
+        closemessage()
+        turnobject(LOCALID_BWD_FOREST, DIR_SOUTH)
+        applymovement(LOCALID_PLAYER, moves(walk_left, walk_in_place_right))
+        applymovement(LOCALID_PITCH, moves(walk_right, walk_down * 8))
+        applymovement(LOCALID_PITCH_MAMA, moves(walk_down * 7))
+        waitmovement()
+        removeobject(LOCALID_PITCH_MAMA)
+        playse(SE_EXIT)
+        delay(30)
+        removeobject(LOCALID_PITCH)
+        playse(SE_EXIT)
+        waitse()
+        msgbox("{SPEAKER NAME_BANDANA}I'm glad Pitch and his mother were
+                reunited. And you got a new teammate
+                out of the event, too!
+                
+                Well, for real now, catch you later!")
+        closemessage()
+        applymovement(LOCALID_BWD_FOREST, moves(walk_up * 2, walk_left * 11))
+        waitmovement()
+        removeobject(LOCALID_BWD_FOREST)
+        setvar(VAR_FRUITY_FOREST_STATE, 3)
+        setflag(FLAG_HIDE_FRUITY_FOREST_NPCS)
+    }
+    else
+    {
+        faceplayer
+        msgbox("Piiiiiiitch! Where aaaare youuuu?
+    
+            Ohhh\. what if something happened to
+            him\.? No! I can't assume the worst!
+            
+            Please, you must help me find my
+            darling Pitch!")
+    }
+    release
+}
+
+script FruityForest_EventScript_Pitch
+{
+    lock
+    faceplayer
+    msgbox("{SPEAKER NAME_PITCH}Kirby? Is that you?
+            What are you doing here?
+            
+            Huh? Mama is looking for me? Oh,
+            I'm sorry\. I didn't mean to worry her\.
+            
+            I really wanted to try catching a
+            Helper, but Mama wouldn't let me.
+            
+            It's no fair\. I came all this way
+            thinking I could find something cool\.
+            
+            Wait\. Kirby! Those are some cool
+            Helpers you have there!
+            
+            Awesome! Are you finding lots of
+            Helpers? Can I come with you?
+            
+            I'll even help you! I'm really good
+            at cutting down little trees, you see.
+            
+            Let's go ask Mama! With my help, finding
+            where she's waiting should be easy!")
+    closemessage()
+    getobjectfacingdirection(LOCALID_PITCH, VAR_RESULT)
+    if(var(VAR_RESULT) == DIR_NORTH)
+    {
+        applymovement(LOCALID_PITCH, moves(walk_up))
+        waitmovement()
+    }
+    elif(var(VAR_RESULT) == DIR_SOUTH)
+    {
+        applymovement(LOCALID_PITCH, moves(walk_down))
+        waitmovement()
+    }
+    elif(var(VAR_RESULT) == DIR_EAST)
+    {
+        applymovement(LOCALID_PITCH, moves(walk_right))
+        waitmovement()
+    }
+    elif(var(VAR_RESULT) == DIR_WEST)
+    {
+        applymovement(LOCALID_PITCH, moves(walk_left))
+        waitmovement()
+    }
+    removeobject(LOCALID_PITCH)
+    setflag(FLAG_FOUND_PITCH)
+    setvar(VAR_FRUITY_FOREST_STATE, 2)
+    playfanfare(MUS_LEVEL_UP)
+    msgbox("You found Pitch! Use his ability to cut
+            trees to take him back to the entrance!")
+    waitfanfare()
+    waitmessage()
+    release
+}
+
+script FruityForest_EventScript_ReturnPitch
+{
+    lock
+    applymovement(LOCALID_BWD_FOREST, moves(walk_in_place_left))
+    waitmovement()
+    msgbox("{SPEAKER NAME_BANDANA}Kirby! That way's a dead end.")
+    closemessage()
+    applymovement(LOCALID_PLAYER, moves(walk_right))
+    waitmovement()
+    release
+}

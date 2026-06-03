@@ -13,7 +13,7 @@ static bool32 IsFieldMoveUnlocked_Cut(void)
     if (IS_FRLG)
         return FlagGet(FLAG_BADGE02_GET);
 
-    return FlagGet(FLAG_BADGE01_GET);
+    return FlagGet(FLAG_FOUND_PITCH);
 }
 
 static bool32 IsFieldMoveUnlocked_Flash(void)
@@ -72,38 +72,38 @@ static bool32 IsFieldMoveUnlocked_RockClimb(void)
 
 static bool32 IsFieldMoveUnlocked_Teleport(void)
 {
-    return TRUE;
+    return FALSE;
 }
 
 static bool32 IsFieldMoveUnlocked_Dig(void)
 {
-    return TRUE;
+    return FALSE;
 }
 
 static bool32 IsFieldMoveUnlocked_SecretPower(void)
 {
-    return TRUE;
+    return FALSE;
 }
 
 static bool32 IsFieldMoveUnlocked_MilkDrink(void)
 {
-    return TRUE;
+    return FALSE;
 }
 
 static bool32 IsFieldMoveUnlocked_SoftBoiled(void)
 {
-    return TRUE;
+    return FALSE;
 }
 
 static bool32 IsFieldMoveUnlocked_SweetScent(void)
 {
-    return TRUE;
+    return FALSE;
 }
 
 #if OW_DEFOG_FIELD_MOVE == TRUE
 static bool32 IsFieldMoveUnlocked_Defog(void)
 {
-    return TRUE;
+    return FALSE;
 }
 #endif
 
@@ -113,7 +113,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
     {
         .fieldMoveFunc = SetUpFieldMove_Cut,
         .isUnlockedFunc = IsFieldMoveUnlocked_Cut,
-        .moveID = MOVE_CUT,
+        .moveID = MOVE_ZIPPY_ZAP,
         .partyMsgID = PARTY_MSG_NOTHING_TO_CUT,
     },
 
@@ -121,7 +121,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
     {
         .fieldMoveFunc = SetUpFieldMove_Flash,
         .isUnlockedFunc = IsFieldMoveUnlocked_Flash,
-        .moveID = MOVE_FLASH,
+        .moveID = MOVE_SPLISHY_SPLASH,
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
 
@@ -129,7 +129,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
     {
         .fieldMoveFunc = SetUpFieldMove_RockSmash,
         .isUnlockedFunc = IsFieldMoveUnlocked_RockSmash,
-        .moveID = MOVE_ROCK_SMASH,
+        .moveID = MOVE_FLOATY_FALL,
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
 
@@ -137,7 +137,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
     {
         .fieldMoveFunc = SetUpFieldMove_Strength,
         .isUnlockedFunc = IsFieldMoveUnlocked_Strength,
-        .moveID = MOVE_STRENGTH,
+        .moveID = MOVE_PIKA_PAPOW,
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
 
@@ -145,7 +145,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
     {
         .fieldMoveFunc = SetUpFieldMove_Surf,
         .isUnlockedFunc = IsFieldMoveUnlocked_Surf,
-        .moveID = MOVE_SURF,
+        .moveID = MOVE_BOUNCY_BUBBLE,
         .partyMsgID = PARTY_MSG_CANT_SURF_HERE,
     },
 
@@ -153,7 +153,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
     {
         .fieldMoveFunc = SetUpFieldMove_Fly,
         .isUnlockedFunc = IsFieldMoveUnlocked_Fly,
-        .moveID = MOVE_FLY,
+        .moveID = MOVE_BUZZY_BUZZ,
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
 
@@ -161,7 +161,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
     {
         .fieldMoveFunc = SetUpFieldMove_Dive,
         .isUnlockedFunc = IsFieldMoveUnlocked_Dive,
-        .moveID = MOVE_DIVE,
+        .moveID = MOVE_SIZZLY_SLIDE,
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
 
@@ -169,7 +169,7 @@ const struct FieldMoveInfo gFieldMoveInfo[FIELD_MOVES_COUNT] =
     {
         .fieldMoveFunc = SetUpFieldMove_Waterfall,
         .isUnlockedFunc = IsFieldMoveUnlocked_Waterfall,
-        .moveID = MOVE_WATERFALL,
+        .moveID = MOVE_GLITZY_GLOW,
         .partyMsgID = PARTY_MSG_CANT_USE_HERE,
     },
 

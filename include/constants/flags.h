@@ -78,8 +78,8 @@
 #define FLAG_RECEIVED_PLUCK_TM    0x38 // Vegetable Valley - Lass in Farmhouse
 #define FLAG_HIDE_LUMBERJACK_MART    0x39 // Green Rest Area - Lumberjack in Mart
 #define FLAG_HIDE_LUMBERJACK_FARMHOUSE    0x3A // Vegetable Valley - Lumberjack in Farmhouse
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
+#define FLAG_FOUND_PITCH    0x3B // Fruity Forest - Hides Pitch
+#define FLAG_HIDE_FRUITY_FOREST_NPCS    0x3C // Fruity Forest - Pitch Mama and Bandana Waddle Dee
 #define FLAG_UNUSED_0x03D    0x3D // Unused Flag
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
@@ -561,8 +561,8 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL               (FLAG_HIDDEN_ITEMS_START + 0x07) // Vegetable Valley - Hidden Item 4
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS               (FLAG_HIDDEN_ITEMS_START + 0x08) // Vegetable Valley - Hidden Item 5
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD          (FLAG_HIDDEN_ITEMS_START + 0x09) // Vegetable Valley - Hidden Item 6
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x0A) 
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B) 
+#define FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x0A) // Fruity Forest - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B) // Fruity Forest - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E)
@@ -1061,9 +1061,9 @@
 #define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0 // Vegetable Valley - Item 1
 #define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1 // Vegetable Valley - Item 2
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2 // Vegetable Valley - Item 3
-#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
-#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
-#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5
+#define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3 // Fruity Forest - Item 1
+#define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4 // Fruity Forest - Item 2
+#define FLAG_ITEM_ROUTE_113_SUPER_REPEL                             0x3F5 // Fruity Forest - Item 3
 #define FLAG_ITEM_ROUTE_114_RARE_CANDY                              0x3F6
 #define FLAG_ITEM_ROUTE_114_PROTEIN                                 0x3F7
 #define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8

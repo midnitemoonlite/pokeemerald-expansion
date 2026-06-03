@@ -691,135 +691,177 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Defense Curl
 - Rollout
 
+/* Fruity Forest - Trainer 1 */
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt F
+Name: Waddle Dee
+Class: Parasol Lady
+Pic: Parasol Lady
 Gender: Female
-Music: Aqua
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Drifter
+Level: 12
+Ability: Keen Eye
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+/* Fruity Forest - Trainer 2 */
 === TRAINER_FREDRICK ===
-Name: FREDRICK
-Class: Expert
-Pic: Expert M
+Name: Waddle Dee
+Class: Hiker
+Pic: Hiker
 Gender: Male
-Music: Intense
+Music: Hiker
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Makuhita
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Chip 
+Level: 11
+Ability: Adaptability
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Machoke
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Kabu
+Level: 12
+Ability:
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Rapid Spin
+- Teleport
+- Rock Tomb
+- Imprison
 
+/* Fruity Forest - Trainer 3 */
 === TRAINER_MATT ===
-Name: MATT
-Class: Aqua Admin
-Pic: Aqua Admin M
+Name: Waddle Dee
+Class: Bird Keeper
+Pic: Bird Keeper
 Gender: Male
-Music: Aqua
-Items: Super Potion
+Music: Cool
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Mightyena
-Level: 34
+Chick
+Level: 15
+Ability: Shell Armor
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Golbat
-Level: 34
+Twizzy
+Level: 13
+Ability: Big Pecks
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+/* Fruity Forest - Trainer 4 */
 === TRAINER_ZANDER ===
-Name: ZANDER
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
+Name: Waddle Dee
+Class: Psychic
+Pic: Psychic F
+Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Hariyama
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Mr. Anglep @ Oran Berry
+Level: 14
+Ability: Ripen
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Bite
+- Play Nice
+- Night Shade
+- Razor Leaf
 
+/* Fruity Forest - Trainer 5 */
 === TRAINER_SHELLY_WEATHER_INSTITUTE ===
-Name: SHELLY
-Class: Aqua Admin
-Pic: Aqua Admin F
+Name: Waddle Dee
+Class: Lass
+Pic: Lass
 Gender: Female
-Music: Aqua
+Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Carvanha
-Level: 28
+Buttonfly
+Level: 12
+Ability: Shield Dust
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Mightyena
-Level: 28
+Minny
+Level: 12
+Ability: Rattled
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+
+/* Fruity Forest - Trainer 6 */
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
-Name: SHELLY
-Class: Aqua Admin
-Pic: Aqua Admin F
-Gender: Female
-Music: Aqua
-Double Battle: No
-AI: Basic Trainer
-
-Sharpedo
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Mightyena
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-=== TRAINER_ARCHIE ===
-Name: ARCHIE
-Class: Aqua Leader
-Pic: Aqua Leader Archie
+Name: Waddle Dee
+Class: Aroma Lady
+Pic: Aroma Lady
 Gender: Male
-Music: Aqua
-Items: Super Potion / Super Potion
-Double Battle: No
-AI: Basic Trainer
-
-Mightyena
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Crobat
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Sharpedo
-Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-=== TRAINER_LEAH ===
-Name: LEAH
-Class: Hex Maniac
-Pic: Hex Maniac
-Gender: Female
-Music: Suspicious
+Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Spoink
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Cappy
+Level: 13
+Ability: Anticipation
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+Capiller
+Level: 13
+Ability: Swarm
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+/* Fruity Forest - Trainer 7 */
+=== TRAINER_ARCHIE ===
+Name: Waddle Dee
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Gaw Gaw
+Level: 12
+Ability: Tough Claws
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Scratch
+- Leer
+- Sand Attack
+- Focus Energy
+
+Poppy Bros. Jr.
+Level: 13
+Ability: Prankster
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+
+/* Fruity Forest - Trainer 8 */
+=== TRAINER_LEAH ===
+Name: Waddle Dee
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Beetley
+Level: 13
+Ability: Scrappy
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Horn Attack
+- Fury Cutter
+- Leer
+- Taunt
+
+Sir Kibble
+Level: 14
+Ability: Sharpness
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Cut
+- Fury Cutter
+- Metal Claw
+- Sharpen
 
 === TRAINER_DAISY ===
 Name: DAISY

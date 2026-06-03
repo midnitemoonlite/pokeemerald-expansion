@@ -1769,3 +1769,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/VegetableValley/scripts.inc"
 
 	.include "data/maps/VegetableValley_Farmhouse/scripts.inc"
+
+	.include "data/maps/FruityForest/scripts.inc"

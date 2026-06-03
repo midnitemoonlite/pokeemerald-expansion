@@ -1654,6 +1654,10 @@
     {
       "id": "MAPSEC_VEGETABLE_VALLEY",
       "name": "VEGETABLE VALLEY"
+    },
+    {
+      "id": "MAPSEC_FRUITY_FOREST",
+      "name": "FRUITY FOREST"
     }
   ]
 }

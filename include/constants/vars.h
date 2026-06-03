@@ -108,7 +108,7 @@
 #define VAR_VEGETABLE_VALLEY_STATE                       0x4056 // Vegetable Valley - Keep track of progress state
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
-#define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
+#define VAR_FRUITY_FOREST_STATE                          0x4059 // Fruity Forest - Keep track of progress state
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
 #define VAR_FORTREE_CITY_STATE                           0x405B // Unused Var
 #define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
@@ -187,7 +187,7 @@
 #define VAR_TRICK_HOUSE_BEING_WATCHED_STATE              0x40A5
 #define VAR_TRICK_HOUSE_FOUND_TRICK_MASTER               0x40A6
 #define VAR_TRICK_HOUSE_ENTRANCE_STATE                   0x40A7
-#define VAR_UNUSED_0x40A8                                0x40A8 // Unused Var
+#define VAR_FIELD_MOVE_SPECIES                           0x40A8 // Set sprite for field move mon when using HM
 #define VAR_CYCLING_CHALLENGE_STATE                      0x40A9
 #define VAR_SLATEPORT_MUSEUM_1F_STATE                    0x40AA
 #define VAR_TRICK_HOUSE_PUZZLE_1_STATE                   0x40AB

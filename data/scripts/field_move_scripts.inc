@@ -1,11 +1,8 @@
 @ Interact with cuttable tree
 EventScript_CutTree::
 	lockall
-	checkfieldmove FIELD_MOVE_CUT, TRUE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
-	setfieldeffectargument 0, VAR_RESULT
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	buffermovename STR_VAR_2, MOVE_CUT
+	goto_if_unset FLAG_FOUND_PITCH, EventScript_CheckTreeCantCut
+	setfieldeffectargument 0, SPECIES_KABULA
 	msgbox Text_WantToCut, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
 	msgbox Text_MonUsedCut, MSGBOX_DEFAULT

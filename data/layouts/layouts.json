@@ -9483,6 +9483,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/VegetableValley_Farmhouse/border.bin",
       "blockdata_filepath": "data/layouts/VegetableValley_Farmhouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRUITY_FOREST",
+      "name": "FruityForest_Layout",
+      "width": 60,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/FruityForest/border.bin",
+      "blockdata_filepath": "data/layouts/FruityForest/map.bin"
     }
   ]
 }

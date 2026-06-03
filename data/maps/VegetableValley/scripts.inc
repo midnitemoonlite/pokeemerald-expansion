@@ -156,8 +156,10 @@ VegetableValley_EventScript_BandanaWaddleDee_6:
 # 249 "data/maps/VegetableValley/scripts.pory"
 	setvar VAR_VEGETABLE_VALLEY_STATE, 1
 # 250 "data/maps/VegetableValley/scripts.pory"
-	fadedefaultbgm
+	savebgm MUS_DUMMY
 # 251 "data/maps/VegetableValley/scripts.pory"
+	fadedefaultbgm
+# 252 "data/maps/VegetableValley/scripts.pory"
 	release
 	return
 
@@ -396,10 +398,10 @@ VegetableValley_Text_Trainer6Post::
 	.string "in there who punishes trespassers!$"
 
 VegetableValley_Text_ReceivedEscapeRope::
-# 254 "data/maps/VegetableValley/scripts.pory"
+# 255 "data/maps/VegetableValley/scripts.pory"
 	.string "{SPEAKER NAME_NONE}Obtained the {COLOR BLUE}Escape Rope{COLOR DARK_GRAY}!$"
 
 VegetableValley_Text_BandanaWaddleDeeDefeat::
-# 259 "data/maps/VegetableValley/scripts.pory"
+# 260 "data/maps/VegetableValley/scripts.pory"
 	.string "Aww… I thought things would be\n"
 	.string "different this time. Good battle, Kirby!$"

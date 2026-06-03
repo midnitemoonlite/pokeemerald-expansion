@@ -17,7 +17,7 @@ GraniteCave_1F_EventScript_Hiker::
 # 9 "data/maps/GraniteCave_1F/scripts.pory"
 	msgbox GraniteCave_1F_Text_GetsDarkAheadHereYouGo, MSGBOX_DEFAULT
 # 10 "data/maps/GraniteCave_1F/scripts.pory"
-	giveitem ITEM_HM_FLASH
+	giveitem ITEM_HM01
 # 11 "data/maps/GraniteCave_1F/scripts.pory"
 	setflag FLAG_RECEIVED_HM_FLASH
 # 12 "data/maps/GraniteCave_1F/scripts.pory"

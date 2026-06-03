@@ -117,7 +117,7 @@ RusturfTunnel_EventScript_ClearTunnelScene::
 # 59 "data/maps/RusturfTunnel/scripts.pory"
 	call_if_eq VAR_TEMP_1, 3, RusturfTunnel_EventScript_WandasBoyfriendApproachPlayer
 # 60 "data/maps/RusturfTunnel/scripts.pory"
-	giveitem ITEM_HM_STRENGTH
+	giveitem ITEM_HM01
 # 61 "data/maps/RusturfTunnel/scripts.pory"
 	setflag FLAG_RECEIVED_HM_STRENGTH
 # 62 "data/maps/RusturfTunnel/scripts.pory"
