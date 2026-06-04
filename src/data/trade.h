@@ -1255,10 +1255,10 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0xa6,
         .heldItem = ITEM_STAR_PIECE,
         .mailNum = MAIL_NONE,
-        .otName = _("Bar"),
+        .otName = _("Ribbon"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_TWIZZY
+        .requestedSpecies = SPECIES_CAPPY
     },
     [INGAME_TRADE_SNOOTER] =
     {

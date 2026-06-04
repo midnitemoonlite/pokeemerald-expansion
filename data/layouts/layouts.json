@@ -9493,6 +9493,36 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/FruityForest/border.bin",
       "blockdata_filepath": "data/layouts/FruityForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDIGO_REST_AREA",
+      "name": "IndigoRestArea_Layout",
+      "width": 45,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/IndigoRestArea/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoRestArea/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDIGO_REST_AREA_CENTER",
+      "name": "IndigoRestArea_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/IndigoRestArea_Center/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoRestArea_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_INDIGO_REST_AREA_MART",
+      "name": "IndigoRestArea_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/IndigoRestArea_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/IndigoRestArea_Mart/map.bin"
     }
   ]
 }

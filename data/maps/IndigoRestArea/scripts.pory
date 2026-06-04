@@ -1,0 +1,32 @@
+raw `
+IndigoRestArea_MapScripts::
+	.byte 0
+`
+
+script IndigoRestArea_EventScript_SocialiteWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Oh my! You actually found your way
+            through Fruity Forest?
+            
+            You must be exhausted! Luckily, this
+            rest area is the perfect spot to relax!")
+    release
+}
+
+script IndigoRestArea_EventScript_ParasolWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Sniff sniff\. ahhhhh!
+            I love the smell of the salty breeze.")
+    release
+}
+
+script IndigoRestArea_EventScript_Sign
+{
+    msgbox("INDIGO REST AREA
+            Catch your breath by the beautiful sea.", MSGBOX_SIGN)
+    closemessage
+}

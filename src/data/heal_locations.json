@@ -375,6 +375,14 @@
       "y": 45,
       "respawn_map": "MAP_WADDLE_DEE_TOWN_CENTER",
       "respawn_npc": "LOCALID_WADDLE_DEE_TOWN_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_INDIGO_REST_AREA",
+      "map": "MAP_INDIGO_REST_AREA",
+      "x": 33,
+      "y": 18,
+      "respawn_map": "MAP_INDIGO_REST_AREA_CENTER",
+      "respawn_npc": "LOCALID_INDIGO_REST_AREA_NURSE"
     }
   ]
 }

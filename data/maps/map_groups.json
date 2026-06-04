@@ -78,7 +78,8 @@
     "gMapGroup_IndoorKirbysHouse",
     "gMapGroup_IndoorGreenRestArea",
     "gMapGroup_IndoorWaddleDeeTown",
-    "gMapGroup_IndoorVegetableValley"
+    "gMapGroup_IndoorVegetableValley",
+    "gMapGroup_IndoorIndigoRestArea"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -144,7 +145,8 @@
     "PrismPlains",
     "WaddleDeeTown",
     "WaddleDeeArena",
-    "VegetableValley"
+    "VegetableValley",
+    "IndigoRestArea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -1189,5 +1191,9 @@
   ],
   "gMapGroup_IndoorVegetableValley": [
     "VegetableValley_Farmhouse"
+  ],
+  "gMapGroup_IndoorIndigoRestArea": [
+    "IndigoRestArea_Center",
+    "IndigoRestArea_Mart"
   ]
 }

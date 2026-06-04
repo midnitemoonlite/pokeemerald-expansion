@@ -183,6 +183,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
       "script": "WaddleDeeTown_Lab_EventScript_TurnRight"
+    },
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 1,
+      "elevation": 0,
+      "item": "ITEM_WISE_GLASSES",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
     }
   ]
 }

@@ -1658,6 +1658,10 @@
     {
       "id": "MAPSEC_FRUITY_FOREST",
       "name": "FRUITY FOREST"
+    },
+    {
+      "id": "MAPSEC_INDIGO_REST_AREA",
+      "name": "INDIGO REST AREA"
     }
   ]
 }

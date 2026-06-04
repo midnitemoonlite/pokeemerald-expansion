@@ -1,0 +1,123 @@
+raw `
+IndigoRestArea_Center_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, IndigoRestArea_Center_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+IndigoRestArea_Center_OnTransition:
+	setrespawn HEAL_LOCATION_INDIGO_REST_AREA
+	end
+`
+
+script IndigoRestArea_Center_EventScript_Nurse
+{
+    setvar(VAR_0x800B, LOCALID_INDIGO_REST_AREA_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script IndigoRestArea_Center_EventScript_RibbonWaddleDee
+{
+    lock
+    faceplayer
+    if(flag(FLAG_INDIGO_REST_AREA_TRADE_COMPLETED))
+    {
+        msgbox("Hey, how is my Starman doing?
+                You better be taking good care of it!
+                
+                Am I taking good care of my Cappy?
+                Really? Do you even need to ask?
+                
+                My precious little Cappy gets only
+                the best love and attention!
+                Ohhh, I love you sooo much, Cappy!")
+    }
+    elif(!flag(FLAG_INDIGO_REST_AREA_TRADE_COMPLETED))
+    {
+        ingame_trade(INGAME_TRADE_STARMAN, IndigoRestArea_Center_TradeMessage, IndigoRestArea_Center_DeclineScript, IndigoRestArea_Center_WrongScript, IndigoRestArea_Center_CompleteMessage)
+        setflag(FLAG_INDIGO_REST_AREA_TRADE_COMPLETED)
+    }
+    release
+}
+
+text IndigoRestArea_Center_TradeMessage
+{
+    "Hi, mister! Did you get here from Fruity
+    Forest?
+    
+    You did? Really? Oh, this might be my
+    lucky day!
+    
+    You see, there's a Helper on the other
+    side of the forest I reaaally want, but\.
+    
+    I can't do it! I can't find my way around
+    at all! It's too dark in there!
+    
+    Please, mister! If you have one, could
+    you trade me the helper called Cappy?
+    I'll give you my Starman in exchange!"
+}
+
+script IndigoRestArea_Center_DeclineScript
+{
+    msgbox("Nooooo\. I thought I had it!
+            I really want a Cappy\.")
+    release
+}
+
+script IndigoRestArea_Center_WrongScript
+{
+    msgbox("Hey! That's not Cappy!
+    
+            I only want Cappy! With the cute
+            polka-dotted mushroom cap!")
+    release
+}
+
+text IndigoRestArea_Center_CompleteMessage
+{
+    "Yes! Thank you, mister! You're the best!
+    
+    Oh, it's even more adorable up close!
+    I'm so happy to have Cappy!"
+}
+
+script IndigoRestArea_Center_EventScript_CafeWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Even with a new Arena being built there,
+            the resort's a sort of sleepy place.
+            
+            If you prefer an exciting lifestyle,
+            the beachhouse is where to be.")
+    release
+}
+
+script IndigoRestArea_Center_EventScript_ParasolWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I'm finally on vacation! What do I do 
+            first? There's so many options!")
+    turnobject(LOCALID_MAP_WADDLE_DEE_2, DIR_NORTH)
+    release
+}
+
+script IndigoRestArea_Center_EventScript_FisherWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("All my fellow fishers are raving about
+            it, but I don't buy the legend of the
+            golden catch in Waddle Dee Town.
+            
+            I much prefer fishing by the ocean
+            compared to fresh water, anyways.
+            You catch more than just Blippers here!")
+    release
+}

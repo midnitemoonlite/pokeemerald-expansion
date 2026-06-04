@@ -80,7 +80,7 @@
 #define FLAG_HIDE_LUMBERJACK_FARMHOUSE    0x3A // Vegetable Valley - Lumberjack in Farmhouse
 #define FLAG_FOUND_PITCH    0x3B // Fruity Forest - Hides Pitch
 #define FLAG_HIDE_FRUITY_FOREST_NPCS    0x3C // Fruity Forest - Pitch Mama and Bandana Waddle Dee
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
+#define FLAG_INDIGO_REST_AREA_TRADE_COMPLETED    0x3D // Indigo Rest Area (Center) - Lass who wants to trade
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
@@ -563,8 +563,8 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD          (FLAG_HIDDEN_ITEMS_START + 0x09) // Vegetable Valley - Hidden Item 6
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x0A) // Fruity Forest - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B) // Fruity Forest - Hidden Item 2
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C) // Waddle Dee Town (Lab) - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D) // Indigo Rest Area - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL           (FLAG_HIDDEN_ITEMS_START + 0x0F)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10)
