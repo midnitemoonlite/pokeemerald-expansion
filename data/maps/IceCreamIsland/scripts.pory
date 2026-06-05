@@ -1,0 +1,396 @@
+raw `
+IceCreamIsland_MapScripts::
+	.byte 0
+`
+
+script IceCreamIsland_EventScript_Sign
+{
+    msgbox("ICE CREAM ISLAND
+            A beach for making sweet memories.", MSGBOX_SIGN)
+    closemessage
+}
+
+script IceCreamIsland_EventScript_Sunbather
+{
+    lock
+    faceplayer
+    msgbox("Ah\. this is the life, isn't it?
+    
+            Clear skies, gentle waves, the works.
+            Makes you wanna kick back, doesn't it?
+            
+            Go on, relax a little. Save your game.
+            Maybe take a stretch break.
+            
+            Then, when you're done soaking it all in,
+            your adventure will be even better!")
+    release
+}
+
+script IceCreamIsland_EventScript_BlueSqueakerChase
+{
+    lock
+    faceplayer
+    msgbox("Squeak! Quit playing games with me!
+            
+            We're supposed to be looking for sunken
+            treasure! Boss's orders!")
+    release
+}
+
+script IceCreamIsland_EventScript_RedSqueakerChase
+{
+    lock
+    faceplayer
+    msgbox("Squeak! Don't act all serious! This
+            weather's too good to not have fun!
+            
+            The other Squeakers are better at
+            looking for treasure than us, anyways!")
+    release
+}
+
+script IceCreamIsland_EventScript_BlueSqueakerWander
+{
+    lock
+    faceplayer
+    msgbox("Squeak! My boss says there's hidden
+            treasure somewhere on the island.
+            
+            I thought it might be buried in the
+            sand, so I dug and dug and dug\.
+            but I haven't found anything yet.
+            
+            Rats\. I wish I had one of those fancy
+            Dowsing Machines for finding treasure.
+            It'd make my job so much easier!")
+    release
+}
+
+script IceCreamIsland_EventScript_MrFloatyEncounter
+{
+    lock
+    faceplayer
+    if(var(VAR_MR_FLOATY_QUEST) == 2)
+    {
+        msgbox("I thought I knew everything I needed
+                to make a perfect vacation\.
+                
+                But now I know one more criteria:
+                \qono rampant water beasts\qc!")
+    }
+    if(var(VAR_MR_FLOATY_QUEST) == 1)
+    {
+        msgbox("Oh, it's you again\.
+        
+                I'll be honest, I haven't stopped
+                worrying about that watery beast\.
+                
+                But I haven't seen it since. Do
+                you think it's still around?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            goto(IceCreamIsland_EventScript_SetUpEncounter)
+        }
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox("That's what I want to hear, of course,
+                    but I can't help but wonder\.")
+        }
+    }
+    if(var(VAR_MR_FLOATY_QUEST) == 0)
+    {
+        msgbox("I've heard rumblings of a scary water
+            beast rampaging around here\.
+            
+            Personally, I wouldn't let something
+            like that stop me from vacationing.
+            
+            You don't really believe a rumor like
+            that either, do you?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            goto(IceCreamIsland_EventScript_SetUpEncounter)
+        }
+        if(var(VAR_RESULT) == FALSE)
+        {
+            msgbox("Right! This beach is so serene, I can't
+                    imagine something like that being true.")
+        }
+    }
+    release
+}
+
+script IceCreamIsland_EventScript_SetUpEncounter
+{
+    if(var(VAR_MR_FLOATY_QUEST) == 0)
+    {
+        msgbox("You too, huh? W-well, I won't let it
+            disturb my vacation!
+                    
+            I can just lean back and relax\.")
+    }
+    elif(var(VAR_MR_FLOATY_QUEST) == 1)
+    {
+        msgbox("Ugh\. just thinking about that
+                beast gives me the chills\.")
+    }
+    playmoncry(SPECIES_BULBASAUR, CRY_MODE_NORMAL)
+    waitmoncry()
+    playse(SE_PIN)
+    applymovement(LOCALID_MR_FLOATY_DEE, Common_Movement_ExclamationMark)
+    waitmovement()
+    turnobject(LOCALID_MR_FLOATY_DEE, DIR_EAST)
+    delay(16)
+    if(var(VAR_MR_FLOATY_QUEST) == 0)
+    {
+        msgbox("Huh? What was that noise just now?
+            
+            You don't think it could be\.")
+    }
+    elif(var(VAR_MR_FLOATY_QUEST) == 1)
+    {
+        msgbox("No\.! I recognize that roar!")
+    }
+    closemessage()
+    playmoncry(SPECIES_BULBASAUR, CRY_MODE_ENCOUNTER)
+    waitmoncry()
+    setvar(VAR_0x8004, 2)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+    setvar(VAR_0x8006, 20) // num shakes
+	setvar(VAR_0x8007, 4)  // shake delay
+	special(ShakeCamera)
+    delay(30)
+    setwildbattle(SPECIES_MR_FLOATY, 20, ITEM_SAFETY_GOGGLES)
+    dowildbattle()
+    delay(90)
+    if(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED || var(VAR_RESULT) == B_OUTCOME_MON_FLED || var(VAR_RESULT) == B_OUTCOME_MON_TELEPORTED || var(VAR_RESULT) == B_OUTCOME_FORFEITED)
+    {
+        faceplayer
+        if(var(VAR_MR_FLOATY_QUEST) == 0)
+        {
+            msgbox("It was real!? Oh no, oh no, oh no\.
+                
+                    I'm glad it's left us alone for now, but
+                    knowing it could come back\.
+                        
+                    Nope! Not thinking about it! This is
+                    what vacations are for!!")
+            setvar(VAR_MR_FLOATY_QUEST, 1)
+        }
+        elif(var(VAR_MR_FLOATY_QUEST) == 1)
+        {
+            msgbox("Unbelievable\.
+                    
+                    How am I supposed to relax knowing that
+                    wet beast could strike at any moment?
+                            
+                    Phew\. gotta calm down\. just think,
+                    maybe this time it left for good!")
+        }
+        turnobject(LOCALID_MR_FLOATY_DEE, DIR_SOUTH)
+        release
+        }
+        else
+        {
+            goto(IceCreamIsland_EventScript_MrFloatyConclusion)
+        }
+}
+
+script IceCreamIsland_EventScript_MrFloatyConclusion
+{
+    lock
+    msgbox("Haah\.")
+    faceplayer
+    msgbox("Man, I was lucky you were around to help
+            put a stop to that beast. Thank you!
+                        
+            Maybe this is a weird gift, but I
+            noticed it dropped this.")
+    giveitem(ITEM_SAFETY_GOGGLES)
+    msgbox("With no more signs of rampaging Helpers,
+            I can get back to the important thing:
+            enjoying my beachside vacation!")
+    setvar(VAR_MR_FLOATY_QUEST, 2)
+    release
+}
+
+script IceCreamIsland_EventScript_Trainer1
+{
+    trainerbattle_single(TRAINER_DAISY, IceCreamIsland_Text_Trainer1Intro, IceCreamIsland_Text_Trainer1Defeated)
+    msgbox(IceCreamIsland_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+}
+
+text IceCreamIsland_Text_Trainer1Intro
+{
+    "Behold my parasol power!"
+}
+
+text IceCreamIsland_Text_Trainer1Defeated
+{
+    "A parasol is a good place to hide
+    your face after a loss\."
+}
+
+text IceCreamIsland_Text_Trainer1Post
+{
+    "The other day, I went to pick up my
+    parasol after losing it, only to find
+    I accidentally picked up Drifter!
+    
+    Ever since then, we've been working
+    together, Drifter and I."
+}
+
+script IceCreamIsland_EventScript_Trainer2
+{
+    trainerbattle_single(TRAINER_ROSE_1, IceCreamIsland_Text_Trainer2Intro, IceCreamIsland_Text_Trainer2Defeated)
+    msgbox(IceCreamIsland_Text_Trainer2Post, MSGBOX_AUTOCLOSE)
+}
+
+text IceCreamIsland_Text_Trainer2Intro
+{
+    "Huh? A Helper battle?
+    Well, I guess nothing's biting\."
+}
+
+text IceCreamIsland_Text_Trainer2Defeated
+{
+    "Any catch yet? Looks like a no\."
+}
+
+text IceCreamIsland_Text_Trainer2Post
+{
+    "Nothing's biting, but that's okay.
+    Sitting by the waves is nice too."
+}
+
+script IceCreamIsland_EventScript_Trainer3
+{
+    trainerbattle_single(TRAINER_FELIX, IceCreamIsland_Text_Trainer3Intro, IceCreamIsland_Text_Trainer3Defeated)
+    msgbox(IceCreamIsland_Text_Trainer3Post, MSGBOX_AUTOCLOSE)
+}
+
+text IceCreamIsland_Text_Trainer3Intro
+{
+    "Intruder detected!
+    This spot is mine!"
+}
+
+text IceCreamIsland_Text_Trainer3Defeated
+{
+    "Squeak! You're strong!"
+}
+
+text IceCreamIsland_Text_Trainer3Post
+{
+    "Hmm\. well, you don't seem like a bad guy,
+    so I'll let you pass.
+    
+    But if you do anything suspicious, I'm
+    reporting you to the boss!"
+}
+
+script IceCreamIsland_EventScript_Trainer4
+{
+    trainerbattle_single(TRAINER_VIOLET, IceCreamIsland_Text_Trainer4Intro, IceCreamIsland_Text_Trainer4Defeated)
+    msgbox(IceCreamIsland_Text_Trainer4Post, MSGBOX_AUTOCLOSE)
+}
+
+text IceCreamIsland_Text_Trainer4Intro
+{
+    "I knew hiding under the big umbrellas
+    was a smart tactic!"
+}
+
+text IceCreamIsland_Text_Trainer4Defeated
+{
+    "Squeak! My surprise attack backfired!?"
+}
+
+text IceCreamIsland_Text_Trainer4Post
+{
+    "Maybe I should give up on looking for
+    treasure\. on a hot day like this, I'd
+    rather just sit in the shade!"
+}
+
+script IceCreamIsland_EventScript_Trainer5
+{
+    trainerbattle_single(TRAINER_ROSE_2, IceCreamIsland_Text_Trainer5Intro, IceCreamIsland_Text_Trainer5Defeated)
+    msgbox(IceCreamIsland_Text_Trainer5Post, MSGBOX_AUTOCLOSE)
+}
+
+text IceCreamIsland_Text_Trainer5Intro
+{
+    "Huh, you look familiar.
+    Have we met before?
+    
+    Well, that's not important right now.
+    Battles first, questions later!"
+}
+
+text IceCreamIsland_Text_Trainer5Defeated
+{
+    "Squeak! I lost\."
+}
+
+text IceCreamIsland_Text_Trainer5Post
+{
+    "I swear I've seen you before, but
+    I just can't place it!
+
+    Did we steal something from you in the
+    past, perhaps?"
+}
+
+script IceCreamIsland_EventScript_Trainer6
+{
+    trainerbattle_single(TRAINER_ROSE_3, IceCreamIsland_Text_Trainer6Intro, IceCreamIsland_Text_Trainer6Defeated)
+    msgbox(IceCreamIsland_Text_Trainer6Post, MSGBOX_AUTOCLOSE)
+}
+
+text IceCreamIsland_Text_Trainer6Intro
+{
+    "I know it's a nice day at the beach,
+    but you can't let your guard down!"
+}
+
+text IceCreamIsland_Text_Trainer6Defeated
+{
+    "Whew! That battle was blistering hot!"
+}
+
+text IceCreamIsland_Text_Trainer6Post
+{
+    "I wouldn't be shocked to see you score
+    a brooch at the Resort Arena.
+    Your Helpers are something else!"
+}
+
+script IceCreamIsland_EventScript_Trainer7
+{
+    trainerbattle_single(TRAINER_ROSE_4, IceCreamIsland_Text_Trainer7Intro, IceCreamIsland_Text_Trainer7Defeated)
+    msgbox(IceCreamIsland_Text_Trainer7Post, MSGBOX_AUTOCLOSE)
+}
+
+text IceCreamIsland_Text_Trainer7Intro
+{
+    "I heard those Squeakers talking about
+    hidden treasure somewhere out here!
+    I won't let you beat me to it!"
+}
+
+text IceCreamIsland_Text_Trainer7Defeated
+{
+    "Aww\. I really wanted to find treasure!"
+}
+
+text IceCreamIsland_Text_Trainer7Post
+{
+    "How do you think treasure ends up
+    buried in places like this, anyways?
+    
+    Maybe a legendary pirate hid it, hoping
+    their name would go down in history!"
+}

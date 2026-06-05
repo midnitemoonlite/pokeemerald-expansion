@@ -863,141 +863,180 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Metal Claw
 - Sharpen
 
+/* Ice Cream Island - Trainer 1 */
 === TRAINER_DAISY ===
-Name: DAISY
-Class: Aroma Lady
-Pic: Aroma Lady
+Name: Waddle Dee
+Class: Parasol Lady
+Pic: Parasol Lady
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Drifter @ Oran Berry
+Level: 16
+Ability: Unburden
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
+/* Ice Cream Island - Trainer 2 */
 === TRAINER_ROSE_1 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+Name: Waddle Dee
+Class: Fisherman
+Pic: Fisherman
 Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Blipper
+Level: 16
+Ability: Water Veil
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Shroomish
+Flotzo
 Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ability: Suction Cups
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Roselia
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
+/* Ice Cream Island - Trainer 3 */
 === TRAINER_FELIX ===
-Name: FELIX
-Class: Cooltrainer
-Pic: Cooltrainer M
+Name: Squeaker
+Class: Picnicker
+Pic: Picnicker
 Gender: Male
-Music: Cool
-Items: Full Restore
+Music: Hiker
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move
 
-Medicham
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psychic
+Sparky
+Level: 15
+Ability: Static
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Claydol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Skill Swap
-- Earthquake
+Coner
+Level: 15
+Ability: Shell Armor
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+
+/* Ice Cream Island - Trainer 4 */
 === TRAINER_VIOLET ===
-Name: VIOLET
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
+Name: Squeaker
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Roselia
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sandran
+Level: 15
+Ability: Sand Veil
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Sand-Attack
+- Sand Tomb
+- Sandstorm
+- Leer
 
-Gloom
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Maiga
+Level: 15
+Ability: Regenerator
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+/* Ice Cream Island - Trainer 5 */
 === TRAINER_ROSE_2 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
+Name: Squeaker
+Class: Picnicker
+Pic: Picnicker
+Gender: Male
+Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Batty
+Level: 18
+Ability: Swarm
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Astonish
+- Gust
+- Bite
+- Quick Attack
 
-Roselia
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
+/* Ice Cream Island - Trainer 6 */
 === TRAINER_ROSE_3 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
+Name: Waddle Dee
+Class: Psychic
+Pic: Psychic M
+Gender: Male
+Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Embird
+Level: 15
+Ability: Hustle
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Peck
+- Growl
+- Disarming Voice
+- Roost
 
-Gloom
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Pierre
+Level: 16
+Ability: Skill Link
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Follow Me
+- Mimic
+- Work Up
+- Wake-Up Slap
 
-Roselia
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Blade Knight
+Level: 16
+Ability: Inner Focus
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Rock Smash
+- False Swipe
+- Cut
+- Focus Energy
 
+/* Ice Cream Island - Trainer 7 */
 === TRAINER_ROSE_4 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
+Name: Waddle Dee
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Slippy
+Level: 22
+Ability: Wimp Out
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Double Kick
+- Flip Turn
+- Yawn
+- Endeavor
 
-Gloom
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Gator
+Level: 22
+Ability: Strong Jaw
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Ice Fang
+- Thunder Fang
+- Fire Fang
+- Poison Fang
 
-Roselia
-Level: 31
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Craby
+Level: 22
+Ability: Innards Out
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Razor Shell
+- Mach Punch
+- Snatch
+- Refresh
 
+/* Resort Arena - Trainer 1 */
 === TRAINER_ROSE_5 ===
 Name: ROSE
 Class: Aroma Lady
@@ -1019,6 +1058,7 @@ Roselia
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
+/* Resort Arena - Trainer 2 */
 === TRAINER_DUSTY_1 ===
 Name: DUSTY
 Class: Ruin Maniac
@@ -1036,6 +1076,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Sand Attack
 - Poison Sting
 
+/* Resort Arena - Trainer 3 */
 === TRAINER_CHIP ===
 Name: CHIP
 Class: Ruin Maniac
@@ -1069,6 +1110,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Sand Attack
 - Poison Sting
 
+/* Resort Arena - Trainer 4 */
 === TRAINER_FOSTER ===
 Name: FOSTER
 Class: Ruin Maniac
@@ -1094,6 +1136,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Sand Attack
 - Poison Sting
 
+/* Resort Arena - Trainer 5 */
 === TRAINER_DUSTY_2 ===
 Name: DUSTY
 Class: Ruin Maniac
@@ -1111,6 +1154,7 @@ IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Sand Attack
 - Poison Sting
 
+/* Resort Arena - Daroach */
 === TRAINER_DUSTY_3 ===
 Name: DUSTY
 Class: Ruin Maniac

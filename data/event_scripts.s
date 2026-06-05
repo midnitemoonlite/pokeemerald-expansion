@@ -1777,3 +1777,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/IndigoRestArea_Center/scripts.inc"
 
 	.include "data/maps/IndigoRestArea_Mart/scripts.inc"
+
+	.include "data/maps/IceCreamIsland/scripts.inc"

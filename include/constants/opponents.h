@@ -40,19 +40,19 @@
 #define TRAINER_SHELLY_SEAFLOOR_CAVERN       33 // Fruity Forest - Trainer 6
 #define TRAINER_ARCHIE                       34 // Fruity Forest - Trainer 7
 #define TRAINER_LEAH                         35 // Fruity Forest - Trainer 8
-#define TRAINER_DAISY                        36
-#define TRAINER_ROSE_1                       37
-#define TRAINER_FELIX                        38
-#define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40
-#define TRAINER_ROSE_3                       41
-#define TRAINER_ROSE_4                       42
-#define TRAINER_ROSE_5                       43
-#define TRAINER_DUSTY_1                      44
-#define TRAINER_CHIP                         45
-#define TRAINER_FOSTER                       46
-#define TRAINER_DUSTY_2                      47
-#define TRAINER_DUSTY_3                      48
+#define TRAINER_DAISY                        36 // Ice Cream Island - Trainer 1
+#define TRAINER_ROSE_1                       37 // Ice Cream Island - Trainer 2
+#define TRAINER_FELIX                        38 // Ice Cream Island - Trainer 3
+#define TRAINER_VIOLET                       39 // Ice Cream Island - Trainer 4
+#define TRAINER_ROSE_2                       40 // Ice Cream Island - Trainer 5
+#define TRAINER_ROSE_3                       41 // Ice Cream Island - Trainer 6
+#define TRAINER_ROSE_4                       42 // Ice Cream Island - Trainer 7
+#define TRAINER_ROSE_5                       43 // Resort Arena - Trainer 1
+#define TRAINER_DUSTY_1                      44 // Resort Arena - Trainer 2
+#define TRAINER_CHIP                         45 // Resort Arena - Trainer 3
+#define TRAINER_FOSTER                       46 // Resort Arena - Trainer 4
+#define TRAINER_DUSTY_2                      47 // Resort Arena - Trainer 5
+#define TRAINER_DUSTY_3                      48 // Resort Arena - Daroach
 #define TRAINER_DUSTY_4                      49
 #define TRAINER_DUSTY_5                      50
 #define TRAINER_GABBY_AND_TY_1               51

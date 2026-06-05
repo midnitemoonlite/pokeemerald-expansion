@@ -9523,6 +9523,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/IndigoRestArea_Mart/border.bin",
       "blockdata_filepath": "data/layouts/IndigoRestArea_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CREAM_ISLAND",
+      "name": "IceCreamIsland_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/IceCreamIsland/border.bin",
+      "blockdata_filepath": "data/layouts/IceCreamIsland/map.bin"
     }
   ]
 }
