@@ -140,63 +140,65 @@ IceCreamIsland_EventScript_SetUpEncounter::
 	compare VAR_MR_FLOATY_QUEST, 1
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_3
 IceCreamIsland_EventScript_SetUpEncounter_1:
-# 140 "data/maps/IceCreamIsland/scripts.pory"
+# 138 "data/maps/IceCreamIsland/scripts.pory"
 	playmoncry SPECIES_BULBASAUR, CRY_MODE_NORMAL
-# 141 "data/maps/IceCreamIsland/scripts.pory"
+# 139 "data/maps/IceCreamIsland/scripts.pory"
 	waitmoncry
-# 142 "data/maps/IceCreamIsland/scripts.pory"
+# 140 "data/maps/IceCreamIsland/scripts.pory"
+	playse SE_PIN
+# 141 "data/maps/IceCreamIsland/scripts.pory"
 	applymovement LOCALID_MR_FLOATY_DEE, Common_Movement_ExclamationMark
-# 143 "data/maps/IceCreamIsland/scripts.pory"
+# 142 "data/maps/IceCreamIsland/scripts.pory"
 	waitmovement
-# 144 "data/maps/IceCreamIsland/scripts.pory"
+# 143 "data/maps/IceCreamIsland/scripts.pory"
 	turnobject LOCALID_MR_FLOATY_DEE, DIR_EAST
-# 145 "data/maps/IceCreamIsland/scripts.pory"
+# 144 "data/maps/IceCreamIsland/scripts.pory"
 	delay 16
-# 146 "data/maps/IceCreamIsland/scripts.pory"
+# 145 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_MR_FLOATY_QUEST, 0
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_7
-# 152 "data/maps/IceCreamIsland/scripts.pory"
+# 151 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_MR_FLOATY_QUEST, 1
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_8
 IceCreamIsland_EventScript_SetUpEncounter_6:
-# 156 "data/maps/IceCreamIsland/scripts.pory"
+# 155 "data/maps/IceCreamIsland/scripts.pory"
 	closemessage
+# 156 "data/maps/IceCreamIsland/scripts.pory"
+	setwildbattle SPECIES_MR_FLOATY, 20, ITEM_SAFETY_GOGGLES
 # 157 "data/maps/IceCreamIsland/scripts.pory"
 	playmoncry SPECIES_BULBASAUR, CRY_MODE_ENCOUNTER
 # 158 "data/maps/IceCreamIsland/scripts.pory"
-	setvar VAR_0x8004, 2
+	waitmoncry
 # 159 "data/maps/IceCreamIsland/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8004, 2
 # 160 "data/maps/IceCreamIsland/scripts.pory"
-	setvar VAR_0x8006, 20
+	setvar VAR_0x8005, 0
 # 161 "data/maps/IceCreamIsland/scripts.pory"
-	setvar VAR_0x8007, 4
+	setvar VAR_0x8006, 20
 # 162 "data/maps/IceCreamIsland/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 4
 # 163 "data/maps/IceCreamIsland/scripts.pory"
-	delay 30
+	special ShakeCamera
 # 164 "data/maps/IceCreamIsland/scripts.pory"
-	setwildbattle SPECIES_MR_FLOATY, 20, ITEM_SAFETY_GOGGLES
+	waitstate
 # 165 "data/maps/IceCreamIsland/scripts.pory"
 	dowildbattle
 # 166 "data/maps/IceCreamIsland/scripts.pory"
-	delay 90
-# 167 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_RAN
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_11
-# 167 "data/maps/IceCreamIsland/scripts.pory"
+# 166 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_11
-# 167 "data/maps/IceCreamIsland/scripts.pory"
+# 166 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_MON_FLED
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_11
-# 167 "data/maps/IceCreamIsland/scripts.pory"
+# 166 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_MON_TELEPORTED
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_11
-# 167 "data/maps/IceCreamIsland/scripts.pory"
+# 166 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_FORFEITED
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_11
-# 196 "data/maps/IceCreamIsland/scripts.pory"
+# 195 "data/maps/IceCreamIsland/scripts.pory"
 	goto IceCreamIsland_EventScript_MrFloatyConclusion
 	return
 
@@ -207,120 +209,120 @@ IceCreamIsland_EventScript_SetUpEncounter_2:
 
 IceCreamIsland_EventScript_SetUpEncounter_3:
 # 135 "data/maps/IceCreamIsland/scripts.pory"
-	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_0
+	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_1
 	goto IceCreamIsland_EventScript_SetUpEncounter_1
 
 IceCreamIsland_EventScript_SetUpEncounter_7:
-# 148 "data/maps/IceCreamIsland/scripts.pory"
-	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_1
-	goto IceCreamIsland_EventScript_SetUpEncounter_6
-
-IceCreamIsland_EventScript_SetUpEncounter_8:
-# 154 "data/maps/IceCreamIsland/scripts.pory"
+# 147 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_2
 	goto IceCreamIsland_EventScript_SetUpEncounter_6
 
+IceCreamIsland_EventScript_SetUpEncounter_8:
+# 153 "data/maps/IceCreamIsland/scripts.pory"
+	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_3
+	goto IceCreamIsland_EventScript_SetUpEncounter_6
+
 IceCreamIsland_EventScript_SetUpEncounter_11:
-# 169 "data/maps/IceCreamIsland/scripts.pory"
+# 168 "data/maps/IceCreamIsland/scripts.pory"
 	faceplayer
-# 170 "data/maps/IceCreamIsland/scripts.pory"
+# 169 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_MR_FLOATY_QUEST, 0
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_23
-# 181 "data/maps/IceCreamIsland/scripts.pory"
+# 180 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_MR_FLOATY_QUEST, 1
 	goto_if_eq IceCreamIsland_EventScript_SetUpEncounter_24
 IceCreamIsland_EventScript_SetUpEncounter_22:
-# 191 "data/maps/IceCreamIsland/scripts.pory"
+# 190 "data/maps/IceCreamIsland/scripts.pory"
 	turnobject LOCALID_MR_FLOATY_DEE, DIR_SOUTH
-# 192 "data/maps/IceCreamIsland/scripts.pory"
+# 191 "data/maps/IceCreamIsland/scripts.pory"
 	release
 	return
 
 IceCreamIsland_EventScript_SetUpEncounter_23:
-# 172 "data/maps/IceCreamIsland/scripts.pory"
-	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_3
-# 179 "data/maps/IceCreamIsland/scripts.pory"
+# 171 "data/maps/IceCreamIsland/scripts.pory"
+	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_4
+# 178 "data/maps/IceCreamIsland/scripts.pory"
 	setvar VAR_MR_FLOATY_QUEST, 1
 	goto IceCreamIsland_EventScript_SetUpEncounter_22
 
 IceCreamIsland_EventScript_SetUpEncounter_24:
-# 183 "data/maps/IceCreamIsland/scripts.pory"
-	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_4
+# 182 "data/maps/IceCreamIsland/scripts.pory"
+	msgbox IceCreamIsland_EventScript_SetUpEncounter_Text_5
 	goto IceCreamIsland_EventScript_SetUpEncounter_22
 
 
 IceCreamIsland_EventScript_MrFloatyConclusion::
-# 202 "data/maps/IceCreamIsland/scripts.pory"
+# 201 "data/maps/IceCreamIsland/scripts.pory"
 	lock
-# 203 "data/maps/IceCreamIsland/scripts.pory"
+# 202 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_EventScript_MrFloatyConclusion_Text_0
-# 204 "data/maps/IceCreamIsland/scripts.pory"
+# 203 "data/maps/IceCreamIsland/scripts.pory"
 	faceplayer
-# 205 "data/maps/IceCreamIsland/scripts.pory"
+# 204 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_EventScript_MrFloatyConclusion_Text_1
-# 210 "data/maps/IceCreamIsland/scripts.pory"
+# 209 "data/maps/IceCreamIsland/scripts.pory"
 	giveitem ITEM_SAFETY_GOGGLES
-# 211 "data/maps/IceCreamIsland/scripts.pory"
+# 210 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_EventScript_MrFloatyConclusion_Text_2
-# 214 "data/maps/IceCreamIsland/scripts.pory"
+# 213 "data/maps/IceCreamIsland/scripts.pory"
 	setvar VAR_MR_FLOATY_QUEST, 2
-# 215 "data/maps/IceCreamIsland/scripts.pory"
+# 214 "data/maps/IceCreamIsland/scripts.pory"
 	release
 	return
 
 
 IceCreamIsland_EventScript_Trainer1::
-# 220 "data/maps/IceCreamIsland/scripts.pory"
+# 219 "data/maps/IceCreamIsland/scripts.pory"
 	trainerbattle_single TRAINER_DAISY, IceCreamIsland_Text_Trainer1Intro, IceCreamIsland_Text_Trainer1Defeated
-# 221 "data/maps/IceCreamIsland/scripts.pory"
+# 220 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_Text_Trainer1Post, MSGBOX_AUTOCLOSE
 	return
 
 
 IceCreamIsland_EventScript_Trainer2::
-# 247 "data/maps/IceCreamIsland/scripts.pory"
+# 246 "data/maps/IceCreamIsland/scripts.pory"
 	trainerbattle_single TRAINER_ROSE_1, IceCreamIsland_Text_Trainer2Intro, IceCreamIsland_Text_Trainer2Defeated
-# 248 "data/maps/IceCreamIsland/scripts.pory"
+# 247 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_Text_Trainer2Post, MSGBOX_AUTOCLOSE
 	return
 
 
 IceCreamIsland_EventScript_Trainer3::
-# 270 "data/maps/IceCreamIsland/scripts.pory"
+# 269 "data/maps/IceCreamIsland/scripts.pory"
 	trainerbattle_single TRAINER_FELIX, IceCreamIsland_Text_Trainer3Intro, IceCreamIsland_Text_Trainer3Defeated
-# 271 "data/maps/IceCreamIsland/scripts.pory"
+# 270 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_Text_Trainer3Post, MSGBOX_AUTOCLOSE
 	return
 
 
 IceCreamIsland_EventScript_Trainer4::
-# 296 "data/maps/IceCreamIsland/scripts.pory"
+# 295 "data/maps/IceCreamIsland/scripts.pory"
 	trainerbattle_single TRAINER_VIOLET, IceCreamIsland_Text_Trainer4Intro, IceCreamIsland_Text_Trainer4Defeated
-# 297 "data/maps/IceCreamIsland/scripts.pory"
+# 296 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_Text_Trainer4Post, MSGBOX_AUTOCLOSE
 	return
 
 
 IceCreamIsland_EventScript_Trainer5::
-# 320 "data/maps/IceCreamIsland/scripts.pory"
+# 319 "data/maps/IceCreamIsland/scripts.pory"
 	trainerbattle_single TRAINER_ROSE_2, IceCreamIsland_Text_Trainer5Intro, IceCreamIsland_Text_Trainer5Defeated
-# 321 "data/maps/IceCreamIsland/scripts.pory"
+# 320 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_Text_Trainer5Post, MSGBOX_AUTOCLOSE
 	return
 
 
 IceCreamIsland_EventScript_Trainer6::
-# 349 "data/maps/IceCreamIsland/scripts.pory"
+# 348 "data/maps/IceCreamIsland/scripts.pory"
 	trainerbattle_single TRAINER_ROSE_3, IceCreamIsland_Text_Trainer6Intro, IceCreamIsland_Text_Trainer6Defeated
-# 350 "data/maps/IceCreamIsland/scripts.pory"
+# 349 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_Text_Trainer6Post, MSGBOX_AUTOCLOSE
 	return
 
 
 IceCreamIsland_EventScript_Trainer7::
-# 373 "data/maps/IceCreamIsland/scripts.pory"
+# 372 "data/maps/IceCreamIsland/scripts.pory"
 	trainerbattle_single TRAINER_ROSE_4, IceCreamIsland_Text_Trainer7Intro, IceCreamIsland_Text_Trainer7Defeated
-# 374 "data/maps/IceCreamIsland/scripts.pory"
+# 373 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_Text_Trainer7Post, MSGBOX_AUTOCLOSE
 	return
 
@@ -367,9 +369,9 @@ IceCreamIsland_EventScript_BlueSqueakerWander_Text_0:
 IceCreamIsland_EventScript_MrFloatyEncounter_Text_0:
 # 76 "data/maps/IceCreamIsland/scripts.pory"
 	.string "I thought I knew everything I needed\n"
-	.string "to make a perfect vacation…\p"
+	.string "to have the perfect vacation…\p"
 	.string "But now I know one more criteria:\n"
-	.string "“no rampant water beasts”!$"
+	.string "“no frightening water beasts”!$"
 
 IceCreamIsland_EventScript_MrFloatyEncounter_Text_1:
 # 84 "data/maps/IceCreamIsland/scripts.pory"
@@ -405,58 +407,63 @@ IceCreamIsland_EventScript_SetUpEncounter_Text_0:
 	.string "I can just lean back and relax…$"
 
 IceCreamIsland_EventScript_SetUpEncounter_Text_1:
-# 148 "data/maps/IceCreamIsland/scripts.pory"
+# 135 "data/maps/IceCreamIsland/scripts.pory"
+	.string "Ugh… just thinking about that\n"
+	.string "beast gives me the chills…$"
+
+IceCreamIsland_EventScript_SetUpEncounter_Text_2:
+# 147 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Huh? What was that noise just now?\p"
 	.string "You don't think it could be…$"
 
-IceCreamIsland_EventScript_SetUpEncounter_Text_2:
-# 154 "data/maps/IceCreamIsland/scripts.pory"
+IceCreamIsland_EventScript_SetUpEncounter_Text_3:
+# 153 "data/maps/IceCreamIsland/scripts.pory"
 	.string "No…! I recognize that roar!$"
 
-IceCreamIsland_EventScript_SetUpEncounter_Text_3:
-# 172 "data/maps/IceCreamIsland/scripts.pory"
+IceCreamIsland_EventScript_SetUpEncounter_Text_4:
+# 171 "data/maps/IceCreamIsland/scripts.pory"
 	.string "It was real!? Oh no, oh no, oh no…\p"
 	.string "I'm glad it's left us alone for now, but\n"
 	.string "knowing it could come back…\p"
-	.string "Nope! Not thinking about it! This is\n"
-	.string "what vacations are for!!$"
+	.string "Nope! Not thinking about it! Vacations\n"
+	.string "are meant for clearing your mind!!$"
 
-IceCreamIsland_EventScript_SetUpEncounter_Text_4:
-# 183 "data/maps/IceCreamIsland/scripts.pory"
-	.string "Unbelievable…\p"
+IceCreamIsland_EventScript_SetUpEncounter_Text_5:
+# 182 "data/maps/IceCreamIsland/scripts.pory"
+	.string "W-what horrible timing!\p"
 	.string "How am I supposed to relax knowing that\n"
 	.string "wet beast could strike at any moment?\p"
-	.string "Phew… gotta calm down… just think,\n"
-	.string "maybe this time it left for good!$"
+	.string "Phew… calm down… just think, maybe\n"
+	.string "THIS time it will leave you alone!$"
 
 IceCreamIsland_EventScript_MrFloatyConclusion_Text_0:
-# 203 "data/maps/IceCreamIsland/scripts.pory"
-	.string "I can't believe it…$"
+# 202 "data/maps/IceCreamIsland/scripts.pory"
+	.string "Gasp…$"
 
 IceCreamIsland_EventScript_MrFloatyConclusion_Text_1:
-# 205 "data/maps/IceCreamIsland/scripts.pory"
+# 204 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Man, I was lucky you were around to help\n"
 	.string "put a stop to that beast. Thank you!\p"
 	.string "Maybe this is a weird gift, but I\n"
 	.string "noticed it dropped this.$"
 
 IceCreamIsland_EventScript_MrFloatyConclusion_Text_2:
-# 211 "data/maps/IceCreamIsland/scripts.pory"
+# 210 "data/maps/IceCreamIsland/scripts.pory"
 	.string "With no more signs of rampaging Helpers,\n"
 	.string "I can get back to the important thing:\l"
 	.string "enjoying my beachside vacation!$"
 
 IceCreamIsland_Text_Trainer1Intro::
-# 224 "data/maps/IceCreamIsland/scripts.pory"
+# 223 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Behold my parasol power!$"
 
 IceCreamIsland_Text_Trainer1Defeated::
-# 229 "data/maps/IceCreamIsland/scripts.pory"
+# 228 "data/maps/IceCreamIsland/scripts.pory"
 	.string "A parasol is a good place to hide\n"
 	.string "your face after a loss…$"
 
 IceCreamIsland_Text_Trainer1Post::
-# 235 "data/maps/IceCreamIsland/scripts.pory"
+# 234 "data/maps/IceCreamIsland/scripts.pory"
 	.string "The other day, I went to pick up my\n"
 	.string "parasol after losing it, only to find\l"
 	.string "I accidentally picked up Drifter!\p"
@@ -464,95 +471,95 @@ IceCreamIsland_Text_Trainer1Post::
 	.string "together, Drifter and I.$"
 
 IceCreamIsland_Text_Trainer2Intro::
-# 251 "data/maps/IceCreamIsland/scripts.pory"
+# 250 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Huh? A Helper battle?\n"
 	.string "Well, I guess nothing's biting…$"
 
 IceCreamIsland_Text_Trainer2Defeated::
-# 257 "data/maps/IceCreamIsland/scripts.pory"
+# 256 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Any catch yet? Looks like a no…$"
 
 IceCreamIsland_Text_Trainer2Post::
-# 262 "data/maps/IceCreamIsland/scripts.pory"
+# 261 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Nothing's biting, but that's okay.\n"
 	.string "Sitting by the waves is nice too.$"
 
 IceCreamIsland_Text_Trainer3Intro::
-# 274 "data/maps/IceCreamIsland/scripts.pory"
+# 273 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Intruder detected!\n"
 	.string "This spot is mine!$"
 
 IceCreamIsland_Text_Trainer3Defeated::
-# 280 "data/maps/IceCreamIsland/scripts.pory"
+# 279 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Squeak! You're strong!$"
 
 IceCreamIsland_Text_Trainer3Post::
-# 285 "data/maps/IceCreamIsland/scripts.pory"
+# 284 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Hmm… well, you don't seem like a bad guy,\n"
 	.string "so I'll let you pass.\p"
 	.string "But if you do anything suspicious, I'm\n"
 	.string "reporting you to the boss!$"
 
 IceCreamIsland_Text_Trainer4Intro::
-# 300 "data/maps/IceCreamIsland/scripts.pory"
+# 299 "data/maps/IceCreamIsland/scripts.pory"
 	.string "I knew hiding under the big umbrellas\n"
 	.string "was a smart tactic!$"
 
 IceCreamIsland_Text_Trainer4Defeated::
-# 306 "data/maps/IceCreamIsland/scripts.pory"
+# 305 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Squeak! My surprise attack backfired!?$"
 
 IceCreamIsland_Text_Trainer4Post::
-# 311 "data/maps/IceCreamIsland/scripts.pory"
+# 310 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Maybe I should give up on looking for\n"
 	.string "treasure… on a hot day like this, I'd\l"
 	.string "rather just sit in the shade!$"
 
 IceCreamIsland_Text_Trainer5Intro::
-# 324 "data/maps/IceCreamIsland/scripts.pory"
+# 323 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Huh, you look familiar.\n"
 	.string "Have we met before?\p"
 	.string "Well, that's not important right now.\n"
 	.string "Battles first, questions later!$"
 
 IceCreamIsland_Text_Trainer5Defeated::
-# 333 "data/maps/IceCreamIsland/scripts.pory"
+# 332 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Squeak! I lost…$"
 
 IceCreamIsland_Text_Trainer5Post::
-# 338 "data/maps/IceCreamIsland/scripts.pory"
+# 337 "data/maps/IceCreamIsland/scripts.pory"
 	.string "I swear I've seen you before, but\n"
 	.string "I just can't place it!\p"
 	.string "Did we steal something from you in the\n"
 	.string "past, perhaps?$"
 
 IceCreamIsland_Text_Trainer6Intro::
-# 353 "data/maps/IceCreamIsland/scripts.pory"
+# 352 "data/maps/IceCreamIsland/scripts.pory"
 	.string "I know it's a nice day at the beach,\n"
 	.string "but you can't let your guard down!$"
 
 IceCreamIsland_Text_Trainer6Defeated::
-# 359 "data/maps/IceCreamIsland/scripts.pory"
+# 358 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Whew! That battle was blistering hot!$"
 
 IceCreamIsland_Text_Trainer6Post::
-# 364 "data/maps/IceCreamIsland/scripts.pory"
+# 363 "data/maps/IceCreamIsland/scripts.pory"
 	.string "I wouldn't be shocked to see you score\n"
 	.string "a brooch at the Resort Arena.\l"
 	.string "Your Helpers are something else!$"
 
 IceCreamIsland_Text_Trainer7Intro::
-# 377 "data/maps/IceCreamIsland/scripts.pory"
+# 376 "data/maps/IceCreamIsland/scripts.pory"
 	.string "I heard those Squeakers talking about\n"
 	.string "hidden treasure somewhere out here!\l"
 	.string "I won't let you beat me to it!$"
 
 IceCreamIsland_Text_Trainer7Defeated::
-# 384 "data/maps/IceCreamIsland/scripts.pory"
+# 383 "data/maps/IceCreamIsland/scripts.pory"
 	.string "Aww… I really wanted to find treasure!$"
 
 IceCreamIsland_Text_Trainer7Post::
-# 389 "data/maps/IceCreamIsland/scripts.pory"
+# 388 "data/maps/IceCreamIsland/scripts.pory"
 	.string "How do you think treasure ends up\n"
 	.string "buried in places like this, anyways?\p"
 	.string "Maybe a legendary pirate hid it, hoping\n"

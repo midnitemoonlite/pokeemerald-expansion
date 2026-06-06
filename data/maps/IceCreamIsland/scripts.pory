@@ -74,10 +74,10 @@ script IceCreamIsland_EventScript_MrFloatyEncounter
     if(var(VAR_MR_FLOATY_QUEST) == 2)
     {
         msgbox("I thought I knew everything I needed
-                to make a perfect vacation\.
+                to have the perfect vacation\.
                 
                 But now I know one more criteria:
-                \qono rampant water beasts\qc!")
+                \qono frightening water beasts\qc!")
     }
     if(var(VAR_MR_FLOATY_QUEST) == 1)
     {
@@ -153,6 +153,7 @@ script IceCreamIsland_EventScript_SetUpEncounter
         msgbox("No\.! I recognize that roar!")
     }
     closemessage()
+    setwildbattle(SPECIES_MR_FLOATY, 20, ITEM_SAFETY_GOGGLES)
     playmoncry(SPECIES_BULBASAUR, CRY_MODE_ENCOUNTER)
     waitmoncry()
     setvar(VAR_0x8004, 2)  // vertical pan
@@ -160,10 +161,8 @@ script IceCreamIsland_EventScript_SetUpEncounter
     setvar(VAR_0x8006, 20) // num shakes
 	setvar(VAR_0x8007, 4)  // shake delay
 	special(ShakeCamera)
-    delay(30)
-    setwildbattle(SPECIES_MR_FLOATY, 20, ITEM_SAFETY_GOGGLES)
+    waitstate
     dowildbattle()
-    delay(90)
     if(var(VAR_RESULT) == B_OUTCOME_RAN || var(VAR_RESULT) == B_OUTCOME_PLAYER_TELEPORTED || var(VAR_RESULT) == B_OUTCOME_MON_FLED || var(VAR_RESULT) == B_OUTCOME_MON_TELEPORTED || var(VAR_RESULT) == B_OUTCOME_FORFEITED)
     {
         faceplayer
@@ -174,19 +173,19 @@ script IceCreamIsland_EventScript_SetUpEncounter
                     I'm glad it's left us alone for now, but
                     knowing it could come back\.
                         
-                    Nope! Not thinking about it! This is
-                    what vacations are for!!")
+                    Nope! Not thinking about it! Vacations
+                    are meant for clearing your mind!!")
             setvar(VAR_MR_FLOATY_QUEST, 1)
         }
         elif(var(VAR_MR_FLOATY_QUEST) == 1)
         {
-            msgbox("Unbelievable\.
+            msgbox("W-what horrible timing!
                     
                     How am I supposed to relax knowing that
                     wet beast could strike at any moment?
                             
-                    Phew\. gotta calm down\. just think,
-                    maybe this time it left for good!")
+                    Phew\. calm down\. just think, maybe
+                    THIS time it will leave you alone!")
         }
         turnobject(LOCALID_MR_FLOATY_DEE, DIR_SOUTH)
         release
@@ -200,7 +199,7 @@ script IceCreamIsland_EventScript_SetUpEncounter
 script IceCreamIsland_EventScript_MrFloatyConclusion
 {
     lock
-    msgbox("Haah\.")
+    msgbox("Gasp\.")
     faceplayer
     msgbox("Man, I was lucky you were around to help
             put a stop to that beast. Thank you!

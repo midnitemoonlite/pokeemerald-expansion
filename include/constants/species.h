@@ -2081,7 +2081,13 @@
 #define SPECIES_NIGHTMARE                               SPECIES_NIGHTMARE_POWER_ORB
 #define SPECIES_NIGHTMARE_POWER_ORB                     1942
 #define SPECIES_NIGHTMARE_WIZARD                        1943
-#define SPECIES_BATAMON                                 1944
+#define SPECIES_PITCH                                   1944
+#define SPECIES_KINE                                    1945
+#define SPECIES_NAGO                                    1946
+#define SPECIES_COO                                     1947
+#define SPECIES_RICK                                    1948
+#define SPECIES_CHUCHU                                  1949
+#define SPECIES_BATAMON                                 1950
 
 
 #define SPECIES_EGG                                     (SPECIES_BATAMON + 1)

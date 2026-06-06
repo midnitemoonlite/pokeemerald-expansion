@@ -206,7 +206,7 @@ static const struct SpriteFrameImage sPicTable_HexManiac[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_SwimmerM[] = {
-    overworld_ascending_frames(gObjectEventPic_SwimmerM, 2, 4),
+    overworld_ascending_frames(gObjectEventPic_SwimmerM, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_SwimmerF[] = {

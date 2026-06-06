@@ -30637,3 +30637,57 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     #if P_FOOTPRINTS
     const u8 gMonFootprint_Batamon[] = INCGFX_U8("graphics/pokemon/batamon/footprint.png", ".1bpp");
     #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Pitch[] = INCGFX_U32("graphics/pokemon/pitch/front.png", ".4bpp.lz");
+    const u32 gMonBackPic_Pitch[] = INCGFX_U32("graphics/pokemon/pitch/back.png", ".4bpp.lz");
+    const u16 gMonPalette_Pitch[] = INCGFX_U16("graphics/pokemon/pitch/normal.pal", ".gbapal");
+    const u16 gMonShinyPalette_Pitch[] = INCGFX_U16("graphics/pokemon/pitch/shiny.pal", ".gbapal");
+    const u8 gMonIcon_Pitch[] = INCGFX_U8("graphics/pokemon/pitch/icon.png", ".4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Pitch[] = INCGFX_U8("graphics/pokemon/pitch/footprint.png", ".1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Kine[] = INCGFX_U32("graphics/pokemon/kine/front.png", ".4bpp.lz");
+    const u32 gMonBackPic_Kine[] = INCGFX_U32("graphics/pokemon/kine/back.png", ".4bpp.lz");
+    const u16 gMonPalette_Kine[] = INCGFX_U16("graphics/pokemon/kine/normal.pal", ".gbapal");
+    const u16 gMonShinyPalette_Kine[] = INCGFX_U16("graphics/pokemon/kine/shiny.pal", ".gbapal");
+    const u8 gMonIcon_Kine[] = INCGFX_U8("graphics/pokemon/kine/icon.png", ".4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Kine[] = INCGFX_U8("graphics/pokemon/kine/footprint.png", ".1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Nago[] = INCGFX_U32("graphics/pokemon/nago/front.png", ".4bpp.lz");
+    const u32 gMonBackPic_Nago[] = INCGFX_U32("graphics/pokemon/nago/back.png", ".4bpp.lz");
+    const u16 gMonPalette_Nago[] = INCGFX_U16("graphics/pokemon/nago/normal.pal", ".gbapal");
+    const u16 gMonShinyPalette_Nago[] = INCGFX_U16("graphics/pokemon/nago/shiny.pal", ".gbapal");
+    const u8 gMonIcon_Nago[] = INCGFX_U8("graphics/pokemon/nago/icon.png", ".4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Nago[] = INCGFX_U8("graphics/pokemon/nago/footprint.png", ".1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Coo[] = INCGFX_U32("graphics/pokemon/coo/front.png", ".4bpp.lz");
+    const u32 gMonBackPic_Coo[] = INCGFX_U32("graphics/pokemon/coo/back.png", ".4bpp.lz");
+    const u16 gMonPalette_Coo[] = INCGFX_U16("graphics/pokemon/coo/normal.pal", ".gbapal");
+    const u16 gMonShinyPalette_Coo[] = INCGFX_U16("graphics/pokemon/coo/shiny.pal", ".gbapal");
+    const u8 gMonIcon_Coo[] = INCGFX_U8("graphics/pokemon/coo/icon.png", ".4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Coo[] = INCGFX_U8("graphics/pokemon/coo/footprint.png", ".1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Rick[] = INCGFX_U32("graphics/pokemon/rick/front.png", ".4bpp.lz");
+    const u32 gMonBackPic_Rick[] = INCGFX_U32("graphics/pokemon/rick/back.png", ".4bpp.lz");
+    const u16 gMonPalette_Rick[] = INCGFX_U16("graphics/pokemon/rick/normal.pal", ".gbapal");
+    const u16 gMonShinyPalette_Rick[] = INCGFX_U16("graphics/pokemon/rick/shiny.pal", ".gbapal");
+    const u8 gMonIcon_Rick[] = INCGFX_U8("graphics/pokemon/rick/icon.png", ".4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Rick[] = INCGFX_U8("graphics/pokemon/rick/footprint.png", ".1bpp");
+    #endif //P_FOOTPRINTS
+
+    const u32 gMonFrontPic_Chuchu[] = INCGFX_U32("graphics/pokemon/chuchu/front.png", ".4bpp.lz");
+    const u32 gMonBackPic_Chuchu[] = INCGFX_U32("graphics/pokemon/chuchu/back.png", ".4bpp.lz");
+    const u16 gMonPalette_Chuchu[] = INCGFX_U16("graphics/pokemon/chuchu/normal.pal", ".gbapal");
+    const u16 gMonShinyPalette_Chuchu[] = INCGFX_U16("graphics/pokemon/chuchu/shiny.pal", ".gbapal");
+    const u8 gMonIcon_Chuchu[] = INCGFX_U8("graphics/pokemon/chuchu/icon.png", ".4bpp");
+    #if P_FOOTPRINTS
+    const u8 gMonFootprint_Chuchu[] = INCGFX_U8("graphics/pokemon/chuchu/footprint.png", ".1bpp");
+    #endif //P_FOOTPRINTS

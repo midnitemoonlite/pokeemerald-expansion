@@ -9533,6 +9533,16 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/IceCreamIsland/border.bin",
       "blockdata_filepath": "data/layouts/IceCreamIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_ICE_CREAM_ISLAND_BEACHHOUSE",
+      "name": "IceCreamIsland_Beachhouse_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_SeashoreHouse",
+      "border_filepath": "data/layouts/IceCreamIsland_Beachhouse/border.bin",
+      "blockdata_filepath": "data/layouts/IceCreamIsland_Beachhouse/map.bin"
     }
   ]
 }

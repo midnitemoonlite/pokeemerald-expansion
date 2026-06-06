@@ -203,7 +203,7 @@
       "x": 60,
       "y": 9,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_VEGETABLE_VALLEY_STATE",
       "var_value": "0",
       "script": "VegetableValley_EventScript_TriggerRight"
     }

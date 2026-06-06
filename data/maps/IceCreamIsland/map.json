@@ -271,11 +271,11 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
       "x": 34,
-      "y": 39,
+      "y": 41,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_RIGHT_DOWN",
       "movement_range_x": 12,
-      "movement_range_y": 0,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "IceCreamIsland_EventScript_Trainer7",
@@ -326,7 +326,7 @@
       "x": 16,
       "y": 46,
       "elevation": 0,
-      "dest_map": "MAP_ICE_CREAM_ISLAND",
+      "dest_map": "MAP_ICE_CREAM_ISLAND_BEACHHOUSE",
       "dest_warp_id": "0"
     }
   ],

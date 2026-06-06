@@ -81,8 +81,8 @@
 #define FLAG_FOUND_PITCH    0x3B // Fruity Forest - Hides Pitch
 #define FLAG_HIDE_FRUITY_FOREST_NPCS    0x3C // Fruity Forest - Pitch Mama and Bandana Waddle Dee
 #define FLAG_INDIGO_REST_AREA_TRADE_COMPLETED    0x3D // Indigo Rest Area (Center) - Lass who wants to trade
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
+#define FLAG_RECEIVED_PEARL    0x3E // Ice Cream Island (Beachhouse) - Pearl from Socialite
+#define FLAG_RECEIVED_BEACHHOUSE_ITEM    0x3F // Ice Cream Island (Beachhouse) - Item from Waddle Dee
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag

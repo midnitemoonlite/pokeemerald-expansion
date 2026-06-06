@@ -79,7 +79,8 @@
     "gMapGroup_IndoorGreenRestArea",
     "gMapGroup_IndoorWaddleDeeTown",
     "gMapGroup_IndoorVegetableValley",
-    "gMapGroup_IndoorIndigoRestArea"
+    "gMapGroup_IndoorIndigoRestArea",
+    "gMapGroup_IndoorIceCreamIsland"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1196,5 +1197,8 @@
   "gMapGroup_IndoorIndigoRestArea": [
     "IndigoRestArea_Center",
     "IndigoRestArea_Mart"
+  ],
+  "gMapGroup_IndoorIceCreamIsland": [
+    "IceCreamIsland_Beachhouse"
   ]
 }

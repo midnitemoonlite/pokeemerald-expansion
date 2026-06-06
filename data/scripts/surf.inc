@@ -1,7 +1,6 @@
 EventScript_UseSurf::
-	checkfieldmove FIELD_MOVE_SURF
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_EndUseSurf
-	setfieldeffectargument 0, SPECIES_CLAYKKEN
+	goto_if_unset FLAG_BADGE02_GET, EventScript_EndUseSurf
+	setfieldeffectargument 0, SPECIES_KINE
 	lockall
 	msgbox gText_WantToUseSurf, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_ReleaseUseSurf
@@ -14,8 +13,7 @@ EventScript_EndUseSurf::
 
 EventScript_CurrentTooFast::
 	lockall
-	checkfieldmove FIELD_MOVE_SURF
-	goto_if_eq VAR_RESULT, FALSE, EventScript_CurrentTooFastEndMsg
+	goto_if_unset FLAG_BADGE02_GET, EventScript_CurrentTooFastEndMsg
 	playse SE_SELECT
 	msgbox Text_CurrentTooFast
 EventScript_CurrentTooFastEndMsg::

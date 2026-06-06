@@ -1,0 +1,151 @@
+raw `
+IceCreamIsland_Beachhouse_MapScripts::
+	.byte 0
+`
+
+script IceCreamIsland_Beachhouse_EventScript_BlueSqueaker
+{
+    lock
+    msgbox("We\.")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_GreenSqueaker
+{
+    lock
+    msgbox("\.love\.")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_YellowSqueaker
+{
+    lock
+    msgbox("\.shaved\.")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_RedSqueaker
+{
+    lock
+    msgbox("Brain freeze!!
+            
+            Uh\. I mean\. ice!")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_ShavedIceWaddleDee
+{
+    lock
+    msgbox("There's so many flavors\. what do I get?
+            Oh! I know! I'll make a rainbow sorbet!")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_TableWaddleDee
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_BEACHHOUSE_ITEM))
+    {
+        msgbox("There's a lot about the Royal Royale
+                that goes over my head\.
+                
+                I'm having fun, but I wonder how far
+                I'll be able to make it in the end.")
+    }
+    if(!flag(FLAG_RECEIVED_BEACHHOUSE_ITEM))
+    {
+        msgbox("Are you taking part in that game
+                the Great King put together?
+                
+                Here, I've got something you might be
+                able to make better use of than me.")
+        giveitem(ITEM_ABILITY_PATCH)
+        setflag(FLAG_RECEIVED_BEACHHOUSE_ITEM)
+        msgbox("Apparently, this item can give your
+                Helpers a special \qoability\qc.
+                
+                To be honest, I'm not really sure
+                what that means. I hope it's useful!")
+    }
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I can't get enough of this place!
+            The vibes are off the charts!
+            
+            The beach is fine, but sharing good
+            food with good folks is the best!")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_ParasolWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I came here hoping to escape from the
+            heat outside, but\.
+            
+            I had no idea this place was so
+            popular. I'm a little overwhelmed\.")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_GentlemanWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I'm not quite sure what to make of
+            Dedede's Royal Royale\.
+            
+            Even with a new Arena built there, it
+            seems the sleepy resort people aren't
+            really sold on the concept.")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_SocialiteWaddleDee
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_PEARL))
+    {
+        msgbox("I found this by the seashore.
+            Isn't it beautiful?")
+        giveitem(ITEM_PEARL)
+        setflag(FLAG_RECEIVED_PEARL)
+    }
+    msgbox("All my jewelry is crafted from baubles
+            I pick up at the beach.")
+    release
+}
+
+script IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee
+{
+	lock
+	faceplayer
+	message(IceCreamIsland_Beachhouse_Text_Introduction)
+	waitmessage
+	pokemart(IceCreamIsland_Beachhouse_Menu)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart IceCreamIsland_Beachhouse_Menu
+{
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+    ITEM_LEMONADE
+    ITEM_LAVA_COOKIE
+}
+
+text IceCreamIsland_Beachhouse_Text_Introduction
+{
+    "Welcome to the beachhouse!
+    What can I get you today?"
+}
