@@ -46,9 +46,6 @@ SevenIsland_House_Room2_EventScript_BattleVisitingTrainer::
 	setvar VAR_0x8005, 0
 # 24 "data/maps/SevenIsland_House_Room2_Frlg/scripts.pory"
 	special DoSpecialTrainerBattle
-# 25 "data/maps/SevenIsland_House_Room2_Frlg/scripts.pory"
-	waitstate
-# 26 "data/maps/SevenIsland_House_Room2_Frlg/scripts.pory"
 	call_if_eq VAR_RESULT, 3, SevenIsland_House_Room2_EventScript_BattleTie
 # 27 "data/maps/SevenIsland_House_Room2_Frlg/scripts.pory"
 	call_if_eq VAR_RESULT, 1, SevenIsland_House_Room2_EventScript_BattleWon

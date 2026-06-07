@@ -96,9 +96,6 @@ PowerPlant_EventScript_Zapdos::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 49 "data/maps/PowerPlant_Frlg/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 50 "data/maps/PowerPlant_Frlg/scripts.pory"
-	waitstate
-# 51 "data/maps/PowerPlant_Frlg/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 52 "data/maps/PowerPlant_Frlg/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

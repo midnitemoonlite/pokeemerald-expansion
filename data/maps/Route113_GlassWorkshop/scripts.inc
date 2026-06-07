@@ -120,9 +120,6 @@ Route113_GlassWorkshop_EventScript_ChooseGlassItem::
 	setvar VAR_0x8004, SCROLL_MULTI_GLASS_WORKSHOP_VENDOR
 # 61 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	special ShowScrollableMultichoice
-# 62 "data/maps/Route113_GlassWorkshop/scripts.pory"
-	waitstate
-# 63 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	switch VAR_RESULT
 # 64 "data/maps/Route113_GlassWorkshop/scripts.pory"
 	case 0, Route113_GlassWorkshop_EventScript_BlueFlute

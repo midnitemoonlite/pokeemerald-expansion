@@ -420,9 +420,6 @@ TrainerTower_Lobby_EventScript_ShowRecords::
 	setvar VAR_0x8004, 1
 # 211 "data/maps/TrainerTower_Lobby_Frlg/scripts.pory"
 	special ShowTrainerHillRecords
-# 212 "data/maps/TrainerTower_Lobby_Frlg/scripts.pory"
-	waitstate
-# 213 "data/maps/TrainerTower_Lobby_Frlg/scripts.pory"
 	releaseall
 # 214 "data/maps/TrainerTower_Lobby_Frlg/scripts.pory"
 	end

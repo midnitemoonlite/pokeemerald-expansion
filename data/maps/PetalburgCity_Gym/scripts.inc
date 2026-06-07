@@ -2196,9 +2196,6 @@ PetalburgCity_Gym_EventScript_SetOHKORoomDoorMetatiles::
 PetalburgCity_Gym_EventScript_SlideOpenRoomDoors::
 # 1099 "data/maps/PetalburgCity_Gym/scripts.pory"
 	special PetalburgGymSlideOpenRoomDoors
-# 1100 "data/maps/PetalburgCity_Gym/scripts.pory"
-	waitstate
-# 1101 "data/maps/PetalburgCity_Gym/scripts.pory"
 	return
 # 1102 "data/maps/PetalburgCity_Gym/scripts.pory"
 

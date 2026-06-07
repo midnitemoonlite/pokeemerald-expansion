@@ -66,9 +66,6 @@ CeladonCity_Condominiums_3F_EventScript_ShowDiploma::
 	delay 60
 # 34 "data/maps/CeladonCity_Condominiums_3F_Frlg/scripts.pory"
 	special Special_ShowDiploma
-# 35 "data/maps/CeladonCity_Condominiums_3F_Frlg/scripts.pory"
-	waitstate
-# 36 "data/maps/CeladonCity_Condominiums_3F_Frlg/scripts.pory"
 	release
 # 37 "data/maps/CeladonCity_Condominiums_3F_Frlg/scripts.pory"
 	end

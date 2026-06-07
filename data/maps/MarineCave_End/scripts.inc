@@ -76,9 +76,6 @@ MarineCave_End_EventScript_Kyogre::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 39 "data/maps/MarineCave_End/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 40 "data/maps/MarineCave_End/scripts.pory"
-	waitstate
-# 41 "data/maps/MarineCave_End/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 42 "data/maps/MarineCave_End/scripts.pory"
 	setvar VAR_TEMP_1, 0

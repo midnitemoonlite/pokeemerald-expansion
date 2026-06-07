@@ -102,9 +102,6 @@ SkyPillar_Top_EventScript_Rayquaza::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 52 "data/maps/SkyPillar_Top/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 53 "data/maps/SkyPillar_Top/scripts.pory"
-	waitstate
-# 54 "data/maps/SkyPillar_Top/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 55 "data/maps/SkyPillar_Top/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

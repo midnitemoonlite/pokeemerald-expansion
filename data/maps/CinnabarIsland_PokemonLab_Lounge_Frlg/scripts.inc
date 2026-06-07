@@ -104,9 +104,6 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_Norma::
 	goto_if_eq VAR_RESULT, NO, CinnabarIsland_PokemonLab_Lounge_EventScript_NormaDeclineTrade
 # 53 "data/maps/CinnabarIsland_PokemonLab_Lounge_Frlg/scripts.pory"
 	special ChoosePartyMon
-# 54 "data/maps/CinnabarIsland_PokemonLab_Lounge_Frlg/scripts.pory"
-	waitstate
-# 55 "data/maps/CinnabarIsland_PokemonLab_Lounge_Frlg/scripts.pory"
 	copyvar VAR_0x800A, VAR_0x8004
 # 56 "data/maps/CinnabarIsland_PokemonLab_Lounge_Frlg/scripts.pory"
 	goto_if_ge VAR_0x8004, PARTY_SIZE, CinnabarIsland_PokemonLab_Lounge_EventScript_NormaDeclineTrade
@@ -126,9 +123,6 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_Norma::
 	special CreateInGameTradePokemon
 # 64 "data/maps/CinnabarIsland_PokemonLab_Lounge_Frlg/scripts.pory"
 	special DoInGameTradeScene
-# 65 "data/maps/CinnabarIsland_PokemonLab_Lounge_Frlg/scripts.pory"
-	waitstate
-# 66 "data/maps/CinnabarIsland_PokemonLab_Lounge_Frlg/scripts.pory"
 	msgbox Trade_Text_ThanksYoureAPal
 # 67 "data/maps/CinnabarIsland_PokemonLab_Lounge_Frlg/scripts.pory"
 	setflag FLAG_DID_TANGENY_TRADE

@@ -24,9 +24,6 @@ SixIsland_WaterPath_House1_EventScript_Beauty::
 	msgbox SixIsland_WaterPath_House1_Text_MayIMeasureHeracross
 # 13 "data/maps/SixIsland_WaterPath_House1_Frlg/scripts.pory"
 	special ChoosePartyMon
-# 14 "data/maps/SixIsland_WaterPath_House1_Frlg/scripts.pory"
-	waitstate
-# 15 "data/maps/SixIsland_WaterPath_House1_Frlg/scripts.pory"
 	copyvar VAR_RESULT, VAR_0x8004
 # 16 "data/maps/SixIsland_WaterPath_House1_Frlg/scripts.pory"
 	goto_if_ge VAR_RESULT, PARTY_SIZE, SixIsland_WaterPath_House1_EventScript_DontShowMon

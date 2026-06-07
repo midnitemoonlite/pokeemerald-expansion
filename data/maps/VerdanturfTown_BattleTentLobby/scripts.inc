@@ -264,9 +264,6 @@ VerdanturfTown_BattleTentLobby_EventScript_TryEnterChallenge::
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
 # 133 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	special ChoosePartyForBattleFrontier
-# 134 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	waitstate
-# 135 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, VerdanturfTown_BattleTentLobby_EventScript_LoadPartyCancelChallenge
 # 136 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	msgbox VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge, MSGBOX_YESNO
@@ -562,9 +559,6 @@ VerdanturfTown_BattleTentLobby_EventScript_ReadRulesBoard::
 	setvar VAR_0x8004, SCROLL_MULTI_BATTLE_TENT_RULES
 # 282 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	special ShowScrollableMultichoice
-# 283 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
-	waitstate
-# 284 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	switch VAR_RESULT
 # 285 "data/maps/VerdanturfTown_BattleTentLobby/scripts.pory"
 	case 0, VerdanturfTown_BattleTentLobby_EventScript_RulesLevel

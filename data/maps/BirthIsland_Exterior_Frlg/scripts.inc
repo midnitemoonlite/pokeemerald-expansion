@@ -88,9 +88,6 @@ BirthIsland_Exterior_Frlg_EventScript_Triangle::
 	faceplayer
 # 45 "data/maps/BirthIsland_Exterior_Frlg/scripts.pory"
 	special DoDeoxysRockInteraction
-# 46 "data/maps/BirthIsland_Exterior_Frlg/scripts.pory"
-	waitstate
-# 47 "data/maps/BirthIsland_Exterior_Frlg/scripts.pory"
 	switch VAR_RESULT
 # 48 "data/maps/BirthIsland_Exterior_Frlg/scripts.pory"
 	case 0, BirthIsland_Exterior_EventScript_NotSolved1
@@ -166,9 +163,6 @@ BirthIsland_Exterior_Frlg_EventScript_Deoxys::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 84 "data/maps/BirthIsland_Exterior_Frlg/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 85 "data/maps/BirthIsland_Exterior_Frlg/scripts.pory"
-	waitstate
-# 86 "data/maps/BirthIsland_Exterior_Frlg/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 87 "data/maps/BirthIsland_Exterior_Frlg/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

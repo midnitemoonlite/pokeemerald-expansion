@@ -76,9 +76,6 @@ TerraCave_End_EventScript_Groudon::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 39 "data/maps/TerraCave_End/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 40 "data/maps/TerraCave_End/scripts.pory"
-	waitstate
-# 41 "data/maps/TerraCave_End/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 42 "data/maps/TerraCave_End/scripts.pory"
 	setvar VAR_TEMP_1, 0

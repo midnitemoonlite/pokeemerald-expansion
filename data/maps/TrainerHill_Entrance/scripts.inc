@@ -438,9 +438,6 @@ TrainerHill_Entrance_EventScript_Records::
 	setvar VAR_0x8004, 0
 # 220 "data/maps/TrainerHill_Entrance/scripts.pory"
 	special ShowTrainerHillRecords
-# 221 "data/maps/TrainerHill_Entrance/scripts.pory"
-	waitstate
-# 222 "data/maps/TrainerHill_Entrance/scripts.pory"
 	releaseall
 # 223 "data/maps/TrainerHill_Entrance/scripts.pory"
 	end

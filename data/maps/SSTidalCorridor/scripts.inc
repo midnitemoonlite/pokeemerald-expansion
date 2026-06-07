@@ -304,9 +304,6 @@ SSTidalCorridor_EventScript_Porthole::
 SSTidalCorridor_EventScript_LookThroughPorthole::
 # 153 "data/maps/SSTidalCorridor/scripts.pory"
 	special LookThroughPorthole
-# 154 "data/maps/SSTidalCorridor/scripts.pory"
-	waitstate
-# 155 "data/maps/SSTidalCorridor/scripts.pory"
 	end
 # 156 "data/maps/SSTidalCorridor/scripts.pory"
 

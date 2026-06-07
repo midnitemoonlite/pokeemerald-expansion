@@ -74,9 +74,6 @@ MtEmber_Summit_EventScript_Moltres::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 38 "data/maps/MtEmber_Summit_Frlg/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 39 "data/maps/MtEmber_Summit_Frlg/scripts.pory"
-	waitstate
-# 40 "data/maps/MtEmber_Summit_Frlg/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 41 "data/maps/MtEmber_Summit_Frlg/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

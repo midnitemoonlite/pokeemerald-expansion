@@ -112,9 +112,6 @@ NavelRock_Bottom_EventScript_Lugia::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 57 "data/maps/NavelRock_Bottom/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 58 "data/maps/NavelRock_Bottom/scripts.pory"
-	waitstate
-# 59 "data/maps/NavelRock_Bottom/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 60 "data/maps/NavelRock_Bottom/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

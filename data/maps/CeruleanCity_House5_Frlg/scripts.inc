@@ -78,9 +78,6 @@ CeruleanCity_House5_EventScript_ChooseExchangeItem::
 	setvar VAR_0x8004, SCROLL_MULTI_BERRY_POWDER_VENDOR
 # 40 "data/maps/CeruleanCity_House5_Frlg/scripts.pory"
 	special ShowScrollableMultichoice
-# 41 "data/maps/CeruleanCity_House5_Frlg/scripts.pory"
-	waitstate
-# 42 "data/maps/CeruleanCity_House5_Frlg/scripts.pory"
 	switch VAR_RESULT
 # 43 "data/maps/CeruleanCity_House5_Frlg/scripts.pory"
 	case 0, CeruleanCity_House5_EventScript_EnergyPowder
@@ -342,9 +339,6 @@ CeruleanCity_House5_EventScript_BerryCrushRankings::
 	lockall
 # 172 "data/maps/CeruleanCity_House5_Frlg/scripts.pory"
 	special ShowBerryCrushRankings
-# 173 "data/maps/CeruleanCity_House5_Frlg/scripts.pory"
-	waitstate
-# 174 "data/maps/CeruleanCity_House5_Frlg/scripts.pory"
 	releaseall
 # 175 "data/maps/CeruleanCity_House5_Frlg/scripts.pory"
 	end

@@ -44,9 +44,6 @@ FourIsland_PokemonDayCare_GiveMonToRaise::
 	fadescreen FADE_TO_BLACK
 # 23 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	special ChooseSendDaycareMon
-# 24 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
-	waitstate
-# 25 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	goto_if_ge VAR_0x8004, PARTY_SIZE, FourIsland_PokemonDayCare_ComeAgain
 # 26 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	specialvar VAR_RESULT, CountPartyAliveNonEggMons_IgnoreVar0x8004Slot
@@ -184,9 +181,6 @@ FourIsland_PokemonDayCare_TryRetrieveMon::
 	goto_if_eq VAR_RESULT, DAYCARE_ONE_MON, FourIsland_PokemonDayCare_CostPrompt
 # 93 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	special ShowDaycareLevelMenu
-# 94 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
-	waitstate
-# 95 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
 # 96 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	goto_if_eq VAR_RESULT, DAYCARE_EXITED_LEVEL_MENU, FourIsland_PokemonDayCare_ComeAgain
@@ -364,9 +358,6 @@ FourIsland_PokemonDayCare_TwoMonsInDaycare::
 FourIsland_PokemonDayCare_EventScript_UnusedRetrieveMon::
 # 183 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	special ShowDaycareLevelMenu
-# 184 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
-	waitstate
-# 185 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	goto_if_eq VAR_RESULT, 2, FourIsland_PokemonDayCare_ComeAgain
 # 186 "data/maps/FourIsland_PokemonDayCare_Frlg/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT

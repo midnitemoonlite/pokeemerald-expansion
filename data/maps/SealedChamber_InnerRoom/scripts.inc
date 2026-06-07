@@ -24,31 +24,19 @@ SealedChamber_InnerRoom_EventScript_BrailleBackWall::
 	playse SE_TRUCK_MOVE
 # 13 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	special DoSealedChamberShakingEffect_Long
-# 14 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	waitstate
-# 15 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	delay 40
 # 16 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	special DoSealedChamberShakingEffect_Short
-# 17 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	waitstate
-# 18 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	playse SE_DOOR
 # 19 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	delay 40
 # 20 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	special DoSealedChamberShakingEffect_Short
-# 21 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	waitstate
-# 22 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	playse SE_DOOR
 # 23 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	delay 40
 # 24 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	special DoSealedChamberShakingEffect_Short
-# 25 "data/maps/SealedChamber_InnerRoom/scripts.pory"
-	waitstate
-# 26 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	playse SE_DOOR
 # 27 "data/maps/SealedChamber_InnerRoom/scripts.pory"
 	delay 40

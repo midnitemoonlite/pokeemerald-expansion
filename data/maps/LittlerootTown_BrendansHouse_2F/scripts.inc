@@ -496,9 +496,6 @@ LittlerootTown_BrendansHouse_2F_EventScript_CheckPlayersPC::
 	msgbox gText_PlayerHouseBootPC, MSGBOX_DEFAULT
 # 249 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	special BedroomPC
-# 250 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	waitstate
-# 251 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	releaseall
 # 252 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	end

@@ -30,9 +30,6 @@ CeruleanCity_House1_EventScript_DescribeAnotherBadge::
 	setvar VAR_0x8004, SCROLL_MULTI_BADGES
 # 16 "data/maps/CeruleanCity_House1_Frlg/scripts.pory"
 	special ShowScrollableMultichoice
-# 17 "data/maps/CeruleanCity_House1_Frlg/scripts.pory"
-	waitstate
-# 18 "data/maps/CeruleanCity_House1_Frlg/scripts.pory"
 	switch VAR_RESULT
 # 19 "data/maps/CeruleanCity_House1_Frlg/scripts.pory"
 	case 0, CeruleanCity_House1_EventScript_DescribeBoulderBadge

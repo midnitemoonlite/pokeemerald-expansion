@@ -232,9 +232,6 @@ SootopolisCity_MysteryEventsHouse_1F_EventScript_ChooseParty::
 	fadescreen FADE_TO_BLACK
 # 117 "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.pory"
 	special ChooseHalfPartyForBattle
-# 118 "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.pory"
-	waitstate
-# 119 "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.pory"
 	return
 # 120 "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.pory"
 

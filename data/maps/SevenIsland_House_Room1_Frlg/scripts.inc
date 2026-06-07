@@ -238,9 +238,6 @@ SevenIsland_House_Room1_EventScript_ChooseParty::
 	fadescreen FADE_TO_BLACK
 # 120 "data/maps/SevenIsland_House_Room1_Frlg/scripts.pory"
 	special ChooseHalfPartyForBattle
-# 121 "data/maps/SevenIsland_House_Room1_Frlg/scripts.pory"
-	waitstate
-# 122 "data/maps/SevenIsland_House_Room1_Frlg/scripts.pory"
 	return
 # 123 "data/maps/SevenIsland_House_Room1_Frlg/scripts.pory"
 

@@ -120,9 +120,6 @@ NavelRock_Summit_EventScript_HoOh::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 61 "data/maps/NavelRock_Summit_Frlg/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 62 "data/maps/NavelRock_Summit_Frlg/scripts.pory"
-	waitstate
-# 63 "data/maps/NavelRock_Summit_Frlg/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 64 "data/maps/NavelRock_Summit_Frlg/scripts.pory"
 	setvar VAR_LAST_TALKED, LOCALID_NAVEL_ROCK_HO_OH

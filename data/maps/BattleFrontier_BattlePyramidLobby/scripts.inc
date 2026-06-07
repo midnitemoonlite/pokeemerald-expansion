@@ -276,9 +276,6 @@ BattleFrontier_BattlePyramidLobby_EventScript_TryEnterChallenge::
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
 # 139 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	special ChoosePartyForBattleFrontier
-# 140 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	waitstate
-# 141 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePyramidLobby_EventScript_LoadPartyAndCancelChallenge
 # 142 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	msgbox BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge, MSGBOX_YESNO
@@ -908,9 +905,6 @@ BattleFrontier_BattlePyramidLobby_EventScript_PickItemsToKeep::
 BattleFrontier_BattlePyramidLobby_EventScript_PickItemsFromBag::
 # 455 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	special ChooseItemsToTossFromPyramidBag
-# 456 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	waitstate
-# 457 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	message BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep
 # 458 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	waitmessage
@@ -924,9 +918,6 @@ BattleFrontier_BattlePyramidLobby_EventScript_PickItemsFromBag::
 BattleFrontier_BattlePyramidLobby_EventScript_PickItemsFromParty::
 # 463 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	special BattlePyramidChooseMonHeldItems
-# 464 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
-	waitstate
-# 465 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	message BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep
 # 466 "data/maps/BattleFrontier_BattlePyramidLobby/scripts.pory"
 	waitmessage

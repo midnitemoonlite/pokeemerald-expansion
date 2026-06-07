@@ -28,9 +28,6 @@ FuchsiaCity_House3_EventScript_ChooseMonForMoveDeleter::
 	msgbox FuchsiaCity_House3_Text_WhichMonShouldForgetMove
 # 15 "data/maps/FuchsiaCity_House3_Frlg/scripts.pory"
 	special ChoosePartyMon
-# 16 "data/maps/FuchsiaCity_House3_Frlg/scripts.pory"
-	waitstate
-# 17 "data/maps/FuchsiaCity_House3_Frlg/scripts.pory"
 	goto_if_ge VAR_0x8004, PARTY_SIZE, FuchsiaCity_House3_EventScript_CancelForgetMove
 # 18 "data/maps/FuchsiaCity_House3_Frlg/scripts.pory"
 	special IsSelectedMonEgg

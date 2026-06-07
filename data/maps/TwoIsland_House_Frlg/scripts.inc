@@ -98,9 +98,6 @@ TwoIsland_House_EventScript_ChooseMonToTutor::
 	msgbox TwoIsland_House_Text_TutorWhichMon
 # 50 "data/maps/TwoIsland_House_Frlg/scripts.pory"
 	special ChooseMonForMoveRelearner
-# 51 "data/maps/TwoIsland_House_Frlg/scripts.pory"
-	waitstate
-# 52 "data/maps/TwoIsland_House_Frlg/scripts.pory"
 	goto_if_ge VAR_0x8004, PARTY_SIZE, TwoIsland_House_EventScript_EndTutorMove
 # 53 "data/maps/TwoIsland_House_Frlg/scripts.pory"
 	special IsSelectedMonEgg
@@ -120,9 +117,6 @@ TwoIsland_House_EventScript_ChooseMoveToTeach::
 	msgbox TwoIsland_House_Text_TeachWhichMove
 # 61 "data/maps/TwoIsland_House_Frlg/scripts.pory"
 	special TeachMoveRelearnerMove
-# 62 "data/maps/TwoIsland_House_Frlg/scripts.pory"
-	waitstate
-# 63 "data/maps/TwoIsland_House_Frlg/scripts.pory"
 	goto_if_eq VAR_0x8004, 0, TwoIsland_House_EventScript_ChooseMonToTutor
 # 64 "data/maps/TwoIsland_House_Frlg/scripts.pory"
 	goto_if_set HAS_BOTH_MUSHROOMS, TwoIsland_House_EventScript_ChooseMushroom

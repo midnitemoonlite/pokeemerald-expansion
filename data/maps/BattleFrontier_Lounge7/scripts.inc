@@ -54,9 +54,6 @@ BattleFrontier_Lounge7_EventScript_ChooseLeftTutorMove::
 	setvar VAR_0x8006, 0
 # 28 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	special ShowScrollableMultichoice
-# 29 "data/maps/BattleFrontier_Lounge7/scripts.pory"
-	waitstate
-# 30 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 # 31 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	switch VAR_RESULT
@@ -102,9 +99,6 @@ BattleFrontier_Lounge7_EventScript_ChooseNewLeftTutorMove::
 	setvar VAR_0x8006, 1
 # 52 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	special ShowScrollableMultichoice
-# 53 "data/maps/BattleFrontier_Lounge7/scripts.pory"
-	waitstate
-# 54 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 # 55 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	switch VAR_RESULT
@@ -302,9 +296,6 @@ BattleFrontier_Lounge7_EventScript_ChooseRightTutorMove::
 	setvar VAR_0x8006, 0
 # 152 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	special ShowScrollableMultichoice
-# 153 "data/maps/BattleFrontier_Lounge7/scripts.pory"
-	waitstate
-# 154 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 # 155 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	switch VAR_RESULT
@@ -350,9 +341,6 @@ BattleFrontier_Lounge7_EventScript_ChooseNewRightTutorMove::
 	setvar VAR_0x8006, 1
 # 176 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	special ShowScrollableMultichoice
-# 177 "data/maps/BattleFrontier_Lounge7/scripts.pory"
-	waitstate
-# 178 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
 # 179 "data/maps/BattleFrontier_Lounge7/scripts.pory"
 	switch VAR_RESULT

@@ -72,9 +72,6 @@ Route12_FishingHouse_EventScript_CheckMagikarpRecord::
 	msgbox Route12_FishingHouse_Text_OhMagikarpAllowMeToSee
 # 37 "data/maps/Route12_FishingHouse_Frlg/scripts.pory"
 	special ChoosePartyMon
-# 38 "data/maps/Route12_FishingHouse_Frlg/scripts.pory"
-	waitstate
-# 39 "data/maps/Route12_FishingHouse_Frlg/scripts.pory"
 	copyvar VAR_RESULT, VAR_0x8004
 # 40 "data/maps/Route12_FishingHouse_Frlg/scripts.pory"
 	goto_if_ge VAR_RESULT, PARTY_SIZE, Route12_FishingHouse_EventScript_CancelShowMon

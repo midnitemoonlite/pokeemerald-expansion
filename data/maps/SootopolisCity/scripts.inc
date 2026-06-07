@@ -380,9 +380,6 @@ SootopolisCity_EventScript_LegendariesSceneFromPokeCenter::
 	setvar VAR_0x8004, FALSE @ Just do Groudon/Kyogre fight scene
 # 191 "data/maps/SootopolisCity/scripts.pory"
 	special Script_DoRayquazaScene
-# 192 "data/maps/SootopolisCity/scripts.pory"
-	waitstate
-# 193 "data/maps/SootopolisCity/scripts.pory"
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, Common_Movement_WalkInPlaceFasterLeft
 # 194 "data/maps/SootopolisCity/scripts.pory"
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, Common_Movement_WalkInPlaceFasterRight
@@ -580,9 +577,6 @@ SootopolisCity_EventScript_LegendariesSceneFromDive::
 	setvar VAR_0x8004, FALSE @ Just do Groudon/Kyogre fight scene
 # 291 "data/maps/SootopolisCity/scripts.pory"
 	special Script_DoRayquazaScene
-# 292 "data/maps/SootopolisCity/scripts.pory"
-	waitstate
-# 293 "data/maps/SootopolisCity/scripts.pory"
 	applymovement LOCALID_SOOTOPOLIS_KYOGRE, Common_Movement_WalkInPlaceFasterLeft
 # 294 "data/maps/SootopolisCity/scripts.pory"
 	applymovement LOCALID_SOOTOPOLIS_GROUDON, Common_Movement_WalkInPlaceFasterRight
@@ -964,9 +958,6 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	setvar VAR_0x8004, TRUE
 # 483 "data/maps/SootopolisCity/scripts.pory"
 	special Script_DoRayquazaScene
-# 484 "data/maps/SootopolisCity/scripts.pory"
-	waitstate
-# 485 "data/maps/SootopolisCity/scripts.pory"
 	playse SE_THUNDER
 # 486 "data/maps/SootopolisCity/scripts.pory"
 	special SpawnCameraObject
@@ -1020,9 +1011,6 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	removeobject LOCALID_SOOTOPOLIS_RAYQUAZA
 # 511 "data/maps/SootopolisCity/scripts.pory"
 	special WaitWeather
-# 512 "data/maps/SootopolisCity/scripts.pory"
-	waitstate
-# 513 "data/maps/SootopolisCity/scripts.pory"
 	clearflag FLAG_SYS_WEATHER_CTRL
 # 514 "data/maps/SootopolisCity/scripts.pory"
 	setvar VAR_SKY_PILLAR_STATE, 3
@@ -1070,9 +1058,6 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 	setvar VAR_0x8004, TRUE
 # 536 "data/maps/SootopolisCity/scripts.pory"
 	special Script_DoRayquazaScene
-# 537 "data/maps/SootopolisCity/scripts.pory"
-	waitstate
-# 538 "data/maps/SootopolisCity/scripts.pory"
 	special SpawnCameraObject
 # 539 "data/maps/SootopolisCity/scripts.pory"
 	applymovement LOCALID_CAMERA, SootopolisCity_Movement_PanUp
@@ -1126,9 +1111,6 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 	removeobject LOCALID_SOOTOPOLIS_RAYQUAZA
 # 564 "data/maps/SootopolisCity/scripts.pory"
 	special WaitWeather
-# 565 "data/maps/SootopolisCity/scripts.pory"
-	waitstate
-# 566 "data/maps/SootopolisCity/scripts.pory"
 	clearflag FLAG_SYS_WEATHER_CTRL
 # 567 "data/maps/SootopolisCity/scripts.pory"
 	setvar VAR_SKY_PILLAR_STATE, 2

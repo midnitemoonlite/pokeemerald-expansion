@@ -1470,9 +1470,6 @@ SlateportCity_EventScript_ChooseBerryPowderItem::
 	setvar VAR_0x8004, SCROLL_MULTI_BERRY_POWDER_VENDOR
 # 736 "data/maps/SlateportCity/scripts.pory"
 	special ShowScrollableMultichoice
-# 737 "data/maps/SlateportCity/scripts.pory"
-	waitstate
-# 738 "data/maps/SlateportCity/scripts.pory"
 	switch VAR_RESULT
 # 739 "data/maps/SlateportCity/scripts.pory"
 	case 0, SlateportCity_EventScript_EnergyPowder
@@ -1834,9 +1831,6 @@ SlateportCity_EventScript_BerryCrushRankingsSign::
 	lockall
 # 918 "data/maps/SlateportCity/scripts.pory"
 	special ShowBerryCrushRankings
-# 919 "data/maps/SlateportCity/scripts.pory"
-	waitstate
-# 920 "data/maps/SlateportCity/scripts.pory"
 	releaseall
 # 921 "data/maps/SlateportCity/scripts.pory"
 	end

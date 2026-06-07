@@ -28,9 +28,6 @@ SilphCo_Elevator_EventScript_FloorSelect::
 	specialvar VAR_RESULT, InitElevatorFloorSelectMenuPos
 # 15 "data/maps/SilphCo_Elevator_Frlg/scripts.pory"
 	special ShowScrollableMultichoice
-# 16 "data/maps/SilphCo_Elevator_Frlg/scripts.pory"
-	waitstate
-# 17 "data/maps/SilphCo_Elevator_Frlg/scripts.pory"
 	switch VAR_RESULT
 # 18 "data/maps/SilphCo_Elevator_Frlg/scripts.pory"
 	case 0, SilphCo_Elevator_EventScript_To11F

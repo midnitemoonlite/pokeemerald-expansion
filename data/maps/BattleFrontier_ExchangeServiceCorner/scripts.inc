@@ -170,9 +170,6 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1::
 	special ShowFrontierExchangeCornerItemIconWindow
 # 86 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special ShowScrollableMultichoice
-# 87 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	waitstate
-# 88 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special CloseFrontierExchangeCornerItemIconWindow
 # 89 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	switch VAR_RESULT
@@ -322,9 +319,6 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2::
 	special ShowFrontierExchangeCornerItemIconWindow
 # 162 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special ShowScrollableMultichoice
-# 163 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	waitstate
-# 164 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special CloseFrontierExchangeCornerItemIconWindow
 # 165 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	switch VAR_RESULT
@@ -424,9 +418,6 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin::
 	special ShowFrontierExchangeCornerItemIconWindow
 # 213 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special ShowScrollableMultichoice
-# 214 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	waitstate
-# 215 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special CloseFrontierExchangeCornerItemIconWindow
 # 216 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	switch VAR_RESULT
@@ -538,9 +529,6 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem::
 	special ShowFrontierExchangeCornerItemIconWindow
 # 270 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special ShowScrollableMultichoice
-# 271 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
-	waitstate
-# 272 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	special CloseFrontierExchangeCornerItemIconWindow
 # 273 "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.pory"
 	switch VAR_RESULT

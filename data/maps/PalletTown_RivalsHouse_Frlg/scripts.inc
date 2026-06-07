@@ -94,9 +94,6 @@ PalletTown_RivalsHouse_EventScript_GroomMon::
 	msgbox PalletTown_RivalsHouse_Text_GroomWhichOne
 # 48 "data/maps/PalletTown_RivalsHouse_Frlg/scripts.pory"
 	special ChoosePartyMon
-# 49 "data/maps/PalletTown_RivalsHouse_Frlg/scripts.pory"
-	waitstate
-# 50 "data/maps/PalletTown_RivalsHouse_Frlg/scripts.pory"
 	lock
 # 51 "data/maps/PalletTown_RivalsHouse_Frlg/scripts.pory"
 	faceplayer

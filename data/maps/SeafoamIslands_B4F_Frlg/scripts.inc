@@ -334,9 +334,6 @@ SeafoamIslands_B4F_EventScript_Articuno::
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 # 168 "data/maps/SeafoamIslands_B4F_Frlg/scripts.pory"
 	special BattleSetup_StartLegendaryBattle
-# 169 "data/maps/SeafoamIslands_B4F_Frlg/scripts.pory"
-	waitstate
-# 170 "data/maps/SeafoamIslands_B4F_Frlg/scripts.pory"
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 # 171 "data/maps/SeafoamIslands_B4F_Frlg/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome

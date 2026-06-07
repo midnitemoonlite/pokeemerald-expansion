@@ -124,9 +124,6 @@ Route4_PokemonCenter_1F_EventScript_BuyMagikarpParty::
 	hidemoneybox
 # 63 "data/maps/Route4_PokemonCenter_1F_Frlg/scripts.pory"
 	special ChangePokemonNickname
-# 64 "data/maps/Route4_PokemonCenter_1F_Frlg/scripts.pory"
-	waitstate
-# 65 "data/maps/Route4_PokemonCenter_1F_Frlg/scripts.pory"
 	goto Route4_PokemonCenter_1F_EventScript_BoughtMagikarp
 # 66 "data/maps/Route4_PokemonCenter_1F_Frlg/scripts.pory"
 	end
@@ -146,9 +143,6 @@ Route4_PokemonCenter_1F_EventScript_BuyMagikarpPC::
 	hidemoneybox
 # 74 "data/maps/Route4_PokemonCenter_1F_Frlg/scripts.pory"
 	special ChangePokemonNickname
-# 75 "data/maps/Route4_PokemonCenter_1F_Frlg/scripts.pory"
-	waitstate
-# 76 "data/maps/Route4_PokemonCenter_1F_Frlg/scripts.pory"
 	lock
 # 77 "data/maps/Route4_PokemonCenter_1F_Frlg/scripts.pory"
 	faceplayer

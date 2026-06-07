@@ -28,9 +28,6 @@ LavenderTown_House2_EventScript_ChooseMon::
 	msgbox LavenderTown_House2_Text_CritiqueWhichMonsNickname
 # 15 "data/maps/LavenderTown_House2_Frlg/scripts.pory"
 	special ChoosePartyMon
-# 16 "data/maps/LavenderTown_House2_Frlg/scripts.pory"
-	waitstate
-# 17 "data/maps/LavenderTown_House2_Frlg/scripts.pory"
 	goto_if_lt VAR_0x8004, PARTY_SIZE, LavenderTown_House2_EventScript_CheckCanRateMon
 # 18 "data/maps/LavenderTown_House2_Frlg/scripts.pory"
 	goto_if_ge VAR_0x8004, PARTY_SIZE, LavenderTown_House2_EventScript_DontRateNickname
