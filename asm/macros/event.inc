@@ -1252,6 +1252,13 @@
 	.4byte \products
 	.endm
 
+	@ Opens the Pokemart system, removing the option to sell items.
+	@ Products should be a list of .2byte item values preceded by an .align 2
+	.macro pokemart2 products:req
+	.byte SCR_OP_POKEMART2
+	.4byte \products
+	.endm
+
 	@ Used as the endpoint for a Pokemart item list
 	.macro pokemartlistend
 	.2byte ITEM_NONE

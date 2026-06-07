@@ -3356,3 +3356,14 @@ bool8 ScrCmd_getbraillestringwidth(struct ScriptContext * ctx)
     gSpecialVar_0x8004 = GetStringWidth(FONT_BRAILLE, msg, -1);
     return FALSE;
 }
+
+bool8 ScrCmd_pokemart2(struct ScriptContext *ctx)
+{
+    const void *ptr = (void *)ScriptReadWord(ctx);
+
+    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
+
+    CreatePokemart2Menu(ptr);
+    ScriptContext_Stop();
+    return TRUE;
+}

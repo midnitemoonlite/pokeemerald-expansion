@@ -25,11 +25,6 @@ script GreenRestArea_EventScript_WaddleDeeShopEmployee
         {
             msgbox(gText_TooBadBagIsFull)
         }
-        giveitem(ITEM_INFINITE_CANDY)
-        if(var(VAR_RESULT) == FALSE)
-        {
-            msgbox(gText_TooBadBagIsFull)
-        }
         setflag(FLAG_RECEIVED_POTION_OLDALE)
     }
     msgbox("May you find everything you need to

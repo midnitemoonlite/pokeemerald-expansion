@@ -130,7 +130,7 @@ script IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee
 	faceplayer
 	message(IceCreamIsland_Beachhouse_Text_Introduction)
 	waitmessage
-	pokemart(IceCreamIsland_Beachhouse_Menu)
+	pokemart2(IceCreamIsland_Beachhouse_Menu)
 	msgbox(gText_PleaseComeAgain)
 	release
 	end

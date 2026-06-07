@@ -21,9 +21,9 @@ GreenRestArea_EventScript_WaddleDeeShopEmployee::
 # 17 "data/maps/GreenRestArea/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_POTION_OLDALE, GreenRestArea_EventScript_WaddleDeeShopEmployee_2
 GreenRestArea_EventScript_WaddleDeeShopEmployee_1:
-# 35 "data/maps/GreenRestArea/scripts.pory"
+# 30 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_EventScript_WaddleDeeShopEmployee_Text_1
-# 37 "data/maps/GreenRestArea/scripts.pory"
+# 32 "data/maps/GreenRestArea/scripts.pory"
 	release
 	return
 
@@ -37,12 +37,6 @@ GreenRestArea_EventScript_WaddleDeeShopEmployee_2:
 	goto_if_eq GreenRestArea_EventScript_WaddleDeeShopEmployee_5
 GreenRestArea_EventScript_WaddleDeeShopEmployee_4:
 # 28 "data/maps/GreenRestArea/scripts.pory"
-	giveitem ITEM_INFINITE_CANDY
-# 29 "data/maps/GreenRestArea/scripts.pory"
-	compare VAR_RESULT, FALSE
-	goto_if_eq GreenRestArea_EventScript_WaddleDeeShopEmployee_8
-GreenRestArea_EventScript_WaddleDeeShopEmployee_7:
-# 33 "data/maps/GreenRestArea/scripts.pory"
 	setflag FLAG_RECEIVED_POTION_OLDALE
 	goto GreenRestArea_EventScript_WaddleDeeShopEmployee_1
 
@@ -51,255 +45,250 @@ GreenRestArea_EventScript_WaddleDeeShopEmployee_5:
 	msgbox gText_TooBadBagIsFull
 	goto GreenRestArea_EventScript_WaddleDeeShopEmployee_4
 
-GreenRestArea_EventScript_WaddleDeeShopEmployee_8:
-# 31 "data/maps/GreenRestArea/scripts.pory"
-	msgbox gText_TooBadBagIsFull
-	goto GreenRestArea_EventScript_WaddleDeeShopEmployee_7
-
 
 GreenRestArea_EventScript_WaddleDeeTalk::
-# 42 "data/maps/GreenRestArea/scripts.pory"
+# 37 "data/maps/GreenRestArea/scripts.pory"
 	lock
-# 43 "data/maps/GreenRestArea/scripts.pory"
+# 38 "data/maps/GreenRestArea/scripts.pory"
 	faceplayer
-# 44 "data/maps/GreenRestArea/scripts.pory"
+# 39 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_EventScript_WaddleDeeTalk_Text_0
-# 49 "data/maps/GreenRestArea/scripts.pory"
+# 44 "data/maps/GreenRestArea/scripts.pory"
 	release
 	return
 
 
 GreenRestArea_RivalTrigger1::
-# 54 "data/maps/GreenRestArea/scripts.pory"
+# 49 "data/maps/GreenRestArea/scripts.pory"
 	lock
-# 55 "data/maps/GreenRestArea/scripts.pory"
+# 50 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_WEST
-# 56 "data/maps/GreenRestArea/scripts.pory"
+# 51 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
-# 57 "data/maps/GreenRestArea/scripts.pory"
+# 52 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 58 "data/maps/GreenRestArea/scripts.pory"
+# 53 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
-# 59 "data/maps/GreenRestArea/scripts.pory"
+# 54 "data/maps/GreenRestArea/scripts.pory"
 	closemessage
-# 60 "data/maps/GreenRestArea/scripts.pory"
+# 55 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_PLAYER, GreenRestArea_RivalTrigger1_Movement_0
-# 61 "data/maps/GreenRestArea/scripts.pory"
+# 56 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, GreenRestArea_RivalTrigger1_Movement_1
-# 62 "data/maps/GreenRestArea/scripts.pory"
+# 57 "data/maps/GreenRestArea/scripts.pory"
 	waitmovement
-# 63 "data/maps/GreenRestArea/scripts.pory"
+# 58 "data/maps/GreenRestArea/scripts.pory"
 	goto GreenRestArea_EventScript_RivalBattle
 	return
 
 
 GreenRestArea_RivalTrigger2::
-# 68 "data/maps/GreenRestArea/scripts.pory"
+# 63 "data/maps/GreenRestArea/scripts.pory"
 	lock
-# 69 "data/maps/GreenRestArea/scripts.pory"
+# 64 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_WEST
-# 70 "data/maps/GreenRestArea/scripts.pory"
+# 65 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
-# 71 "data/maps/GreenRestArea/scripts.pory"
+# 66 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 72 "data/maps/GreenRestArea/scripts.pory"
+# 67 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
-# 73 "data/maps/GreenRestArea/scripts.pory"
+# 68 "data/maps/GreenRestArea/scripts.pory"
 	closemessage
-# 74 "data/maps/GreenRestArea/scripts.pory"
+# 69 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_PLAYER, GreenRestArea_RivalTrigger1_Movement_0
-# 75 "data/maps/GreenRestArea/scripts.pory"
+# 70 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, GreenRestArea_RivalTrigger2_Movement_0
-# 76 "data/maps/GreenRestArea/scripts.pory"
+# 71 "data/maps/GreenRestArea/scripts.pory"
 	waitmovement
-# 77 "data/maps/GreenRestArea/scripts.pory"
+# 72 "data/maps/GreenRestArea/scripts.pory"
 	goto GreenRestArea_EventScript_RivalBattle
 	return
 
 
 GreenRestArea_RivalTrigger3::
-# 82 "data/maps/GreenRestArea/scripts.pory"
+# 77 "data/maps/GreenRestArea/scripts.pory"
 	lock
-# 83 "data/maps/GreenRestArea/scripts.pory"
+# 78 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_WEST
-# 84 "data/maps/GreenRestArea/scripts.pory"
+# 79 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
-# 85 "data/maps/GreenRestArea/scripts.pory"
+# 80 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 86 "data/maps/GreenRestArea/scripts.pory"
+# 81 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
-# 87 "data/maps/GreenRestArea/scripts.pory"
+# 82 "data/maps/GreenRestArea/scripts.pory"
 	closemessage
-# 88 "data/maps/GreenRestArea/scripts.pory"
+# 83 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_PLAYER, GreenRestArea_RivalTrigger1_Movement_0
-# 89 "data/maps/GreenRestArea/scripts.pory"
+# 84 "data/maps/GreenRestArea/scripts.pory"
 	waitmovement
-# 90 "data/maps/GreenRestArea/scripts.pory"
+# 85 "data/maps/GreenRestArea/scripts.pory"
 	goto GreenRestArea_EventScript_RivalBattle
 	return
 
 
 GreenRestArea_RivalTrigger4::
-# 95 "data/maps/GreenRestArea/scripts.pory"
+# 90 "data/maps/GreenRestArea/scripts.pory"
 	lock
-# 96 "data/maps/GreenRestArea/scripts.pory"
+# 91 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_EAST
-# 97 "data/maps/GreenRestArea/scripts.pory"
+# 92 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
-# 98 "data/maps/GreenRestArea/scripts.pory"
+# 93 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 99 "data/maps/GreenRestArea/scripts.pory"
+# 94 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
-# 100 "data/maps/GreenRestArea/scripts.pory"
+# 95 "data/maps/GreenRestArea/scripts.pory"
 	closemessage
-# 101 "data/maps/GreenRestArea/scripts.pory"
+# 96 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_PLAYER, GreenRestArea_RivalTrigger4_Movement_0
-# 102 "data/maps/GreenRestArea/scripts.pory"
+# 97 "data/maps/GreenRestArea/scripts.pory"
 	waitmovement
-# 103 "data/maps/GreenRestArea/scripts.pory"
+# 98 "data/maps/GreenRestArea/scripts.pory"
 	goto GreenRestArea_EventScript_RivalBattle
 	return
 
 
 GreenRestArea_RivalTrigger5::
-# 108 "data/maps/GreenRestArea/scripts.pory"
+# 103 "data/maps/GreenRestArea/scripts.pory"
 	lock
-# 109 "data/maps/GreenRestArea/scripts.pory"
+# 104 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_EAST
-# 110 "data/maps/GreenRestArea/scripts.pory"
+# 105 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
-# 111 "data/maps/GreenRestArea/scripts.pory"
+# 106 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 112 "data/maps/GreenRestArea/scripts.pory"
+# 107 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
-# 113 "data/maps/GreenRestArea/scripts.pory"
+# 108 "data/maps/GreenRestArea/scripts.pory"
 	closemessage
-# 114 "data/maps/GreenRestArea/scripts.pory"
+# 109 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_PLAYER, GreenRestArea_RivalTrigger4_Movement_0
-# 115 "data/maps/GreenRestArea/scripts.pory"
+# 110 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, GreenRestArea_RivalTrigger5_Movement_0
-# 116 "data/maps/GreenRestArea/scripts.pory"
+# 111 "data/maps/GreenRestArea/scripts.pory"
 	waitmovement
-# 117 "data/maps/GreenRestArea/scripts.pory"
+# 112 "data/maps/GreenRestArea/scripts.pory"
 	goto GreenRestArea_EventScript_RivalBattle
 	return
 
 
 GreenRestArea_EventScript_RivalTalk::
-# 122 "data/maps/GreenRestArea/scripts.pory"
+# 117 "data/maps/GreenRestArea/scripts.pory"
 	lock
-# 123 "data/maps/GreenRestArea/scripts.pory"
+# 118 "data/maps/GreenRestArea/scripts.pory"
 	turnobject LOCALID_GREEN_REST_AREA_BWD, DIR_SOUTH
-# 124 "data/maps/GreenRestArea/scripts.pory"
+# 119 "data/maps/GreenRestArea/scripts.pory"
 	playse SE_PIN
-# 125 "data/maps/GreenRestArea/scripts.pory"
+# 120 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, Common_Movement_ExclamationMark
-# 126 "data/maps/GreenRestArea/scripts.pory"
+# 121 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_BandanaDeeIntro
-# 127 "data/maps/GreenRestArea/scripts.pory"
+# 122 "data/maps/GreenRestArea/scripts.pory"
 	goto GreenRestArea_EventScript_RivalBattle
 	return
 
 
 GreenRestArea_EventScript_RivalBattle::
-# 137 "data/maps/GreenRestArea/scripts.pory"
+# 132 "data/maps/GreenRestArea/scripts.pory"
 	playbgm MUS_ENCOUNTER_MAY, TRUE
-# 138 "data/maps/GreenRestArea/scripts.pory"
+# 133 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_EventScript_RivalBattle_Text_0
-# 146 "data/maps/GreenRestArea/scripts.pory"
+# 141 "data/maps/GreenRestArea/scripts.pory"
 	closemessage
-# 147 "data/maps/GreenRestArea/scripts.pory"
+# 142 "data/maps/GreenRestArea/scripts.pory"
 	switch VAR_STARTER_MON
-# 148 "data/maps/GreenRestArea/scripts.pory"
+# 143 "data/maps/GreenRestArea/scripts.pory"
 	case 0, GreenRestArea_EventScript_RivalBattle_3
-# 150 "data/maps/GreenRestArea/scripts.pory"
+# 145 "data/maps/GreenRestArea/scripts.pory"
 	case 1, GreenRestArea_EventScript_RivalBattle_4
-# 152 "data/maps/GreenRestArea/scripts.pory"
+# 147 "data/maps/GreenRestArea/scripts.pory"
 	case 2, GreenRestArea_EventScript_RivalBattle_5
 GreenRestArea_EventScript_RivalBattle_1:
-# 155 "data/maps/GreenRestArea/scripts.pory"
+# 150 "data/maps/GreenRestArea/scripts.pory"
 	msgbox GreenRestArea_EventScript_RivalBattle_Text_1
-# 164 "data/maps/GreenRestArea/scripts.pory"
+# 159 "data/maps/GreenRestArea/scripts.pory"
 	closemessage
-# 165 "data/maps/GreenRestArea/scripts.pory"
+# 160 "data/maps/GreenRestArea/scripts.pory"
 	applymovement LOCALID_GREEN_REST_AREA_BWD, GreenRestArea_EventScript_RivalBattle_Movement_0
-# 166 "data/maps/GreenRestArea/scripts.pory"
+# 161 "data/maps/GreenRestArea/scripts.pory"
 	waitmovement
-# 167 "data/maps/GreenRestArea/scripts.pory"
+# 162 "data/maps/GreenRestArea/scripts.pory"
 	removeobject LOCALID_GREEN_REST_AREA_BWD
-# 168 "data/maps/GreenRestArea/scripts.pory"
+# 163 "data/maps/GreenRestArea/scripts.pory"
 	setflag FLAG_DEFEATED_RIVAL_GREEN_REST_AREA
-# 169 "data/maps/GreenRestArea/scripts.pory"
+# 164 "data/maps/GreenRestArea/scripts.pory"
 	setvar VAR_GREEN_REST_AREA_STATE, 1
-# 170 "data/maps/GreenRestArea/scripts.pory"
+# 165 "data/maps/GreenRestArea/scripts.pory"
 	savebgm MUS_DUMMY
-# 171 "data/maps/GreenRestArea/scripts.pory"
+# 166 "data/maps/GreenRestArea/scripts.pory"
 	fadedefaultbgm
-# 172 "data/maps/GreenRestArea/scripts.pory"
+# 167 "data/maps/GreenRestArea/scripts.pory"
 	release
 	return
 
 GreenRestArea_EventScript_RivalBattle_3:
-# 149 "data/maps/GreenRestArea/scripts.pory"
+# 144 "data/maps/GreenRestArea/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_3, GreenRestArea_Text_BandanaWaddleDeeDefeat
 	goto GreenRestArea_EventScript_RivalBattle_1
 
 GreenRestArea_EventScript_RivalBattle_4:
-# 151 "data/maps/GreenRestArea/scripts.pory"
+# 146 "data/maps/GreenRestArea/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_4, GreenRestArea_Text_BandanaWaddleDeeDefeat
 	goto GreenRestArea_EventScript_RivalBattle_1
 
 GreenRestArea_EventScript_RivalBattle_5:
-# 153 "data/maps/GreenRestArea/scripts.pory"
+# 148 "data/maps/GreenRestArea/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_SEAFLOOR_CAVERN_1, GreenRestArea_Text_BandanaWaddleDeeDefeat
 	goto GreenRestArea_EventScript_RivalBattle_1
 
 
-# 60 "data/maps/GreenRestArea/scripts.pory"
+# 55 "data/maps/GreenRestArea/scripts.pory"
 GreenRestArea_RivalTrigger1_Movement_0:
-# 60 "data/maps/GreenRestArea/scripts.pory"
+# 55 "data/maps/GreenRestArea/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 61 "data/maps/GreenRestArea/scripts.pory"
+# 56 "data/maps/GreenRestArea/scripts.pory"
 GreenRestArea_RivalTrigger1_Movement_1:
-# 61 "data/maps/GreenRestArea/scripts.pory"
+# 56 "data/maps/GreenRestArea/scripts.pory"
 	walk_left
-# 61 "data/maps/GreenRestArea/scripts.pory"
+# 56 "data/maps/GreenRestArea/scripts.pory"
 	walk_left
 	step_end
 
-# 75 "data/maps/GreenRestArea/scripts.pory"
+# 70 "data/maps/GreenRestArea/scripts.pory"
 GreenRestArea_RivalTrigger2_Movement_0:
-# 75 "data/maps/GreenRestArea/scripts.pory"
+# 70 "data/maps/GreenRestArea/scripts.pory"
 	walk_left
 	step_end
 
-# 101 "data/maps/GreenRestArea/scripts.pory"
+# 96 "data/maps/GreenRestArea/scripts.pory"
 GreenRestArea_RivalTrigger4_Movement_0:
-# 101 "data/maps/GreenRestArea/scripts.pory"
+# 96 "data/maps/GreenRestArea/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 115 "data/maps/GreenRestArea/scripts.pory"
+# 110 "data/maps/GreenRestArea/scripts.pory"
 GreenRestArea_RivalTrigger5_Movement_0:
-# 115 "data/maps/GreenRestArea/scripts.pory"
+# 110 "data/maps/GreenRestArea/scripts.pory"
 	walk_right
 	step_end
 
-# 165 "data/maps/GreenRestArea/scripts.pory"
+# 160 "data/maps/GreenRestArea/scripts.pory"
 GreenRestArea_EventScript_RivalBattle_Movement_0:
-# 165 "data/maps/GreenRestArea/scripts.pory"
+# 160 "data/maps/GreenRestArea/scripts.pory"
 	walk_up
-# 165 "data/maps/GreenRestArea/scripts.pory"
+# 160 "data/maps/GreenRestArea/scripts.pory"
 	walk_up
-# 165 "data/maps/GreenRestArea/scripts.pory"
+# 160 "data/maps/GreenRestArea/scripts.pory"
 	walk_up
-# 165 "data/maps/GreenRestArea/scripts.pory"
+# 160 "data/maps/GreenRestArea/scripts.pory"
 	walk_up
-# 165 "data/maps/GreenRestArea/scripts.pory"
+# 160 "data/maps/GreenRestArea/scripts.pory"
 	walk_up
-# 165 "data/maps/GreenRestArea/scripts.pory"
+# 160 "data/maps/GreenRestArea/scripts.pory"
 	walk_up
 	step_end
 
@@ -315,19 +304,19 @@ GreenRestArea_EventScript_WaddleDeeShopEmployee_Text_0:
 	.string "Here's a freebie to get you started!$"
 
 GreenRestArea_EventScript_WaddleDeeShopEmployee_Text_1:
-# 35 "data/maps/GreenRestArea/scripts.pory"
+# 30 "data/maps/GreenRestArea/scripts.pory"
 	.string "May you find everything you need to\n"
 	.string "succeed at our shop!$"
 
 GreenRestArea_EventScript_WaddleDeeTalk_Text_0:
-# 44 "data/maps/GreenRestArea/scripts.pory"
+# 39 "data/maps/GreenRestArea/scripts.pory"
 	.string "Finding a Rest Area on your adventure\n"
 	.string "always feels so nice, doesn't it?\p"
 	.string "I always make sure to heal up and\n"
 	.string "save before I head out again.$"
 
 GreenRestArea_EventScript_RivalBattle_Text_0:
-# 138 "data/maps/GreenRestArea/scripts.pory"
+# 133 "data/maps/GreenRestArea/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}I think I'm starting to get the hang of\n"
 	.string "battling with my Helpers.\p"
 	.string "So… uh… if it's okay with you…\n"
@@ -336,7 +325,7 @@ GreenRestArea_EventScript_RivalBattle_Text_0:
 	.string "confident about our synergy!$"
 
 GreenRestArea_EventScript_RivalBattle_Text_1:
-# 155 "data/maps/GreenRestArea/scripts.pory"
+# 150 "data/maps/GreenRestArea/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}That was a good battle, Kirby. I guess\n"
 	.string "I've still got a lot to learn, huh?\p"
 	.string "I'll have to round out my team more to\n"
@@ -346,10 +335,10 @@ GreenRestArea_EventScript_RivalBattle_Text_1:
 	.string "I'll see you there, Kirby!$"
 
 GreenRestArea_BandanaDeeIntro::
-# 130 "data/maps/GreenRestArea/scripts.pory"
+# 125 "data/maps/GreenRestArea/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}Kirby!$"
 
 GreenRestArea_Text_BandanaWaddleDeeDefeat::
-# 175 "data/maps/GreenRestArea/scripts.pory"
+# 170 "data/maps/GreenRestArea/scripts.pory"
 	.string "Even though we trained, I guess it's\n"
 	.string "not that simple…$"
