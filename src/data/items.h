@@ -14179,8 +14179,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Helper Box Link"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "This device grants\n"
-            "access to the Helper\n"
+            "This device opens\n"
+            "the Helper\n"
             "Storage System."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
