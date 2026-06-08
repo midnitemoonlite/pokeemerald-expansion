@@ -1,0 +1,400 @@
+raw `
+ResortArena_MapScripts::
+	.byte 0
+`
+
+script ResortArena_EventScript_Sign
+{
+    msgbox("Newly-opened: RESORT ARENA
+            Conquer it and win the Resort Brooch!", MSGBOX_SIGN)
+    closemessage
+}
+
+script ResortArena_EventScript_CocoaCaveSign
+{
+    msgbox("Now approaching: COCOA CAVE
+            Bubbling-hot magma boils in the depths.", MSGBOX_SIGN)
+    closemessage
+}
+
+script ResortArena_EventScript_RedSqueaker
+{
+    lock
+    faceplayer
+    msgbox("Our boss is interested in winning
+            Dedede's Royal Royale.
+            
+            Some of us are trying to train our own
+            Helpers, but they're tough to raise.
+            
+            We might be better off looking for
+            treasure the normal way\.")
+    release
+}
+
+script ResortArena_EventScript_Lounger
+{
+    lock
+    faceplayer
+    msgbox("This resort is the epitome of the peace
+            and quiet Dream Land is famous for.
+            
+            So why did the Great King deign to build
+            an Arena right on top of it\.?")
+    release
+}
+
+script ResortArena_EventScript_TopAudience
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        msgbox("Yawn\. it's a nice day to sit back and
+                watch the sky\.
+                
+                Hm? The Arena? Oh no, I don't care about
+                that. I just wanted the high seats.")
+    }
+    else
+    {
+        msgbox("Hey, congratulations on your victory!
+                All the competitors were so cool.
+                
+                I think I get why the Great King is
+                making such a big deal of this game now!")
+    }
+    release
+}
+
+script ResortArena_EventScript_TalkToGentleman
+{
+    turnobject(LOCALID_RESORT_CROWD_1, DIR_EAST)
+    goto(ResortArena_EventScript_TopAudience)
+}
+
+script ResortArena_EventScript_BottomAudience
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        msgbox("Hmf\. I don't get what's so special
+                about these Arenas.
+                
+                Do your best not to bore me with some
+                yawn-inducing battles. Is that clear?")
+    }
+    else
+    {
+        msgbox("Hm hm hm\. a ha ha ha!
+        
+                You're more capable than I thought\.
+                Maybe there's hope for the Arenas yet.")
+    }
+    release
+}
+
+script ResortArena_EventScript_TalkToParasol
+{
+    turnobject(LOCALID_RESORT_CROWD_2, DIR_EAST)
+    goto(ResortArena_EventScript_BottomAudience)
+}
+
+script ResortArena_EventScript_BlueSqueaker
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        msgbox("Ooh, that's a very shiny Brooch!
+                You're aiming for a second, aren't you?
+                
+                Well, you better be careful! Our group's
+                leader is one tough foe!
+                
+                He loves shiny, sparkly, gem-like
+                Helpers! Squeak!")
+    }
+    else
+    {
+        msgbox("Squeak! You really beat our boss!
+                Now you've got two Brooches.
+                
+                It's tempting to take them, but\.
+                we're honorable thieves.
+                
+                You deserve that Brooch you worked
+                so hard to earn!")
+    }
+    release
+}
+
+script ResortArena_EventScript_TalkToSqueaker
+{
+    turnobject(LOCALID_RESORT_CROWD_3, DIR_WEST)
+    goto(ResortArena_EventScript_BlueSqueaker)
+}
+
+script ResortArena_EventScript_Delivery
+{
+    lock
+    faceplayer
+    msgbox("My apologies. I can only offer my
+            services to registered resort guests.
+            
+            You wish to know when you may book
+            a room? Yes, I can check for you.
+            
+            Just give me a few years to scroll
+            through the waitlist\.")
+    release   
+}
+
+script ResortArena_EventScript_GreenSqueaker
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_ITEM_ROUTE_116_ETHER))
+    {
+        msgbox("Squeak! Hello! Looking for treasure?
+        
+                Sadly, I've got nothing of the sort!
+                Nope! I'm not hiding anything!")
+    }
+    else
+    {
+        msgbox("Squeak! Hello! Looking for treasure?
+        
+                Sadly, I've got nothing of the sort!
+                Nope! I'm not hiding\. huh?
+                
+                Hey! Where'd my treasure go?
+                Did somebody take it from me!?")
+    }
+    release
+}
+
+script ResortArena_EventScript_YellowSqueaker
+{
+    lock
+    faceplayer
+    msgbox("I bet if I could get this boat to water,
+            I would be able to sail off on it.
+            
+            Then, I bet I might be able to find
+            islands full of hidden treasure!
+            
+            There's just one problem\.
+            How am I going to haul this boat?
+            
+            Squeak\. it's way too heavy!
+            I should just learn to swim\.")
+    release
+}
+
+script ResortArena_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("The way folks here operate, you'd think
+            they were actually Noddies.
+            
+            I've never met such a slow-going group.
+            Resort life does that to you, huh?")
+    release
+}
+
+script ResortArena_EventScript_Conductor
+{
+    lock
+    faceplayer
+    msgbox("Not many ships come this way, but I
+            still man the lighthouse every day.
+            Preventative measures are important!")
+    release
+}
+
+script ResortArena_EventScript_CaveGuardian
+{
+    lock
+    faceplayer
+    msgbox("This is the entrance to Cocoa Cave.
+            It's hot, dark, hot, dangerous\.
+            oh, and did I mention it's hot?
+            
+            You don't want to go in there, trust
+            me. Just enjoy the resort, alright?")
+    release
+}
+
+script ResortArena_EventScript_Aide
+{
+    lock
+    faceplayer
+    msgbox("Hello, Kirby!
+            I'm a researcher from Waddle Dee Town.
+            
+            The Great King has sent me here to
+            take a look at your Info Card Binder.
+            
+            Specifically, we're hoping to see that
+            you've recruited at least {COLOR RED}15{COLOR DARK_GRAY} Helpers.
+            
+            Now then, may I see your binder?")
+    playse(SE_SELECT)
+    closemessage()
+    delay(60)
+    call(WaddleDeeTown_Lab_EvaluateCards)
+    if(var(VAR_0x8009) >= 15)
+    {
+        goto(ResortArena_EventScript_AideSuccess)
+    }
+    elif(var(VAR_0x8009) < 15)
+    {
+        goto(ResortArena_EventScript_AideFailure)
+    }
+}
+
+script ResortArena_EventScript_AideSuccess
+{
+    msgbox("Wonderful! You've already registered
+            {STR_VAR_2} Helpers so far!
+            
+            As a reward for your due diligence,
+            I have here a care package for you.
+            
+            Please, go ahead and open it!")
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedExpShare, ITEM_EXP_SHARE, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem(ITEM_TM09)
+    giveitem(ITEM_BIG_PEARL)
+    giveitem(ITEM_DIVE_BALL, 10)
+    msgbox("Of particular note is a new tool made
+            at the lab: the Experience Share.
+            
+            This tool simplifies training Helpers by
+            giving experience to your whole party.
+            You can turn it on and off as needed.
+            
+            The Royal Royale wasn't built with it in
+            mind, so your mileage may vary\.
+            but hopefully it serves you well!
+            
+            Now then, I must report the good news
+            to the Great King. Carry on!")
+    closemessage()
+    playse(SE_EXIT)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    setflag(FLAG_BINDER_GATE_02)
+    removeobject(LOCALID_RESORT_AIDE)
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    release
+}
+
+script ResortArena_EventScript_AideFailure
+{
+    msgbox("Hm\. it seems you've only registered
+            {STR_VAR_2} Helpers so far.
+            The Great King will be most displeased.
+            
+            I'm sorry, but I can't return like this.
+
+            Could I ask you to return once you've
+            recruited at least {COLOR RED}15{COLOR DARK_GRAY} Helpers?")
+    release
+}
+
+script ResortArena_EventScript_MoveTutor
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        msgbox("I'm a movesmith. I know all sorts of
+                long-forgotten techniques.
+                
+                What I'm looking for\. is a commander
+                of Helpers that can wield my power.
+                
+                Do you have what it takes to spark
+                the fire kindling in my heart?")
+    }
+    else
+    {
+        msgbox("Having watched your recent victory\.
+            I feel so invigorated! Wroaaar!
+            
+            I know some special moves that can
+            be taught to your Helpers.
+            
+            For the price of ¥500, I'll train
+            them these new techniques.
+            
+            What do you say?
+            Which move are you interested in?
+            
+            \.is what I would ask, but I need
+            more time. Come back much later.")
+    }
+    release   
+}
+
+script ResortArena_EventScript_Courtship
+{
+    applymovement(LOCALID_DAROACH, moves(walk_in_place_right * 3))
+    waitmovement()
+    msgbox("{SPEAKER NAME_DAROACH}Ladies, ladies! Please, one at a time!
+    
+            My purloining claws can only steal so
+            many hearts at once, you know\.?")
+    closemessage()
+    applymovement(LOCALID_RESORT_LADY_1, moves(walk_in_place_faster_left * 5))
+    applymovement(LOCALID_RESORT_LADY_2, moves(walk_in_place_faster_left * 5))
+    applymovement(LOCALID_RESORT_LADY_3, moves(walk_in_place_faster_left * 5))
+    waitmovement()
+    delay(8)
+    msgbox("Eeeeee! Oh, Daroach\.\.! {EMOJI_HEART}{EMOJI_HEART}{EMOJI_HEART}")
+    release
+}
+
+script ResortArena_EventScript_Socialite
+{
+    lock
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        goto(ResortArena_EventScript_Courtship)
+    }
+}
+
+script ResortArena_EventScript_ParasolLady
+{
+    lock
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        goto(ResortArena_EventScript_Courtship)
+    }
+}
+
+script ResortArena_EventScript_Lass
+{
+    lock
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        goto(ResortArena_EventScript_Courtship)
+    }
+}
+
+script ResortArena_EventScript_Daroach
+{
+    lock
+    if(!flag(FLAG_BADGE02_GET))
+    {
+        goto(ResortArena_EventScript_Courtship)
+    }
+}
+
+script ResortArena_EventScript_Commentator
+{
+
+}

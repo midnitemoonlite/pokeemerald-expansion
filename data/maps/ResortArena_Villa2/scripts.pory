@@ -1,0 +1,36 @@
+raw `
+ResortArena_Villa2_MapScripts::
+	.byte 0
+`
+
+script ResortArena_Villa2_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I'm enjoying Helper battles, but is this
+            really what being a king is about?
+
+            Dream Land is so peaceful, the king has
+            hardly ever needed to mobilize troops\.
+
+            If anything, it might be better training
+            if you wanted to join the Meta-Knights!")
+    release
+}
+
+script ResortArena_Villa2_EventScript_Hiker
+{
+    lock
+    faceplayer
+    msgbox("I used to frequent this resort with
+            a friend of mine. More than anything,
+            their dream was going on adventures.
+            
+            Boy, it must have been tough spending
+            so much time relaxing with me instead!
+            
+            Last I heard, they sought to reach
+            their goal by working on the Halberd\.
+            I wonder if they're doing alright?")
+    release
+}

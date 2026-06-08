@@ -9543,6 +9543,56 @@
       "secondary_tileset": "gTileset_SeashoreHouse",
       "border_filepath": "data/layouts/IceCreamIsland_Beachhouse/border.bin",
       "blockdata_filepath": "data/layouts/IceCreamIsland_Beachhouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_RESORT_ARENA",
+      "name": "ResortArena_Layout",
+      "width": 60,
+      "height": 37,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/ResortArena/border.bin",
+      "blockdata_filepath": "data/layouts/ResortArena/map.bin"
+    },
+    {
+      "id": "LAYOUT_RESORT_ARENA_CENTER",
+      "name": "ResortArena_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/ResortArena_Center/border.bin",
+      "blockdata_filepath": "data/layouts/ResortArena_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_RESORT_ARENA_MART",
+      "name": "ResortArena_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/ResortArena_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/ResortArena_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_RESORT_ARENA_VILLA1",
+      "name": "ResortArena_Villa1_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ResortArena_Villa1/border.bin",
+      "blockdata_filepath": "data/layouts/ResortArena_Villa1/map.bin"
+    },
+    {
+      "id": "LAYOUT_RESORT_ARENA_VILLA2",
+      "name": "ResortArena_Villa2_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ResortArena_Villa2/border.bin",
+      "blockdata_filepath": "data/layouts/ResortArena_Villa2/map.bin"
     }
   ]
 }

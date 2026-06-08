@@ -1,0 +1,33 @@
+raw `
+ResortArena_Center_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, ResortArena_Center_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+ResortArena_Center_OnTransition:
+	setrespawn HEAL_LOCATION_RESORT_ARENA
+	end
+`
+
+script ResortArena_Center_EventScript_Nurse
+{
+    setvar(VAR_0x800B, LOCALID_RESORT_ARENA_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script ResortArena_Center_EventScript_RedSqueaker
+{
+    lock
+    faceplayer
+    msgbox("Squeak! I'm trying to avoid being seen
+            by scouting the item shop from here\.
+    
+            When someone goes in to clear their bag
+            of a bunch of valuables, I'll go in and
+            swipe them before anyone notices!")
+    release
+}

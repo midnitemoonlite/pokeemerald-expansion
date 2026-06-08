@@ -1666,6 +1666,10 @@
     {
       "id": "MAPSEC_ICE_CREAM_ISLAND",
       "name": "ICE CREAM ISLAND"
+    },
+    {
+      "id": "MAPSEC_RESORT_ARENA",
+      "name": "RESORT ARENA"
     }
   ]
 }

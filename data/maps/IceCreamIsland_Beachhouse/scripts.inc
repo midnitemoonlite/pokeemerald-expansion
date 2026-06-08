@@ -153,30 +153,31 @@ IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee::
 # 130 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
 	faceplayer
 # 131 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	message IceCreamIsland_Beachhouse_Text_Introduction
-# 132 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	waitmessage
-# 133 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	pokemart2 IceCreamIsland_Beachhouse_Menu
-# 134 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	msgbox gText_PleaseComeAgain
-# 135 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
+	goto_if_set FLAG_RECEIVED_GEM_APPLE_SORBET, IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_2
+IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_1:
+# 136 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_GEM_APPLE_SORBET, IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_5
+IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_4:
+# 152 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
 	release
 	end
 
+IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_2:
+# 133 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
+	msgbox IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_Text_0
+	goto IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_1
 
-	.align 2
-# 139 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-IceCreamIsland_Beachhouse_Menu:
-# 141 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	.2byte ITEM_FRESH_WATER
-# 142 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	.2byte ITEM_SODA_POP
+IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_5:
+# 138 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
+	msgbox IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_Text_1
 # 143 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	.2byte ITEM_LEMONADE
+	giveitem ITEM_LAVA_COOKIE
 # 144 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	.2byte ITEM_LAVA_COOKIE
-	.2byte ITEM_NONE
+	setflag FLAG_RECEIVED_GEM_APPLE_SORBET
+# 145 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
+	msgbox IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_Text_2
+	goto IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_4
+
 
 IceCreamIsland_Beachhouse_EventScript_BlueSqueaker_Text_0:
 # 9 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
@@ -202,24 +203,24 @@ IceCreamIsland_Beachhouse_EventScript_ShavedIceWaddleDee_Text_0:
 
 IceCreamIsland_Beachhouse_EventScript_TableWaddleDee_Text_0:
 # 50 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	.string "There's a lot about the Royal Royale\n"
-	.string "that goes over my head…\p"
-	.string "I'm having fun, but I wonder how far\n"
-	.string "I'll be able to make it in the end.$"
+	.string "The Royal Royale is a pretty in-depth\n"
+	.string "game. I'm still learning all the rules…\p"
+	.string "I think that sort of mystery and\n"
+	.string "surprise is part of the fun, though.$"
 
 IceCreamIsland_Beachhouse_EventScript_TableWaddleDee_Text_1:
 # 58 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	.string "Are you taking part in that game\n"
-	.string "the Great King put together?\p"
+	.string "So you're taking part in Dedede's\n"
+	.string "Royal Royale too, Kirby?\p"
 	.string "Here, I've got something you might be\n"
 	.string "able to make better use of than me.$"
 
 IceCreamIsland_Beachhouse_EventScript_TableWaddleDee_Text_2:
 # 65 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	.string "Apparently, this item can give your\n"
-	.string "Helpers a special “ability”.\p"
-	.string "To be honest, I'm not really sure\n"
-	.string "what that means. I hope it's useful!$"
+	.string "Apparently this can give your Helpers\n"
+	.string "some kind of special ability.\p"
+	.string "It seems pretty rare. I hope you can\n"
+	.string "make good use of it!$"
 
 IceCreamIsland_Beachhouse_EventScript_WaddleDee_Text_0:
 # 78 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
@@ -241,7 +242,7 @@ IceCreamIsland_Beachhouse_EventScript_GentlemanWaddleDee_Text_0:
 	.string "Dedede's Royal Royale…\p"
 	.string "Even with a new Arena built there, it\n"
 	.string "seems the sleepy resort people aren't\l"
-	.string "really sold on the concept.$"
+	.string "really sold on the concept either.$"
 
 IceCreamIsland_Beachhouse_EventScript_SocialiteWaddleDee_Text_0:
 # 117 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
@@ -253,7 +254,22 @@ IceCreamIsland_Beachhouse_EventScript_SocialiteWaddleDee_Text_1:
 	.string "All my jewelry is crafted from baubles\n"
 	.string "I pick up at the beach.$"
 
-IceCreamIsland_Beachhouse_Text_Introduction::
-# 147 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
-	.string "Welcome to the beachhouse!\n"
-	.string "What can I get you today?$"
+IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_Text_0:
+# 133 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
+	.string "You got a journey to go on?\n"
+	.string "Take care out there, lil' dude!$"
+
+IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_Text_1:
+# 138 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
+	.string "Heeeey, welcome to the beachhouse,\n"
+	.string "lil' dude!\p"
+	.string "Looking to beat the heat? Here, this\n"
+	.string "special's on the house for ya!$"
+
+IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee_Text_2:
+# 145 "data/maps/IceCreamIsland_Beachhouse/scripts.pory"
+	.string "Made with freshly sliced Gem Apples,\n"
+	.string "this sorbet's our signature!\p"
+	.string "If you can resist the temptation to\n"
+	.string "eat it yourself, I'm sure your\l"
+	.string "Helpers'll love a treat this sweet!$"

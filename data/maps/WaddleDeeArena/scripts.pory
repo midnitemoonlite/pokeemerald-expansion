@@ -17,26 +17,60 @@ script WaddleDeeArena_EventScript_Cafe
 {
     lock
     faceplayer
-    msgbox("I've got some time off, so I came to
+    if(!flag(FLAG_BADGE01_GET))
+    {
+        msgbox("I've got some time off, so I came to
             see what the Arenas were like.
             
             I can't wait to see what kinds of
             battles will take place in here!")
+    }
+    else
+    {
+        msgbox("Hey, congratulations on your victory!
+                All the competitors were so cool.
+                
+                I think I get why the Great King is
+                making such a big deal of this game now!")
+    }
     release
+}
+
+script WaddleDeeArena_EventScript_TalkToCafe
+{
+    turnobject(LOCALID_WADDLE_CROWD_1, DIR_SOUTH)
+    goto(WaddleDeeArena_EventScript_Cafe)
 }
 
 script WaddleDeeArena_EventScript_Staff
 {
     lock
     faceplayer
-    msgbox("My boss is planning on challenging the
+    if(!flag(FLAG_BADGE01_GET))
+    {
+        msgbox("My boss is planning on challenging the
             Arena, so I'm here to cheer him on.
             
             His Psychic-type Helpers are something
             else, I tell ya!
             
             Gooooo, boss! You've got this!")
+    }
+    else
+    {
+        msgbox("Wow, you managed to best my boss's
+                Helpers? You're something else!
+                
+                Don't tell him, but\. I'll be
+                rooting for you too!")
+    }
     release
+}
+
+script WaddleDeeArena_EventScript_TalkToStaff
+{
+    turnobject(LOCALID_WADDLE_CROWD_2, DIR_EAST)
+    goto(WaddleDeeArena_EventScript_Staff)
 }
 
 script WaddleDeeArena_EventScript_Hiker
@@ -577,7 +611,6 @@ script WaddleDeeArena_EventScript_GrandFinals
     applymovement(LOCALID_ARENA_MAGOLOR, moves(walk_left * 2, walk_down * 9, walk_left))
     waitmovement()
     setobjectxyperm(LOCALID_ARENA_MAGOLOR, 9, 18)
-    addobject(LOCALID_WADDLE_TUTOR)
     waitmovement()
     clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
     clearflag(FLAG_ARENA_RETRY)
@@ -807,11 +840,24 @@ script WaddleDeeArena_EventScript_TalkToMagolor
     release
 }
 
-script WaddleDeeArena_EventScript_Tutor
+script WaddleDeeArena_EventScript_MoveTutor
 {
     lock
     faceplayer
-    msgbox("Having watched your recent victory\.
+    if(!flag(FLAG_BADGE01_GET))
+    {
+        msgbox("I'm a movesmith. I know all sorts of
+                long-forgotten techniques.
+                
+                What I'm looking for\. is a commander
+                of Helpers that can wield my power.
+                
+                Do you have what it takes to spark
+                the fire kindling in my heart?")
+    }
+    else
+    {
+        msgbox("Having watched your recent victory\.
             I feel so invigorated! Wroaaar!
             
             I know some special moves that can
@@ -821,7 +867,11 @@ script WaddleDeeArena_EventScript_Tutor
             them these new techniques.
             
             What do you say?
-            Which move are you interested in?")
+            Which move are you interested in?
+            
+            \.is what I would ask, but I need
+            more time. Come back much later.")
+    }
     release   
 }
 

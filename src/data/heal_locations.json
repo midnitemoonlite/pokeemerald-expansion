@@ -377,6 +377,20 @@
       "y": 18,
       "respawn_map": "MAP_INDIGO_REST_AREA_CENTER",
       "respawn_npc": "LOCALID_INDIGO_REST_AREA_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_ICE_CREAM_ISLAND",
+      "map": "MAP_ICE_CREAM_ISLAND",
+      "x": 30,
+      "y": 30
+    },
+    {
+      "id": "HEAL_LOCATION_RESORT_ARENA",
+      "map": "MAP_RESORT_ARENA",
+      "x": 5,
+      "y": 22,
+      "respawn_map": "MAP_RESORT_ARENA_CENTER",
+      "respawn_npc": "LOCALID_RESORT_ARENA_NURSE"
     }
   ]
 }

@@ -1,0 +1,53 @@
+raw `
+ResortArena_Villa1_MapScripts::
+	.byte 0
+`
+
+script ResortArena_Villa1_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    msgbox("Castles, resorts\. does being king mean
+            you get to own a lot of places?
+            
+            If you were only king for a day, you
+            wouldn't really get to enjoy that\.")
+    release
+}
+
+script ResortArena_Villa1_EventScript_Socialite
+{
+    lock
+    faceplayer
+    msgbox("This resort is nice, but my real dream is
+            to visit the Popopo Islands sometime!
+            
+            I've heard the resort the Great King
+            has there is even more excellent!")
+    release
+}
+
+script ResortArena_Villa1_EventScript_Cafe
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_ARM_THRUST_TM))
+    {
+        msgbox("Hey, gimme a high-five!
+        
+                Yow! That was one mean slap!
+                Here, why don't you take this?")
+        giveitem(ITEM_TM41)
+        msgbox("Arm Thrust is a move where your Helper
+                unleash a flurry of palm strikes.
+                
+                If you get lucky, it can hit up to
+                five times!")
+    }
+    else
+    {
+        msgbox("I always make sure to greet everyone
+                I meet with everything I've got!")
+    }
+    release
+}

@@ -47,26 +47,26 @@ script IceCreamIsland_Beachhouse_EventScript_TableWaddleDee
     faceplayer
     if(flag(FLAG_RECEIVED_BEACHHOUSE_ITEM))
     {
-        msgbox("There's a lot about the Royal Royale
-                that goes over my head\.
+        msgbox("The Royal Royale is a pretty in-depth
+                game. I'm still learning all the rules\.
                 
-                I'm having fun, but I wonder how far
-                I'll be able to make it in the end.")
+                I think that sort of mystery and
+                surprise is part of the fun, though.")
     }
     if(!flag(FLAG_RECEIVED_BEACHHOUSE_ITEM))
     {
-        msgbox("Are you taking part in that game
-                the Great King put together?
+        msgbox("So you're taking part in Dedede's
+                Royal Royale too, Kirby?
                 
                 Here, I've got something you might be
                 able to make better use of than me.")
         giveitem(ITEM_ABILITY_PATCH)
         setflag(FLAG_RECEIVED_BEACHHOUSE_ITEM)
-        msgbox("Apparently, this item can give your
-                Helpers a special \qoability\qc.
+        msgbox("Apparently this can give your Helpers
+                some kind of special ability.
                 
-                To be honest, I'm not really sure
-                what that means. I hope it's useful!")
+                It seems pretty rare. I hope you can
+                make good use of it!")
     }
     release
 }
@@ -104,7 +104,7 @@ script IceCreamIsland_Beachhouse_EventScript_GentlemanWaddleDee
             
             Even with a new Arena built there, it
             seems the sleepy resort people aren't
-            really sold on the concept.")
+            really sold on the concept either.")
     release
 }
 
@@ -128,24 +128,27 @@ script IceCreamIsland_Beachhouse_EventScript_ManagerWaddleDee
 {
 	lock
 	faceplayer
-	message(IceCreamIsland_Beachhouse_Text_Introduction)
-	waitmessage
-	pokemart2(IceCreamIsland_Beachhouse_Menu)
-	msgbox(gText_PleaseComeAgain)
+	if(flag(FLAG_RECEIVED_GEM_APPLE_SORBET))
+    {
+        msgbox("You got a journey to go on?
+                Take care out there, lil' dude!")
+    }
+    if(!flag(FLAG_RECEIVED_GEM_APPLE_SORBET))
+    {
+        msgbox("Heeeey, welcome to the beachhouse,
+                lil' dude!
+                
+                Looking to beat the heat? Here, this
+                special's on the house for ya!")
+        giveitem(ITEM_LAVA_COOKIE)
+        setflag(FLAG_RECEIVED_GEM_APPLE_SORBET)
+        msgbox("Made with freshly sliced Gem Apples,
+                this sorbet's our signature!
+                
+                If you can resist the temptation to
+                eat it yourself, I'm sure your
+                Helpers'll love a treat this sweet!")
+    }
 	release
 	end
-}
-
-mart IceCreamIsland_Beachhouse_Menu
-{
-    ITEM_FRESH_WATER
-    ITEM_SODA_POP
-    ITEM_LEMONADE
-    ITEM_LAVA_COOKIE
-}
-
-text IceCreamIsland_Beachhouse_Text_Introduction
-{
-    "Welcome to the beachhouse!
-    What can I get you today?"
 }

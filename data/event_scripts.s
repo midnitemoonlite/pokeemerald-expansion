@@ -1779,3 +1779,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/IceCreamIsland/scripts.inc"
 
 	.include "data/maps/IceCreamIsland_Beachhouse/scripts.inc"
+
+	.include "data/maps/ResortArena/scripts.inc"
+
+	.include "data/maps/ResortArena_Center/scripts.inc"
+
+	.include "data/maps/ResortArena_Mart/scripts.inc"
+
+	.include "data/maps/ResortArena_Villa1/scripts.inc"
+
+	.include "data/maps/ResortArena_Villa2/scripts.inc"

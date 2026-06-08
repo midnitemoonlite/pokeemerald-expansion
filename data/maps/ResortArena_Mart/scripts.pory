@@ -1,0 +1,54 @@
+raw `
+ResortArena_Mart_MapScripts::
+	.byte 0
+`
+
+script ResortArena_Mart_EventScript_Clerk
+{
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(ResortArena_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart ResortArena_Mart
+{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_DIVE_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_REPEL
+}
+
+script ResortArena_Mart_EventScript_Youngster
+{
+    lock
+    faceplayer
+    msgbox("It's been a while since I've thought to
+            restock on items. What do I need?
+            
+            Let's see\. Friend Hearts, drinks\.
+            Maybe an Awakening for good measure\.")
+    release
+}
+
+script ResortArena_Mart_EventScript_Manager
+{
+    lock
+    faceplayer
+    msgbox("It's hard work, making sure our guests
+            have a carefree and relaxing stay.
+            
+            I wonder if I'm starting to build the
+            opposite association with resorts\.")
+    release
+}

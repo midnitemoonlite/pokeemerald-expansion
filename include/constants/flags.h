@@ -83,8 +83,8 @@
 #define FLAG_INDIGO_REST_AREA_TRADE_COMPLETED    0x3D // Indigo Rest Area (Center) - Lass who wants to trade
 #define FLAG_RECEIVED_PEARL    0x3E // Ice Cream Island (Beachhouse) - Pearl from Socialite
 #define FLAG_RECEIVED_BEACHHOUSE_ITEM    0x3F // Ice Cream Island (Beachhouse) - Item from Waddle Dee
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
+#define FLAG_RECEIVED_GEM_APPLE_SORBET    0x40 // Ice Cream Island (Beachhouse) - Item from manager
+#define FLAG_RECEIVED_ARM_THRUST_TM    0x41 // Resort Arena - Cafe Staff in first villa
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
@@ -1069,7 +1069,7 @@
 #define FLAG_ITEM_ROUTE_115_SUPER_POTION                            0x3F8 // Ice Cream Island - Item 3
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9 // Ice Cream Island - Item 4
 #define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA // Ice Cream Island - Item 5
-#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB 
+#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB // Resort Arena - Item 1
 #define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC
 #define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
 #define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
