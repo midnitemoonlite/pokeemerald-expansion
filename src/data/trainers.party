@@ -1038,139 +1038,176 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 /* Resort Arena - Trainer 1 */
 === TRAINER_ROSE_5 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
+Name: Waddle Dee
+Class: Parasol Lady
+Pic: Parasol Lady
 Gender: Female
 Music: Female
+Items: Lava Cookie
 Double Battle: No
 AI: Check Bad Move
 
-Breloom
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Coner
+Level: 18
+Ability: Hyper Cutter
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Razor Shell
+- Dig
+- Mud Sport
+- Harden
 
-Gloom
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Twizzy @ Berry Juice
+Level: 18
+Ability: Big Pecks
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Gust
+- Round
+- Sing
+- Roost
 
-Roselia
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Cawcun
+Level: 18
+Ability: Limber
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
 
 /* Resort Arena - Trainer 2 */
 === TRAINER_DUSTY_1 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Name: Squeaker
+Class: Picnicker
+Pic: Picnicker
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 23
+Rocky
+Level: 20
+Ability: Sturdy
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Rock Throw
+- Magnitude
+- Chip Away
+- Harden
+
+Big Beanbon
+Level: 20
+Ability: Supersweet Syrup
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Leech Seed
+- Absorb
+- Stomp
+- Growth
 
 /* Resort Arena - Trainer 3 */
 === TRAINER_CHIP ===
-Name: CHIP
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Name: Waddle Dee
+Class: Youngster
+Pic: Youngster
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Baltoy
-Level: 27
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Psybeam
-- Self Destruct
-- Sandstorm
-- Ancient Power
+Capiller
+Level: 21
+Ability: Swarm
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Sandshrew
-Level: 27
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Pupa
+Level: 20
+Ability: Shed Skin
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+- Struggle Bug
+- Infestation
+- String Shot
+- Bug Bite
 
-Sandslash
-Level: 27
+Butterfly
+Level: 19
+Ability: Schooling
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+- Silver Wind
+- Gust
+- String Shot
+- Harden
 
 /* Resort Arena - Trainer 4 */
 === TRAINER_FOSTER ===
-Name: FOSTER
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
+Name: Waddle Dee
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Female
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
-Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Blipper
+Level: 20
+Ability: Tinted Lens
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Tackle
+- Bubble Beam
+- Charm
 
-Sandslash
-Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Glunk @ Big Root
+Level: 20
+Ability: Tangling Hair
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 /* Resort Arena - Trainer 5 */
 === TRAINER_DUSTY_2 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
+Name: Squeaker
+Class: Picnicker
+Pic: Camper
+Gender: Female
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 27
-IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Pichikuri @ Black Sludge
+Level: 22
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Acupressure
+- Rock Throw
+- Pin Missile
+- Spiky Shield
 
 /* Resort Arena - Daroach */
 === TRAINER_DUSTY_3 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
+Name: Daroach
+Class: Salon Maiden
+Pic: Leader Brawly
 Gender: Male
-Music: Hiker
+Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Sandslash
-Level: 30
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Kabu
+Level: 22
+Ability: Forewarn
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Power Gem
+- Bulldoze
+- Sandstorm
+- Teleport
+
+SPECIES_GOLEM_KIRBY @ Berry Juice
+Level: 22 
+Ability: Iron Fist
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Rock Throw
+- Arm Thrust
+- Ancient Power
+- Bide
+
+Gemaine @ Eviolite
+Level: 24
+Ability: Tera Shell
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+- Power Gem
+- Ice Shard
+- Cosmic Power
 
 === TRAINER_DUSTY_4 ===
 Name: DUSTY

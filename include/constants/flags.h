@@ -85,7 +85,7 @@
 #define FLAG_RECEIVED_BEACHHOUSE_ITEM    0x3F // Ice Cream Island (Beachhouse) - Item from Waddle Dee
 #define FLAG_RECEIVED_GEM_APPLE_SORBET    0x40 // Ice Cream Island (Beachhouse) - Item from manager
 #define FLAG_RECEIVED_ARM_THRUST_TM    0x41 // Resort Arena - Cafe Staff in first villa
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
+#define FLAG_FOUND_KINE    0x42 // Orange Rest Area - Hides Kine
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag
@@ -193,7 +193,7 @@
 #define FLAG_SMART_PAINTING_MADE             0xA3
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
 #define FLAG_RECEIVED_TM_ROCK_TOMB           0xA5 // Waddle Dee Arena - Magolor's TM
-#define FLAG_RECEIVED_TM_BULK_UP             0xA6
+#define FLAG_RECEIVED_TM_BULK_UP             0xA6 // Resort Arena - Daroach's TM
 #define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7
 #define FLAG_RECEIVED_TM_OVERHEAT            0xA8
 #define FLAG_RECEIVED_TM_FACADE              0xA9

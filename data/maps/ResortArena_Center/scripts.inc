@@ -38,14 +38,15 @@ ResortArena_Center_EventScript_RedSqueaker::
 	faceplayer
 # 26 "data/maps/ResortArena_Center/scripts.pory"
 	msgbox ResortArena_Center_EventScript_RedSqueaker_Text_0
-# 31 "data/maps/ResortArena_Center/scripts.pory"
+# 32 "data/maps/ResortArena_Center/scripts.pory"
 	release
 	return
 
 
 ResortArena_Center_EventScript_RedSqueaker_Text_0:
 # 26 "data/maps/ResortArena_Center/scripts.pory"
-	.string "I'm scouting the item shop from here…\p"
+	.string "Squeak! I'm trying to avoid being seen\n"
+	.string "by scouting the item shop from here…\p"
 	.string "When someone goes in to clear their bag\n"
 	.string "of a bunch of valuables, I'll go in and\l"
 	.string "swipe them before anyone notices!$"

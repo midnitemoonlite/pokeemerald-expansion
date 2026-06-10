@@ -76,7 +76,7 @@ ResortArena_Villa1_EventScript_Cafe_Text_0:
 ResortArena_Villa1_EventScript_Cafe_Text_1:
 # 41 "data/maps/ResortArena_Villa1/scripts.pory"
 	.string "Arm Thrust is a move where your Helper\n"
-	.string "unleash a flurry of palm strikes!\p"
+	.string "unleash a flurry of palm strikes.\p"
 	.string "If you get lucky, it can hit up to\n"
 	.string "five times!$"
 

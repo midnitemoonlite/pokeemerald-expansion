@@ -341,11 +341,8 @@ script WaddleDeeArena_EventScript_Challenger1
     }
     elif(flag(FLAG_ARENA_RETRY))
     {
-        msgbox("We both couldn't reach the top of the
-                tournament last time\.
-                
-                Let's see if one of us will be able to
-                accomplish it this time!")
+        msgbox("We both couldn't win last time\. let's
+                see if one of us will do it this time!")
     }
     closemessage
     setflag(FLAG_ARENA_RETRY)

@@ -365,6 +365,15 @@ script ResortArena_EventScript_Socialite
     {
         goto(ResortArena_EventScript_Courtship)
     }
+    else
+    {
+        faceplayer
+        msgbox("You may be stronger than Daroach,
+                but you'll never be as suave.
+                
+                Sigh\. Daroach\. {EMOJI_HEART}")
+        release
+    }
 }
 
 script ResortArena_EventScript_ParasolLady
@@ -373,6 +382,16 @@ script ResortArena_EventScript_ParasolLady
     if(!flag(FLAG_BADGE02_GET))
     {
         goto(ResortArena_EventScript_Courtship)
+    }
+    else
+    {
+        faceplayer
+        msgbox("So you beat Daroach at the Arena, huh?
+                Maybe I should be your fan instead.
+                
+                What do you say? Any room in your
+                party for a gal like me? {EMOJI_HEART}")
+        release
     }
 }
 
@@ -383,6 +402,18 @@ script ResortArena_EventScript_Lass
     {
         goto(ResortArena_EventScript_Courtship)
     }
+    else
+    {
+        faceplayer
+        msgbox("I'm over Daroach. I found a new love\.
+        
+                Why, it's the muscle of the Squeaks,
+                Storo!
+                
+                Who needs brains when you've got all
+                that brawn? {EMOJI_HEART}")
+        release
+    }
 }
 
 script ResortArena_EventScript_Daroach
@@ -392,9 +423,908 @@ script ResortArena_EventScript_Daroach
     {
         goto(ResortArena_EventScript_Courtship)
     }
+    if(flag(FLAG_BADGE02_GET))
+    {
+        faceplayer
+        if(!flag(FLAG_RECEIVED_TM_BULK_UP))
+        {
+            if(!flag(FLAG_FOUND_KINE))
+            {
+                msgbox("I've underestimated you, my friend.
+                    You may have what it takes\.
+                    
+                    Here, as a sign of good will, let me
+                    impart a little something onto you.")
+                giveitem(ITEM_TM73)
+                msgbox("Power Gem is my personal favorite move.
+                        Simple, effective, and flashy! 
+                        
+                        By the way, I have a tip you might want
+                        to hear about\.
+                        
+                        As it happens, I recently came across a
+                        message in a bottle on the shore here.
+                        
+                        A request for help seeking a precious
+                        lost item, by a familiar fishy friend\.
+                        
+                        Normally I would take such matters into
+                        my own claws, but I believe you would
+                        be better off looking into it yourself.
+                        
+                        The correspondent is awaiting on the
+                        other side of Cocoa Cave.
+                        
+                        Don't worry! I'll arrange for the path
+                        to be made clear for you\.
+                        
+                        Now go on! It's time for your own
+                        treasure hunt to unfold!")
+            }
+            else
+            {
+                msgbox("I've underestimated you, my friend.
+                    You may have what it takes\.
+                    
+                    Here, as a sign of good will, let me
+                    impart a little something onto you.")
+                giveitem(ITEM_TM73)
+                msgbox("Power Gem is my personal favorite move.
+                        Simple, effective, and flashy!")
+            }
+            setflag(FLAG_RECEIVED_TM_BULK_UP)
+        }
+        else
+        {
+            if(!flag(FLAG_FOUND_KINE))
+            {
+                msgbox("By the way, I have a tip you might want
+                        to hear about\.
+                        
+                        As it happens, I recently came across a
+                        message in a bottle on the shore here.
+                        
+                        A request for help seeking a precious
+                        lost item, by a familiar fishy friend\.
+                        
+                        Normally I would take such matters into
+                        my own claws, but I believe you would
+                        be better off looking into it yourself.
+                        
+                        The correspondent is awaiting on the
+                        other side of Cocoa Cave.
+                        
+                        Don't worry! I'll arrange for the path
+                        to be made clear for you\.
+                        
+                        Now go on! It's time for your own
+                        treasure hunt to unfold!")
+            }
+            else
+            {
+                msgbox("My most esteemed cohorts are searching
+                    for clues on various Big Boss Helpers.
+                    
+                    And the little ones are looking for
+                    sunken treasure at the beach\.
+                    
+                    As for me? I think I shall stay a
+                    while longer yet at the resort.
+                    
+                    The sea breeze is good for my fur,
+                    and I have many a confidant to make\.")
+            }
+        }
+        release
+    }
 }
 
 script ResortArena_EventScript_Commentator
 {
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE02_GET))
+    {
+        msgbox("Once more: congraaaaatulations on your
+                fantaaaaabulous win, Kirby!
+                
+                Daroach was a sneaky foe, but you
+                carved your own path to victory!
+                
+                I'll be rooting for you at the other
+                Arenas! Good luck, Kirby of the Stars!")
+    }
+    elif(!flag(FLAG_BADGE02_GET))
+    {
+        lock
+        faceplayer
+        msgbox("Wwwwwelcome to the Resort
+                Arenaaaaa!
+                
+                I'm your host, Commentator Waddle Dee,
+                here to officiate heated Helper brawls!")
+        if(!flag(FLAG_GRAND_FINALS_ACTIVE))
+        {
+            goto(ResortArena_EventScript_CommentatorChoice)
+        }
+        elif(flag(FLAG_GRAND_FINALS_ACTIVE))
+        {
+            msgbox("Next up: grand finals!
+                    Are you prepared for the last battle?", MSGBOX_YESNO)
+            if(var(VAR_RESULT))
+            {
+                closemessage
+                goto(ResortArena_EventScript_GrandFinalsPreparation)
+            }
+            elif(!var(VAR_RESULT))
+            {
+                closemessage
+                goto(ResortArena_EventScript_CommentatorBye)
+            }
+        }
+	}
+    release
+}
 
+script ResortArena_EventScript_CommentatorChoice
+{
+    message("Today's challenge: a mild stroll!
+            How can I help you?")
+    waitmessage
+    multichoice(17, 6, MULTI_CHALLENGEINFO, FALSE)
+    switch(var(VAR_RESULT)) {
+	case 0:
+		goto(ResortArena_EventScript_BeginChallenge)
+	case 1:
+		goto(ResortArena_EventScript_CommentatorInfo)
+	case 2:
+		goto(ResortArena_EventScript_CommentatorBye)
+    case MULTI_B_PRESSED:
+        goto(ResortArena_EventScript_CommentatorBye)
+    }
+}
+
+script ResortArena_EventScript_CommentatorBye
+{
+    if(flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        msgbox("When you're ready for the grand finals,
+                you know the Waddle Dee to talk to!")
+    }
+    else
+    {
+        msgbox("If you ever want to brave the Arena,
+                you know the Waddle Dee to talk to!")
+    }
+    release
+}
+
+script ResortArena_EventScript_CommentatorInfo
+{
+    msgbox("Arenas host gauntlet-styled
+            tournaments of Helper battles.
+            
+            Eager challengers are first pooled into
+            a preliminary bracket. Win more battles
+            to climb up the ranks!
+            
+            In between bouts, leaders are offered
+            the chance to rest their Helpers\.
+            
+            But beware! You only get a limited
+            number of heals per attempt!
+            
+            In this Arena, you'll have to survive
+            {COLOR BLUE}5 rounds{COLOR DARK_GRAY} with {COLOR RED}2 full-party heals{COLOR DARK_GRAY}.
+            
+            If you top the preliminary bracket,
+            you'll be entered into grand finals!
+            
+            You'll have the chance to adjust your
+            team and save before the last fight.
+            
+            Defeat the final opponent, and you'll
+            be awarded one Resort Brooch!
+            
+            Now then\.")
+    goto(ResortArena_EventScript_CommentatorChoice)
+}
+
+script ResortArena_EventScript_BeginChallenge
+{
+    msgbox("Alright, you've been signed up.
+            Come with me onto the stage, please!")
+    closemessage
+    setvar(VAR_ARENA_HEALS, 2)
+    setvar(VAR_ARENA_BATTLES, 0)
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    getobjectfacingdirection(LOCALID_PLAYER, VAR_TEMP_0)
+	if(var(VAR_TEMP_0) == DIR_SOUTH)
+	{
+        applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_left, walk_down * 2, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_WEST)
+	{
+		applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_EAST)
+	{
+		applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+    special(SpawnCameraObject)
+    applymovement(LOCALID_CAMERA, moves(walk_up * 6))
+    applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_up * 7, walk_in_place_down))
+    applymovement(LOCALID_PLAYER, moves(walk_up * 6, walk_left * 3, walk_in_place_right))
+    waitmovement()
+    applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_in_place_down * 2))
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Welcome, one and all, to the tropical  
+            Resort Arena!
+            
+            We've got some exciting battles today!
+            Including a Waddle Dee Arena champion\.
+            It's the mighty marshmallow, Kirbyyy!!!")
+    }
+    elif(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Welcome, one and all, to the brand-new
+            Waddle Dee Arena!
+            
+            Kirby has returned to the stage for
+            another shot at the Resort Brooch!
+            Will he see it through this time?")
+    }
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_down))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_up))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_left * 4))
+    delay(60)
+    call(ResortArena_EventScript_Challenger1)
+}
+
+script ResortArena_EventScript_Challenger1
+{
+    msgbox("Let's have our first challenger, please!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_right, delay_16, delay_16, delay_16, face_down))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_right, delay_16, delay_16, delay_16, face_up))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(face_down, delay_16, delay_8, face_left, delay_16, delay_8, face_down, delay_16, delay_8, face_left))
+    addobject(LOCALID_RESORT_CHALLENGER_1)
+    applymovement(LOCALID_RESORT_CHALLENGER_1, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(30)
+    applymovement(LOCALID_RESORT_CHALLENGER_1, moves(walk_in_place_left * 2))
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Oh dear\. I wasn't expecting such a
+                strong-looking challenger today\.")
+    }
+    elif(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("You\. you humiliated me last time!
+                Now, I'll humiliate you in turn!")
+    }
+    closemessage
+    setflag(FLAG_ARENA_RETRY)
+    applymovement(LOCALID_RESORT_CHALLENGER_1, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_ROSE_5, ResortArena_Text_Challenger1)
+    msgbox("Is this the start of another sweep?
+            Kirby takes the first win!")
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_right, delay_16, delay_16, delay_16, delay_16, delay_16, face_down))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_right, delay_16, delay_16, delay_16, face_up))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(face_up, delay_16, face_right, delay_16, face_down, delay_16, face_left))
+    playse(SE_APPLAUSE)
+    closemessage
+    setvar(VAR_ARENA_BATTLES, 1)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_RESORT_CHALLENGER_1, moves(walk_left, walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_RESORT_CHALLENGER_1)
+    goto(ResortArena_EventScript_Break)
+}
+
+text ResortArena_Text_Challenger1
+{
+    "Shudder\. how barbaric!"
+}
+
+script ResortArena_EventScript_Challenger2
+{
+    msgbox("Challenger number two, step right up!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_right))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_right, delay_16, delay_16, delay_16, face_up, delay_16, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(jump_in_place_left * 4))
+    addobject(LOCALID_RESORT_CHALLENGER_2)
+    applymovement(LOCALID_RESORT_CHALLENGER_2, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(30)
+    applymovement(LOCALID_RESORT_CHALLENGER_2, moves(walk_in_place_left * 2))
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    msgbox("Squeak squeak!")
+    closemessage
+    special(SpawnCameraObject)
+    applymovement(LOCALID_RESORT_CHALLENGER_2, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_DUSTY_1, ResortArena_Text_Challenger2)
+    msgbox("He's barely breaking a sweat!
+            Kirby has scored a second victory!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_slow_right * 3))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(delay_16, face_up, delay_16, delay_16, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_slow_left * 5))
+    setvar(VAR_ARENA_BATTLES, 2)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_RESORT_CHALLENGER_2, moves(walk_left, walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_RESORT_CHALLENGER_2)
+    goto(ResortArena_EventScript_Break)
+}
+
+text ResortArena_Text_Challenger2
+{
+    "Squeak squeak squeak\."
+}
+
+script ResortArena_EventScript_Challenger3
+{
+    msgbox("Give it up for challenger number three!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_down, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_up, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_left * 4))
+    addobject(LOCALID_RESORT_CHALLENGER_3)
+    applymovement(LOCALID_RESORT_CHALLENGER_3, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(30)
+    applymovement(LOCALID_RESORT_CHALLENGER_3, moves(walk_in_place_left * 2))
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    msgbox("My battalion of bugs has what it takes
+            to get us a Resort Brooch!")
+    closemessage
+    special(SpawnCameraObject)
+    applymovement(LOCALID_RESORT_CHALLENGER_3, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_CHIP, ResortArena_Text_Challenger3)
+    msgbox("The stakes are climbing ever higher!
+            Kirby nets his third victory!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_right * 5))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_right * 4))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(face_up, delay_8, face_right, delay_8, face_down, delay_8, face_left, delay_8, face_up, delay_8, face_right, delay_8, face_down, delay_8, face_left))
+    setvar(VAR_ARENA_BATTLES, 3)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_RESORT_CHALLENGER_3, moves(walk_left, walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_RESORT_CHALLENGER_3)
+    goto(ResortArena_EventScript_Break)
+}
+
+text ResortArena_Text_Challenger3
+{
+    "I thought I could prove type
+    diversity didn't matter\."
+}
+
+script ResortArena_EventScript_Challenger4
+{
+    msgbox("You're up next, challenger number four!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right, face_down, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_right, face_up, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(jump_in_place_left, walk_up, walk_down * 2, walk_up, face_left))
+    addobject(LOCALID_RESORT_CHALLENGER_4)
+    applymovement(LOCALID_RESORT_CHALLENGER_4, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(30)
+    applymovement(LOCALID_RESORT_CHALLENGER_4, moves(walk_in_place_left * 2))
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    msgbox("If I beat you in a battle, can you help
+            me get out of this raft?")
+    closemessage
+    special(SpawnCameraObject)
+    applymovement(LOCALID_RESORT_CHALLENGER_4, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_FOSTER, ResortArena_Text_Challenger4)
+    msgbox("The stakes are steadily climbing!
+            Kirby has gone up to four wins!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right * 3))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_right * 5))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_fast_left * 10))
+    setvar(VAR_ARENA_BATTLES, 4)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_RESORT_CHALLENGER_4, moves(walk_left, walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_RESORT_CHALLENGER_4)
+    goto(ResortArena_EventScript_Break)
+}
+
+text ResortArena_Text_Challenger4
+{
+    "I got stuck in my raft, so now I've
+    got to row myself everywhere\."
+}
+
+script ResortArena_EventScript_Challenger5
+{
+    msgbox("Everyone welcome our final challenger!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_up, delay_16, face_down, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_up, delay_16, face_down, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(jump_up, jump_down, jump_down, jump_up, face_left))
+    addobject(LOCALID_RESORT_CHALLENGER_5)
+    applymovement(LOCALID_RESORT_CHALLENGER_5, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(30)
+    applymovement(LOCALID_RESORT_CHALLENGER_5, moves(walk_in_place_left * 2))
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    msgbox("Squeak! This one's for the boss!")
+    closemessage
+    special(SpawnCameraObject)
+    applymovement(LOCALID_RESORT_CHALLENGER_5, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_DUSTY_2, ResortArena_Text_Challenger5)
+    msgbox("What an amazing battle! Kirby has swept
+            the preliminary bracket!!")
+    closemessage
+    clearflag(FLAG_ARENA_RETRY)
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_fast_right * 8))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_right * 3))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(face_right, delay_16, delay_16, jump_in_place_left * 4))
+    setvar(VAR_ARENA_BATTLES, 5)
+    setflag(FLAG_GRAND_FINALS_ACTIVE)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_RESORT_CHALLENGER_5, moves(walk_left, walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_RESORT_CHALLENGER_5)
+    msgbox("All that's left now is the grand finals!
+    
+            Now that you've conquered the bracket,
+            your options have changed slightly.
+
+            We'll give you a complimentary
+            full-party heal if you choose {COLOR RED}HEAL{COLOR DARK_GRAY}.
+            
+            Alternatively, choose {COLOR RED}RETIRE{COLOR DARK_GRAY} if you
+            want to take a break and save first.
+            
+            Don't worry! Talk to me again, and we'll
+            set up the grand finals immediately.
+            
+            Of course, if you're feeling confident,
+            we can get started right now!")
+    goto(ResortArena_EventScript_Break)
+}
+
+text ResortArena_Text_Challenger5
+{
+    "Boss! It's up to you now! Squeak!"
+}
+
+script ResortArena_EventScript_Break
+{
+    if(var(VAR_ARENA_BATTLES) == 1)
+    {
+        message("There's four more rounds to go.
+                 Are you ready for the next battle?")
+    }
+    elif(var(VAR_ARENA_BATTLES) == 2)
+    {
+        message("There's still three rounds to go.
+                 Are you ready for the next battle?")
+    }
+    elif(var(VAR_ARENA_BATTLES) == 3)
+    {
+        message("There's just two rounds to go now.
+                 Are you ready for the next battle?")
+    }
+    elif(var(VAR_ARENA_BATTLES) == 4)
+    {
+        message("The last battle in the preliminary
+                bracket awaits! Are you prepared?")
+    }
+    elif(var(VAR_ARENA_BATTLES) == 5)
+    {
+        message("Now then, Kirby: the grand finals await!
+                Are you ready for the TRUE final bout?")
+    }
+    waitmessage()
+    multichoice(17, 6, MULTI_GO_ON_REST_RETIRE, 0)
+    switch(var(VAR_RESULT)) {
+	case 0:
+        if(var(VAR_ARENA_BATTLES) == 1)
+        {
+            goto(ResortArena_EventScript_Challenger2)
+        }
+		elif(var(VAR_ARENA_BATTLES) == 2)
+        {
+            goto(ResortArena_EventScript_Challenger3)
+        }
+        elif(var(VAR_ARENA_BATTLES) == 3)
+        {
+            goto(ResortArena_EventScript_Challenger4)
+        }
+        elif(var(VAR_ARENA_BATTLES) == 4)
+        {
+            goto(ResortArena_EventScript_Challenger5)
+        }
+        elif(var(VAR_ARENA_BATTLES) == 5)
+        {
+            goto(ResortArena_EventScript_GrandFinals)
+        }
+	case 1:
+		goto(ResortArena_EventScript_ArenaHeal)
+	case 2:
+		goto(ResortArena_EventScript_ForfeitConfirmation)
+    case MULTI_B_PRESSED:
+        goto(ResortArena_EventScript_ForfeitConfirmation)
+    }
+}
+
+script ResortArena_EventScript_ArenaHeal
+{
+    if(!flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        if(!flag(FLAG_ARENA_HEALED_THIS_ROUND))
+        {
+            if(var(VAR_ARENA_HEALS) > 0)
+            {
+                if(var(VAR_ARENA_HEALS) > 1)
+                {
+                    msgbox("You have {COLOR RED}two full-party heals{COLOR DARK_GRAY} left.
+                        Would you like to use one now?", MSGBOX_YESNO)
+                }
+                else
+                {
+                    msgbox("You have {COLOR RED}one full-party heal{COLOR DARK_GRAY} left.
+                        Would you like to use it now?", MSGBOX_YESNO)
+                }
+                if(var(VAR_RESULT))
+                {
+                    special(HealPlayerParty)
+                    playse(SE_USE_ITEM)
+                    subvar(VAR_ARENA_HEALS, 1)
+                    setflag(FLAG_ARENA_HEALED_THIS_ROUND)
+                    message("Your party has been fully healed!")
+                    waitmessage()
+                    delay(60)
+                    goto(ResortArena_EventScript_Break)
+                }
+                if(!var(VAR_RESULT))
+                {
+                    goto(ResortArena_EventScript_Break)
+                }
+            }
+            else
+            {
+                msgbox("Unfortunately, you've already used up
+                        all of your heals, Kirby.
+                        
+                        You'll have to tough out the remaining
+                        battles with your party as they are!")
+                goto(ResortArena_EventScript_Break)
+            }
+        }
+        elif(flag(FLAG_ARENA_HEALED_THIS_ROUND))
+        {
+            msgbox("You already healed up this round, Kirby!
+                    If you have any heals remaining,
+                    let's save them for future rounds, OK?")
+            goto(ResortArena_EventScript_Break)
+        }
+    }
+    elif(flag(FLAG_GRAND_FINALS_ACTIVE))
+        {
+            msgbox("Alright, one complimentary full-party
+                    heal for our pink warrior, coming up!")
+            special(HealPlayerParty)
+                    playse(SE_USE_ITEM)
+                    message("Your party has been fully healed!")
+                    waitmessage()
+                    delay(60)
+                    goto(ResortArena_EventScript_Break)
+        }
+}
+
+script ResortArena_EventScript_ForfeitConfirmation
+{
+    if(!flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        msgbox("Are you really sure you want to
+            throw in the towel now?
+            
+            Just a heads up; {COLOR RED}you'll have to start
+            the tournament anew if you do{COLOR DARK_GRAY}!
+            
+            Are you absolutely, positively sure
+            you want to retire now?", MSGBOX_YESNO)
+        if(var(VAR_RESULT))
+        {
+            msgbox("Well, sorry, folks! Looks like this
+                    promising run is being cut short!")
+            closemessage
+            special(SpawnCameraObject)
+            applymovement(LOCALID_PLAYER, moves(walk_right * 3, walk_down * 6, walk_in_place_up))
+            delay(60)
+            applymovement(LOCALID_CAMERA, moves(walk_down * 6))
+            applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_down * 7))
+            waitmovement()
+            special(RemoveCameraObject)
+            goto(ResortArena_EventScript_CommentatorBye)
+        }
+        elif(!var(VAR_RESULT))
+        {
+            goto(ResortArena_EventScript_Break)
+        }
+    }
+    elif(flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+            msgbox("Alright, folks! Stay tuned! The grand
+                    finals will begin after a short break!")
+            closemessage
+            special(SpawnCameraObject)
+            applymovement(LOCALID_PLAYER, moves(walk_right * 3, walk_down * 6, walk_in_place_up))
+            delay(60)
+            applymovement(LOCALID_CAMERA, moves(walk_down * 6))
+            applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_down * 7))
+            waitmovement()
+            special(RemoveCameraObject)
+            goto(ResortArena_EventScript_CommentatorBye)
+            release
+    }
+}
+
+script ResortArena_EventScript_GrandFinalsPreparation
+{
+    getobjectfacingdirection(LOCALID_PLAYER, VAR_TEMP_0)
+	if(var(VAR_TEMP_0) == DIR_SOUTH)
+	{
+        applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_left, walk_down * 2, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_WEST)
+	{
+		applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_EAST)
+	{
+		applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_in_place_up))
+		waitmovement()
+	}
+    special(SpawnCameraObject)
+    applymovement(LOCALID_CAMERA, moves(walk_up * 6))
+    applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_up * 7, walk_in_place_down))
+    applymovement(LOCALID_PLAYER, moves(walk_up * 6, walk_left * 3, walk_in_place_right))
+    waitmovement()
+    special(RemoveCameraObject)
+    goto(ResortArena_EventScript_GrandFinals)
+}
+
+script ResortArena_EventScript_GrandFinals
+{
+    fadeoutbgm(1)
+    applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_in_place_down * 2))
+    waitmovement()
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Can you feel it? The tension in the air?
+            The electric buzz from the crowd?
+            
+            That can only mean one thing:
+            it's GRAND FINALS time!
+            
+            On my right, a leader-in-the-making
+            looking for a second Brooch\.
+            
+            Everyone give it up for Kirbyyyyy!!!")
+    }
+    elif(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Can you feel it? The tension in the air?
+            The electric buzz from the crowd?
+            
+            That can only mean one thing:
+            it's GRAND FINALS time!
+            
+            On my right, a valiant soul who won't
+            back down after suffering defeat\.
+            
+            Everyone give it up for Kirbyyyyy!!!")
+    }
+    closemessage()
+    applymovement(LOCALID_PLAYER, moves(jump_in_place_right * 5))
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right * 4))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_right * 6))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left, delay_4, face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left, delay_4, face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left))
+    removeobject(LOCALID_DAROACH)
+    setobjectxyperm(LOCALID_DAROACH, 25, 22)
+    addobject(LOCALID_DAROACH)
+    delay(60)
+    msgbox("And to my left, the other undefeated
+            challenger who made it to grand finals!
+            
+            He's the rougish leader of a band of
+            mousy misfits, always seeking riches\.
+
+            Now, this treasure hunter has his eye
+            on the Royal Royale's ultimate prize!
+            
+            Everyone welcome {COLOR RED}Daroach{COLOR DARK_GRAY} to the stage!")
+    closemessage()
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right, walk_in_place_fast_right * 5))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_right, walk_in_place_right * 3))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_fast_left * 8))
+    applymovement(LOCALID_DAROACH, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    waitmovement()
+    delay(60)
+    applymovement(LOCALID_DAROACH, moves(walk_in_place_left * 2))
+    waitmovement()
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("{SPEAKER NAME_DAROACH}Good to see you, my little friend!
+        
+                Of course my Squeakers have told me all
+                about you; Kirby, the intrepid traveler
+                who's interrupting our treasure hunt.
+                
+                Alas, hunting for treasure is what we
+                Squeaks do best, and there's a big prize
+                awaiting us at the end of this game.
+                
+                The one who shall inherit King Dedede's
+                throne will be me!
+                
+                Watch yourself, Kirby! Here I come!")
+    }
+    if(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("{SPEAKER NAME_DAROACH}Let me teach you a little something,
+                my good friend\.
+                
+                When you steal a treasure, you often
+                find those who wish to claim it back.
+                
+                They will try, again and again, to
+                get in the way of you and your prize.
+                
+                You must be thorough, snuffing out
+                every last hope of retaliation.
+                
+                Do you see where I'm getting at now?
+                
+                The Royal Royale's treasure is mine,
+                Kirby. I will NOT let you have it!
+                
+                Now, let's duel! Winner take all!")
+    }
+    closemessage()
+    applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_fast_down * 5))
+    msgbox("It's come down to Kirby vs. Daroach!
+            Who will reign supreme in the Arena?!
+            
+            Everyone make some noiseeeee!!!!!")
+    closemessage
+    setflag(FLAG_ARENA_RETRY)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_DAROACH, moves(walk_slow_right, walk_fast_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_slow_left, walk_fast_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_DUSTY_3, ResortArena_Text_Daroach)
+    fadeoutbgm(1)
+    delay(60)
+    msgbox("Folks\. this is one battle to treasure.
+            The winner of this Resort Arena rumble\.
+            
+            It's the pink puffball himself!
+            KIRBY WINS!")
+    closemessage()
+    playbgm(MUS_LILYCOVE, FALSE)
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right * 5))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right))
+    applymovement(LOCALID_RESORT_CROWD_3, moves(jump_2_down, jump_2_up, jump_2_up, jump_2_down, face_left))
+    applymovement(LOCALID_PLAYER, moves(jump_in_place_right, jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right, jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right))
+    waitmovement()
+    message("KIRBY! KIRBY! KIRBY! KIRBY!")
+    waitmessage()
+    delay(60)
+    closemessage()
+    applymovement(LOCALID_DAROACH, moves(walk_in_place_slow_left * 2))
+    waitmovement()
+    msgbox("{SPEAKER NAME_DAROACH}For every winner, there is a loser\.
+            Well, it's time to make my retreat.")
+    closemessage()
+    applymovement(LOCALID_DAROACH, moves(walk_left * 2, walk_down * 7, walk_right * 4))
+    waitmovement()
+    setobjectxyperm(LOCALID_DAROACH, 29, 21)
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    clearflag(FLAG_ARENA_RETRY)
+    clearflag(FLAG_GRAND_FINALS_ACTIVE)
+    setvar(VAR_ARENA_BATTLES, 0)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_down * 6, walk_in_place_up))
+    delay(60)
+    applymovement(LOCALID_CAMERA, moves(walk_down * 6))
+    applymovement(LOCALID_RESORT_COMMENTATOR, moves(walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    goto(ResortArena_EventScript_Victory)
+}
+
+text ResortArena_Text_Daroach
+{
+    "It seems I've been bested\."
+}
+
+script ResortArena_EventScript_Victory
+{
+    msgbox("Congratulations again on conquering
+            the Resort Arena, Kirby!
+            
+            Here's your reward to commemorate the
+            occasion: the Resort Brooch!")
+    message("Kirby received the Resort Brooch
+            from Commentator Waddle Dee!")
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+    setflag(FLAG_BADGE02_GET)
+    msgbox("This Brooch certifies that you'll be
+            able to safely train stronger Helpers.
+            
+            I'm sure we'll see each other again
+            at the next Arena. Until then!")
+    release
 }
