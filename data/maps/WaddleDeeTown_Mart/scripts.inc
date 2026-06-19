@@ -31,56 +31,54 @@ WaddleDeeTown_Mart:
 # 21 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_HEAL_BALL
 # 22 "data/maps/WaddleDeeTown_Mart/scripts.pory"
-	.2byte ITEM_DREAM_BALL
-# 23 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_POTION
-# 24 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 23 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_ANTIDOTE
-# 25 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 24 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
-# 26 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 25 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_AWAKENING
-# 27 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 26 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_BURN_HEAL
-# 28 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 27 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_ICE_HEAL
-# 29 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 28 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_POKE_DOLL
 	.2byte ITEM_NONE
 
 WaddleDeeTown_Mart_EventScript_Delivery::
-# 34 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 33 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	lock
-# 35 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 34 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	faceplayer
-# 36 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 35 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	msgbox WaddleDeeTown_Mart_EventScript_Delivery_Text_0
-# 41 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 40 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Mart_EventScript_Socialite::
-# 46 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 45 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	lock
-# 47 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 46 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	faceplayer
-# 48 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 47 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	msgbox WaddleDeeTown_Mart_EventScript_Socialite_Text_0
-# 54 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 53 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Mart_EventScript_Delivery_Text_0:
-# 36 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 35 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.string "There's a department store being built\n"
 	.string "in the northeast corner of town.\p"
 	.string "It'll be hard for this shop to compete\n"
 	.string "with the variety of items sold there…$"
 
 WaddleDeeTown_Mart_EventScript_Socialite_Text_0:
-# 48 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 47 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.string "Even when the department store opens,\n"
 	.string "I'll keep coming back to this shop.\p"
 	.string "I come by often enough for the clerks\n"

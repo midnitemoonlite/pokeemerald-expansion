@@ -90,7 +90,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Burning Leo
+Burning Leo (M)
 Level: 5
 Ability: Blaze
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -107,7 +107,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Squishy
+Squishy (M)
 Level: 5
 Ability: Torrent
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -124,7 +124,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lovely
+Lovely (F)
 Level: 5
 Ability: Overgrow
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -141,17 +141,19 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Waddle Doo
+Waddle Doo (M)
 Level: 5
 Ability: Frisk
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Ball: Poke
 - Leer
 - Tackle
 
-Squishy
+Squishy (M)
 Level: 6
 Ability: Torrent
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Ball: Poke
 
 /* Bandana Waddle Dee - Green Rest Area (Burning Leo) */
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
@@ -162,17 +164,19 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Waddle Doo
+Waddle Doo (M)
 Level: 5
 Ability: Frisk
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Ball: Poke
 - Leer
 - Tackle
 
-Lovely
+Lovely (F)
 Level: 6
 Ability: Overgrow
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Ball: Poke
 
 /* Bandana Waddle Dee - Green Rest Area (Squishy) */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
@@ -183,227 +187,239 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Waddle Doo
+Waddle Doo (M)
 Level: 5
 Ability: Frisk
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Ball: Poke
 - Leer
 - Tackle
 
-Burning Leo
+Burning Leo (M)
 Level: 6
 Ability: Blaze
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Ball: Poke
 
 /* Prism Plains - Trainer 1 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: Waddle Dee
 Class: Youngster
 Pic: Youngster
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Chip
+Chip (M)
 Level: 5
 Ability: Friend Guard
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
 /* Prism Plains - Trainer 2 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: Waddle Dee
 Class: Parasol Lady
 Pic: Parasol Lady
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Bronto Burt
+Bronto Burt (F)
 Level: 4
 Ability: Keen Eye
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
-Twizzy
+Twizzy (F)
 Level: 4
 Ability: Early Bird
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
 /* Prism Plains - Trainer 3 */
 === TRAINER_GABRIELLE_1 ===
 Name: Waddle Dee
 Class: Youngster
 Pic: Youngster
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Gaw Gaw
+Gaw Gaw (F)
 Level: 6
 Ability: Sand Force
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
 /* Prism Plains - Trainer 4 */
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: Waddle Dee
 Class: Aroma Lady
 Pic: Aroma Lady
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-SPECIES_BEANBON_PLANT
+SPECIES_BEANBON_PLANT (F)
 Level: 5
 Ability: Leaf Guard
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
-SPECIES_BEANBON_SANDY
+SPECIES_BEANBON_SANDY (F)
 Level: 5
 Ability: Supersweet Syrup
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
-SPECIES_BEANBON_TRASH
+SPECIES_BEANBON_TRASH (M)
 Level: 5
 Ability: Adaptability
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
 /* Prism Plains - Trainer 5 */
 === TRAINER_MARCEL ===
 Name: Waddle Dee
 Class: Lass
 Pic: Lass
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Capiller
+Capiller (M)
 Level: 6
 Ability: Swarm
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
-Maiga
+Maiga (F)
 Level: 6
 Ability: Regenerator
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
 /* Prism Plains - Trainer 6 */
 === TRAINER_ALBERTO ===
 Name: Waddle Dee
 Class: Bird Keeper
 Pic: Bird Keeper
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Twizzy
+Twizzy (F)
 Level: 6
 Ability: Big Pecks
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
-Chip
+Chip (F)
 Level: 6
 Ability: Fluffy
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
-Gaw Gaw
+Gaw Gaw (M)
 Level: 6
 Ability: Tough Claws
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
 /* Waddle Dee Arena - Trainer 1 */
 === TRAINER_ED ===
 Name: Waddle Dee
 Class: Youngster
 Pic: Youngster
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Bronto Burt
+Bronto Burt (M)
 Level: 9
 Ability: Reckless
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
-Cappy
+Cappy (M)
 Level: 9
 Ability: Anticipation
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Heal
 
 /* Waddle Dee Arena - Trainer 2 */
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
 Name: Waddle Dee
 Class: Lass
 Pic: Lass
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Waddle Doo
+Waddle Doo (F)
 Level: 9
 Ability: Frisk
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
-Awoofy
+Awoofy (F)
 Level: 9
 Ability: Run Away
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Heal
 
 /* Waddle Dee Arena - Trainer 3 */
 === TRAINER_DECLAN ===
 Name: Waddle Dee
 Class: Pokemaniac
 Pic: Pokemaniac
-Gender: Male
 Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Noddy @ Oran Berry
+Noddy (M) @ Oran Berry
 Level: 10
 Ability: Comatose
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Ball: Poke
 
 /* Waddle Dee Arena - Magolor (Lovely) */
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: Magolor
 Class: Salon Maiden
 Pic: Leader Roxanne
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Dupa
+Dupa (M)
 Level: 10
 Ability: Unnerve
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Bite
 - Growl
 - Stored Power
 - Trick
 
-NESP @ Black Sludge
+NESP (F) @ Black Sludge
 Level: 10
 Ability: Neuroforce
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Confusion
 - Astonish
 - Trick
 - Imprison
 
-Sphere Doomer @ Icy Rock
+Sphere Doomer (M) @ Icy Rock
 Level: 11
 Ability: Forecast
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Snowscape
-- Icy Wind
+- Powder Snow
 - Bite
 - Psywave
 
@@ -412,35 +428,37 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Name: Magolor
 Class: Salon Maiden
 Pic: Leader Roxanne
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Dupa
+Dupa (M)
 Level: 10
 Ability: Unnerve
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Bite
 - Growl
 - Stored Power
 - Teleport
 
-NESP @ Black Sludge
+NESP (F) @ Black Sludge
 Level: 10
 Ability: Neuroforce
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Confusion
 - Astonish
 - Trick
 - Imprison
 
-Sphere Doomer @ Heat Rock
+Sphere Doomer (M) @ Heat Rock
 Level: 11
 Ability: Forecast
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Sunny Day
-- Fire Spin
+- Ember
 - Bite
 - Psywave
 
@@ -449,33 +467,35 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Name: Magolor
 Class: Salon Maiden
 Pic: Leader Roxanne
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Dupa
+Dupa (M)
 Level: 10
 Ability: Unnerve
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Bite
 - Growl
 - Stored Power
 - Teleport
 
-NESP @ Black Sludge
+NESP (F) @ Black Sludge
 Level: 10
 Ability: Neuroforce
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Confusion
 - Astonish
 - Trick
 - Imprison
 
-Sphere Doomer @ Damp Rock
+Sphere Doomer (M) @ Damp Rock
 Level: 11
 Ability: Forecast
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Strange
 - Rain Dance
 - Thunder Shock
 - Bite
@@ -486,37 +506,36 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Name: Waddle Dee
 Class: Black Belt
 Pic: Black Belt
-Gender: Male
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sir Kibble
+Sir Kibble (M)
 Level: 11
 Ability: Justified
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 /* Vegetable Valley - Trainer 2 */
 === TRAINER_GRUNT_MUSEUM_1 ===
 Name: Waddle Dee
 Class: Youngster
 Pic: Youngster
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Needlous
+Needlous (F)
 Level: 10
 Ability: Poison Point
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Net
 
-Pupa
+Pupa (M)
 Level: 10
 Ability: Shed Skin
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Struggle Bug
-- Infestation
+Ball: Net
 - Harden
 - String Shot
 
@@ -525,20 +544,21 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Aroma Lady
 Pic: Aroma Lady
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Leafan
+Leafan (F)
 Level: 10
 Ability: Seed Sower
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
 
-Beanbon
+Beanbon (F)
 Level: 10
 Ability: Supersweet Syrup
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 
 /* Vegetable Valley - Trainer 4 */
@@ -546,54 +566,55 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Hiker
 Pic: Hiker
-Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Blade Knight
+Blade Knight (M)
 Level: 12
 Ability: Justified
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
 
 /* Vegetable Valley - Trainer 5 */
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: Waddle Dee
 Class: Fisherman
 Pic: Fisherman
-Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Blipper
+Blipper (F)
 Level: 12
 Ability: Water Veil
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Net
 
 /* Vegetable Valley - Trainer 6 */
 === TRAINER_GRUNT_MT_PYRE_2 ===
 Name: Waddle Dee
 Class: Lass
 Pic: Lass
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Awoofy
+Awoofy (M)
 Level: 11
 Ability: Run Away
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
 - Pursuit
 - Snarl
 - Tackle
 - Growl
 
-Broom Hatter
+Broom Hatter (F)
 Level: 11
 Ability: Overcoat
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
 
 /* Vegetable Valley - Bandana Waddle Dee (Lovely) */
 === TRAINER_GRUNT_MT_PYRE_3 ===
@@ -604,24 +625,27 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Waddle Doo
+Waddle Doo (M)
 Level: 11
 Ability: Frisk
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 - Thunder Shock
 - Tackle
 - Tearful Look
 - Charge
 
-Mr. Anglep
+Mr. Anglep (M)
 Level: 10
 Ability: Intimidate
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 
-Squishy
+Squishy (M)
 Level: 12
 Ability: Torrent
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 - Tackle
 - Leer
 - Water Gun
@@ -636,24 +660,27 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Waddle Doo
+Waddle Doo (M)
 Level: 11
 Ability: Frisk
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 - Thunder Shock
 - Tackle
 - Tearful Look
 - Charge
 
-Blipper
+Blipper (F)
 Level: 10
 Ability: Tinted Lens
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 
-Lovely
+Lovely (F)
 Level: 12
 Ability: Overgrow
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 - Bind
 - Play Nice
 - Vine Whip
@@ -668,24 +695,27 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Waddle Doo
+Waddle Doo (M)
 Level: 11
 Ability: Frisk
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 - Thunder Shock
 - Tackle
 - Tearful Look
 - Charge
 
-Blipper
+Blipper (F)
 Level: 10
 Ability: Tinted Lens
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 
-Burning Leo
+Burning Leo (M)
 Level: 12
 Ability: Blaze
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ball: Poke
 - Pound
 - Ember
 - Defense Curl
@@ -696,35 +726,36 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Name: Waddle Dee
 Class: Parasol Lady
 Pic: Parasol Lady
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Drifter
+Drifter (F)
 Level: 12
 Ability: Keen Eye
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 /* Fruity Forest - Trainer 2 */
 === TRAINER_FREDRICK ===
 Name: Waddle Dee
 Class: Hiker
 Pic: Hiker
-Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Chip 
+Chip (M)
 Level: 11
 Ability: Adaptability
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 Kabu
 Level: 12
-Ability:
+Ability: Rock Head
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 - Rapid Spin
 - Teleport
 - Rock Tomb
@@ -735,35 +766,36 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Bird Keeper
 Pic: Bird Keeper
-Gender: Male
 Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Chick
+Chick (M)
 Level: 15
 Ability: Shell Armor
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
-Twizzy
+Twizzy (F)
 Level: 13
 Ability: Big Pecks
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 /* Fruity Forest - Trainer 4 */
 === TRAINER_ZANDER ===
 Name: Waddle Dee
 Class: Psychic
 Pic: Psychic F
-Gender: Female
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Mr. Anglep @ Oran Berry
+Mr. Anglep (M) @ Oran Berry
 Level: 14
 Ability: Ripen
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
 - Bite
 - Play Nice
 - Night Shade
@@ -774,20 +806,21 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Lass
 Pic: Lass
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Buttonfly
+Buttonfly (F)
 Level: 12
 Ability: Shield Dust
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Net
 
-Minny
+Minny (M)
 Level: 12
 Ability: Rattled
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Net
 
 
 /* Fruity Forest - Trainer 6 */
@@ -795,44 +828,46 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Aroma Lady
 Pic: Aroma Lady
-Gender: Male
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Cappy
+Cappy (F)
 Level: 13
 Ability: Anticipation
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
-Capiller
+Capiller (M)
 Level: 13
 Ability: Swarm
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 /* Fruity Forest - Trainer 7 */
 === TRAINER_ARCHIE ===
 Name: Waddle Dee
 Class: Youngster
 Pic: Youngster
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Gaw Gaw
+Gaw Gaw (M)
 Level: 12
 Ability: Tough Claws
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 - Scratch
 - Leer
 - Sand Attack
 - Focus Energy
 
-Poppy Bros. Jr.
+Poppy Bros. Jr. (M)
 Level: 13
 Ability: Prankster
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 
 /* Fruity Forest - Trainer 8 */
@@ -840,21 +875,21 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Hiker
 Pic: Hiker
-Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Beetley
+Beetley (M)
 Level: 13
 Ability: Scrappy
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 - Horn Attack
 - Fury Cutter
 - Leer
 - Taunt
 
-Sir Kibble
+Sir Kibble (M)
 Level: 14
 Ability: Sharpness
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
@@ -868,95 +903,98 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Parasol Lady
 Pic: Parasol Lady
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Drifter @ Oran Berry
+Drifter (M) @ Oran Berry
 Level: 16
 Ability: Unburden
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 /* Ice Cream Island - Trainer 2 */
 === TRAINER_ROSE_1 ===
 Name: Waddle Dee
 Class: Fisherman
 Pic: Fisherman
-Gender: Female
 Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Blipper
+Blipper (M)
 Level: 16
 Ability: Water Veil
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Lure
 
-Flotzo
+Flotzo (M)
 Level: 14
 Ability: Suction Cups
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Lure
 
 /* Ice Cream Island - Trainer 3 */
 === TRAINER_FELIX ===
 Name: Squeaker
-Class: Picnicker
-Pic: Picnicker
-Gender: Male
+Class: School Kid
+Pic: School Kid M
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sparky
+Sparky (F)
 Level: 15
 Ability: Static
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
-Coner
+Coner (M)
 Level: 15
 Ability: Shell Armor
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Dive
 
 
 /* Ice Cream Island - Trainer 4 */
 === TRAINER_VIOLET ===
 Name: Squeaker
-Class: Picnicker
-Pic: Picnicker
-Gender: Male
+Class: School Kid
+Pic: School Kid F
 Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandran
+Sandran (F)
 Level: 15
 Ability: Sand Veil
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
 - Sand-Attack
 - Sand Tomb
 - Sandstorm
 - Leer
 
-Maiga
+Maiga (M)
 Level: 15
 Ability: Regenerator
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
 /* Ice Cream Island - Trainer 5 */
 === TRAINER_ROSE_2 ===
 Name: Squeaker
-Class: Picnicker
-Pic: Picnicker
-Gender: Male
+Class: School Kid
+Pic: School Kid M
 Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Batty
+Batty (F)
 Level: 18
 Ability: Swarm
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
 - Astonish
 - Gust
 - Bite
@@ -967,33 +1005,35 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Psychic
 Pic: Psychic M
-Gender: Male
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Embird
+Embird (F)
 Level: 15
 Ability: Hustle
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 - Peck
 - Growl
 - Disarming Voice
 - Roost
 
-Pierre
+Pierre (M)
 Level: 16
 Ability: Skill Link
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
 - Follow Me
 - Mimic
 - Work Up
 - Wake-Up Slap
 
-Blade Knight
+Blade Knight (M)
 Level: 16
 Ability: Inner Focus
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 - Rock Smash
 - False Swipe
 - Cut
@@ -1004,33 +1044,35 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Swimmer M
 Pic: Swimmer M
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Slippy
+Slippy (M)
 Level: 22
 Ability: Wimp Out
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Lure
 - Double Kick
 - Flip Turn
 - Yawn
 - Endeavor
 
-Gator
+Gator (M)
 Level: 22
 Ability: Strong Jaw
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Lure
 - Ice Fang
 - Thunder Fang
 - Fire Fang
 - Poison Fang
 
-Craby
+Craby (M)
 Level: 22
 Ability: Innards Out
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Lure
 - Razor Shell
 - Mach Punch
 - Snatch
@@ -1041,59 +1083,61 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Parasol Lady
 Pic: Parasol Lady
-Gender: Female
 Music: Female
 Items: Lava Cookie
 Double Battle: No
 AI: Check Bad Move
 
-Coner
+Coner (M)
 Level: 18
 Ability: Hyper Cutter
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Net
 - Razor Shell
 - Dig
 - Mud Sport
 - Harden
 
-Twizzy @ Berry Juice
+Twizzy (F) @ Berry Juice
 Level: 18
 Ability: Big Pecks
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 - Gust
 - Round
 - Sing
 - Roost
 
-Cawcun
+Cawcun (M)
 Level: 18
 Ability: Limber
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
+Ball: Net
 
 /* Resort Arena - Trainer 2 */
 === TRAINER_DUSTY_1 ===
 Name: Squeaker
-Class: Picnicker
-Pic: Picnicker
-Gender: Male
+Class: School Kid
+Pic: School Kid M
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Rocky
+Rocky (M)
 Level: 20
 Ability: Sturdy
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
 - Rock Throw
 - Magnitude
 - Chip Away
 - Harden
 
-Big Beanbon
+Big Beanbon (F)
 Level: 20
 Ability: Supersweet Syrup
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
 - Leech Seed
 - Absorb
 - Stomp
@@ -1104,29 +1148,31 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Youngster
 Pic: Youngster
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Capiller
+Capiller (M)
 Level: 21
 Ability: Swarm
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Ball: Net
 
-Pupa
+Pupa (F)
 Level: 20
 Ability: Shed Skin
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Net
 - Struggle Bug
 - Infestation
 - String Shot
 - Bug Bite
 
-Butterfly
+Butterfly (M)
 Level: 19
 Ability: Schooling
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Net
 - Silver Wind
 - Gust
 - String Shot
@@ -1137,37 +1183,39 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Waddle Dee
 Class: Swimmer M
 Pic: Swimmer M
-Gender: Female
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Blipper
+Blipper (F)
 Level: 20
 Ability: Tinted Lens
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Lure
 - Tackle
 - Bubble Beam
 - Charm
 
-Glunk @ Big Root
+Glunk (M) @ Big Root
 Level: 20
 Ability: Tangling Hair
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Dive
 
 /* Resort Arena - Trainer 5 */
 === TRAINER_DUSTY_2 ===
 Name: Squeaker
-Class: Picnicker
-Pic: Camper
-Gender: Female
+Class: School Kid
+Pic: School Kid F
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Pichikuri @ Black Sludge
+Pichikuri (F) @ Black Sludge
 Level: 22
+Ability: Shell Armor
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Friend
 - Acupressure
 - Rock Throw
 - Pin Missile
@@ -1178,7 +1226,6 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Name: Daroach
 Class: Salon Maiden
 Pic: Leader Brawly
-Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
@@ -1187,24 +1234,27 @@ Kabu
 Level: 22
 Ability: Forewarn
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Luxury
 - Power Gem
 - Bulldoze
 - Sandstorm
 - Teleport
 
-SPECIES_GOLEM_KIRBY @ Berry Juice
+SPECIES_GOLEM_KIRBY (M) @ Berry Juice
 Level: 22 
 Ability: Iron Fist
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Luxury
 - Rock Throw
 - Arm Thrust
 - Ancient Power
 - Bide
 
-Gemaine @ Eviolite
+Gemaine (M) @ Eviolite
 Level: 24
 Ability: Tera Shell
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Luxury
 - Power Gem
 - Ice Shard
 - Cosmic Power
