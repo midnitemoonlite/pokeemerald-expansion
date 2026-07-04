@@ -4045,7 +4045,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         FOOTPRINT(Popon)
         .levelUpLearnset = sPoponLevelUpLearnset,
         .teachableLearnset = sPoponTeachableLearnset,
-        .eggMoveLearnset = sMaigaEggMoveLearnset,
+        .eggMoveLearnset = sPoponEggMoveLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
@@ -4930,7 +4930,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         FOOTPRINT(Moundo)
         .levelUpLearnset = sMoundoLevelUpLearnset,
         .teachableLearnset = sMoundoTeachableLearnset,
-        .eggMoveLearnset = sRockyEggMoveLearnset,
+        .eggMoveLearnset = sMoundoEggMoveLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
@@ -16799,7 +16799,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         FOOTPRINT(Bastron)
         .levelUpLearnset = sBastronLevelUpLearnset,
         .teachableLearnset = sBastronTeachableLearnset,
-        .eggMoveLearnset = sCannonCottaEggMoveLearnset,
+        .eggMoveLearnset = sBastronEggMoveLearnset,
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,

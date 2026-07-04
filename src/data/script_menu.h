@@ -1,4 +1,67 @@
 // multichoice lists
+static const struct MenuAction MultichoiceList_WaddleDeeMovelist[] =
+{
+    {COMPOUND_STRING("Grass Knot")},
+    {COMPOUND_STRING("Night Shade")},
+    {COMPOUND_STRING("Vacuum Wave")},
+    {COMPOUND_STRING("Swagger")},
+    {COMPOUND_STRING("Toxic Spikes")},
+};
+
+static const struct MenuAction MultichoiceList_ResortMovelist[] =
+{
+    {COMPOUND_STRING("Icy Wind")},
+    {COMPOUND_STRING("Aerial Ace")},
+    {COMPOUND_STRING("Gyro Ball")},
+    {COMPOUND_STRING("Trick Room")},
+    {COMPOUND_STRING("Sleep Talk")},
+};
+
+static const struct MenuAction MultichoiceList_PalaceMovelist[] =
+{
+    {COMPOUND_STRING("Mystical Fire")},
+    {COMPOUND_STRING("Poison Tail")},
+    {COMPOUND_STRING("Stomping Tantrum")},
+    {COMPOUND_STRING("Payback")},
+    {COMPOUND_STRING("Helping Hand")},
+};
+
+static const struct MenuAction MultichoiceList_IcecapMovelist[] =
+{
+    {COMPOUND_STRING("Grassy Terrain")},
+    {COMPOUND_STRING("Electric Terrain")},
+    {COMPOUND_STRING("Misty Terrain")},
+    {COMPOUND_STRING("Psychic Terrain")},
+    {COMPOUND_STRING("Terrain Pulse")},
+};
+
+static const struct MenuAction MultichoiceList_SkyMovelist[] =
+{
+    {COMPOUND_STRING("Hyper Voice")},
+    {COMPOUND_STRING("Muddy Water")},
+    {COMPOUND_STRING("Giga Drain")},
+    {COMPOUND_STRING("Swagger")},
+    {COMPOUND_STRING("Trick Room")},
+};
+
+static const struct MenuAction MultichoiceList_CanyonMovelist[] =
+{
+    {COMPOUND_STRING("Solar Blade")},
+    {COMPOUND_STRING("Overheat")},
+    {COMPOUND_STRING("Wave Crash")},
+    {COMPOUND_STRING("Wild Charge")},
+    {COMPOUND_STRING("Foul Play")},
+};
+
+static const struct MenuAction MultichoiceList_DededeMovelist[] =
+{
+    {COMPOUND_STRING("Draco Meteor")},
+    {COMPOUND_STRING("Steel Beam")},
+    {COMPOUND_STRING("Darkest Lariat")},
+    {COMPOUND_STRING("Meteor Beam")},
+    {COMPOUND_STRING("Dragon Cheer")},
+};
+
 static const struct MenuAction MultichoiceList_BrineyOnDewford[] =
 {
     {COMPOUND_STRING("PETALBURG")},
@@ -1110,20 +1173,20 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_BASE_PC_WITH_REGISTRY]      = MULTICHOICE(MultichoiceList_BasePCWithRegistry),
     [MULTI_REGISTER_MENU]              = MULTICHOICE(MultichoiceList_RegisterMenu),
     [MULTI_SSTIDAL_LILYCOVE]           = MULTICHOICE(MultichoiceList_Exit),
-    [MULTI_UNUSED_9]                   = MULTICHOICE(MultichoiceList_Exit),
-    [MULTI_UNUSED_10]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_WADDLE_DEE_MOVELIST]        = MULTICHOICE(MultichoiceList_WaddleDeeMovelist),
+    [MULTI_RESORT_MOVELIST]            = MULTICHOICE(MultichoiceList_ResortMovelist),
     [MULTI_FRONTIER_PASS_INFO]         = MULTICHOICE(MultichoiceList_FrontierPassInfo),
     [MULTI_BIKE]                       = MULTICHOICE(MultichoiceList_Bike),
     [MULTI_STATUS_INFO]                = MULTICHOICE(MultichoiceList_StatusInfo),
     [MULTI_BRINEY_OFF_DEWFORD]         = MULTICHOICE(MultichoiceList_BrineyOffDewford),
-    [MULTI_UNUSED_15]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_PALACE_MOVELIST]            = MULTICHOICE(MultichoiceList_PalaceMovelist),
     [MULTI_VIEWED_PAINTINGS]           = MULTICHOICE(MultichoiceList_ViewedPaintings),
     [MULTI_YESNOINFO]                  = MULTICHOICE(MultichoiceList_YesNoInfo),
     [MULTI_BATTLE_MODE]                = MULTICHOICE(MultichoiceList_BattleMode),
-    [MULTI_UNUSED_19]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_ICECAP_MOVELIST]            = MULTICHOICE(MultichoiceList_IcecapMovelist),
     [MULTI_YESNOINFO_2]                = MULTICHOICE(MultichoiceList_YesNoInfo2),
-    [MULTI_UNUSED_21]                  = MULTICHOICE(MultichoiceList_Exit),
-    [MULTI_UNUSED_22]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_SKY_MOVELIST]               = MULTICHOICE(MultichoiceList_SkyMovelist),
+    [MULTI_CANYON_MOVELIST]            = MULTICHOICE(MultichoiceList_CanyonMovelist),
     [MULTI_CHALLENGEINFO]              = MULTICHOICE(MultichoiceList_ChallengeInfo),
     [MULTI_LEVEL_MODE]                 = MULTICHOICE(MultichoiceList_LevelMode),
     [MULTI_MECHADOLL1_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll1_Q1),
@@ -1141,7 +1204,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_MECHADOLL5_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q1),
     [MULTI_MECHADOLL5_Q2]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q2),
     [MULTI_MECHADOLL5_Q3]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q3),
-    [MULTI_UNUSED_40]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_DEDEDE_MOVELIST]            = MULTICHOICE(MultichoiceList_DededeMovelist),
     [MULTI_UNUSED_41]                  = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_VENDING_MACHINE]            = MULTICHOICE(MultichoiceList_VendingMachine),
     [MULTI_MACH_BIKE_INFO]             = MULTICHOICE(MultichoiceList_MachBikeInfo),

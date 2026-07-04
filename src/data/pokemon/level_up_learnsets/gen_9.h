@@ -22861,7 +22861,8 @@ static const struct LevelUpMove sGaoGaoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 41, MOVE_REVERSAL),
     LEVEL_UP_MOVE( 46, MOVE_DRILL_RUN),
     LEVEL_UP_MOVE( 52, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE( 57, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE( 57, MOVE_DIRE_CLAW),
+    LEVEL_UP_MOVE( 63, MOVE_SWORDS_DANCE),
     LEVEL_UP_END
 };
 
@@ -23907,7 +23908,6 @@ static const struct LevelUpMove sGiantRockyLevelUpLearnset[] = {
 
 static const struct LevelUpMove sMoundoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_AVALANCHE),
-    LEVEL_UP_MOVE( 1, MOVE_FLASH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
@@ -27656,7 +27656,7 @@ static const struct LevelUpMove sJambelieverLevelUpLearnset[] = {
 static const struct LevelUpMove sJammerjabLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 1, MOVE_JUMP_KICK),
-    LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE( 1, MOVE_BATON_PASS),
     LEVEL_UP_MOVE( 1, MOVE_SLAM),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_CONFIDE),

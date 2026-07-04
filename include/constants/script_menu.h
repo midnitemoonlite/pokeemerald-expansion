@@ -17,20 +17,20 @@
 #define MULTI_BASE_PC_WITH_REGISTRY        6
 #define MULTI_REGISTER_MENU                7
 #define MULTI_SSTIDAL_LILYCOVE             8 // Exit only, populated by CreateLilycoveSSTidalMultichoice
-#define MULTI_UNUSED_9                     9
-#define MULTI_UNUSED_10                    10
+#define MULTI_WADDLE_DEE_MOVELIST          9
+#define MULTI_RESORT_MOVELIST              10
 #define MULTI_FRONTIER_PASS_INFO           11
 #define MULTI_BIKE                         12
 #define MULTI_STATUS_INFO                  13
 #define MULTI_BRINEY_OFF_DEWFORD           14
-#define MULTI_UNUSED_15                    15
+#define MULTI_PALACE_MOVELIST              15
 #define MULTI_VIEWED_PAINTINGS             16
 #define MULTI_YESNOINFO                    17
 #define MULTI_BATTLE_MODE                  18
-#define MULTI_UNUSED_19                    19
+#define MULTI_ICECAP_MOVELIST              19
 #define MULTI_YESNOINFO_2                  20
-#define MULTI_UNUSED_21                    21
-#define MULTI_UNUSED_22                    22
+#define MULTI_SKY_MOVELIST                 21
+#define MULTI_CANYON_MOVELIST              22
 #define MULTI_CHALLENGEINFO                23
 #define MULTI_LEVEL_MODE                   24
 #define MULTI_MECHADOLL1_Q1                25
@@ -48,7 +48,7 @@
 #define MULTI_MECHADOLL5_Q1                37
 #define MULTI_MECHADOLL5_Q2                38
 #define MULTI_MECHADOLL5_Q3                39
-#define MULTI_UNUSED_40                    40
+#define MULTI_DEDEDE_MOVELIST              40
 #define MULTI_UNUSED_41                    41
 #define MULTI_VENDING_MACHINE              42
 #define MULTI_MACH_BIKE_INFO               43

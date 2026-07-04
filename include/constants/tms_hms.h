@@ -6,7 +6,7 @@
     F(SWIFT) \
     F(WEATHER_BALL) \
     F(FACADE) \
-    F(HYPER_VOICE) \
+    F(NATURAL_GIFT) \
     F(HYPER_BEAM) \
     F(GIGA_IMPACT) \
     F(SWORDS_DANCE) \
