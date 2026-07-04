@@ -40,8 +40,8 @@ static const struct MenuAction MultichoiceList_SkyMovelist[] =
     {COMPOUND_STRING("Hyper Voice")},
     {COMPOUND_STRING("Muddy Water")},
     {COMPOUND_STRING("Giga Drain")},
-    {COMPOUND_STRING("Swagger")},
-    {COMPOUND_STRING("Trick Room")},
+    {COMPOUND_STRING("Tailwind")},
+    {COMPOUND_STRING("Coaching")},
 };
 
 static const struct MenuAction MultichoiceList_CanyonMovelist[] =

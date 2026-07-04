@@ -322,22 +322,115 @@ script ResortArena_EventScript_MoveTutor
     }
     else
     {
-        msgbox("Having watched your recent victory\.
+        goto(ResortArena_EventScript_MoveTutorEnabled)
+    }
+    release   
+}
+
+script ResortArena_EventScript_MoveTutorEnabled
+{
+    msgbox("Having watched your recent victory\.
             I feel so invigorated! Wroaaar!
             
             I know some special moves that can
             be taught to your Helpers.
             
-            For the price of ¥500, I'll train
-            them these new techniques.
-            
-            What do you say?
-            Which move are you interested in?
-            
-            \.is what I would ask, but I need
-            more time. Come back much later.")
+            For the price of ¥1000, I'll train
+            them these new techniques.")
+    message("What do you say?
+            Which move are you interested in?")
+    waitmessage()
+    showmoneybox(0, 0)
+    multichoice(20, 0, MULTI_RESORT_MOVELIST, FALSE)
+    copyvar(VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT)
+    switch(var(VAR_RESULT)) {
+	case 0:
+		goto(ResortArena_EventScript_Move1)
+	case 1:
+		goto(ResortArena_EventScript_Move2)
+	case 2:
+		goto(ResortArena_EventScript_Move3)
+    case 3:
+		goto(ResortArena_EventScript_Move4)
+    case 4:
+		goto(ResortArena_EventScript_Move5)
+    case MULTI_B_PRESSED:
+        goto(WaddleDeeArena_EventScript_MoveTutorLeave)
     }
-    release   
+}
+
+script ResortArena_EventScript_Move1
+{
+    setvar(VAR_0x8005, MOVE_ICY_WIND)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_ICY_WIND, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, ResortArena_EventScript_TaughtMove)
+}
+
+script ResortArena_EventScript_Move2
+{
+    setvar(VAR_0x8005, MOVE_AERIAL_ACE)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_AERIAL_ACE, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, ResortArena_EventScript_TaughtMove)
+}
+
+script ResortArena_EventScript_Move3
+{
+    setvar(VAR_0x8005, MOVE_GYRO_BALL)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_GYRO_BALL, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, ResortArena_EventScript_TaughtMove)
+}
+
+script ResortArena_EventScript_Move4
+{
+    setvar(VAR_0x8005, MOVE_TRICK_ROOM)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_TRICK_ROOM, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, ResortArena_EventScript_TaughtMove)
+}
+
+script ResortArena_EventScript_Move5
+{
+    setvar(VAR_0x8005, MOVE_SLEEP_TALK)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_SLEEP_TALK, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, ResortArena_EventScript_TaughtMove)
+}
+
+script ResortArena_EventScript_TaughtMove
+{
+    showmoneybox(0,0)
+    delay(16)
+    removemoney(1000)
+    updatemoneybox()
+    playse(SE_SHOP)
+    msgbox("All done! I hope you and your Helper will
+            make the most of this new technique!")
+	copyvar(VAR_0x8004, VAR_0x8008)
+    hidemoneybox()
+    release
 }
 
 script ResortArena_EventScript_Courtship
@@ -571,7 +664,7 @@ script ResortArena_EventScript_CommentatorChoice
     message("Today's challenge: a mild stroll!
             How can I help you?")
     waitmessage
-    multichoice(17, 6, MULTI_CHALLENGEINFO, FALSE)
+    multichoice(20, 6, MULTI_CHALLENGEINFO, FALSE)
     switch(var(VAR_RESULT)) {
 	case 0:
 		goto(ResortArena_EventScript_BeginChallenge)
@@ -973,7 +1066,7 @@ script ResortArena_EventScript_Break
                 Are you ready for the TRUE final bout?")
     }
     waitmessage()
-    multichoice(17, 6, MULTI_GO_ON_REST_RETIRE, 0)
+    multichoice(20, 6, MULTI_GO_ON_REST_RETIRE, 0)
     switch(var(VAR_RESULT)) {
 	case 0:
         if(var(VAR_ARENA_BATTLES) == 1)

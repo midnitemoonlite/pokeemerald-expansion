@@ -203,7 +203,7 @@ script WaddleDeeArena_EventScript_CommentatorChoice
     message("Today's challenge: a sweet breeze!
             How can I help you?")
     waitmessage
-    multichoice(17, 6, MULTI_CHALLENGEINFO, FALSE)
+    multichoice(20, 6, MULTI_CHALLENGEINFO, FALSE)
     switch(var(VAR_RESULT)) {
 	case 0:
 		goto(WaddleDeeArena_EventScript_BeginChallenge)
@@ -663,7 +663,7 @@ script WaddleDeeArena_EventScript_Break
                 Are you ready for the TRUE final bout?")
     }
     waitmessage()
-    multichoice(17, 6, MULTI_GO_ON_REST_RETIRE, 0)
+    multichoice(20, 6, MULTI_GO_ON_REST_RETIRE, 0)
     switch(var(VAR_RESULT)) {
 	case 0:
         if(var(VAR_ARENA_BATTLES) == 1)
@@ -854,22 +854,144 @@ script WaddleDeeArena_EventScript_MoveTutor
     }
     else
     {
-        msgbox("Having watched your recent victory\.
+        goto(WaddleDeeArena_EventScript_MoveTutorEnabled)
+    }
+    release   
+}
+
+script WaddleDeeArena_EventScript_MoveTutorEnabled
+{
+    msgbox("Having watched your recent victory\.
             I feel so invigorated! Wroaaar!
             
             I know some special moves that can
             be taught to your Helpers.
             
             For the price of ¥500, I'll train
-            them these new techniques.
-            
-            What do you say?
-            Which move are you interested in?
-            
-            \.is what I would ask, but I need
-            more time. Come back much later.")
+            them these new techniques.")
+    message("What do you say?
+            Which move are you interested in?")
+    waitmessage()
+    showmoneybox(0, 0)
+    multichoice(20, 0, MULTI_WADDLE_DEE_MOVELIST, FALSE)
+    copyvar(VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT)
+    switch(var(VAR_RESULT)) {
+	case 0:
+		goto(WaddleDeeArena_EventScript_Move1)
+	case 1:
+		goto(WaddleDeeArena_EventScript_Move2)
+	case 2:
+		goto(WaddleDeeArena_EventScript_Move3)
+    case 3:
+		goto(WaddleDeeArena_EventScript_Move4)
+    case 4:
+		goto(WaddleDeeArena_EventScript_Move5)
+    case MULTI_B_PRESSED:
+        goto(WaddleDeeArena_EventScript_MoveTutorLeave)
     }
-    release   
+}
+
+script WaddleDeeArena_EventScript_Move1
+{
+    setvar(VAR_0x8005, MOVE_GRASS_KNOT)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(500)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_GRASS_KNOT, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
+}
+
+script WaddleDeeArena_EventScript_Move2
+{
+    setvar(VAR_0x8005, MOVE_NIGHT_SHADE)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(500)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_NIGHT_SHADE, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
+}
+
+script WaddleDeeArena_EventScript_Move3
+{
+    setvar(VAR_0x8005, MOVE_VACUUM_WAVE)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(500)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_VACUUM_WAVE, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
+}
+
+script WaddleDeeArena_EventScript_Move4
+{
+    setvar(VAR_0x8005, MOVE_SWAGGER)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(500)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_SWAGGER, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
+}
+
+script WaddleDeeArena_EventScript_Move5
+{
+    setvar(VAR_0x8005, MOVE_TOXIC_SPIKES)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(500)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_TOXIC_SPIKES, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
+}
+
+script WaddleDeeArena_EventScript_CantAfford
+{
+    hidemoneybox()
+    msgbox("You can't afford to teach this move.
+            My skills don't come for free\.")
+    release
+    end
+}
+
+text WaddleDeeArena_Text_TeachMove
+{
+    "So, you want me to teach
+    {STR_VAR_1}?"
+}
+
+text WaddleDeeArena_Text_SelectMon
+{
+    "And which of your Helpers should I
+    teach the move to?"
+}
+
+script WaddleDeeArena_EventScript_TaughtMove
+{
+    showmoneybox(0,0)
+    delay(16)
+    removemoney(500)
+    updatemoneybox()
+    playse(SE_SHOP)
+    msgbox("All done! I hope you and your Helper will
+            make the most of this new technique!")
+	copyvar(VAR_0x8004, VAR_0x8008)
+    hidemoneybox()
+    release
+}
+
+script WaddleDeeArena_EventScript_MoveTutorLeave
+{
+    hidemoneybox()
+    msgbox("Return to me if you ever wish to teach
+            your Helpers some special moves!")
+    release
 }
 
 text WaddleDeeArena_Text_Challenger1
