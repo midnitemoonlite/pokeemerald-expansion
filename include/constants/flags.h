@@ -86,7 +86,7 @@
 #define FLAG_RECEIVED_GEM_APPLE_SORBET    0x40 // Ice Cream Island (Beachhouse) - Item from manager
 #define FLAG_RECEIVED_ARM_THRUST_TM    0x41 // Resort Arena - Cafe Staff in first villa
 #define FLAG_FOUND_KINE    0x42 // Orange Rest Area - Hides Kine
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
+#define FLAG_RECEIVED_TWISTED_SPOON    0x43 // Waddle Dee Town Cafe - Waddle Dee at middle-right table
 #define FLAG_UNUSED_0x044    0x44 // Unused Flag
 #define FLAG_UNUSED_0x045    0x45 // Unused Flag
 #define FLAG_UNUSED_0x046    0x46 // Unused Flag
@@ -567,7 +567,7 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D) // Indigo Rest Area - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E) // Ice Cream Island - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL           (FLAG_HIDDEN_ITEMS_START + 0x0F) // Ice Cream Island - Hidden Item 2
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10) // Waddle Dee Town (Cafe) - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x11)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13)

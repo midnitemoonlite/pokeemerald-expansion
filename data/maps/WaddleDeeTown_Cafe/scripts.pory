@@ -1,0 +1,235 @@
+raw `
+WaddleDeeTown_Cafe_MapScripts::
+	.byte 0
+`
+
+script WaddleDeeTown_Cafe_EventScript_CafeManager
+{
+    lock
+    faceplayer
+    msgbox("Welcome to the Waddle Dee Café!
+            If you're looking to order, please speak
+            to the café staff behind the kitchen.
+            
+            We make regular additions to our menu,
+            so we hope to see you again soon!")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_LonelyWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I love eating at the café, but I feel
+            a bit lonely coming on my own so often.
+            
+            Wouldn't it be nice if they could sit a
+            doll or something across from me?")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_BreakWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("\.what? You think it's odd seeing a café
+            chef eating at their own restaurant?
+            
+            Us hardworking cooks need snack breaks
+            too, you know!")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_WinterWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("My favorite dish to order is the
+            Superspicy Curry! It warms me right up!
+            
+            I've had it so much, it's actually
+            starting to taste pretty mild\.")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_CleaningWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("When guests finish their meals, it's my
+            job to clean the tables they sit at.
+            
+            Look at that! My own reflection! Yep,
+            this table is spick and span!")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_SpoonWaddleDee
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TWISTED_SPOON))
+    {
+        msgbox("I'm still waiting on my new silverware!
+                What do they expect me to do,
+                drink this soup with my hands?")
+    }
+    elif(!flag(FLAG_RECEIVED_TWISTED_SPOON))
+    {
+        msgbox("Excuse me! Do you work here?
+                I've got a complaint to file!
+                
+                The silverware I've been handed with my
+                meal is completely broken!
+                
+                I can't use this! Take it back, will you?")
+        giveitem(ITEM_TWISTED_SPOON)
+        setflag(FLAG_RECEIVED_TWISTED_SPOON)
+    }
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_DeliveryWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Excuse me! I'm busy taking dishes
+            from the kitchen to the guests,
+            and from the guests to the kitchen!
+            
+            Whew! This job's a workout!")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_SinkWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Whew\. I've washed so many vegetables
+            today, my hands are starting to prune\.")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_DatingWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I wanted to impress my friend, so I
+            invited them to this fancy café\.
+            
+            The thing is, I'm worried of picking
+            an item that'll make me look lame!
+            
+            What do I do? Maybe I should just order
+            whatever she's having\.")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_RibbonWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Oooh! I've never been to this café
+            before\. what should I get?
+            
+            Ahh, everything on here looks yummy\.
+            maybe I'll get whatever my friend does!")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_BerryMenu
+{
+	lock
+	faceplayer
+	message("We serve fresh berries here!
+            What can I get for you today?")
+	waitmessage
+	pokemart2(WaddleDeeTown_Cafe_BerryMart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+script WaddleDeeTown_Cafe_EventScript_DrinkMenu
+{
+	lock
+	faceplayer
+	message("We serve drinks and snacks here!
+            What can I get for you today?")
+	waitmessage
+	pokemart2(WaddleDeeTown_Cafe_DrinkMart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+script WaddleDeeTown_Cafe_EventScript_DessertMenu
+{
+	lock
+	faceplayer
+	message("We serve desserts here!
+            What can I get for you today?")
+	waitmessage
+	pokemart2(WaddleDeeTown_Cafe_DessertMart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+script WaddleDeeTown_Cafe_EventScript_IngredientMenu
+{
+	lock
+	faceplayer
+	msgbox("We're planning on selling ingredients
+            for food preparation soon.
+            
+            It might seem counterintuitive, but
+            our head chef is mostly concerned with
+            making sure everyone eats well.
+            
+            We hope you'll check back in later!")
+    release
+}
+
+script WaddleDeeTown_Cafe_EventScript_BerryDesk
+{
+    turnobject(LOCALID_CAFE_BERRY_SERVER, DIR_SOUTH)
+    goto(WaddleDeeTown_Cafe_EventScript_BerryMenu)
+}
+
+script WaddleDeeTown_Cafe_EventScript_DrinkDesk
+{
+    turnobject(LOCALID_CAFE_DRINK_SERVER, DIR_SOUTH)
+    goto(WaddleDeeTown_Cafe_EventScript_DrinkMenu)
+}
+
+script WaddleDeeTown_Cafe_EventScript_DessertDesk
+{
+    turnobject(LOCALID_CAFE_DESSERT_SERVER, DIR_SOUTH)
+    goto(WaddleDeeTown_Cafe_EventScript_DessertMenu)
+}
+
+script WaddleDeeTown_Cafe_EventScript_IngredientDesk
+{
+    turnobject(LOCALID_CAFE_INGREDIENT_SERVER, DIR_SOUTH)
+    goto(WaddleDeeTown_Cafe_EventScript_IngredientMenu)
+}
+
+mart WaddleDeeTown_Cafe_BerryMart
+{
+    ITEM_ORAN_BERRY
+    ITEM_CHERI_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+}
+
+mart WaddleDeeTown_Cafe_DrinkMart
+{
+    ITEM_BERRY_JUICE
+}
+
+mart WaddleDeeTown_Cafe_DessertMart
+{
+    ITEM_EXP_CANDY_XS
+    ITEM_FRESH_START_MOCHI
+}

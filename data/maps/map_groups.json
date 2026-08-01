@@ -1191,7 +1191,8 @@
     "WaddleDeeTown_Mart",
     "WaddleDeeTown_House1",
     "WaddleDeeTown_CastleLobby",
-    "WaddleDeeTown_Lab"
+    "WaddleDeeTown_Lab",
+    "WaddleDeeTown_Cafe"
   ],
   "gMapGroup_IndoorVegetableValley": [
     "VegetableValley_Farmhouse"

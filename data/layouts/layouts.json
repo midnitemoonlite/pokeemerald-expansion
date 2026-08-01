@@ -9593,6 +9593,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/ResortArena_Villa2/border.bin",
       "blockdata_filepath": "data/layouts/ResortArena_Villa2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WADDLE_DEE_TOWN_CAFE",
+      "name": "WaddleDeeTown_Cafe_Layout",
+      "width": 14,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/WaddleDeeTown_Cafe/border.bin",
+      "blockdata_filepath": "data/layouts/WaddleDeeTown_Cafe/map.bin"
     }
   ]
 }
