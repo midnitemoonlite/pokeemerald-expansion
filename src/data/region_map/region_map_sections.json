@@ -1670,6 +1670,10 @@
     {
       "id": "MAPSEC_RESORT_ARENA",
       "name": "RESORT ARENA"
+    },
+    {
+      "id": "MAPSEC_COCOA_CAVE",
+      "name": "COCOA CAVE"
     }
   ]
 }

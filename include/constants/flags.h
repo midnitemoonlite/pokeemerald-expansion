@@ -87,10 +87,10 @@
 #define FLAG_RECEIVED_ARM_THRUST_TM    0x41 // Resort Arena - Cafe Staff in first villa
 #define FLAG_FOUND_KINE    0x42 // Orange Rest Area - Hides Kine
 #define FLAG_RECEIVED_TWISTED_SPOON    0x43 // Waddle Dee Town Cafe - Waddle Dee at middle-right table
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
+#define FLAG_COCOA_CAVE_B2F_TOP_LEFT_LANTERN    0x44 // Cocoa Cave (B2F) - Top-left lantern has been lit
+#define FLAG_COCOA_CAVE_B2F_TOP_RIGHT_LANTERN    0x45 // Cocoa Cave (B2F) - Top-right lantern has been lit
+#define FLAG_COCOA_CAVE_B2F_CENTER_LANTERN    0x46 // Cocoa Cave (B2F) - Center antern has been lit
+#define FLAG_COCOA_CAVE_B2F_BOTTOM_LEFT_LANTERN    0x47 // Cocoa Cave (B2F) - Bottom-left lantern has been lit
 #define FLAG_UNUSED_0x048    0x48 // Unused Flag
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
@@ -568,8 +568,8 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E) // Ice Cream Island - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL           (FLAG_HIDDEN_ITEMS_START + 0x0F) // Ice Cream Island - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10) // Waddle Dee Town (Cafe) - Hidden Item 1
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x11)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x11) // Cocoa Cave - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12) // Cocoa Cave - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15)
@@ -1070,11 +1070,11 @@
 #define FLAG_ITEM_ROUTE_115_TM_FOCUS_PUNCH                          0x3F9 // Ice Cream Island - Item 4
 #define FLAG_ITEM_ROUTE_115_IRON                                    0x3FA // Ice Cream Island - Item 5
 #define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB // Resort Arena - Item 1
-#define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC
-#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
-#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
-#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
+#define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC // Cocoa Cave - Item 1
+#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD // Cocoa Cave - Item 2
+#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE // Cocoa Cave - Item 3
+#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF // Cocoa Cave - Item 4
+#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400 // Cocoa Cave - Item 5
 #define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
 #define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
 #define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403

@@ -1,0 +1,63 @@
+raw `
+CocoaCave_B1F_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, CocoaCave_B1F_OnTransition
+	.byte 0
+
+CocoaCave_B1F_OnTransition:
+	call CocoaCave_B1F_EventScript_SetFlashLevel
+	end
+
+CocoaCave_B1F_EventScript_SetFlashLevel::
+	goto_if_eq VAR_COCOA_CAVE_B1F_STATE, 1, CocoaCave_B1F_EventScript_SetFlashLevelBright
+	goto CocoaCave_B1F_EventScript_SetFlashLevelDim
+
+CocoaCave_B1F_EventScript_SetFlashLevelBright::
+	setflashlevel 1
+	return
+
+CocoaCave_B1F_EventScript_SetFlashLevelDim::
+	setflashlevel 5
+	return
+`
+
+script CocoaCave_B1F_EventScript_Lantern
+{
+    if(var(VAR_COCOA_CAVE_B1F_STATE) == 1)
+    {
+        lockall
+        msgbox("The lantern's flame kindles brightly.")
+        releaseall
+    }
+    else
+    {
+        lockall
+        msgbox("It's an unlit lantern. Light it?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            msgbox("You light the lantern!")
+            closemessage
+            setvar(VAR_COCOA_CAVE_B1F_STATE, 1)
+            playse(SE_SWITCH)
+            animateflash(1)
+            call(CocoaCave_B1F_EventScript_SetFlashLevel)
+            msgbox("The cave has gotten a lot brighter!")
+            releaseall
+        }
+        if(var(VAR_RESULT) == FALSE)
+        {
+            releaseall
+        }
+    }
+}
+
+script CocoaCave_B1F_EventScript_TooDark
+{
+    lockall
+    turnobject(LOCALID_PLAYER, DIR_NORTH)
+    msgbox("No light reaches the path ahead\.
+            It's too murky to travel any deeper.")
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_down))
+    waitmovement()
+    releaseall
+}

@@ -36587,7 +36587,7 @@
           "map": "MAP_KIRBYS_HOUSE",
           "base_label": "gKirbysHouse",
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -36676,7 +36676,7 @@
           "map": "MAP_GREEN_GREENS",
           "base_label": "gGreenGreens",
           "land_mons": {
-            "encounter_rate": 12,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 2,
@@ -36745,7 +36745,7 @@
           "map": "MAP_GREEN_REST_AREA",
           "base_label": "gGreenRestArea",
           "land_mons": {
-            "encounter_rate": 12,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 3,
@@ -36814,7 +36814,7 @@
           "map": "MAP_PRISM_PLAINS",
           "base_label": "gPrismPlains",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 3,
@@ -36879,7 +36879,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 10,
@@ -36998,7 +36998,7 @@
           "map": "MAP_WADDLE_DEE_TOWN",
           "base_label": "gWaddleDeeTown",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 6,
@@ -37063,7 +37063,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 15,
@@ -37152,7 +37152,7 @@
           "map": "MAP_VEGETABLE_VALLEY",
           "base_label": "gVegetableValley",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 8,
@@ -37217,7 +37217,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 7,
             "mons": [
               {
                 "min_level": 10,
@@ -37306,7 +37306,7 @@
           "map": "MAP_FRUITY_FOREST",
           "base_label": "gFruityForest",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 10,
@@ -37375,7 +37375,7 @@
           "map": "MAP_INDIGO_REST_AREA",
           "base_label": "gIndigoRestArea",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 14,
@@ -37440,7 +37440,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 4,
             "mons": [
               {
                 "min_level": 10,
@@ -37559,7 +37559,7 @@
           "map": "MAP_ICE_CREAM_ISLAND",
           "base_label": "gIceCreamIsland",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 14,
@@ -37624,7 +37624,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 4,
             "mons": [
               {
                 "min_level": 10,
@@ -37743,7 +37743,7 @@
           "map": "MAP_RESORT_ARENA",
           "base_label": "gResortArena",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 17,
@@ -37808,7 +37808,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 4,
             "mons": [
               {
                 "min_level": 5,
@@ -37889,6 +37889,388 @@
                 "min_level": 20,
                 "max_level": 20,
                 "species": "SPECIES_BLIPPER"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_COCOA_CAVE_1F",
+          "base_label": "gCocoaCave_1F",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 19,
+                "max_level": 19,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 19,
+                "max_level": 20,
+                "species": "SPECIES_BOXIN"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_BOXIN"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_FLAMER"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_FLAMER"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 22,
+                "max_level": 23,
+                "species": "SPECIES_GUARD_SHIELDLESS"
+              },
+              {
+                "min_level": 22,
+                "max_level": 22,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_GUARD_FIRE"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 2,
+            "mons": [
+              {
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 10,
+                "max_level": 15,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 22,
+                "max_level": 22,
+                "species": "SPECIES_BATTY"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 23,
+                "max_level": 28,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_BLOCKIN"
+              },
+              {
+                "min_level": 28,
+                "max_level": 28,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 29,
+                "max_level": 29,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_ROCKY"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 18,
+                "max_level": 19,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 18,
+                "max_level": 22,
+                "species": "SPECIES_GLUNK"
+              },
+              {
+                "min_level": 20,
+                "max_level": 21,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 22,
+                "max_level": 22,
+                "species": "SPECIES_BLIPPER"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_COCOA_CAVE_B1F",
+          "base_label": "gCocoaCave_B1F",
+          "land_mons": {
+            "encounter_rate": 5,
+            "mons": [
+              {
+                "min_level": 19,
+                "max_level": 20,
+                "species": "SPECIES_BATTY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_BOXIN"
+              },
+              {
+                "min_level": 20,
+                "max_level": 21,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_FLAMER"
+              },
+              {
+                "min_level": 19,
+                "max_level": 19,
+                "species": "SPECIES_EMBA"
+              },
+              {
+                "min_level": 21,
+                "max_level": 21,
+                "species": "SPECIES_FLAMER"
+              },
+              {
+                "min_level": 22,
+                "max_level": 22,
+                "species": "SPECIES_FLAMER"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_EMBA"
+              },
+              {
+                "min_level": 20,
+                "max_level": 23,
+                "species": "SPECIES_GUARD_SHIELDLESS"
+              },
+              {
+                "min_level": 22,
+                "max_level": 22,
+                "species": "SPECIES_EMBA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_GUARD_FIRE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 23,
+                "max_level": 28,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 24,
+                "max_level": 28,
+                "species": "SPECIES_SOLITE"
+              },
+              {
+                "min_level": 28,
+                "max_level": 29,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 31,
+                "max_level": 31,
+                "species": "SPECIES_ROCKY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_COCOA_CAVE_B2F",
+          "base_label": "gCocoaCave_B2F",
+          "land_mons": {
+            "encounter_rate": 3,
+            "mons": [
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_EMBA"
+              },
+              {
+                "min_level": 19,
+                "max_level": 21,
+                "species": "SPECIES_EMBIRD"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_EMBA"
+              },
+              {
+                "min_level": 19,
+                "max_level": 20,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 21,
+                "max_level": 22,
+                "species": "SPECIES_FLAMER"
+              },
+              {
+                "min_level": 19,
+                "max_level": 22,
+                "species": "SPECIES_SOLITE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 22,
+                "species": "SPECIES_SOLITE"
+              },
+              {
+                "min_level": 22,
+                "max_level": 22,
+                "species": "SPECIES_EMBIRD"
+              },
+              {
+                "min_level": 20,
+                "max_level": 23,
+                "species": "SPECIES_GUARD_SHIELDLESS"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_EMBIRD"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_GUARD_FIRE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 23,
+                "max_level": 29,
+                "species": "SPECIES_ROCKY"
+              },
+              {
+                "min_level": 25,
+                "max_level": 30,
+                "species": "SPECIES_SOLITE"
+              },
+              {
+                "min_level": 25,
+                "max_level": 29,
+                "species": "SPECIES_BLOCKIN"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_BLOCKIN"
+              },
+              {
+                "min_level": 31,
+                "max_level": 31,
+                "species": "SPECIES_BLOCKIN"
               }
             ]
           }

@@ -9603,6 +9603,36 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/WaddleDeeTown_Cafe/border.bin",
       "blockdata_filepath": "data/layouts/WaddleDeeTown_Cafe/map.bin"
+    },
+    {
+      "id": "LAYOUT_COCOA_CAVE_1F",
+      "name": "CocoaCave_1F_Layout",
+      "width": 37,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/CocoaCave_1F/border.bin",
+      "blockdata_filepath": "data/layouts/CocoaCave_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_COCOA_CAVE_B1F",
+      "name": "CocoaCave_B1F_Layout",
+      "width": 60,
+      "height": 43,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/CocoaCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/CocoaCave_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_COCOA_CAVE_B2F",
+      "name": "CocoaCave_B2F_Layout",
+      "width": 80,
+      "height": 43,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/CocoaCave_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/CocoaCave_B2F/map.bin"
     }
   ]
 }

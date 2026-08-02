@@ -148,5 +148,5 @@ Text_SprayWoreOffAskUseX::
 	.string "Use a {STR_VAR_2}?$"
 
 Text_SprayWoreOffUseX::
-	.string "{PLAYER} used the\n"
+	.string "Kirby used the\n"
 	.string "{STR_VAR_2}.$"

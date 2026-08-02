@@ -1,0 +1,233 @@
+raw `
+CocoaCave_B2F_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, CocoaCave_B2F_OnTransition
+	.byte 0
+
+CocoaCave_B2F_OnTransition:
+	call CocoaCave_B2F_EventScript_SetFlashLevel
+	end
+
+CocoaCave_B2F_EventScript_SetFlashLevel::
+	goto_if_eq VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 4, CocoaCave_B2F_EventScript_SetFlashLevelBright
+    goto_if_eq VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 3, CocoaCave_B2F_EventScript_SetFlashLevel3
+    goto_if_eq VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 2, CocoaCave_B2F_EventScript_SetFlashLevel2
+    goto_if_eq VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 1, CocoaCave_B2F_EventScript_SetFlashLevel1
+	goto CocoaCave_B2F_EventScript_SetFlashLevelDim
+
+CocoaCave_B2F_EventScript_AnimateFlashLevel::
+    goto_if_eq VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 4, CocoaCave_B2F_EventScript_AnimateFlash4
+    goto_if_eq VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 3, CocoaCave_B2F_EventScript_AnimateFlash3
+    goto_if_eq VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 2, CocoaCave_B2F_EventScript_AnimateFlash2
+    goto_if_eq VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 1, CocoaCave_B2F_EventScript_AnimateFlash1
+
+CocoaCave_B2F_EventScript_SetFlashLevelBright::
+	setflashlevel 1
+	return
+
+CocoaCave_B2F_EventScript_SetFlashLevel3::
+    setflashlevel 3
+    return
+
+CocoaCave_B2F_EventScript_SetFlashLevel2::
+    setflashlevel 4
+    return
+
+CocoaCave_B2F_EventScript_SetFlashLevel1::
+    setflashlevel 5
+    return
+
+CocoaCave_B2F_EventScript_SetFlashLevelDim::
+	setflashlevel 6
+	return
+
+CocoaCave_B2F_EventScript_AnimateFlash1::
+    playse SE_SWITCH
+    animateflash 5
+    call CocoaCave_B2F_EventScript_SetFlashLevel
+    return
+
+CocoaCave_B2F_EventScript_AnimateFlash2::
+    playse SE_SWITCH
+    animateflash 4
+    call CocoaCave_B2F_EventScript_SetFlashLevel
+    return
+
+CocoaCave_B2F_EventScript_AnimateFlash3::
+    playse SE_SWITCH
+    animateflash 3
+    call CocoaCave_B2F_EventScript_SetFlashLevel
+    return
+
+CocoaCave_B2F_EventScript_AnimateFlash4::
+    playse SE_SWITCH
+    animateflash 1
+    call CocoaCave_B2F_EventScript_SetFlashLevel
+    return
+
+`
+
+script CocoaCave_B2F_EventScript_TopLeftLantern
+{
+    if(flag(FLAG_COCOA_CAVE_B2F_TOP_LEFT_LANTERN))
+    {
+        lockall
+        msgbox("The lantern's flame kindles brightly.")
+        releaseall
+    }
+    else
+    {
+        lockall
+        msgbox("It's an unlit lantern. Light it?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            msgbox("You light the lantern!")
+            closemessage
+            setflag(FLAG_COCOA_CAVE_B2F_TOP_LEFT_LANTERN)
+            addvar(VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 1)
+            call(CocoaCave_B2F_EventScript_AnimateFlashLevel)
+            if(var(VAR_COCOA_CAVE_B2F_LANTERNS_LIT) == 4)
+            {
+                msgbox(CocoaCave_B2F_Text_LotBrighter)
+            }
+            else
+            {
+                msgbox(CocoaCave_B2F_Text_LittleBrighter)
+            }
+            releaseall
+        }
+        if(var(VAR_RESULT) == FALSE)
+        {
+            releaseall
+        }
+    }
+}
+
+script CocoaCave_B2F_EventScript_BottomLeftLantern
+{
+    if(flag(FLAG_COCOA_CAVE_B2F_BOTTOM_LEFT_LANTERN))
+    {
+        lockall
+        msgbox("The lantern's flame kindles brightly.")
+        releaseall
+    }
+    else
+    {
+        lockall
+        msgbox("It's an unlit lantern. Light it?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            msgbox("You light the lantern!")
+            closemessage
+            setflag(FLAG_COCOA_CAVE_B2F_BOTTOM_LEFT_LANTERN)
+            addvar(VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 1)
+            call(CocoaCave_B2F_EventScript_AnimateFlashLevel)
+            if(var(VAR_COCOA_CAVE_B2F_LANTERNS_LIT) == 4)
+            {
+                msgbox(CocoaCave_B2F_Text_LotBrighter)
+            }
+            else
+            {
+                msgbox(CocoaCave_B2F_Text_LittleBrighter)
+            }
+            releaseall
+        }
+        if(var(VAR_RESULT) == FALSE)
+        {
+            releaseall
+        }
+    }
+}
+
+script CocoaCave_B2F_EventScript_TopRightLantern
+{
+    if(flag(FLAG_COCOA_CAVE_B2F_TOP_RIGHT_LANTERN))
+    {
+        lockall
+        msgbox("The lantern's flame kindles brightly.")
+        releaseall
+    }
+    else
+    {
+        lockall
+        msgbox("It's an unlit lantern. Light it?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            msgbox("You light the lantern!")
+            closemessage
+            setflag(FLAG_COCOA_CAVE_B2F_TOP_RIGHT_LANTERN)
+            addvar(VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 1)
+            call(CocoaCave_B2F_EventScript_AnimateFlashLevel)
+            if(var(VAR_COCOA_CAVE_B2F_LANTERNS_LIT) == 4)
+            {
+                msgbox(CocoaCave_B2F_Text_LotBrighter)
+            }
+            else
+            {
+                msgbox(CocoaCave_B2F_Text_LittleBrighter)
+            }
+            releaseall
+        }
+        if(var(VAR_RESULT) == FALSE)
+        {
+            releaseall
+        }
+    }
+}
+
+script CocoaCave_B2F_EventScript_CenterLantern
+{
+    if(flag(FLAG_COCOA_CAVE_B2F_CENTER_LANTERN))
+    {
+        lockall
+        msgbox("The lantern's flame kindles brightly.")
+        releaseall
+    }
+    else
+    {
+        lockall
+        msgbox("It's an unlit lantern. Light it?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == TRUE)
+        {
+            msgbox("You light the lantern!")
+            closemessage
+            setflag(FLAG_COCOA_CAVE_B2F_CENTER_LANTERN)
+            addvar(VAR_COCOA_CAVE_B2F_LANTERNS_LIT, 1)
+            call(CocoaCave_B2F_EventScript_AnimateFlashLevel)
+            if(var(VAR_COCOA_CAVE_B2F_LANTERNS_LIT) == 4)
+            {
+                msgbox(CocoaCave_B2F_Text_LotBrighter)
+            }
+            else
+            {
+                msgbox(CocoaCave_B2F_Text_LittleBrighter)
+            }
+            releaseall
+        }
+        if(var(VAR_RESULT) == FALSE)
+        {
+            releaseall
+        }
+    }
+}
+
+script CocoaCave_B2F_EventScript_TooDark
+{
+    lockall
+    turnobject(LOCALID_PLAYER, DIR_NORTH)
+    msgbox("No light reaches the path ahead\.
+            It's too murky to travel any deeper.")
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_down))
+    waitmovement()
+    releaseall
+}
+
+text CocoaCave_B2F_Text_LittleBrighter
+{
+    "The cave has gotten a little brighter."
+}
+
+text CocoaCave_B2F_Text_LotBrighter
+{
+    "The cave has gotten a lot brighter!"
+}

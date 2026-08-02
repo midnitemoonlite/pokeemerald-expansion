@@ -1791,3 +1791,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/ResortArena_Villa2/scripts.inc"
 
 	.include "data/maps/WaddleDeeTown_Cafe/scripts.inc"
+
+	.include "data/maps/CocoaCave_1F/scripts.inc"
+
+	.include "data/maps/CocoaCave_B1F/scripts.inc"
+
+	.include "data/maps/CocoaCave_B2F/scripts.inc"

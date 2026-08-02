@@ -1,0 +1,22 @@
+raw `
+CocoaCave_1F_MapScripts::
+	.byte 0
+`
+
+script CocoaCave_1F_EventScript_Spinni
+{
+    lock
+    faceplayer
+    msgbox("Hiya, the name's Spinni. I'm looking for
+            treasure on behalf of the Squeaks.
+            
+            If you're planning on going further, let
+            me warn you: it's dark. Real dark.
+            
+            You probably won't get very far unless
+            you can find a way to see down there.
+            
+            And remember: if you run into trouble,
+            there's no shame in making an escape!")
+    release
+}

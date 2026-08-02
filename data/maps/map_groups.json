@@ -488,7 +488,10 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave",
-    "FruityForest"
+    "FruityForest",
+    "CocoaCave_1F",
+    "CocoaCave_B1F",
+    "CocoaCave_B2F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
