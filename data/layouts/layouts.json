@@ -9633,6 +9633,36 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/CocoaCave_B2F/border.bin",
       "blockdata_filepath": "data/layouts/CocoaCave_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORANGE_REST_AREA",
+      "name": "OrangeRestArea_Layout",
+      "width": 62,
+      "height": 29,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/OrangeRestArea/border.bin",
+      "blockdata_filepath": "data/layouts/OrangeRestArea/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORANGE_REST_AREA_CENTER",
+      "name": "OrangeRestArea_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OrangeRestArea_Center/border.bin",
+      "blockdata_filepath": "data/layouts/OrangeRestArea_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORANGE_REST_AREA_MART",
+      "name": "OrangeRestArea_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/OrangeRestArea_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/OrangeRestArea_Mart/map.bin"
     }
   ]
 }

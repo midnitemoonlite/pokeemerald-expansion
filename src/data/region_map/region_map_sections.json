@@ -1674,6 +1674,10 @@
     {
       "id": "MAPSEC_COCOA_CAVE",
       "name": "COCOA CAVE"
+    },
+    {
+      "id": "MAPSEC_ORANGE_REST_AREA",
+      "name": "ORANGE REST AREA"
     }
   ]
 }

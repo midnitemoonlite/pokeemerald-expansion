@@ -111,7 +111,7 @@
 #define VAR_FRUITY_FOREST_STATE                          0x4059 // Fruity Forest - Keep track of progress state
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
 #define VAR_COCOA_CAVE_B1F_STATE                         0x405B // Cocoa Cave B1F - Keep track of progress state
-#define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
+#define VAR_ORANGE_REST_AREA_STATE                       0x405C // Orange Rest Area - Keep track of progress state
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
 #define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var

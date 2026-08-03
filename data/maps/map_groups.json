@@ -81,7 +81,8 @@
     "gMapGroup_IndoorVegetableValley",
     "gMapGroup_IndoorIndigoRestArea",
     "gMapGroup_IndoorIceCreamIsland",
-    "gMapGroup_IndoorResortArena"
+    "gMapGroup_IndoorResortArena",
+    "gMapGroup_IndoorOrangeRestArea"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -150,7 +151,8 @@
     "VegetableValley",
     "IndigoRestArea",
     "IceCreamIsland",
-    "ResortArena"
+    "ResortArena",
+    "OrangeRestArea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -1212,5 +1214,9 @@
     "ResortArena_Mart",
     "ResortArena_Villa1",
     "ResortArena_Villa2"
+  ],
+  "gMapGroup_IndoorOrangeRestArea": [
+    "OrangeRestArea_Center",
+    "OrangeRestArea_Mart"
   ]
 }

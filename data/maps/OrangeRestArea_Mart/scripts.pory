@@ -1,0 +1,57 @@
+raw `
+OrangeRestArea_Mart_MapScripts::
+	.byte 0
+`
+
+script OrangeRestArea_Mart_EventScript_Clerk
+{
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(OrangeRestArea_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart OrangeRestArea_Mart
+{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_FAST_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_REPEL
+    ITEM_POKE_DOLL
+}
+
+script OrangeRestArea_Mart_EventScript_ParasolWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Large bodies of water divide the arenas
+            on Dream Land's eastern half.
+            
+            Luckily, my parasol floats on water, so
+            I can sail on it to my heart's content!")
+    release
+}
+
+script OrangeRestArea_Mart_EventScript_DeliveryWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Have you been to the Waddle Dee Café
+            over in Waddle Dee Town?
+            
+            Some of our snacks and drinks come from
+            there. It's a great place to visit if
+            you're looking for culinary items.")
+    release
+}

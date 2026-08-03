@@ -1,0 +1,200 @@
+raw `
+OrangeRestArea_MapScripts::
+	.byte 0
+`
+
+script OrangeRestArea_EventScript_Sign
+{
+    msgbox("ORANGE REST AREA
+            Refuge for spelunkers and seafarers.", MSGBOX_SIGN)
+    closemessage
+}
+
+script OrangeRestArea_EventScript_Soldier {
+    lock
+    faceplayer
+    msgbox("You came from the resort? Meaning you
+            actually delved through Cocoa Cave?
+    
+            You must be tired! Most folks use the
+            entrance east of here to avoid
+            descending to the lower floors.
+            
+            Please, rest up while you're here!")
+    release
+}
+
+script OrangeRestArea_EventScript_Fisherman {
+    lock
+    faceplayer
+    msgbox("I hope these rest areas stick around
+            even after the Royal Royale's over.
+            They're nice places to unwind.")
+    closemessage()
+    release
+}
+
+script OrangeRestArea_EventScript_Wanderer {
+    lock
+    faceplayer
+    msgbox("I swear I saw it! Something huge flew
+            above here and landed in Orange Ocean!
+            
+            I don't know what it was, but I promise
+            I'm not making it up!")
+    release
+}
+
+script OrangeRestArea_EventScript_WaddleDee {
+    lock
+    faceplayer
+    msgbox("The deeper into Cocoa Cave you go, the
+            darker it gets, and the hotter it feels.
+            
+            Supposedly, the lowest floor is pitch
+            black, and impossible to light up.
+            
+            There's a lot of crazy rumors about
+            what you might find down there\.
+            
+            Nobody is brave enough to try and
+            find out for themselves, though.")
+    release
+}
+
+script OrangeRestArea_EventScript_Approach1
+{
+    lockall
+    turnobject(LOCALID_KINE, DIR_NORTH)
+    playse(SE_PIN)
+    applymovement(LOCALID_KINE, Common_Movement_ExclamationMark)
+    waitmovement
+    msgbox(OrangeRestArea_Text_KineIntroduction)
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_down * 3))
+    waitmovement
+    turnobject(LOCALID_KINE, DIR_WEST)
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement
+    goto(OrangeRestArea_EventScript_Kine)
+}
+
+script OrangeRestArea_EventScript_Approach2
+{
+    lockall
+    turnobject(LOCALID_KINE, DIR_NORTH)
+    playse(SE_PIN)
+    applymovement(LOCALID_KINE, Common_Movement_ExclamationMark)
+    waitmovement
+    msgbox(OrangeRestArea_Text_KineIntroduction)
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_down * 3))
+    waitmovement
+    turnobject(LOCALID_KINE, DIR_WEST)
+    applymovement(LOCALID_PLAYER, moves(walk_right * 1))
+    waitmovement
+    goto(OrangeRestArea_EventScript_Kine)
+}
+
+script OrangeRestArea_EventScript_Approach3
+{
+    lockall
+    turnobject(LOCALID_KINE, DIR_NORTH)
+    playse(SE_PIN)
+    applymovement(LOCALID_KINE, Common_Movement_ExclamationMark)
+    waitmovement
+    msgbox(OrangeRestArea_Text_KineIntroduction)
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_down * 3))
+    waitmovement
+    turnobject(LOCALID_KINE, DIR_WEST)
+    turnobject(LOCALID_PLAYER, DIR_EAST)
+    waitmovement
+    goto(OrangeRestArea_EventScript_Kine)
+}
+
+script OrangeRestArea_EventScript_Kine {
+    msgbox("{SPEAKER NAME_KINE}It is! Wow, I'm so lucky! I could use
+                                a friend like you right now!
+                                
+                                I swam out here to fetch a present
+                                for my dear Mine at the resort\.
+                                only to drop it in the ocean!
+                                
+                                There's a massive ship under the water
+                                where it sunk. I think it fell inside.
+                                
+                                But I couldn't find a way in\. and even
+                                if I did, you know how I am on land!
+                                
+                                Do you think you could help me
+                                look for Mine's present? Pleeeeease?", MSGBOX_YESNO)
+    if(var(VAR_RESULT))
+    {
+        goto(OrangeRestArea_EventScript_KineConfirm)
+    }
+    else
+    {
+        closemessage
+        goto(OrangeRestArea_EventScript_KineDeny)
+    }
+}
+
+script OrangeRestArea_EventScript_KineDeny
+{
+    delay(12)
+    playse(SE_PIN)
+    applymovement(LOCALID_KINE, Common_Movement_ExclamationMark)
+    waitmovement
+    delay(60)
+    msgbox("{SPEAKER NAME_KINE}K\.Kirby? But\. my present for Mine\.
+            Oooooooooohhh\.
+            
+            Please, Kirby! Please reconsider! I
+            really need your help!", MSGBOX_YESNO)
+    if(var(VAR_RESULT))
+    {
+        goto(OrangeRestArea_EventScript_KineConfirm)
+    }
+    else
+    {
+        closemessage
+        goto(OrangeRestArea_EventScript_KineDeny)
+    }
+}
+
+script OrangeRestArea_EventScript_KineConfirm
+{
+    msgbox("{SPEAKER NAME_KINE}Thank you, Kirby! Thank you thank you
+            thank you!
+            
+            Don't worry, I'll help ferry you around.
+            In fact, I'll do you one even better!")
+    setspeaker(NULL)
+    playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+    msgbox("Obtained {COLOR RED}Kine's phone number{COLOR DARK_GRAY}!
+            Now you can call for Kine's help!")
+    waitfanfare()
+    waitmessage()
+    msgbox("{SPEAKER NAME_KINE}If you ever need help crossing a body
+            of water, I'll be right there for you!
+            
+            I dropped Mine's gift near the end of
+            Orange Ocean. Whenever you're ready,
+            walk up to the shore and call me!")
+    closemessage()
+    playse(SE_EXIT)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    removeobject(LOCALID_KINE)
+    setflag(FLAG_FOUND_KINE)
+    setvar(VAR_ORANGE_REST_AREA_STATE, 1)
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    
+    releaseall
+}
+
+text OrangeRestArea_Text_KineIntroduction
+{
+    "{SPEAKER NAME_KINE}Huuuuh? Kirby? Is that you?"
+}

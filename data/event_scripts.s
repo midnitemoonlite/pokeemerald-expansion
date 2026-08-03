@@ -1797,3 +1797,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/CocoaCave_B1F/scripts.inc"
 
 	.include "data/maps/CocoaCave_B2F/scripts.inc"
+
+	.include "data/maps/OrangeRestArea/scripts.inc"
+
+	.include "data/maps/OrangeRestArea_Center/scripts.inc"
+
+	.include "data/maps/OrangeRestArea_Mart/scripts.inc"

@@ -26,6 +26,7 @@ mart IndigoRestArea_Mart
     ITEM_BURN_HEAL
     ITEM_ICE_HEAL
     ITEM_REPEL
+    ITEM_POKE_DOLL
 }
 
 script IndigoRestArea_Mart_EventScript_EmployeeWaddleDee

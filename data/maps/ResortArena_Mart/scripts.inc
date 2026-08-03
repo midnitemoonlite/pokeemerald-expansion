@@ -46,41 +46,43 @@ ResortArena_Mart:
 	.2byte ITEM_ICE_HEAL
 # 29 "data/maps/ResortArena_Mart/scripts.pory"
 	.2byte ITEM_REPEL
+# 30 "data/maps/ResortArena_Mart/scripts.pory"
+	.2byte ITEM_POKE_DOLL
 	.2byte ITEM_NONE
 
 ResortArena_Mart_EventScript_Youngster::
-# 34 "data/maps/ResortArena_Mart/scripts.pory"
-	lock
 # 35 "data/maps/ResortArena_Mart/scripts.pory"
-	faceplayer
+	lock
 # 36 "data/maps/ResortArena_Mart/scripts.pory"
+	faceplayer
+# 37 "data/maps/ResortArena_Mart/scripts.pory"
 	msgbox ResortArena_Mart_EventScript_Youngster_Text_0
-# 41 "data/maps/ResortArena_Mart/scripts.pory"
+# 42 "data/maps/ResortArena_Mart/scripts.pory"
 	release
 	return
 
 
 ResortArena_Mart_EventScript_Manager::
-# 46 "data/maps/ResortArena_Mart/scripts.pory"
-	lock
 # 47 "data/maps/ResortArena_Mart/scripts.pory"
-	faceplayer
+	lock
 # 48 "data/maps/ResortArena_Mart/scripts.pory"
+	faceplayer
+# 49 "data/maps/ResortArena_Mart/scripts.pory"
 	msgbox ResortArena_Mart_EventScript_Manager_Text_0
-# 53 "data/maps/ResortArena_Mart/scripts.pory"
+# 54 "data/maps/ResortArena_Mart/scripts.pory"
 	release
 	return
 
 
 ResortArena_Mart_EventScript_Youngster_Text_0:
-# 36 "data/maps/ResortArena_Mart/scripts.pory"
+# 37 "data/maps/ResortArena_Mart/scripts.pory"
 	.string "It's been a while since I've thought to\n"
 	.string "restock on items. What do I need?\p"
 	.string "Let's see… Friend Hearts, drinks…\n"
 	.string "Maybe an Awakening for good measure…$"
 
 ResortArena_Mart_EventScript_Manager_Text_0:
-# 48 "data/maps/ResortArena_Mart/scripts.pory"
+# 49 "data/maps/ResortArena_Mart/scripts.pory"
 	.string "It's hard work, making sure our guests\n"
 	.string "have a carefree and relaxing stay.\p"
 	.string "I wonder if I'm starting to build the\n"

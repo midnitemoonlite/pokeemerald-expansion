@@ -1,0 +1,57 @@
+raw `
+OrangeRestArea_Center_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, OrangeRestArea_Center_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+OrangeRestArea_Center_OnTransition:
+	setrespawn HEAL_LOCATION_ORANGE_REST_AREA
+	end
+`
+
+script OrangeRestArea_Center_EventScript_Nurse
+{
+    setvar(VAR_0x800B, LOCALID_ORANGE_REST_AREA_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script OrangeRestArea_Center_Grambly
+{
+    lock
+    faceplayer
+    msgbox("There are so many Helpers in this world\.
+            I can't wait to meet them all!
+
+            I hope I can get Grambly as a Helper!
+            That's my favorite!")
+    release
+}
+
+script OrangeRestArea_Center_EventScript_FluffWaddleDee
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TM_BULLET_SEED))
+    {
+        msgbox("Besides, if I wanted to spit seeds, I'm
+                better off eating a juicy watermelon!")
+    }
+    else
+    {
+        msgbox("Hmmwo! M've gmf smmfmmf frr ym!
+    
+            Ptoo!")
+        giveitem(ITEM_TM25)
+        setflag(FLAG_RECEIVED_TM_BULLET_SEED)
+        msgbox("Sorry about that! I was trying to teach
+                myself Bullet Seed, but it didn't work\.
+                
+                I can't learn it, and neither can my
+                Helpers, but I hope it's useful for you!")
+    }
+    release
+}
