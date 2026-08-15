@@ -379,7 +379,7 @@ WaddleDeeArena_EventScript_BeginChallenge_3:
 # 282 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0
 # 283 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_3
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_2
 # 284 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 	goto WaddleDeeArena_EventScript_BeginChallenge_1
@@ -388,7 +388,7 @@ WaddleDeeArena_EventScript_BeginChallenge_4:
 # 288 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0
 # 289 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_2
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_3
 # 290 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 	goto WaddleDeeArena_EventScript_BeginChallenge_1
@@ -1369,7 +1369,7 @@ WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_2:
 # 183 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
 # 183 "data/maps/WaddleDeeArena/scripts.pory"
-	walk_right
+	walk_left
 # 183 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_up
 	step_end
@@ -1379,7 +1379,7 @@ WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_3:
 # 189 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
 # 189 "data/maps/WaddleDeeArena/scripts.pory"
-	walk_left
+	walk_right
 # 189 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_up
 	step_end

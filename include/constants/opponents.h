@@ -53,17 +53,17 @@
 #define TRAINER_FOSTER                       46 // Resort Arena - Trainer 4
 #define TRAINER_DUSTY_2                      47 // Resort Arena - Trainer 5
 #define TRAINER_DUSTY_3                      48 // Resort Arena - Daroach
-#define TRAINER_DUSTY_4                      49
-#define TRAINER_DUSTY_5                      50
-#define TRAINER_GABBY_AND_TY_1               51
-#define TRAINER_GABBY_AND_TY_2               52
-#define TRAINER_GABBY_AND_TY_3               53
-#define TRAINER_GABBY_AND_TY_4               54
-#define TRAINER_GABBY_AND_TY_5               55
-#define TRAINER_GABBY_AND_TY_6               56
-#define TRAINER_LOLA_1                       57
-#define TRAINER_AUSTINA                      58
-#define TRAINER_GWEN                         59
+#define TRAINER_DUSTY_4                      49 // Orange Ocean - Trainer 1
+#define TRAINER_DUSTY_5                      50 // Orange Ocean - Trainer 2
+#define TRAINER_GABBY_AND_TY_1               51 // Orange Ocean - Trainer 3
+#define TRAINER_GABBY_AND_TY_2               52 // Orange Ocean - Trainer 4
+#define TRAINER_GABBY_AND_TY_3               53 // Orange Ocean - Trainer 5
+#define TRAINER_GABBY_AND_TY_4               54 // Orange Ocean - Trainer 6
+#define TRAINER_GABBY_AND_TY_5               55 // Battleship Halberd (West) - Axe Knight
+#define TRAINER_GABBY_AND_TY_6               56 // Battleship Halberd (West) - Javelin Knight
+#define TRAINER_LOLA_1                       57 // Battleship Halberd (West) - Mace Knight
+#define TRAINER_AUSTINA                      58 // Battleship Halberd (West) - Trident Knight
+#define TRAINER_GWEN                         59 // Battleship Halberd (West) - Meta Knight
 #define TRAINER_LOLA_2                       60
 #define TRAINER_LOLA_3                       61
 #define TRAINER_LOLA_4                       62

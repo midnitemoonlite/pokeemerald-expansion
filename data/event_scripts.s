@@ -1803,3 +1803,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/OrangeRestArea_Center/scripts.inc"
 
 	.include "data/maps/OrangeRestArea_Mart/scripts.inc"
+
+	.include "data/maps/OrangeOcean/scripts.inc"
+
+	.include "data/maps/BattleshipHalberd_DiveRoom/scripts.inc"
+
+	.include "data/maps/BattleshipHalberd_Ducts/scripts.inc"
+
+	.include "data/maps/BattleshipHalberd_Storage/scripts.inc"
+
+	.include "data/maps/BattleshipHalberd_Reactor/scripts.inc"

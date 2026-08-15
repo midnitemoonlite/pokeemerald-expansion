@@ -1678,6 +1678,14 @@
     {
       "id": "MAPSEC_ORANGE_REST_AREA",
       "name": "ORANGE REST AREA"
+    },
+    {
+      "id": "MAPSEC_ORANGE_OCEAN",
+      "name": "ORANGE OCEAN"
+    },
+    {
+      "id": "MAPSEC_BATTLESHIP_HALBERD",
+      "name": "HALBERD"
     }
   ]
 }

@@ -9640,7 +9640,7 @@
       "width": 62,
       "height": 29,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/OrangeRestArea/border.bin",
       "blockdata_filepath": "data/layouts/OrangeRestArea/map.bin"
     },
@@ -9663,6 +9663,56 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/OrangeRestArea_Mart/border.bin",
       "blockdata_filepath": "data/layouts/OrangeRestArea_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_ORANGE_OCEAN",
+      "name": "OrangeOcean_Layout",
+      "width": 53,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/OrangeOcean/border.bin",
+      "blockdata_filepath": "data/layouts/OrangeOcean/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLESHIP_HALBERD_DIVE_ROOM",
+      "name": "BattleshipHalberd_DiveRoom_Layout",
+      "width": 12,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/BattleshipHalberd_DiveRoom/border.bin",
+      "blockdata_filepath": "data/layouts/BattleshipHalberd_DiveRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLESHIP_HALBERD_DUCTS",
+      "name": "BattleshipHalberd_Ducts_Layout",
+      "width": 45,
+      "height": 37,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/BattleshipHalberd_Ducts/border.bin",
+      "blockdata_filepath": "data/layouts/BattleshipHalberd_Ducts/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLESHIP_HALBERD_STORAGE",
+      "name": "BattleshipHalberd_Storage_Layout",
+      "width": 39,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/BattleshipHalberd_Storage/border.bin",
+      "blockdata_filepath": "data/layouts/BattleshipHalberd_Storage/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLESHIP_HALBERD_REACTOR",
+      "name": "BattleshipHalberd_Reactor_Layout",
+      "width": 20,
+      "height": 34,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGym",
+      "border_filepath": "data/layouts/BattleshipHalberd_Reactor/border.bin",
+      "blockdata_filepath": "data/layouts/BattleshipHalberd_Reactor/map.bin"
     }
   ]
 }

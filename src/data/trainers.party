@@ -1089,17 +1089,17 @@ Double Battle: No
 AI: Check Bad Move
 
 Coner (M)
-Level: 18
+Level: 17
 Ability: Hyper Cutter
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Net
-- Razor Shell
+- Bubble
 - Dig
 - Mud Sport
 - Harden
 
 Twizzy (F) @ Berry Juice
-Level: 18
+Level: 17
 Ability: Big Pecks
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Poke
@@ -1109,7 +1109,7 @@ Ball: Poke
 - Roost
 
 Cawcun (M)
-Level: 18
+Level: 17
 Ability: Limber
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Net
@@ -1124,7 +1124,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Rocky (M)
-Level: 20
+Level: 17
 Ability: Sturdy
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Heal
@@ -1153,13 +1153,13 @@ Double Battle: No
 AI: Check Bad Move
 
 Capiller (M)
-Level: 21
+Level: 20
 Ability: Swarm
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Net
 
 Pupa (F)
-Level: 20
+Level: 19
 Ability: Shed Skin
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 Ball: Net
@@ -1169,7 +1169,7 @@ Ball: Net
 - Bug Bite
 
 Butterfly (M)
-Level: 19
+Level: 18
 Ability: Schooling
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Net
@@ -1188,7 +1188,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Blipper (F)
-Level: 20
+Level: 19
 Ability: Tinted Lens
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Lure
@@ -1197,7 +1197,7 @@ Ball: Lure
 - Charm
 
 Glunk (M) @ Big Root
-Level: 20
+Level: 19
 Ability: Tangling Hair
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Dive
@@ -1212,7 +1212,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Pichikuri (F) @ Black Sludge
-Level: 22
+Level: 21
 Ability: Shell Armor
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Friend
@@ -1231,7 +1231,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Kabu
-Level: 22
+Level: 21
 Ability: Forewarn
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 Ball: Luxury
@@ -1241,7 +1241,7 @@ Ball: Luxury
 - Teleport
 
 SPECIES_GOLEM_KIRBY (M) @ Berry Juice
-Level: 22 
+Level: 20 
 Ability: Iron Fist
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 Ball: Luxury
@@ -1251,200 +1251,286 @@ Ball: Luxury
 - Bide
 
 Gemaine (M) @ Eviolite
-Level: 24
+Level: 22
 Ability: Tera Shell
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 Ball: Luxury
 - Power Gem
 - Ice Shard
 - Cosmic Power
+- Swift
 
+/* Orange Ocean - Trainer 1 */
 === TRAINER_DUSTY_4 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
-Music: Hiker
+Name: Waddle Dee
+Class: Swimmer F
+Pic: Tuber M
+Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 33
+Slippy (F)
+Level: 20
+Ability: Wimp Out
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Ball: Poke
 
+Glunk (F)
+Level: 20
+Ability: Tangling Hair
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Dive
+
+Blipper (M)
+Level: 20
+Ability: Tinted Lens
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Lure
+
+Sparky (M)
+Level: 20
+Ability: Volt Absorb
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Poke
+
+
+/* Orange Ocean - Trainer 2 */
 === TRAINER_DUSTY_5 ===
-Name: DUSTY
-Class: Ruin Maniac
-Pic: Ruin Maniac
-Gender: Male
+Name: Waddle Dee
+Class: Swimmer M
+Pic: Swimmer M
 Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
-Level: 36
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Kapar (M) @ Kebia Berry
+Level: 21
+Ability: Rain Dish
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Great
+- Water Gun
+- Peck
+- Life Dew
+- Bullet Seed
 
+Gator (F)
+Level: 21
+Ability: Strong Jaw
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Great
+- Bite
+- Poison Fang
+- Growl
+- Scary Face
+
+/* Orange Ocean - Trainer 3 */
 === TRAINER_GABBY_AND_TY_1 ===
-Name: GABBY & TY
-Class: Interviewer
-Pic: Interviewer
-Gender: Male
-Music: Interviewer
-Double Battle: Yes
+Name: Waddle Dee
+Class: Swimmer F
+Pic: Tuber M
+Music: Girl
+Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Mamatee (F)
+Level: 23
+Ability: Water Veil
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Lure
+- Bubble Beam
+- Aqua Ring
+- Charm
+- Sweet Kiss
 
-Whismur
-Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
+/* Orange Ocean - Trainer 4 */
 === TRAINER_GABBY_AND_TY_2 ===
-Name: GABBY & TY
-Class: Interviewer
-Pic: Interviewer
-Gender: Male
-Music: Interviewer
-Double Battle: Yes
+Name: Waddle Dee
+Class: Black Belt
+Pic: Black Belt
+Music: Intense
+Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Rocky
+Level: 22
+Ability: Sturdy
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Great
 
-Loudred
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Foley
+Level: 21
+Ability: Solar Power
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Great
+- Leafage
+- Incinerate
+- Feint
+- Synthesis
 
+/* Orange Ocean - Trainer 5 */
 === TRAINER_GABBY_AND_TY_3 ===
-Name: GABBY & TY
-Class: Interviewer
-Pic: Interviewer
-Gender: Male
-Music: Interviewer
-Double Battle: Yes
+Name: Waddle Dee
+Class: Bird Keeper
+Pic: Bird Keeper
+Music: Cool
+Double Battle: No
 AI: Check Bad Move
 
-Magneton
-Level: 30
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Tookey
+Level: 23
+Ability: Big Pecks
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Poke
+- Perish Song
+- Egg Bomb
+- Aerial Ace
+- Roost
 
-Loudred
-Level: 30
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
+/* Orange Ocean - Trainer 6 */
 === TRAINER_GABBY_AND_TY_4 ===
-Name: GABBY & TY
-Class: Interviewer
-Pic: Interviewer
-Gender: Male
-Music: Interviewer
-Double Battle: Yes
+Name: Waddle Dee
+Class: Bird Keeper
+Pic: Bird Keeper
+Music: Cool
+Double Battle: No
 AI: Check Bad Move
 
-Magneton
-Level: 33
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Emba
+Level: 21
+Ability: Flame Body
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Great
 
-Loudred
-Level: 33
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+Flamer
+Level: 21
+Ability: Flame Body
+IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+Ball: Great
 
+/* Battleship Halberd (West) - Axe Knight */
 === TRAINER_GABBY_AND_TY_5 ===
-Name: GABBY & TY
-Class: Interviewer
-Pic: Interviewer
-Gender: Male
-Music: Interviewer
-Double Battle: Yes
+Name: Crew
+Class: Team Aqua
+Pic: Aqua Grunt M
+Music: Aqua
+Double Battle: No
 AI: Check Bad Move
 
-Magneton
-Level: 36
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+SPECIES_AXE_KNIGHT (M)
+Level: 25
+Ability: Justified
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Beast
+- Cut
+- Counter
+- Razor Leaf
+- Scary Face
 
-Loudred
-Level: 36
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-
+/* Battleship Halberd (West) - Javelin Knight */
 === TRAINER_GABBY_AND_TY_6 ===
-Name: GABBY & TY
-Class: Interviewer
-Pic: Interviewer
-Gender: Male
-Music: Interviewer
-Double Battle: Yes
+Name: Crew
+Class: Team Aqua
+Pic: Magma Grunt F
+Music: Aqua
+Double Battle: No
 AI: Check Bad Move
 
-Magneton
-Level: 39
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sonic Boom
-- Thunder Wave
-- Metal Sound
-- Thunderbolt
-
-Exploud
-Level: 39
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Astonish
+SPECIES_JAVELIN_KNIGHT (M)
+Level: 25
+Ability: Justified
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Beast
 - Stomp
-- Supersonic
-- Hyper Voice
+- Counter
+- Aerial Ace
+- Work Up
 
+/* Battleship Halberd (West) - Mace Knight */
 === TRAINER_LOLA_1 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+Name: Crew
+Class: Team Aqua
+Pic: Aqua Grunt F
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Azurill
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+SPECIES_MACE_KNIGHT (M)
+Level: 25
+Ability: Justified
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Beast
+- Rock Smash
+- Counter
+- Metal Claw
+- Harden
 
-Azurill
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-
+/* Battleship Halberd (West) - Trident Knight */
 === TRAINER_AUSTINA ===
-Name: AUSTINA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+Name: Crew
+Class: Team Aqua
+Pic: Magma Grunt M
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+SPECIES_TRIDENT_KNIGHT (M)
+Level: 25
+Ability: Justified
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Beast
+- Peck
+- Counter
+- Spark
+- Magnet Rise
 
+/* Battleship Halberd (West) - Meta Knight */
 === TRAINER_GWEN ===
-Name: GWEN
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+Name: MetaKnight
+Class: Aqua Leader
+Pic: Aqua Leader Archie
+Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+SPECIES_AXE_KNIGHT (M)
+Level: 25
+Ability: Sharpness
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Beast
+- Karate Chop
+- Razor Leaf
+- Dual Chop
+- Sharpen
+
+SPECIES_MACE_KNIGHT (M)
+Level: 25
+Ability: Sheer Force
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Beast
+- Revenge
+- Metal Claw
+- Rock Tomb
+- Iron Defense
+
+SPECIES_TRIDENT_KNIGHT (M)
+Level: 25
+Ability: Motor Drive
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Beast
+- Force Palm
+- Spark
+- Flame Charge
+- Magnet Rise
+
+SPECIES_JAVELIN_KNIGHT (M)
+Level: 25
+Ability: Sniper
+IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Ball: Beast
+- Reversal
+- Aerial Ace
+- Brutal Swing
+- Rapid Spin
 
 === TRAINER_LOLA_2 ===
 Name: LOLA

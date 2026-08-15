@@ -1564,7 +1564,7 @@ ResortArena_EventScript_GrandFinalsPreparation_3:
 # 1225 "data/maps/ResortArena/scripts.pory"
 	applymovement LOCALID_RESORT_COMMENTATOR, ResortArena_EventScript_BeginChallenge_Movement_0
 # 1226 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_BeginChallenge_Movement_3
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_BeginChallenge_Movement_2
 # 1227 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 	goto ResortArena_EventScript_GrandFinalsPreparation_1
@@ -1573,7 +1573,7 @@ ResortArena_EventScript_GrandFinalsPreparation_4:
 # 1231 "data/maps/ResortArena/scripts.pory"
 	applymovement LOCALID_RESORT_COMMENTATOR, ResortArena_EventScript_BeginChallenge_Movement_0
 # 1232 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_BeginChallenge_Movement_2
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_BeginChallenge_Movement_3
 # 1233 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 	goto ResortArena_EventScript_GrandFinalsPreparation_1

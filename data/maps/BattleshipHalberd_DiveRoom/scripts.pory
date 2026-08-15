@@ -1,0 +1,25 @@
+raw `
+BattleshipHalberd_DiveRoom_MapScripts::
+	.byte 0
+`
+
+script BattleshipHalberd_ReturnToOrangeOcean
+{
+    lockall
+    msgbox("You peer through the hatch below you,
+            and see nothing but endless ocean.
+
+            You can leave through here, the same
+            way that you entered the ship.
+            
+            Will you return to Orange Ocean?", MSGBOX_YESNO)
+    if(var(VAR_RESULT))
+    {
+        warp(MAP_ORANGE_OCEAN, 14, 31)
+        releaseall
+    }
+    else
+    {
+        releaseall
+    }
+}

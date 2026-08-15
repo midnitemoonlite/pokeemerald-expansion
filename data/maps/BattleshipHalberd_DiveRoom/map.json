@@ -1,0 +1,38 @@
+{
+  "id": "MAP_BATTLESHIP_HALBERD_DIVE_ROOM",
+  "name": "BattleshipHalberd_DiveRoom",
+  "layout": "LAYOUT_BATTLESHIP_HALBERD_DIVE_ROOM",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_BATTLESHIP_HALBERD",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_INDOOR_1",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLESHIP_HALBERD_DUCTS",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "0",
+      "script": "BattleshipHalberd_ReturnToOrangeOcean"
+    }
+  ],
+  "bg_events": []
+}

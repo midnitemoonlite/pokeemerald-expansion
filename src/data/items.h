@@ -419,7 +419,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LEVEL_BALL] =
     {
         .name = ITEM_NAME("Level Heart"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 300 : 300,
         .description = COMPOUND_STRING(
             "A Heart that works\n"
             "well on lower\n"
@@ -451,7 +451,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_MOON_BALL] =
     {
         .name = ITEM_NAME("Love-Love Heart"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 300 : 300,
         .description = COMPOUND_STRING(
             "A Heart that works\n"
             "well on Heart\n"
@@ -467,7 +467,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_FRIEND_BALL] =
     {
         .name = ITEM_NAME("Chum Heart"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 300 : 300,
         .description = COMPOUND_STRING(
             "A Heart that makes\n"
             "a Helper friendly\n"
@@ -483,7 +483,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LOVE_BALL] =
     {
         .name = ITEM_NAME("Cupid Heart"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 300 : 300,
         .description = COMPOUND_STRING(
             "A Heart that works\n"
             "well on Helpers of\n"
@@ -499,7 +499,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_FAST_BALL] =
     {
         .name = ITEM_NAME("Fast Heart"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 300 : 300,
         .description = COMPOUND_STRING(
             "A Heart that works\n"
             "well on very\n"
@@ -515,7 +515,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_HEAVY_BALL] =
     {
         .name = ITEM_NAME("Heavy Heart"),
-        .price = (I_PRICE >= GEN_7) ? 0 : 300,
+        .price = (I_PRICE >= GEN_7) ? 300 : 300,
         .description = COMPOUND_STRING(
             "A Heart that works\n"
             "well on very\n"
@@ -552,7 +552,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_SAFARI_BALL] =
     {
         .name = ITEM_NAME("Safari Heart"),
-        .price = 0,
+        .price = 300,
         .description = COMPOUND_STRING(
             "A standard Heart\n"
             "decorated with an\n"
@@ -568,7 +568,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_SPORT_BALL] =
     {
         .name = ITEM_NAME("Fountain Heart"),
-        .price = (I_PRICE <= GEN_3 || I_PRICE >= GEN_9) ? 0 : 300,
+        .price = (I_PRICE <= GEN_3 || I_PRICE >= GEN_9) ? 300 : 300,
         .description = COMPOUND_STRING(
             "A standard Heart\n"
             "decorated with a\n"
@@ -584,7 +584,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_PARK_BALL] =
     {
         .name = ITEM_NAME("Seasons Heart"),
-        .price = 0,
+        .price = 300,
         .description = COMPOUND_STRING(
             "A standard Heart\n"
             "decorated with a\n"
@@ -600,7 +600,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_BEAST_BALL] =
     {
         .name = ITEM_NAME("Dark Heart"),
-        .price = 0,
+        .price = 1000,
         .description = COMPOUND_STRING(
             "A Heart with an\n"
             "exceedingly low\n"
@@ -616,7 +616,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_CHERISH_BALL] =
     {
         .name = ITEM_NAME("Rainbow Heart"),
-        .price = 0,
+        .price = 1000,
         .description = COMPOUND_STRING(
             "A rare Heart made\n"
             "in commemoration\n"

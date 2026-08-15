@@ -180,13 +180,13 @@ script WaddleDeeArena_EventScript_GrandFinalsPreparation
 	elif(var(VAR_TEMP_0) == DIR_WEST)
 	{
 		applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down))
-		applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, walk_in_place_up))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_in_place_up))
 		waitmovement()
 	}
 	elif(var(VAR_TEMP_0) == DIR_EAST)
 	{
 		applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_down))
-		applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_in_place_up))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, walk_in_place_up))
 		waitmovement()
 	}
     special(SpawnCameraObject)

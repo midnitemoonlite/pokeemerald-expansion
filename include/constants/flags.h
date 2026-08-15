@@ -91,7 +91,7 @@
 #define FLAG_COCOA_CAVE_B2F_TOP_RIGHT_LANTERN    0x45 // Cocoa Cave (B2F) - Top-right lantern has been lit
 #define FLAG_COCOA_CAVE_B2F_CENTER_LANTERN    0x46 // Cocoa Cave (B2F) - Center antern has been lit
 #define FLAG_COCOA_CAVE_B2F_BOTTOM_LEFT_LANTERN    0x47 // Cocoa Cave (B2F) - Bottom-left lantern has been lit
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
+#define FLAG_OBTAINED_WHEELIE    0x48 // Battleship Halberd (Reactor) - Gift mon Wheelie
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
@@ -570,8 +570,8 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10) // Waddle Dee Town (Cafe) - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x11) // Cocoa Cave - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12) // Cocoa Cave - Hidden Item 2
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13) // Orange Ocean - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14) // Orange Ocean - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x17)
@@ -1075,12 +1075,12 @@
 #define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE // Cocoa Cave - Item 3
 #define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF // Cocoa Cave - Item 4
 #define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400 // Cocoa Cave - Item 5
-#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
-#define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
-#define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
-#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405
-#define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
+#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401 // Orange Ocean - Item 1
+#define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402 // Orange Ocean - Item 2
+#define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403 // Battleship Halberd (Ducts) - Item 1
+#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404 // Battleship Halberd (Ducts) - Item 2
+#define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405 // Battleship Halberd (Ducts) - Item 3
+#define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406 // Battleship Halberd (West Storage) - Item 1
 #define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
 #define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag

@@ -1,0 +1,218 @@
+raw `
+OrangeOcean_MapScripts::
+	.byte 0
+`
+
+script OrangeOcean_EventScript_Sign
+{
+    msgbox("ORANGE OCEAN
+            This shipyard has a storied history.", MSGBOX_SIGN)
+    closemessage
+}
+
+script OrangeOcean_EventScript_DivingSpot
+{
+    lockall
+    msgbox("You peer beneath the waves\.
+
+            You can faintly make out a massive ship.
+            This must be where Kine lost Mine's gift.
+            
+            Will you dive down and check it out?", MSGBOX_YESNO)
+    if(var(VAR_RESULT))
+    {
+        warp(MAP_BATTLESHIP_HALBERD_DIVE_ROOM, 3, 13)
+        releaseall
+    }
+    else
+    {
+        releaseall
+    }
+}
+
+script OrangeOcean_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("The water here is unusually shallow,
+            and a lot of underlying rock is exposed.
+            
+            It's made it difficult for ships to
+            reach the Rest Area\.
+            
+            I'm sure it'll go back to normal on its
+            own, so I'm fine waiting here, but
+            how could this have happened?")
+    release
+}
+
+script OrangeOcean_EventScript_Nurse
+{
+    lock
+    faceplayer
+    msgbox("I haven't been able to shake this
+            sinister feeling since my ship docked\.
+            
+            Are your Helpers doing alright? Here,
+            let me heal them for you.")
+    closemessage
+	fadescreenswapbuffers(FADE_TO_BLACK)
+	playfanfare(MUS_HEAL)
+	waitfanfare()
+	special(HealPlayerParty)
+	fadescreenswapbuffers(FADE_FROM_BLACK)
+    msgbox("Wherever you go, please be careful!")
+    release
+}
+
+script OrangeOcean_EventScript_Trainer1
+{
+    trainerbattle_single(TRAINER_DUSTY_4, OrangeOcean_Text_Trainer1Intro, OrangeOcean_Text_Trainer1Defeated)
+    msgbox(OrangeOcean_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+}
+
+text OrangeOcean_Text_Trainer1Intro
+{
+    "My Helpers have the home-field
+    advantage at sea!"
+}
+
+text OrangeOcean_Text_Trainer1Defeated
+{
+    "If I can't win at sea, how will
+    I win at the Arenas on land?"
+}
+
+text OrangeOcean_Text_Trainer1Post
+{
+    "It would be nice if one of the Arenas
+    took place in the water\."
+}
+
+script OrangeOcean_EventScript_Trainer2
+{
+    trainerbattle_single(TRAINER_DUSTY_5, OrangeOcean_Text_Trainer2Intro, OrangeOcean_Text_Trainer2Defeated)
+    msgbox(OrangeOcean_Text_Trainer2Post, MSGBOX_AUTOCLOSE)
+}
+
+text OrangeOcean_Text_Trainer2Intro
+{
+    "Oh no! That Helper's trying to eat
+    someone! Don't worry! I'll save you!"
+}
+
+text OrangeOcean_Text_Trainer2Defeated
+{
+    "That fishy fellow\. isn't a Helper?"
+}
+
+text OrangeOcean_Text_Trainer2Post
+{
+    "Oh, so you're being ferried by your
+    friend Kine? That's nice!
+    
+    I'm sorry for thinking you were a
+    dangerous Helper, Kine! Silly me,
+    thinking Helpers would attack others\."
+}
+
+script OrangeOcean_EventScript_Trainer3
+{
+    trainerbattle_single(TRAINER_GABBY_AND_TY_1, OrangeOcean_Text_Trainer3Intro, OrangeOcean_Text_Trainer3Defeated)
+    msgbox(OrangeOcean_Text_Trainer3Post, MSGBOX_AUTOCLOSE)
+}
+
+text OrangeOcean_Text_Trainer3Intro
+{
+    "I love swimming with my Helper!"
+}
+
+text OrangeOcean_Text_Trainer3Defeated
+{
+    "We may not be training as much as we
+    swim, but that's okay!"
+}
+
+text OrangeOcean_Text_Trainer3Post
+{
+    "I gave my Blipper a special Heart, and
+    then it became a Mamatee. Neat, huh?"
+}
+
+script OrangeOcean_EventScript_Trainer4
+{
+    trainerbattle_single(TRAINER_GABBY_AND_TY_2, OrangeOcean_Text_Trainer4Intro, OrangeOcean_Text_Trainer4Defeated)
+    msgbox(OrangeOcean_Text_Trainer4Post, MSGBOX_AUTOCLOSE)
+}
+
+text OrangeOcean_Text_Trainer4Intro
+{
+    "Gwoooh! I'm tired of waiting for the
+    tide to rise back up!
+    
+    My Helpers are gonna carve a path right
+    through this rock!"
+}
+
+text OrangeOcean_Text_Trainer4Defeated
+{
+    "No! I can't break through this rock
+    without my Helpers' strength!"
+}
+
+text OrangeOcean_Text_Trainer4Post
+{
+    "I know, I know\. it's no good to
+    damage the environment like that.
+    
+    Maybe I should look for Helpers that
+    can bring more water to this place\."
+}
+
+script OrangeOcean_EventScript_Trainer5
+{
+    trainerbattle_single(TRAINER_GABBY_AND_TY_3, OrangeOcean_Text_Trainer5Intro, OrangeOcean_Text_Trainer5Defeated)
+    msgbox(OrangeOcean_Text_Trainer5Post, MSGBOX_AUTOCLOSE)
+}
+
+text OrangeOcean_Text_Trainer5Intro
+{
+    "My ship can't reach the mainland!
+    How am I supposed to do my job?"
+}
+
+text OrangeOcean_Text_Trainer5Defeated
+{
+    "Urgh\."
+}
+
+text OrangeOcean_Text_Trainer5Post
+{
+    "Sorry for taking my frustrations out 
+    on you through a Helper battle.
+    It's been a long day\."
+}
+
+script OrangeOcean_EventScript_Trainer6
+{
+    trainerbattle_single(TRAINER_GABBY_AND_TY_4, OrangeOcean_Text_Trainer6Intro, OrangeOcean_Text_Trainer6Defeated)
+    msgbox(OrangeOcean_Text_Trainer6Post, MSGBOX_AUTOCLOSE)
+}
+
+text OrangeOcean_Text_Trainer6Intro
+{
+    "I'm not stranded here\. I just don't
+    want to travel through Cocoa Cave!"
+}
+
+text OrangeOcean_Text_Trainer6Defeated
+{
+    "Traveling through the dark is so scary\."
+}
+
+text OrangeOcean_Text_Trainer6Post
+{
+    "Huh? There's a shortcut through the
+    water that lets you avoid the dark?
+    Wow, amazing! Thank you for telling me!"
+}

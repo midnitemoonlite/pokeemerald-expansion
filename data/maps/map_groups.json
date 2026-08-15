@@ -152,7 +152,8 @@
     "IndigoRestArea",
     "IceCreamIsland",
     "ResortArena",
-    "OrangeRestArea"
+    "OrangeRestArea",
+    "OrangeOcean"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -493,7 +494,11 @@
     "FruityForest",
     "CocoaCave_1F",
     "CocoaCave_B1F",
-    "CocoaCave_B2F"
+    "CocoaCave_B2F",
+    "BattleshipHalberd_DiveRoom",
+    "BattleshipHalberd_Ducts",
+    "BattleshipHalberd_Storage",
+    "BattleshipHalberd_Reactor"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

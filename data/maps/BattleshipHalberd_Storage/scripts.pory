@@ -1,0 +1,116 @@
+raw `
+BattleshipHalberd_Storage_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, BattleshipHalberd_Storage_OnLoad
+	.byte 0
+
+BattleshipHalberd_Storage_OnLoad:
+	call_if_eq VAR_ORANGE_OCEAN_STATE, 0, BattleshipHalberd_Storage_EventScript_CloseDoor
+	end
+
+BattleshipHalberd_Storage_EventScript_CloseDoor::
+	setmetatile 1, 13, METATILE_Facility_NewMauvilleDoor_Closed_Tile0, TRUE
+	setmetatile 2, 13, METATILE_Facility_NewMauvilleDoor_Closed_Tile1, TRUE
+	setmetatile 3, 13, METATILE_Facility_NewMauvilleDoor_Closed_Tile2, TRUE
+	setmetatile 1, 14, METATILE_Facility_NewMauvilleDoor_Closed_Tile3, TRUE
+	setmetatile 2, 14, METATILE_Facility_NewMauvilleDoor_Closed_Tile4, TRUE
+	setmetatile 3, 14, METATILE_Facility_NewMauvilleDoor_Closed_Tile5, TRUE
+	return
+`
+
+script BattleshipHalberd_Storage_EventScript_Trainer1West
+{
+    trainerbattle_single(TRAINER_GABBY_AND_TY_5, BattleshipHalberd_Storage_Text_Trainer1WestIntro, BattleshipHalberd_Storage_Text_Trainer1WestDefeated)
+    msgbox(BattleshipHalberd_Storage_Text_Trainer1WestPost, MSGBOX_AUTOCLOSE)
+}
+
+text BattleshipHalberd_Storage_Text_Trainer1WestIntro
+{
+    "Intruder alert! \.wait a sec!
+    
+    Kirby?! We're docked under the ocean
+    right now! How'd you get in here?
+    
+    Well, never mind that! No hard feelings,
+    but under Lord Meta Knight's orders\.
+    I'll have to take you out right now!"
+}
+
+text BattleshipHalberd_Storage_Text_Trainer1WestDefeated
+{
+    "What's going on?!?"
+}
+
+text BattleshipHalberd_Storage_Text_Trainer1WestPost
+{
+    "Urgh\. this is bad\. and you're using\.
+    
+    Ggh\. gotta let\. Lord Meta Knight know\."
+}
+
+script BattleshipHalberd_Storage_EventScript_Trainer2West
+{
+    trainerbattle_single(TRAINER_GABBY_AND_TY_6, BattleshipHalberd_Storage_Text_Trainer2WestIntro, BattleshipHalberd_Storage_Text_Trainer2WestDefeated)
+    msgbox(BattleshipHalberd_Storage_Text_Trainer2WestPost, MSGBOX_AUTOCLOSE)
+}
+
+text BattleshipHalberd_Storage_Text_Trainer2WestIntro
+{
+    "Aaaaaa-ha! Caught you!
+    
+    I got the memo from Axe Knight! You and
+    your motley crew won't get past me!"
+}
+
+text BattleshipHalberd_Storage_Text_Trainer2WestDefeated
+{
+    "What's wrong with you? Why couldn't you
+    just inhale me like you normally do?!"
+}
+
+text BattleshipHalberd_Storage_Text_Trainer2WestPost
+{
+    "Ouch\. look, if you have to be here,
+    just don't touch anything, okay?
+    
+    We're supposed to be undergoing covert
+    maintenace. And Lord Meta Knight will
+    be displeased if you interfere\.!"
+}
+
+script BattleshipHalberd_Storage_EventScript_Trainer3West
+{
+    trainerbattle_single(TRAINER_LOLA_1, BattleshipHalberd_Storage_Text_Trainer3WestIntro, BattleshipHalberd_Storage_Text_Trainer3WestDefeated)
+    msgbox(BattleshipHalberd_Storage_Text_Trainer3WestPost, MSGBOX_AUTOCLOSE)
+}
+
+text BattleshipHalberd_Storage_Text_Trainer3WestIntro
+{
+    "Nuh uh! You ain't sneaking outta here!
+    Me and my mace have got news for ya!"
+}
+
+text BattleshipHalberd_Storage_Text_Trainer3WestDefeated
+{
+    "Your Helpers\. they're way too tough!"
+}
+
+text BattleshipHalberd_Storage_Text_Trainer3WestPost
+{
+    "Even here, we're dealing with Helpers.
+    Our orders are to take them all out.
+    
+    But what's up with yours? Are they so
+    strong because they're with ya?"
+}
+
+script BattleshipHalberd_Storage_EventScript_DeckClosed
+{
+    lockall
+    playse(SE_BANG)
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_up * 2))
+    waitmovement()
+    delay(16)
+    msgbox("The gateway to the deck is locked shut.
+            After all, it's underwater right now.")
+    releaseall
+}

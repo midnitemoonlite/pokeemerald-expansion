@@ -1,0 +1,120 @@
+raw `
+BattleshipHalberd_Reactor_MapScripts::
+	.byte 0
+`
+
+script BattleshipHalberd_Reactor_EventScript_Wheelie
+{
+    lock
+    faceplayer
+    playmoncry(SPECIES_WHEELIE_BIKE, CRY_MODE_NORMAL)
+    msgbox("It's a Wheelie Bike. Seems like it
+            escaped from the power generator\.
+            
+            The Wheelie looks at you expectantly.
+            Will you let it join your party?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES)
+    {
+        setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_WHEELIE_BIKE)
+        givemon(SPECIES_WHEELIE_BIKE, 24)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY)
+        {
+            playfanfare(MUS_EVOLVED)
+            message("You obtained Wheelie!")
+            waitmessage()
+            waitfanfare()
+            msgbox("Would you like to give a nickname to
+                    Wheelie?", MSGBOX_YESNO)
+            if(var(VAR_RESULT) == YES)
+             {
+                call(Common_EventScript_GetGiftMonPartySlot)
+                call(Common_EventScript_NameReceivedPartyMon)
+             }
+        }
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PC)
+        {
+            playfanfare(MUS_EVOLVED)
+            message("You obtained Wheelie!")
+            waitmessage()
+            waitfanfare()
+            msgbox("Would you like to give a nickname to
+                    Wheelie?", MSGBOX_YESNO)
+            if(var(VAR_RESULT) == YES)
+             {
+                call(Common_EventScript_NameReceivedBoxMon)
+             }
+            call(Common_EventScript_TransferredToPC)
+        }
+        setflag(FLAG_OBTAINED_WHEELIE)
+        removeobject(LOCALID_WHEELIE_BIKE)
+        release
+    }
+    else
+    {
+        release
+    }
+}
+
+script BattleshipHalberd_Reactor_EventScript_Trainer
+{
+    trainerbattle_single(TRAINER_AUSTINA, BattleshipHalberd_Reactor_Text_TrainerIntro, BattleshipHalberd_Reactor_Text_TrainerDefeated)
+    msgbox(BattleshipHalberd_Reactor_Text_TrainerPost, MSGBOX_AUTOCLOSE)
+}
+
+text BattleshipHalberd_Reactor_Text_TrainerIntro
+{
+    "What do you think you're doing here?
+    The reactor's a highly sensitive place!
+    
+    I kindly suggest you take your leave.
+    And I won't take anything else kindly!"
+}
+
+text BattleshipHalberd_Reactor_Text_TrainerDefeated
+{
+    "Yow ow ow! Okay, fine, I'll tell you where
+    to go!"
+}
+
+text BattleshipHalberd_Reactor_Text_TrainerPost
+{
+    "We installed electric gates to protect
+    the reactor and power generator.
+
+    Step on the floor tiles to flip the
+    gates and reach the power switches.
+    
+    There's an elevator to the helm you can
+    turn on if you hit the far right switch.
+    You got that? Don't press any others!"
+}
+
+script BattleshipHalberd_Reactor_MiddleSwitch
+{
+    lockall
+    msgbox("It's a power switch. Will you flip it?", MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES)
+    {
+        msgbox("You flipped the power switch!")
+        closemessage
+        setmetatile(9, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+	    setmetatile(10, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+	    setmetatile(9, 13, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+	    setmetatile(10, 13, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+	    special(DrawWholeMapView)
+	    playse(SE_BANG)
+        setvar(VAR_0x8004, 2)  // vertical pan
+	    setvar(VAR_0x8005, 0)  // horizontal pan
+	    setvar(VAR_0x8006, 2) // num shakes
+	    setvar(VAR_0x8007, 3)  // shake delay
+	    special(ShakeCamera)
+        waitse
+        delay(12)
+        msgbox("A locked path opened up!")
+        releaseall
+    }
+    else
+    {
+        releaseall
+    }
+}
