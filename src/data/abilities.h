@@ -1572,7 +1572,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SCHOOLING] =
     {
-        .name = _("Kaleidoscope"),
+        .name = _("Schooling"),
         .description = COMPOUND_STRING("Forms a swarm when strong."),
         .aiRating = 6,
         .cantBeCopied = TRUE,

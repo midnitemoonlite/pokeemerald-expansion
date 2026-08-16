@@ -213,7 +213,7 @@ AI: Check Bad Move
 Chip (M)
 Level: 5
 Ability: Friend Guard
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 /* Prism Plains - Trainer 2 */
@@ -228,13 +228,13 @@ AI: Check Bad Move
 Bronto Burt (F)
 Level: 4
 Ability: Keen Eye
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 Twizzy (F)
 Level: 4
 Ability: Early Bird
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 /* Prism Plains - Trainer 3 */
@@ -249,7 +249,7 @@ AI: Check Bad Move
 Gaw Gaw (F)
 Level: 6
 Ability: Sand Force
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 /* Prism Plains - Trainer 4 */
@@ -264,19 +264,19 @@ AI: Check Bad Move
 SPECIES_BEANBON_PLANT (F)
 Level: 5
 Ability: Leaf Guard
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 SPECIES_BEANBON_SANDY (F)
 Level: 5
 Ability: Supersweet Syrup
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 SPECIES_BEANBON_TRASH (M)
 Level: 5
 Ability: Adaptability
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 /* Prism Plains - Trainer 5 */
@@ -291,13 +291,13 @@ AI: Check Bad Move
 Capiller (M)
 Level: 6
 Ability: Swarm
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 Maiga (F)
 Level: 6
 Ability: Regenerator
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 /* Prism Plains - Trainer 6 */
@@ -312,19 +312,19 @@ AI: Check Bad Move
 Twizzy (F)
 Level: 6
 Ability: Big Pecks
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 Chip (F)
 Level: 6
 Ability: Fluffy
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 Gaw Gaw (M)
 Level: 6
 Ability: Tough Claws
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 /* Waddle Dee Arena - Trainer 1 */
@@ -339,13 +339,13 @@ AI: Check Bad Move
 Bronto Burt (M)
 Level: 9
 Ability: Reckless
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 Cappy (M)
 Level: 9
 Ability: Anticipation
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Heal
 
 /* Waddle Dee Arena - Trainer 2 */
@@ -360,13 +360,13 @@ AI: Check Bad Move
 Waddle Doo (F)
 Level: 9
 Ability: Frisk
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 Awoofy (F)
 Level: 9
 Ability: Run Away
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Heal
 
 /* Waddle Dee Arena - Trainer 3 */
@@ -381,7 +381,7 @@ AI: Check Bad Move
 Noddy (M) @ Oran Berry
 Level: 10
 Ability: Comatose
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 /* Waddle Dee Arena - Magolor (Lovely) */
@@ -396,7 +396,7 @@ AI: Basic Trainer
 Dupa (M)
 Level: 10
 Ability: Unnerve
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Bite
 - Growl
@@ -406,7 +406,7 @@ Ball: Strange
 NESP (F) @ Black Sludge
 Level: 10
 Ability: Neuroforce
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Confusion
 - Astonish
@@ -416,7 +416,7 @@ Ball: Strange
 Sphere Doomer (M) @ Icy Rock
 Level: 11
 Ability: Forecast
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Snowscape
 - Powder Snow
@@ -435,7 +435,7 @@ AI: Basic Trainer
 Dupa (M)
 Level: 10
 Ability: Unnerve
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Bite
 - Growl
@@ -445,7 +445,7 @@ Ball: Strange
 NESP (F) @ Black Sludge
 Level: 10
 Ability: Neuroforce
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Confusion
 - Astonish
@@ -455,7 +455,7 @@ Ball: Strange
 Sphere Doomer (M) @ Heat Rock
 Level: 11
 Ability: Forecast
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Sunny Day
 - Ember
@@ -474,7 +474,7 @@ AI: Basic Trainer
 Dupa (M)
 Level: 10
 Ability: Unnerve
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Bite
 - Growl
@@ -484,7 +484,7 @@ Ball: Strange
 NESP (F) @ Black Sludge
 Level: 10
 Ability: Neuroforce
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Confusion
 - Astonish
@@ -494,7 +494,7 @@ Ball: Strange
 Sphere Doomer (M) @ Damp Rock
 Level: 11
 Ability: Forecast
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Rain Dance
 - Thunder Shock
@@ -513,7 +513,7 @@ AI: Check Bad Move
 Sir Kibble (M)
 Level: 11
 Ability: Justified
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 /* Vegetable Valley - Trainer 2 */
@@ -528,13 +528,13 @@ AI: Check Bad Move
 Needlous (F)
 Level: 10
 Ability: Poison Point
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 
 Pupa (M)
 Level: 10
 Ability: Shed Skin
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 - Harden
 - String Shot
@@ -551,15 +551,14 @@ AI: Check Bad Move
 Leafan (F)
 Level: 10
 Ability: Seed Sower
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
 
 Beanbon (F)
 Level: 10
 Ability: Supersweet Syrup
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
-
 
 /* Vegetable Valley - Trainer 4 */
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
@@ -573,7 +572,7 @@ AI: Check Bad Move
 Blade Knight (M)
 Level: 12
 Ability: Justified
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Great
 
 /* Vegetable Valley - Trainer 5 */
@@ -588,7 +587,7 @@ AI: Check Bad Move
 Blipper (F)
 Level: 12
 Ability: Water Veil
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 
 /* Vegetable Valley - Trainer 6 */
@@ -603,7 +602,7 @@ AI: Check Bad Move
 Awoofy (M)
 Level: 11
 Ability: Run Away
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
 - Pursuit
 - Snarl
@@ -613,7 +612,7 @@ Ball: Heal
 Broom Hatter (F)
 Level: 11
 Ability: Overcoat
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
 
 /* Vegetable Valley - Bandana Waddle Dee (Lovely) */
@@ -628,7 +627,7 @@ AI: Basic Trainer
 Waddle Doo (M)
 Level: 11
 Ability: Frisk
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 - Thunder Shock
 - Tackle
@@ -638,13 +637,13 @@ Ball: Poke
 Mr. Anglep (M)
 Level: 10
 Ability: Intimidate
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 
 Squishy (M)
 Level: 12
 Ability: Torrent
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 - Tackle
 - Leer
@@ -663,7 +662,7 @@ AI: Basic Trainer
 Waddle Doo (M)
 Level: 11
 Ability: Frisk
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 - Thunder Shock
 - Tackle
@@ -673,13 +672,13 @@ Ball: Poke
 Blipper (F)
 Level: 10
 Ability: Tinted Lens
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 
 Lovely (F)
 Level: 12
 Ability: Overgrow
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 - Bind
 - Play Nice
@@ -698,7 +697,7 @@ AI: Basic Trainer
 Waddle Doo (M)
 Level: 11
 Ability: Frisk
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 - Thunder Shock
 - Tackle
@@ -708,13 +707,13 @@ Ball: Poke
 Blipper (F)
 Level: 10
 Ability: Tinted Lens
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 
 Burning Leo (M)
 Level: 12
 Ability: Blaze
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Poke
 - Pound
 - Ember
@@ -733,7 +732,7 @@ AI: Check Bad Move
 Drifter (F)
 Level: 12
 Ability: Keen Eye
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 /* Fruity Forest - Trainer 2 */
@@ -748,13 +747,13 @@ AI: Check Bad Move
 Chip (M)
 Level: 11
 Ability: Adaptability
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 Kabu
 Level: 12
 Ability: Rock Head
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 - Rapid Spin
 - Teleport
@@ -773,13 +772,13 @@ AI: Check Bad Move
 Chick (M)
 Level: 15
 Ability: Shell Armor
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 Twizzy (F)
 Level: 13
 Ability: Big Pecks
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 /* Fruity Forest - Trainer 4 */
@@ -794,7 +793,7 @@ AI: Check Bad Move
 Mr. Anglep (M) @ Oran Berry
 Level: 14
 Ability: Ripen
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
 - Bite
 - Play Nice
@@ -813,13 +812,13 @@ AI: Basic Trainer
 Buttonfly (F)
 Level: 12
 Ability: Shield Dust
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 
 Minny (M)
 Level: 12
 Ability: Rattled
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 
 
@@ -835,13 +834,13 @@ AI: Check Bad Move
 Cappy (F)
 Level: 13
 Ability: Anticipation
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 Capiller (M)
 Level: 13
 Ability: Swarm
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 /* Fruity Forest - Trainer 7 */
@@ -856,7 +855,7 @@ AI: Check Bad Move
 Gaw Gaw (M)
 Level: 12
 Ability: Tough Claws
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 - Scratch
 - Leer
@@ -866,7 +865,7 @@ Ball: Poke
 Poppy Bros. Jr. (M)
 Level: 13
 Ability: Prankster
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 
@@ -882,7 +881,7 @@ AI: Check Bad Move
 Beetley (M)
 Level: 13
 Ability: Scrappy
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 - Horn Attack
 - Fury Cutter
@@ -892,7 +891,7 @@ Ball: Poke
 Sir Kibble (M)
 Level: 14
 Ability: Sharpness
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Cut
 - Fury Cutter
 - Metal Claw
@@ -910,7 +909,7 @@ AI: Check Bad Move
 Drifter (M) @ Oran Berry
 Level: 16
 Ability: Unburden
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 /* Ice Cream Island - Trainer 2 */
@@ -925,13 +924,13 @@ AI: Check Bad Move
 Blipper (M)
 Level: 16
 Ability: Water Veil
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Lure
 
 Flotzo (M)
 Level: 14
 Ability: Suction Cups
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Lure
 
 /* Ice Cream Island - Trainer 3 */
@@ -946,13 +945,13 @@ AI: Check Bad Move
 Sparky (F)
 Level: 15
 Ability: Static
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 Coner (M)
 Level: 15
 Ability: Shell Armor
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Dive
 
 
@@ -968,7 +967,7 @@ AI: Check Bad Move
 Sandran (F)
 Level: 15
 Ability: Sand Veil
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
 - Sand-Attack
 - Sand Tomb
@@ -978,7 +977,7 @@ Ball: Heal
 Maiga (M)
 Level: 15
 Ability: Regenerator
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
 /* Ice Cream Island - Trainer 5 */
@@ -993,7 +992,7 @@ AI: Check Bad Move
 Batty (F)
 Level: 18
 Ability: Swarm
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Great
 - Astonish
 - Gust
@@ -1012,7 +1011,7 @@ AI: Check Bad Move
 Embird (F)
 Level: 15
 Ability: Hustle
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 - Peck
 - Growl
@@ -1022,7 +1021,7 @@ Ball: Poke
 Pierre (M)
 Level: 16
 Ability: Skill Link
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
 - Follow Me
 - Mimic
@@ -1032,7 +1031,7 @@ Ball: Heal
 Blade Knight (M)
 Level: 16
 Ability: Inner Focus
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 - Rock Smash
 - False Swipe
@@ -1091,7 +1090,7 @@ AI: Check Bad Move
 Coner (M)
 Level: 17
 Ability: Hyper Cutter
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 - Bubble
 - Dig
@@ -1101,7 +1100,7 @@ Ball: Net
 Twizzy (F) @ Berry Juice
 Level: 17
 Ability: Big Pecks
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 - Gust
 - Round
@@ -1111,7 +1110,7 @@ Ball: Poke
 Cawcun (M)
 Level: 17
 Ability: Limber
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 
 /* Resort Arena - Trainer 2 */
@@ -1126,7 +1125,7 @@ AI: Check Bad Move
 Rocky (M)
 Level: 17
 Ability: Sturdy
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
 - Rock Throw
 - Magnitude
@@ -1136,7 +1135,7 @@ Ball: Heal
 Big Beanbon (F)
 Level: 20
 Ability: Supersweet Syrup
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
 - Leech Seed
 - Absorb
@@ -1155,13 +1154,13 @@ AI: Check Bad Move
 Capiller (M)
 Level: 20
 Ability: Swarm
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 
 Pupa (F)
 Level: 19
 Ability: Shed Skin
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 - Struggle Bug
 - Infestation
@@ -1171,7 +1170,7 @@ Ball: Net
 Butterfly (M)
 Level: 18
 Ability: Schooling
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
 - Silver Wind
 - Gust
@@ -1190,7 +1189,7 @@ AI: Check Bad Move
 Blipper (F)
 Level: 19
 Ability: Tinted Lens
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Lure
 - Tackle
 - Bubble Beam
@@ -1199,7 +1198,7 @@ Ball: Lure
 Glunk (M) @ Big Root
 Level: 19
 Ability: Tangling Hair
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Dive
 
 /* Resort Arena - Trainer 5 */
@@ -1214,7 +1213,7 @@ AI: Check Bad Move
 Pichikuri (F) @ Black Sludge
 Level: 21
 Ability: Shell Armor
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Friend
 - Acupressure
 - Rock Throw
@@ -1233,7 +1232,7 @@ AI: Basic Trainer
 Kabu
 Level: 21
 Ability: Forewarn
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Luxury
 - Power Gem
 - Bulldoze
@@ -1243,7 +1242,7 @@ Ball: Luxury
 SPECIES_GOLEM_KIRBY (M) @ Berry Juice
 Level: 20 
 Ability: Iron Fist
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Luxury
 - Rock Throw
 - Arm Thrust
@@ -1253,7 +1252,7 @@ Ball: Luxury
 Gemaine (M) @ Eviolite
 Level: 22
 Ability: Tera Shell
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Ball: Luxury
 - Power Gem
 - Ice Shard
@@ -1270,27 +1269,27 @@ Double Battle: No
 AI: Check Bad Move
 
 Slippy (F)
-Level: 20
+Level: 18
 Ability: Wimp Out
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Poke
 
 Glunk (F)
-Level: 20
+Level: 18
 Ability: Tangling Hair
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Dive
 
 Blipper (M)
-Level: 20
+Level: 18
 Ability: Tinted Lens
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Lure
 
 Sparky (M)
-Level: 20
+Level: 18
 Ability: Volt Absorb
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Poke
 
 
@@ -1304,9 +1303,9 @@ Double Battle: No
 AI: Check Bad Move
 
 Kapar (M) @ Kebia Berry
-Level: 21
+Level: 20
 Ability: Rain Dish
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Great
 - Water Gun
 - Peck
@@ -1314,12 +1313,12 @@ Ball: Great
 - Bullet Seed
 
 Gator (F)
-Level: 21
+Level: 20
 Ability: Strong Jaw
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Great
 - Bite
-- Poison Fang
+- Rage
 - Growl
 - Scary Face
 
@@ -1333,9 +1332,9 @@ Double Battle: No
 AI: Check Bad Move
 
 Mamatee (F)
-Level: 23
+Level: 22
 Ability: Water Veil
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Lure
 - Bubble Beam
 - Aqua Ring
@@ -1354,13 +1353,13 @@ AI: Check Bad Move
 Rocky
 Level: 22
 Ability: Sturdy
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Great
 
 Foley
-Level: 21
+Level: 19
 Ability: Solar Power
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Great
 - Leafage
 - Incinerate
@@ -1379,7 +1378,7 @@ AI: Check Bad Move
 Tookey
 Level: 23
 Ability: Big Pecks
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Poke
 - Perish Song
 - Egg Bomb
@@ -1398,13 +1397,13 @@ AI: Check Bad Move
 Emba
 Level: 21
 Ability: Flame Body
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Great
 
 Flamer
 Level: 21
 Ability: Flame Body
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Great
 
 /* Battleship Halberd (West) - Axe Knight */
@@ -1417,9 +1416,9 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_AXE_KNIGHT (M)
-Level: 25
+Level: 24
 Ability: Justified
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Cut
 - Counter
@@ -1436,9 +1435,9 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_JAVELIN_KNIGHT (M)
-Level: 25
+Level: 24
 Ability: Justified
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Stomp
 - Counter
@@ -1455,9 +1454,9 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_MACE_KNIGHT (M)
-Level: 25
+Level: 24
 Ability: Justified
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Rock Smash
 - Counter
@@ -1474,9 +1473,9 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_TRIDENT_KNIGHT (M)
-Level: 25
+Level: 24
 Ability: Justified
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Peck
 - Counter
@@ -1493,9 +1492,9 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_AXE_KNIGHT (M)
-Level: 25
+Level: 24
 Ability: Sharpness
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Beast
 - Karate Chop
 - Razor Leaf
@@ -1503,9 +1502,9 @@ Ball: Beast
 - Sharpen
 
 SPECIES_MACE_KNIGHT (M)
-Level: 25
+Level: 24
 Ability: Sheer Force
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Beast
 - Revenge
 - Metal Claw
@@ -1513,9 +1512,9 @@ Ball: Beast
 - Iron Defense
 
 SPECIES_TRIDENT_KNIGHT (M)
-Level: 25
+Level: 24
 Ability: Motor Drive
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Beast
 - Force Palm
 - Spark
@@ -1523,9 +1522,9 @@ Ball: Beast
 - Magnet Rise
 
 SPECIES_JAVELIN_KNIGHT (M)
-Level: 25
+Level: 24
 Ability: Sniper
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Beast
 - Reversal
 - Aerial Ace
