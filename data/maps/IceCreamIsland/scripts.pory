@@ -54,7 +54,9 @@ script IceCreamIsland_EventScript_BlueSqueakerWander
 {
     lock
     faceplayer
-    msgbox("Squeak! My boss says there's hidden
+    if(!flag(FLAG_RECEIVED_TM_DIG))
+    {
+        msgbox("Squeak! My boss says there's hidden
             treasure somewhere on the island.
             
             I thought it might be buried in the
@@ -64,7 +66,87 @@ script IceCreamIsland_EventScript_BlueSqueakerWander
             Rats\. I wish I had one of those fancy
             Dowsing Machines for finding treasure.
             It'd make my job so much easier!")
-    release
+        checkitem(ITEM_ITEMFINDER, 1)
+        if(var(VAR_RESULT))
+        {
+            playse(SE_PIN)
+            applymovement(LOCALID_DOWSING_SQUEAKER, Common_Movement_ExclamationMark)
+            waitmovement()
+            waitse()
+            msgbox("Wait a squeaking second! Is that a
+                    Dowsing Machine? It's my lucky day!
+                    
+                    Ahem\. may I, uh\. borrowww\. that
+                    Dowsing Machine of yours for a moment?", MSGBOX_YESNO)
+            if(var(VAR_RESULT) == YES)
+            {
+                playfanfare(MUS_OBTAIN_TMHM)
+                message("Kirby handed over the
+                        Dowsing Machine\.?")
+                waitmessage
+                waitfanfare
+                applymovement(LOCALID_DOWSING_SQUEAKER, moves(face_down))
+                msgbox("Now, let's see here\.")
+                delay(16)
+                playse(SE_ITEMFINDER)
+                applymovement(LOCALID_DOWSING_SQUEAKER, Common_Movement_ExclamationMark)
+                waitse
+                playse(SE_ITEMFINDER)
+                waitse
+                playse(SE_ITEMFINDER)
+                waitse
+                playse(SE_ITEMFINDER)
+                waitse
+                msgbox("Squeak squeak! Something's coming up!
+                        Hold on!!")
+                closemessage
+                playse(SE_EXIT)
+                applymovement(LOCALID_DOWSING_SQUEAKER, moves(face_right, delay_4, face_up, delay_4, face_left, delay_4, face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left, delay_4, face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left, delay_4, face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left, delay_4, face_down, delay_8, face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down, delay_16))
+                waitmovement
+                playse(SE_LEDGE)
+                applymovement(LOCALID_DOWSING_SQUEAKER, moves(jump_in_place_down))
+                waitmovement()
+                waitse()
+                msgbox("Jackpot! It might not be the hidden
+                        treasure we were looking for originally\.
+                        but there's some good stuff here!")
+                closemessage
+                faceplayer
+                delay(16)
+                msgbox("Ahem\. thank you for allowing me to
+                        borrow your Dowsing Machine, squeak.
+                        You can have it back now\.")
+                playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+                message("Reobtained the {COLOR BLUE}Dowsing Machine{COLOR DARK_GRAY}!")
+                waitmessage
+                waitfanfare
+                msgbox("Kirby put away the Dowsing Machine
+                        in the KEY ITEMS POCKET.")
+                msgbox("And since I'm such a nice Squeaker, I'll
+                        share part of the spoils with you too.
+                        Let's see\. here, you take this!")
+                giveitem(ITEM_TM77)
+                setflag(FLAG_RECEIVED_TM_DIG)
+                msgbox("Now I've gotta report back to the boss!
+                        He'll be so proud of me! Squeak!")
+                closemessage
+                release
+                end
+            }
+            else
+            {
+                msgbox("Squeak\. no fair\.")
+                release
+                end
+            }
+        }
+    }
+    else
+    {
+        msgbox("Now I've gotta report back to the boss!
+                He'll be so proud of me! Squeak!")
+        release
+    }
 }
 
 script IceCreamIsland_EventScript_MrFloatyEncounter

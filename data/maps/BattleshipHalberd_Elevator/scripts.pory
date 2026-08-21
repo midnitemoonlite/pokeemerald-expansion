@@ -1,0 +1,105 @@
+raw `
+BattleshipHalberd_Elevator_MapScripts::
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleshipHalberd_Elevator_OnFrame
+	.byte 0
+
+BattleshipHalberd_Elevator_OnFrame::
+	map_script_2 VAR_TEMP_1, 0, BattleshipHalberd_Elevator_EventScript_ElevatorSequence
+	.2byte 0
+`
+
+script BattleshipHalberd_Elevator_EventScript_ElevatorSequence
+{
+    lock
+    if(var(VAR_ELEVATOR_DESTINATION) == 0)
+    {
+        setdynamicwarp(MAP_BATTLESHIP_HALBERD_REACTOR, 9, 33)
+        setvar(VAR_0x8005, 1)
+        setvar(VAR_0x8006, 4)
+    }
+    elif(var(VAR_ELEVATOR_DESTINATION) == 1)
+    {
+        setdynamicwarp(MAP_BATTLESHIP_HALBERD_REACTOR, 10, 40)
+        setvar(VAR_0x8005, 4)
+        setvar(VAR_0x8006, 1)
+    }
+    elif(var(VAR_ELEVATOR_DESTINATION) == 2)
+    {
+        setdynamicwarp(MAP_BATTLESHIP_HALBERD_REACTOR, 3, 10)
+        setvar(VAR_0x8005, 1)
+        setvar(VAR_0x8006, 4)
+    }
+    elif(var(VAR_ELEVATOR_DESTINATION) == 3)
+    {
+        setdynamicwarp(MAP_BATTLESHIP_HALBERD_REACTOR, 9, 4)
+        setvar(VAR_0x8005, 1)
+        setvar(VAR_0x8006, 6)
+    }
+    elif(var(VAR_ELEVATOR_DESTINATION) == 4)
+    {
+        setdynamicwarp(MAP_BATTLESHIP_HALBERD_REACTOR, 17, 10)
+        setvar(VAR_0x8005, 6)
+        setvar(VAR_0x8006, 1)
+    }
+    else
+    {
+       setdynamicwarp(MAP_BATTLESHIP_HALBERD_REACTOR, 0, 0) 
+       setvar(VAR_0x8005, 1)
+       setvar(VAR_0x8006, 9)
+    }
+    applymovement(LOCALID_PLAYER, moves(walk_up, walk_in_place_down))
+    waitmovement
+    delay(20)
+    special(MoveElevator)
+    delay(60)
+    applymovement(LOCALID_PLAYER, moves(walk_down))
+    waitmovement()
+    if(var(VAR_ELEVATOR_DESTINATION) == 0)
+    {
+        setvar(VAR_ELEVATOR_DESTINATION, 0)
+        warp(MAP_BATTLESHIP_HALBERD_REACTOR, 9, 33)
+        waitstate
+        releaseall
+        end
+    }
+    elif(var(VAR_ELEVATOR_DESTINATION) == 1)
+    {
+        setvar(VAR_ELEVATOR_DESTINATION, 2)
+        warp(MAP_BATTLESHIP_HALBERD_REACTOR, 10, 40)
+        waitstate
+        releaseall
+        end
+    }
+    elif(var(VAR_ELEVATOR_DESTINATION) == 2)
+    {
+        setvar(VAR_ELEVATOR_DESTINATION, 1)
+        warp(MAP_BATTLESHIP_HALBERD_REACTOR, 3, 10)
+        waitstate
+        releaseall
+        end
+    }
+    elif(var(VAR_ELEVATOR_DESTINATION) == 3)
+    {
+        setvar(VAR_ELEVATOR_DESTINATION, 4)
+        warp(MAP_BATTLESHIP_HALBERD_REACTOR, 9, 4)
+        waitstate
+        releaseall
+        end
+    }
+    elif(var(VAR_ELEVATOR_DESTINATION) == 4)
+    {
+        setvar(VAR_ELEVATOR_DESTINATION, 3)
+        warp(MAP_BATTLESHIP_HALBERD_REACTOR, 17, 10)
+        waitstate
+        releaseall
+        end
+    }
+    else
+    {
+       setvar(VAR_ELEVATOR_DESTINATION, 0)
+       setdynamicwarp(MAP_BATTLESHIP_HALBERD_REACTOR, 0, 0) 
+       waitstate
+       releaseall
+       end
+    }
+}

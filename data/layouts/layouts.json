@@ -9708,11 +9708,22 @@
       "id": "LAYOUT_BATTLESHIP_HALBERD_REACTOR",
       "name": "BattleshipHalberd_Reactor_Layout",
       "width": 20,
-      "height": 34,
+      "height": 48,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_MauvilleGym",
       "border_filepath": "data/layouts/BattleshipHalberd_Reactor/border.bin",
       "blockdata_filepath": "data/layouts/BattleshipHalberd_Reactor/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLESHIP_HALBERD_ELEVATOR",
+      "name": "BattleshipHalberd_Elevator_Layout",
+      "width": 5,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/BattleshipHalberd_Elevator/border.bin",
+      "blockdata_filepath": "data/layouts/BattleshipHalberd_Elevator/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

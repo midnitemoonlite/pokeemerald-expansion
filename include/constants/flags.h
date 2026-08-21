@@ -92,11 +92,11 @@
 #define FLAG_COCOA_CAVE_B2F_CENTER_LANTERN    0x46 // Cocoa Cave (B2F) - Center antern has been lit
 #define FLAG_COCOA_CAVE_B2F_BOTTOM_LEFT_LANTERN    0x47 // Cocoa Cave (B2F) - Bottom-left lantern has been lit
 #define FLAG_OBTAINED_WHEELIE    0x48 // Battleship Halberd (Reactor) - Gift mon Wheelie
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
+#define FLAG_SAILOR_QUEST    0x49 // Resort Arena - Used to keep track of sailor quest state
+#define FLAG_UNUSED_NEW    0x4A // Unused Flag
+#define FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE    0x4B // Battleship Halberd (Reactor) - Permanent switch to open left gate
+#define FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE    0x4C // Battleship Halberd (Reactor) - Permanent switch to open middle gate
+#define FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE    0x4D // Battleship Halberd (Reactor) - Permanent switch to open right gate
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
 
@@ -122,7 +122,7 @@
 #define FLAG_RECEIVED_SECRET_POWER           0x60
 #define FLAG_MET_TEAM_AQUA_HARBOR            0x61
 #define FLAG_TV_EXPLAINED                    0x62
-#define FLAG_MAUVILLE_GYM_BARRIERS_STATE     0x63
+#define FLAG_MAUVILLE_GYM_BARRIERS_STATE     0x63 // Battleship Halberd (Reactor) - Electrical Switches
 #define FLAG_MOSSDEEP_GYM_SWITCH_1           0x64 // Leftover from the RS version of Mossdeep Gym, functionally unused
 #define FLAG_MOSSDEEP_GYM_SWITCH_2           0x65 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
@@ -292,7 +292,7 @@
 #define FLAG_RECEIVED_COIN_CASE              0x102
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
 #define FLAG_RECEIVED_TM_SNATCH              0x104
-#define FLAG_RECEIVED_TM_DIG                 0x105
+#define FLAG_RECEIVED_TM_DIG                 0x105 // Ice Cream Island - Blue Squeaker by beachhouse
 #define FLAG_RECEIVED_TM_BULLET_SEED         0x106 // Orange Rest Area - Fluff Waddle Dee in Center
 #define FLAG_ENTERED_ELITE_FOUR              0x107
 #define FLAG_RECEIVED_TM_HIDDEN_POWER        0x108
@@ -572,7 +572,7 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12) // Cocoa Cave - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13) // Orange Ocean - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14) // Orange Ocean - Hidden Item 2
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15) // Battleship Halberd (Reactor) - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x17)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD            (FLAG_HIDDEN_ITEMS_START + 0x18)
@@ -1081,10 +1081,10 @@
 #define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404 // Battleship Halberd (Ducts) - Item 2
 #define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405 // Battleship Halberd (Ducts) - Item 3
 #define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406 // Battleship Halberd (West Storage) - Item 1
-#define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
-#define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
-#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
+#define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407 // Battleship Halberd (Reactor) - Item 1
+#define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408 // Battleship Halberd (Reactor) - Item 2
+#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Battleship Halberd (Reactor) - Item 3
+#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A // Battleship Halberd (Reactor) - Item 4
 #define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
 #define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D

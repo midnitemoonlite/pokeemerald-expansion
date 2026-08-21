@@ -22,7 +22,41 @@ script ResortArena_Villa2_EventScript_Hiker
 {
     lock
     faceplayer
-    msgbox("I used to frequent this resort with
+    checkitem(ITEM_LETTER, 1)
+    if(var(VAR_RESULT))
+    {
+        msgbox("What's that? You have a letter for me?")
+        setvar(VAR_0x8004, ITEM_LETTER)
+        call(Common_EventScript_PlayerHandedOverTheItem)
+        closemessage()
+        playse(SE_PIN)
+        applymovement(LOCALID_SAILORS_FRIEND, Common_Movement_ExclamationMark)
+        waitmovement()
+        waitse()
+        msgbox("Oh my! It's from my old pal! So they're
+                part of the Halberd crew after all\.
+                
+                Wait, that means you found your way to
+                the Halberd just to check on them!?
+                
+                I'll have to write something back. I
+                wonder how to send mail to a ship\.
+                
+                Now, now, don't offer to take it back!
+                You've done so much for me already.
+                Hm\. here, why don't you have this?")
+        giveitem(ITEM_TM24, 1)
+        msgbox("A Waddle Dee working for the Halberd\.
+                it must be tough, but my friend made it.
+                
+                I hope this item inspires you to chart
+                new ground and chase your dreams too!")
+        release
+        end
+    }
+    if(var(VAR_SAILOR_QUEST) < 2)
+    {
+        msgbox("I used to frequent this resort with
             a friend of mine. More than anything,
             their dream was going on adventures.
             
@@ -32,5 +66,14 @@ script ResortArena_Villa2_EventScript_Hiker
             Last I heard, they sought to reach
             their goal by working on the Halberd\.
             I wonder if they're doing alright?")
-    release
+        setvar(VAR_SAILOR_QUEST, 1)
+        release
+    }
+    if(var(VAR_SAILOR_QUEST) >= 2)
+    {
+        msgbox("Sailor Waddle Dee\. I have so much I
+                want to talk about with them, it's
+                hard to put it all onto paper!")
+        release
+    }
 }

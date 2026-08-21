@@ -1,6 +1,228 @@
 raw `
 BattleshipHalberd_Reactor_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, BattleshipHalberd_Reactor_OnLoad
 	.byte 0
+
+BattleshipHalberd_Reactor_OnLoad:
+    call_if_set FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE, BattleshipHalberd_Reactor_EventScript_RemoveLeftGate
+    call_if_set FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE, BattleshipHalberd_Reactor_EventScript_RemoveMiddleGate
+    call_if_set FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE, BattleshipHalberd_Reactor_EventScript_RemoveRightGate
+	setvar VAR_MAUVILLE_GYM_STATE, 0
+    clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
+	end
+
+BattleshipHalberd_Reactor_EventScript_UpdateBarriers::
+	goto_if_set FLAG_MAUVILLE_GYM_BARRIERS_STATE, BattleshipHalberd_Reactor_EventScript_SetAltBarriers
+	end
+
+BattleshipHalberd_Reactor_EventScript_SetAltBarriers::
+	setmetatile 6, 15, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 7, 15, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 6, 16, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 7, 16, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 9, 15, METATILE_MauvilleGym_RedBeamH1_Off, FALSE
+    setmetatile 10, 15, METATILE_MauvilleGym_RedBeamH2_Off, FALSE
+    setmetatile 9, 16, METATILE_MauvilleGym_RedBeamH3_Off, FALSE
+    setmetatile 10, 16, METATILE_MauvilleGym_RedBeamH4_Off, FALSE
+    setmetatile 12, 15, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 13, 15, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 12, 16, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 13, 16, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 5, 16, METATILE_MauvilleGym_GreenBeamV1_On, TRUE
+    setmetatile 5, 17, METATILE_MauvilleGym_GreenBeamV2_On, TRUE
+    setmetatile 8, 16, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 8, 17, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 11, 16, METATILE_MauvilleGym_GreenBeamV1_On, TRUE
+    setmetatile 11, 17, METATILE_MauvilleGym_GreenBeamV2_On, TRUE
+    setmetatile 14, 16, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 14, 17, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 6, 18, METATILE_MauvilleGym_RedBeamH1_Off, FALSE
+    setmetatile 7, 18, METATILE_MauvilleGym_RedBeamH2_Off, FALSE
+    setmetatile 6, 19, METATILE_MauvilleGym_RedBeamH3_Off, FALSE
+    setmetatile 7, 19, METATILE_MauvilleGym_RedBeamH4_Off, FALSE
+    setmetatile 9, 18, METATILE_MauvilleGym_RedBeamH1_Off, FALSE
+    setmetatile 10, 18, METATILE_MauvilleGym_RedBeamH2_Off, FALSE
+    setmetatile 9, 19, METATILE_MauvilleGym_RedBeamH3_Off, FALSE
+    setmetatile 10, 19, METATILE_MauvilleGym_RedBeamH4_Off, FALSE
+    setmetatile 12, 18, METATILE_MauvilleGym_RedBeamH1_Off, FALSE
+    setmetatile 13, 18, METATILE_MauvilleGym_RedBeamH2_Off, FALSE
+    setmetatile 12, 19, METATILE_MauvilleGym_RedBeamH3_Off, FALSE
+    setmetatile 13, 19, METATILE_MauvilleGym_RedBeamH4_Off, FALSE
+    setmetatile 5, 19, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 5, 20, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 8, 19, METATILE_MauvilleGym_GreenBeamV1_On, TRUE
+    setmetatile 8, 20, METATILE_MauvilleGym_GreenBeamV2_On, TRUE
+    setmetatile 11, 19, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 11, 20, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 14, 19, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 14, 20, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 6, 21, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 7, 21, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 6, 22, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 7, 22, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 9, 21, METATILE_MauvilleGym_RedBeamH1_Off, FALSE
+    setmetatile 10, 21, METATILE_MauvilleGym_RedBeamH2_Off, FALSE
+    setmetatile 9, 22, METATILE_MauvilleGym_RedBeamH3_Off, FALSE
+    setmetatile 10, 22, METATILE_MauvilleGym_RedBeamH4_Off, FALSE
+    setmetatile 12, 21, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 13, 21, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 12, 22, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 13, 22, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 5, 22, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 5, 23, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 8, 22, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 8, 23, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 11, 22, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 11, 23, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 14, 22, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 14, 23, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 3, 24, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 4, 24, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 3, 25, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 4, 25, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 6, 24, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 7, 24, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 6, 25, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 7, 25, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 12, 24, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 13, 24, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 12, 25, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 13, 25, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 15, 24, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 16, 24, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 15, 25, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 16, 25, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 2, 25, METATILE_MauvilleGym_GreenBeamV1_On, TRUE
+    setmetatile 2, 26, METATILE_MauvilleGym_GreenBeamV2_On, TRUE
+    setmetatile 5, 25, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 5, 26, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 8, 25, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 8, 26, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 11, 25, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 11, 26, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 14, 25, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 14, 26, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 17, 25, METATILE_MauvilleGym_GreenBeamV1_On, TRUE
+    setmetatile 17, 26, METATILE_MauvilleGym_GreenBeamV2_On, TRUE
+    setmetatile 3, 27, METATILE_MauvilleGym_RedBeamH1_Off, FALSE
+    setmetatile 4, 27, METATILE_MauvilleGym_RedBeamH2_Off, FALSE
+    setmetatile 3, 28, METATILE_MauvilleGym_RedBeamH3_Off, FALSE
+    setmetatile 4, 28, METATILE_MauvilleGym_RedBeamH4_Off, FALSE
+    setmetatile 6, 27, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 7, 27, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 6, 28, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 7, 28, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 12, 27, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 13, 27, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 12, 28, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 13, 28, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 15, 27, METATILE_MauvilleGym_GreenBeamH1_On, FALSE
+    setmetatile 16, 27, METATILE_MauvilleGym_GreenBeamH2_On, FALSE
+    setmetatile 15, 28, METATILE_MauvilleGym_GreenBeamH3_On, TRUE
+    setmetatile 16, 28, METATILE_MauvilleGym_GreenBeamH4_On, TRUE
+    setmetatile 2, 28, METATILE_MauvilleGym_GreenBeamV1_On, TRUE
+    setmetatile 2, 29, METATILE_MauvilleGym_GreenBeamV2_On, TRUE
+    setmetatile 5, 28, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 5, 29, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    setmetatile 14, 28, METATILE_MauvilleGym_GreenBeamV1_On, TRUE
+    setmetatile 14, 29, METATILE_MauvilleGym_GreenBeamV2_On, TRUE
+    setmetatile 17, 28, METATILE_MauvilleGym_PoleTop_Off, FALSE
+    setmetatile 17, 29, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+    end
+
+BattleshipHalberd_Reactor_EventScript_Switch1Pressed::
+	setvar VAR_0x8004, 0
+	special MauvilleGymPressSwitch
+	goto BattleshipHalberd_Reactor_EventScript_UpdateBarriers
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch2Pressed::
+	setvar VAR_0x8004, 1
+	special MauvilleGymPressSwitch
+	goto BattleshipHalberd_Reactor_EventScript_UpdateBarriers
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch3Pressed::
+	setvar VAR_0x8004, 2
+	special MauvilleGymPressSwitch
+	goto BattleshipHalberd_Reactor_EventScript_UpdateBarriers
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch4Pressed::
+	setvar VAR_0x8004, 3
+	special MauvilleGymPressSwitch
+	goto BattleshipHalberd_Reactor_EventScript_UpdateBarriers
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch5Pressed::
+	setvar VAR_0x8004, 4
+	special MauvilleGymPressSwitch
+	goto BattleshipHalberd_Reactor_EventScript_UpdateBarriers
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch1::
+	lockall
+	goto_if_eq VAR_MAUVILLE_GYM_STATE, 1, BattleshipHalberd_Reactor_EventScript_SwitchDoNothing
+	setvar VAR_MAUVILLE_GYM_STATE, 1
+	setvar VAR_0x8004, 0
+	goto BattleshipHalberd_Reactor_EventScript_PressFloorSwitch
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch2::
+	lockall
+	goto_if_eq VAR_MAUVILLE_GYM_STATE, 2, BattleshipHalberd_Reactor_EventScript_SwitchDoNothing
+	setvar VAR_MAUVILLE_GYM_STATE, 2
+	setvar VAR_0x8004, 1
+	goto BattleshipHalberd_Reactor_EventScript_PressFloorSwitch
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch3::
+	lockall
+	goto_if_eq VAR_MAUVILLE_GYM_STATE, 3, BattleshipHalberd_Reactor_EventScript_SwitchDoNothing
+	setvar VAR_MAUVILLE_GYM_STATE, 3
+	setvar VAR_0x8004, 2
+	goto BattleshipHalberd_Reactor_EventScript_PressFloorSwitch
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch4::
+	lockall
+	goto_if_eq VAR_MAUVILLE_GYM_STATE, 4, BattleshipHalberd_Reactor_EventScript_SwitchDoNothing
+	setvar VAR_MAUVILLE_GYM_STATE, 4
+	setvar VAR_0x8004, 3
+	goto BattleshipHalberd_Reactor_EventScript_PressFloorSwitch
+	end
+
+BattleshipHalberd_Reactor_EventScript_Switch5::
+	lockall
+	goto_if_eq VAR_MAUVILLE_GYM_STATE, 5, BattleshipHalberd_Reactor_EventScript_SwitchDoNothing
+	setvar VAR_MAUVILLE_GYM_STATE, 5
+	setvar VAR_0x8004, 4
+	goto BattleshipHalberd_Reactor_EventScript_PressFloorSwitch
+	end
+
+BattleshipHalberd_Reactor_EventScript_PressFloorSwitch::
+    special MauvilleGymSetDefaultBarriers
+	special MauvilleGymPressSwitch
+	special DrawWholeMapView
+	playse SE_UNLOCK
+	goto_if_set FLAG_MAUVILLE_GYM_BARRIERS_STATE, BattleshipHalberd_Reactor_EventScript_ClearBarriersAltState
+	goto_if_unset FLAG_MAUVILLE_GYM_BARRIERS_STATE, BattleshipHalberd_Reactor_EventScript_SetBarriersAltState
+	releaseall
+	end
+
+BattleshipHalberd_Reactor_EventScript_SetBarriersAltState::
+	setflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
+	releaseall
+	end
+
+BattleshipHalberd_Reactor_EventScript_ClearBarriersAltState::
+	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
+	releaseall
+	end
+
+BattleshipHalberd_Reactor_EventScript_SwitchDoNothing::
+	releaseall
+	end
 `
 
 script BattleshipHalberd_Reactor_EventScript_Wheelie
@@ -72,49 +294,234 @@ text BattleshipHalberd_Reactor_Text_TrainerIntro
 
 text BattleshipHalberd_Reactor_Text_TrainerDefeated
 {
-    "Yow ow ow! Okay, fine, I'll tell you where
-    to go!"
+    "Yow ow ow! Okay, fine, I'll tell you how
+    to get past here!"
 }
 
 text BattleshipHalberd_Reactor_Text_TrainerPost
 {
     "We installed electric gates to protect
-    the reactor and power generator.
+    the reactor and its several generators.
 
-    Step on the floor tiles to flip the
-    gates and reach the power switches.
+    You see the lightning-bolt tiles on the
+    floor? The electric gates will change
+    positions when you step on them.
     
-    There's an elevator to the helm you can
-    turn on if you hit the far right switch.
-    You got that? Don't press any others!"
+    Find a way to the top-right generator,
+    and you can open up an elevator that
+    will lead you directly to the helm.
+    
+    You hear that? The top right generator!
+    Don't go activating any others, now!"
 }
 
-script BattleshipHalberd_Reactor_MiddleSwitch
+script BattleshipHalberd_Reactor_EventScript_SailorWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Kirby! How did you get here? If Lord
+            Meta Knight sees you, he'll\.
+            
+            \.huh? You're looking for a gift that
+            fell in the ocean around here?
+            
+            Oh! Yes! I hauled in something like that
+            earlier! It looked too nice to toss, so
+            I ended up giving it to the captain\.
+            
+            He might still have it, but\. well, good
+            luck getting it without being caught!")
+    closemessage
+    if(var(VAR_SAILOR_QUEST) == 1)
+    {
+        playse(SE_PIN)
+        applymovement(LOCALID_SAILOR_REACTOR, Common_Movement_QuestionMark)
+        waitmovement()
+        waitse()
+        msgbox("What's that? You have something else
+                you want to ask me about? If I know
+                a lumberjack by the resort?
+                
+                Wow! Yes, it's been a while!
+                They're wondering how I'm doing? Hm\.")
+        closemessage()
+        delay(90)
+        msgbox("Here. Can you do me a favor and deliver
+                this letter to them?")
+        giveitem_msg(BattleshipHalberd_Reactor_Text_ReceivedLetter, ITEM_LETTER, 1, MUS_RG_OBTAIN_KEY_ITEM)
+        msgbox("It's hard work here on the Halberd, so I
+                don't get a lot of free time.
+                
+                Even if I may not be able to see them,
+                I hope this will satisfy them!")
+        setvar(VAR_SAILOR_QUEST, 2)
+    }
+    release
+}
+
+script BattleshipHalberd_Reactor_EventScript_MiddleSwitch
 {
     lockall
-    msgbox("It's a power switch. Will you flip it?", MSGBOX_YESNO)
-    if (var(VAR_RESULT) == YES)
+    if(!flag(FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE))
     {
-        msgbox("You flipped the power switch!")
-        closemessage
-        setmetatile(9, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
-	    setmetatile(10, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
-	    setmetatile(9, 13, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
-	    setmetatile(10, 13, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
-	    special(DrawWholeMapView)
-	    playse(SE_BANG)
-        setvar(VAR_0x8004, 2)  // vertical pan
-	    setvar(VAR_0x8005, 0)  // horizontal pan
-	    setvar(VAR_0x8006, 2) // num shakes
-	    setvar(VAR_0x8007, 3)  // shake delay
-	    special(ShakeCamera)
-        waitse
-        delay(12)
-        msgbox("A locked path opened up!")
-        releaseall
+        msgbox("It's a power switch. Will you flip it?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES)
+        {
+            msgbox("You flipped the power switch!")
+            closemessage
+            playse(SE_BANG)
+            setvar(VAR_0x8004, 2)  // vertical pan
+            setvar(VAR_0x8005, 0)  // horizontal pan
+            setvar(VAR_0x8006, 2) // num shakes
+            setvar(VAR_0x8007, 3)  // shake delay
+            special(ShakeCamera)
+            setmetatile(9, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+            setmetatile(10, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+            setmetatile(9, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+            setmetatile(10, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+            special(DrawWholeMapView)
+            waitse
+            delay(12)
+            msgbox("A locked path opened up!")
+            setflag(FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE)
+            releaseall
+        }
+        else
+        {
+            releaseall
+        }
     }
     else
     {
+        msgbox("This switch has already been flipped.")
         releaseall
     }
+}
+
+script BattleshipHalberd_Reactor_EventScript_RemoveMiddleGate
+{
+    setmetatile(9, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+    setmetatile(10, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+    setmetatile(9, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+    setmetatile(10, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+    return
+}
+
+script BattleshipHalberd_Reactor_EventScript_LeftSwitch
+{
+    if(!flag(FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE))
+    {
+        lockall
+        msgbox("It's a power switch. Will you flip it?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES)
+        {
+            msgbox("You flipped the power switch!")
+            closemessage
+            playse(SE_BANG)
+            setvar(VAR_0x8004, 2)  // vertical pan
+            setvar(VAR_0x8005, 0)  // horizontal pan
+            setvar(VAR_0x8006, 2) // num shakes
+            setvar(VAR_0x8007, 3)  // shake delay
+            special(ShakeCamera)
+            setmetatile(2, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+            setmetatile(3, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+            setmetatile(2, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+            setmetatile(3, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+            special(DrawWholeMapView)
+            waitse
+            delay(12)
+            msgbox("A locked path opened up!")
+            setflag(FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE)
+            releaseall
+        }
+        else
+        {
+            releaseall
+        }
+    }
+    else
+    {
+        msgbox("This switch has already been flipped.")
+        releaseall
+    }
+}
+
+script BattleshipHalberd_Reactor_EventScript_RemoveLeftGate
+{
+    setmetatile(2, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+    setmetatile(3, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+    setmetatile(2, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+    setmetatile(3, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+    return
+}
+
+script BattleshipHalberd_Reactor_EventScript_RightSwitch
+{
+    if(!flag(FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE))
+    {
+        lockall
+        msgbox("It's a power switch. Will you flip it?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES)
+        {
+            msgbox("You flipped the power switch!")
+            closemessage
+            playse(SE_BANG)
+            setvar(VAR_0x8004, 2)  // vertical pan
+            setvar(VAR_0x8005, 0)  // horizontal pan
+            setvar(VAR_0x8006, 2) // num shakes
+            setvar(VAR_0x8007, 3)  // shake delay
+            special(ShakeCamera)
+            setmetatile(16, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+            setmetatile(17, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+            setmetatile(16, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+            setmetatile(17, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+            special(DrawWholeMapView)
+            waitse
+            delay(12)
+            msgbox("A locked path opened up!")
+            setflag(FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE)
+            releaseall
+        }
+        else
+        {
+            releaseall
+        }
+    }
+    else
+    {
+        msgbox("This switch has already been flipped.")
+        releaseall
+    }
+}
+
+script BattleshipHalberd_Reactor_EventScript_RemoveRightGate
+{
+    setmetatile(16, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+    setmetatile(17, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+    setmetatile(16, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE)
+    setmetatile(17, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE)
+    return
+}
+
+script BattleshipHalberd_Reactor_EventScript_SetElevatorDestination
+{
+    getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+    if(var(VAR_TEMP_2) == 2 || var(VAR_TEMP_2) == 3)
+    {
+        setvar(VAR_ELEVATOR_DESTINATION, 1)
+    }
+    elif(var(VAR_TEMP_2) == 9 || var(VAR_TEMP_2) == 10)
+    {
+        setvar(VAR_ELEVATOR_DESTINATION, 2)
+    }
+    elif(var(VAR_TEMP_2) == 16 || var(VAR_TEMP_2) == 17)
+    {
+        setvar(VAR_ELEVATOR_DESTINATION, 3)
+    }
+    return
+}
+
+text BattleshipHalberd_Reactor_Text_ReceivedLetter
+{
+    "Obtained the {COLOR BLUE}Letter{COLOR DARK_GRAY}!"
 }

@@ -665,10 +665,11 @@ static void LoadLinkPartnerObjectEventSpritePalette(u16 graphicsId, u8 localEven
 
 static const struct UCoords8 sMauvilleGymSwitchCoords[] =
 {
-    { 0 + MAP_OFFSET, 15 + MAP_OFFSET},
-    { 4 + MAP_OFFSET, 12 + MAP_OFFSET},
-    { 3 + MAP_OFFSET,  9 + MAP_OFFSET},
-    { 8 + MAP_OFFSET,  9 + MAP_OFFSET}
+    { 10 + MAP_OFFSET, 26 + MAP_OFFSET},
+    { 6 + MAP_OFFSET, 30 + MAP_OFFSET},
+    { 10 + MAP_OFFSET,  20 + MAP_OFFSET},
+    { 13 + MAP_OFFSET,  17 + MAP_OFFSET},
+    { 2 + MAP_OFFSET,  18 + MAP_OFFSET}
 };
 
 // Presses the stepped-on switch and raises the rest
@@ -689,9 +690,9 @@ void MauvilleGymSetDefaultBarriers(void)
 {
     int x, y;
     // All switches/barriers are within these coord ranges
-    for (y = 5 + MAP_OFFSET; y < 17 + MAP_OFFSET; y++)
+    for (y = 14 + MAP_OFFSET; y < 32 + MAP_OFFSET; y++)
     {
-        for (x = 0 + MAP_OFFSET; x < 9 + MAP_OFFSET; x++)
+        for (x = 0 + MAP_OFFSET; x < 20 + MAP_OFFSET; x++)
         {
             switch (MapGridGetMetatileIdAt(x, y))
             {

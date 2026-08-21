@@ -204,548 +204,548 @@ WaddleDeeTown_Lab_EventScript_WiseGateCheck_7:
 
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess::
-# 263 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 273 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_0
-# 267 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 277 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem_msg WaddleDeeTown_Lab_ReceivedHelperBoxLink, ITEM_POKEMON_BOX_LINK, 1, MUS_RG_OBTAIN_KEY_ITEM
-# 268 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 278 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_TM02
-# 269 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 279 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_STARDUST
-# 270 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 280 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_POKE_BALL, 10
-# 271 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	setflag FLAG_BINDER_GATE_01
-# 272 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_1
 # 281 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	closemessage
+	setflag FLAG_BINDER_GATE_01
 # 282 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_1
+# 291 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	closemessage
+# 292 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	applymovement LOCALID_LAB_WISE, WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Movement_0
-# 283 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 293 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	waitmovement
-# 284 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 294 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_2
-# 315 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 325 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	closemessage
-# 316 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 326 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	turnobject LOCALID_PLAYER, DIR_EAST
-# 317 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 327 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	turnobject LOCALID_LAB_BWD, DIR_WEST
-# 318 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 328 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	delay 30
-# 319 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 329 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_3
-# 330 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 340 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	closemessage
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	applymovement LOCALID_LAB_BWD, WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Movement_1
-# 332 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 342 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	waitmovement
-# 333 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 343 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	removeobject LOCALID_LAB_BWD
-# 334 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 344 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	setvar VAR_WADDLE_DEE_TOWN_STATE, 5
-# 335 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 345 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	setvar VAR_WADDLE_DEE_TOWN_EAST_GATE, 1
 	return
 
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckFailure::
-# 340 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 350 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_WiseGateCheckFailure_Text_0
-# 349 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 359 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry::
-# 354 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 364 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 355 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 365 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	specialvar VAR_RESULT, GetPlayerFacingDirection
-# 356 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 366 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_RESULT, DIR_NORTH
 	goto_if_eq WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_2
-# 361 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 371 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_RESULT, DIR_WEST
 	goto_if_eq WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_3
 WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_1:
-# 366 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 376 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	waitmovement
-# 367 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 377 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	delay 15
-# 368 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 378 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	applymovement LOCALID_LAB_WISE, WaddleDeeTown_Lab_EventScript_WiseGateCheck_Movement_2
-# 369 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 379 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	waitmovement
-# 370 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 380 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_Text_0
-# 372 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 382 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_EvaluateCards
-# 373 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 383 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 6
 	goto_if_ge WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_6
-# 377 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 387 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 6
 	goto_if_lt WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_7
 	return
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_2:
-# 358 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 368 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	turnobject LOCALID_LAB_BWD, DIR_NORTH
-# 359 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 369 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeTown_Lab_EventScript_WiseGateCheck_Movement_0
 	goto WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_1
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_3:
-# 363 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 373 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	turnobject LOCALID_LAB_BWD, DIR_NORTH
-# 364 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 374 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeTown_Lab_EventScript_WiseGateCheck_Movement_1
 	goto WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_1
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_6:
-# 375 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 385 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess
 	return
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_7:
-# 379 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 389 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto WaddleDeeTown_Lab_EventScript_WiseGateCheckFailure
 	return
 
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating::
-# 385 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 395 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lock
-# 386 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 396 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	faceplayer
-# 387 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 397 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_InfoCardRating_Text_0, MSGBOX_YESNO
-# 389 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 399 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne WaddleDeeTown_Lab_EventScript_InfoCardRating_2
-# 433 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 443 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_InfoCardRating_Text_2
 WaddleDeeTown_Lab_EventScript_InfoCardRating_1:
-# 436 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 446 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_2:
-# 391 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 401 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_EvaluateCards
-# 392 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 402 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_InfoCardRating_Text_1
-# 394 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 404 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 15
 	goto_if_ge WaddleDeeTown_Lab_EventScript_InfoCardRating_7
 WaddleDeeTown_Lab_EventScript_InfoCardRating_5:
-# 398 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 408 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 30
 	goto_if_ge WaddleDeeTown_Lab_EventScript_InfoCardRating_12
 WaddleDeeTown_Lab_EventScript_InfoCardRating_10:
-# 402 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 412 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 50
 	goto_if_ge WaddleDeeTown_Lab_EventScript_InfoCardRating_17
 WaddleDeeTown_Lab_EventScript_InfoCardRating_15:
-# 406 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 416 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 75
 	goto_if_ge WaddleDeeTown_Lab_EventScript_InfoCardRating_22
 WaddleDeeTown_Lab_EventScript_InfoCardRating_20:
-# 410 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 420 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 100
 	goto_if_ge WaddleDeeTown_Lab_EventScript_InfoCardRating_27
 WaddleDeeTown_Lab_EventScript_InfoCardRating_25:
-# 414 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 424 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 150
 	goto_if_ge WaddleDeeTown_Lab_EventScript_InfoCardRating_32
 WaddleDeeTown_Lab_EventScript_InfoCardRating_30:
-# 418 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 25, WaddleDeeTown_Lab_WiseAdvice01
-# 419 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 50, WaddleDeeTown_Lab_WiseAdvice02
-# 420 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 75, WaddleDeeTown_Lab_WiseAdvice03
-# 421 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 100, WaddleDeeTown_Lab_WiseAdvice04
-# 422 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 125, WaddleDeeTown_Lab_WiseAdvice05
-# 423 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 150, WaddleDeeTown_Lab_WiseAdvice06
-# 424 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 175, WaddleDeeTown_Lab_WiseAdvice07
-# 425 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 200, WaddleDeeTown_Lab_WiseAdvice08
-# 426 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 225, WaddleDeeTown_Lab_WiseAdvice09
-# 427 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 250, WaddleDeeTown_Lab_WiseAdvice10
 # 428 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	goto_if_le VAR_0x8009, 275, WaddleDeeTown_Lab_WiseAdvice11
+	goto_if_le VAR_0x8009, 25, WaddleDeeTown_Lab_WiseAdvice01
 # 429 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 50, WaddleDeeTown_Lab_WiseAdvice02
+# 430 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 75, WaddleDeeTown_Lab_WiseAdvice03
+# 431 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 100, WaddleDeeTown_Lab_WiseAdvice04
+# 432 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 125, WaddleDeeTown_Lab_WiseAdvice05
+# 433 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 150, WaddleDeeTown_Lab_WiseAdvice06
+# 434 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 175, WaddleDeeTown_Lab_WiseAdvice07
+# 435 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 200, WaddleDeeTown_Lab_WiseAdvice08
+# 436 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 225, WaddleDeeTown_Lab_WiseAdvice09
+# 437 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 250, WaddleDeeTown_Lab_WiseAdvice10
+# 438 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_le VAR_0x8009, 275, WaddleDeeTown_Lab_WiseAdvice11
+# 439 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_le VAR_0x8009, 299, WaddleDeeTown_Lab_WiseAdvice11
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_1
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_6:
-# 396 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 406 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck2
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_5
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_7:
-# 394 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 404 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_02, WaddleDeeTown_Lab_EventScript_InfoCardRating_6
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_5
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_11:
-# 400 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 410 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck3
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_10
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_12:
-# 398 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 408 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_03, WaddleDeeTown_Lab_EventScript_InfoCardRating_11
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_10
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_16:
-# 404 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 414 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck4
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_15
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_17:
-# 402 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 412 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_04, WaddleDeeTown_Lab_EventScript_InfoCardRating_16
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_15
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_21:
-# 408 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 418 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck5
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_20
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_22:
-# 406 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 416 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_05, WaddleDeeTown_Lab_EventScript_InfoCardRating_21
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_20
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_26:
-# 412 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 422 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck6
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_25
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_27:
-# 410 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 420 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_06, WaddleDeeTown_Lab_EventScript_InfoCardRating_26
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_25
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_31:
-# 416 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 426 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck7
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_30
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_32:
-# 414 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 424 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_07, WaddleDeeTown_Lab_EventScript_InfoCardRating_31
 	goto WaddleDeeTown_Lab_EventScript_InfoCardRating_30
 
 
 WaddleDeeTown_Lab_WiseAdvice01::
-# 441 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 451 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice01_Text_0
-# 446 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 456 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_WiseAdvice02::
-# 451 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 461 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice02_Text_0
-# 457 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	release
-	return
-
-
-WaddleDeeTown_Lab_WiseAdvice03::
-# 462 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_WiseAdvice03_Text_0
 # 467 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
-WaddleDeeTown_Lab_WiseAdvice04::
+WaddleDeeTown_Lab_WiseAdvice03::
 # 472 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_WiseAdvice03_Text_0
+# 477 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_WiseAdvice04::
+# 482 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice04_Text_0
-# 480 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 490 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_WiseAdvice05::
-# 485 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 495 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice05_Text_0
-# 493 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 503 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_WiseAdvice06::
-# 498 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 508 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice06_Text_0
-# 507 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	release
-	return
-
-
-WaddleDeeTown_Lab_WiseAdvice07::
-# 512 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_WiseAdvice07_Text_0
 # 517 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
-WaddleDeeTown_Lab_WiseAdvice08::
+WaddleDeeTown_Lab_WiseAdvice07::
 # 522 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_WiseAdvice07_Text_0
+# 527 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_WiseAdvice08::
+# 532 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice08_Text_0
-# 531 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 541 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_WiseAdvice09::
-# 536 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 546 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice09_Text_0
-# 544 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 554 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_WiseAdvice10::
-# 549 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 559 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice10_Text_0
-# 561 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 571 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_WiseAdvice11::
-# 566 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_WiseAdvice11_Text_0
 # 576 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_WiseAdvice11_Text_0
+# 586 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_WiseAdvice12::
-# 581 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 591 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_WiseAdvice12_Text_0
-# 589 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 599 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_BinderCheck2::
-# 594 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 604 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck2_Text_0
-# 599 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 609 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem_msg WaddleDeeTown_Lab_ReceivedExpShare, ITEM_EXP_SHARE, 1, MUS_RG_OBTAIN_KEY_ITEM
-# 600 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 610 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_TM09
-# 601 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 611 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_BIG_PEARL
-# 602 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	giveitem ITEM_DIVE_BALL, 10
-# 603 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_BinderCheck2_Text_1
 # 612 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	setflag FLAG_BINDER_GATE_02
+	giveitem ITEM_DIVE_BALL, 10
 # 613 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_BinderCheck2_Text_1
+# 622 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	setflag FLAG_BINDER_GATE_02
+# 623 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 30
 	goto_if_ge WaddleDeeTown_Lab_BinderCheck2_2
 	return
 
 WaddleDeeTown_Lab_BinderCheck2_1:
-# 615 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 625 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck3
 	return
 
 WaddleDeeTown_Lab_BinderCheck2_2:
-# 613 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 623 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_03, WaddleDeeTown_Lab_BinderCheck2_1
 	return
 
 
 WaddleDeeTown_Lab_BinderCheck3::
-# 621 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 631 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck3_Text_0
-# 626 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	giveitem ITEM_LUCKY_EGG
-# 627 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 636 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	giveitem_msg WaddleDeeTown_Lab_ReceivedDowsingMachine, ITEM_DOWSING_MACHINE, 1, MUS_RG_OBTAIN_KEY_ITEM
+# 637 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_TM12
-# 628 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 638 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_NUGGET
-# 629 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	giveitem ITEM_GREAT_BALL, 10
-# 630 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_BinderCheck3_Text_1
 # 639 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	setflag FLAG_BINDER_GATE_03
+	giveitem ITEM_GREAT_BALL, 10
 # 640 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_BinderCheck3_Text_1
+# 649 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	setflag FLAG_BINDER_GATE_03
+# 650 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 50
 	goto_if_ge WaddleDeeTown_Lab_BinderCheck3_2
 	return
 
 WaddleDeeTown_Lab_BinderCheck3_1:
-# 642 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 652 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck4
 	return
 
 WaddleDeeTown_Lab_BinderCheck3_2:
-# 640 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 650 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_04, WaddleDeeTown_Lab_BinderCheck3_1
 	return
 
 
 WaddleDeeTown_Lab_BinderCheck4::
-# 648 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 658 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck4_Text_0
-# 653 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 663 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem_msg WaddleDeeTown_Lab_ReceivedOvalCharm, ITEM_OVAL_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM
-# 654 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 664 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_TM01
-# 655 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 665 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_STAR_PIECE
-# 656 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 666 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_QUICK_BALL, 10
-# 657 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 667 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck4_Text_1
-# 669 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 679 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	setflag FLAG_BINDER_GATE_04
-# 670 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 680 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 75
 	goto_if_ge WaddleDeeTown_Lab_BinderCheck4_2
 	return
 
 WaddleDeeTown_Lab_BinderCheck4_1:
-# 672 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 682 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck5
 	return
 
 WaddleDeeTown_Lab_BinderCheck4_2:
-# 670 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 680 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_05, WaddleDeeTown_Lab_BinderCheck4_1
 	return
 
 
 WaddleDeeTown_Lab_BinderCheck5::
-# 678 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 688 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck5_Text_0
-# 683 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 693 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem_msg WaddleDeeTown_Lab_ReceivedCatchingCharm, ITEM_CATCHING_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM
-# 684 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 694 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_TM34
-# 685 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 695 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_PEARL_STRING
-# 686 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 696 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_ULTRA_BALL, 10
-# 687 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 697 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck5_Text_1
-# 699 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 709 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	setflag FLAG_BINDER_GATE_05
-# 700 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 710 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 100
 	goto_if_ge WaddleDeeTown_Lab_BinderCheck5_2
 	return
 
 WaddleDeeTown_Lab_BinderCheck5_1:
-# 702 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 712 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck6
 	return
 
 WaddleDeeTown_Lab_BinderCheck5_2:
-# 700 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 710 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_06, WaddleDeeTown_Lab_BinderCheck5_1
 	return
 
 
 WaddleDeeTown_Lab_BinderCheck6::
-# 708 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 718 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck6_Text_0
-# 713 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	giveitem_msg WaddleDeeTown_Lab_ReceivedShinyCharm, ITEM_SHINY_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM
-# 714 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 723 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	giveitem_msg WaddleDeeTown_Lab_ReceivedMachBike, ITEM_MACH_BIKE, 1, MUS_RG_OBTAIN_KEY_ITEM
+# 724 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_TM10
-# 715 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 725 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_COMET_SHARD
-# 716 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 726 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_DUSK_BALL, 10
-# 717 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 727 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck6_Text_1
-# 729 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 740 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	setflag FLAG_BINDER_GATE_06
-# 730 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 741 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	compare VAR_0x8009, 150
 	goto_if_ge WaddleDeeTown_Lab_BinderCheck6_2
 	return
 
 WaddleDeeTown_Lab_BinderCheck6_1:
-# 732 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 743 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	call WaddleDeeTown_Lab_BinderCheck7
 	return
 
 WaddleDeeTown_Lab_BinderCheck6_2:
-# 730 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 741 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto_if_unset FLAG_BINDER_GATE_07, WaddleDeeTown_Lab_BinderCheck6_1
 	return
 
 
 WaddleDeeTown_Lab_BinderCheck7::
-# 738 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 749 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck7_Text_0
-# 743 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 754 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem_msg WaddleDeeTown_Lab_ReceivedExpCharm, ITEM_EXP_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM
-# 744 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 755 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_TM06
-# 745 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 756 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_BIG_NUGGET
-# 746 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 757 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	giveitem ITEM_MASTER_BALL
-# 747 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 758 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_BinderCheck7_Text_1
-# 763 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 774 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	setflag FLAG_BINDER_GATE_07
 	return
 
 
 WaddleDeeTown_Lab_EvaluateCards::
-# 768 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 779 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	setvar VAR_0x8004, 0
-# 769 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 780 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	specialvar VAR_RESULT, ScriptGetPokedexInfo
-# 770 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 781 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	copyvar VAR_0x8008, VAR_0x8005
-# 771 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 782 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	copyvar VAR_0x8009, VAR_0x8006
-# 772 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 783 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	copyvar VAR_0x800A, VAR_RESULT
-# 773 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 784 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	buffernumberstring STR_VAR_2, VAR_0x8009
 	return
 
 
 WaddleDeeTown_Lab_EventScript_TurnLeft::
-# 778 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 789 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	turnobject LOCALID_LAB_RECEPTIONIST_LEFT, DIR_EAST
-# 779 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 790 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto WaddleDeeTown_Lab_EventScript_LeftReceptionist
 	return
 
 
 WaddleDeeTown_Lab_EventScript_TurnRight::
-# 784 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 795 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	turnobject LOCALID_LAB_RECEPTIONIST_RIGHT, DIR_WEST
-# 785 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 796 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	goto WaddleDeeTown_Lab_EventScript_RightReceptionist
 	return
 
@@ -776,39 +776,39 @@ WaddleDeeTown_Lab_EventScript_WiseGateCheck_Movement_2:
 	walk_in_place_down
 	step_end
 
-# 282 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 292 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Movement_0:
-# 282 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 292 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_in_place_down
-# 282 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 292 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Movement_1:
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_right
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_right
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_right
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_right
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_right
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_down
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_down
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_down
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_down
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_down
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_down
-# 331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 341 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	walk_down
 	step_end
 
@@ -936,13 +936,13 @@ WaddleDeeTown_Lab_EventScript_WiseGateCheck_Text_0:
 	.string "Kirby, have you recruited {COLOR RED}6 Helpers{COLOR DARK_GRAY}?$"
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_0:
-# 263 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 273 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Excellent! You've already recruited\n"
 	.string "{STR_VAR_2} Helpers so far!\p"
 	.string "As promised, here's your care package!$"
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_1:
-# 272 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 282 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}A rather generous selection, is it not?\n"
 	.string "The Helper Box Link is especially handy.\p"
 	.string "Use it, and you can access your Helper\n"
@@ -952,7 +952,7 @@ WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_1:
 	.string "not that knowledge isn't reward enough!$"
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_2:
-# 284 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 294 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}And as for you, Bandana Waddle Dee…\n"
 	.string "I've told the king that I would bring\l"
 	.string "you on as a personal assistant.\p"
@@ -977,7 +977,7 @@ WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_2:
 	.string "and I can keep up with him just fine!$"
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_3:
-# 319 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 329 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}First things first, though.\n"
 	.string "My team and I need to visit the Arena!\p"
 	.string "Kirby, why don't you get a head start\n"
@@ -988,7 +988,7 @@ WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess_Text_3:
 	.string "soon enough!$"
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckFailure_Text_0:
-# 340 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 350 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Unfortunately, it seems you have only\n"
 	.string "recruited {STR_VAR_2} Helpers…\p"
 	.string "Waddle Dee Town's park should have\n"
@@ -998,34 +998,34 @@ WaddleDeeTown_Lab_EventScript_WiseGateCheckFailure_Text_0:
 	.string "you your care package once you do.$"
 
 WaddleDeeTown_Lab_EventScript_WiseGateCheckRetry_Text_0:
-# 370 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 380 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Welcome back, Kirby.\n"
 	.string "Have you recruited {COLOR RED}6 Helpers{COLOR DARK_GRAY}?$"
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_Text_0:
-# 387 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 397 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Good to see you again, Kirby! Do you\n"
 	.string "wish to present your Info Card Binder?$"
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_Text_1:
-# 392 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 402 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Let's see... you've recruited\n"
 	.string "{STR_VAR_2} Helpers thus far.$"
 
 WaddleDeeTown_Lab_EventScript_InfoCardRating_Text_2:
-# 433 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 443 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Still working hard on it, hm?\n"
 	.string "Best of luck to you then!$"
 
 WaddleDeeTown_Lab_WiseAdvice01_Text_0:
-# 441 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 451 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}You're still in the early stages of\n"
 	.string "filling out your Info Card Binder.\p"
 	.string "It may seem daunting, but don't fret!\n"
 	.string "We believe in you, Kirby!$"
 
 WaddleDeeTown_Lab_WiseAdvice02_Text_0:
-# 451 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 461 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Good, good. You're making steady\n"
 	.string "progress on your Info Cards.\p"
 	.string "If you spot a Helper you haven't yet\n"
@@ -1033,14 +1033,14 @@ WaddleDeeTown_Lab_WiseAdvice02_Text_0:
 	.string "you to their potential locations!$"
 
 WaddleDeeTown_Lab_WiseAdvice03_Text_0:
-# 462 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 472 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Have you looked in places other than\n"
 	.string "tall grass for Helpers, Kirby?\p"
 	.string "Many fishers in town have reported\n"
 	.string "hooking up Helpers, for example.$"
 
 WaddleDeeTown_Lab_WiseAdvice04_Text_0:
-# 472 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 482 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Recently, I received a new report about\n"
 	.string "the locations of certain Helpers.\p"
 	.string "Apparently some hide within or disguise\n"
@@ -1049,7 +1049,7 @@ WaddleDeeTown_Lab_WiseAdvice04_Text_0:
 	.string "investigating those?$"
 
 WaddleDeeTown_Lab_WiseAdvice05_Text_0:
-# 485 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 495 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}If you need new leads, retracing your\n"
 	.string "steps may be a viable solution.\p"
 	.string "You've travelled quite far now, and\n"
@@ -1058,7 +1058,7 @@ WaddleDeeTown_Lab_WiseAdvice05_Text_0:
 	.string "may uncover new paths for you!$"
 
 WaddleDeeTown_Lab_WiseAdvice06_Text_0:
-# 498 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 508 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}By any chance, have you heard of the\n"
 	.string "Merry Magocade?\p"
 	.string "Games aren't quite my style, but I've\n"
@@ -1068,14 +1068,14 @@ WaddleDeeTown_Lab_WiseAdvice06_Text_0:
 	.string "visit, is there?$"
 
 WaddleDeeTown_Lab_WiseAdvice07_Text_0:
-# 512 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 522 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}What a major milestone! You're\n"
 	.string "closer to the end than the beginning.\p"
 	.string "Since you've come this far, I hope you'll\n"
 	.string "see it through to the finish line!$"
 
 WaddleDeeTown_Lab_WiseAdvice08_Text_0:
-# 522 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 532 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}If you haven't hit it yet, there may\n"
 	.string "come a time where you've recruited\l"
 	.string "most wild Helpers already.\p"
@@ -1085,7 +1085,7 @@ WaddleDeeTown_Lab_WiseAdvice08_Text_0:
 	.string "so give it a look if you're stumped!$"
 
 WaddleDeeTown_Lab_WiseAdvice09_Text_0:
-# 536 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 546 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Stronger wild Helpers are likely to\n"
 	.string "have already evolved at least once.\p"
 	.string "To register their unevolved forms,\n"
@@ -1094,7 +1094,7 @@ WaddleDeeTown_Lab_WiseAdvice09_Text_0:
 	.string "Day Care, where eggs are oft found.$"
 
 WaddleDeeTown_Lab_WiseAdvice10_Text_0:
-# 549 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 559 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}I've heard rumors of especially strong\n"
 	.string "wild Helpers in remote locations…\p"
 	.string "We've been referring to them as\n"
@@ -1106,7 +1106,7 @@ WaddleDeeTown_Lab_WiseAdvice10_Text_0:
 	.string "tracing legendary finds like that…$"
 
 WaddleDeeTown_Lab_WiseAdvice11_Text_0:
-# 566 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 576 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}This might come across as a rather\n"
 	.string "silly point of advice, but…\l"
 	.string "remember you're not alone, Kirby.\p"
@@ -1117,7 +1117,7 @@ WaddleDeeTown_Lab_WiseAdvice11_Text_0:
 	.string "Friendship is important!$"
 
 WaddleDeeTown_Lab_WiseAdvice12_Text_0:
-# 581 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 591 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}This is it, Kirby. You're in the\n"
 	.string "homestretch now!\p"
 	.string "I'm optimistic - nay, COMPELTELY\n"
@@ -1126,14 +1126,14 @@ WaddleDeeTown_Lab_WiseAdvice12_Text_0:
 	.string "Info Card Binder and make me proud!$"
 
 WaddleDeeTown_Lab_BinderCheck2_Text_0:
-# 594 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 604 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Wonderful! You've already registered\n"
 	.string "15 Helpers!\p"
 	.string "As proof of your hard work, please\n"
 	.string "accept this care package from me!$"
 
 WaddleDeeTown_Lab_BinderCheck2_Text_1:
-# 603 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 613 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}It includes a TM, new Hearts, some\n"
 	.string "valuables, and most importantly:\l"
 	.string "the Experience Share!\p"
@@ -1143,31 +1143,31 @@ WaddleDeeTown_Lab_BinderCheck2_Text_1:
 	.string "Info Card Binder a bit easier!$"
 
 WaddleDeeTown_Lab_BinderCheck3_Text_0:
-# 621 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 631 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Stupendous! You've already registered\n"
 	.string "30 Helpers!\p"
 	.string "As proof of your hard work, please\n"
 	.string "accept this care package from me!$"
 
 WaddleDeeTown_Lab_BinderCheck3_Text_1:
-# 630 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 640 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}It includes a TM, new Hearts, some\n"
 	.string "valuables, and most importantly:\l"
-	.string "the Lucky Egg!\p"
-	.string "Hand this item to a Helper, and they\n"
-	.string "shall accrue extra experience.\p"
-	.string "Combined with the Exp. Share, you can\n"
-	.string "level up Helpers even faster now!$"
+	.string "the Dowsing Machine!\p"
+	.string "You can use this tool to help locate\n"
+	.string "items invisible to the naked eye.\p"
+	.string "Who knows what kind of helpful items\n"
+	.string "you'll be able to discover now?$"
 
 WaddleDeeTown_Lab_BinderCheck4_Text_0:
-# 648 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 658 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Incredible! You've already registered\n"
 	.string "50 Helpers!\p"
 	.string "As proof of your hard work, please\n"
 	.string "accept this care package from me!$"
 
 WaddleDeeTown_Lab_BinderCheck4_Text_1:
-# 657 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 667 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}It includes a TM, new Hearts, some\n"
 	.string "valuables, and most importantly:\l"
 	.string "the Oval Charm!\p"
@@ -1179,14 +1179,14 @@ WaddleDeeTown_Lab_BinderCheck4_Text_1:
 	.string "that should be your destination.$"
 
 WaddleDeeTown_Lab_BinderCheck5_Text_0:
-# 678 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 688 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Marvelous! You've already registered\n"
 	.string "75 Helpers!\p"
 	.string "As proof of your hard work, please\n"
 	.string "accept this care package from me!$"
 
 WaddleDeeTown_Lab_BinderCheck5_Text_1:
-# 687 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 697 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}It includes a TM, new Hearts, some\n"
 	.string "valuables, and most importantly:\l"
 	.string "the Catching Charm!\p"
@@ -1198,33 +1198,34 @@ WaddleDeeTown_Lab_BinderCheck5_Text_1:
 	.string "especially hard-to-nab Helpers!$"
 
 WaddleDeeTown_Lab_BinderCheck6_Text_0:
-# 708 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 718 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Phenomenal! You've already registered\n"
 	.string "100 Helpers!\p"
 	.string "As proof of your hard work, please\n"
 	.string "accept this care package from me!$"
 
 WaddleDeeTown_Lab_BinderCheck6_Text_1:
-# 717 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 727 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}It includes a TM, new Hearts, some\n"
 	.string "valuables, and most importantly:\l"
-	.string "the Shiny Charm!\p"
-	.string "There have been scarce reports of\n"
-	.string "differently-colored Helpers.\p"
-	.string "We call them Shiny Helpers due to\n"
-	.string "their brilliant sheen.\p"
-	.string "May the Shiny Charm grant you the\n"
-	.string "luck to find one for yourself!$"
+	.string "the Turbo Warp Star!\p"
+	.string "This upgraded Warp Star model can reach\n"
+	.string "even higher top speeds than before.\p"
+	.string "If you've noticed impassable slopes on\n"
+	.string "your journey before, you should have\l"
+	.string "no trouble clearing them now.\p"
+	.string "Imagine what kinds of Helpers await\n"
+	.string "beyond them? Go on and find out!$"
 
 WaddleDeeTown_Lab_BinderCheck7_Text_0:
-# 738 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 749 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}Magnificent! You've already registered\n"
 	.string "150 Helpers!\p"
 	.string "As proof of your hard work, please\n"
 	.string "accept this care package from me!$"
 
 WaddleDeeTown_Lab_BinderCheck7_Text_1:
-# 747 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 758 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "{SPEAKER NAME_WISE}It includes a TM, a new Heart, some\n"
 	.string "valuables, and most importantly:\l"
 	.string "the Experience Charm!\p"
@@ -1246,18 +1247,26 @@ WaddleDeeTown_Lab_ReceivedExpShare::
 # 236 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Obtained the {COLOR BLUE}Exp. Share{COLOR DARK_GRAY}!$"
 
-WaddleDeeTown_Lab_ReceivedOvalCharm::
+WaddleDeeTown_Lab_ReceivedDowsingMachine::
 # 241 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Obtained the {COLOR BLUE}Dowsing Machine{COLOR DARK_GRAY}!$"
+
+WaddleDeeTown_Lab_ReceivedOvalCharm::
+# 246 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Obtained the {COLOR BLUE}Oval Charm{COLOR DARK_GRAY}!$"
 
 WaddleDeeTown_Lab_ReceivedCatchingCharm::
-# 246 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 251 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Obtained the {COLOR BLUE}Catching Charm{COLOR DARK_GRAY}!$"
 
+WaddleDeeTown_Lab_ReceivedMachBike::
+# 256 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Obtained the {COLOR BLUE}Turbo Warp Star{COLOR DARK_GRAY}!$"
+
 WaddleDeeTown_Lab_ReceivedShinyCharm::
-# 251 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 261 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Obtained the {COLOR BLUE}Shiny Charm{COLOR DARK_GRAY}!$"
 
 WaddleDeeTown_Lab_ReceivedExpCharm::
-# 256 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 266 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Obtained the {COLOR BLUE}Exp. Charm{COLOR DARK_GRAY}!$"

@@ -238,6 +238,11 @@ text WaddleDeeTown_Lab_ReceivedExpShare
     "Obtained the {COLOR BLUE}Exp. Share{COLOR DARK_GRAY}!"
 }
 
+text WaddleDeeTown_Lab_ReceivedDowsingMachine
+{
+    "Obtained the {COLOR BLUE}Dowsing Machine{COLOR DARK_GRAY}!"
+}
+
 text WaddleDeeTown_Lab_ReceivedOvalCharm
 {
     "Obtained the {COLOR BLUE}Oval Charm{COLOR DARK_GRAY}!"
@@ -246,6 +251,11 @@ text WaddleDeeTown_Lab_ReceivedOvalCharm
 text WaddleDeeTown_Lab_ReceivedCatchingCharm
 {
     "Obtained the {COLOR BLUE}Catching Charm{COLOR DARK_GRAY}!"
+}
+
+text WaddleDeeTown_Lab_ReceivedMachBike
+{
+    "Obtained the {COLOR BLUE}Turbo Warp Star{COLOR DARK_GRAY}!"
 }
 
 text WaddleDeeTown_Lab_ReceivedShinyCharm
@@ -623,19 +633,19 @@ script WaddleDeeTown_Lab_BinderCheck3
             
             As proof of your hard work, please
             accept this care package from me!")
-    giveitem(ITEM_LUCKY_EGG)
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedDowsingMachine, ITEM_DOWSING_MACHINE, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM12)
     giveitem(ITEM_NUGGET)
     giveitem(ITEM_GREAT_BALL, 10)
     msgbox("{SPEAKER NAME_WISE}It includes a TM, new Hearts, some
             valuables, and most importantly:
-            the Lucky Egg!
+            the Dowsing Machine!
             
-            Hand this item to a Helper, and they
-            shall accrue extra experience.
+            You can use this tool to help locate
+            items invisible to the naked eye.
             
-            Combined with the Exp. Share, you can
-            level up Helpers even faster now!")
+            Who knows what kind of helpful items
+            you'll be able to discover now?")
     setflag(FLAG_BINDER_GATE_03)
     if(var(VAR_0x8009) >= 50 && !flag(FLAG_BINDER_GATE_04))
         {
@@ -710,22 +720,23 @@ script WaddleDeeTown_Lab_BinderCheck6
             
             As proof of your hard work, please
             accept this care package from me!")
-    giveitem_msg(WaddleDeeTown_Lab_ReceivedShinyCharm, ITEM_SHINY_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedMachBike, ITEM_MACH_BIKE, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM10)
     giveitem(ITEM_COMET_SHARD)
     giveitem(ITEM_DUSK_BALL, 10)
     msgbox("{SPEAKER NAME_WISE}It includes a TM, new Hearts, some
             valuables, and most importantly:
-            the Shiny Charm!
+            the Turbo Warp Star!
             
-            There have been scarce reports of
-            differently-colored Helpers.
+            This upgraded Warp Star model can reach
+            even higher top speeds than before.
             
-            We call them Shiny Helpers due to
-            their brilliant sheen.
+            If you've noticed impassable slopes on
+            your journey before, you should have
+            no trouble clearing them now.
             
-            May the Shiny Charm grant you the
-            luck to find one for yourself!")
+            Imagine what kinds of Helpers await
+            beyond them? Go on and find out!")
     setflag(FLAG_BINDER_GATE_06)
     if(var(VAR_0x8009) >= 150 && !flag(FLAG_BINDER_GATE_07))
         {
