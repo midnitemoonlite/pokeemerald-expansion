@@ -549,297 +549,297 @@ BattleshipHalberd_Reactor_EventScript_SailorWaddleDee::
 	faceplayer
 # 322 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	msgbox BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_Text_0
-# 334 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	closemessage
 # 335 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	closemessage
+# 336 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_SAILOR_QUEST, 1
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_2
 BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_1:
-# 359 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 360 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	release
 	return
 
 BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_2:
-# 337 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	playse SE_PIN
 # 338 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	applymovement LOCALID_SAILOR_REACTOR, Common_Movement_QuestionMark
+	playse SE_PIN
 # 339 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	waitmovement
+	applymovement LOCALID_SAILOR_REACTOR, Common_Movement_QuestionMark
 # 340 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	waitse
+	waitmovement
 # 341 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	waitse
+# 342 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	msgbox BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_Text_1
-# 347 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	closemessage
 # 348 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	delay 90
+	closemessage
 # 349 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	delay 90
+# 350 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	msgbox BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_Text_2
-# 351 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	giveitem_msg BattleshipHalberd_Reactor_Text_ReceivedLetter, ITEM_LETTER, 1, MUS_RG_OBTAIN_KEY_ITEM
 # 352 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	giveitem_msg BattleshipHalberd_Reactor_Text_ReceivedLetter, ITEM_LETTER, 1, MUS_RG_OBTAIN_KEY_ITEM
+# 353 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	msgbox BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_Text_3
-# 357 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 358 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	setvar VAR_SAILOR_QUEST, 2
 	goto BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_1
 
 
 BattleshipHalberd_Reactor_EventScript_MiddleSwitch::
-# 364 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	lockall
 # 365 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	lockall
+# 366 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	goto_if_unset FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE, BattleshipHalberd_Reactor_EventScript_MiddleSwitch_1
-# 396 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_3
 # 397 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_3
+# 398 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 BattleshipHalberd_Reactor_EventScript_MiddleSwitch_1:
-# 367 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_0, MSGBOX_YESNO
 # 368 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_0, MSGBOX_YESNO
+# 369 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_MiddleSwitch_4
-# 391 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 392 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 BattleshipHalberd_Reactor_EventScript_MiddleSwitch_4:
-# 370 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_1
 # 371 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	closemessage
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_1
 # 372 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	playse SE_BANG
+	closemessage
 # 373 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8004, 2
+	playse SE_BANG
 # 374 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8004, 2
 # 375 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8005, 0
 # 376 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8007, 3
+	setvar VAR_0x8006, 2
 # 377 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 3
 # 378 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 9, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	special ShakeCamera
 # 379 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 10, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 9, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 380 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 9, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	setmetatile 10, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 381 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 10, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 9, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 382 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 10, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 383 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	waitse
+	special DrawWholeMapView
 # 384 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	delay 12
+	waitse
 # 385 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_2
+	delay 12
 # 386 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setflag FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_2
 # 387 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	setflag FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE
+# 388 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 
 BattleshipHalberd_Reactor_EventScript_RemoveMiddleGate::
-# 403 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 9, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 404 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 10, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 9, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 405 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 9, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	setmetatile 10, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 406 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	setmetatile 9, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+# 407 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	setmetatile 10, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 	return
 
 
 BattleshipHalberd_Reactor_EventScript_LeftSwitch::
-# 412 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 413 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	goto_if_unset FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE, BattleshipHalberd_Reactor_EventScript_LeftSwitch_1
-# 444 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_3
 # 445 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_3
+# 446 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 BattleshipHalberd_Reactor_EventScript_LeftSwitch_1:
-# 414 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	lockall
 # 415 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_0, MSGBOX_YESNO
+	lockall
 # 416 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_0, MSGBOX_YESNO
+# 417 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_LeftSwitch_4
-# 439 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 440 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 BattleshipHalberd_Reactor_EventScript_LeftSwitch_4:
-# 418 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_1
 # 419 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	closemessage
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_1
 # 420 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	playse SE_BANG
+	closemessage
 # 421 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8004, 2
+	playse SE_BANG
 # 422 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8004, 2
 # 423 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8005, 0
 # 424 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8007, 3
+	setvar VAR_0x8006, 2
 # 425 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 3
 # 426 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 2, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	special ShakeCamera
 # 427 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 3, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 2, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 428 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 2, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	setmetatile 3, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 429 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 3, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 2, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 430 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 3, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 431 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	waitse
+	special DrawWholeMapView
 # 432 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	delay 12
+	waitse
 # 433 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_2
+	delay 12
 # 434 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setflag FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_2
 # 435 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	setflag FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE
+# 436 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 
 BattleshipHalberd_Reactor_EventScript_RemoveLeftGate::
-# 451 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 2, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 452 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 3, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 2, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 453 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 2, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	setmetatile 3, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 454 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	setmetatile 2, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+# 455 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	setmetatile 3, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 	return
 
 
 BattleshipHalberd_Reactor_EventScript_RightSwitch::
-# 460 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 461 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	goto_if_unset FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE, BattleshipHalberd_Reactor_EventScript_RightSwitch_1
-# 492 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_3
 # 493 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_3
+# 494 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 BattleshipHalberd_Reactor_EventScript_RightSwitch_1:
-# 462 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	lockall
 # 463 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_0, MSGBOX_YESNO
+	lockall
 # 464 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_0, MSGBOX_YESNO
+# 465 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_RightSwitch_4
-# 487 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 488 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 BattleshipHalberd_Reactor_EventScript_RightSwitch_4:
-# 466 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_1
 # 467 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	closemessage
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_1
 # 468 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	playse SE_BANG
+	closemessage
 # 469 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8004, 2
+	playse SE_BANG
 # 470 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8004, 2
 # 471 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8005, 0
 # 472 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setvar VAR_0x8007, 3
+	setvar VAR_0x8006, 2
 # 473 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 3
 # 474 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 16, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	special ShakeCamera
 # 475 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 17, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 16, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 476 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 16, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	setmetatile 17, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 477 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 17, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 16, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 478 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 17, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 479 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	waitse
+	special DrawWholeMapView
 # 480 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	delay 12
+	waitse
 # 481 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_2
+	delay 12
 # 482 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setflag FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE
+	msgbox BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_2
 # 483 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	setflag FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE
+# 484 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	releaseall
 	return
 
 
 BattleshipHalberd_Reactor_EventScript_RemoveRightGate::
-# 499 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 16, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 500 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 17, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
+	setmetatile 16, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
 # 501 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	setmetatile 16, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+	setmetatile 17, 11, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 # 502 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	setmetatile 16, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_LeftTile, FALSE
+# 503 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	setmetatile 17, 12, METATILE_MauvilleGym_BattleshipHalberd_Reactor_RightTile, FALSE
 	return
 
 
 BattleshipHalberd_Reactor_EventScript_SetElevatorDestination::
-# 508 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
-	getplayerxy VAR_TEMP_2, VAR_TEMP_3
 # 509 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+	getplayerxy VAR_TEMP_2, VAR_TEMP_3
+# 510 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_TEMP_2, 2
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_2
-# 509 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 510 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_TEMP_2, 3
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_2
-# 513 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 514 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_TEMP_2, 9
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_3
-# 513 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 514 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_TEMP_2, 10
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_3
-# 517 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 518 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_TEMP_2, 16
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_4
-# 517 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 518 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	compare VAR_TEMP_2, 17
 	goto_if_eq BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_4
 BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_1:
 	return
 
 BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_2:
-# 511 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 512 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	setvar VAR_ELEVATOR_DESTINATION, 1
 	goto BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_1
 
 BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_3:
-# 515 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 516 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	setvar VAR_ELEVATOR_DESTINATION, 2
 	goto BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_1
 
 BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_4:
-# 519 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 520 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	setvar VAR_ELEVATOR_DESTINATION, 3
 	goto BattleshipHalberd_Reactor_EventScript_SetElevatorDestination_1
 
@@ -864,48 +864,48 @@ BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_Text_0:
 # 322 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "Kirby! How did you get here? If Lord\n"
 	.string "Meta Knight sees you, he'll…\p"
-	.string "…huh? You're looking for a gift that\n"
-	.string "fell in the ocean around here?\p"
+	.string "…huh? You're looking for a present\n"
+	.string "that fell in the ocean around here?\p"
 	.string "Oh! Yes! I hauled in something like that\n"
 	.string "earlier! It looked too nice to toss, so\l"
-	.string "I ended up giving it to the captain…\p"
-	.string "He might still have it, but… well, good\n"
-	.string "luck getting it without being caught!$"
+	.string "I ended up gifting it to the captain…\p"
+	.string "He might still have it. I hope you can\n"
+	.string "find it! And once you get it back,\l"
+	.string "I'm rooting for your destruction!$"
 
 BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_Text_1:
-# 341 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 342 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "What's that? You have something else\n"
 	.string "you want to ask me about? If I know\l"
 	.string "a lumberjack by the resort?\p"
-	.string "Wow! Yes, it's been a while!\n"
 	.string "They're wondering how I'm doing? Hm…$"
 
 BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_Text_2:
-# 349 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 350 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "Here. Can you do me a favor and deliver\n"
 	.string "this letter to them?$"
 
 BattleshipHalberd_Reactor_EventScript_SailorWaddleDee_Text_3:
-# 352 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 353 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "It's hard work here on the Halberd, so I\n"
 	.string "don't get a lot of free time.\p"
 	.string "Even if I may not be able to see them,\n"
 	.string "I hope this will satisfy them!$"
 
 BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_0:
-# 367 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 368 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "It's a power switch. Will you flip it?$"
 
 BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_1:
-# 370 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 371 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "You flipped the power switch!$"
 
 BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_2:
-# 385 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 386 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "A locked path opened up!$"
 
 BattleshipHalberd_Reactor_EventScript_MiddleSwitch_Text_3:
-# 396 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 397 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "This switch has already been flipped.$"
 
 BattleshipHalberd_Reactor_Text_TrainerIntro::
@@ -927,12 +927,12 @@ BattleshipHalberd_Reactor_Text_TrainerPost::
 	.string "You see the lightning-bolt tiles on the\n"
 	.string "floor? The electric gates will change\l"
 	.string "positions when you step on them.\p"
-	.string "Find a way to the top-right generator,\n"
+	.string "Find a way to the top right generator,\n"
 	.string "and you can open up an elevator that\l"
 	.string "will lead you directly to the helm.\p"
 	.string "You hear that? The top right generator!\n"
 	.string "Don't go activating any others, now!$"
 
 BattleshipHalberd_Reactor_Text_ReceivedLetter::
-# 524 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
+# 525 "data/maps/BattleshipHalberd_Reactor/scripts.pory"
 	.string "Obtained the {COLOR BLUE}Letter{COLOR DARK_GRAY}!$"

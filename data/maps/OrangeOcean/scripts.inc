@@ -104,17 +104,17 @@ OrangeOcean_EventScript_Trainer4::
 
 
 OrangeOcean_EventScript_Trainer5::
-# 174 "data/maps/OrangeOcean/scripts.pory"
+# 172 "data/maps/OrangeOcean/scripts.pory"
 	trainerbattle_single TRAINER_GABBY_AND_TY_3, OrangeOcean_Text_Trainer5Intro, OrangeOcean_Text_Trainer5Defeated
-# 175 "data/maps/OrangeOcean/scripts.pory"
+# 173 "data/maps/OrangeOcean/scripts.pory"
 	msgbox OrangeOcean_Text_Trainer5Post, MSGBOX_AUTOCLOSE
 	return
 
 
 OrangeOcean_EventScript_Trainer6::
-# 198 "data/maps/OrangeOcean/scripts.pory"
+# 197 "data/maps/OrangeOcean/scripts.pory"
 	trainerbattle_single TRAINER_GABBY_AND_TY_4, OrangeOcean_Text_Trainer6Intro, OrangeOcean_Text_Trainer6Defeated
-# 199 "data/maps/OrangeOcean/scripts.pory"
+# 198 "data/maps/OrangeOcean/scripts.pory"
 	msgbox OrangeOcean_Text_Trainer6Post, MSGBOX_AUTOCLOSE
 	return
 
@@ -200,49 +200,49 @@ OrangeOcean_Text_Trainer3Post::
 
 OrangeOcean_Text_Trainer4Intro::
 # 148 "data/maps/OrangeOcean/scripts.pory"
-	.string "Gwoooh! I'm tired of waiting for the\n"
-	.string "tide to rise back up!\p"
-	.string "My Helpers are gonna carve a path right\n"
-	.string "through this rock!$"
+	.string "I've got so much free time now that\n"
+	.string "I'm stuck on this island…$"
 
 OrangeOcean_Text_Trainer4Defeated::
-# 157 "data/maps/OrangeOcean/scripts.pory"
-	.string "No! I can't break through this rock\n"
-	.string "without my Helpers' strength!$"
+# 154 "data/maps/OrangeOcean/scripts.pory"
+	.string "No time to learn like the present,\n"
+	.string "right?$"
 
 OrangeOcean_Text_Trainer4Post::
-# 163 "data/maps/OrangeOcean/scripts.pory"
-	.string "I know, I know… it's no good to\n"
-	.string "damage the environment like that.\p"
-	.string "Maybe I should look for Helpers that\n"
-	.string "can bring more water to this place…$"
+# 160 "data/maps/OrangeOcean/scripts.pory"
+	.string "Moves, stats, types… there's so much\n"
+	.string "that goes into Helper battles.\p"
+	.string "How does the Great King remember all\n"
+	.string "of it? He must have a huge brain!\l"
+	.string "Almost as big as his mouth and hammer!$"
 
 OrangeOcean_Text_Trainer5Intro::
-# 178 "data/maps/OrangeOcean/scripts.pory"
+# 176 "data/maps/OrangeOcean/scripts.pory"
 	.string "My ship can't reach the mainland!\n"
-	.string "How am I supposed to do my job?$"
+	.string "You know what we do in times like this?\l"
+	.string "Throw our hands in the air and panic!$"
 
 OrangeOcean_Text_Trainer5Defeated::
-# 184 "data/maps/OrangeOcean/scripts.pory"
-	.string "Urgh…$"
+# 183 "data/maps/OrangeOcean/scripts.pory"
+	.string "Ahhhhhhh!!!$"
 
 OrangeOcean_Text_Trainer5Post::
-# 189 "data/maps/OrangeOcean/scripts.pory"
-	.string "Sorry for taking my frustrations out \n"
-	.string "on you through a Helper battle.\l"
-	.string "It's been a long day…$"
+# 188 "data/maps/OrangeOcean/scripts.pory"
+	.string "I'll be honest: I'm not sure if losing a\n"
+	.string "Helper battle made me feel any better.\l"
+	.string "I was hoping it would distract me…$"
 
 OrangeOcean_Text_Trainer6Intro::
-# 202 "data/maps/OrangeOcean/scripts.pory"
+# 201 "data/maps/OrangeOcean/scripts.pory"
 	.string "I'm not stranded here… I just don't\n"
 	.string "want to travel through Cocoa Cave!$"
 
 OrangeOcean_Text_Trainer6Defeated::
-# 208 "data/maps/OrangeOcean/scripts.pory"
+# 207 "data/maps/OrangeOcean/scripts.pory"
 	.string "Traveling through the dark is so scary…$"
 
 OrangeOcean_Text_Trainer6Post::
-# 213 "data/maps/OrangeOcean/scripts.pory"
+# 212 "data/maps/OrangeOcean/scripts.pory"
 	.string "Huh? There's a shortcut through the\n"
 	.string "water that lets you avoid the dark?\l"
 	.string "Wow, amazing! Thank you for telling me!$"

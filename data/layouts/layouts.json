@@ -9724,6 +9724,26 @@
       "border_filepath": "data/layouts/BattleshipHalberd_Elevator/border.bin",
       "blockdata_filepath": "data/layouts/BattleshipHalberd_Elevator/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_BATTLESHIP_HALBERD_HALL",
+      "name": "BattleshipHalberd_Hall_Layout",
+      "width": 13,
+      "height": 27,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/BattleshipHalberd_Hall/border.bin",
+      "blockdata_filepath": "data/layouts/BattleshipHalberd_Hall/map.bin"
+    },
+    {
+      "id": "LAYOUT_BATTLESHIP_HALBERD_HELM",
+      "name": "BattleshipHalberd_Helm_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/BattleshipHalberd_Helm/border.bin",
+      "blockdata_filepath": "data/layouts/BattleshipHalberd_Helm/map.bin"
     }
   ]
 }

@@ -937,10 +937,10 @@ KirbysHouse_EventScript_ExitHouseFirstTime_Text_4:
 	.string "{SPEAKER NAME_UNKNOWN}Wise Waddle Dee, at your service. Per\n"
 	.string "the Great King's request, I have been\l"
 	.string "appointed to track and study Helpers.\p"
-	.string "{SPEAKER NAME_WISE}As the leading expert on them, you may\n"
-	.string "call me something of a professor.\p"
-	.string "{SPEAKER NAME_BANDANA}A professor of Helpers, huh? Say,\n"
-	.string "do you know where they came from?\p"
+	.string "{SPEAKER NAME_WISE}As the leading expert on them, you\n"
+	.string "might call me something of a professor!\p"
+	.string "{SPEAKER NAME_BANDANA}Is that so? Say, where did they come\n"
+	.string "from? I didn't see any on my way here…\p"
 	.string "{SPEAKER NAME_WISE}Alas, I've no clue. I'm looking into it on\n"
 	.string "my own time, but my knowledge pertains\l"
 	.string "mainly to matters for the Royal Royale.\p"
@@ -963,7 +963,7 @@ KirbysHouse_EventScript_ExitHouseFirstTime_Text_7:
 	.string "{SPEAKER NAME_BANDANA}Well… I guess the Great King does seem\n"
 	.string "pretty excited about this game of his…\p"
 	.string "And this is probably the easiest way\n"
-	.string "to get answers to all my questions…\p"
+	.string "to get answers to my questions…\p"
 	.string "…and maybe taking part in this\n"
 	.string "competition will make me stronger too…$"
 
@@ -1095,7 +1095,7 @@ KirbysHouse_EventScript_AfterChoosingStarter_Text_5:
 # 437 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}Are you up for this, Kirby?\p"
 	.string "I think I'd learn a lot from watching\n"
-	.string "someone like you take this on.$"
+	.string "someone like you give it a shot.$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_6:
 # 446 "data/maps/KirbysHouse/scripts.pory"

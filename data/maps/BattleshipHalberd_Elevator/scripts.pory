@@ -81,7 +81,7 @@ script BattleshipHalberd_Elevator_EventScript_ElevatorSequence
     elif(var(VAR_ELEVATOR_DESTINATION) == 3)
     {
         setvar(VAR_ELEVATOR_DESTINATION, 4)
-        warp(MAP_BATTLESHIP_HALBERD_REACTOR, 9, 4)
+        warp(MAP_BATTLESHIP_HALBERD_HALL, 2, 22)
         waitstate
         releaseall
         end

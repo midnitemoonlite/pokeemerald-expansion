@@ -10,7 +10,7 @@ script WaddleDeeTown_CastleLobby_EventScript_Youngster
             
             Turns out I couldn't even score a
             single win! Now I'll be remembered
-            as the Arena's first loss!", MSGBOX_NPC)
+            as the Arena's first loser!", MSGBOX_NPC)
 }
 
 script WaddleDeeTown_CastleLobby_EventScript_Lass

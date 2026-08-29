@@ -1815,3 +1815,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/BattleshipHalberd_Reactor/scripts.inc"
 
 	.include "data/maps/BattleshipHalberd_Elevator/scripts.inc"
+
+	.include "data/maps/BattleshipHalberd_Hall/scripts.inc"
+
+	.include "data/maps/BattleshipHalberd_Helm/scripts.inc"

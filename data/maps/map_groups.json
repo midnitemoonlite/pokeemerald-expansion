@@ -499,7 +499,9 @@
     "BattleshipHalberd_Ducts",
     "BattleshipHalberd_Storage",
     "BattleshipHalberd_Reactor",
-    "BattleshipHalberd_Elevator"
+    "BattleshipHalberd_Elevator",
+    "BattleshipHalberd_Hall",
+    "BattleshipHalberd_Helm"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -182,8 +182,8 @@ script ResortArena_EventScript_YellowSqueaker
     msgbox("I bet if I could get this boat to water,
             I would be able to sail off on it.
             
-            Then, I bet I might be able to find
-            islands full of hidden treasure!
+            Then, I might be able to find islands
+            full of hidden treasure!
             
             There's just one problem\.
             How am I going to haul this boat?

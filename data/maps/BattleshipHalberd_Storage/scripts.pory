@@ -74,7 +74,7 @@ text BattleshipHalberd_Storage_Text_Trainer2WestPost
     
     We're supposed to be undergoing covert
     maintenace. And Lord Meta Knight will
-    be displeased if you interfere\.!"
+    get really mad if you interfere\.!"
 }
 
 script BattleshipHalberd_Storage_EventScript_Trainer3West

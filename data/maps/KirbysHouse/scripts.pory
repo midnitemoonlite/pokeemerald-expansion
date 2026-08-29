@@ -72,11 +72,11 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 				the Great King's request, I have been
 				appointed to track and study Helpers.
 				
-				{SPEAKER NAME_WISE}As the leading expert on them, you may
-				call me something of a professor.
+				{SPEAKER NAME_WISE}As the leading expert on them, you
+				might call me something of a professor!
 				
-				{SPEAKER NAME_BANDANA}A professor of Helpers, huh? Say,
-				do you know where they came from?
+				{SPEAKER NAME_BANDANA}Is that so? Say, where did they come
+				from? I didn't see any on my way here\.
 				
 				{SPEAKER NAME_WISE}Alas, I've no clue. I'm looking into it on
 				my own time, but my knowledge pertains
@@ -105,7 +105,7 @@ script KirbysHouse_EventScript_ExitHouseFirstTime
 				pretty excited about this game of his\.
 
 				And this is probably the easiest way
-				to get answers to all my questions\.
+				to get answers to my questions\.
 				
 				\.and maybe taking part in this
 				competition will make me stronger too\.")
@@ -437,7 +437,7 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	msgbox("{SPEAKER NAME_BANDANA}Are you up for this, Kirby?
 			
 			I think I'd learn a lot from watching
-			someone like you take this on.")
+			someone like you give it a shot.")
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_left, walk_in_place_down))
 	waitmovement()

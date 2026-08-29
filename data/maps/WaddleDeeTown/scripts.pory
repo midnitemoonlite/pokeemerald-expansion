@@ -278,8 +278,6 @@ script WaddleDeeTown_EventScript_LabWaddleDee
 {
     lock
     faceplayer
-    applymovement(LOCALID_CROWD_3, Common_Movement_ExclamationMark)
-    playse(SE_PIN)
     msgbox("Oh, hello, Kirby!
             I've been expecting you!
             
@@ -426,8 +424,8 @@ script WaddleDeeTown_EventScript_WorkerRight
     msgbox("Supposedly the Great King gave out an
             order to restrict the town's north exit.
             
-            But when he saw all these blockades, he
-            cried out, \qothis is way too far!\qc
+            But when he saw all these Star Blocks,
+            he cried out, \qothis is way too far!\qc
             
             Does he think we're the ones who
             caused this mess\.?")
@@ -455,8 +453,8 @@ script WaddleDeeTown_EventScript_EggDealer
     faceplayer
     if (!flag(FLAG_RECEIVED_CHICK_EGG))
     {
-        msgbox("Oh, hello, Kirby! You're helping fill out
-            Info Cards for Wise Waddle Dee, right?
+        msgbox("Kirby! You're helping fill out Info Cards
+            for Wise Waddle Dee, isn't that right?
             Could I ask you for a favor?
             
             I found this egg caught in the rubble
@@ -589,7 +587,7 @@ script WaddleDeeTown_EventScript_DededeSpeech
             This here castle behind me has a new
             room in the back where the Arena is at.
             
-            If ya choose to enter, you'd better be
+            If 'ya choose to enter, you'd better be
             ready for a gauntlet of Helper battles!
 
             Only tournament winners get to go home
@@ -698,7 +696,7 @@ script WaddleDeeTown_EventScript_DededeSpeech
     msgbox("{SPEAKER NAME_BANDANA}G-Great King!
     
             {SPEAKER NAME_DEDEDE}And ol' Bandana too! Well? How about it?
-            Ya enjoying the Royal Royale so far?")
+            'Ya enjoying the Royal Royale so far?")
     applymovement(LOCALID_TOWN_BWD, moves(walk_in_place_up * 2))
     msgbox("{SPEAKER NAME_BANDANA}Um, it's\. you really put your all into
             this game, Great King! It's impressive!
@@ -710,7 +708,7 @@ script WaddleDeeTown_EventScript_DededeSpeech
             so now we're helping him in exchange\.")
     applymovement(LOCALID_TOWN_KING_DEDEDE, moves(walk_in_place_slow_down))
     msgbox("{SPEAKER NAME_DEDEDE}Ohh, filling out the Info Cards, ain't
-            ya? That's some real great news!
+            'ya? That's some real great news!
             Even I don't know all the Helpers yet!
             
             {SPEAKER NAME_BANDANA}That reminds me, Wise Waddle Dee said he

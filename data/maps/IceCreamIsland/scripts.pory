@@ -145,8 +145,8 @@ script IceCreamIsland_EventScript_BlueSqueakerWander
     {
         msgbox("Now I've gotta report back to the boss!
                 He'll be so proud of me! Squeak!")
-        release
     }
+    release
 }
 
 script IceCreamIsland_EventScript_MrFloatyEncounter
@@ -433,20 +433,20 @@ script IceCreamIsland_EventScript_Trainer6
 
 text IceCreamIsland_Text_Trainer6Intro
 {
-    "I know it's a nice day at the beach,
-    but you can't let your guard down!"
+    "Yawn\. it's so peaceful, I think I'll just
+    let my Helpers out so they can play\."
 }
 
 text IceCreamIsland_Text_Trainer6Defeated
 {
-    "Whew! That battle was blistering hot!"
+    "Yeah, yeah\. I hope they're having fun\."
 }
 
 text IceCreamIsland_Text_Trainer6Post
 {
-    "I wouldn't be shocked to see you score
-    a brooch at the Resort Arena.
-    Your Helpers are something else!"
+    "I'm not sure I'll be able to get through
+    all the Arenas like this. Turns out
+    I'm a way better follower than a leader."
 }
 
 script IceCreamIsland_EventScript_Trainer7

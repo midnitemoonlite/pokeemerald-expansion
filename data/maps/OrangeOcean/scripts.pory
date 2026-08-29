@@ -147,26 +147,24 @@ script OrangeOcean_EventScript_Trainer4
 
 text OrangeOcean_Text_Trainer4Intro
 {
-    "Gwoooh! I'm tired of waiting for the
-    tide to rise back up!
-    
-    My Helpers are gonna carve a path right
-    through this rock!"
+    "I've got so much free time now that
+    I'm stuck on this island\."
 }
 
 text OrangeOcean_Text_Trainer4Defeated
 {
-    "No! I can't break through this rock
-    without my Helpers' strength!"
+    "No time to learn like the present,
+    right?"
 }
 
 text OrangeOcean_Text_Trainer4Post
 {
-    "I know, I know\. it's no good to
-    damage the environment like that.
+    "Moves, stats, types\. there's so much
+    that goes into Helper battles.
     
-    Maybe I should look for Helpers that
-    can bring more water to this place\."
+    How does the Great King remember all
+    of it? He must have a huge brain!
+    Almost as big as his mouth and hammer!"
 }
 
 script OrangeOcean_EventScript_Trainer5
@@ -178,19 +176,20 @@ script OrangeOcean_EventScript_Trainer5
 text OrangeOcean_Text_Trainer5Intro
 {
     "My ship can't reach the mainland!
-    How am I supposed to do my job?"
+    You know what we do in times like this?
+    Throw our hands in the air and panic!"
 }
 
 text OrangeOcean_Text_Trainer5Defeated
 {
-    "Urgh\."
+    "Ahhhhhhh!!!"
 }
 
 text OrangeOcean_Text_Trainer5Post
 {
-    "Sorry for taking my frustrations out 
-    on you through a Helper battle.
-    It's been a long day\."
+    "I'll be honest: I'm not sure if losing a
+    Helper battle made me feel any better.
+    I was hoping it would distract me\."
 }
 
 script OrangeOcean_EventScript_Trainer6

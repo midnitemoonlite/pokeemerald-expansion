@@ -71,7 +71,7 @@ WaddleDeeTown_CastleLobby_EventScript_Youngster_Text_0:
 	.string "the Arena, so I ran right in…\p"
 	.string "Turns out I couldn't even score a\n"
 	.string "single win! Now I'll be remembered\l"
-	.string "as the Arena's first loss!$"
+	.string "as the Arena's first loser!$"
 
 WaddleDeeTown_CastleLobby_EventScript_Lass_Text_0:
 # 18 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"

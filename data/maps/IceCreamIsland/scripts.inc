@@ -55,24 +55,25 @@ IceCreamIsland_EventScript_BlueSqueakerWander::
 # 56 "data/maps/IceCreamIsland/scripts.pory"
 	faceplayer
 # 57 "data/maps/IceCreamIsland/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_TM_DIG, IceCreamIsland_EventScript_BlueSqueakerWander_1
+	goto_if_unset FLAG_RECEIVED_TM_DIG, IceCreamIsland_EventScript_BlueSqueakerWander_2
 # 146 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_EventScript_BlueSqueakerWander_Text_10
-# 148 "data/maps/IceCreamIsland/scripts.pory"
+IceCreamIsland_EventScript_BlueSqueakerWander_1:
+# 149 "data/maps/IceCreamIsland/scripts.pory"
 	release
 	return
 
-IceCreamIsland_EventScript_BlueSqueakerWander_1:
+IceCreamIsland_EventScript_BlueSqueakerWander_2:
 # 59 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_EventScript_BlueSqueakerWander_Text_0
 # 69 "data/maps/IceCreamIsland/scripts.pory"
 	checkitem ITEM_ITEMFINDER, 1
 # 70 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_RESULT, 0
-	goto_if_ne IceCreamIsland_EventScript_BlueSqueakerWander_4
-	return
+	goto_if_ne IceCreamIsland_EventScript_BlueSqueakerWander_5
+	goto IceCreamIsland_EventScript_BlueSqueakerWander_1
 
-IceCreamIsland_EventScript_BlueSqueakerWander_4:
+IceCreamIsland_EventScript_BlueSqueakerWander_5:
 # 72 "data/maps/IceCreamIsland/scripts.pory"
 	playse SE_PIN
 # 73 "data/maps/IceCreamIsland/scripts.pory"
@@ -85,14 +86,14 @@ IceCreamIsland_EventScript_BlueSqueakerWander_4:
 	msgbox IceCreamIsland_EventScript_BlueSqueakerWander_Text_1, MSGBOX_YESNO
 # 81 "data/maps/IceCreamIsland/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq IceCreamIsland_EventScript_BlueSqueakerWander_6
+	goto_if_eq IceCreamIsland_EventScript_BlueSqueakerWander_7
 # 138 "data/maps/IceCreamIsland/scripts.pory"
 	msgbox IceCreamIsland_EventScript_BlueSqueakerWander_Text_11
 # 139 "data/maps/IceCreamIsland/scripts.pory"
 	release
 	end
 
-IceCreamIsland_EventScript_BlueSqueakerWander_6:
+IceCreamIsland_EventScript_BlueSqueakerWander_7:
 # 83 "data/maps/IceCreamIsland/scripts.pory"
 	playfanfare MUS_OBTAIN_TMHM
 # 84 "data/maps/IceCreamIsland/scripts.pory"
@@ -805,18 +806,18 @@ IceCreamIsland_Text_Trainer5Post::
 
 IceCreamIsland_Text_Trainer6Intro::
 # 434 "data/maps/IceCreamIsland/scripts.pory"
-	.string "I know it's a nice day at the beach,\n"
-	.string "but you can't let your guard down!$"
+	.string "Yawn… it's so peaceful, I think I'll just\n"
+	.string "let my Helpers out so they can play…$"
 
 IceCreamIsland_Text_Trainer6Defeated::
 # 440 "data/maps/IceCreamIsland/scripts.pory"
-	.string "Whew! That battle was blistering hot!$"
+	.string "Yeah, yeah… I hope they're having fun…$"
 
 IceCreamIsland_Text_Trainer6Post::
 # 445 "data/maps/IceCreamIsland/scripts.pory"
-	.string "I wouldn't be shocked to see you score\n"
-	.string "a brooch at the Resort Arena.\l"
-	.string "Your Helpers are something else!$"
+	.string "I'm not sure I'll be able to get through\n"
+	.string "all the Arenas like this. Turns out\l"
+	.string "I'm a way better follower than a leader.$"
 
 IceCreamIsland_Text_Trainer7Intro::
 # 458 "data/maps/IceCreamIsland/scripts.pory"

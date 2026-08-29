@@ -317,7 +317,7 @@ VegetableValley_Text_Trainer1Defeated::
 VegetableValley_Text_Trainer1Post::
 # 50 "data/maps/VegetableValley/scripts.pory"
 	.string "After the avalanche in Waddle Dee Town,\n"
-	.string "we held inspections in nearby areas.\p"
+	.string "we did inspections in the nearby areas.\p"
 	.string "I can confirm this place is unscatched.\n"
 	.string "Safe travels!$"
 

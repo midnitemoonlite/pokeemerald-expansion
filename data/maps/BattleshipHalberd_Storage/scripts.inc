@@ -123,7 +123,7 @@ BattleshipHalberd_Storage_Text_Trainer2WestPost::
 	.string "just don't touch anything, okay?\p"
 	.string "We're supposed to be undergoing covert\n"
 	.string "maintenace. And Lord Meta Knight will\l"
-	.string "be displeased if you interfere…!$"
+	.string "get really mad if you interfere…!$"
 
 BattleshipHalberd_Storage_Text_Trainer3WestIntro::
 # 86 "data/maps/BattleshipHalberd_Storage/scripts.pory"

@@ -19,7 +19,7 @@ CocoaCave_1F_EventScript_Spinni::
 
 CocoaCave_1F_EventScript_Spinni_Text_0:
 # 10 "data/maps/CocoaCave_1F/scripts.pory"
-	.string "Hiya, the name's Spinni. I'm looking for\n"
+	.string "'Sup? The name's Spinni. I'm looking for\n"
 	.string "treasure on behalf of the Squeaks.\p"
 	.string "If you're planning on going further, let\n"
 	.string "me warn you: it's dark. Real dark.\p"

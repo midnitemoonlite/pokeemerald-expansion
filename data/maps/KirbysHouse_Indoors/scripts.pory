@@ -154,6 +154,7 @@ script KirbysHouse_Indoors_BandanaDeeEntranceBottomLeft
 	{
 		lockall
 		setobjectmovementtype(LOCALID_GOOEY, MOVEMENT_TYPE_FACE_UP)
+		applymovement(LOCALID_GOOEY, moves(face_up))
 		setobjectxyperm(LOCALID_BANDANA_WADDLE_DEE, 6, 13)
 		addobject(LOCALID_BANDANA_WADDLE_DEE)
 		playse(SE_EXIT)

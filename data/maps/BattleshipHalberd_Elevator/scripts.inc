@@ -161,7 +161,7 @@ BattleshipHalberd_Elevator_EventScript_ElevatorSequence_16:
 # 83 "data/maps/BattleshipHalberd_Elevator/scripts.pory"
 	setvar VAR_ELEVATOR_DESTINATION, 4
 # 84 "data/maps/BattleshipHalberd_Elevator/scripts.pory"
-	warp MAP_BATTLESHIP_HALBERD_REACTOR, 9, 4
+	warp MAP_BATTLESHIP_HALBERD_HALL, 2, 22
 # 85 "data/maps/BattleshipHalberd_Elevator/scripts.pory"
 	waitstate
 # 86 "data/maps/BattleshipHalberd_Elevator/scripts.pory"

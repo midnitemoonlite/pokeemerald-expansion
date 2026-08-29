@@ -1,0 +1,10 @@
+raw `
+BattleshipHalberd_Hall_MapScripts::
+	.byte 0
+`
+
+script BattleshipHalberd_Hall_EventScript_SetElevatorDestination
+{
+    setvar(VAR_ELEVATOR_DESTINATION, 4)
+    return
+}

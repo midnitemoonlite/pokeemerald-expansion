@@ -307,7 +307,7 @@ text BattleshipHalberd_Reactor_Text_TrainerPost
     floor? The electric gates will change
     positions when you step on them.
     
-    Find a way to the top-right generator,
+    Find a way to the top right generator,
     and you can open up an elevator that
     will lead you directly to the helm.
     
@@ -322,15 +322,16 @@ script BattleshipHalberd_Reactor_EventScript_SailorWaddleDee
     msgbox("Kirby! How did you get here? If Lord
             Meta Knight sees you, he'll\.
             
-            \.huh? You're looking for a gift that
-            fell in the ocean around here?
+            \.huh? You're looking for a present
+            that fell in the ocean around here?
             
             Oh! Yes! I hauled in something like that
             earlier! It looked too nice to toss, so
-            I ended up giving it to the captain\.
+            I ended up gifting it to the captain\.
             
-            He might still have it, but\. well, good
-            luck getting it without being caught!")
+            He might still have it. I hope you can
+            find it! And once you get it back,
+            I'm rooting for your destruction!")
     closemessage
     if(var(VAR_SAILOR_QUEST) == 1)
     {
@@ -342,7 +343,7 @@ script BattleshipHalberd_Reactor_EventScript_SailorWaddleDee
                 you want to ask me about? If I know
                 a lumberjack by the resort?
                 
-                Wow! Yes, it's been a while!
+                
                 They're wondering how I'm doing? Hm\.")
         closemessage()
         delay(90)
