@@ -9,6 +9,7 @@ enum SpeakerNames {
     SP_NAME_BANDANA,
     SP_NAME_WISE,
     SP_NAME_DEDEDE,
+    SP_NAME_META,
     SP_NAME_GOOEY,
     SP_NAME_MAGOLOR,
     SP_NAME_DAROACH,

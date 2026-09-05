@@ -1,7 +1,39 @@
 raw `
 OrangeOcean_MapScripts::
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, OrangeOcean_OnFrame
 	.byte 0
+
+OrangeOcean_OnFrame::
+	map_script_2 VAR_ORANGE_OCEAN_STATE, 1, OrangeOcean_EventScript_HalberdTakeOff
+	.2byte 0
 `
+
+script OrangeOcean_EventScript_HalberdTakeOff
+{
+    playse(SE_M_EARTHQUAKE)
+    setvar(VAR_0x8004, 3)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 20) // num shakes
+	setvar(VAR_0x8007, 4)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    setvar(VAR_0x8004, 2)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 14) // num shakes
+	setvar(VAR_0x8007, 4)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 10) // num shakes
+	setvar(VAR_0x8007, 4)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    msgbox("The Halberd has taken off\.")
+    closemessage
+    setvar(VAR_ORANGE_OCEAN_STATE, 2)
+    end
+}
 
 script OrangeOcean_EventScript_Sign
 {

@@ -1,0 +1,210 @@
+raw `
+BattleshipHalberd_Helm_MapScripts::
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleshipHalberd_Helm_OnFrame
+	.byte 0
+
+BattleshipHalberd_Helm_OnFrame::
+	map_script_2 VAR_ORANGE_OCEAN_STATE, 0, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne
+	.2byte 0
+`
+
+script BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne
+{
+        lockall
+        applymovement(LOCALID_PLAYER, moves(walk_up * 5))
+        waitmovement
+        delay(16)
+        special(SpawnCameraObject)
+        applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_slow_up))
+        waitmovement
+        delay(15)
+        msgbox("Pressure tanks remain steady.
+                Ammunitions are in working order. Hm\.
+                
+                Fluctuating energy levels in reactor 3?
+                What could have happened there?")
+        closemessage
+        applymovement(LOCALID_HELM_VUL, moves(walk_in_place_down))
+        waitmovement
+        playse(SE_PIN)
+        applymovement(LOCALID_HELM_VUL, Common_Movement_ExclamationMark)
+        waitmovement
+        msgbox("Gadzooks! What's Kirby doing here?!")
+        closemessage
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(walk_in_place_slow_down))
+        waitmovement
+        playbgm(MUS_ENCOUNTER_MAGMA, FALSE)
+        msgbox("{SPEAKER NAME_META}Kirby\. ever the surprising individual
+                you are.
+                
+                It must not have been easy to reach us
+                here, at the bottom of the sea.")
+        closemessage()
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(walk_slow_down))
+        waitmovement
+        delay(16)
+        msgbox("{SPEAKER NAME_META}And these are\.")
+        closemessage()
+        delay(16)
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(walk_slow_up))
+        waitmovement
+        applymovement(LOCALID_HELM_VUL, moves(face_left))
+        delay(16)
+        msgbox("{SPEAKER NAME_META}I see. Your \qoHelpers\qc.
+        
+                Tell me, Kirby. Have you been enjoying
+                the king's little diversion?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES)
+        {
+                msgbox("{SPEAKER NAME_META}Of course you are. You're still so naive
+                when it comes to fun and games.")
+        }
+        if(var(VAR_RESULT) == NO)
+        {
+                msgbox("{SPEAKER NAME_META}Is that so? Hmhm\. ha ha ha.
+                How amusing. Maybe I misjudged you.")
+        }
+        closemessage
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(walk_in_place_down))
+        waitmovement
+        delay(8)
+        msgbox("{SPEAKER NAME_META}Let me tell you something. The
+                Royal Royale is not to be trusted.
+                
+                Dedede, of all people, looking to give up
+                his lordship? It's preposterous.
+                He wouldn't let it go for even one day!
+                
+                And what good is it to teach a populace
+                how to laze about and bark down orders?
+                
+                I may not know what clouds his mind, but
+                something sinister is afoot, I'm sure.
+                And I will be the one to stop it!")
+        closemessage
+        applymovement(LOCALID_HELM_VUL, moves(walk_in_place_left * 3))
+        waitmovement
+        msgbox("Lord Meta Knight, I trust you have not
+                forgotten our plan?")
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(face_right))
+        msgbox("{SPEAKER NAME_META}Of course not. But first\.")
+        closemessage
+        applymovement(LOCALID_HELM_VUL, moves(face_down))
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(walk_in_place_down))
+        waitmovement
+        msgbox("{SPEAKER NAME_META}Meta-Knights! To the helm, immediately!")
+        closemessage
+        playse(SE_EXIT)
+        addobject(LOCALID_HELM_AXE)
+        waitse
+        applymovement(LOCALID_HELM_AXE, moves(walk_fast_up * 3, walk_fast_right, walk_fast_up * 3, jump_in_place_down))
+        playse(SE_EXIT)
+        addobject(LOCALID_HELM_MACE)
+        waitse
+        applymovement(LOCALID_HELM_MACE, moves(walk_fast_up * 3, walk_fast_left, walk_fast_up * 3, jump_in_place_down))
+        playse(SE_EXIT)
+        addobject(LOCALID_HELM_TRIDENT)
+        waitse
+        applymovement(LOCALID_HELM_TRIDENT, moves(walk_fast_up * 3, walk_fast_left * 2, walk_fast_up * 3, jump_in_place_down))
+        playse(SE_EXIT)
+        addobject(LOCALID_HELM_JAVELIN)
+        waitse
+        applymovement(LOCALID_HELM_JAVELIN, moves(walk_fast_up * 3, walk_fast_right * 2, walk_fast_up * 3, jump_in_place_down))
+        waitmovement
+        msgbox("{SPEAKER NAME_META}I can't let trespassing on the Halberd
+                go unpunished, Kirby!
+                
+                Come, and let me show you how a real
+                leader's army operates!")
+        trainerbattle_no_intro(TRAINER_GWEN, BattleshipHalberd_Helm_Text_MetaKnightOneDefeat)
+        applymovement(LOCALID_HELM_TRIDENT, moves(jump_in_place_down))
+        playse(SE_LEDGE)
+        waitmovement
+        msgbox("Lord Meta Knight! We've failed you!!!")
+        closemessage
+        applymovement(LOCALID_HELM_MACE, moves(jump_in_place_down))
+        playse(SE_LEDGE)
+        waitmovement
+        msgbox("Forgive us! Dem Helpers are too strong!")
+        closemessage
+        applymovement(LOCALID_HELM_AXE, moves(jump_in_place_down))
+        playse(SE_LEDGE)
+        waitmovement
+        msgbox("Give us another shot! Please! We'll get
+                it right this time!")
+        closemessage
+        applymovement(LOCALID_HELM_JAVELIN, moves(jump_in_place_down))
+        playse(SE_LEDGE)
+        waitmovement
+        msgbox("Can we even beat Kirby like this!? Do we
+                really need Helpers to stand a chance?!")
+        closemessage
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(walk_in_place_fast_down * 3))
+        waitmovement
+        msgbox("{SPEAKER NAME_META}Enough!")
+        applymovement(LOCALID_HELM_TRIDENT, moves(face_up))
+        applymovement(LOCALID_HELM_MACE, moves(face_up))
+        applymovement(LOCALID_HELM_AXE, moves(face_up))
+        applymovement(LOCALID_HELM_JAVELIN, moves(face_up))
+        msgbox("{SPEAKER NAME_META}You've already suffered one loss.
+                Fighting now will do you no good.
+                
+                Kirby\. I underestimated your potential
+                when it comes to commanding Helpers.
+                I won't make that mistake again.
+                
+                However, that doesn't mean I'll forgive
+                your transgressions so easily\.!")
+        closemessage
+        playse(SE_EXIT)
+        addobject(LOCALID_HELM_SAILOR)
+        waitse
+        applymovement(LOCALID_HELM_SAILOR, moves(walk_fast_up * 4))
+        waitmovement
+        playse(SE_LEDGE)
+        applymovement(LOCALID_HELM_SAILOR, moves(walk_fast_up * 2))
+        applymovement(LOCALID_PLAYER, moves(jump_left, face_right, delay_16, face_left, delay_16, face_down, delay_16, delay_16, walk_right, face_up))
+        waitmovement
+        msgbox("Lord Meta Knight, please stop! Kirby's
+                not here to interfere with us!
+                
+                He's just looking for a present his
+                friend dropped in the ocean here!")
+        closemessage
+        playse(SE_PIN)
+        applymovement(LOCALID_HELM_VUL, Common_Movement_ExclamationMark)
+        waitmovement
+        msgbox("Hm? Hrrm!? You mean this here?")
+        closemessage
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(face_right, delay_16, delay_16, face_down, delay_16, delay_16, face_right, delay_16, delay_16, walk_in_place_right * 2, delay_16, walk_in_place_slow_down))
+        waitmovement
+        msgbox("{SPEAKER NAME_META}\.
+                
+                I see\.
+                
+                Take this.")
+        setspeaker(NULL)
+        giveitem_msg(BattleshipHalberd_Helm_Text_ReceivedKinesPresent, ITEM_SAPPHIRE, 1, MUS_RG_OBTAIN_KEY_ITEM)
+        msgbox("{SPEAKER NAME_META}Now\.")
+        applymovement(LOCALID_HELM_METAKNIGHT, moves(walk_in_place_up))
+        waitmovement
+        msgbox("{SPEAKER NAME_META}Crew! Eject Kirby from the premises!
+                And prepare for liftoff!
+                
+                The Halberd will fly again! It's time to
+                put a stop to King Dedede's plot!")
+        closemessage()
+        setvar(VAR_ORANGE_OCEAN_STATE, 1)
+        warp(MAP_ORANGE_OCEAN, 14, 31)
+
+}
+
+text BattleshipHalberd_Helm_Text_MetaKnightOneDefeat
+{
+        "Hmph\."
+}
+
+text BattleshipHalberd_Helm_Text_ReceivedKinesPresent
+{
+        "Kirby received the {COLOR RED}Present{COLOR DARK_GRAY}!"
+}

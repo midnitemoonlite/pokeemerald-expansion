@@ -1421,7 +1421,7 @@ Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Cut
-- Counter
+- Karate Chop
 - Razor Leaf
 - Scary Face
 
@@ -1440,7 +1440,7 @@ Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Stomp
-- Counter
+- Reversal
 - Aerial Ace
 - Work Up
 
@@ -1458,10 +1458,10 @@ Level: 24
 Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
-- Rock Smash
+- Body Slam
 - Counter
 - Metal Claw
-- Harden
+- Leer
 
 /* Battleship Halberd (West) - Trident Knight */
 === TRAINER_AUSTINA ===
@@ -1478,13 +1478,13 @@ Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Peck
-- Counter
+- Force Palm
 - Spark
 - Magnet Rise
 
 /* Battleship Halberd (West) - Meta Knight */
 === TRAINER_GWEN ===
-Name: MetaKnight
+Name: Knight
 Class: Aqua Leader
 Pic: Aqua Leader Archie
 Music: Aqua
@@ -1496,7 +1496,7 @@ Level: 24
 Ability: Sharpness
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Beast
-- Karate Chop
+- Revenge
 - Razor Leaf
 - Dual Chop
 - Sharpen
@@ -1509,14 +1509,14 @@ Ball: Beast
 - Revenge
 - Metal Claw
 - Rock Tomb
-- Iron Defense
+- Harden
 
 SPECIES_TRIDENT_KNIGHT (M)
 Level: 24
 Ability: Motor Drive
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Beast
-- Force Palm
+- Revenge
 - Spark
 - Flame Charge
 - Magnet Rise
@@ -1526,7 +1526,7 @@ Level: 24
 Ability: Sniper
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Beast
-- Reversal
+- Revenge
 - Aerial Ace
 - Brutal Swing
 - Rapid Spin

@@ -265,20 +265,18 @@ script ResortArena_EventScript_AideSuccess
             I have here a care package for you.
             
             Please, go ahead and open it!")
-    giveitem_msg(WaddleDeeTown_Lab_ReceivedExpShare, ITEM_EXP_SHARE, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedHelperBoxLink, ITEM_POKEMON_BOX_LINK, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM09)
     giveitem(ITEM_BIG_PEARL)
     giveitem(ITEM_DIVE_BALL, 10)
     msgbox("Of particular note is a new tool made
-            at the lab: the Experience Share.
+            at the lab: the Helper Box Link.
             
-            This tool simplifies training Helpers by
-            giving experience to your whole party.
-            You can turn it on and off as needed.
+            You can use it to access your PC from
+            nearly anywhere in Dream Land.
             
-            The Royal Royale wasn't built with it in
-            mind, so your mileage may vary\.
-            but hopefully it serves you well!
+            Managing which Helpers you want on your
+            team will be much easier now!
             
             Now then, I must report the good news
             to the Great King. Carry on!")

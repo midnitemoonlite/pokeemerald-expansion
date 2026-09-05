@@ -274,16 +274,20 @@ script WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess
             {STR_VAR_2} Helpers so far!
             
             As promised, here's your care package!")
-    giveitem_msg(WaddleDeeTown_Lab_ReceivedHelperBoxLink, ITEM_POKEMON_BOX_LINK, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedExpShare, ITEM_EXP_SHARE, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM02)
     giveitem(ITEM_STARDUST)
     giveitem(ITEM_POKE_BALL, 10)
     setflag(FLAG_BINDER_GATE_01)
     msgbox("{SPEAKER NAME_WISE}A rather generous selection, is it not?
-            The Helper Box Link is especially handy.
+            Especially the Experience Share.
             
-            Use it, and you can access your Helper
-            boxes anywhere, without needing a PC!
+            It bestows experience to your entire
+            party, simplifying Helper training.
+
+            Your mileage with it may vary, as the
+            Royal Royale wasn't made with it in mind,
+            but it's still wondrous all the same.
             
             Hopefully this serves as an added
             incentive to work on your Info Cards\.
@@ -606,19 +610,19 @@ script WaddleDeeTown_Lab_BinderCheck2
             
             As proof of your hard work, please
             accept this care package from me!")
-    giveitem_msg(WaddleDeeTown_Lab_ReceivedExpShare, ITEM_EXP_SHARE, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedHelperBoxLink, ITEM_POKEMON_BOX_LINK, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM09)
     giveitem(ITEM_BIG_PEARL)
     giveitem(ITEM_DIVE_BALL, 10)
     msgbox("{SPEAKER NAME_WISE}It includes a TM, new Hearts, some
             valuables, and most importantly:
-            the Experience Share!
+            the Helper Box Link!
             
-            This tool simplifies training Helpers by
-            giving experience to your whole party.
+            This tool lets you access the PC from
+            just about anywhere you'd like.
             
-            Hopefully it makes filling out your
-            Info Card Binder a bit easier!")
+            With the growing roster of Helpers you
+            have recruited, it's sure to be handy!")
     setflag(FLAG_BINDER_GATE_02)
     if(var(VAR_0x8009) >= 30 && !flag(FLAG_BINDER_GATE_03))
         {
