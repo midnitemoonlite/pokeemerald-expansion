@@ -678,4 +678,4 @@ BattleshipHalberd_Helm_Text_MetaKnightOneDefeat::
 
 BattleshipHalberd_Helm_Text_ReceivedKinesPresent::
 # 207 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	.string "Kirby received {COLOR RED}Kine's Gift{COLOR DARK_GRAY}!$"
+	.string "Kirby received the {COLOR RED}Present{COLOR DARK_GRAY}!$"

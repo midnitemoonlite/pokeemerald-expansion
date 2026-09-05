@@ -1774,6 +1774,94 @@ ResortArena_EventScript_Victory::
 	return
 
 
+ResortArena_EventScript_TurnAwayFromMine::
+# 1425 "data/maps/ResortArena/scripts.pory"
+	lockall
+# 1426 "data/maps/ResortArena/scripts.pory"
+	playse SE_PIN
+# 1427 "data/maps/ResortArena/scripts.pory"
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+# 1428 "data/maps/ResortArena/scripts.pory"
+	waitmovement
+# 1429 "data/maps/ResortArena/scripts.pory"
+	waitse
+# 1430 "data/maps/ResortArena/scripts.pory"
+	msgbox ResortArena_EventScript_TurnAwayFromMine_Text_0
+# 1434 "data/maps/ResortArena/scripts.pory"
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_TurnAwayFromMine_Movement_0
+# 1435 "data/maps/ResortArena/scripts.pory"
+	waitmovement
+# 1436 "data/maps/ResortArena/scripts.pory"
+	releaseall
+	return
+
+
+ResortArena_EventScript_GiveMinePresent::
+# 1441 "data/maps/ResortArena/scripts.pory"
+	lockall
+# 1442 "data/maps/ResortArena/scripts.pory"
+	getplayerxy VAR_TEMP_2, VAR_TEMP_3
+# 1443 "data/maps/ResortArena/scripts.pory"
+	compare VAR_TEMP_2, 10
+	goto_if_le ResortArena_EventScript_GiveMinePresent_2
+ResortArena_EventScript_GiveMinePresent_1:
+# 1447 "data/maps/ResortArena/scripts.pory"
+	playse SE_PIN
+# 1448 "data/maps/ResortArena/scripts.pory"
+	applymovement LOCALID_MINE, Common_Movement_ExclamationMark
+# 1449 "data/maps/ResortArena/scripts.pory"
+	waitmovement
+# 1450 "data/maps/ResortArena/scripts.pory"
+	waitse
+# 1451 "data/maps/ResortArena/scripts.pory"
+	msgbox ResortArena_EventScript_GiveMinePresent_Text_0
+# 1457 "data/maps/ResortArena/scripts.pory"
+	checkitem ITEM_SAPPHIRE
+# 1458 "data/maps/ResortArena/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq ResortArena_EventScript_GiveMinePresent_5
+ResortArena_EventScript_GiveMinePresent_4:
+# 1462 "data/maps/ResortArena/scripts.pory"
+	playfanfare MUS_OBTAIN_TMHM
+# 1463 "data/maps/ResortArena/scripts.pory"
+	message ResortArena_EventScript_GiveMinePresent_Text_1
+# 1465 "data/maps/ResortArena/scripts.pory"
+	waitmessage
+# 1466 "data/maps/ResortArena/scripts.pory"
+	waitfanfare
+# 1467 "data/maps/ResortArena/scripts.pory"
+	msgbox ResortArena_EventScript_GiveMinePresent_Text_2
+# 1481 "data/maps/ResortArena/scripts.pory"
+	closemessage
+# 1482 "data/maps/ResortArena/scripts.pory"
+	playse SE_EXIT
+# 1483 "data/maps/ResortArena/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 1484 "data/maps/ResortArena/scripts.pory"
+	removeobject LOCALID_MINE
+# 1485 "data/maps/ResortArena/scripts.pory"
+	setflag FLAG_HIDE_MINE
+# 1486 "data/maps/ResortArena/scripts.pory"
+	setvar VAR_ORANGE_OCEAN_STATE, 3
+# 1487 "data/maps/ResortArena/scripts.pory"
+	delay 15
+# 1488 "data/maps/ResortArena/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 1489 "data/maps/ResortArena/scripts.pory"
+	releaseall
+	return
+
+ResortArena_EventScript_GiveMinePresent_2:
+# 1445 "data/maps/ResortArena/scripts.pory"
+	applymovement LOCALID_MINE, ResortArena_EventScript_Challenger2_Movement_0
+	goto ResortArena_EventScript_GiveMinePresent_1
+
+ResortArena_EventScript_GiveMinePresent_5:
+# 1460 "data/maps/ResortArena/scripts.pory"
+	removeitem ITEM_SAPPHIRE
+	goto ResortArena_EventScript_GiveMinePresent_4
+
+
 # 436 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Courtship_Movement_0:
 # 436 "data/maps/ResortArena/scripts.pory"
@@ -2736,6 +2824,12 @@ ResortArena_EventScript_GrandFinals_Movement_15:
 	walk_in_place_up
 	step_end
 
+# 1434 "data/maps/ResortArena/scripts.pory"
+ResortArena_EventScript_TurnAwayFromMine_Movement_0:
+# 1434 "data/maps/ResortArena/scripts.pory"
+	walk_down
+	step_end
+
 ResortArena_EventScript_Sign_Text_0:
 # 8 "data/maps/ResortArena/scripts.pory"
 	.string "Newly-opened: RESORT ARENA\n"
@@ -3359,6 +3453,38 @@ ResortArena_EventScript_Victory_Text_2:
 	.string "able to safely train stronger Helpers.\p"
 	.string "I'm sure we'll see each other again\n"
 	.string "at the next Arena. Until then!$"
+
+ResortArena_EventScript_TurnAwayFromMine_Text_0:
+# 1430 "data/maps/ResortArena/scripts.pory"
+	.string "{SPEAKER NAME_KINE}Psst! Kirby! We can't go this way!\n"
+	.string "I haven't found my gift for Mine yet…\p"
+	.string "Let's come back AFTER we find it, okay?$"
+
+ResortArena_EventScript_GiveMinePresent_Text_0:
+# 1451 "data/maps/ResortArena/scripts.pory"
+	.string "Oh, Kiiiiine! Where have you been, my\n"
+	.string "darling sea angel?\p"
+	.string "…what's that? You and Kirby went out\n"
+	.string "and brought me an underwater present?\l"
+	.string "Oh, you shouldn't have!$"
+
+ResortArena_EventScript_GiveMinePresent_Text_1:
+# 1463 "data/maps/ResortArena/scripts.pory"
+	.string "Kirby handed over the\n"
+	.string "Present to Mine!$"
+
+ResortArena_EventScript_GiveMinePresent_Text_2:
+# 1467 "data/maps/ResortArena/scripts.pory"
+	.string "Hmm? What's that? Speak up, Kine, I\n"
+	.string "can't hear you with your mouth full!\p"
+	.string "I see… so you're going to help Kirby\n"
+	.string "on his journey. I understand!\p"
+	.string "You're so selfless… it's part of what\n"
+	.string "made you such a great catch! {EMOJI_HEART}\p"
+	.string "Well, don't worry about me. I'll head\n"
+	.string "home, and you come back when you can.\p"
+	.string "Bon voyage! Take good care of my\n"
+	.string "Kiney-winey for me, okay, Kirby?$"
 
 ResortArena_Text_Challenger1::
 # 832 "data/maps/ResortArena/scripts.pory"

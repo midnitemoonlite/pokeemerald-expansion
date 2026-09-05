@@ -93,7 +93,7 @@
 #define FLAG_COCOA_CAVE_B2F_BOTTOM_LEFT_LANTERN    0x47 // Cocoa Cave (B2F) - Bottom-left lantern has been lit
 #define FLAG_OBTAINED_WHEELIE    0x48 // Battleship Halberd (Reactor) - Gift mon Wheelie
 #define FLAG_SAILOR_QUEST    0x49 // Resort Arena - Used to keep track of sailor quest state
-#define FLAG_UNUSED_NEW    0x4A // Unused Flag
+#define FLAG_HIDE_MINE    0x4A // Resort Arena - Hides Mine
 #define FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE    0x4B // Battleship Halberd (Reactor) - Permanent switch to open left gate
 #define FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE    0x4C // Battleship Halberd (Reactor) - Permanent switch to open middle gate
 #define FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE    0x4D // Battleship Halberd (Reactor) - Permanent switch to open right gate

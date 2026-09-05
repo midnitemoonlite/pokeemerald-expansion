@@ -347,6 +347,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_MINE",
       "graphics_id": "OBJ_EVENT_GFX_TUBER_F",
       "x": 8,
       "y": 1,
@@ -357,7 +358,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MINE"
     }
   ],
   "warp_events": [
@@ -397,7 +398,116 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "0",
+      "script": "ResortArena_EventScript_TurnAwayFromMine"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "0",
+      "script": "ResortArena_EventScript_TurnAwayFromMine"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "0",
+      "script": "ResortArena_EventScript_TurnAwayFromMine"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "0",
+      "script": "ResortArena_EventScript_TurnAwayFromMine"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "0",
+      "script": "ResortArena_EventScript_TurnAwayFromMine"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "0",
+      "script": "ResortArena_EventScript_TurnAwayFromMine"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "2",
+      "script": "ResortArena_EventScript_GiveMinePresent"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "2",
+      "script": "ResortArena_EventScript_GiveMinePresent"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "2",
+      "script": "ResortArena_EventScript_GiveMinePresent"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "2",
+      "script": "ResortArena_EventScript_GiveMinePresent"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "2",
+      "script": "ResortArena_EventScript_GiveMinePresent"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_ORANGE_OCEAN_STATE",
+      "var_value": "2",
+      "script": "ResortArena_EventScript_GiveMinePresent"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

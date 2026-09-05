@@ -1419,3 +1419,74 @@ script ResortArena_EventScript_Victory
             at the next Arena. Until then!")
     release
 }
+
+script ResortArena_EventScript_TurnAwayFromMine
+{
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_PLAYER, Common_Movement_ExclamationMark)
+    waitmovement
+    waitse
+    msgbox("{SPEAKER NAME_KINE}Psst! Kirby! We can't go this way!
+            I haven't found my gift for Mine yet\.
+            
+            Let's come back AFTER we find it, okay?")
+    closemessage
+    applymovement(LOCALID_PLAYER, moves(walk_down))
+    waitmovement
+    releaseall
+}
+
+script ResortArena_EventScript_GiveMinePresent
+{
+    lockall
+    getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+    if(var(VAR_TEMP_2) <= 10)
+    {
+        applymovement(LOCALID_MINE, moves(face_right))
+        applymovement(LOCALID_PLAYER, moves(face_left))
+    }
+    playse(SE_PIN)
+    applymovement(LOCALID_MINE, Common_Movement_ExclamationMark)
+    waitmovement
+    waitse
+    msgbox("Oh, Kiiiiine! Where have you been, my
+            darling sea angel?
+            
+            \.what's that? You and Kirby went out
+            and brought me an underwater present?
+            Oh, you shouldn't have!")
+    checkitem(ITEM_SAPPHIRE)
+    if(var(VAR_RESULT) == TRUE)
+    {
+        removeitem(ITEM_SAPPHIRE)
+    }
+    playfanfare(MUS_OBTAIN_TMHM)
+    message("Kirby handed over the
+             Present to Mine!")
+    waitmessage
+    waitfanfare
+    msgbox("Hmm? What's that? Speak up, Kine, I
+            can't hear you with your mouth full!
+            
+            I see\. so you're going to help Kirby
+            on his journey. I understand!
+            
+            You're so selfless\. it's part of what
+            made you such a great catch! {EMOJI_HEART}
+            
+            Well, don't worry about me. I'll head
+            home, and you come back when you can.
+            
+            Bon voyage! Take good care of my
+            Kiney-winey for me, okay, Kirby?")
+    closemessage
+    playse(SE_EXIT)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    removeobject(LOCALID_MINE)
+    setflag(FLAG_HIDE_MINE)
+    setvar(VAR_ORANGE_OCEAN_STATE, 3)
+    delay(15)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    releaseall
+}
