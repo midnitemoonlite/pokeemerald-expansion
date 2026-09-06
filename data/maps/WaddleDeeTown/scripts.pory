@@ -471,32 +471,46 @@ script WaddleDeeTown_EventScript_EggDealer
             egg off my hands for me?", MSGBOX_YESNO)
         if(var(VAR_RESULT) == YES)
         {
-            msgbox("Oh, thank you! Here you go, then!")
-            giveegg(SPECIES_CHICK)
-            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY)
+            getpartysize
+            if(var(VAR_RESULT) <= 6)
             {
-                playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
-                message("Kirby received the egg.")
-                waitmessage()
-                waitfanfare()
-                setflag(FLAG_RECEIVED_CHICK_EGG)
-                call(Common_EventScript_GetGiftMonPartySlot)
+                msgbox("Oh, Kirby\. it looks like you've got too
+                        many Helpers on you to carry this egg.
+                        
+                        Free up a space and come back when
+                        you're ready to take it.")
                 release
             }
-            elif(var(VAR_RESULT) == MON_GIVEN_TO_PC)
+            else
             {
-                playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
-                message("Kirby received an egg in the PC.")
-                waitmessage()
-                waitfanfare()
-                setflag(FLAG_RECEIVED_CHICK_EGG)
-                call(Common_EventScript_TransferredToPC)
-                release
-            }
-            elif(var(VAR_RESULT) == MON_CANT_GIVE)
-            {
-                call(Common_EventScript_NoMoreRoomForPokemon)
-                release
+                giveegg(SPECIES_CHICK)
+                if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY)
+                {
+                    msgbox("Oh, thank you! Here you go, then!")
+                    playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+                    message("Kirby received the egg.")
+                    waitmessage()
+                    waitfanfare()
+                    setflag(FLAG_RECEIVED_CHICK_EGG)
+                    call(Common_EventScript_GetGiftMonPartySlot)
+                    release
+                }
+                elif(var(VAR_RESULT) == MON_GIVEN_TO_PC)
+                {
+                    msgbox("Oh, thank you! Here you go, then!")
+                    playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+                    message("Kirby received an egg in the PC.")
+                    waitmessage()
+                    waitfanfare()
+                    setflag(FLAG_RECEIVED_CHICK_EGG)
+                    call(Common_EventScript_TransferredToPC)
+                    release
+                }
+                elif(var(VAR_RESULT) == MON_CANT_GIVE)
+                {
+                    call(Common_EventScript_NoMoreRoomForPokemon)
+                    release
+                }
             }
         }
         elif(var(VAR_RESULT) == NO)
