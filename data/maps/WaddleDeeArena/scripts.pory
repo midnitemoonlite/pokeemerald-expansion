@@ -7,9 +7,14 @@ script WaddleDeeArena_EventScript_Youngster
 {
     lock
     faceplayer
-    msgbox("If you need more time to prepare before
-            taking on the Arena, there's a nurse
-            and PC waiting in the back.")
+    msgbox("I heard this bit of advice from the
+            Great King\. 
+            
+            When a Helper uses a move that shares
+            its type, that move gets stronger.
+            
+            No wonder some folks like to load up
+            on a single type of Helper, huh?")
     release
 }
 

@@ -381,11 +381,26 @@ script WaddleDeeTown_EventScript_HeadChef
 {
     lock
     faceplayer
-    msgbox("I heard the café's head chef is out
+    if(!flag(FLAG_OBTAINED_ORAN_BERRIES))
+    {
+        msgbox("Why are you looking at me like that?
+                Oh\. is it these snacks I'm holding?
+                
+                I got them from the café the other day.
+                Here, I'll share some with you!")
+        giveitem(ITEM_ORAN_BERRY, 10)
+        setflag(FLAG_OBTAINED_ORAN_BERRIES)
+        msgbox("That should be enough for you and your
+                Helpers to not go hungry, okay?")
+    }
+    else
+    {
+        msgbox("I heard the café's head chef is out
             on an ingredient-gathering voyage.
             
             What kind of ingredients? My tummy's
-            getting hungry just thinking about it\.")
+            rumbling again just thinking about it\.")
+    }
     release
 }
 
@@ -472,7 +487,7 @@ script WaddleDeeTown_EventScript_EggDealer
         if(var(VAR_RESULT) == YES)
         {
             getpartysize
-            if(var(VAR_RESULT) <= 6)
+            if(var(VAR_RESULT) >= 6)
             {
                 msgbox("Oh, Kirby\. it looks like you've got too
                         many Helpers on you to carry this egg.
@@ -499,7 +514,7 @@ script WaddleDeeTown_EventScript_EggDealer
                 {
                     msgbox("Oh, thank you! Here you go, then!")
                     playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
-                    message("Kirby received an egg in the PC.")
+                    message("Kirby received the egg in the PC.")
                     waitmessage()
                     waitfanfare()
                     setflag(FLAG_RECEIVED_CHICK_EGG)
@@ -825,13 +840,15 @@ script WaddleDeeTown_EventScript_EastExitBlocked
 {
     lock
     playse(SE_PIN)
-    applymovement(LOCALID_TOWN_EAST_GUARD, Common_Movement_ExclamationMark)
+    applymovement(LOCALID_TOWN_EAST_GUARD_ONE, Common_Movement_ExclamationMark)
+    applymovement(LOCALID_TOWN_EAST_GUARD_TWO, Common_Movement_ExclamationMark)
     waitmovement()
-    applymovement(LOCALID_TOWN_EAST_GUARD, moves(walk_in_place_down))
+    applymovement(LOCALID_TOWN_EAST_GUARD_ONE, moves(walk_in_place_down))
+    applymovement(LOCALID_TOWN_EAST_GUARD_TWO, moves(walk_in_place_up))
     waitmovement()
     msgbox("Excuse me!
 
-            I'm sorry, but I can't let you pass
+            I'm sorry, but we can't let you pass
             through to Vegetable Valley just yet.
             
             We're doing inspections in the area

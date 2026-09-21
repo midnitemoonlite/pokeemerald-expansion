@@ -1441,10 +1441,16 @@ script ResortArena_EventScript_GiveMinePresent
 {
     lockall
     getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
-    if(var(VAR_TEMP_2) <= 10)
+    if(var(VAR_TEMP_2) >= 10)
     {
         applymovement(LOCALID_MINE, moves(face_right))
         applymovement(LOCALID_PLAYER, moves(face_left))
+        waitmovement
+    }
+    if(var(VAR_TEMP_2) < 10)
+    {
+        applymovement(LOCALID_MINE, moves(face_down))
+        waitmovement
     }
     playse(SE_PIN)
     applymovement(LOCALID_MINE, Common_Movement_ExclamationMark)

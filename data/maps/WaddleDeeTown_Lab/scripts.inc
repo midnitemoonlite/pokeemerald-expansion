@@ -750,6 +750,314 @@ WaddleDeeTown_Lab_EventScript_TurnRight::
 	return
 
 
+WaddleDeeTown_Lab_EventScript_Book1::
+# 805 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 806 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book1_Text_0
+# 822 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book2::
+# 827 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 828 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book2_Text_0
+# 855 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book3::
+# 860 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 861 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book3_Text_0
+# 882 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book4::
+# 887 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 888 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book4_Text_0
+# 910 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book5::
+# 915 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 916 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book5_Text_0
+# 930 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book6::
+# 935 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 936 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 939 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book7::
+# 944 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 945 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 948 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book8::
+# 953 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 954 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book8_Text_0
+# 974 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	goto_if_unset FLAG_READ_DIARY, WaddleDeeTown_Lab_EventScript_Book8_2
+WaddleDeeTown_Lab_EventScript_Book8_1:
+# 978 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+WaddleDeeTown_Lab_EventScript_Book8_2:
+# 976 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	setflag FLAG_READ_DIARY
+	goto WaddleDeeTown_Lab_EventScript_Book8_1
+
+
+WaddleDeeTown_Lab_EventScript_Book9::
+# 983 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 984 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 987 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book10::
+# 992 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 993 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 996 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book12::
+# 1001 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1002 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book12_Text_0
+# 1023 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book13::
+# 1028 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1029 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book13_Text_0
+# 1047 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book14::
+# 1052 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1053 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book14_Text_0
+# 1070 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book15::
+# 1075 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1076 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1079 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book16::
+# 1084 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1085 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book16_Text_0
+# 1099 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book18::
+# 1104 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1105 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book18_Text_0
+# 1123 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book19::
+# 1128 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1129 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book19_Text_0
+# 1150 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book20::
+# 1155 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1156 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book20_Text_0
+# 1168 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book21::
+# 1173 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1174 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book21_Text_0
+# 1194 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book22::
+# 1199 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1200 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book22_Text_0
+# 1217 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book23::
+# 1222 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1223 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book23_Text_0
+# 1236 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book24::
+# 1241 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1242 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1245 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book25::
+# 1250 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1251 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1254 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book26::
+# 1259 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1260 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1263 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book27::
+# 1268 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1269 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book27_Text_0
+# 1290 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book28::
+# 1295 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1296 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1299 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book29::
+# 1304 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1305 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1308 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book30::
+# 1313 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1314 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1317 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book31::
+# 1322 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1323 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1326 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book32::
+# 1331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1332 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1335 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
 # 176 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 WaddleDeeTown_Lab_EventScript_WiseGateCheck_Movement_0:
 # 176 "data/maps/WaddleDeeTown_Lab/scripts.pory"
@@ -1241,6 +1549,282 @@ WaddleDeeTown_Lab_BinderCheck7_Text_1:
 	.string "the ultimate Heart unto you as well.\p"
 	.string "The Master Heart can never fail.\n"
 	.string "Use it wisely, my good friend!$"
+
+WaddleDeeTown_Lab_EventScript_Book1_Text_0:
+# 806 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Kawasaki's Chef Training: Curry\p"
+	.string "“The Superspicy Curry is my specialty\n"
+	.string "dish! It's so delicious, you'll beg\l"
+	.string "for dozens of drinks to savor it with!\p"
+	.string "Ingredients: rice, beef, broth, cumin,\n"
+	.string "coriander, cinnamon, garlic, sesame,\l"
+	.string "hot sauce, jalapeno, tabasco, cayenne,\l"
+	.string "hot sauce, habanero, hot sauce, \l"
+	.string "ghost pepper, hot sauce, hot sauce,\l"
+	.string "hot sauce, hot sauce, hot sauce,\l"
+	.string "hot sauce, hot sauce, hot sauce,\l"
+	.string "hot sauce, hot sauce, hot sauce,”\p"
+	.string "You close the book concernedly.$"
+
+WaddleDeeTown_Lab_EventScript_Book2_Text_0:
+# 828 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Kawasaki's Chef Training: Ice Pops\p"
+	.string "“This treat is perfect for cooling off\n"
+	.string "after a hot summer day… or after eating\l"
+	.string "my famous Superspicy Curry!\p"
+	.string "Ingredients: water, sticks\p"
+	.string "Step 1: Pour water into a cube or tube\n"
+	.string "tray.\p"
+	.string "Step 2: Place sticks in tray slots,\n"
+	.string "partially submerged into water.\p"
+	.string "Step 3: Place in freezer until ready.\p"
+	.string "… \p"
+	.string "I know what you're thinking. That's it?\n"
+	.string "This barely counts as a recipe!\p"
+	.string "But that's exactly the point! Even\n"
+	.string "head chefs like me started somewhere!\p"
+	.string "Anyone can learn to cook as good as I\n"
+	.string "do, if only you apply yourself right.\l"
+	.string "So don't let yourself be intimidated!”$"
+
+WaddleDeeTown_Lab_EventScript_Book3_Text_0:
+# 861 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "On The Making Of A King: Part 1\p"
+	.string "“Ya might be wonderin': why write a\n"
+	.string "series on how I serve as king?\p"
+	.string "Is this even useful to a citizenry\n"
+	.string "full of a bunch of illiterate folks?\p"
+	.string "Well, I think so! And here, I'll\n"
+	.string "tell y'all why!\p"
+	.string "Number one: I'm a great enough king\n"
+	.string "to deserve havin' my accomplishments\l"
+	.string "immortalized in a fancy book!\p"
+	.string "Number two: if the population learns to\n"
+	.string "read later on, they should know the\l"
+	.string "best king there was and ever will be!\p"
+	.string "Number three: Proofreadin' all dis is\n"
+	.string "gonna make me a better reader too!”$"
+
+WaddleDeeTown_Lab_EventScript_Book4_Text_0:
+# 888 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "On The Making Of A King: Part 4\p"
+	.string "“Lemme let y'all in on a little secret,\n"
+	.string "from generous king to feeble subject.\p"
+	.string "Ya do NOT want a guy like Meta Knight\n"
+	.string "rulin' over you. Yeesh!\p"
+	.string "He's so stern and tough! What a killjoy!\n"
+	.string "Doesn't he get the vibe of this place?\p"
+	.string "And all of his orders are about trainin'\n"
+	.string "and fightin' and whatnot! It's tirin'!\p"
+	.string "My orders are easy things! Like strokin'\n"
+	.string "my ego or grabbin' me some grub!\p"
+	.string "Kirby stopped that knucklehead from\n"
+	.string "takin' over Dream Land once… huh,\l"
+	.string "what do I think of Kirby bein' king?\p"
+	.string "Hrmmm… nope. He's got no shot.”$"
+
+WaddleDeeTown_Lab_EventScript_Book5_Text_0:
+# 916 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "On The Making of a King: Part 13\p"
+	.string "“Notice: The accounts you are about to\n"
+	.string "read are products of their time.\p"
+	.string "They reflect behavior that was wrong\n"
+	.string "then and now, but nonetheless was\l"
+	.string "commonplace in the distant past.\p"
+	.string "The events have been preserved here\n"
+	.string "so as not to erase their existence.”\p"
+	.string "…it then describes several of King\n"
+	.string "Dedede's misadventures in Dream Land.$"
+
+WaddleDeeTown_Lab_EventScript_Book6_Text_0:
+# 936 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Waddle Dee Fairy Tale\p"
+	.string "“???”$"
+
+WaddleDeeTown_Lab_EventScript_Book8_Text_0:
+# 954 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Diary of a Waddle Dee\p"
+	.string "“I've never seen a library this big in\n"
+	.string "my life before. It's huge!\p"
+	.string "I was wondering, would they notice if\n"
+	.string "one extra book came in or out of here?\p"
+	.string "So I figured, for fun, I'd write a little\n"
+	.string "diary, sneak it into the library, and\l"
+	.string "then hide it among the shelves.\p"
+	.string "If it gets noticed and removed, well,\n"
+	.string "I guess I won't know if that happens…\p"
+	.string "But if someone happens to be reading\n"
+	.string "this, please tell me if it's still there!\p"
+	.string "I live around Grape Garden, so I can't\n"
+	.string "visit the library in town so often…”$"
+
+WaddleDeeTown_Lab_EventScript_Book12_Text_0:
+# 1002 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "DREAM LAND: ULTIMATE JOKE BOOK!\p"
+	.string "“Q: What do Waddle Dees carry their\n"
+	.string "drinks in?\p"
+	.string "A: Waddle bottles!\p"
+	.string "Q: When the Great King was in school,\n"
+	.string "what did his report card look like?\p"
+	.string "A: D, D, D!\p"
+	.string "Q: What did the grumpy tourist say\n"
+	.string "after visiting Popstar?\p"
+	.string "A: I rate this planet one star!”\p"
+	.string "…\p"
+	.string "You'd probably be laughing if you could\n"
+	.string "read.$"
+
+WaddleDeeTown_Lab_EventScript_Book13_Text_0:
+# 1029 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Artifactual: Volume 2\p"
+	.string "“The Fountain of Dreams is powered by\n"
+	.string "the Star Rod (see volume 1), which some\l"
+	.string "say also created the fountain itself.\p"
+	.string "Hopes and dreams gather to and flow\n"
+	.string "from the fountain's waters.\p"
+	.string "Dreams that flow from the fountain can\n"
+	.string "enter the minds of the slumbering.\p"
+	.string "These dreams are normally pleasant,\n"
+	.string "but can be corrupted when sinister\l"
+	.string "intentions soak in the springs.\p"
+	.string "Fountains of Dreams can be found\n"
+	.string "on several different planets.”$"
+
+WaddleDeeTown_Lab_EventScript_Book14_Text_0:
+# 1053 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Popstar Chronicle: Volume X4\p"
+	.string "“A dark cloud has covered the planet,\n"
+	.string "possessing all who encounter it.\p"
+	.string "Its appearance and behavior calls to\n"
+	.string "mind the Dark Matter that appeared\l"
+	.string "at the Rainbow Islands not long ago.\p"
+	.string "Dark Matter attacked Dream Land out\n"
+	.string "of loneliness-induced frustration…\p"
+	.string "So why does this cloud, which hosts \n"
+	.string "all kind of Dark Matter in it, fight?\p"
+	.string "Is surrounding oneself with others not\n"
+	.string "enough to dispel loneliness? What is?”$"
+
+WaddleDeeTown_Lab_EventScript_Book16_Text_0:
+# 1085 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Artifactual: Volume 25\p"
+	.string "“Dream Rods can be found in palaces\n"
+	.string "across several different planets.\p"
+	.string "They bring dreams to life, which make\n"
+	.string "them similar to wish-granting items.\p"
+	.string "However, their creations are merely\n"
+	.string "visualizations made of dream energy,\l"
+	.string "rather than original items.\p"
+	.string "As such, the Dream Rod struggles to\n"
+	.string "conceptualize abstract dreams.”$"
+
+WaddleDeeTown_Lab_EventScript_Book18_Text_0:
+# 1105 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Popstar Chronicle: Volume XA\p"
+	.string "“It was all too brief, but for a moment,\n"
+	.string "Popstar was in grave danger once more.\p"
+	.string "This time, a shroud of tangled vines\n"
+	.string "ensnared the planet, trapping its\l"
+	.string "residents in an inescapable bind.\p"
+	.string "Victims of the incident noted they felt\n"
+	.string "their vitality being drained.\p"
+	.string "The source of these vines is as of yet\n"
+	.string "unidentified, but seemed to be high\l"
+	.string "above the clouds…\p"
+	.string "What sort of dangerous threats could\n"
+	.string "lurk just outside our sights?”$"
+
+WaddleDeeTown_Lab_EventScript_Book19_Text_0:
+# 1129 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Popstar Chronicle: Volume XB\p"
+	.string "“A mysterious spaceship docked on our\n"
+	.string "planet. Unlike last time, this one was\l"
+	.string "large enough to overshadow the planet.\p"
+	.string "From this vessel, a large workforce\n"
+	.string "emerged and immediately took over.\p"
+	.string "Large-scale mechanical terraforming\n"
+	.string "urbanized the natural surroundings.\p"
+	.string "With the vessel's explosion, the damage\n"
+	.string "has mostly been done, but one wonders…\p"
+	.string "For all the chaos and disruption, it also\n"
+	.string "introduced new modernizations and\l"
+	.string "technologies to the planet.\p"
+	.string "Will they ever see the light of day in\n"
+	.string "a form that can coexist with nature?”$"
+
+WaddleDeeTown_Lab_EventScript_Book20_Text_0:
+# 1156 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Artifactual: Volume 67\p"
+	.string "“The Master Crown was a device said to\n"
+	.string "grant limitless power to its wearer.\p"
+	.string "It was known as the legendary treasure\n"
+	.string "of Planet Halcandra, which fell into\l"
+	.string "ruin long ago.\p"
+	.string "How such a powerful item was unable to\n"
+	.string "prevent the grim fate of Halcandra is\l"
+	.string "a mystery to scholars…”$"
+
+WaddleDeeTown_Lab_EventScript_Book21_Text_0:
+# 1174 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Helper Handbook: Stats\p"
+	.string "“Helpers have six unique stats that\n"
+	.string "define their abilities in combat.\p"
+	.string "Their HP is the amount of damage they\n"
+	.string "can take before being defeated.\p"
+	.string "Attack and Special Attack marks the\n"
+	.string "power of physical and special moves…\p"
+	.string "…and Defense and Special Defense is\n"
+	.string "their resistance to those moves.\p"
+	.string "Incidentally, moves are classified as\n"
+	.string "physical or special individually, rather\l"
+	.string "than by other metrics such as type.\p"
+	.string "Lastly, Helpers with higher Speed\n"
+	.string "move before those with lower Speed.”$"
+
+WaddleDeeTown_Lab_EventScript_Book22_Text_0:
+# 1200 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Helper Handbook: Status Conditions\p"
+	.string "“Helpers can be afflicted by several\n"
+	.string "malignant statuses.\p"
+	.string "Poison whittles a Helper's HP away\n"
+	.string "after each turn in battle.\p"
+	.string "Burns deal less damage than poison, but\n"
+	.string "they also weaken physical blows.\p"
+	.string "Paralysis slows Helper movement and\n"
+	.string "renders them immobile occasionally.\p"
+	.string "Sleep and freezing also incapacitate\n"
+	.string "Helpers temporarily, but certain moves\l"
+	.string "can cure the afflicted specimens.$"
+
+WaddleDeeTown_Lab_EventScript_Book23_Text_0:
+# 1223 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Helper Handbook: Types\p"
+	.string "“Please consult the following graph on\n"
+	.string "the intricacies of the type chart.”\p"
+	.string "… … …\p"
+	.string "It's too complicated to describe in\n"
+	.string "text boxes this small…\p"
+	.string "Thankfully, battles will tell you how\n"
+	.string "effective moves are on an enemy.\l"
+	.string "Just rely on that instead, okay?$"
+
+WaddleDeeTown_Lab_EventScript_Book27_Text_0:
+# 1269 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Helper Handbook: Evolution Stars\p"
+	.string "“Some Helpers evolve into new species\n"
+	.string "when exposed to certain starry items.\p"
+	.string "However, there is a catch: most of\n"
+	.string "these Helpers will appear to stop\l"
+	.string "learning new moves upon evolution.\p"
+	.string "They'll only begin to learn new moves\n"
+	.string "at the level at which the unevolved\l"
+	.string "Helper would have mastered its moves.\p"
+	.string "As an aside…\p"
+	.string "If a Helper learns a move that its\n"
+	.string "evolved form doesn't get, don't fret.\p"
+	.string "That move still exists deep in the\n"
+	.string "evolved Helper's egg movepool,\l"
+	.string "and can be learned by other means.”$"
 
 WaddleDeeTown_Lab_ReceivedHelperBoxLink::
 # 231 "data/maps/WaddleDeeTown_Lab/scripts.pory"

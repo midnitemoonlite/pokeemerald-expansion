@@ -378,7 +378,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Noddy (M) @ Oran Berry
+Noddy (M)
 Level: 10
 Ability: Comatose
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
@@ -395,7 +395,7 @@ AI: Basic Trainer
 
 Dupa (M)
 Level: 10
-Ability: Unnerve
+Ability: Synchronize
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Bite
@@ -405,7 +405,7 @@ Ball: Strange
 
 NESP (F) @ Black Sludge
 Level: 10
-Ability: Neuroforce
+Ability: Telepathy
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Confusion
@@ -413,10 +413,10 @@ Ball: Strange
 - Trick
 - Imprison
 
-Sphere Doomer (M) @ Icy Rock
+Sphere Doomer (M) @ Oran Berry
 Level: 11
 Ability: Forecast
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 Ball: Strange
 - Snowscape
 - Powder Snow
@@ -434,7 +434,7 @@ AI: Basic Trainer
 
 Dupa (M)
 Level: 10
-Ability: Unnerve
+Ability: Synchronize
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Bite
@@ -444,7 +444,7 @@ Ball: Strange
 
 NESP (F) @ Black Sludge
 Level: 10
-Ability: Neuroforce
+Ability: Telepathy
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Confusion
@@ -452,7 +452,7 @@ Ball: Strange
 - Trick
 - Imprison
 
-Sphere Doomer (M) @ Heat Rock
+Sphere Doomer (M) @ Oran Berry
 Level: 11
 Ability: Forecast
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
@@ -473,8 +473,8 @@ AI: Basic Trainer
 
 Dupa (M)
 Level: 10
-Ability: Unnerve
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Ability: Synchronize
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 Ball: Strange
 - Bite
 - Growl
@@ -483,7 +483,7 @@ Ball: Strange
 
 NESP (F) @ Black Sludge
 Level: 10
-Ability: Neuroforce
+Ability: Telepathy
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Strange
 - Confusion
@@ -491,10 +491,10 @@ Ball: Strange
 - Trick
 - Imprison
 
-Sphere Doomer (M) @ Damp Rock
+Sphere Doomer (M) @ Oran Berry
 Level: 11
 Ability: Forecast
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 Ball: Strange
 - Rain Dance
 - Thunder Shock
@@ -785,7 +785,7 @@ Ball: Poke
 === TRAINER_ZANDER ===
 Name: Waddle Dee
 Class: Psychic
-Pic: Psychic F
+Pic: Psychic M
 Music: Intense
 Double Battle: No
 AI: Check Bad Move
@@ -1003,7 +1003,7 @@ Ball: Great
 === TRAINER_ROSE_3 ===
 Name: Waddle Dee
 Class: Psychic
-Pic: Psychic M
+Pic: Psychic F
 Music: Intense
 Double Battle: No
 AI: Check Bad Move

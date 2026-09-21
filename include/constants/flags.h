@@ -97,8 +97,8 @@
 #define FLAG_BATTLESHIP_HALBERD_REACTOR_LEFT_GATE    0x4B // Battleship Halberd (Reactor) - Permanent switch to open left gate
 #define FLAG_BATTLESHIP_HALBERD_REACTOR_MIDDLE_GATE    0x4C // Battleship Halberd (Reactor) - Permanent switch to open middle gate
 #define FLAG_BATTLESHIP_HALBERD_REACTOR_RIGHT_GATE    0x4D // Battleship Halberd (Reactor) - Permanent switch to open right gate
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_OBTAINED_ORAN_BERRIES    0x4E // Waddle Dee Town - Hungry Waddle Dee near cafe
+#define FLAG_READ_DIARY    0x4F // Waddle Dee Town (lab) - Read diary of Waddle Dee in Grape Garden
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -573,8 +573,8 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13) // Orange Ocean - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14) // Orange Ocean - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15) // Battleship Halberd (Reactor) - Hidden Item 1
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x17)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16) // Waddle Dee Town - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x17) // Waddle Dee Town - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD            (FLAG_HIDDEN_ITEMS_START + 0x18)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN              (FLAG_HIDDEN_ITEMS_START + 0x19)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x1A)

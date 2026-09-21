@@ -7,66 +7,98 @@ WaddleDeeTown_CastleLobby_MapScripts::
 
 WaddleDeeTown_CastleLobby_EventScript_Youngster::
 # 8 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	lock
+# 9 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Youngster_Text_0, MSGBOX_NPC
+# 15 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	release
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Lass::
-# 18 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 20 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	lock
+# 21 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Lass_Text_0, MSGBOX_NPC
+# 27 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	release
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Conductor::
-# 28 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 32 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	lock
+# 33 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Conductor_Text_0, MSGBOX_NPC
+# 39 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	release
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Staff::
-# 38 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 44 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	lock
+# 45 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_DARK_TM, WaddleDeeTown_CastleLobby_EventScript_Staff_2
 WaddleDeeTown_CastleLobby_EventScript_Staff_1:
-# 53 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 60 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Staff_Text_1, MSGBOX_NPC
+# 65 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	release
 	return
 
 WaddleDeeTown_CastleLobby_EventScript_Staff_2:
-# 40 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 47 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Staff_Text_0, MSGBOX_NPC
-# 50 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 57 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	giveitem ITEM_TM65
-# 51 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 58 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	setflag FLAG_RECEIVED_DARK_TM
 	goto WaddleDeeTown_CastleLobby_EventScript_Staff_1
 
 
 WaddleDeeTown_CastleLobby_EventScript_Builder::
-# 62 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 70 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	lock
+# 71 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Builder_Text_0, MSGBOX_NPC
+# 76 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	release
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Left::
-# 71 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 81 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	lock
+# 82 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Soldier_Left_Text_0, MSGBOX_NPC
+# 90 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	release
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Right::
-# 83 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 95 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	lock
+# 96 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Soldier_Right_Text_0, MSGBOX_NPC
+# 104 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	release
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Middle::
-# 95 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 109 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	lock
+# 110 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	msgbox WaddleDeeTown_CastleLobby_EventScript_Soldier_Middle_Text_0, MSGBOX_NPC
+# 118 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+	release
 	return
 
 
 WaddleDeeTown_CastleLobby_EventScript_Youngster_Text_0:
-# 8 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 9 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "I wanted to be the first challenger at\n"
 	.string "the Arena, so I ran right in…\p"
 	.string "Turns out I couldn't even score a\n"
@@ -74,7 +106,7 @@ WaddleDeeTown_CastleLobby_EventScript_Youngster_Text_0:
 	.string "as the Arena's first loser!$"
 
 WaddleDeeTown_CastleLobby_EventScript_Lass_Text_0:
-# 18 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 21 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "My strategy for the Arena? I'm betting\n"
 	.string "it all on bringing the cutest Helpers.\p"
 	.string "My opponents will be so charmed, they'll\n"
@@ -82,7 +114,7 @@ WaddleDeeTown_CastleLobby_EventScript_Lass_Text_0:
 	.string "Don't you think it's a foolproof plan?$"
 
 WaddleDeeTown_CastleLobby_EventScript_Conductor_Text_0:
-# 28 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 33 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "The last time King Dedede hosted a\n"
 	.string "big tournament, he built an entire\l"
 	.string "castle just to host the event.\p"
@@ -90,7 +122,7 @@ WaddleDeeTown_CastleLobby_EventScript_Conductor_Text_0:
 	.string "his standards, how excessive that was.$"
 
 WaddleDeeTown_CastleLobby_EventScript_Staff_Text_0:
-# 40 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 47 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "Do you know what a “TM” is?\p"
 	.string "They're special items that can teach\n"
 	.string "your Helpers new moves.\p"
@@ -100,21 +132,21 @@ WaddleDeeTown_CastleLobby_EventScript_Staff_Text_0:
 	.string "during your Arena battles!$"
 
 WaddleDeeTown_CastleLobby_EventScript_Staff_Text_1:
-# 53 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 60 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "Snarl doesn't just deal damage; it also\n"
 	.string "lowers the targets' Special Attack.\p"
 	.string "If you want more TMs, do your best to\n"
 	.string "win at the various Arenas!$"
 
 WaddleDeeTown_CastleLobby_EventScript_Builder_Text_0:
-# 62 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 71 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "Have you seen the northern part of\n"
 	.string "town? It's completely blocked off.\p"
 	.string "I wonder what kinds of Helpers\n"
 	.string "await on the other side…$"
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Left_Text_0:
-# 71 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 82 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "This is the entrance to the Great King's\n"
 	.string "personal treasury.\p"
 	.string "…\n"
@@ -123,7 +155,7 @@ WaddleDeeTown_CastleLobby_EventScript_Soldier_Left_Text_0:
 	.string "I can't let you in.$"
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Right_Text_0:
-# 83 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 96 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "A certain someone has tasked me with\n"
 	.string "guarding this door.\p"
 	.string "What's that? Why am I being so coy\n"
@@ -132,7 +164,7 @@ WaddleDeeTown_CastleLobby_EventScript_Soldier_Right_Text_0:
 	.string "why would I be coy about it?$"
 
 WaddleDeeTown_CastleLobby_EventScript_Soldier_Middle_Text_0:
-# 95 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
+# 110 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "The entrance to the Waddle Dee Arena\n"
 	.string "is right through here.\p"
 	.string "I want to enter, but I've been told\n"

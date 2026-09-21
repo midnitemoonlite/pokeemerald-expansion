@@ -179,7 +179,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_STRANGE_BALL] =
     {
         .name = ITEM_NAME("Energy Heart"),
-        .price = 0,
+        .price = 500,
         .description = COMPOUND_STRING(
             "An unusual Heart\n"
             "warped through\n"
@@ -2056,7 +2056,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Exp. Candy XS"),
         .pluralName = ITEM_PLURAL_NAME("Exp. Candies XS"),
-        .price = 20,
+        .price = 200,
         .holdEffectParam = EXP_100,
         .description = COMPOUND_STRING(
             "Gives a very small\n"
@@ -2076,7 +2076,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Exp. Candy S"),
         .pluralName = ITEM_PLURAL_NAME("Exp. Candies S"),
-        .price = 240,
+        .price = 1000,
         .holdEffectParam = EXP_800,
         .description = COMPOUND_STRING(
             "Gives a small\n"
@@ -2096,7 +2096,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Exp. Candy M"),
         .pluralName = ITEM_PLURAL_NAME("Exp. Candies M"),
-        .price = 1000,
+        .price = 2000,
         .holdEffectParam = EXP_3000,
         .description = COMPOUND_STRING(
             "Gives a moderate\n"
@@ -2116,7 +2116,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Exp. Candy L"),
         .pluralName = ITEM_PLURAL_NAME("Exp. Candies L"),
-        .price = 3000,
+        .price = 4000,
         .holdEffectParam = EXP_10000,
         .description = COMPOUND_STRING(
             "Gives a large\n"

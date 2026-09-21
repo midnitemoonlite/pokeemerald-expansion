@@ -191,6 +191,246 @@
       "elevation": 0,
       "item": "ITEM_WISE_GLASSES",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD"
+    },
+    {
+      "type": "sign",
+      "x": 0,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book1"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book2"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book3"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book4"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book5"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book6"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book7"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book8"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book9"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book10"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book12"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book13"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book14"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book15"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book16"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book18"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book19"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book20"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book21"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book22"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book23"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book24"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book25"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book26"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book27"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book28"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book29"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book30"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book31"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "WaddleDeeTown_Lab_EventScript_Book32"
     }
   ]
 }

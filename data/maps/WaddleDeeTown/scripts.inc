@@ -473,572 +473,590 @@ WaddleDeeTown_EventScript_HeadChef::
 # 383 "data/maps/WaddleDeeTown/scripts.pory"
 	faceplayer
 # 384 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_HeadChef_Text_0
-# 389 "data/maps/WaddleDeeTown/scripts.pory"
-	release
-	return
-
-
-WaddleDeeTown_EventScript_Astronomer::
-# 394 "data/maps/WaddleDeeTown/scripts.pory"
-	lock
-# 395 "data/maps/WaddleDeeTown/scripts.pory"
-	faceplayer
-# 396 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_Astronomer_Text_0
+	goto_if_unset FLAG_OBTAINED_ORAN_BERRIES, WaddleDeeTown_EventScript_HeadChef_2
+# 398 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_HeadChef_Text_2
+WaddleDeeTown_EventScript_HeadChef_1:
 # 404 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
+WaddleDeeTown_EventScript_HeadChef_2:
+# 386 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_HeadChef_Text_0
+# 391 "data/maps/WaddleDeeTown/scripts.pory"
+	giveitem ITEM_ORAN_BERRY, 10
+# 392 "data/maps/WaddleDeeTown/scripts.pory"
+	setflag FLAG_OBTAINED_ORAN_BERRIES
+# 393 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_HeadChef_Text_1
+	goto WaddleDeeTown_EventScript_HeadChef_1
 
-WaddleDeeTown_EventScript_WorkerLeft::
+
+WaddleDeeTown_EventScript_Astronomer::
 # 409 "data/maps/WaddleDeeTown/scripts.pory"
 	lock
 # 410 "data/maps/WaddleDeeTown/scripts.pory"
 	faceplayer
 # 411 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_WorkerLeft_Text_0
-# 417 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_Astronomer_Text_0
+# 419 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
-WaddleDeeTown_EventScript_WorkerRight::
-# 422 "data/maps/WaddleDeeTown/scripts.pory"
-	lock
-# 423 "data/maps/WaddleDeeTown/scripts.pory"
-	faceplayer
+WaddleDeeTown_EventScript_WorkerLeft::
 # 424 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_WorkerRight_Text_0
+	lock
+# 425 "data/maps/WaddleDeeTown/scripts.pory"
+	faceplayer
+# 426 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_WorkerLeft_Text_0
 # 432 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
-WaddleDeeTown_EventScript_TagGirl1::
+WaddleDeeTown_EventScript_WorkerRight::
 # 437 "data/maps/WaddleDeeTown/scripts.pory"
-	lockall
+	lock
 # 438 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_TagGirl1_Text_0
-# 440 "data/maps/WaddleDeeTown/scripts.pory"
-	release
-	return
-
-
-WaddleDeeTown_EventScript_TagGirl2::
-# 445 "data/maps/WaddleDeeTown/scripts.pory"
-	lockall
-# 446 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_TagGirl2_Text_0
+	faceplayer
+# 439 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_WorkerRight_Text_0
 # 447 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
-WaddleDeeTown_EventScript_EggDealer::
+WaddleDeeTown_EventScript_TagGirl1::
 # 452 "data/maps/WaddleDeeTown/scripts.pory"
-	lock
+	lockall
 # 453 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_TagGirl1_Text_0
+# 455 "data/maps/WaddleDeeTown/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_EventScript_TagGirl2::
+# 460 "data/maps/WaddleDeeTown/scripts.pory"
+	lockall
+# 461 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_TagGirl2_Text_0
+# 462 "data/maps/WaddleDeeTown/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_EventScript_EggDealer::
+# 467 "data/maps/WaddleDeeTown/scripts.pory"
+	lock
+# 468 "data/maps/WaddleDeeTown/scripts.pory"
 	faceplayer
-# 454 "data/maps/WaddleDeeTown/scripts.pory"
+# 469 "data/maps/WaddleDeeTown/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_CHICK_EGG, WaddleDeeTown_EventScript_EggDealer_1
-# 523 "data/maps/WaddleDeeTown/scripts.pory"
+# 538 "data/maps/WaddleDeeTown/scripts.pory"
 	goto_if_set FLAG_RECEIVED_CHICK_EGG, WaddleDeeTown_EventScript_EggDealer_2
 	return
 
 WaddleDeeTown_EventScript_EggDealer_1:
-# 456 "data/maps/WaddleDeeTown/scripts.pory"
+# 471 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_0, MSGBOX_YESNO
-# 472 "data/maps/WaddleDeeTown/scripts.pory"
+# 487 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_5
-# 516 "data/maps/WaddleDeeTown/scripts.pory"
+# 531 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, NO
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_6
 	return
 
 WaddleDeeTown_EventScript_EggDealer_2:
-# 525 "data/maps/WaddleDeeTown/scripts.pory"
+# 540 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_6
-# 536 "data/maps/WaddleDeeTown/scripts.pory"
+# 551 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_5:
-# 474 "data/maps/WaddleDeeTown/scripts.pory"
+# 489 "data/maps/WaddleDeeTown/scripts.pory"
 	getpartysize
-# 475 "data/maps/WaddleDeeTown/scripts.pory"
+# 490 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, 6
-	goto_if_le WaddleDeeTown_EventScript_EggDealer_9
-# 486 "data/maps/WaddleDeeTown/scripts.pory"
+	goto_if_ge WaddleDeeTown_EventScript_EggDealer_9
+# 501 "data/maps/WaddleDeeTown/scripts.pory"
 	giveegg SPECIES_CHICK
-# 487 "data/maps/WaddleDeeTown/scripts.pory"
+# 502 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_12
-# 498 "data/maps/WaddleDeeTown/scripts.pory"
+# 513 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_13
-# 509 "data/maps/WaddleDeeTown/scripts.pory"
+# 524 "data/maps/WaddleDeeTown/scripts.pory"
 	compare VAR_RESULT, MON_CANT_GIVE
 	goto_if_eq WaddleDeeTown_EventScript_EggDealer_14
 	return
 
 WaddleDeeTown_EventScript_EggDealer_6:
-# 518 "data/maps/WaddleDeeTown/scripts.pory"
+# 533 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_5
-# 520 "data/maps/WaddleDeeTown/scripts.pory"
+# 535 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_9:
-# 477 "data/maps/WaddleDeeTown/scripts.pory"
+# 492 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_1
-# 482 "data/maps/WaddleDeeTown/scripts.pory"
+# 497 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_12:
-# 489 "data/maps/WaddleDeeTown/scripts.pory"
+# 504 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_2
-# 490 "data/maps/WaddleDeeTown/scripts.pory"
+# 505 "data/maps/WaddleDeeTown/scripts.pory"
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
-# 491 "data/maps/WaddleDeeTown/scripts.pory"
+# 506 "data/maps/WaddleDeeTown/scripts.pory"
 	message WaddleDeeTown_EventScript_EggDealer_Text_3
-# 492 "data/maps/WaddleDeeTown/scripts.pory"
+# 507 "data/maps/WaddleDeeTown/scripts.pory"
 	waitmessage
-# 493 "data/maps/WaddleDeeTown/scripts.pory"
+# 508 "data/maps/WaddleDeeTown/scripts.pory"
 	waitfanfare
-# 494 "data/maps/WaddleDeeTown/scripts.pory"
+# 509 "data/maps/WaddleDeeTown/scripts.pory"
 	setflag FLAG_RECEIVED_CHICK_EGG
-# 495 "data/maps/WaddleDeeTown/scripts.pory"
+# 510 "data/maps/WaddleDeeTown/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 496 "data/maps/WaddleDeeTown/scripts.pory"
+# 511 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_13:
-# 500 "data/maps/WaddleDeeTown/scripts.pory"
+# 515 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EggDealer_Text_2
-# 501 "data/maps/WaddleDeeTown/scripts.pory"
+# 516 "data/maps/WaddleDeeTown/scripts.pory"
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
-# 502 "data/maps/WaddleDeeTown/scripts.pory"
+# 517 "data/maps/WaddleDeeTown/scripts.pory"
 	message WaddleDeeTown_EventScript_EggDealer_Text_4
-# 503 "data/maps/WaddleDeeTown/scripts.pory"
+# 518 "data/maps/WaddleDeeTown/scripts.pory"
 	waitmessage
-# 504 "data/maps/WaddleDeeTown/scripts.pory"
+# 519 "data/maps/WaddleDeeTown/scripts.pory"
 	waitfanfare
-# 505 "data/maps/WaddleDeeTown/scripts.pory"
+# 520 "data/maps/WaddleDeeTown/scripts.pory"
 	setflag FLAG_RECEIVED_CHICK_EGG
-# 506 "data/maps/WaddleDeeTown/scripts.pory"
+# 521 "data/maps/WaddleDeeTown/scripts.pory"
 	call Common_EventScript_TransferredToPC
-# 507 "data/maps/WaddleDeeTown/scripts.pory"
+# 522 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 WaddleDeeTown_EventScript_EggDealer_14:
-# 511 "data/maps/WaddleDeeTown/scripts.pory"
+# 526 "data/maps/WaddleDeeTown/scripts.pory"
 	call Common_EventScript_NoMoreRoomForPokemon
-# 512 "data/maps/WaddleDeeTown/scripts.pory"
+# 527 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Trigger_FirstCutscene::
-# 542 "data/maps/WaddleDeeTown/scripts.pory"
+# 557 "data/maps/WaddleDeeTown/scripts.pory"
 	lockall
-# 543 "data/maps/WaddleDeeTown/scripts.pory"
+# 558 "data/maps/WaddleDeeTown/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
-# 544 "data/maps/WaddleDeeTown/scripts.pory"
+# 559 "data/maps/WaddleDeeTown/scripts.pory"
 	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
-# 545 "data/maps/WaddleDeeTown/scripts.pory"
+# 560 "data/maps/WaddleDeeTown/scripts.pory"
 	waitmovement
-# 546 "data/maps/WaddleDeeTown/scripts.pory"
+# 561 "data/maps/WaddleDeeTown/scripts.pory"
 	delay 15
-# 547 "data/maps/WaddleDeeTown/scripts.pory"
+# 562 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_Trigger_FirstCutscene_Text_0
-# 549 "data/maps/WaddleDeeTown/scripts.pory"
+# 564 "data/maps/WaddleDeeTown/scripts.pory"
 	closemessage
-# 550 "data/maps/WaddleDeeTown/scripts.pory"
+# 565 "data/maps/WaddleDeeTown/scripts.pory"
 	setvar VAR_WADDLE_DEE_TOWN_STATE, 1
-# 551 "data/maps/WaddleDeeTown/scripts.pory"
+# 566 "data/maps/WaddleDeeTown/scripts.pory"
 	goto WaddleDeeTown_EventScript_DededeSpeech
 	return
 
 
 WaddleDeeTown_EventScript_Bandana::
-# 556 "data/maps/WaddleDeeTown/scripts.pory"
+# 571 "data/maps/WaddleDeeTown/scripts.pory"
 	lock
-# 557 "data/maps/WaddleDeeTown/scripts.pory"
+# 572 "data/maps/WaddleDeeTown/scripts.pory"
 	faceplayer
-# 558 "data/maps/WaddleDeeTown/scripts.pory"
+# 573 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_Trigger_FirstCutscene_Text_0
-# 560 "data/maps/WaddleDeeTown/scripts.pory"
+# 575 "data/maps/WaddleDeeTown/scripts.pory"
 	closemessage
-# 561 "data/maps/WaddleDeeTown/scripts.pory"
+# 576 "data/maps/WaddleDeeTown/scripts.pory"
 	setvar VAR_WADDLE_DEE_TOWN_STATE, 1
-# 562 "data/maps/WaddleDeeTown/scripts.pory"
+# 577 "data/maps/WaddleDeeTown/scripts.pory"
 	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
-# 563 "data/maps/WaddleDeeTown/scripts.pory"
+# 578 "data/maps/WaddleDeeTown/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_Bandana_Movement_0
-# 564 "data/maps/WaddleDeeTown/scripts.pory"
+# 579 "data/maps/WaddleDeeTown/scripts.pory"
 	waitmovement
-# 565 "data/maps/WaddleDeeTown/scripts.pory"
+# 580 "data/maps/WaddleDeeTown/scripts.pory"
 	goto WaddleDeeTown_EventScript_DededeSpeech
 	return
 
 
 WaddleDeeTown_EventScript_DededeSpeech::
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_DededeSpeech_Movement_0
-# 571 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_0
-# 572 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 12
-# 578 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 579 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 20
-# 580 "data/maps/WaddleDeeTown/scripts.pory"
-	special SpawnCameraObject
-# 581 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, WaddleDeeTown_EventScript_DededeSpeech_Movement_1
-# 582 "data/maps/WaddleDeeTown/scripts.pory"
-	fadeoutbgm 2
-# 583 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 584 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 15
 # 585 "data/maps/WaddleDeeTown/scripts.pory"
-	playbgm MUS_ENCOUNTER_INTERVIEWER, FALSE
+	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_DededeSpeech_Movement_0
 # 586 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 15
+	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_0
 # 587 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_0
-# 592 "data/maps/WaddleDeeTown/scripts.pory"
-	closemessage
+	delay 12
 # 593 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_2
+	waitmovement
 # 594 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
+	delay 20
 # 595 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_1
+	special SpawnCameraObject
+# 596 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, WaddleDeeTown_EventScript_DededeSpeech_Movement_1
+# 597 "data/maps/WaddleDeeTown/scripts.pory"
+	fadeoutbgm 2
+# 598 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 599 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 15
+# 600 "data/maps/WaddleDeeTown/scripts.pory"
+	playbgm MUS_ENCOUNTER_INTERVIEWER, FALSE
+# 601 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 15
+# 602 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_0
+# 607 "data/maps/WaddleDeeTown/scripts.pory"
+	closemessage
+# 608 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_2
 # 609 "data/maps/WaddleDeeTown/scripts.pory"
-	closemessage
+	waitmovement
 # 610 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_3
-# 611 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 612 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_2
-# 613 "data/maps/WaddleDeeTown/scripts.pory"
-	closemessage
-# 614 "data/maps/WaddleDeeTown/scripts.pory"
-	playse SE_APPLAUSE
-# 616 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_2, WaddleDeeTown_EventScript_DededeSpeech_Movement_4
-# 617 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_5
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_8, WaddleDeeTown_EventScript_DededeSpeech_Movement_6
-# 619 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_1, DIR_WEST
-# 620 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_4, DIR_SOUTH
-# 621 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 6
-# 622 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_5, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
-# 623 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_6, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_1
 # 624 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_9, WaddleDeeTown_EventScript_LabIsOpen_Movement_1
-# 625 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_7, DIR_EAST
-# 626 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 30
-# 627 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_7, DIR_SOUTH
-# 628 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_4, DIR_WEST
-# 629 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 30
-# 630 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_1, DIR_EAST
-# 631 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_9, WaddleDeeTown_EventScript_LabIsOpen_Movement_1
-# 632 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_7, DIR_WEST
-# 633 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 30
-# 634 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_7, DIR_NORTH
-# 635 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_5, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
-# 636 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_6, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
-# 637 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 15
-# 638 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_9, WaddleDeeTown_EventScript_LabIsOpen_Movement_1
-# 639 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_4, DIR_NORTH
-# 640 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 15
-# 641 "data/maps/WaddleDeeTown/scripts.pory"
-	turnobject LOCALID_CROWD_1, DIR_NORTH
-# 642 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 15
-# 643 "data/maps/WaddleDeeTown/scripts.pory"
-	message WaddleDeeTown_EventScript_DededeSpeech_Text_3
-# 645 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 140
-# 646 "data/maps/WaddleDeeTown/scripts.pory"
 	closemessage
+# 625 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_3
+# 626 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 627 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_2
+# 628 "data/maps/WaddleDeeTown/scripts.pory"
+	closemessage
+# 629 "data/maps/WaddleDeeTown/scripts.pory"
+	playse SE_APPLAUSE
+# 631 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_2, WaddleDeeTown_EventScript_DededeSpeech_Movement_4
+# 632 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_5
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_8, WaddleDeeTown_EventScript_DededeSpeech_Movement_6
+# 634 "data/maps/WaddleDeeTown/scripts.pory"
+	turnobject LOCALID_CROWD_1, DIR_WEST
+# 635 "data/maps/WaddleDeeTown/scripts.pory"
+	turnobject LOCALID_CROWD_4, DIR_SOUTH
+# 636 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 6
+# 637 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_5, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
+# 638 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_6, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
+# 639 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_9, WaddleDeeTown_EventScript_LabIsOpen_Movement_1
+# 640 "data/maps/WaddleDeeTown/scripts.pory"
+	turnobject LOCALID_CROWD_7, DIR_EAST
+# 641 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 30
+# 642 "data/maps/WaddleDeeTown/scripts.pory"
+	turnobject LOCALID_CROWD_7, DIR_SOUTH
+# 643 "data/maps/WaddleDeeTown/scripts.pory"
+	turnobject LOCALID_CROWD_4, DIR_WEST
+# 644 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 30
+# 645 "data/maps/WaddleDeeTown/scripts.pory"
+	turnobject LOCALID_CROWD_1, DIR_EAST
+# 646 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_9, WaddleDeeTown_EventScript_LabIsOpen_Movement_1
 # 647 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_1, WaddleDeeTown_EventScript_DededeSpeech_Movement_8
+	turnobject LOCALID_CROWD_7, DIR_WEST
 # 648 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_2, WaddleDeeTown_EventScript_DededeSpeech_Movement_9
+	delay 30
 # 649 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_5, WaddleDeeTown_EventScript_DededeSpeech_Movement_10
+	turnobject LOCALID_CROWD_7, DIR_NORTH
 # 650 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_6, WaddleDeeTown_EventScript_DededeSpeech_Movement_11
+	applymovement LOCALID_CROWD_5, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
 # 651 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_9, WaddleDeeTown_EventScript_DededeSpeech_Movement_12
+	applymovement LOCALID_CROWD_6, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
 # 652 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_8, WaddleDeeTown_EventScript_DededeSpeech_Movement_13
+	delay 15
 # 653 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_7, WaddleDeeTown_EventScript_DededeSpeech_Movement_14
+	applymovement LOCALID_CROWD_9, WaddleDeeTown_EventScript_LabIsOpen_Movement_1
 # 654 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_10, WaddleDeeTown_EventScript_DededeSpeech_Movement_15
+	turnobject LOCALID_CROWD_4, DIR_NORTH
 # 655 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_4, WaddleDeeTown_EventScript_DededeSpeech_Movement_16
+	delay 15
 # 656 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_17
+	turnobject LOCALID_CROWD_1, DIR_NORTH
 # 657 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
+	delay 15
 # 658 "data/maps/WaddleDeeTown/scripts.pory"
-	playse SE_LEDGE
-# 659 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_18
+	message WaddleDeeTown_EventScript_DededeSpeech_Text_3
 # 660 "data/maps/WaddleDeeTown/scripts.pory"
-	waitse
+	delay 140
 # 661 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 20
+	closemessage
 # 662 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_3, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
+	applymovement LOCALID_CROWD_1, WaddleDeeTown_EventScript_DededeSpeech_Movement_8
 # 663 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
+	applymovement LOCALID_CROWD_2, WaddleDeeTown_EventScript_DededeSpeech_Movement_9
 # 664 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_3, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
+	applymovement LOCALID_CROWD_5, WaddleDeeTown_EventScript_DededeSpeech_Movement_10
 # 665 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
+	applymovement LOCALID_CROWD_6, WaddleDeeTown_EventScript_DededeSpeech_Movement_11
 # 666 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 20
+	applymovement LOCALID_CROWD_9, WaddleDeeTown_EventScript_DededeSpeech_Movement_12
 # 667 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_19
+	applymovement LOCALID_CROWD_8, WaddleDeeTown_EventScript_DededeSpeech_Movement_13
 # 668 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
+	applymovement LOCALID_CROWD_7, WaddleDeeTown_EventScript_DededeSpeech_Movement_14
 # 669 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_3, Common_Movement_ExclamationMark
+	applymovement LOCALID_CROWD_10, WaddleDeeTown_EventScript_DededeSpeech_Movement_15
 # 670 "data/maps/WaddleDeeTown/scripts.pory"
-	playse SE_PIN
+	applymovement LOCALID_CROWD_4, WaddleDeeTown_EventScript_DededeSpeech_Movement_16
 # 671 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 60
+	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_17
 # 672 "data/maps/WaddleDeeTown/scripts.pory"
 	waitmovement
 # 673 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_20
-# 674 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 675 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, WaddleDeeTown_EventScript_DededeSpeech_Movement_21
-# 676 "data/maps/WaddleDeeTown/scripts.pory"
-	fadeoutbgm 1
-# 677 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 678 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 15
-# 679 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
-# 680 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
-# 681 "data/maps/WaddleDeeTown/scripts.pory"
-	playbgm MUS_RUSTBORO, FALSE
-# 682 "data/maps/WaddleDeeTown/scripts.pory"
-	setflag FLAG_HIDE_CROWD_WADDLE_DEE_TOWN
-# 683 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_1
-# 684 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_2
-# 685 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_3
-# 686 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_4
-# 687 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_5
-# 688 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_6
-# 689 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_7
-# 690 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_8
-# 691 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_9
-# 692 "data/maps/WaddleDeeTown/scripts.pory"
-	removeobject LOCALID_CROWD_10
-# 693 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 694 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_4
-# 699 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_22
-# 700 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_5
-# 702 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
-# 703 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
-# 704 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 705 "data/maps/WaddleDeeTown/scripts.pory"
-	playse SE_PIN
-# 706 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, Common_Movement_ExclamationMark
-# 707 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 708 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 20
-# 709 "data/maps/WaddleDeeTown/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, FALSE
-# 710 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_6
-# 714 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_23
-# 715 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_7
-# 723 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_24
-# 724 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_8
-# 731 "data/maps/WaddleDeeTown/scripts.pory"
 	playse SE_LEDGE
-# 732 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_Fisherman_Movement_4
-# 733 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 734 "data/maps/WaddleDeeTown/scripts.pory"
-	setvar VAR_0x8004, 2
-# 735 "data/maps/WaddleDeeTown/scripts.pory"
-	setvar VAR_0x8005, 0
-# 736 "data/maps/WaddleDeeTown/scripts.pory"
-	setvar VAR_0x8006, 2
-# 737 "data/maps/WaddleDeeTown/scripts.pory"
-	setvar VAR_0x8007, 3
-# 738 "data/maps/WaddleDeeTown/scripts.pory"
-	special ShakeCamera
-# 739 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_9
-# 743 "data/maps/WaddleDeeTown/scripts.pory"
-	closemessage
-# 744 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_25
-# 745 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 746 "data/maps/WaddleDeeTown/scripts.pory"
+# 674 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_18
+# 675 "data/maps/WaddleDeeTown/scripts.pory"
+	waitse
+# 676 "data/maps/WaddleDeeTown/scripts.pory"
 	delay 20
-# 747 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_10
-# 755 "data/maps/WaddleDeeTown/scripts.pory"
-	closemessage
-# 756 "data/maps/WaddleDeeTown/scripts.pory"
+# 677 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_3, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
+# 678 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 679 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_3, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
+# 680 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 681 "data/maps/WaddleDeeTown/scripts.pory"
 	delay 20
-# 757 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_19
-# 758 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_11
-# 771 "data/maps/WaddleDeeTown/scripts.pory"
-	closemessage
-# 772 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_DededeSpeech_Movement_26
-# 773 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_27
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_28
-# 775 "data/maps/WaddleDeeTown/scripts.pory"
-	fadeoutbgm 1
-# 776 "data/maps/WaddleDeeTown/scripts.pory"
-	delay 30
-# 777 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_DededeSpeech_Movement_29
-# 778 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_30
-# 779 "data/maps/WaddleDeeTown/scripts.pory"
+# 682 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_19
+# 683 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 684 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_3, Common_Movement_ExclamationMark
+# 685 "data/maps/WaddleDeeTown/scripts.pory"
+	playse SE_PIN
+# 686 "data/maps/WaddleDeeTown/scripts.pory"
 	delay 60
-# 780 "data/maps/WaddleDeeTown/scripts.pory"
-	playbgm MUS_RUSTBORO, FALSE
-# 781 "data/maps/WaddleDeeTown/scripts.pory"
-	special RemoveCameraObject
-# 782 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_12
-# 787 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
-# 788 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
-# 789 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_13
-# 801 "data/maps/WaddleDeeTown/scripts.pory"
-	closemessage
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_31
-# 803 "data/maps/WaddleDeeTown/scripts.pory"
+# 687 "data/maps/WaddleDeeTown/scripts.pory"
 	waitmovement
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_CROWD_3, WaddleDeeTown_EventScript_DededeSpeech_Movement_20
+# 689 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 690 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, WaddleDeeTown_EventScript_DededeSpeech_Movement_21
+# 691 "data/maps/WaddleDeeTown/scripts.pory"
+	fadeoutbgm 1
+# 692 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 693 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 15
+# 694 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
+# 695 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
+# 696 "data/maps/WaddleDeeTown/scripts.pory"
+	playbgm MUS_RUSTBORO, FALSE
+# 697 "data/maps/WaddleDeeTown/scripts.pory"
+	setflag FLAG_HIDE_CROWD_WADDLE_DEE_TOWN
+# 698 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_1
+# 699 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_2
+# 700 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_3
+# 701 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_4
+# 702 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_5
+# 703 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_6
+# 704 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_7
+# 705 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_8
+# 706 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_9
+# 707 "data/maps/WaddleDeeTown/scripts.pory"
+	removeobject LOCALID_CROWD_10
+# 708 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 709 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_4
+# 714 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_22
+# 715 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_5
+# 717 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
+# 718 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
+# 719 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 720 "data/maps/WaddleDeeTown/scripts.pory"
+	playse SE_PIN
+# 721 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_BWD, Common_Movement_ExclamationMark
+# 722 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 723 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 20
+# 724 "data/maps/WaddleDeeTown/scripts.pory"
+	playbgm MUS_ENCOUNTER_BRENDAN, FALSE
+# 725 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_6
+# 729 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_23
+# 730 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_7
+# 738 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_24
+# 739 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_8
+# 746 "data/maps/WaddleDeeTown/scripts.pory"
+	playse SE_LEDGE
+# 747 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_Fisherman_Movement_4
+# 748 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 749 "data/maps/WaddleDeeTown/scripts.pory"
+	setvar VAR_0x8004, 2
+# 750 "data/maps/WaddleDeeTown/scripts.pory"
+	setvar VAR_0x8005, 0
+# 751 "data/maps/WaddleDeeTown/scripts.pory"
+	setvar VAR_0x8006, 2
+# 752 "data/maps/WaddleDeeTown/scripts.pory"
+	setvar VAR_0x8007, 3
+# 753 "data/maps/WaddleDeeTown/scripts.pory"
+	special ShakeCamera
+# 754 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_9
+# 758 "data/maps/WaddleDeeTown/scripts.pory"
+	closemessage
+# 759 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_25
+# 760 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 761 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 20
+# 762 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_10
+# 770 "data/maps/WaddleDeeTown/scripts.pory"
+	closemessage
+# 771 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 20
+# 772 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_19
+# 773 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_11
+# 786 "data/maps/WaddleDeeTown/scripts.pory"
+	closemessage
+# 787 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_DededeSpeech_Movement_26
+# 788 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_27
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_KING_DEDEDE, WaddleDeeTown_EventScript_DededeSpeech_Movement_28
+# 790 "data/maps/WaddleDeeTown/scripts.pory"
+	fadeoutbgm 1
+# 791 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 30
+# 792 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_DededeSpeech_Movement_29
+# 793 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_30
+# 794 "data/maps/WaddleDeeTown/scripts.pory"
+	delay 60
+# 795 "data/maps/WaddleDeeTown/scripts.pory"
+	playbgm MUS_RUSTBORO, FALSE
+# 796 "data/maps/WaddleDeeTown/scripts.pory"
+	special RemoveCameraObject
+# 797 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_12
+# 802 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeTown_Trigger_FirstCutscene_Movement_0
+# 803 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_Trigger_FirstCutscene_Movement_1
 # 804 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_DededeSpeech_Text_13
+# 816 "data/maps/WaddleDeeTown/scripts.pory"
+	closemessage
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_BWD, WaddleDeeTown_EventScript_DededeSpeech_Movement_31
+# 818 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 819 "data/maps/WaddleDeeTown/scripts.pory"
 	setflag FLAG_HIDE_DEDEDE_WADDLE_DEE_TOWN
-# 805 "data/maps/WaddleDeeTown/scripts.pory"
+# 820 "data/maps/WaddleDeeTown/scripts.pory"
 	setflag FLAG_HIDE_BWD_WADDLE_DEE_TOWN
-# 806 "data/maps/WaddleDeeTown/scripts.pory"
+# 821 "data/maps/WaddleDeeTown/scripts.pory"
 	removeobject LOCALID_TOWN_BWD
-# 807 "data/maps/WaddleDeeTown/scripts.pory"
+# 822 "data/maps/WaddleDeeTown/scripts.pory"
 	removeobject LOCALID_TOWN_KING_DEDEDE
-# 808 "data/maps/WaddleDeeTown/scripts.pory"
+# 823 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_EventScript_EastGuard::
-# 813 "data/maps/WaddleDeeTown/scripts.pory"
+# 828 "data/maps/WaddleDeeTown/scripts.pory"
 	lock
-# 814 "data/maps/WaddleDeeTown/scripts.pory"
+# 829 "data/maps/WaddleDeeTown/scripts.pory"
 	faceplayer
-# 815 "data/maps/WaddleDeeTown/scripts.pory"
+# 830 "data/maps/WaddleDeeTown/scripts.pory"
 	msgbox WaddleDeeTown_EventScript_EastGuard_Text_0
-# 821 "data/maps/WaddleDeeTown/scripts.pory"
+# 836 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_EventScript_EastExitBlocked::
-# 826 "data/maps/WaddleDeeTown/scripts.pory"
-	lock
-# 827 "data/maps/WaddleDeeTown/scripts.pory"
-	playse SE_PIN
-# 828 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_EAST_GUARD, Common_Movement_ExclamationMark
-# 829 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 830 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_TOWN_EAST_GUARD, WaddleDeeTown_EventScript_DededeSpeech_Movement_19
-# 831 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
-# 832 "data/maps/WaddleDeeTown/scripts.pory"
-	msgbox WaddleDeeTown_EventScript_EastExitBlocked_Text_0
-# 840 "data/maps/WaddleDeeTown/scripts.pory"
-	closemessage
 # 841 "data/maps/WaddleDeeTown/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_EastExitBlocked_Movement_0
+	lock
 # 842 "data/maps/WaddleDeeTown/scripts.pory"
-	waitmovement
+	playse SE_PIN
 # 843 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_EAST_GUARD_ONE, Common_Movement_ExclamationMark
+# 844 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_EAST_GUARD_TWO, Common_Movement_ExclamationMark
+# 845 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 846 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_EAST_GUARD_ONE, WaddleDeeTown_EventScript_DededeSpeech_Movement_19
+# 847 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_TOWN_EAST_GUARD_TWO, WaddleDeeTown_EventScript_DededeSpeech_Movement_7
+# 848 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 849 "data/maps/WaddleDeeTown/scripts.pory"
+	msgbox WaddleDeeTown_EventScript_EastExitBlocked_Text_0
+# 857 "data/maps/WaddleDeeTown/scripts.pory"
+	closemessage
+# 858 "data/maps/WaddleDeeTown/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeTown_EventScript_EastExitBlocked_Movement_0
+# 859 "data/maps/WaddleDeeTown/scripts.pory"
+	waitmovement
+# 860 "data/maps/WaddleDeeTown/scripts.pory"
 	release
 	return
 
@@ -1153,521 +1171,521 @@ WaddleDeeTown_EventScript_Fisherman_Movement_4:
 	jump_in_place_down
 	step_end
 
-# 543 "data/maps/WaddleDeeTown/scripts.pory"
+# 558 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_Trigger_FirstCutscene_Movement_0:
-# 543 "data/maps/WaddleDeeTown/scripts.pory"
+# 558 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 544 "data/maps/WaddleDeeTown/scripts.pory"
+# 559 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_Trigger_FirstCutscene_Movement_1:
-# 544 "data/maps/WaddleDeeTown/scripts.pory"
+# 559 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 563 "data/maps/WaddleDeeTown/scripts.pory"
+# 578 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_Bandana_Movement_0:
-# 563 "data/maps/WaddleDeeTown/scripts.pory"
+# 578 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 563 "data/maps/WaddleDeeTown/scripts.pory"
+# 578 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
 	step_end
 
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
+# 585 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_0:
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
+# 585 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
+# 585 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
+# 585 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
+# 585 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
+# 585 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
+# 585 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 570 "data/maps/WaddleDeeTown/scripts.pory"
+# 585 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
 	step_end
 
-# 581 "data/maps/WaddleDeeTown/scripts.pory"
+# 596 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_1:
-# 581 "data/maps/WaddleDeeTown/scripts.pory"
+# 596 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_slow_up
-# 581 "data/maps/WaddleDeeTown/scripts.pory"
+# 596 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_slow_up
 	step_end
 
-# 593 "data/maps/WaddleDeeTown/scripts.pory"
+# 608 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_2:
-# 593 "data/maps/WaddleDeeTown/scripts.pory"
+# 608 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_slow_right
-# 593 "data/maps/WaddleDeeTown/scripts.pory"
+# 608 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_slow_down
 	step_end
 
-# 610 "data/maps/WaddleDeeTown/scripts.pory"
+# 625 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_3:
-# 610 "data/maps/WaddleDeeTown/scripts.pory"
+# 625 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_slow_left
-# 610 "data/maps/WaddleDeeTown/scripts.pory"
+# 625 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_slow_down
 	step_end
 
-# 616 "data/maps/WaddleDeeTown/scripts.pory"
+# 631 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_4:
-# 616 "data/maps/WaddleDeeTown/scripts.pory"
+# 631 "data/maps/WaddleDeeTown/scripts.pory"
 	jump_in_place_up
-# 616 "data/maps/WaddleDeeTown/scripts.pory"
+# 631 "data/maps/WaddleDeeTown/scripts.pory"
 	jump_in_place_up
-# 616 "data/maps/WaddleDeeTown/scripts.pory"
+# 631 "data/maps/WaddleDeeTown/scripts.pory"
 	jump_in_place_up
-# 616 "data/maps/WaddleDeeTown/scripts.pory"
+# 631 "data/maps/WaddleDeeTown/scripts.pory"
 	jump_in_place_up
-# 616 "data/maps/WaddleDeeTown/scripts.pory"
+# 631 "data/maps/WaddleDeeTown/scripts.pory"
 	jump_in_place_up
-# 616 "data/maps/WaddleDeeTown/scripts.pory"
+# 631 "data/maps/WaddleDeeTown/scripts.pory"
 	jump_in_place_up
 	step_end
 
-# 617 "data/maps/WaddleDeeTown/scripts.pory"
+# 632 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_5:
-# 617 "data/maps/WaddleDeeTown/scripts.pory"
+# 632 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_up
-# 617 "data/maps/WaddleDeeTown/scripts.pory"
+# 632 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_up
-# 617 "data/maps/WaddleDeeTown/scripts.pory"
+# 632 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_up
-# 617 "data/maps/WaddleDeeTown/scripts.pory"
+# 632 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_up
-# 617 "data/maps/WaddleDeeTown/scripts.pory"
+# 632 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_6:
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
-# 618 "data/maps/WaddleDeeTown/scripts.pory"
+# 633 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_fast_up
 	step_end
 
-# 635 "data/maps/WaddleDeeTown/scripts.pory"
+# 650 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_7:
-# 635 "data/maps/WaddleDeeTown/scripts.pory"
+# 650 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_8:
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 647 "data/maps/WaddleDeeTown/scripts.pory"
+# 662 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
 	step_end
 
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_9:
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 648 "data/maps/WaddleDeeTown/scripts.pory"
+# 663 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
 	step_end
 
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_10:
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 649 "data/maps/WaddleDeeTown/scripts.pory"
+# 664 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
 	step_end
 
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_11:
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 650 "data/maps/WaddleDeeTown/scripts.pory"
+# 665 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
 	step_end
 
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_12:
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 651 "data/maps/WaddleDeeTown/scripts.pory"
+# 666 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
 	step_end
 
-# 652 "data/maps/WaddleDeeTown/scripts.pory"
+# 667 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_13:
-# 652 "data/maps/WaddleDeeTown/scripts.pory"
+# 667 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 652 "data/maps/WaddleDeeTown/scripts.pory"
+# 667 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 652 "data/maps/WaddleDeeTown/scripts.pory"
+# 667 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 652 "data/maps/WaddleDeeTown/scripts.pory"
+# 667 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 652 "data/maps/WaddleDeeTown/scripts.pory"
+# 667 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 652 "data/maps/WaddleDeeTown/scripts.pory"
+# 667 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 652 "data/maps/WaddleDeeTown/scripts.pory"
+# 667 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
 	step_end
 
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_14:
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 653 "data/maps/WaddleDeeTown/scripts.pory"
+# 668 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
 	step_end
 
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_15:
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 654 "data/maps/WaddleDeeTown/scripts.pory"
+# 669 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
 	step_end
 
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_16:
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 655 "data/maps/WaddleDeeTown/scripts.pory"
+# 670 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
 	step_end
 
-# 656 "data/maps/WaddleDeeTown/scripts.pory"
+# 671 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_17:
-# 656 "data/maps/WaddleDeeTown/scripts.pory"
+# 671 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_slow_right
 	step_end
 
-# 659 "data/maps/WaddleDeeTown/scripts.pory"
+# 674 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_18:
-# 659 "data/maps/WaddleDeeTown/scripts.pory"
+# 674 "data/maps/WaddleDeeTown/scripts.pory"
 	jump_left
 	step_end
 
-# 667 "data/maps/WaddleDeeTown/scripts.pory"
+# 682 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_19:
-# 667 "data/maps/WaddleDeeTown/scripts.pory"
+# 682 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_20:
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_fast_right
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_fast_down
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_fast_down
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_fast_down
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_fast_down
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_fast_down
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_fast_down
-# 673 "data/maps/WaddleDeeTown/scripts.pory"
+# 688 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 675 "data/maps/WaddleDeeTown/scripts.pory"
+# 690 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_21:
-# 675 "data/maps/WaddleDeeTown/scripts.pory"
+# 690 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_slow_down
-# 675 "data/maps/WaddleDeeTown/scripts.pory"
+# 690 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_slow_down
 	step_end
 
-# 699 "data/maps/WaddleDeeTown/scripts.pory"
+# 714 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_22:
-# 699 "data/maps/WaddleDeeTown/scripts.pory"
+# 714 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 699 "data/maps/WaddleDeeTown/scripts.pory"
+# 714 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
 	step_end
 
-# 714 "data/maps/WaddleDeeTown/scripts.pory"
+# 729 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_23:
-# 714 "data/maps/WaddleDeeTown/scripts.pory"
+# 729 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_up
-# 714 "data/maps/WaddleDeeTown/scripts.pory"
+# 729 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 723 "data/maps/WaddleDeeTown/scripts.pory"
+# 738 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_24:
-# 723 "data/maps/WaddleDeeTown/scripts.pory"
+# 738 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_slow_down
 	step_end
 
-# 744 "data/maps/WaddleDeeTown/scripts.pory"
+# 759 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_25:
-# 744 "data/maps/WaddleDeeTown/scripts.pory"
+# 759 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_slow_up
 	step_end
 
-# 772 "data/maps/WaddleDeeTown/scripts.pory"
+# 787 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_26:
-# 772 "data/maps/WaddleDeeTown/scripts.pory"
+# 787 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 772 "data/maps/WaddleDeeTown/scripts.pory"
+# 787 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 772 "data/maps/WaddleDeeTown/scripts.pory"
+# 787 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 773 "data/maps/WaddleDeeTown/scripts.pory"
+# 788 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_27:
-# 773 "data/maps/WaddleDeeTown/scripts.pory"
+# 788 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 773 "data/maps/WaddleDeeTown/scripts.pory"
+# 788 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 773 "data/maps/WaddleDeeTown/scripts.pory"
+# 788 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_28:
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
-# 774 "data/maps/WaddleDeeTown/scripts.pory"
+# 789 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_down
 	step_end
 
-# 777 "data/maps/WaddleDeeTown/scripts.pory"
+# 792 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_29:
-# 777 "data/maps/WaddleDeeTown/scripts.pory"
+# 792 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 777 "data/maps/WaddleDeeTown/scripts.pory"
+# 792 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 777 "data/maps/WaddleDeeTown/scripts.pory"
+# 792 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 778 "data/maps/WaddleDeeTown/scripts.pory"
+# 793 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_30:
-# 778 "data/maps/WaddleDeeTown/scripts.pory"
+# 793 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 778 "data/maps/WaddleDeeTown/scripts.pory"
+# 793 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
-# 778 "data/maps/WaddleDeeTown/scripts.pory"
+# 793 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_DededeSpeech_Movement_31:
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_up
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
-# 802 "data/maps/WaddleDeeTown/scripts.pory"
+# 817 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_right
 	step_end
 
-# 841 "data/maps/WaddleDeeTown/scripts.pory"
+# 858 "data/maps/WaddleDeeTown/scripts.pory"
 WaddleDeeTown_EventScript_EastExitBlocked_Movement_0:
-# 841 "data/maps/WaddleDeeTown/scripts.pory"
+# 858 "data/maps/WaddleDeeTown/scripts.pory"
 	walk_left
 	step_end
 
@@ -1873,14 +1891,26 @@ WaddleDeeTown_EventScript_Socialite_Text_0:
 	.string "He's such a hardworking, honest fellow!$"
 
 WaddleDeeTown_EventScript_HeadChef_Text_0:
-# 384 "data/maps/WaddleDeeTown/scripts.pory"
+# 386 "data/maps/WaddleDeeTown/scripts.pory"
+	.string "Why are you looking at me like that?\n"
+	.string "Oh… is it these snacks I'm holding?\p"
+	.string "I got them from the café the other day.\n"
+	.string "Here, I'll share some with you!$"
+
+WaddleDeeTown_EventScript_HeadChef_Text_1:
+# 393 "data/maps/WaddleDeeTown/scripts.pory"
+	.string "That should be enough for you and your\n"
+	.string "Helpers to not go hungry, okay?$"
+
+WaddleDeeTown_EventScript_HeadChef_Text_2:
+# 398 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "I heard the café's head chef is out\n"
 	.string "on an ingredient-gathering voyage.\p"
 	.string "What kind of ingredients? My tummy's\n"
-	.string "getting hungry just thinking about it…$"
+	.string "rumbling again just thinking about it…$"
 
 WaddleDeeTown_EventScript_Astronomer_Text_0:
-# 396 "data/maps/WaddleDeeTown/scripts.pory"
+# 411 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "So the Waddle Dee Arena was built in the\n"
 	.string "back room of the town's castle, huh?\p"
 	.string "It was blocked off before. Last I saw,\n"
@@ -1889,7 +1919,7 @@ WaddleDeeTown_EventScript_Astronomer_Text_0:
 	.string "elsewhere to make way for the Arena?$"
 
 WaddleDeeTown_EventScript_WorkerLeft_Text_0:
-# 411 "data/maps/WaddleDeeTown/scripts.pory"
+# 426 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Just our luck… right as the Great King\n"
 	.string "opens his tournament, our town gets hit\l"
 	.string "with an avalanche of garbage blocks!\p"
@@ -1897,7 +1927,7 @@ WaddleDeeTown_EventScript_WorkerLeft_Text_0:
 	.string "it all up. Sorry, kiddo.$"
 
 WaddleDeeTown_EventScript_WorkerRight_Text_0:
-# 424 "data/maps/WaddleDeeTown/scripts.pory"
+# 439 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Supposedly the Great King gave out an\n"
 	.string "order to restrict the town's north exit.\p"
 	.string "But when he saw all these Star Blocks,\n"
@@ -1906,16 +1936,16 @@ WaddleDeeTown_EventScript_WorkerRight_Text_0:
 	.string "caused this mess…?$"
 
 WaddleDeeTown_EventScript_TagGirl1_Text_0:
-# 438 "data/maps/WaddleDeeTown/scripts.pory"
+# 453 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Heeey! Come here! I've got a heart\n"
 	.string "for you!$"
 
 WaddleDeeTown_EventScript_TagGirl2_Text_0:
-# 446 "data/maps/WaddleDeeTown/scripts.pory"
+# 461 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Eeek! I'm gonna be caught! Ha ha ha!$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_0:
-# 456 "data/maps/WaddleDeeTown/scripts.pory"
+# 471 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Kirby! You're helping fill out Info Cards\n"
 	.string "for Wise Waddle Dee, isn't that right?\l"
 	.string "Could I ask you for a favor?\p"
@@ -1930,31 +1960,31 @@ WaddleDeeTown_EventScript_EggDealer_Text_0:
 	.string "egg off my hands for me?$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_1:
-# 477 "data/maps/WaddleDeeTown/scripts.pory"
+# 492 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Oh, Kirby… it looks like you've got too\n"
 	.string "many Helpers on you to carry this egg.\p"
 	.string "Free up a space and come back when\n"
 	.string "you're ready to take it.$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_2:
-# 489 "data/maps/WaddleDeeTown/scripts.pory"
+# 504 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Oh, thank you! Here you go, then!$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_3:
-# 491 "data/maps/WaddleDeeTown/scripts.pory"
+# 506 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Kirby received the egg.$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_4:
-# 502 "data/maps/WaddleDeeTown/scripts.pory"
-	.string "Kirby received an egg in the PC.$"
+# 517 "data/maps/WaddleDeeTown/scripts.pory"
+	.string "Kirby received the egg in the PC.$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_5:
-# 518 "data/maps/WaddleDeeTown/scripts.pory"
+# 533 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Oh, alright… I guess this egg will stay\n"
 	.string "unhatched for a long time then…$"
 
 WaddleDeeTown_EventScript_EggDealer_Text_6:
-# 525 "data/maps/WaddleDeeTown/scripts.pory"
+# 540 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "There's a lot we're still learning about\n"
 	.string "how Helpers propagate.\p"
 	.string "Thanks to the newly opened Day Care, we\n"
@@ -1965,19 +1995,19 @@ WaddleDeeTown_EventScript_EggDealer_Text_6:
 	.string "Helpers come from something else?$"
 
 WaddleDeeTown_Trigger_FirstCutscene_Text_0:
-# 547 "data/maps/WaddleDeeTown/scripts.pory"
+# 562 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}The Great King's up ahead, Kirby.\n"
 	.string "Let's hurry!$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_0:
-# 587 "data/maps/WaddleDeeTown/scripts.pory"
+# 602 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Looks like some of you have already got\n"
 	.string "your own Helpers! Not bad, not bad!\p"
 	.string "Now, I can't really stop 'ya if you'd\n"
 	.string "rather keep 'em as companions…$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_1:
-# 595 "data/maps/WaddleDeeTown/scripts.pory"
+# 610 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}…but what I really wanna see are\n"
 	.string "leaders and teams pushed to the limit!\p"
 	.string "And so, I'm proud to cut the ribbon for\n"
@@ -1990,34 +2020,34 @@ WaddleDeeTown_EventScript_DededeSpeech_Text_1:
 	.string "with a shiny new Brooch to their name.$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_2:
-# 612 "data/maps/WaddleDeeTown/scripts.pory"
+# 627 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Now then, you're all dismissed!$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_3:
-# 643 "data/maps/WaddleDeeTown/scripts.pory"
+# 658 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Yes, Great King!\n"
 	.string "Thank you, Great King!$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_4:
-# 694 "data/maps/WaddleDeeTown/scripts.pory"
+# 709 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}Ah, looks like we only caught the end of\n"
 	.string "the Great King's speech…\p"
 	.string "I wonder how tough the challengers at\n"
 	.string "the Arena here will be?$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_5:
-# 700 "data/maps/WaddleDeeTown/scripts.pory"
+# 715 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Well, well, well!\n"
 	.string "If it isn't my favorite lil' nuisance!$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_6:
-# 710 "data/maps/WaddleDeeTown/scripts.pory"
+# 725 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}G-Great King!\p"
 	.string "{SPEAKER NAME_DEDEDE}And ol' Bandana too! Well? How about it?\n"
 	.string "'Ya enjoying the Royal Royale so far?$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_7:
-# 715 "data/maps/WaddleDeeTown/scripts.pory"
+# 730 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}Um, it's… you really put your all into\n"
 	.string "this game, Great King! It's impressive!\p"
 	.string "I'm still learning all sorts of things\n"
@@ -2026,7 +2056,7 @@ WaddleDeeTown_EventScript_DededeSpeech_Text_7:
 	.string "so now we're helping him in exchange…$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_8:
-# 724 "data/maps/WaddleDeeTown/scripts.pory"
+# 739 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Ohh, filling out the Info Cards, ain't\n"
 	.string "'ya? That's some real great news!\l"
 	.string "Even I don't know all the Helpers yet!\p"
@@ -2035,13 +2065,13 @@ WaddleDeeTown_EventScript_DededeSpeech_Text_8:
 	.string "Great King, do you…?$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_9:
-# 739 "data/maps/WaddleDeeTown/scripts.pory"
+# 754 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Nope! Nuh uh! Couldn't tell ya!\p"
 	.string "Don't sweat the small details, yeah?\n"
 	.string "The most important thing is having fun!$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_10:
-# 747 "data/maps/WaddleDeeTown/scripts.pory"
+# 762 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}The road to becoming a Great King isn't\n"
 	.string "easy. I don't expect most to make it.\p"
 	.string "But I wanted to put something together\n"
@@ -2050,7 +2080,7 @@ WaddleDeeTown_EventScript_DededeSpeech_Text_10:
 	.string "this with something new…$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_11:
-# 758 "data/maps/WaddleDeeTown/scripts.pory"
+# 773 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}So, Kirby, huh? Why, I shudder to think\n"
 	.string "what HE would be like as king!\p"
 	.string "I can picture it now... he'd order all\n"
@@ -2062,14 +2092,14 @@ WaddleDeeTown_EventScript_DededeSpeech_Text_11:
 	.string "Peace!$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_12:
-# 782 "data/maps/WaddleDeeTown/scripts.pory"
+# 797 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}I hate having to say this, but…\n"
 	.string "He's definitely hiding something, right?\p"
 	.string "Looks like it's up to us to figure out\n"
 	.string "why Dream Land is full of Helpers…$"
 
 WaddleDeeTown_EventScript_DededeSpeech_Text_13:
-# 789 "data/maps/WaddleDeeTown/scripts.pory"
+# 804 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}I'm gonna ask around town and see if I\n"
 	.string "can figure anything out for myself.\p"
 	.string "Kirby, why don't you check out the\n"
@@ -2081,7 +2111,7 @@ WaddleDeeTown_EventScript_DededeSpeech_Text_13:
 	.string "as a real contender for the crown!$"
 
 WaddleDeeTown_EventScript_EastGuard_Text_0:
-# 815 "data/maps/WaddleDeeTown/scripts.pory"
+# 830 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "I'm sorry, but I can't let you pass\n"
 	.string "through to Vegetable Valley just yet.\p"
 	.string "We're doing inspections in the area\n"
@@ -2089,9 +2119,9 @@ WaddleDeeTown_EventScript_EastGuard_Text_0:
 	.string "following the recent avalanche.$"
 
 WaddleDeeTown_EventScript_EastExitBlocked_Text_0:
-# 832 "data/maps/WaddleDeeTown/scripts.pory"
+# 849 "data/maps/WaddleDeeTown/scripts.pory"
 	.string "Excuse me!\p"
-	.string "I'm sorry, but I can't let you pass\n"
+	.string "I'm sorry, but we can't let you pass\n"
 	.string "through to Vegetable Valley just yet.\p"
 	.string "We're doing inspections in the area\n"
 	.string "to make sure it's safe for traversal\l"

@@ -799,3 +799,538 @@ script WaddleDeeTown_Lab_EventScript_TurnRight
     turnobject(LOCALID_LAB_RECEPTIONIST_RIGHT, DIR_WEST)
     goto(WaddleDeeTown_Lab_EventScript_RightReceptionist)
 }
+
+script WaddleDeeTown_Lab_EventScript_Book1
+{
+    lockall
+    msgbox("Kawasaki's Chef Training: Curry
+    
+            \qoThe Superspicy Curry is my specialty
+            dish! It's so delicious, you'll beg
+            for dozens of drinks to savor it with!
+            
+            Ingredients: rice, beef, broth, cumin,
+            coriander, cinnamon, garlic, sesame,
+            hot sauce, jalapeno, tabasco, cayenne,
+            hot sauce, habanero, hot sauce, 
+            ghost pepper, hot sauce, hot sauce,
+            hot sauce, hot sauce, hot sauce,
+            hot sauce, hot sauce, hot sauce,
+            hot sauce, hot sauce, hot sauce,\qc
+            
+            You close the book concernedly.")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book2
+{
+    lockall
+    msgbox("Kawasaki's Chef Training: Ice Pops
+    
+            \qoThis treat is perfect for cooling off
+            after a hot summer day\. or after eating
+            my famous Superspicy Curry!
+            
+            Ingredients: water, sticks
+            
+            Step 1: Pour water into a cube or tube
+            tray.
+            
+            Step 2: Place sticks in tray slots,
+            partially submerged into water.
+            
+            Step 3: Place in freezer until ready.
+            
+            \. 
+            
+            I know what you're thinking. That's it?
+            This barely counts as a recipe!
+            
+            But that's exactly the point! Even
+            head chefs like me started somewhere!
+            
+            Anyone can learn to cook as good as I
+            do, if only you apply yourself right.
+            So don't let yourself be intimidated!\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book3
+{
+    lockall
+    msgbox("On The Making Of A King: Part 1
+    
+            \qoYa might be wonderin': why write a
+            series on how I serve as king?
+            
+            Is this even useful to a citizenry
+            full of a bunch of illiterate folks?
+            
+            Well, I think so! And here, I'll
+            tell y'all why!
+            
+            Number one: I'm a great enough king
+            to deserve havin' my accomplishments
+            immortalized in a fancy book!
+            
+            Number two: if the population learns to
+            read later on, they should know the
+            best king there was and ever will be!
+            
+            Number three: Proofreadin' all dis is
+            gonna make me a better reader too!\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book4
+{
+    lockall
+    msgbox("On The Making Of A King: Part 4
+    
+            \qoLemme let y'all in on a little secret,
+            from generous king to feeble subject.
+            
+            Ya do NOT want a guy like Meta Knight
+            rulin' over you. Yeesh!
+            
+            He's so stern and tough! What a killjoy!
+            Doesn't he get the vibe of this place?
+            
+            And all of his orders are about trainin'
+            and fightin' and whatnot! It's tirin'!
+            
+            My orders are easy things! Like strokin'
+            my ego or grabbin' me some grub!
+            
+            Kirby stopped that knucklehead from
+            takin' over Dream Land once\. huh,
+            what do I think of Kirby bein' king?
+            
+            Hrmmm\. nope. He's got no shot.\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book5
+{
+    lockall
+    msgbox("On The Making of a King: Part 13
+    
+            \qoNotice: The accounts you are about to
+            read are products of their time.
+            
+            They reflect behavior that was wrong
+            then and now, but nonetheless was
+            commonplace in the distant past.
+            
+            The events have been preserved here
+            so as not to erase their existence.\qc
+            
+            \.it then describes several of King
+            Dedede's misadventures in Dream Land.")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book6
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book7
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book8
+{
+    lockall
+    msgbox("Diary of a Waddle Dee
+    
+            \qoI've never seen a library this big in
+            my life before. It's huge!
+            
+            I was wondering, would they notice if
+            one extra book came in or out of here?
+            
+            So I figured, for fun, I'd write a little
+            diary, sneak it into the library, and
+            then hide it among the shelves.
+            
+            If it gets noticed and removed, well,
+            I guess I won't know if that happens\.
+            
+            But if someone happens to be reading
+            this, please tell me if it's still there!
+            
+            I live around Grape Garden, so I can't
+            visit the library in town so often\.\qc")
+    if(!flag(FLAG_READ_DIARY))
+    {
+        setflag(FLAG_READ_DIARY)
+    }
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book9
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book10
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book12
+{
+    lockall
+    msgbox("DREAM LAND: ULTIMATE JOKE BOOK!
+    
+            \qoQ: What do Waddle Dees carry their
+            drinks in?
+            
+            A: Waddle bottles!
+            
+            Q: When the Great King was in school,
+            what did his report card look like?
+            
+            A: D, D, D!
+            
+            Q: What did the grumpy tourist say
+            after visiting Popstar?
+            
+            A: I rate this planet one star!\qc
+            
+            \.
+            
+            You'd probably be laughing if you could
+            read.")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book13
+{
+    lockall
+    msgbox("Artifactual: Volume 2
+    
+            \qoThe Fountain of Dreams is powered by
+            the Star Rod (see volume 1), which some
+            say also created the fountain itself.
+            
+            Hopes and dreams gather to and flow
+            from the fountain's waters.
+            
+            Dreams that flow from the fountain can
+            enter the minds of the slumbering.
+            
+            These dreams are normally pleasant,
+            but can be corrupted when sinister
+            intentions soak in the springs.
+            
+            Fountains of Dreams can be found
+            on several different planets.\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book14
+{
+    lockall
+    msgbox("Popstar Chronicle: Volume X4
+    
+            \qoA dark cloud has covered the planet,
+            possessing all who encounter it.
+            
+            Its appearance and behavior calls to
+            mind the Dark Matter that appeared
+            at the Rainbow Islands not long ago.
+            
+            Dark Matter attacked Dream Land out
+            of loneliness-induced frustration\.
+            
+            So why does this cloud, which hosts 
+            all kind of Dark Matter in it, fight?
+            
+            Is surrounding oneself with others not
+            enough to dispel loneliness? What is?\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book15
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book16
+{
+    lockall
+    msgbox("Artifactual: Volume 25
+    
+            \qoDream Rods can be found in palaces
+            across several different planets.
+            
+            They bring dreams to life, which make
+            them similar to wish-granting items.
+            
+            However, their creations are merely
+            visualizations made of dream energy,
+            rather than original items.
+            
+            As such, the Dream Rod struggles to
+            conceptualize abstract dreams.\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book18
+{
+    lockall
+    msgbox("Popstar Chronicle: Volume XA
+    
+            \qoIt was all too brief, but for a moment,
+            Popstar was in grave danger once more.
+            
+            This time, a shroud of tangled vines
+            ensnared the planet, trapping its
+            residents in an inescapable bind.
+            
+            Victims of the incident noted they felt
+            their vitality being drained.
+            
+            The source of these vines is as of yet
+            unidentified, but seemed to be high
+            above the clouds\.
+            
+            What sort of dangerous threats could
+            lurk just outside our sights?\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book19
+{
+    lockall
+    msgbox("Popstar Chronicle: Volume XB
+    
+            \qoA mysterious spaceship docked on our
+            planet. Unlike last time, this one was
+            large enough to overshadow the planet.
+            
+            From this vessel, a large workforce
+            emerged and immediately took over.
+            
+            Large-scale mechanical terraforming
+            urbanized the natural surroundings.
+            
+            With the vessel's explosion, the damage
+            has mostly been done, but one wonders\.
+            
+            For all the chaos and disruption, it also
+            introduced new modernizations and
+            technologies to the planet.
+            
+            Will they ever see the light of day in
+            a form that can coexist with nature?\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book20
+{
+    lockall
+    msgbox("Artifactual: Volume 67
+    
+            \qoThe Master Crown was a device said to
+            grant limitless power to its wearer.
+
+            It was known as the legendary treasure
+            of Planet Halcandra, which fell into
+            ruin long ago.
+
+            How such a powerful item was unable to
+            prevent the grim fate of Halcandra is
+            a mystery to scholars\.\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book21
+{
+    lockall
+    msgbox("Helper Handbook: Stats
+    
+            \qoHelpers have six unique stats that
+            define their abilities in combat.
+            
+            Their HP is the amount of damage they
+            can take before being defeated.
+            
+            Attack and Special Attack marks the
+            power of physical and special moves\.
+            
+            \.and Defense and Special Defense is
+            their resistance to those moves.
+
+            Incidentally, moves are classified as
+            physical or special individually, rather
+            than by other metrics such as type.
+            
+            Lastly, Helpers with higher Speed
+            move before those with lower Speed.\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book22
+{
+    lockall
+    msgbox("Helper Handbook: Status Conditions
+    
+            \qoHelpers can be afflicted by several
+            malignant statuses.
+            
+            Poison whittles a Helper's HP away
+            after each turn in battle.
+            
+            Burns deal less damage than poison, but
+            they also weaken physical blows.
+            
+            Paralysis slows Helper movement and
+            renders them immobile occasionally.
+            
+            Sleep and freezing also incapacitate
+            Helpers temporarily, but certain moves
+            can cure the afflicted specimens.")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book23
+{
+    lockall
+    msgbox("Helper Handbook: Types
+    
+            \qoPlease consult the following graph on
+            the intricacies of the type chart.\qc
+            
+            \. \. \.
+            
+            It's too complicated to describe in
+            text boxes this small\.
+            
+            Thankfully, battles will tell you how
+            effective moves are on an enemy.
+            Just rely on that instead, okay?")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book24
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book25
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book26
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book27
+{
+    lockall
+    msgbox("Helper Handbook: Evolution Stars
+    
+            \qoSome Helpers evolve into new species
+            when exposed to certain starry items.
+            
+            However, there is a catch: most of
+            these Helpers will appear to stop
+            learning new moves upon evolution.
+            
+            They'll only begin to learn new moves
+            at the level at which the unevolved
+            Helper would have mastered its moves.
+            
+            As an aside\.
+            
+            If a Helper learns a move that its
+            evolved form doesn't get, don't fret.
+            
+            That move still exists deep in the
+            evolved Helper's egg movepool,
+            and can be learned by other means.\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book28
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book29
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book30
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book31
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book32
+{
+    lockall
+    msgbox("Waddle Dee Fairy Tale
+    
+            \qo???\qc")
+    release
+}

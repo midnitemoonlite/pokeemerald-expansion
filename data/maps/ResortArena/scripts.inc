@@ -1805,51 +1805,55 @@ ResortArena_EventScript_GiveMinePresent::
 	getplayerxy VAR_TEMP_2, VAR_TEMP_3
 # 1444 "data/maps/ResortArena/scripts.pory"
 	compare VAR_TEMP_2, 10
-	goto_if_le ResortArena_EventScript_GiveMinePresent_2
+	goto_if_ge ResortArena_EventScript_GiveMinePresent_2
 ResortArena_EventScript_GiveMinePresent_1:
-# 1449 "data/maps/ResortArena/scripts.pory"
-	playse SE_PIN
 # 1450 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_MINE, Common_Movement_ExclamationMark
-# 1451 "data/maps/ResortArena/scripts.pory"
-	waitmovement
-# 1452 "data/maps/ResortArena/scripts.pory"
-	waitse
-# 1453 "data/maps/ResortArena/scripts.pory"
-	msgbox ResortArena_EventScript_GiveMinePresent_Text_0
-# 1459 "data/maps/ResortArena/scripts.pory"
-	checkitem ITEM_SAPPHIRE
-# 1460 "data/maps/ResortArena/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq ResortArena_EventScript_GiveMinePresent_5
+	compare VAR_TEMP_2, 10
+	goto_if_lt ResortArena_EventScript_GiveMinePresent_5
 ResortArena_EventScript_GiveMinePresent_4:
-# 1464 "data/maps/ResortArena/scripts.pory"
-	playfanfare MUS_OBTAIN_TMHM
+# 1455 "data/maps/ResortArena/scripts.pory"
+	playse SE_PIN
+# 1456 "data/maps/ResortArena/scripts.pory"
+	applymovement LOCALID_MINE, Common_Movement_ExclamationMark
+# 1457 "data/maps/ResortArena/scripts.pory"
+	waitmovement
+# 1458 "data/maps/ResortArena/scripts.pory"
+	waitse
+# 1459 "data/maps/ResortArena/scripts.pory"
+	msgbox ResortArena_EventScript_GiveMinePresent_Text_0
 # 1465 "data/maps/ResortArena/scripts.pory"
+	checkitem ITEM_SAPPHIRE
+# 1466 "data/maps/ResortArena/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq ResortArena_EventScript_GiveMinePresent_8
+ResortArena_EventScript_GiveMinePresent_7:
+# 1470 "data/maps/ResortArena/scripts.pory"
+	playfanfare MUS_OBTAIN_TMHM
+# 1471 "data/maps/ResortArena/scripts.pory"
 	message ResortArena_EventScript_GiveMinePresent_Text_1
-# 1467 "data/maps/ResortArena/scripts.pory"
+# 1473 "data/maps/ResortArena/scripts.pory"
 	waitmessage
-# 1468 "data/maps/ResortArena/scripts.pory"
+# 1474 "data/maps/ResortArena/scripts.pory"
 	waitfanfare
-# 1469 "data/maps/ResortArena/scripts.pory"
+# 1475 "data/maps/ResortArena/scripts.pory"
 	msgbox ResortArena_EventScript_GiveMinePresent_Text_2
-# 1483 "data/maps/ResortArena/scripts.pory"
-	closemessage
-# 1484 "data/maps/ResortArena/scripts.pory"
-	playse SE_EXIT
-# 1485 "data/maps/ResortArena/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 1486 "data/maps/ResortArena/scripts.pory"
-	removeobject LOCALID_MINE
-# 1487 "data/maps/ResortArena/scripts.pory"
-	setflag FLAG_HIDE_MINE
-# 1488 "data/maps/ResortArena/scripts.pory"
-	setvar VAR_ORANGE_OCEAN_STATE, 3
 # 1489 "data/maps/ResortArena/scripts.pory"
-	delay 15
+	closemessage
 # 1490 "data/maps/ResortArena/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	playse SE_EXIT
 # 1491 "data/maps/ResortArena/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 1492 "data/maps/ResortArena/scripts.pory"
+	removeobject LOCALID_MINE
+# 1493 "data/maps/ResortArena/scripts.pory"
+	setflag FLAG_HIDE_MINE
+# 1494 "data/maps/ResortArena/scripts.pory"
+	setvar VAR_ORANGE_OCEAN_STATE, 3
+# 1495 "data/maps/ResortArena/scripts.pory"
+	delay 15
+# 1496 "data/maps/ResortArena/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 1497 "data/maps/ResortArena/scripts.pory"
 	releaseall
 	return
 
@@ -1858,12 +1862,21 @@ ResortArena_EventScript_GiveMinePresent_2:
 	applymovement LOCALID_MINE, ResortArena_EventScript_Challenger2_Movement_0
 # 1447 "data/maps/ResortArena/scripts.pory"
 	applymovement LOCALID_PLAYER, ResortArena_EventScript_GiveMinePresent_Movement_0
+# 1448 "data/maps/ResortArena/scripts.pory"
+	waitmovement
 	goto ResortArena_EventScript_GiveMinePresent_1
 
 ResortArena_EventScript_GiveMinePresent_5:
-# 1462 "data/maps/ResortArena/scripts.pory"
-	removeitem ITEM_SAPPHIRE
+# 1452 "data/maps/ResortArena/scripts.pory"
+	applymovement LOCALID_MINE, ResortArena_EventScript_BeginChallenge_Movement_8
+# 1453 "data/maps/ResortArena/scripts.pory"
+	waitmovement
 	goto ResortArena_EventScript_GiveMinePresent_4
+
+ResortArena_EventScript_GiveMinePresent_8:
+# 1468 "data/maps/ResortArena/scripts.pory"
+	removeitem ITEM_SAPPHIRE
+	goto ResortArena_EventScript_GiveMinePresent_7
 
 
 # 436 "data/maps/ResortArena/scripts.pory"
@@ -3471,7 +3484,7 @@ ResortArena_EventScript_TurnAwayFromMine_Text_0:
 	.string "Let's come back AFTER we find it, okay?$"
 
 ResortArena_EventScript_GiveMinePresent_Text_0:
-# 1453 "data/maps/ResortArena/scripts.pory"
+# 1459 "data/maps/ResortArena/scripts.pory"
 	.string "Oh, Kiiiiine! Where have you been, my\n"
 	.string "darling sea angel?\p"
 	.string "…what's that? You and Kirby went out\n"
@@ -3479,12 +3492,12 @@ ResortArena_EventScript_GiveMinePresent_Text_0:
 	.string "Oh, you shouldn't have!$"
 
 ResortArena_EventScript_GiveMinePresent_Text_1:
-# 1465 "data/maps/ResortArena/scripts.pory"
+# 1471 "data/maps/ResortArena/scripts.pory"
 	.string "Kirby handed over the\n"
 	.string "Present to Mine!$"
 
 ResortArena_EventScript_GiveMinePresent_Text_2:
-# 1469 "data/maps/ResortArena/scripts.pory"
+# 1475 "data/maps/ResortArena/scripts.pory"
 	.string "Hmm? What's that? Speak up, Kine, I\n"
 	.string "can't hear you with your mouth full!\p"
 	.string "I see… so you're going to help Kirby\n"

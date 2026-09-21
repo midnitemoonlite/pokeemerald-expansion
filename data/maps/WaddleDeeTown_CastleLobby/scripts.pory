@@ -5,36 +5,43 @@ WaddleDeeTown_CastleLobby_MapScripts::
 
 script WaddleDeeTown_CastleLobby_EventScript_Youngster
 {
+    lock
     msgbox("I wanted to be the first challenger at
             the Arena, so I ran right in\.
             
             Turns out I couldn't even score a
             single win! Now I'll be remembered
             as the Arena's first loser!", MSGBOX_NPC)
+    release
 }
 
 script WaddleDeeTown_CastleLobby_EventScript_Lass
 {
+    lock
     msgbox("My strategy for the Arena? I'm betting
             it all on bringing the cutest Helpers.
             
             My opponents will be so charmed, they'll
             lose their desire to win the battle!
             Don't you think it's a foolproof plan?", MSGBOX_NPC)
+    release
 }
 
 script WaddleDeeTown_CastleLobby_EventScript_Conductor
 {
+    lock
     msgbox("The last time King Dedede hosted a
             big tournament, he built an entire
             castle just to host the event.
             
             I think this time he realized, even for
             his standards, how excessive that was.", MSGBOX_NPC)
+    release
 }
 
 script WaddleDeeTown_CastleLobby_EventScript_Staff
 {
+    lock
     if(!flag(FLAG_RECEIVED_DARK_TM))
     {
         msgbox("Do you know what a \qoTM\qc is?
@@ -50,24 +57,28 @@ script WaddleDeeTown_CastleLobby_EventScript_Staff
         giveitem(ITEM_TM65)
         setflag(FLAG_RECEIVED_DARK_TM)
     }
-        msgbox("Snarl doesn't just deal damage; it also
-        lowers the targets' Special Attack.
+    msgbox("Snarl doesn't just deal damage; it also
+            lowers the targets' Special Attack.
         
-        If you want more TMs, do your best to
-        win at the various Arenas!", MSGBOX_NPC)
+            If you want more TMs, do your best to
+            win at the various Arenas!", MSGBOX_NPC)
+    release
 }
 
 script WaddleDeeTown_CastleLobby_EventScript_Builder
 {
+    lock
     msgbox("Have you seen the northern part of
             town? It's completely blocked off.
             
             I wonder what kinds of Helpers
             await on the other side\.", MSGBOX_NPC)
+    release
 }
 
 script WaddleDeeTown_CastleLobby_EventScript_Soldier_Left
 {
+    lock
     msgbox("This is the entrance to the Great King's
             personal treasury.
             
@@ -76,10 +87,12 @@ script WaddleDeeTown_CastleLobby_EventScript_Soldier_Left
             
             Don't look at me like that, alright?
             I can't let you in.", MSGBOX_NPC)
+    release
 }
 
 script WaddleDeeTown_CastleLobby_EventScript_Soldier_Right
 {
+    lock
     msgbox("A certain someone has tasked me with
             guarding this door.
             
@@ -88,10 +101,12 @@ script WaddleDeeTown_CastleLobby_EventScript_Soldier_Right
             
             You're right. If that was the case,
             why would I be coy about it?", MSGBOX_NPC)
+    release
 }
 
 script WaddleDeeTown_CastleLobby_EventScript_Soldier_Middle
 {
+    lock
     msgbox("The entrance to the Waddle Dee Arena
             is right through here.
             
@@ -100,4 +115,5 @@ script WaddleDeeTown_CastleLobby_EventScript_Soldier_Middle
             
             Good luck if you're planning on
             battling in the Arena.", MSGBOX_NPC)
+    release
 }

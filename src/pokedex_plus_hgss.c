@@ -6284,12 +6284,19 @@ static void HandleTargetSpeciesPrintText(u32 targetSpecies, u32 base_x, u32 base
 
 static void HandleTargetSpeciesPrintIcon(u8 taskId, u16 targetSpecies, u8 base_i, u8 iterations)
 {
+    bool32 seen = GetSetPokedexFlag(SpeciesToNationalPokedexNum(targetSpecies), FLAG_GET_SEEN);
     u32 personality = GetPokedexMonPersonality(targetSpecies);
     LoadMonIconPalettePersonality(targetSpecies, personality); //Loads pallete for current mon
-    if (iterations > 6) // Print icons closer to each other if there are many evolutions
-        gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, 45 + 26*base_i, 31, 4, personality);
+    if (seen)
+        if (iterations > 6) // Print icons closer to each other if there are many evolutions
+            gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, 45 + 26*base_i, 31, 4, personality);
+        else
+            gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, 50 + 32*base_i, 31, 4, personality);
     else
-        gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, 50 + 32*base_i, 31, 4, personality);
+        if (iterations > 6) // Print icons closer to each other if there are many evolutions
+            gTasks[taskId].data[4+base_i] = CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, 45 + 26*base_i, 31, 4, 0);
+        else
+            gTasks[taskId].data[4+base_i] = CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, 50 + 32*base_i, 31, 4, 0);
     gSprites[gTasks[taskId].data[4+base_i]].oam.priority = 0;
 }
 
@@ -7502,7 +7509,7 @@ static void Task_LoadSizeScreen(u8 taskId)
         u8 string[64];
 
         StringCopy(string, gText_SizeComparedTo);
-        StringAppend(string, gSaveBlock2Ptr->playerName);
+        //StringAppend(string, gSaveBlock2Ptr->playerName);
         PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, 0xF0), 0x79);
         gMain.state++;
         break;

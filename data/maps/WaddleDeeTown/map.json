@@ -469,7 +469,7 @@
       "flag": "FLAG_BADGE01_GET"
     },
     {
-      "local_id": "LOCALID_TOWN_EAST_GUARD",
+      "local_id": "LOCALID_TOWN_EAST_GUARD_ONE",
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 56,
       "y": 28,
@@ -483,6 +483,7 @@
       "flag": "FLAG_BINDER_GATE_01"
     },
     {
+      "local_id": "LOCALID_TOWN_EAST_GUARD_TWO",
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 56,
       "y": 34,
@@ -730,6 +731,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "WaddleDeeTown_EventScript_ParkSign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 57,
+      "y": 37,
+      "elevation": 0,
+      "item": "ITEM_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP"
+    },
+    {
+      "type": "hidden_item",
+      "x": 2,
+      "y": 24,
+      "elevation": 0,
+      "item": "ITEM_LIGHT_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE"
     }
   ]
 }
