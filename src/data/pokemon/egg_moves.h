@@ -7576,6 +7576,7 @@ static const u16 sCawcunEggMoveLearnset[] = {
     MOVE_DUAL_WINGBEAT,
     MOVE_LEAF_TORNADO,
     MOVE_MIST_BALL,
+    MOVE_SHOCK_WAVE,
     MOVE_SKY_ATTACK,
     MOVE_STEEL_WING,
     MOVE_UNAVAILABLE,

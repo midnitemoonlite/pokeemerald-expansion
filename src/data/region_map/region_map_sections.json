@@ -1686,6 +1686,10 @@
     {
       "id": "MAPSEC_BATTLESHIP_HALBERD",
       "name": "HALBERD"
+    },
+    {
+      "id": "MAPSEC_FLOAT_ISLANDS",
+      "name": "FLOAT ISLANDS"
     }
   ]
 }

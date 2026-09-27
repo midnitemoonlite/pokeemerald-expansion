@@ -294,9 +294,9 @@ Ability: Swarm
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
-Maiga (F)
+Capiller (F)
 Level: 6
-Ability: Regenerator
+Ability: Swarm
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
@@ -310,19 +310,19 @@ Double Battle: No
 AI: Check Bad Move
 
 Twizzy (F)
-Level: 6
+Level: 5
 Ability: Big Pecks
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 Chip (F)
-Level: 6
+Level: 5
 Ability: Fluffy
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
 
 Gaw Gaw (M)
-Level: 6
+Level: 5
 Ability: Tough Claws
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Ball: Poke
@@ -455,7 +455,7 @@ Ball: Strange
 Sphere Doomer (M) @ Oran Berry
 Level: 11
 Ability: Forecast
-IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+IVs: 5 HP / 5 Atk / 5 Def / 5 SpA / 5 SpD / 5 Spe
 Ball: Strange
 - Sunny Day
 - Ember
@@ -729,9 +729,15 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Drifter (F)
+Buttonfly (F)
 Level: 12
-Ability: Keen Eye
+Ability: Shield Dust
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Ball: Poke
+
+Buttonfly (F)
+Level: 12
+Ability: Swarm
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
@@ -744,14 +750,8 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Chip (M)
-Level: 11
-Ability: Adaptability
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Ball: Poke
-
 Kabu
-Level: 12
+Level: 13
 Ability: Rock Head
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
@@ -770,14 +770,8 @@ Double Battle: No
 AI: Check Bad Move
 
 Chick (M)
-Level: 15
+Level: 17
 Ability: Shell Armor
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Ball: Poke
-
-Twizzy (F)
-Level: 13
-Ability: Big Pecks
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
@@ -809,17 +803,19 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Buttonfly (F)
-Level: 12
-Ability: Shield Dust
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Ball: Net
-
 Minny (M)
 Level: 12
 Ability: Rattled
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Net
+
+Pupa (F)
+Level: 12
+Ability: Shed Skin
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Ball: Net
+- Harden
+- String Shot
 
 
 /* Fruity Forest - Trainer 6 */
@@ -831,15 +827,15 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Cappy (F)
+Maiga (F)
 Level: 13
-Ability: Anticipation
+Ability: Regenerator
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
-Capiller (M)
+Cappy (M)
 Level: 13
-Ability: Swarm
+Ability: Anticipation
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
@@ -852,15 +848,15 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Gaw Gaw (M)
-Level: 12
-Ability: Tough Claws
+Beetley (M)
+Level: 13
+Ability: Scrappy
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
-- Scratch
+- Horn Attack
+- Fury Cutter
 - Leer
-- Sand Attack
-- Focus Energy
+- Taunt
 
 Poppy Bros. Jr. (M)
 Level: 13
@@ -878,15 +874,15 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Beetley (M)
-Level: 13
-Ability: Scrappy
+Blade Knight (M)
+Level: 14
+Ability: Inner Focus
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
-- Horn Attack
-- Fury Cutter
-- Leer
-- Taunt
+- Rock Smash
+- Fury Attack
+- Cut
+- Focus Energy
 
 Sir Kibble (M)
 Level: 14
@@ -917,7 +913,7 @@ Ball: Poke
 Name: Waddle Dee
 Class: Fisherman
 Pic: Fisherman
-Music: Female
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
@@ -928,7 +924,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Lure
 
 Flotzo (M)
-Level: 14
+Level: 16
 Ability: Suction Cups
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Lure
@@ -965,7 +961,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Sandran (F)
-Level: 15
+Level: 17
 Ability: Sand Veil
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
@@ -973,12 +969,6 @@ Ball: Heal
 - Sand Tomb
 - Sandstorm
 - Leer
-
-Maiga (M)
-Level: 15
-Ability: Regenerator
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Ball: Poke
 
 /* Ice Cream Island - Trainer 5 */
 === TRAINER_ROSE_2 ===
@@ -990,7 +980,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Batty (F)
-Level: 18
+Level: 16
 Ability: Swarm
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Great
@@ -998,6 +988,16 @@ Ball: Great
 - Gust
 - Bite
 - Quick Attack
+
+Chip (F)
+Level: 16
+Ability: Adaptability
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Ball: Great
+- Quick Attack
+- Defense Curl
+- Tail Whip
+- Play Nice
 
 /* Ice Cream Island - Trainer 6 */
 === TRAINER_ROSE_3 ===
@@ -1009,14 +1009,14 @@ Double Battle: No
 AI: Check Bad Move
 
 Embird (F)
-Level: 15
+Level: 16
 Ability: Hustle
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 - Peck
-- Growl
-- Disarming Voice
 - Roost
+- Disarming Voice
+- Flame Charge
 
 Pierre (M)
 Level: 16
@@ -1028,15 +1028,15 @@ Ball: Heal
 - Work Up
 - Wake-Up Slap
 
-Blade Knight (M)
+Boxin (M)
 Level: 16
-Ability: Inner Focus
+Ability: Scrappy
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
-- Rock Smash
-- False Swipe
-- Cut
-- Focus Energy
+- Fake Out
+- Mach Punch
+- Quick Guard
+- Comet Punch
 
 /* Ice Cream Island - Trainer 7 */
 === TRAINER_ROSE_4 ===
@@ -1074,8 +1074,8 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Lure
 - Razor Shell
 - Mach Punch
-- Snatch
-- Refresh
+- Rock Smash
+- Double Hit
 
 /* Resort Arena - Trainer 1 */
 === TRAINER_ROSE_5 ===
@@ -1083,7 +1083,6 @@ Name: Waddle Dee
 Class: Parasol Lady
 Pic: Parasol Lady
 Music: Female
-Items: Lava Cookie
 Double Battle: No
 AI: Check Bad Move
 
@@ -1097,7 +1096,7 @@ Ball: Net
 - Mud Sport
 - Harden
 
-Twizzy (F) @ Berry Juice
+Twizzy (F)
 Level: 17
 Ability: Big Pecks
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
@@ -1132,15 +1131,15 @@ Ball: Heal
 - Chip Away
 - Harden
 
-Big Beanbon (F)
-Level: 20
-Ability: Supersweet Syrup
+Punc (F)
+Level: 19
+Ability: Iron Barbs
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Heal
-- Leech Seed
-- Absorb
-- Stomp
-- Growth
+- Defense Curl
+- Rollout
+- Poison Sting
+- Struggle Bug
 
 /* Resort Arena - Trainer 3 */
 === TRAINER_CHIP ===
@@ -1215,7 +1214,7 @@ Level: 21
 Ability: Shell Armor
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Friend
-- Acupressure
+- Egg Bomb
 - Rock Throw
 - Pin Missile
 - Spiky Shield
@@ -1351,7 +1350,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Rocky
-Level: 22
+Level: 21
 Ability: Sturdy
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Great
@@ -1376,7 +1375,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Tookey
-Level: 23
+Level: 22
 Ability: Big Pecks
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Poke
@@ -1416,7 +1415,7 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_AXE_KNIGHT (M)
-Level: 24
+Level: 23
 Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
@@ -1435,7 +1434,7 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_JAVELIN_KNIGHT (M)
-Level: 24
+Level: 23
 Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
@@ -1454,7 +1453,7 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_MACE_KNIGHT (M)
-Level: 24
+Level: 23
 Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
@@ -1473,7 +1472,7 @@ Double Battle: No
 AI: Check Bad Move
 
 SPECIES_TRIDENT_KNIGHT (M)
-Level: 24
+Level: 23
 Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
@@ -1489,12 +1488,12 @@ Class: Aqua Leader
 Pic: Aqua Leader Archie
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
 SPECIES_AXE_KNIGHT (M)
-Level: 24
+Level: 23
 Ability: Sharpness
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Revenge
 - Razor Leaf
@@ -1502,9 +1501,9 @@ Ball: Beast
 - Sharpen
 
 SPECIES_MACE_KNIGHT (M)
-Level: 24
+Level: 23
 Ability: Sheer Force
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Revenge
 - Metal Claw
@@ -1512,9 +1511,9 @@ Ball: Beast
 - Harden
 
 SPECIES_TRIDENT_KNIGHT (M)
-Level: 24
+Level: 23
 Ability: Motor Drive
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Revenge
 - Spark
@@ -1522,117 +1521,172 @@ Ball: Beast
 - Magnet Rise
 
 SPECIES_JAVELIN_KNIGHT (M)
-Level: 24
+Level: 23
 Ability: Sniper
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Revenge
 - Aerial Ace
 - Brutal Swing
 - Rapid Spin
 
+/* Float Islands - Trainer 1 */
 === TRAINER_LOLA_2 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+Name: Waddle Dee
+Class: Fisherman
+Pic: Fisherman
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Flotzo (F)
+Level: 23
+Ability: Liquid Ooze
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Lure
+- Whirlpool
+- Wrap
+- Smokescreen
+- Knock Off
 
-Marill
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Gussa (M)
+Level: 23
+Ability: Propeller Tail
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Lure
 
+/* Float Islands - Trainer 2 */
 === TRAINER_LOLA_3 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
+Name: Waddle Dee
+Class: Swimmer F
+Pic: Tuber M
 Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Craby (F)
+Level: 23
+Ability: Innards Out
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
+- Razor Shell
+- Mach Punch
+- Snatch
+- Refresh
 
-Marill
-Level: 29
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Walf (M) @ Coba Berry
+Level: 23
+Ability: Rattled
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
+- Water Gun
+- Round
+- Baby-Doll Eyes
+- Entrainment
 
+/* Float Islands - Trainer 3 */
 === TRAINER_LOLA_4 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
+Name: Waddle Dee
+Class: Swimmer F
+Pic: Tuber M
 Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Kapar (M)
+Level: 23
+Ability: Rain Dish
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
+- Razor Leaf
+- Rain Dance
+- Water Gun
+- Life Dew
 
-Marill
-Level: 32
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Glunk (F)
+Level: 23
+Ability: Hydration
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Net
+- Bubble Beam
+- Swift
+- Vine Whip
+- Thunder Wave
 
+Coner (F)
+Level: 23
+Ability: Hyper Cutter
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Dive
+- Water Gun
+- Round
+- Baby-Doll Eyes
+- Entrainment
+
+/* Float Islands - Trainer 4 */
 === TRAINER_LOLA_5 ===
-Name: LOLA
-Class: Tuber F
-Pic: Tuber F
-Gender: Female
-Music: Girl
+Name: Waddle Dee
+Class: Swimmer M
+Pic: Swimmer M 
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Azumarill
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Mr. Floaty (M) @ Oran Berry
+Level: 25
+Ability: Damp
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Dive
+- Dive
+- Take Down
+- Stuff Cheeks
+- Baby-Doll Eyes
 
-Azumarill
-Level: 35
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-
+/* Float Islands - Trainer 5 */
 === TRAINER_RICKY_1 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
-Music: Girl
+Name: Waddle Dee
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 13
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
-- Headbutt
-- Tail Whip
-- Surf
+Kacti (M)
+Level: 23
+Ability: Water Absorb
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
 
+Big Beanbon (F)
+Level: 24
+Ability: Supersweet Syrup
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Premier
+- Mega Drain
+- Growth
+- Stomp
+- Leech Seed
+
+/* Float Islands - Trainer 6 */
 === TRAINER_SIMON ===
-Name: SIMON
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
-Music: Girl
+Name: Waddle Dee
+Class: Fisherman
+Pic: Fisherman
+Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Azurill
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Acro (F)
+Level: 25
+Ability: Thick Fat
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Net
+- Water Gun
+- Ice Fang
+- Rock Throw
+- Bite
 
-Marill
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
+/* Float Islands - Trainer 7 */
 === TRAINER_CHARLIE ===
 Name: CHARLIE
 Class: Tuber M
@@ -1642,43 +1696,101 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sparky (M)
+Level: 23
+Ability: Static
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
+- Shock Wave
+- Bubble
+- Charge
+- Baby-Doll Eyes
 
+Master Green (M)
+Level: 24
+Ability: Static
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
+- Whirlpool
+- Octolock
+- Spark
+- Charge
+
+/* Float Islands - Trainer 8 */
 === TRAINER_RICKY_2 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
+Name: Waddle Dee
+Class: Lass
+Pic: Lass
 Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Linoone
-Level: 27
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Scarfy (F)
+Level: 23
+Ability: Berserk
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
+- Disarming Voice
+- Bite
+- Scary Face
+- Assist
 
+Laser Ball (F)
+Level: 23
+Ability: Levitate
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Fast
+- Shock Wave
+- Ion Deluge
+- Laser Focus
+- Detect
+
+Mookie (M)
+Level: 23
+Ability: Gorilla Tactics
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
+- Rock Smash
+- Bulldoze
+
+/* Float Islands (Small Cave) - Trainer 1 */
 === TRAINER_RICKY_3 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
-Music: Girl
+Name: Waddle Dee
+Class: Parasol Lady
+Pic: Parasol Lady
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-Linoone
-Level: 30
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Gussa (F) @ Mystic Water
+Level: 22
+Ability: Swift Swim
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
+- Aqua Jet
+- Assurance
+- Aerial Ace
+- Rain Dance
+
+Cawcun (M) @ Berry Juice
+Level: 23
+Ability: Rain Dish
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
+- Rain Dance
+- Wing Attack
+- Shock Wave
+- Feather Dance
+
+Big Zombon (M) @ Leftovers
+Level: 23
+Ability: Dry Skin
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
+- Mega Drain
+- Leech Seed
+- Rain Dance
+- Protect
 
 === TRAINER_RICKY_4 ===
 Name: RICKY

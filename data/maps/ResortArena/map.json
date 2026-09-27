@@ -17,6 +17,11 @@
       "map": "MAP_ICE_CREAM_ISLAND",
       "offset": -23,
       "direction": "left"
+    },
+    {
+      "map": "MAP_FLOAT_ISLANDS",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [

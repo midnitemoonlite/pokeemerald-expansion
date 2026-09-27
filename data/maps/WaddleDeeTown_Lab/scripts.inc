@@ -892,103 +892,83 @@ WaddleDeeTown_Lab_EventScript_Book15::
 # 1075 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
 # 1076 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
-# 1079 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book15_Text_0
+# 1097 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book16::
-# 1084 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1102 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1085 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1103 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book16_Text_0
-# 1099 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1117 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book18::
-# 1104 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1122 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1105 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_EventScript_Book18_Text_0
 # 1123 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book18_Text_0
+# 1141 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book19::
-# 1128 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1146 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1129 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1147 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book19_Text_0
-# 1150 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	release
-	return
-
-
-WaddleDeeTown_Lab_EventScript_Book20::
-# 1155 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	lockall
-# 1156 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_EventScript_Book20_Text_0
 # 1168 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
-WaddleDeeTown_Lab_EventScript_Book21::
+WaddleDeeTown_Lab_EventScript_Book20::
 # 1173 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
 # 1174 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book20_Text_0
+# 1186 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book21::
+# 1191 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1192 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book21_Text_0
-# 1194 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1212 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book22::
-# 1199 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	lockall
-# 1200 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_EventScript_Book22_Text_0
 # 1217 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1218 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book22_Text_0
+# 1235 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book23::
-# 1222 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1240 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1223 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_EventScript_Book23_Text_0
-# 1236 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	release
-	return
-
-
-WaddleDeeTown_Lab_EventScript_Book24::
 # 1241 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	lockall
-# 1242 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
-# 1245 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	release
-	return
-
-
-WaddleDeeTown_Lab_EventScript_Book25::
-# 1250 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	lockall
-# 1251 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+	msgbox WaddleDeeTown_Lab_EventScript_Book23_Text_0
 # 1254 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
-WaddleDeeTown_Lab_EventScript_Book26::
+WaddleDeeTown_Lab_EventScript_Book24::
 # 1259 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
 # 1260 "data/maps/WaddleDeeTown_Lab/scripts.pory"
@@ -998,62 +978,82 @@ WaddleDeeTown_Lab_EventScript_Book26::
 	return
 
 
-WaddleDeeTown_Lab_EventScript_Book27::
+WaddleDeeTown_Lab_EventScript_Book25::
 # 1268 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
 # 1269 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
+# 1272 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book26::
+# 1277 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1278 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	msgbox WaddleDeeTown_Lab_EventScript_Book26_Text_0
+# 1294 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	release
+	return
+
+
+WaddleDeeTown_Lab_EventScript_Book27::
+# 1299 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	lockall
+# 1300 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book27_Text_0
-# 1290 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1321 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book28::
-# 1295 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1326 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1296 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1327 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
-# 1299 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1330 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book29::
-# 1304 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1335 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1305 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1336 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
-# 1308 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1339 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book30::
-# 1313 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1344 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1314 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1345 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
-# 1317 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1348 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book31::
-# 1322 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1353 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1323 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1354 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
-# 1326 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1357 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Lab_EventScript_Book32::
-# 1331 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1362 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	lockall
-# 1332 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1363 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	msgbox WaddleDeeTown_Lab_EventScript_Book6_Text_0
-# 1335 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1366 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	release
 	return
 
@@ -1638,8 +1638,8 @@ WaddleDeeTown_Lab_EventScript_Book5_Text_0:
 
 WaddleDeeTown_Lab_EventScript_Book6_Text_0:
 # 936 "data/maps/WaddleDeeTown_Lab/scripts.pory"
-	.string "Waddle Dee Fairy Tale\p"
-	.string "“???”$"
+	.string "This book is currently empty…\p"
+	.string "“The pages are blank.”$"
 
 WaddleDeeTown_Lab_EventScript_Book8_Text_0:
 # 954 "data/maps/WaddleDeeTown_Lab/scripts.pory"
@@ -1705,8 +1705,24 @@ WaddleDeeTown_Lab_EventScript_Book14_Text_0:
 	.string "Is surrounding oneself with others not\n"
 	.string "enough to dispel loneliness? What is?”$"
 
+WaddleDeeTown_Lab_EventScript_Book15_Text_0:
+# 1076 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "This book is very worn and tattered.\n"
+	.string "You can't make out the cover's title…\p"
+	.string "“The castle of the king who fell to\n"
+	.string "ruin.\p"
+	.string "The castle of the king who will soon\n"
+	.string "follow in his footsteps.\p"
+	.string "The forest where the wind is silent.\p"
+	.string "The cave where the wind howls.\p"
+	.string "The treasure buried by pirates.\p"
+	.string "The treasure shining with crystals.\p"
+	.string "The plains eclipsed by eternal night.\p"
+	.string "The king of ghosts, his soul shattered\n"
+	.string "into shards, awaits your arrival.”$"
+
 WaddleDeeTown_Lab_EventScript_Book16_Text_0:
-# 1085 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1103 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Artifactual: Volume 25\p"
 	.string "“Dream Rods can be found in palaces\n"
 	.string "across several different planets.\p"
@@ -1719,7 +1735,7 @@ WaddleDeeTown_Lab_EventScript_Book16_Text_0:
 	.string "conceptualize abstract dreams.”$"
 
 WaddleDeeTown_Lab_EventScript_Book18_Text_0:
-# 1105 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1123 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Popstar Chronicle: Volume XA\p"
 	.string "“It was all too brief, but for a moment,\n"
 	.string "Popstar was in grave danger once more.\p"
@@ -1735,7 +1751,7 @@ WaddleDeeTown_Lab_EventScript_Book18_Text_0:
 	.string "lurk just outside our sights?”$"
 
 WaddleDeeTown_Lab_EventScript_Book19_Text_0:
-# 1129 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1147 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Popstar Chronicle: Volume XB\p"
 	.string "“A mysterious spaceship docked on our\n"
 	.string "planet. Unlike last time, this one was\l"
@@ -1753,7 +1769,7 @@ WaddleDeeTown_Lab_EventScript_Book19_Text_0:
 	.string "a form that can coexist with nature?”$"
 
 WaddleDeeTown_Lab_EventScript_Book20_Text_0:
-# 1156 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1174 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Artifactual: Volume 67\p"
 	.string "“The Master Crown was a device said to\n"
 	.string "grant limitless power to its wearer.\p"
@@ -1765,7 +1781,7 @@ WaddleDeeTown_Lab_EventScript_Book20_Text_0:
 	.string "a mystery to scholars…”$"
 
 WaddleDeeTown_Lab_EventScript_Book21_Text_0:
-# 1174 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1192 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Helper Handbook: Stats\p"
 	.string "“Helpers have six unique stats that\n"
 	.string "define their abilities in combat.\p"
@@ -1782,7 +1798,7 @@ WaddleDeeTown_Lab_EventScript_Book21_Text_0:
 	.string "move before those with lower Speed.”$"
 
 WaddleDeeTown_Lab_EventScript_Book22_Text_0:
-# 1200 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1218 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Helper Handbook: Status Conditions\p"
 	.string "“Helpers can be afflicted by several\n"
 	.string "malignant statuses.\p"
@@ -1797,7 +1813,7 @@ WaddleDeeTown_Lab_EventScript_Book22_Text_0:
 	.string "can cure the afflicted specimens.$"
 
 WaddleDeeTown_Lab_EventScript_Book23_Text_0:
-# 1223 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1241 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Helper Handbook: Types\p"
 	.string "“Please consult the following graph on\n"
 	.string "the intricacies of the type chart.”\p"
@@ -1808,8 +1824,22 @@ WaddleDeeTown_Lab_EventScript_Book23_Text_0:
 	.string "effective moves are on an enemy.\l"
 	.string "Just rely on that instead, okay?$"
 
+WaddleDeeTown_Lab_EventScript_Book26_Text_0:
+# 1278 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+	.string "Helper Handbook: Evolution Cancel\p"
+	.string "“Many helpers evolve simply through\n"
+	.string "gaining experience in battle.\p"
+	.string "However, we've found there are certain\n"
+	.string "advantages to not evolving Helpers!\p"
+	.string "Helpers gain experience faster when\n"
+	.string "unevolved past their evolution level.\p"
+	.string "Furthermore, they typically learn\n"
+	.string "moves faster when unevolved.\p"
+	.string "This news is of great relief to the\n"
+	.string "researchers who love small Helpers…”$"
+
 WaddleDeeTown_Lab_EventScript_Book27_Text_0:
-# 1269 "data/maps/WaddleDeeTown_Lab/scripts.pory"
+# 1300 "data/maps/WaddleDeeTown_Lab/scripts.pory"
 	.string "Helper Handbook: Evolution Stars\p"
 	.string "“Some Helpers evolve into new species\n"
 	.string "when exposed to certain starry items.\p"

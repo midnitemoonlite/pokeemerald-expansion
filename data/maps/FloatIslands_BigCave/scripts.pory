@@ -1,0 +1,16 @@
+raw `
+FloatIslands_BigCave_MapScripts::
+	.byte 0
+`
+
+script FloatIslands_BigCave_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I keep trying to climb up that muddy
+            slope, but I always come tumbling down\.
+            
+            You'd need to be really fast to get up
+            there. Like, ZOOM!")
+    release
+}

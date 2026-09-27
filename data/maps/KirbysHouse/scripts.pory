@@ -402,9 +402,9 @@ script KirbysHouse_EventScript_AfterChoosingStarter
 	setflag(FLAG_SYS_POKEDEX_GET)
 	special(SetUnlockedPokedexFlags)
 	msgbox("{SPEAKER NAME_WISE}These info cards hold data on Helpers
-			you find and recruit to your side.
+			you find and befriend on your travels.
 			
-			As for how to recruit Helpers, you'll
+			As for how to befriend Helpers, you'll
 			want to use Friend Hearts!")
 	closemessage
 	applymovement(LOCALID_WISE_WADDLE_DEE, moves(walk_in_place_down))

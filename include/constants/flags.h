@@ -138,7 +138,7 @@
 #define FLAG_RECEIVED_HM_FLY                 0x6E
 #define FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT  0x6F
 #define FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE  0x70
-#define FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE 0x71 // Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
+#define FLAG_SHOOK_SPECIAL_COCONUT_TREE      0x71 // Float Islands - Coconut tree with Big Nugget
 #define FLAG_SCOTT_CALL_BATTLE_FRONTIER      0x72 // Used in order to activate a phone call from Scott, inviting the player to the SS Tidal.
 #define FLAG_RECEIVED_METEORITE              0x73
 #define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.
@@ -575,7 +575,7 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15) // Battleship Halberd (Reactor) - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16) // Waddle Dee Town - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x17) // Waddle Dee Town - Hidden Item 2
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD            (FLAG_HIDDEN_ITEMS_START + 0x18)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD            (FLAG_HIDDEN_ITEMS_START + 0x18) // Float Islands - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN              (FLAG_HIDDEN_ITEMS_START + 0x19)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x1A)
 #define FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE           (FLAG_HIDDEN_ITEMS_START + 0x1B)
@@ -1085,11 +1085,11 @@
 #define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408 // Battleship Halberd (Reactor) - Item 2
 #define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Battleship Halberd (Reactor) - Item 3
 #define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A // Battleship Halberd (Reactor) - Item 4
-#define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
-#define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
-#define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
-#define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
-#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F
+#define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B // Float Islands - Item 1
+#define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C // Float Islands - Item 2
+#define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D // Float Islands - Item 3
+#define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E // Float Islands (Big Cave) - Item 1
+#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F // Float Islands (Big Cave) - Item 2
 #define FLAG_ITEM_PETALBURG_CITY_ETHER                              0x410
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412

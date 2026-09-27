@@ -933,18 +933,18 @@ script WaddleDeeTown_Lab_EventScript_Book5
 script WaddleDeeTown_Lab_EventScript_Book6
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
 script WaddleDeeTown_Lab_EventScript_Book7
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
@@ -981,18 +981,18 @@ script WaddleDeeTown_Lab_EventScript_Book8
 script WaddleDeeTown_Lab_EventScript_Book9
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
 script WaddleDeeTown_Lab_EventScript_Book10
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
@@ -1073,9 +1073,27 @@ script WaddleDeeTown_Lab_EventScript_Book14
 script WaddleDeeTown_Lab_EventScript_Book15
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is very worn and tattered.
+            You can't make out the cover's title\.
     
-            \qo???\qc")
+            \qoThe castle of the king who fell to
+            ruin.
+            
+            The castle of the king who will soon
+            follow in his footsteps.
+            
+            The forest where the wind is silent.
+
+            The cave where the wind howls.
+            
+            The treasure buried by pirates.
+            
+            The treasure shining with crystals.
+            
+            The plains eclipsed by eternal night.
+            
+            The king of ghosts, his soul shattered
+            into shards, awaits your arrival.\qc")
     release
 }
 
@@ -1239,27 +1257,40 @@ script WaddleDeeTown_Lab_EventScript_Book23
 script WaddleDeeTown_Lab_EventScript_Book24
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
 script WaddleDeeTown_Lab_EventScript_Book25
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
 script WaddleDeeTown_Lab_EventScript_Book26
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("Helper Handbook: Evolution Cancel
     
-            \qo???\qc")
+            \qoMany helpers evolve simply through
+            gaining experience in battle.
+            
+            However, we've found there are certain
+            advantages to not evolving Helpers!
+            
+            Helpers gain experience faster when
+            unevolved past their evolution level.
+            
+            Furthermore, they typically learn
+            moves faster when unevolved.
+            
+            This news is of great relief to the
+            researchers who love small Helpers\.\qc")
     release
 }
 
@@ -1293,44 +1324,44 @@ script WaddleDeeTown_Lab_EventScript_Book27
 script WaddleDeeTown_Lab_EventScript_Book28
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
 script WaddleDeeTown_Lab_EventScript_Book29
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
 script WaddleDeeTown_Lab_EventScript_Book30
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
 script WaddleDeeTown_Lab_EventScript_Book31
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }
 
 script WaddleDeeTown_Lab_EventScript_Book32
 {
     lockall
-    msgbox("Waddle Dee Fairy Tale
+    msgbox("This book is currently empty\.
     
-            \qo???\qc")
+            \qoThe pages are blank.\qc")
     release
 }

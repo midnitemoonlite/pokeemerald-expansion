@@ -1819,3 +1819,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/BattleshipHalberd_Hall/scripts.inc"
 
 	.include "data/maps/BattleshipHalberd_Helm/scripts.inc"
+
+	.include "data/maps/FloatIslands/scripts.inc"
+
+	.include "data/maps/FloatIslands_SmallCave/scripts.inc"
+
+	.include "data/maps/FloatIslands_BigCave/scripts.inc"

@@ -1,0 +1,31 @@
+raw `
+FloatIslands_SmallCave_MapScripts::
+	.byte 0
+`
+
+script FloatIslands_SmallCave_EventScript_Trainer
+{
+    trainerbattle_single(TRAINER_RICKY_3, FloatIslands_SmallCave_Text_TrainerIntro, FloatIslands_SmallCave_Text_TrainerDefeated)
+    msgbox(FloatIslands_SmallCave_Text_TrainerPost, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_SmallCave_Text_TrainerIntro
+{
+    "My Helpers and I are both powered up in
+    the rain!"
+}
+
+text FloatIslands_SmallCave_Text_TrainerDefeated
+{
+    "Defeated by someone who doesn't even
+    carry a parasol\."
+}
+
+text FloatIslands_SmallCave_Text_TrainerPost
+{
+    "Do you view rainy days as time to play
+    or time to stay at home?
+    
+    If you're like me, I think you'll enjoy
+    what's up ahead."
+}

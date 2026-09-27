@@ -1,0 +1,293 @@
+raw `
+FloatIslands_MapScripts::
+	.byte 0
+`
+
+script FloatIslands_EventScript_Sign
+{
+    msgbox("FLOAT ISLANDS
+            Don't sleep under the coconut trees.", MSGBOX_SIGN)
+    closemessage
+}
+
+script FloatIslands_EventScript_Trainer1
+{
+    trainerbattle_single(TRAINER_LOLA_2, FloatIslands_Text_Trainer1Intro, FloatIslands_Text_Trainer1Defeated)
+    msgbox(FloatIslands_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_Text_Trainer1Intro
+{
+    "I was fishing the next island over, but
+    then something hit me\."
+}
+
+text FloatIslands_Text_Trainer1Defeated
+{
+    "Oww\. my head\."
+}
+
+text FloatIslands_Text_Trainer1Post
+{
+    "You wanna know what hit me? It was a
+    coconut that fell from the trees!
+    
+    I wish I had read the sign first before
+    setting up my rod there."
+}
+
+script FloatIslands_EventScript_Trainer2
+{
+    trainerbattle_single(TRAINER_LOLA_3, FloatIslands_Text_Trainer2Intro, FloatIslands_Text_Trainer2Defeated)
+    msgbox(FloatIslands_Text_Trainer2Post, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_Text_Trainer2Intro
+{
+    "Splish, splish, splash!"
+}
+
+text FloatIslands_Text_Trainer2Defeated
+{
+    "Do you like playing with Helpers more
+    than playing with water?"
+}
+
+text FloatIslands_Text_Trainer2Post
+{
+    "Splish, splash, splosh\.
+    You're good at playing with Helpers!"
+}
+
+script FloatIslands_EventScript_Trainer3
+{
+    trainerbattle_single(TRAINER_LOLA_4, FloatIslands_Text_Trainer3Intro, FloatIslands_Text_Trainer3Defeated)
+    msgbox(FloatIslands_Text_Trainer3Post, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_Text_Trainer3Intro
+{
+    "Check it out! My inner tube is big
+    enough to hold all my Helpers!"
+}
+
+text FloatIslands_Text_Trainer3Defeated
+{
+    "Hang on, my Helpers!"
+}
+
+text FloatIslands_Text_Trainer3Post
+{
+    "I want to befriend more Helpers, but I'll
+    need to get a bigger inner tube first."
+}
+
+script FloatIslands_EventScript_Trainer4
+{
+    trainerbattle_single(TRAINER_LOLA_5, FloatIslands_Text_Trainer4Intro, FloatIslands_Text_Trainer4Defeated)
+    msgbox(FloatIslands_Text_Trainer4Post, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_Text_Trainer4Intro
+{
+    "This raft is NOT big enough for me and
+    my Helper. What do I do?"
+}
+
+text FloatIslands_Text_Trainer4Defeated
+{
+    "Looks like I need to head back to shore
+    to heal my Helpers up first\."
+}
+
+text FloatIslands_Text_Trainer4Post
+{
+    "My Helper hates being out of the water\.
+    so I'm trying to limit my time on land.
+    
+    Maybe I need to stock up on more juice
+    at the item shop when I go back\."
+}
+
+script FloatIslands_EventScript_Trainer5
+{
+    trainerbattle_single(TRAINER_RICKY_1, FloatIslands_Text_Trainer5Intro, FloatIslands_Text_Trainer5Defeated)
+    msgbox(FloatIslands_Text_Trainer5Post, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_Text_Trainer5Intro
+{
+    "I try to be a friend to all nature, but
+    these trees are testing my patience\."
+}
+
+text FloatIslands_Text_Trainer5Defeated
+{
+    "You're almost as strong as the coconut
+    trees!"
+}
+
+text FloatIslands_Text_Trainer5Post
+{
+    "If those exploding coconuts could be
+    Helpers, I bet they'd be super strong."
+}
+
+script FloatIslands_EventScript_Trainer6
+{
+    trainerbattle_single(TRAINER_SIMON, FloatIslands_Text_Trainer6Intro, FloatIslands_Text_Trainer6Defeated)
+    msgbox(FloatIslands_Text_Trainer6Post, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_Text_Trainer6Intro
+{
+    "My last catch was reaaaaally big!
+    Think you can take it on?"
+}
+
+text FloatIslands_Text_Trainer6Defeated
+{
+    "Does size mean nothing when it comes
+    to a Helper's strength?"
+}
+
+text FloatIslands_Text_Trainer6Post
+{
+    "What if the strongest Helper was 
+    actually really small?
+    That'd be confusing, wouldn't it?"
+}
+
+script FloatIslands_EventScript_Trainer7
+{
+    trainerbattle_single(TRAINER_CHARLIE, FloatIslands_Text_Trainer7Intro, FloatIslands_Text_Trainer7Defeated)
+    msgbox(FloatIslands_Text_Trainer7Post, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_Text_Trainer7Intro
+{
+    "Let me guess, you're expecting a bunch
+    of Water-type Helpers since I'm at sea?
+    Well, guess again!"
+}
+
+text FloatIslands_Text_Trainer7Defeated
+{
+    "Darn\. I thought I could shock you\."
+}
+
+text FloatIslands_Text_Trainer7Post
+{
+    "There's too many types for me to
+    remember, so I'm just focusing on one.
+    
+    I'm going to get so good at using
+    Electric-types!"
+}
+
+script FloatIslands_EventScript_Trainer8
+{
+    trainerbattle_single(TRAINER_RICKY_2, FloatIslands_Text_Trainer8Intro, FloatIslands_Text_Trainer8Defeated)
+    msgbox(FloatIslands_Text_Trainer8Post, MSGBOX_AUTOCLOSE)
+}
+
+text FloatIslands_Text_Trainer8Intro
+{
+    "Eek! Can't you see I'm busy admiring my
+    reflection in the water?"
+}
+
+text FloatIslands_Text_Trainer8Defeated
+{
+    "Anger doesn't look good on me\."
+}
+
+text FloatIslands_Text_Trainer8Post
+{
+    "Huh? Wouldn't it be easier to see my
+    reflection in a pond or lake?
+    
+    Well, yeah, I guess so. But then I don't
+    get to be on the beach!"
+}
+
+script FloatIslands_EventScript_IslandWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("You came all the way out here to talk
+            to me? You're a very nice pal!
+            
+            As a token of my gratitude, let me
+            offer you\. some secret advice!
+            
+            The coconut trees here aren't all
+            bad. They're just\. mostly bad.
+            
+            But sometimes they'll drop a helpful
+            item or two if you rustle them enough!
+            
+            Just make sure to keep your head safe
+            in the process, alright, new pal?")
+    release
+}
+
+script FloatIslands_EventScript_RoamingWaddleDee
+{
+    lock
+    faceplayer
+    msgbox("The Great King told me that Helpers are
+            friendly creatures\.
+            
+            But every time I try to swim, I get
+            chased by a school of Blipper!
+            
+            Is there really such a thing as being
+            too friendly?")
+    release
+}
+
+script FloatIslands_EventScript_CoconutTree
+{
+    lockall
+    msgbox("You look up at the coconut tree\.
+    
+            Without warning, a coconut dropped and
+            exploded on your head!")
+    setvar(VAR_0x8004, 3)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 4)  // shake delay
+	special(ShakeCamera)
+    playse(SE_M_SELF_DESTRUCT)
+    waitse()
+    msgbox("OUCH!")
+    release
+}
+
+script FloatIslands_EventScript_SpecialTree
+{
+    if(!flag(FLAG_SHOOK_SPECIAL_COCONUT_TREE))
+    {
+        lockall
+        msgbox("You look up at the coconut tree\.
+        
+                Without warning, a golden globe dropped
+                on your head!")
+        setvar(VAR_0x8004, 3)  // vertical pan
+        setvar(VAR_0x8005, 0)  // horizontal pan
+        setvar(VAR_0x8006, 2) // num shakes
+        setvar(VAR_0x8007, 4)  // shake delay
+        special(ShakeCamera)
+        playse(SE_M_STRENGTH)
+        waitse()
+        msgbox("OUCH!")
+        giveitem(ITEM_BIG_NUGGET)
+        setflag(FLAG_SHOOK_SPECIAL_COCONUT_TREE)
+        release
+    }
+    else
+    {
+        goto(FloatIslands_EventScript_CoconutTree)
+    }
+}

@@ -1071,8 +1071,8 @@ KirbysHouse_EventScript_AfterChoosingStarter_Text_1:
 KirbysHouse_EventScript_AfterChoosingStarter_Text_2:
 # 404 "data/maps/KirbysHouse/scripts.pory"
 	.string "{SPEAKER NAME_WISE}These info cards hold data on Helpers\n"
-	.string "you find and recruit to your side.\p"
-	.string "As for how to recruit Helpers, you'll\n"
+	.string "you find and befriend on your travels.\p"
+	.string "As for how to befriend Helpers, you'll\n"
 	.string "want to use Friend Hearts!$"
 
 KirbysHouse_EventScript_AfterChoosingStarter_Text_3:

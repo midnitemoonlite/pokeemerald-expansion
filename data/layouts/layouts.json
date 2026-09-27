@@ -9467,7 +9467,7 @@
     {
       "id": "LAYOUT_VEGETABLE_VALLEY",
       "name": "VegetableValley_Layout",
-      "width": 70,
+      "width": 73,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
@@ -9744,6 +9744,36 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/BattleshipHalberd_Helm/border.bin",
       "blockdata_filepath": "data/layouts/BattleshipHalberd_Helm/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOAT_ISLANDS",
+      "name": "FloatIslands_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/FloatIslands/border.bin",
+      "blockdata_filepath": "data/layouts/FloatIslands/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOAT_ISLANDS_SMALL_CAVE",
+      "name": "FloatIslands_SmallCave_Layout",
+      "width": 32,
+      "height": 15,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FloatIslands_SmallCave/border.bin",
+      "blockdata_filepath": "data/layouts/FloatIslands_SmallCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLOAT_ISLANDS_BIG_CAVE",
+      "name": "FloatIslands_BigCave_Layout",
+      "width": 45,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/FloatIslands_BigCave/border.bin",
+      "blockdata_filepath": "data/layouts/FloatIslands_BigCave/map.bin"
     }
   ]
 }

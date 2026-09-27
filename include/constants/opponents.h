@@ -64,22 +64,22 @@
 #define TRAINER_LOLA_1                       57 // Battleship Halberd (West) - Mace Knight
 #define TRAINER_AUSTINA                      58 // Battleship Halberd (West) - Trident Knight
 #define TRAINER_GWEN                         59 // Battleship Halberd (West) - Meta Knight
-#define TRAINER_LOLA_2                       60
-#define TRAINER_LOLA_3                       61
-#define TRAINER_LOLA_4                       62
-#define TRAINER_LOLA_5                       63
-#define TRAINER_RICKY_1                      64
-#define TRAINER_SIMON                        65
-#define TRAINER_CHARLIE                      66
-#define TRAINER_RICKY_2                      67
-#define TRAINER_RICKY_3                      68
-#define TRAINER_RICKY_4                      69
-#define TRAINER_RICKY_5                      70
-#define TRAINER_RANDALL                      71
-#define TRAINER_PARKER                       72
-#define TRAINER_GEORGE                       73
-#define TRAINER_BERKE                        74
-#define TRAINER_BRAXTON                      75
+#define TRAINER_LOLA_2                       60 // Float Islands - Trainer 1
+#define TRAINER_LOLA_3                       61 // Float Islands - Trainer 2
+#define TRAINER_LOLA_4                       62 // Float Islands - Trainer 3
+#define TRAINER_LOLA_5                       63 // Float Islands - Trainer 4
+#define TRAINER_RICKY_1                      64 // Float Islands - Trainer 5
+#define TRAINER_SIMON                        65 // Float Islands - Trainer 6
+#define TRAINER_CHARLIE                      66 // Float Islands - Trainer 7
+#define TRAINER_RICKY_2                      67 // Float Islands - Trainer 8
+#define TRAINER_RICKY_3                      68 // Float Islands (Small Cave) - Trainer 1
+#define TRAINER_RICKY_4                      69 // Mallow Castle - Trainer 1
+#define TRAINER_RICKY_5                      70 // Mallow Castle - Trainer 2
+#define TRAINER_RANDALL                      71 // Mallow Castle - Trainer 3
+#define TRAINER_PARKER                       72 // Mallow Castle - Trainer 4
+#define TRAINER_GEORGE                       73 // Castle Arena - Francisca
+#define TRAINER_BERKE                        74 // Castle Arena - Flamberge
+#define TRAINER_BRAXTON                      75 // Castle Arena - Zan Partizanne
 #define TRAINER_VINCENT                      76
 #define TRAINER_LEROY                        77
 #define TRAINER_WILTON_1                     78

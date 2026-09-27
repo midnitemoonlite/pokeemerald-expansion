@@ -31,27 +31,27 @@ static const u8 sMaxReviveDesc[]      = _("Revives a fainted\n"
                                           "Helper with all\n"
                                           "its HP.");
 
-static const u8 sHealthFeatherDesc[]  = _("An item that raises\n"
+static const u8 sHealthFeatherDesc[]  = _("Slightly raises\n"
                                           "the base HP of\n"
                                           "a Helper.");
 
-static const u8 sMuscleFeatherDesc[]  = _("An item that raises\n"
+static const u8 sMuscleFeatherDesc[]  = _("Slightly raises\n"
                                           "the base Attack of\n"
                                           "a Helper.");
 
-static const u8 sResistFeatherDesc[]  = _("An item that raises\n"
+static const u8 sResistFeatherDesc[]  = _("Slightly raises\n"
                                           "the base Defense\n"
                                           "of a Helper.");
 
-static const u8 sGeniusFeatherDesc[]  = _("An item that raises\n"
+static const u8 sGeniusFeatherDesc[]  = _("Slightly raises\n"
                                           "the base Sp. Atk.\n"
                                           "of a Helper.");
 
-static const u8 sCleverFeatherDesc[]  = _("An item that raises\n"
+static const u8 sCleverFeatherDesc[]  = _("Slightly raises\n"
                                           "the base Sp. Def.\n"
                                           "of a Helper.");
 
-static const u8 sSwiftFeatherDesc[]   = _("An item that raises\n"
+static const u8 sSwiftFeatherDesc[]   = _("Slightly raises\n"
                                           "the base Speed of\n"
                                           "a Helper.");
 
@@ -817,7 +817,7 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_SodaPop,
         .flingPower = 30,
-        .iconPic = gItemIcon_SodaPop,
+        .iconPic = gItemIcon_FreshWater,
         .iconPalette = gItemIconPalette_SodaPop,
     },
 
@@ -841,7 +841,7 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
         .effect = gItemEffect_Lemonade,
         .flingPower = 30,
-        .iconPic = gItemIcon_Lemonade,
+        .iconPic = gItemIcon_FreshWater,
         .iconPalette = gItemIconPalette_Lemonade,
     },
 
@@ -1188,7 +1188,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_SacredAsh,
         .effect = gItemEffect_SacredAsh,
         .flingPower = 30,
-        .iconPic = gItemIcon_DittoPowder,
+        .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_SacredAsh,
     },
 
@@ -1388,9 +1388,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Protein"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Attack stat of one\n"
-            "Helper."),
+            "Greatly raises\n"
+            "the base Attack of\n"
+            "a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1406,9 +1406,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Iron"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Defense stat of\n"
-            "one Helper."),
+            "Greatly raises\n"
+            "the base Defense of\n"
+            "a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1424,9 +1424,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Calcium"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Sp. Atk stat of one\n"
-            "Helper."),
+            "Greatly raises\n"
+            "the base Sp. Atk.\n"
+            "of a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1442,9 +1442,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Zinc"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Sp. Def stat of one\n"
-            "Helper."),
+            "Greatly raises\n"
+            "the base Sp. Def.\n"
+            "of a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1461,9 +1461,9 @@ const struct ItemInfo gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Carbos"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
-            "Raises the base\n"
-            "Speed stat of one\n"
-            "Helper."),
+            "Greatly raises\n"
+            "the base Speed of\n"
+            "a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
@@ -1613,7 +1613,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABILITY_CAPSULE] =
     {
-        .name = ITEM_NAME("Ability Capsule"),
+        .name = ITEM_NAME("Ability Scroll"),
     #if I_PRICE >= GEN_9
         .price = 100000,
     #elif I_PRICE >= GEN_7
@@ -1623,8 +1623,8 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "Switches a Poké-\n"
-            "mon's ability."),
+            "Swaps a Helper's\n"
+            "ability."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
@@ -1635,8 +1635,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABILITY_PATCH] =
     {
-        .name = ITEM_NAME("Ability Patch"),
-        .pluralName = ITEM_PLURAL_NAME("Ability Patches"),
+        .name = ITEM_NAME("Hidden Scroll"),
         .price = (I_PRICE >= GEN_9) ? 250000 : 20,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -4481,7 +4480,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_DUBIOUS_DISC] =
     {
-        .name = ITEM_NAME("Haltmann Disc"),
+        .name = ITEM_NAME("Code Cube"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
             "A clear device\n"
@@ -5151,7 +5150,7 @@ const struct ItemInfo gItemsInfo[] =
         .secondaryId = TYPE_NORMAL,
         .flingPower = 90,
         .iconPic = gItemIcon_Plate,
-        .iconPalette = gItemIconPalette_Snowball,
+        .iconPalette = gItemIconPalette_MasterpieceTeacup,
     },
 
 // Drives
@@ -8390,14 +8389,13 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
-        .iconPic = gItemIcon_DeepSeaScale,
+        .iconPic = gItemIcon_DeepSeaTooth,
         .iconPalette = gItemIconPalette_DeepSeaScale,
     },
 
     [ITEM_DEEP_SEA_TOOTH] =
     {
         .name = ITEM_NAME("Red Key"),
-        .pluralName = ITEM_PLURAL_NAME("Red Keys"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 200,
         .holdEffect = HOLD_EFFECT_DEEP_SEA_TOOTH,
         .description = COMPOUND_STRING(
@@ -14017,7 +14015,7 @@ const struct ItemInfo gItemsInfo[] =
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Bike,
         .secondaryId = MACH_BIKE,
-        .iconPic = gItemIcon_MachBike,
+        .iconPic = gItemIcon_Bicycle,
         .iconPalette = gItemIconPalette_MachBike,
     },
 
@@ -15613,7 +15611,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Health Mochi"),
         .pluralName = ITEM_PLURAL_NAME("Health Mochi"),
         .price = 500,
-        .description = sHealthFeatherDesc,
+        .description = COMPOUND_STRING(
+            "Moderately raises\n"
+            "the base HP of\n"
+            "a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -15629,7 +15630,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Muscle Mochi"),
         .pluralName = ITEM_PLURAL_NAME("Muscle Mochi"),
         .price = 500,
-        .description = sMuscleFeatherDesc,
+        .description = COMPOUND_STRING(
+            "Moderately raises\n"
+            "the base Attack of\n"
+            "a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -15645,7 +15649,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Resist Mochi"),
         .pluralName = ITEM_PLURAL_NAME("Resist Mochi"),
         .price = 500,
-        .description = sResistFeatherDesc,
+        .description = COMPOUND_STRING(
+            "Moderately raises\n"
+            "the base Defense of\n"
+            "a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -15661,7 +15668,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Genius Mochi"),
         .pluralName = ITEM_PLURAL_NAME("Genius Mochi"),
         .price = 500,
-        .description = sGeniusFeatherDesc,
+        .description = COMPOUND_STRING(
+            "Moderately raises\n"
+            "the base Sp. Atk.\n"
+            "of a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -15677,7 +15687,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Clever Mochi"),
         .pluralName = ITEM_PLURAL_NAME("Clever Mochi"),
         .price = 500,
-        .description = sCleverFeatherDesc,
+        .description = COMPOUND_STRING(
+            "Moderately raises\n"
+            "the base Sp. Def.\n"
+            "of a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
@@ -15693,7 +15706,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Swift Mochi"),
         .pluralName = ITEM_PLURAL_NAME("Swift Mochi"),
         .price = 500,
-        .description = sSwiftFeatherDesc,
+        .description = COMPOUND_STRING(
+            "Moderately raises\n"
+            "the base Speed of\n"
+            "a Helper."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
