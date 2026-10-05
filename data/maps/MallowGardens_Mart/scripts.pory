@@ -1,0 +1,60 @@
+raw `
+MallowGardens_Mart_MapScripts::
+	.byte 0
+`
+
+script MallowGardens_Mart_EventScript_Clerk
+{
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(MallowGardens_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart MallowGardens_Mart
+{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_LUXURY_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_REVIVE
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_REPEL
+    ITEM_POKE_DOLL
+    ITEM_DIRE_HIT
+}
+
+script MallowGardens_Mart_EventScript_Employee
+{
+    lock
+    faceplayer
+    msgbox("I'm supposed to be stocking shelves,
+            but I can't do my job with a Gordo here\.")
+    release
+}
+
+script MallowGardens_Mart_EventScript_Chef
+{
+    lock
+    faceplayer
+    msgbox("Have you noticed how the shops across
+            Dream Land have different stock?
+            
+            Each item shop sells its own unique
+            Friend Heart apart from the standards.
+            
+            And shops near arenas tend to offer
+            a more diverse selection of items\.
+            
+            You should always check in and see
+            what specials a shop has to offer!")
+    release
+}

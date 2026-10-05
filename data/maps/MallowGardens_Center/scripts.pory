@@ -1,0 +1,70 @@
+raw `
+MallowGardens_Center_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, MallowGardens_Center_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+MallowGardens_Center_OnTransition:
+	setrespawn HEAL_LOCATION_MALLOW_GARDENS
+	end
+`
+
+script MallowGardens_Center_EventScript_Nurse
+{
+    setvar(VAR_0x800B, LOCALID_MALLOW_GARDENS_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script MallowGardens_Center_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I think the Great King's peace sign is
+            so cool\.
+            
+            Sigh\. it must be nice to have fingers.")
+    release
+}
+
+script MallowGardens_Center_EventScript_Socialite
+{
+    lock
+    faceplayer
+    msgbox("I wasn't really sure if I could see any
+            sort of Waddle Dee becoming king\.
+            but now I'm convinced! There is one!
+            
+            He had strong Helpers, a kind heart, and
+            a dashing blue bandana\.
+            
+            I hope someone like him will win
+            Dedede's Royal Royale.")
+    release
+}
+
+script MallowGardens_Center_EventScript_Delivery
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_SHARP_BEAK))
+    {
+        msgbox("Surprise delivery!")
+        giveitem(ITEM_SHARP_BEAK)
+        setflag(FLAG_RECEIVED_SHARP_BEAK)
+        release
+        end
+    }
+    msgbox("\.what's that? You're wondering why you
+            were surprised with this item?
+            
+            Well\. it landed on me after a Cawcun
+            flying overhead dropped it.
+            
+            I just wanted to get it off my hands\.
+            but maybe your Helpers can use it?")
+    release
+}

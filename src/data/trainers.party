@@ -208,7 +208,7 @@ Class: Youngster
 Pic: Youngster
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Negate Unaware
 
 Chip (M)
 Level: 5
@@ -223,7 +223,7 @@ Class: Parasol Lady
 Pic: Parasol Lady
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Negate Unaware
 
 Bronto Burt (F)
 Level: 4
@@ -244,7 +244,7 @@ Class: Youngster
 Pic: Youngster
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Negate Unaware
 
 Gaw Gaw (F)
 Level: 6
@@ -259,7 +259,6 @@ Class: Aroma Lady
 Pic: Aroma Lady
 Music: Female
 Double Battle: No
-AI: Check Bad Move
 
 SPECIES_BEANBON_PLANT (F)
 Level: 5
@@ -286,7 +285,7 @@ Class: Lass
 Pic: Lass
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Negate Unaware
 
 Capiller (M)
 Level: 6
@@ -307,7 +306,7 @@ Class: Bird Keeper
 Pic: Bird Keeper
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Negate Unaware
 
 Twizzy (F)
 Level: 5
@@ -334,7 +333,7 @@ Class: Youngster
 Pic: Youngster
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint / Negate Unaware
 
 Bronto Burt (M)
 Level: 9
@@ -355,7 +354,7 @@ Class: Lass
 Pic: Lass
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Waddle Doo (F)
 Level: 9
@@ -376,7 +375,7 @@ Class: Pokemaniac
 Pic: Pokemaniac
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Check Viability
 
 Noddy (M)
 Level: 10
@@ -391,7 +390,7 @@ Class: Salon Maiden
 Pic: Leader Roxanne
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Powerful Status / Ace Pokemon
 
 Dupa (M)
 Level: 10
@@ -430,7 +429,7 @@ Class: Salon Maiden
 Pic: Leader Roxanne
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Powerful Status / Ace Pokemon
 
 Dupa (M)
 Level: 10
@@ -469,7 +468,7 @@ Class: Salon Maiden
 Pic: Leader Roxanne
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Powerful Status / Ace Pokemon
 
 Dupa (M)
 Level: 10
@@ -508,7 +507,7 @@ Class: Black Belt
 Pic: Black Belt
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Sir Kibble (M)
 Level: 11
@@ -523,7 +522,7 @@ Class: Youngster
 Pic: Youngster
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Negate Unaware
 
 Needlous (F)
 Level: 10
@@ -546,7 +545,7 @@ Class: Aroma Lady
 Pic: Aroma Lady
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Negate Unaware
 
 Leafan (F)
 Level: 10
@@ -567,7 +566,7 @@ Class: Hiker
 Pic: Hiker
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Blade Knight (M)
 Level: 12
@@ -582,7 +581,7 @@ Class: Fisherman
 Pic: Fisherman
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Blipper (F)
 Level: 12
@@ -597,7 +596,7 @@ Class: Lass
 Pic: Lass
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Negate Unaware
 
 Awoofy (M)
 Level: 11
@@ -727,7 +726,7 @@ Class: Parasol Lady
 Pic: Parasol Lady
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Buttonfly (F)
 Level: 12
@@ -748,7 +747,7 @@ Class: Hiker
 Pic: Hiker
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Kabu
 Level: 13
@@ -767,7 +766,7 @@ Class: Bird Keeper
 Pic: Bird Keeper
 Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Chick (M)
 Level: 17
@@ -782,7 +781,7 @@ Class: Psychic
 Pic: Psychic M
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Mr. Anglep (M) @ Oran Berry
 Level: 14
@@ -801,7 +800,7 @@ Class: Lass
 Pic: Lass
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Negate Unaware
 
 Minny (M)
 Level: 12
@@ -825,7 +824,7 @@ Class: Aroma Lady
 Pic: Aroma Lady
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Maiga (F)
 Level: 13
@@ -846,7 +845,7 @@ Class: Youngster
 Pic: Youngster
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint / Negate Unaware
 
 Beetley (M)
 Level: 13
@@ -864,7 +863,6 @@ Ability: Prankster
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Ball: Poke
 
-
 /* Fruity Forest - Trainer 8 */
 === TRAINER_LEAH ===
 Name: Waddle Dee
@@ -872,7 +870,7 @@ Class: Hiker
 Pic: Hiker
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Blade Knight (M)
 Level: 14
@@ -900,7 +898,7 @@ Class: Parasol Lady
 Pic: Parasol Lady
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Drifter (M) @ Oran Berry
 Level: 16
@@ -915,7 +913,7 @@ Class: Fisherman
 Pic: Fisherman
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Blipper (M)
 Level: 16
@@ -936,7 +934,7 @@ Class: School Kid
 Pic: School Kid M
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Viability / Negate Unaware
 
 Sparky (F)
 Level: 15
@@ -958,7 +956,7 @@ Class: School Kid
 Pic: School Kid F
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Check Viability / Negate Unaware
 
 Sandran (F)
 Level: 17
@@ -977,7 +975,7 @@ Class: School Kid
 Pic: School Kid M
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Check Viability / Negate Unaware
 
 Batty (F)
 Level: 16
@@ -1006,7 +1004,7 @@ Class: Psychic
 Pic: Psychic F
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Embird (F)
 Level: 16
@@ -1084,7 +1082,7 @@ Class: Parasol Lady
 Pic: Parasol Lady
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Coner (M)
 Level: 17
@@ -1119,7 +1117,7 @@ Class: School Kid
 Pic: School Kid M
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Check Viability / Negate Unaware
 
 Rocky (M)
 Level: 17
@@ -1148,7 +1146,7 @@ Class: Youngster
 Pic: Youngster
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint / Negate Unaware
 
 Capiller (M)
 Level: 20
@@ -1183,7 +1181,7 @@ Class: Swimmer M
 Pic: Swimmer M
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Negate Unaware
 
 Blipper (F)
 Level: 19
@@ -1207,7 +1205,7 @@ Class: School Kid
 Pic: School Kid F
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Stall / Negate Unaware
 
 Pichikuri (F) @ Black Sludge
 Level: 21
@@ -1226,7 +1224,7 @@ Class: Salon Maiden
 Pic: Leader Brawly
 Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Ace Pokemon / Prediction
 
 Kabu
 Level: 21
@@ -1412,7 +1410,7 @@ Class: Team Aqua
 Pic: Aqua Grunt M
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint / Risky / Negate Unaware
 
 SPECIES_AXE_KNIGHT (M)
 Level: 23
@@ -1431,7 +1429,7 @@ Class: Team Aqua
 Pic: Magma Grunt F
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint / Risky / Negate Unaware
 
 SPECIES_JAVELIN_KNIGHT (M)
 Level: 23
@@ -1450,7 +1448,7 @@ Class: Team Aqua
 Pic: Aqua Grunt F
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint / Risky / Negate Unaware
 
 SPECIES_MACE_KNIGHT (M)
 Level: 23
@@ -1469,7 +1467,7 @@ Class: Team Aqua
 Pic: Magma Grunt M
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move
+AI: Try To Faint / Risky / Negate Unaware
 
 SPECIES_TRIDENT_KNIGHT (M)
 Level: 23
@@ -1488,7 +1486,7 @@ Class: Aqua Leader
 Pic: Aqua Leader Archie
 Music: Aqua
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Try To 2HKO / HP Aware / Conservative
 
 SPECIES_AXE_KNIGHT (M)
 Level: 23
@@ -1723,7 +1721,7 @@ Class: Lass
 Pic: Lass
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Risky
 
 Scarfy (F)
 Level: 23
@@ -1760,7 +1758,7 @@ Class: Parasol Lady
 Pic: Parasol Lady
 Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Check Viability / Powerful Status
 
 Gussa (F) @ Mystic Water
 Level: 22
@@ -1792,39 +1790,94 @@ Ball: Great
 - Rain Dance
 - Protect
 
+/* Mallow Castle - Soldier */
 === TRAINER_RICKY_4 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
-Music: Girl
+Name: Waddle Dee
+Class: Cooltrainer
+Pic: Cooltrainer M
+Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer / Prefer Highest Damage Move / Ace Pokemon
 
-Linoone
-Level: 33
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Windwhipper
+Level: 68
+Ability: Wind Power
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Ball: Ultra
+- Bleakwind Storm
+- Wildbolt Storm
+- Flash Cannon
+- Blizzard
 
+Gnawcodile
+Level: 68
+Ability: Merciless
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Ball: Ultra
+- Jaw Lock
+- Poison Fang
+- Outrage
+- Wave Crash
+
+Fire Lion
+Level: 68
+Ability: Intimidate
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Ball: Ultra
+- Flare Blitz
+- Wild Charge
+- Shadow Claw
+- Power Whip
+
+Fangora
+Level: 68
+Ability: Dragon's Maw
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Ball: Ultra
+- Dragon Energy
+- Dragon Ascent
+- Fire Blast
+- Psychic Fangs
+
+Mega Masher
+Level: 72
+Ability: Battle Armor
+IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Ball: Ultra
+- Heavy Slam
+- Headlong Rush
+- Superpower
+- Lash Out
+
+/* Mallow Courtyard - Metronome Gent */
 === TRAINER_RICKY_5 ===
-Name: RICKY
-Class: Tuber M
-Pic: Tuber M
-Gender: Male
-Music: Girl
+Name: Waddle Dee
+Class: Rich Boy
+Pic: Gentleman
+Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Linoone
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-- Sand Attack
-- Pin Missile
-- Tail Whip
-- Surf
+Pierre @ Metronome
+Level: 23
+Ability: Technician
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Friend
+- Metronome
+
+Poppy Bros. Jr.
+Level: 23
+Ability: Prankster
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Friend
+- Metronome
+
+Tick-Tock Jr.
+Level: 23
+Ability: Soundproof
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Friend
+- Metronome
 
 === TRAINER_RANDALL ===
 Name: RANDALL

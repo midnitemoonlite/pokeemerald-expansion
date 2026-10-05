@@ -275,44 +275,44 @@ const u8 gItemEffect_SpdefFeather[11] = {
 const u8 gItemEffect_HpMochi[11] = {
     [4] = ITEM4_EV_HP,
     [6] = ITEM6_ADD_EV,
-    [10] = 0,
+    [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_AtkMochi[11] = {
     [4] = ITEM4_EV_ATK,
     [6] = ITEM6_ADD_EV,
-    [10] = 0,
+    [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_DefMochi[11] = {
     [5] = ITEM5_EV_DEF,
     [6] = ITEM6_ADD_EV,
-    [10] = 0,
+    [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_SpeedMochi[11] = {
     [5] = ITEM5_EV_SPEED,
     [6] = ITEM6_ADD_EV,
-    [10] = 0,
+    [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_SpatkMochi[11] = {
     [5] = ITEM5_EV_SPATK,
     [6] = ITEM6_ADD_EV,
-    [10] = 0,
+    [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_SpdefMochi[11] = {
     [5] = ITEM5_EV_SPDEF,
     [6] = ITEM6_ADD_EV,
-    [10] = 0,
+    [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_ResetMochi[11] = {
     [4] = ITEM4_EV_HP | ITEM4_EV_ATK,
     [5] = ITEM5_EV_DEF | ITEM5_EV_SPEED | ITEM5_EV_SPATK | ITEM5_EV_SPDEF,
     [6] = ITEM6_RESET_EV,
-    [10] = 0,
+    [10] = ITEM10_IS_VITAMIN,
 };
 
 const u8 gItemEffect_RareCandy[10] = {

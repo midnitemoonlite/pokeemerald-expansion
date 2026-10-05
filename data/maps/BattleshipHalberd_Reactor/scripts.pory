@@ -253,7 +253,7 @@ script BattleshipHalberd_Reactor_EventScript_Wheelie
                 call(Common_EventScript_NameReceivedPartyMon)
              }
         }
-        if(var(VAR_RESULT) == MON_GIVEN_TO_PC)
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC)
         {
             playfanfare(MUS_EVOLVED)
             message("You obtained Wheelie!")
@@ -266,6 +266,10 @@ script BattleshipHalberd_Reactor_EventScript_Wheelie
                 call(Common_EventScript_NameReceivedBoxMon)
              }
             call(Common_EventScript_TransferredToPC)
+        }
+        elif(var(VAR_RESULT) == MON_CANT_GIVE)
+        {
+            goto(Common_EventScript_NoMoreRoomForPokemon)
         }
         setflag(FLAG_OBTAINED_WHEELIE)
         removeobject(LOCALID_WHEELIE_BIKE)

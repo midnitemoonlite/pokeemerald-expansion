@@ -1825,3 +1825,13 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/FloatIslands_SmallCave/scripts.inc"
 
 	.include "data/maps/FloatIslands_BigCave/scripts.inc"
+
+	.include "data/maps/MallowGardens/scripts.inc"
+
+	.include "data/maps/MallowGardens_Center/scripts.inc"
+
+	.include "data/maps/MallowGardens_Mart/scripts.inc"
+
+	.include "data/maps/MallowGardens_LeftRoom/scripts.inc"
+
+	.include "data/maps/MallowGardens_RightRoom/scripts.inc"

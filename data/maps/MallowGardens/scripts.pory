@@ -1,0 +1,437 @@
+raw `
+MallowGardens_MapScripts::
+	.byte 0
+`
+
+script MallowGardens_EventScript_Sign
+{
+    msgbox("Now approaching: MALLOW CASTLE
+            A lavish palace from a bygone age.", MSGBOX_SIGN)
+    closemessage
+}
+
+script MallowGardens_EventScript_WaddleDee1
+{
+    lock
+    faceplayer
+    msgbox("Wowww\. I was hoping to find a rest area
+            here, but this place is massive!")
+    release
+}
+
+script MallowGardens_EventScript_Gentleman
+{
+    lock
+    msgbox("Goodness\. what's with that dreadful
+            looking castle over there?
+            
+            It's nothing like Mallow Castle\.
+            looking at it gives me the creeps\.")
+    release
+}
+
+script MallowGardens_EventScript_WaddleDee2
+{
+    lock
+    faceplayer
+    msgbox("Isn't running through the grass so much
+            fun? You never know what to expect!
+            
+            Oh! Here comes another Helper! Yaaay!")
+    release
+}
+
+script MallowGardens_EventScript_WaddleDee3
+{
+    lock
+    faceplayer
+    msgbox("Down there\.
+    
+            There's a really menacing guard. I think
+            they're trying to protect something\.
+            
+            I tried talking to them, but they sent
+            out some scary strong Helpers to force
+            me back to the courtyard!
+            
+            If I were you, I'd stay as far away
+            from there as possible.")
+    release
+}
+
+script MallowGardens_EventScript_Fluff
+{
+    lock
+    faceplayer
+    msgbox("How come this castle isn't one of the
+            Great King's? Does he not want it?
+            
+            I dunno, I think it looks pretty big\.
+            or maybe it belongs to someone else?")
+    release
+}
+
+script MallowGardens_EventScript_Worker
+{
+    lock
+    faceplayer
+    msgbox("I saw a few strangely-dressed girls
+            heading inside the castle earlier.
+            
+            They mentioned having some kind of
+            \qounbeatable arena strategy\qc planned\.
+            
+            The competition in the Royal Royale
+            keeps getting tougher and tougher, hm?")
+    release
+}
+
+script MallowGardens_EventScript_Chef
+{
+    lock
+    faceplayer
+    msgbox("Have you looked up at the night sky
+            lately, Kirby?
+            
+            Maybe it's just my imagination, but I
+            feel like lately I'm seeing fewer
+            stars shining than usual.
+            
+            You don't think that means anything
+            bad, does it?")
+    release
+}
+
+script MallowGardens_EventScript_Socialite
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_6_SODA_POP))
+    {
+        msgbox("Oh, your Helpers are cute! Are you
+                making sure to take care of them?
+                Here, they might appreciate this.")
+        giveitem(ITEM_SODA_POP, 2)
+        setflag(FLAG_RECEIVED_6_SODA_POP)
+    }
+    msgbox("Waddle Dee Café has all sorts of treats
+            I'm sure your Helpers would love.")
+    release
+}
+
+script MallowGardens_EventScript_Parasol
+{
+    lock
+    faceplayer
+    msgbox("Just wondering, Kirby\. why don't you fly
+            over the Star Blocks on the road?
+            
+            Oh, I see\. you're worried about the
+            Helpers of yours that can't fly?
+            That's so considerate of you!")
+    release
+}
+
+script MallowGardens_EventScript_TriggerLeft
+{
+    lockall
+    addobject(LOCALID_COURTYARD_DEDEDE)
+    setobjectxy(LOCALID_COURTYARD_DEDEDE, 33, 43)
+    goto(MallowGardens_EventScript_Dedede)
+}
+
+script MallowGardens_EventScript_TriggerCenter
+{
+    lockall
+    addobject(LOCALID_COURTYARD_DEDEDE)
+    goto(MallowGardens_EventScript_Dedede)
+}
+
+script MallowGardens_EventScript_TriggerRight
+{
+    lockall
+    addobject(LOCALID_COURTYARD_DEDEDE)
+    setobjectxy(LOCALID_COURTYARD_DEDEDE, 35, 43)
+    goto(MallowGardens_EventScript_Dedede)
+}
+
+script MallowGardens_EventScript_Dedede
+{
+    applymovement(LOCALID_COURTYARD_DEDEDE, moves(walk_down * 5))
+    waitmovement()
+    playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+    msgbox("{SPEAKER NAME_DEDEDE}Well, howdy-do, Kirby! Fancy seein' ya
+            all the way out here!
+            
+            Ya haven't given up on the Royal Royale
+            yet, have ya? Lemme just see here\.")
+    applymovement(LOCALID_COURTYARD_DEDEDE, moves(walk_in_place_down * 3))
+    waitmovement()
+    applymovement(LOCALID_COURTYARD_DEDEDE, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    waitse()
+    delay(30)
+    msgbox("{SPEAKER NAME_DEDEDE}Whoa-ho! Ya already got two brooches!
+            That's better than I was expecting!
+            
+            And you're fillin' out yer cards nicely
+            too. Heard so from the library staff!
+            Thanks for bein' a real pal, Kirby!
+            
+            It'll probably get tougher from here.
+            Not sure how much more you can handle\.
+
+            But I bet you've got a plan, yeah? Take
+            on another arena or two, then wait 'till
+            the avalanche in town's all cleaned up?
+            
+            \.
+            
+            Sorry, did I hear ya say you're gonna
+            look into the blockade north o' town?")
+    closemessage
+    applymovement(LOCALID_COURTYARD_DEDEDE, moves(walk_slow_up))
+    waitmovement()
+    msgbox("Uh huh\. look, Kirby, I like ya, so
+            here's a little piece of advice from me:")
+    closemessage
+    applymovement(LOCALID_COURTYARD_DEDEDE, moves(walk_fast_down))
+    waitmovement()
+    playse(SE_WALL_HIT)
+    waitse()
+    msgbox("{SPEAKER NAME_DEDEDE}Don't.
+    
+            You.
+            
+            Dare.")
+    closemessage
+    applymovement(LOCALID_COURTYARD_DEDEDE, moves(walk_up, walk_in_place_slow_down))
+    waitmovement()
+    msgbox("{SPEAKER NAME_DEDEDE}Ahem\. you know, we've all got our own
+            business to take care of, yeah?
+            
+            Best not to stick your nose in other
+            folk's affairs\. wherever your nose is\.
+            
+            Just focus on playin' this game and
+            havin' some fun, got it? 
+            
+            Then you can go home, take a nap or
+            somethin', and not bother me.
+            
+            Peace!")
+    closemessage
+    applymovement(LOCALID_COURTYARD_DEDEDE, moves(walk_up * 5))
+    waitmovement
+    fadedefaultbgm
+    removeobject(LOCALID_COURTYARD_DEDEDE)
+    setvar(VAR_MALLOW_COURTYARD_STATE, 1)
+    releaseall
+}
+
+script MallowGardens_EventScript_Soldier
+{
+    lockall
+    if(var(VAR_MALLOW_COURTYARD_STATE) != 2)
+    {
+        playbgm(MUS_ENCOUNTER_COOL, 0)
+        getplayerxy(VAR_TEMP_5, VAR_TEMP_6)
+        if(var(VAR_TEMP_5) == 64)
+        {
+            applymovement(LOCALID_COURTYARD_SOLDIER, Common_Movement_ExclamationMark)
+            waitmovement
+            delay(60)
+            applymovement(LOCALID_PLAYER, moves(face_right))
+            waitmovement
+        }
+        else
+        {
+            applymovement(LOCALID_COURTYARD_SOLDIER, moves(face_up))
+            waitmovement
+        }
+        msgbox("Halt! Under the Great King's orders,
+                nobody is allowed through here!
+        
+                Yes, that means you, Kirby. If I have
+                to teach you this lesson the hard way,
+                I'm not afraid to get my hands dirty.
+                
+                Are you really going to cross me?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox("Are you sure?", MSGBOX_YESNO)
+            if(var(VAR_RESULT) == YES)
+            {
+                message("You're going to lose this battle.
+                        You're sure you won't regret this?")
+                waitmessage
+                dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, MallowGardens_Text_NoRegrets, MallowGardens_Text_No)
+                if(var(VAR_RESULT) == 0)
+                {
+                    msgbox("Well, that's how it is, then. Enjoy your
+                            trip back to the break room!")
+                    trainerbattle_no_intro(TRAINER_RICKY_4, MallowGardens_Text_SoldierDefeated)
+                    setvar(VAR_MALLOW_COURTYARD_STATE, 2)
+                    release
+                    end
+                }
+                else
+                {
+                    goto(MallowGardens_EventScript_SoldierDeny)
+                }
+            }
+            else
+            {
+                goto(MallowGardens_EventScript_SoldierDeny)
+            }
+        }
+        else
+        {
+            goto(MallowGardens_EventScript_SoldierDeny)
+        }
+        
+    }
+    faceplayer
+    msgbox("That castle\. it appeared out of thin
+            air here, not too long ago.
+            
+            When King Dedede heard the news, this
+            horrible look came over his face\.
+            and he ordered it to be guarded.
+            
+            Whatever's in there, at all costs, we
+            can't allow it to get out of there.
+            
+            Kirby\. I know you're strong, but\.
+            
+            \.")
+    applymovement(LOCALID_COURTYARD_SOLDIER, moves(face_right))
+    waitmovement
+    msgbox("The soldier looked away, without saying
+            another word.")
+    release
+}
+
+text MallowGardens_Text_NoRegrets
+{
+    "NO REGRETS!"
+}
+
+text MallowGardens_Text_No
+{
+    "NO"
+}
+
+script MallowGardens_EventScript_SoldierDeny
+{
+    msgbox("That's right. Go on, and don't set foot
+            near this place ever again.")
+    closemessage
+    applymovement(LOCALID_COURTYARD_SOLDIER, moves(face_left))
+    waitmovement
+    applymovement(LOCALID_PLAYER, moves(walk_up))
+    waitmovement
+    fadedefaultbgm
+    release
+    end
+}
+
+script MallowGardens_EventScript_Aide
+{
+    lock
+    faceplayer
+    msgbox("Hello, Kirby!
+            I'm a researcher from Waddle Dee Town.
+            
+            The Great King has sent me here to
+            take a look at your Info Card Binder.
+            
+            Specifically, we're hoping to see that
+            you've recruited at least {COLOR RED}30{COLOR DARK_GRAY} Helpers.
+            
+            Now then, may I see your binder?")
+    playse(SE_SELECT)
+    closemessage()
+    delay(60)
+    call(WaddleDeeTown_Lab_EvaluateCards)
+    if(var(VAR_0x8009) >= 30)
+    {
+        goto(MallowGardens_EventScript_AideSuccess)
+    }
+    elif(var(VAR_0x8009) < 30)
+    {
+        goto(MallowGardens_EventScript_AideFailure)
+    }
+}
+
+script MallowGardens_EventScript_AideSuccess
+{
+    msgbox("Wonderful! You've already registered
+            {STR_VAR_2} Helpers so far!
+            
+            As a reward for your due diligence,
+            I have here a care package for you.
+            
+            Please, go ahead and open it!")
+    giveitem_msg(WaddleDeeTown_Lab_ReceivedDowsingMachine, ITEM_DOWSING_MACHINE, 1, MUS_RG_OBTAIN_KEY_ITEM)
+    giveitem(ITEM_TM12)
+    giveitem(ITEM_NUGGET)
+    giveitem(ITEM_GREAT_BALL, 10)
+    msgbox("Of particular note is a new tool made
+            at the lab: the Dowsing Machine.
+            
+            You can use it to find items on the
+            ground that are hidden from plain sight.
+            
+            Such items might be of benefit to you
+            and your Helpers.
+            
+            Now then, I must report the good news
+            to the Great King. Carry on!")
+    closemessage()
+    playse(SE_EXIT)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    setflag(FLAG_BINDER_GATE_03)
+    removeobject(LOCALID_COURTYARD_AIDE)
+    delay(30)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    release
+}
+
+script MallowGardens_EventScript_AideFailure
+{
+    msgbox("Hm\. it seems you've only registered
+            {STR_VAR_2} Helpers so far.
+            The Great King will be most displeased.
+            
+            I'm sorry, but I can't return like this.
+
+            Could I ask you to return once you've
+            recruited at least {COLOR RED}30{COLOR DARK_GRAY} Helpers?")
+    release
+}
+
+script MallowGardens_EventScript_SoldierAlt
+{
+    trainerbattle_single(TRAINER_RICKY_4, MallowGardens_Text_SoldierIntro, MallowGardens_Text_SoldierDefeated, MallowGardens_Text_SoldierPost)
+}
+
+
+text MallowGardens_Text_SoldierIntro
+{
+    "Halt! Under the Great King's orders,
+    nobody is allowed through here!
+    
+    You and your Helpers are going to have
+    have to learn this lesson the hard way!"
+}
+
+text MallowGardens_Text_SoldierDefeated
+{
+    "What?! Forgive me, Great King!"
+}
+
+text MallowGardens_Text_SoldierPost
+{
+    "Look"
+}

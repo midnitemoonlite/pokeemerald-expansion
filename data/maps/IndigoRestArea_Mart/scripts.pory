@@ -22,11 +22,8 @@ mart IndigoRestArea_Mart
     ITEM_POTION
     ITEM_ANTIDOTE
     ITEM_PARALYZE_HEAL
-    ITEM_AWAKENING
-    ITEM_BURN_HEAL
-    ITEM_ICE_HEAL
-    ITEM_REPEL
     ITEM_POKE_DOLL
+    ITEM_DIRE_HIT
 }
 
 script IndigoRestArea_Mart_EventScript_EmployeeWaddleDee

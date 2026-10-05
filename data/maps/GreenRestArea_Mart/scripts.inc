@@ -50,127 +50,119 @@ GreenRestArea_Mart:
 	.2byte ITEM_POTION
 # 34 "data/maps/GreenRestArea_Mart/scripts.pory"
 	.2byte ITEM_ANTIDOTE
-# 35 "data/maps/GreenRestArea_Mart/scripts.pory"
-	.2byte ITEM_PARALYZE_HEAL
-# 36 "data/maps/GreenRestArea_Mart/scripts.pory"
-	.2byte ITEM_AWAKENING
-# 37 "data/maps/GreenRestArea_Mart/scripts.pory"
-	.2byte ITEM_BURN_HEAL
-# 38 "data/maps/GreenRestArea_Mart/scripts.pory"
-	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_NONE
 
 GreenRestArea_EventScript_WaddleDeeJuice::
-# 43 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 39 "data/maps/GreenRestArea_Mart/scripts.pory"
 	lock
-# 44 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 40 "data/maps/GreenRestArea_Mart/scripts.pory"
 	faceplayer
-# 45 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 41 "data/maps/GreenRestArea_Mart/scripts.pory"
 	msgbox GreenRestArea_EventScript_WaddleDeeJuice_Text_0
-# 50 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 46 "data/maps/GreenRestArea_Mart/scripts.pory"
 	release
 	return
 
 
 GreenRestArea_EventScript_WaddleDeeSell::
-# 55 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 51 "data/maps/GreenRestArea_Mart/scripts.pory"
 	lock
-# 56 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 52 "data/maps/GreenRestArea_Mart/scripts.pory"
 	faceplayer
-# 57 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 53 "data/maps/GreenRestArea_Mart/scripts.pory"
 	compare VAR_LUMBERJACK_QUEST, 1
 	goto_if_eq GreenRestArea_EventScript_WaddleDeeSell_2
-# 94 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 90 "data/maps/GreenRestArea_Mart/scripts.pory"
 	msgbox GreenRestArea_EventScript_WaddleDeeSell_Text_1
 GreenRestArea_EventScript_WaddleDeeSell_1:
-# 104 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 100 "data/maps/GreenRestArea_Mart/scripts.pory"
 	release
 	return
 
 GreenRestArea_EventScript_WaddleDeeSell_2:
-# 59 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 55 "data/maps/GreenRestArea_Mart/scripts.pory"
 	msgbox GreenRestArea_EventScript_WaddleDeeSell_Text_0
-# 72 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 68 "data/maps/GreenRestArea_Mart/scripts.pory"
 	closemessage
-# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 69 "data/maps/GreenRestArea_Mart/scripts.pory"
 	checkobjectat 59, 9
-# 74 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 70 "data/maps/GreenRestArea_Mart/scripts.pory"
 	checkobjectat 5, 2
-# 75 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 71 "data/maps/GreenRestArea_Mart/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne GreenRestArea_EventScript_WaddleDeeSell_6
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 	applymovement LOCALID_LUMBERJACK_MART, GreenRestArea_EventScript_WaddleDeeSell_Movement_1
-# 83 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 79 "data/maps/GreenRestArea_Mart/scripts.pory"
 	waitmovement
 GreenRestArea_EventScript_WaddleDeeSell_5:
-# 85 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 81 "data/maps/GreenRestArea_Mart/scripts.pory"
 	removeobject LOCALID_LUMBERJACK_MART
-# 86 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
 	setflag FLAG_HIDE_LUMBERJACK_MART
-# 87 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 83 "data/maps/GreenRestArea_Mart/scripts.pory"
 	clearflag FLAG_HIDE_LUMBERJACK_FARMHOUSE
-# 88 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 84 "data/maps/GreenRestArea_Mart/scripts.pory"
 	playse SE_EXIT
-# 89 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 85 "data/maps/GreenRestArea_Mart/scripts.pory"
 	waitse
-# 90 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 86 "data/maps/GreenRestArea_Mart/scripts.pory"
 	setvar VAR_LUMBERJACK_QUEST, 2
 	goto GreenRestArea_EventScript_WaddleDeeSell_1
 
 GreenRestArea_EventScript_WaddleDeeSell_6:
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 	applymovement LOCALID_LUMBERJACK_MART, GreenRestArea_EventScript_WaddleDeeSell_Movement_0
-# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 74 "data/maps/GreenRestArea_Mart/scripts.pory"
 	waitmovement
 	goto GreenRestArea_EventScript_WaddleDeeSell_5
 
 
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 GreenRestArea_EventScript_WaddleDeeSell_Movement_0:
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_left
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_left
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
-# 77 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 73 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
 	step_end
 
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 GreenRestArea_EventScript_WaddleDeeSell_Movement_1:
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_left
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_left
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
-# 82 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 78 "data/maps/GreenRestArea_Mart/scripts.pory"
 	walk_down
 	step_end
 
 GreenRestArea_EventScript_WaddleDeeJuice_Text_0:
-# 45 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 41 "data/maps/GreenRestArea_Mart/scripts.pory"
 	.string "I know that Cherry Juice is supposed to\n"
 	.string "be for your Helpers, but…\p"
 	.string "I can't help it! It tastes so good!\n"
 	.string "I love juice!!$"
 
 GreenRestArea_EventScript_WaddleDeeSell_Text_0:
-# 59 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 55 "data/maps/GreenRestArea_Mart/scripts.pory"
 	.string "Hm? You want to know if I live at the\n"
 	.string "farmhouse in Vegetable Valley?\p"
 	.string "Why, yes I do. Can I help you?\p"
@@ -182,7 +174,7 @@ GreenRestArea_EventScript_WaddleDeeSell_Text_0:
 	.string "around for me. I have to hurry back!$"
 
 GreenRestArea_EventScript_WaddleDeeSell_Text_1:
-# 94 "data/maps/GreenRestArea_Mart/scripts.pory"
+# 90 "data/maps/GreenRestArea_Mart/scripts.pory"
 	.string "I grow crops in Vegetable Valley, then\n"
 	.string "bring them down here to sell.\p"
 	.string "Those crops get used to make hearty\n"

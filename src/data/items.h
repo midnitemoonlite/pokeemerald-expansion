@@ -963,7 +963,7 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_Antidote,
         .flingPower = 30,
-        .iconPic = gItemIcon_StatusHeal,
+        .iconPic = gItemIcon_FullHeal,
         .iconPalette = gItemIconPalette_Antidote,
     },
 
@@ -981,7 +981,7 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_ParalyzeHeal,
         .flingPower = 30,
-        .iconPic = gItemIcon_StatusHeal,
+        .iconPic = gItemIcon_FullHeal,
         .iconPalette = gItemIconPalette_ParalyzeHeal,
     },
 
@@ -1005,7 +1005,7 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_BurnHeal,
         .flingPower = 30,
-        .iconPic = gItemIcon_StatusHeal,
+        .iconPic = gItemIcon_FullHeal,
         .iconPalette = gItemIconPalette_BurnHeal,
     },
 
@@ -1029,7 +1029,7 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_IceHeal,
         .flingPower = 30,
-        .iconPic = gItemIcon_StatusHeal,
+        .iconPic = gItemIcon_FullHeal,
         .iconPalette = gItemIconPalette_IceHeal,
     },
 
@@ -1053,7 +1053,7 @@ const struct ItemInfo gItemsInfo[] =
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
         .effect = gItemEffect_Awakening,
         .flingPower = 30,
-        .iconPic = gItemIcon_StatusHeal,
+        .iconPic = gItemIcon_FullHeal,
         .iconPalette = gItemIconPalette_Awakening,
     },
 
@@ -1175,7 +1175,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SACRED_ASH] =
     {
-        .name = ITEM_NAME("Sacred Ash"),
+        .name = ITEM_NAME("Miracle Fruit"),
         .pluralName = ITEM_PLURAL_NAME("Sacred Ashes"),
         .price = (I_PRICE >= GEN_7) ? 50000 : 200,
         .description = COMPOUND_STRING(
@@ -1368,7 +1368,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_HP_UP] =
     {
-        .name = ITEM_NAME("HP Up"),
+        .name = ITEM_NAME("HP Patch"),
+        .pluralName = ITEM_PLURAL_NAME("HP Patches"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
             "Raises the base HP\n"
@@ -1385,7 +1386,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PROTEIN] =
     {
-        .name = ITEM_NAME("Protein"),
+        .name = ITEM_NAME("Offense Patch"),
+        .pluralName = ITEM_PLURAL_NAME("Offense Patches"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
             "Greatly raises\n"
@@ -1403,7 +1405,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_IRON] =
     {
-        .name = ITEM_NAME("Iron"),
+        .name = ITEM_NAME("Defense Patch"),
+        .pluralName = ITEM_PLURAL_NAME("Defense Patches"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
             "Greatly raises\n"
@@ -1415,13 +1418,14 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Iron,
         .flingPower = 30,
-        .iconPic = gItemIcon_Vitamin,
+        .iconPic = gItemIcon_TwiceSpicedRadish,
         .iconPalette = gItemIconPalette_Iron,
     },
 
     [ITEM_CALCIUM] =
     {
-        .name = ITEM_NAME("Calcium"),
+        .name = ITEM_NAME("Charge Patch"),
+        .pluralName = ITEM_PLURAL_NAME("Charge Patches"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
             "Greatly raises\n"
@@ -1433,13 +1437,14 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Calcium,
         .flingPower = 30,
-        .iconPic = gItemIcon_Vitamin,
+        .iconPic = gItemIcon_SwapSnack,
         .iconPalette = gItemIconPalette_Calcium,
     },
 
     [ITEM_ZINC] =
     {
-        .name = ITEM_NAME("Zinc"),
+        .name = ITEM_NAME("Weight Patch"),
+        .pluralName = ITEM_PLURAL_NAME("Weight Patches"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
             "Greatly raises\n"
@@ -1451,14 +1456,14 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Zinc,
         .flingPower = 30,
-        .iconPic = gItemIcon_Vitamin,
+        .iconPic = gItemIcon_ChoiceDumpling,
         .iconPalette = gItemIconPalette_Zinc,
     },
 
     [ITEM_CARBOS] =
     {
-        .name = ITEM_NAME("Carbos"),
-        .pluralName = ITEM_PLURAL_NAME("Carbos"),
+        .name = ITEM_NAME("Top Speed Patch"),
+        .pluralName = ITEM_PLURAL_NAME("Top Speed Patches"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
             "Greatly raises\n"
@@ -1470,13 +1475,14 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Carbos,
         .flingPower = 30,
-        .iconPic = gItemIcon_Vitamin,
+        .iconPic = gItemIcon_AuxPowerguard,
         .iconPalette = gItemIconPalette_Carbos,
     },
 
     [ITEM_PP_UP] =
     {
-        .name = ITEM_NAME("PP Up"),
+        .name = ITEM_NAME("Boost Patch"),
+        .pluralName = ITEM_PLURAL_NAME("Boost Patches"),
     #if I_PRICE >= GEN_7
         .price = 10000,
     #elif I_PRICE >= GEN_2
@@ -1500,8 +1506,8 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_PP_MAX] =
     {
-        .name = ITEM_NAME("PP Max"),
-        .pluralName = ITEM_PLURAL_NAME("PP Maxes"),
+        .name = ITEM_NAME("All-Up Patch"),
+        .pluralName = ITEM_PLURAL_NAME("All-Up Patches"),
         .price = (I_PRICE >= GEN_7) ? 10000 : 9800,
         .description = COMPOUND_STRING(
             "Raises the PP of a\n"
@@ -1613,7 +1619,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABILITY_CAPSULE] =
     {
-        .name = ITEM_NAME("Ability Scroll"),
+        .name = ITEM_NAME("Ability Blueprint"),
     #if I_PRICE >= GEN_9
         .price = 100000,
     #elif I_PRICE >= GEN_7
@@ -1635,7 +1641,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ABILITY_PATCH] =
     {
-        .name = ITEM_NAME("Hidden Scroll"),
+        .name = ITEM_NAME("Hidden Blueprint"),
         .price = (I_PRICE >= GEN_9) ? 250000 : 20,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -1646,7 +1652,7 @@ const struct ItemInfo gItemsInfo[] =
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_AbilityPatch,
-        .iconPic = gItemIcon_AbilityPatch,
+        .iconPic = gItemIcon_AbilityCapsule,
         .iconPalette = gItemIconPalette_AbilityPatch,
     },
 
@@ -2428,7 +2434,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_ATTACK] =
     {
-        .name = ITEM_NAME("X Attack"),
+        .name = ITEM_NAME("EX Attack"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 500,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
@@ -2454,7 +2460,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_DEFENSE] =
     {
-        .name = ITEM_NAME("X Defense"),
+        .name = ITEM_NAME("EX Defense"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 550,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
@@ -2480,7 +2486,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_SP_ATK] =
     {
-        .name = ITEM_NAME("X Sp. Atk"),
+        .name = ITEM_NAME("EX Sp. Atk"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 350,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
@@ -2506,7 +2512,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_SP_DEF] =
     {
-        .name = ITEM_NAME("X Sp. Def"),
+        .name = ITEM_NAME("EX Sp. Def"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 350,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
@@ -2532,7 +2538,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_SPEED] =
     {
-        .name = ITEM_NAME("X Speed"),
+        .name = ITEM_NAME("EX Speed"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 350,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
@@ -2558,7 +2564,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_X_ACCURACY] =
     {
-        .name = ITEM_NAME("X Accuracy"),
+        .name = ITEM_NAME("EX Accuracy"),
         .pluralName = ITEM_PLURAL_NAME("X Accuracies"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 950,
         .holdEffectParam = X_ITEM_STAGES,
@@ -5189,7 +5195,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
         .flingPower = 70,
-        .iconPic = gItemIcon_Drive,
+        .iconPic = gItemIcon_SuperbRemedy,
         .iconPalette = gItemIconPalette_ShockDrive,
     },
 
@@ -5208,7 +5214,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
         .flingPower = 70,
-        .iconPic = gItemIcon_Drive,
+        .iconPic = gItemIcon_AuxBottle,
         .iconPalette = gItemIconPalette_BurnDrive,
     },
 
@@ -5227,7 +5233,7 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
         .flingPower = 70,
-        .iconPic = gItemIcon_Drive,
+        .iconPic = gItemIcon_AbilityPatch,
         .iconPalette = gItemIconPalette_ChillDrive,
     },
 
@@ -8285,7 +8291,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LEEK] =
     {
-        .name = ITEM_NAME("Stick"),
+        .name = ITEM_NAME("Staff"),
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .holdEffect = HOLD_EFFECT_LEEK,
         .description = COMPOUND_STRING(

@@ -37,51 +37,45 @@ IndigoRestArea_Mart:
 # 24 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
 # 25 "data/maps/IndigoRestArea_Mart/scripts.pory"
-	.2byte ITEM_AWAKENING
-# 26 "data/maps/IndigoRestArea_Mart/scripts.pory"
-	.2byte ITEM_BURN_HEAL
-# 27 "data/maps/IndigoRestArea_Mart/scripts.pory"
-	.2byte ITEM_ICE_HEAL
-# 28 "data/maps/IndigoRestArea_Mart/scripts.pory"
-	.2byte ITEM_REPEL
-# 29 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	.2byte ITEM_POKE_DOLL
+# 26 "data/maps/IndigoRestArea_Mart/scripts.pory"
+	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_NONE
 
 IndigoRestArea_Mart_EventScript_EmployeeWaddleDee::
-# 34 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 31 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	lock
-# 35 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 32 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	faceplayer
-# 36 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 33 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	msgbox IndigoRestArea_Mart_EventScript_EmployeeWaddleDee_Text_0
-# 39 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 36 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	turnobject LOCALID_INDIGO_EMPLOYEE, DIR_NORTH
-# 40 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 37 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	release
 	return
 
 
 IndigoRestArea_Mart_EventScript_GentlemanWaddleDee::
-# 45 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 42 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	lock
-# 46 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 43 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	faceplayer
-# 47 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 44 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	msgbox IndigoRestArea_Mart_EventScript_GentlemanWaddleDee_Text_0
-# 52 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 49 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	release
 	return
 
 
 IndigoRestArea_Mart_EventScript_EmployeeWaddleDee_Text_0:
-# 36 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 33 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	.string "If you need something, you should talk\n"
 	.string "to the employee behind the counter.\l"
 	.string "I've got my hands full with restocking…$"
 
 IndigoRestArea_Mart_EventScript_GentlemanWaddleDee_Text_0:
-# 47 "data/maps/IndigoRestArea_Mart/scripts.pory"
+# 44 "data/maps/IndigoRestArea_Mart/scripts.pory"
 	.string "Dream Land is full of scenic vistas.\n"
 	.string "It's hard to pick a favorite.\p"
 	.string "Dedede's Royal Royale seems like a\n"

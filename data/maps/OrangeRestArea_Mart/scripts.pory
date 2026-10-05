@@ -18,17 +18,15 @@ script OrangeRestArea_Mart_EventScript_Clerk
 mart OrangeRestArea_Mart
 {
     ITEM_POKE_BALL
-    ITEM_GREAT_BALL
     ITEM_FAST_BALL
     ITEM_POTION
     ITEM_SUPER_POTION
     ITEM_ANTIDOTE
     ITEM_PARALYZE_HEAL
-    ITEM_AWAKENING
     ITEM_BURN_HEAL
-    ITEM_ICE_HEAL
     ITEM_REPEL
     ITEM_POKE_DOLL
+    ITEM_DIRE_HIT
 }
 
 script OrangeRestArea_Mart_EventScript_ParasolWaddleDee

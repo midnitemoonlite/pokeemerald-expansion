@@ -17,13 +17,18 @@
       "map": "MAP_RESORT_ARENA",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_MALLOW_GARDENS",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
       "x": 16,
-      "y": 20,
+      "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
       "movement_range_x": 0,
@@ -36,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
       "x": 7,
-      "y": 45,
+      "y": 47,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -49,7 +54,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
       "x": 21,
-      "y": 53,
+      "y": 55,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -62,7 +67,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
       "x": 50,
-      "y": 30,
+      "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
       "movement_range_x": 4,
@@ -75,7 +80,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
       "x": 44,
-      "y": 26,
+      "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
       "movement_range_x": 0,
@@ -88,7 +93,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
       "x": 23,
-      "y": 38,
+      "y": 40,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -101,7 +106,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
       "x": 24,
-      "y": 13,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -114,7 +119,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 44,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
@@ -127,7 +132,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_1",
       "x": 28,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 3,
@@ -140,7 +145,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 4,
-      "y": 14,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
@@ -153,7 +158,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 33,
-      "y": 23,
+      "y": 25,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -166,7 +171,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 55,
-      "y": 53,
+      "y": 55,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -179,7 +184,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 33,
-      "y": 54,
+      "y": 56,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -193,35 +198,35 @@
   "warp_events": [
     {
       "x": 29,
-      "y": 23,
+      "y": 25,
       "elevation": 0,
       "dest_map": "MAP_FLOAT_ISLANDS_BIG_CAVE",
       "dest_warp_id": "2"
     },
     {
       "x": 21,
-      "y": 30,
+      "y": 32,
       "elevation": 0,
       "dest_map": "MAP_FLOAT_ISLANDS_BIG_CAVE",
       "dest_warp_id": "0"
     },
     {
       "x": 35,
-      "y": 36,
+      "y": 38,
       "elevation": 0,
       "dest_map": "MAP_FLOAT_ISLANDS_BIG_CAVE",
       "dest_warp_id": "1"
     },
     {
       "x": 46,
-      "y": 54,
+      "y": 56,
       "elevation": 0,
       "dest_map": "MAP_FLOAT_ISLANDS_SMALL_CAVE",
       "dest_warp_id": "0"
     },
     {
       "x": 51,
-      "y": 54,
+      "y": 56,
       "elevation": 0,
       "dest_map": "MAP_FLOAT_ISLANDS_SMALL_CAVE",
       "dest_warp_id": "1"
@@ -232,7 +237,7 @@
     {
       "type": "hidden_item",
       "x": 55,
-      "y": 4,
+      "y": 6,
       "elevation": 0,
       "item": "ITEM_BIG_PEARL",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD"
@@ -240,7 +245,7 @@
     {
       "type": "sign",
       "x": 18,
-      "y": 51,
+      "y": 53,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_Sign"
@@ -248,7 +253,7 @@
     {
       "type": "sign",
       "x": 33,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -256,7 +261,7 @@
     {
       "type": "sign",
       "x": 34,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -264,7 +269,7 @@
     {
       "type": "sign",
       "x": 35,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -272,7 +277,7 @@
     {
       "type": "sign",
       "x": 36,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -280,7 +285,7 @@
     {
       "type": "sign",
       "x": 37,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -288,7 +293,7 @@
     {
       "type": "sign",
       "x": 38,
-      "y": 7,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -296,7 +301,7 @@
     {
       "type": "sign",
       "x": 34,
-      "y": 8,
+      "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -304,7 +309,7 @@
     {
       "type": "sign",
       "x": 35,
-      "y": 8,
+      "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -312,7 +317,7 @@
     {
       "type": "sign",
       "x": 36,
-      "y": 8,
+      "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -320,7 +325,7 @@
     {
       "type": "sign",
       "x": 37,
-      "y": 8,
+      "y": 10,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -328,7 +333,7 @@
     {
       "type": "sign",
       "x": 33,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -336,7 +341,7 @@
     {
       "type": "sign",
       "x": 34,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -344,7 +349,7 @@
     {
       "type": "sign",
       "x": 35,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -352,7 +357,7 @@
     {
       "type": "sign",
       "x": 36,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -360,7 +365,7 @@
     {
       "type": "sign",
       "x": 37,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -368,7 +373,7 @@
     {
       "type": "sign",
       "x": 38,
-      "y": 9,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -376,7 +381,7 @@
     {
       "type": "sign",
       "x": 9,
-      "y": 26,
+      "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -384,7 +389,7 @@
     {
       "type": "sign",
       "x": 10,
-      "y": 26,
+      "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -392,7 +397,7 @@
     {
       "type": "sign",
       "x": 31,
-      "y": 51,
+      "y": 53,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -400,7 +405,7 @@
     {
       "type": "sign",
       "x": 32,
-      "y": 51,
+      "y": 53,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -408,15 +413,7 @@
     {
       "type": "sign",
       "x": 29,
-      "y": 53,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "FloatIslands_EventScript_CoconutTree"
-    },
-    {
-      "type": "sign",
-      "x": 30,
-      "y": 53,
+      "y": 55,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -425,6 +422,14 @@
       "type": "sign",
       "x": 30,
       "y": 55,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FloatIslands_EventScript_CoconutTree"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 57,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -432,7 +437,7 @@
     {
       "type": "sign",
       "x": 31,
-      "y": 55,
+      "y": 57,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -440,7 +445,7 @@
     {
       "type": "sign",
       "x": 32,
-      "y": 55,
+      "y": 57,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -448,7 +453,7 @@
     {
       "type": "sign",
       "x": 33,
-      "y": 55,
+      "y": 57,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_CoconutTree"
@@ -456,7 +461,7 @@
     {
       "type": "sign",
       "x": 8,
-      "y": 24,
+      "y": 26,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_SpecialTree"
@@ -464,7 +469,7 @@
     {
       "type": "sign",
       "x": 9,
-      "y": 24,
+      "y": 26,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "FloatIslands_EventScript_SpecialTree"

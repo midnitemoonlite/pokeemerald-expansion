@@ -1,0 +1,140 @@
+raw `
+MallowGardens_RightRoom_MapScripts::
+	.byte 0
+`
+
+script MallowGardens_RightRoom_EventScript_Ribbon
+{
+    lock
+    faceplayer
+    msgbox("Hey, hey, listen to me. Don't you think
+            Ice-type Helpers are the best kind?
+            They're rare and mysterious\.
+            
+            \.hey, wait, have you even seen a single
+            Ice-type Helper yet? How are you going
+            to agree with me then?")
+    release
+}
+
+script MallowGardens_RightRoom_EventScript_Youngster
+{
+    lock
+    faceplayer
+    msgbox("You think Fire-types are the best type
+            of Helper, right? They're so cool!
+            
+            Nobody's scared of ice, or\. well,
+            I guess lightning is pretty scary,
+            but fire's scarier! It's the toughest!")
+    release
+}
+
+script MallowGardens_RightRoom_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I think Electric-type Helpers are the
+            best, personally. They're very popular!
+            
+            Even if you don't agree with me, I met
+            someone in Float Islands who did, so
+            I've got the high ground.")
+    release
+}
+
+script MallowGardens_RightRoom_EventScript_Vendor
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BOUGHT_PRANK))
+    {
+        msgbox("Oh, you're the kid who beat my boss
+            in the Waddle Dee Arena! Small world!
+            
+            Hey, for such a strong trainer, I've
+            got a special deal for you.")
+        showmoneybox(0, 0)
+        msgbox("One extra-rare, extra-powerful Helper
+                for the low, low cost of ¥500! You in?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES)
+        {
+            checkmoney(500)
+            if(!var(VAR_RESULT))
+            {
+                goto(MallowGardens_RightRoom_EventScript_CantAfford)
+            }
+            setvar(VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PRANK)
+            givemon(SPECIES_PRANK, 25)
+            if(var(VAR_RESULT) == MON_CANT_GIVE)
+            {
+                goto(Common_EventScript_NoMoreRoomForPokemon)
+            }
+            delay(16)
+            removemoney(500)
+            updatemoneybox()
+            playse(SE_SHOP)
+            waitse
+            msgbox("Great choice, kid! Here it is: Prank!
+                    Now remember, I don't offer refunds!")
+            hidemoneybox
+            if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY)
+            {
+                playfanfare(MUS_EVOLVED)
+                message("You paid ¥500 and bought Prank\.!")
+                waitmessage()
+                waitfanfare()
+                msgbox("Would you like to give a nickname to
+                        Prank?", MSGBOX_YESNO)
+                if(var(VAR_RESULT) == YES)
+                {
+                    call(Common_EventScript_GetGiftMonPartySlot)
+                    call(Common_EventScript_NameReceivedPartyMon)
+                }
+            }
+            elif(var(VAR_RESULT) == MON_GIVEN_TO_PC)
+            {
+                playfanfare(MUS_EVOLVED)
+                message("You paid ¥500 and bought Prank\.!")
+                waitmessage()
+                waitfanfare()
+                msgbox("Would you like to give a nickname to
+                        Prank?", MSGBOX_YESNO)
+                if(var(VAR_RESULT) == YES)
+                {
+                    call(Common_EventScript_NameReceivedBoxMon)
+                }
+                call(Common_EventScript_TransferredToPC)
+            }
+            elif(var(VAR_RESULT) == MON_CANT_GIVE)
+            {
+                goto(Common_EventScript_NoMoreRoomForPokemon)
+            }
+            setflag(FLAG_BOUGHT_PRANK)
+            release
+            end
+        }
+        else
+        {   hidemoneybox
+            msgbox("What's the matter? Don't trust me?
+                    C'mon, we've got a common friend!
+                    That basically makes us pals too!")
+        }
+        release
+        end
+    }
+    msgbox("What's the matter? Feeling buyer's
+            remorse with your new Helper?
+            
+            Aw, come on. Any friend of Magolor's
+            should be ready for a prank! Hehe!")
+    release
+}
+
+script MallowGardens_RightRoom_EventScript_CantAfford
+{
+    msgbox("Wait a minute\. you can't afford this!
+            Are you trying to swindle me?")
+    release
+    end
+}

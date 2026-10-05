@@ -73,16 +73,16 @@
 #define TRAINER_CHARLIE                      66 // Float Islands - Trainer 7
 #define TRAINER_RICKY_2                      67 // Float Islands - Trainer 8
 #define TRAINER_RICKY_3                      68 // Float Islands (Small Cave) - Trainer 1
-#define TRAINER_RICKY_4                      69 // Mallow Castle - Trainer 1
-#define TRAINER_RICKY_5                      70 // Mallow Castle - Trainer 2
-#define TRAINER_RANDALL                      71 // Mallow Castle - Trainer 3
-#define TRAINER_PARKER                       72 // Mallow Castle - Trainer 4
-#define TRAINER_GEORGE                       73 // Castle Arena - Francisca
-#define TRAINER_BERKE                        74 // Castle Arena - Flamberge
-#define TRAINER_BRAXTON                      75 // Castle Arena - Zan Partizanne
-#define TRAINER_VINCENT                      76
-#define TRAINER_LEROY                        77
-#define TRAINER_WILTON_1                     78
+#define TRAINER_RICKY_4                      69 // Mallow Courtyard - Soldier
+#define TRAINER_RICKY_5                      70 // Mallow Courtyard - Metronome Gent
+#define TRAINER_RANDALL                      71 // Mallow Castle - Trainer 1
+#define TRAINER_PARKER                       72 // Mallow Castle - Trainer 2
+#define TRAINER_GEORGE                       73 // Mallow Castle - Trainer 3
+#define TRAINER_BERKE                        74 // Mallow Castle - Trainer 4
+#define TRAINER_BRAXTON                      75 // Mallow Castle - Trainer 5
+#define TRAINER_VINCENT                      76 // Castle Arena - Francisca
+#define TRAINER_LEROY                        77 // Castle Arena - Flamberge
+#define TRAINER_WILTON_1                     78 // Castle Arena - Zan Partizanne
 #define TRAINER_EDGAR                        79
 #define TRAINER_ALBERT                       80
 #define TRAINER_SAMUEL                       81

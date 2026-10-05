@@ -116,7 +116,7 @@
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
 #define VAR_ORANGE_OCEAN_STATE                           0x405F // Orange Ocean - Keep track of progress state
 #define VAR_ROUTE101_STATE                               0x4060
-#define VAR_ROUTE102_STATE                               0x4061 // Unused Var
+#define VAR_MALLOW_COURTYARD_STATE                       0x4061 // Mallow Courtyard - Keep track of progress state
 #define VAR_ROUTE103_STATE                               0x4062 // Unused Var
 #define VAR_ROUTE104_STATE                               0x4063
 #define VAR_ROUTE105_STATE                               0x4064 // Unused Var

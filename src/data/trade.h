@@ -1212,22 +1212,6 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_PONYTA
     },
-    [INGAME_TRADE_SIR_KIBBLE] =
-    {
-        .nickname = _("Lord Kibble"),
-        .species = SPECIES_SIR_KIBBLE,
-        .ivs = {16, 7, 15, 24, 7, 18},
-        .abilityNum = 2,
-        .otId = 41883,
-        .conditions = {5, 5, 5, 5, 5},
-        .personality = 0x62,
-        .heldItem = ITEM_ORAN_BERRY,
-        .mailNum = MAIL_NONE,
-        .otName = _("Bar"),
-        .otGender = MALE,
-        .sheen = 10,
-        .requestedSpecies = SPECIES_TWIZZY
-    },
     [INGAME_TRADE_SOLITE] =
     {
         .nickname = _("Dale"),
@@ -1255,14 +1239,14 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0xa6,
         .heldItem = ITEM_STAR_PIECE,
         .mailNum = MAIL_NONE,
-        .otName = _("Ribbon"),
+        .otName = _("Bow"),
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_CAPPY
     },
     [INGAME_TRADE_SNOOTER] =
     {
-        .nickname = _("Snoosnum"),
+        .nickname = _("Meisnoot"),
         .species = SPECIES_SNOOTER_NORMAL,
         .ivs = {15, 23, 30, 18, 19, 26},
         .abilityNum = 2,
@@ -1271,10 +1255,26 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x22,
         .heldItem = ITEM_MOOMOO_MILK,
         .mailNum = MAIL_NONE,
-        .otName = _("Bar"),
+        .otName = _("Chef"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_TWIZZY
+        .requestedSpecies = SPECIES_SNOOTER
+    },
+    [INGAME_TRADE_TOOTLEBAM] =
+    {
+        .nickname = _("Tootlebam"),
+        .species = SPECIES_TOOTLEBAM,
+        .ivs = {18, 9, 17, 20, 31, 6},
+        .abilityNum = 0,
+        .otId = 90356,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0xce1eb,
+        .heldItem = ITEM_FAIRY_FEATHER,
+        .mailNum = MAIL_NONE,
+        .otName = _("Knitcap"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_SNOOTER
     },
     [INGAME_TRADE_BOOLER] =
     {
@@ -1296,11 +1296,27 @@ static const struct InGameTrade sIngameTrades[] =
     {
         .nickname = _("Dupalor"),
         .species = SPECIES_SNOOTER_NORMAL,
-        .ivs = {5, 31, 22, 11, 19, 0},
+        .ivs = {5, 31, 22, 11, 19, 28},
         .abilityNum = 2,
         .otId = 1504,
         .conditions = {5, 5, 5, 5, 5},
         .personality = 0xc0,
+        .heldItem = ITEM_GRISEOUS_ORB,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
+    [INGAME_TRADE_CAPTAIN_STITCH] =
+    {
+        .nickname = _("Dupalor"),
+        .species = SPECIES_CAPTAIN_STITCH,
+        .ivs = {19, 21, 20, 9, 0, 31},
+        .abilityNum = 2,
+        .otId = 55475,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x7aa6,
         .heldItem = ITEM_GRISEOUS_ORB,
         .mailNum = MAIL_NONE,
         .otName = _("Bar"),
@@ -1318,6 +1334,22 @@ static const struct InGameTrade sIngameTrades[] =
         .conditions = {5, 5, 5, 5, 5},
         .personality = 0x47,
         .heldItem = ITEM_HEAT_ROCK,
+        .mailNum = MAIL_NONE,
+        .otName = _("Bar"),
+        .otGender = MALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_TWIZZY
+    },
+    [INGAME_TRADE_GORIATH] =
+    {
+        .nickname = _("Gorinarly"),
+        .species = SPECIES_GORIATH,
+        .ivs = {22, 26, 12, 28, 16, 24},
+        .abilityNum = 0,
+        .otId = 8567,
+        .conditions = {5, 5, 5, 5, 5},
+        .personality = 0x495ccab,
+        .heldItem = ITEM_COMET_SHARD,
         .mailNum = MAIL_NONE,
         .otName = _("Bar"),
         .otGender = MALE,

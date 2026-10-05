@@ -9749,7 +9749,7 @@
       "id": "LAYOUT_FLOAT_ISLANDS",
       "name": "FloatIslands_Layout",
       "width": 60,
-      "height": 60,
+      "height": 62,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/FloatIslands/border.bin",
@@ -9774,6 +9774,56 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/FloatIslands_BigCave/border.bin",
       "blockdata_filepath": "data/layouts/FloatIslands_BigCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_GARDENS",
+      "name": "MallowGardens_Layout",
+      "width": 69,
+      "height": 66,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/MallowGardens/border.bin",
+      "blockdata_filepath": "data/layouts/MallowGardens/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_GARDENS_CENTER",
+      "name": "MallowGardens_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/MallowGardens_Center/border.bin",
+      "blockdata_filepath": "data/layouts/MallowGardens_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_GARDENS_MART",
+      "name": "MallowGardens_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/MallowGardens_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/MallowGardens_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_GARDENS_LEFT_ROOM",
+      "name": "MallowGardens_LeftRoom_Layout",
+      "width": 8,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattlePike",
+      "border_filepath": "data/layouts/MallowGardens_LeftRoom/border.bin",
+      "blockdata_filepath": "data/layouts/MallowGardens_LeftRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_GARDENS_RIGHT_ROOM",
+      "name": "MallowGardens_RightRoom_Layout",
+      "width": 8,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattlePike",
+      "border_filepath": "data/layouts/MallowGardens_RightRoom/border.bin",
+      "blockdata_filepath": "data/layouts/MallowGardens_RightRoom/map.bin"
     }
   ]
 }

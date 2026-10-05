@@ -1690,6 +1690,10 @@
     {
       "id": "MAPSEC_FLOAT_ISLANDS",
       "name": "FLOAT ISLANDS"
+    },
+    {
+      "id": "MAPSEC_MALLOW_GARDENS",
+      "name": "MALLOW COURTYARD"
     }
   ]
 }

@@ -96,8 +96,8 @@ WaddleDeeTown_House1_EventScript_InBed_Text_0:
 # 10 "data/maps/WaddleDeeTown_House1/scripts.pory"
 	.string "I heard about Dedede's Royal Royale\n"
 	.string "going on, but… I'm too tired for it.\p"
-	.string "There wasn't a single star in the\n"
-	.string "sky last night. I couldn't sleep.$"
+	.string "I just couldn't fall asleep last night…\n"
+	.string "I don't know what came over me!$"
 
 WaddleDeeTown_House1_EventScript_Worker_Text_0:
 # 24 "data/maps/WaddleDeeTown_House1/scripts.pory"

@@ -37,48 +37,44 @@ WaddleDeeTown_Mart:
 # 24 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
 # 25 "data/maps/WaddleDeeTown_Mart/scripts.pory"
-	.2byte ITEM_AWAKENING
-# 26 "data/maps/WaddleDeeTown_Mart/scripts.pory"
-	.2byte ITEM_BURN_HEAL
-# 27 "data/maps/WaddleDeeTown_Mart/scripts.pory"
-	.2byte ITEM_ICE_HEAL
-# 28 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.2byte ITEM_POKE_DOLL
+# 26 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_NONE
 
 WaddleDeeTown_Mart_EventScript_Delivery::
-# 33 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 31 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	lock
-# 34 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 32 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	faceplayer
-# 35 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 33 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	msgbox WaddleDeeTown_Mart_EventScript_Delivery_Text_0
-# 40 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 38 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Mart_EventScript_Socialite::
-# 45 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 43 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	lock
-# 46 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 44 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	faceplayer
-# 47 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 45 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	msgbox WaddleDeeTown_Mart_EventScript_Socialite_Text_0
-# 53 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 51 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	release
 	return
 
 
 WaddleDeeTown_Mart_EventScript_Delivery_Text_0:
-# 35 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 33 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.string "There's a department store being built\n"
 	.string "in the northeast corner of town.\p"
 	.string "It'll be hard for this shop to compete\n"
 	.string "with the variety of items sold there…$"
 
 WaddleDeeTown_Mart_EventScript_Socialite_Text_0:
-# 47 "data/maps/WaddleDeeTown_Mart/scripts.pory"
+# 45 "data/maps/WaddleDeeTown_Mart/scripts.pory"
 	.string "Even when the department store opens,\n"
 	.string "I'll keep coming back to this shop.\p"
 	.string "I come by often enough for the clerks\n"

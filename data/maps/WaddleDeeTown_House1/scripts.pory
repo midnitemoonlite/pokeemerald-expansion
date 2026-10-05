@@ -10,8 +10,8 @@ script WaddleDeeTown_House1_EventScript_InBed
     msgbox("I heard about Dedede's Royal Royale
             going on, but\. I'm too tired for it.
             
-            There wasn't a single star in the
-            sky last night. I couldn't sleep.")
+            I just couldn't fall asleep last night\.
+            I don't know what came over me!")
     release
 }
 

@@ -1,0 +1,143 @@
+raw `
+MallowGardens_LeftRoom_MapScripts::
+	.byte 0
+`
+
+script MallowGardens_LeftRoom_EventScript_Ribbon
+{
+    lock
+    faceplayer
+    msgbox("Considering nobody lives in this place,
+            it's surpisingly well-kept.
+            
+            An old, abandoned castle sounds like it
+            would be scary and haunted, doesn't it?")
+    release
+}
+
+script MallowGardens_LeftRoom_EventScript_Gentleman
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_METRONOME))
+    {
+        msgbox("Salutations, my dear fellow! I'm
+            quite enjoying the Royal Royale.
+            
+            And so, I've organized a little trial
+            in this room for other participants.
+            
+            Win a battle against me, and I'll
+            gift you an item. How does that sound?", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox("Splendid! Let's see how you fare in a
+                    game of chance!")
+            trainerbattle_no_intro(TRAINER_RICKY_5, MallowGardens_Text_GentDefeat)
+            msgbox("Bravo! You managed to best my team!
+            
+                    It may not be very strong, but it was
+                    fun seeing what moves came next, yes?
+                    
+                    As promised, here is your prize: your
+                    very own metronome!")
+            giveitem(ITEM_METRONOME, 1)
+            setflag(FLAG_RECEIVED_METRONOME)
+        }
+        else
+        {
+            msgbox("No takers? What a shame, what a shame\.")
+            release
+            end
+        }
+    }
+    msgbox("This is an item that increases the
+            power of a Helper's move when
+            it is used in succession.
+                    
+            It may not be very effective when
+            used alongside the move Metronome\.
+                    
+            If you did get the same move twice in a
+            row, though, you'd be very lucky!")
+    release
+}
+
+script MallowGardens_LeftRoom_EventScript_Chef
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RUSTBORO_NPC_TRADE_COMPLETED))
+    {
+        msgbox("I ended up taking a closer look at the
+                Snooter you traded me\.
+                
+                It seems to have a different ability,
+                which gives it its trademark appetite.
+                
+                Hmm\. did the Snooter I give you have
+                some kind of particularly rare ability?
+                
+                I don't know the best way to use it in
+                battle, but maybe you can figure it out!")
+    }
+    elif(!flag(FLAG_RUSTBORO_NPC_TRADE_COMPLETED))
+    {
+        ingame_trade(INGAME_TRADE_SNOOTER, MallowGardens_LeftRoom_TradeMessage, MallowGardens_LeftRoom_DeclineScript, MallowGardens_LeftRoom_WrongScript, MallowGardens_LeftRoom_CompleteMessage)
+        setflag(FLAG_RUSTBORO_NPC_TRADE_COMPLETED)
+    }
+    release
+}
+
+text MallowGardens_LeftRoom_TradeMessage
+{
+    "Oh, dear\. what should I do?
+    
+    I heard of this Helper named Snooter,
+    who supposedly had a refined palate.
+    
+    I came all this way to find one, hoping
+    it would help with my cooking skills\.
+    but this one is so temperamental!
+    
+    It gets so angry, it refuses to eat
+    most of what I give it, and storms off.
+    
+    I hate to bother you, but could you help
+    me with befriending another Snooter?
+    
+    In return, I'll trade this one to you.
+    A Snooter-for-Snooter exchange!"
+}
+
+script MallowGardens_LeftRoom_DeclineScript
+{
+    msgbox("Oh well\. I should have figured such a
+            moody Helper was a tough sell.")
+    release
+}
+
+script MallowGardens_LeftRoom_WrongScript
+{
+    msgbox("I'm sorry, but this isn't quite the
+            Snooter I'm looking for\.
+            
+            Snooters are stout creatures with big
+            mouths. They're unmistakable!")
+    release
+}
+
+text MallowGardens_LeftRoom_CompleteMessage
+{
+    "Ahh, yes! This one seems more relaxed.
+    Thank you for your assistance!
+    
+    Now, Snooter and I will work together
+    to become the greatest chef duo!"
+}
+
+text MallowGardens_Text_GentDefeat
+{
+    "How exciting! You never know what will
+    come next this way!"
+}
