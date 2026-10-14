@@ -55,9 +55,11 @@ script MallowGardens_RightRoom_EventScript_Vendor
             Hey, for such a strong trainer, I've
             got a special deal for you.")
         showmoneybox(0, 0)
-        msgbox("One extra-rare, extra-powerful Helper
-                for the low, low cost of ¥500! You in?", MSGBOX_YESNO)
-        if(var(VAR_RESULT) == YES)
+        message("One extra-rare, extra-powerful Helper
+                for the low, low cost of ¥500! You in?")
+        waitmessage
+        dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, MallowGardens_RightRoom_Text_ImIn, MallowGardens_RightRoom_Text_ImOut)
+        if(var(VAR_RESULT) == 0)
         {
             checkmoney(500)
             if(!var(VAR_RESULT))
@@ -137,4 +139,14 @@ script MallowGardens_RightRoom_EventScript_CantAfford
             Are you trying to swindle me?")
     release
     end
+}
+
+text MallowGardens_RightRoom_Text_ImIn
+{
+    "I'M IN"
+}
+
+text MallowGardens_RightRoom_Text_ImOut
+{
+    "I'M OUT"
 }

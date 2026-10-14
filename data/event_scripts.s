@@ -1835,3 +1835,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/MallowGardens_LeftRoom/scripts.inc"
 
 	.include "data/maps/MallowGardens_RightRoom/scripts.inc"
+
+	.include "data/maps/MallowCastle_1F/scripts.inc"
+
+	.include "data/maps/MallowCastle_2F/scripts.inc"
+
+	.include "data/maps/MallowCastle_3F/scripts.inc"
+
+	.include "data/maps/MallowCastle_4F/scripts.inc"

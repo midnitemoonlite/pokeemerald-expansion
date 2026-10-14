@@ -1169,11 +1169,12 @@ script ResortArena_EventScript_ForfeitConfirmation
             throw in the towel now?
             
             Just a heads up; {COLOR RED}you'll have to start
-            the tournament anew if you do{COLOR DARK_GRAY}!
-            
-            Are you absolutely, positively sure
-            you want to retire now?", MSGBOX_YESNO)
-        if(var(VAR_RESULT))
+            the tournament anew if you do{COLOR DARK_GRAY}!")
+        message("Are you absolutely, positively sure
+                you want to retire now?")
+        waitmessage
+        dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, WaddleDeeArena_Text_ToughItOut, WaddleDeeArena_Text_AcceptDefeat)
+        if(var(VAR_RESULT) == 1)
         {
             msgbox("Well, sorry, folks! Looks like this
                     promising run is being cut short!")
@@ -1187,7 +1188,7 @@ script ResortArena_EventScript_ForfeitConfirmation
             special(RemoveCameraObject)
             goto(ResortArena_EventScript_CommentatorBye)
         }
-        elif(!var(VAR_RESULT))
+        else
         {
             goto(ResortArena_EventScript_Break)
         }

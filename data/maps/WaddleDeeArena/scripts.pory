@@ -757,11 +757,12 @@ script WaddleDeeArena_EventScript_ForfeitConfirmation
             throw in the towel now?
             
             Just a heads up; {COLOR RED}you'll have to start
-            the tournament anew if you do{COLOR DARK_GRAY}!
-            
-            Are you absolutely, positively sure
-            you want to retire now?", MSGBOX_YESNO)
-        if(var(VAR_RESULT))
+            the tournament anew if you do{COLOR DARK_GRAY}!")
+        message("Are you absolutely, positively sure
+                you want to retire now?")
+        waitmessage
+        dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, WaddleDeeArena_Text_ToughItOut, WaddleDeeArena_Text_AcceptDefeat)
+        if(var(VAR_RESULT) == 1)
         {
             msgbox("Well, sorry, folks! Looks like this
                     promising run is being cut short!")
@@ -775,7 +776,7 @@ script WaddleDeeArena_EventScript_ForfeitConfirmation
             special(RemoveCameraObject)
             goto(WaddleDeeArena_EventScript_CommentatorBye)
         }
-        elif(!var(VAR_RESULT))
+        else
         {
             goto(WaddleDeeArena_EventScript_Break)
         }
@@ -1001,8 +1002,8 @@ script WaddleDeeArena_EventScript_MoveTutorLeave
 
 text WaddleDeeArena_Text_Challenger1
 {
-    "For every battle that has a winner,
-    there must be another who doesn't\."
+    "Not everyone who makes it to the Arena
+    will be able to win\."
 }
 
 text WaddleDeeArena_Text_Challenger2
@@ -1023,4 +1024,14 @@ text WaddleDeeArena_Text_Magolor
     
     But I suppose bringing the best out of
     your friends is what you do, right?"
+}
+
+text WaddleDeeArena_Text_ToughItOut
+{
+    "TOUGH IT OUT"
+}
+
+text WaddleDeeArena_Text_AcceptDefeat
+{
+    "ACCEPT DEFEAT"
 }

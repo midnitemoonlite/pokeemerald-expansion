@@ -5,6 +5,13 @@ MallowGardens_MapScripts::
 
 script MallowGardens_EventScript_Sign
 {
+    msgbox("MALLOW COURTYARD
+            Behold Dream Land's largest garden.", MSGBOX_SIGN)
+    closemessage
+}
+
+script MallowGardens_EventScript_CastleSign
+{
     msgbox("Now approaching: MALLOW CASTLE
             A lavish palace from a bygone age.", MSGBOX_SIGN)
     closemessage
@@ -192,7 +199,7 @@ script MallowGardens_EventScript_Dedede
     closemessage
     applymovement(LOCALID_COURTYARD_DEDEDE, moves(walk_slow_up))
     waitmovement()
-    msgbox("Uh huh\. look, Kirby, I like ya, so
+    msgbox("{SPEAKER NAME_DEDEDE}Uh huh\. look, Kirby, I like ya, so
             here's a little piece of advice from me:")
     closemessage
     applymovement(LOCALID_COURTYARD_DEDEDE, moves(walk_fast_down))
@@ -319,7 +326,7 @@ text MallowGardens_Text_NoRegrets
 
 text MallowGardens_Text_No
 {
-    "NO"
+    "YES REGRETS"
 }
 
 script MallowGardens_EventScript_SoldierDeny
@@ -416,7 +423,6 @@ script MallowGardens_EventScript_SoldierAlt
     trainerbattle_single(TRAINER_RICKY_4, MallowGardens_Text_SoldierIntro, MallowGardens_Text_SoldierDefeated, MallowGardens_Text_SoldierPost)
 }
 
-
 text MallowGardens_Text_SoldierIntro
 {
     "Halt! Under the Great King's orders,
@@ -434,4 +440,28 @@ text MallowGardens_Text_SoldierDefeated
 text MallowGardens_Text_SoldierPost
 {
     "Look"
+}
+
+script MallowGardens_EventScript_Trainer
+{
+    trainerbattle_single(TRAINER_RANDALL, MallowGardens_Text_TrainerIntro, MallowGardens_Text_TrainerDefeated)
+    msgbox(MallowGardens_Text_TrainerPost, MSGBOX_AUTOCLOSE)
+}
+
+text MallowGardens_Text_TrainerIntro
+{
+    "I sniffed it! From aaall the way at the
+    beach, squeak! There's treasure here!"
+}
+
+text MallowGardens_Text_TrainerDefeated
+{
+    "Squeak\. maybe that treasure is better
+    off in your hands, after all."
+}
+
+text MallowGardens_Text_TrainerPost
+{
+    "I've gotten pretty far from the rest of
+    the squad\. how will I get back?"
 }

@@ -321,13 +321,13 @@ GreenRestArea_EventScript_RivalBattle_Text_0:
 	.string "battling with my Helpers.\p"
 	.string "So… uh… if it's okay with you…\n"
 	.string "can I ask for a battle?\p"
-	.string "My team and I are feeling pretty\n"
-	.string "confident about our synergy!$"
+	.string "Battling against a friend like you\n"
+	.string "sounds pretty exciting!$"
 
 GreenRestArea_EventScript_RivalBattle_Text_1:
 # 150 "data/maps/GreenRestArea/scripts.pory"
 	.string "{SPEAKER NAME_BANDANA}That was a good battle, Kirby. I guess\n"
-	.string "I've still got a lot to learn, huh?\p"
+	.string "we've still got a lot to learn, huh?\p"
 	.string "I'll have to round out my team more to\n"
 	.string "get the upper hand. And of course,\l"
 	.string "that'll fill out my Info Cards too!\p"
@@ -340,5 +340,4 @@ GreenRestArea_BandanaDeeIntro::
 
 GreenRestArea_Text_BandanaWaddleDeeDefeat::
 # 170 "data/maps/GreenRestArea/scripts.pory"
-	.string "Even though we trained, I guess it's\n"
-	.string "not that simple…$"
+	.string "Wow! So that's what a real battle's like…$"

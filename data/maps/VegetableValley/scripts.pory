@@ -227,8 +227,12 @@ script VegetableValley_EventScript_BandanaWaddleDee
     msgbox("{SPEAKER NAME_BANDANA}Oh yeah, I almost forgot. Here, Kirby,
             this is for you!")
     giveitem_msg(VegetableValley_Text_ReceivedEscapeRope, ITEM_ESCAPE_ROPE, 1, MUS_RG_OBTAIN_KEY_ITEM)
-    msgbox("{SPEAKER NAME_BANDANA}If you get lost in the forest, you can
-            use this as an emergency exit.
+    msgbox("{SPEAKER NAME_BANDANA}Gooey came all the way over to town to
+            give this to me. I guess he could tell
+            you'll be gone for a while.
+
+            If you get lost in the forest, put in a
+            call for an emergency exit, alright?
             
             Catch you later, Kirby!")
     closemessage
@@ -254,7 +258,7 @@ script VegetableValley_EventScript_BandanaWaddleDee
 
 text VegetableValley_Text_ReceivedEscapeRope
 {
-    "{SPEAKER NAME_NONE}Obtained the {COLOR BLUE}Escape Rope{COLOR DARK_GRAY}!"
+    "{SPEAKER NAME_NONE}Obtained the {COLOR BLUE}Cell Phone{COLOR DARK_GRAY}!"
 }
 
 text VegetableValley_Text_BandanaWaddleDeeDefeat

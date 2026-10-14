@@ -1090,12 +1090,12 @@
 #define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D // Float Islands - Item 3
 #define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E // Float Islands (Big Cave) - Item 1
 #define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F // Float Islands (Big Cave) - Item 2
-#define FLAG_ITEM_PETALBURG_CITY_ETHER                              0x410
-#define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
-#define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
-#define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415
+#define FLAG_ITEM_PETALBURG_CITY_ETHER                              0x410 // Mallow Castle - Item 1
+#define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411 // Mallow Castle - Item 2
+#define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412 // Mallow Castle - Item 3
+#define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413 // Mallow Castle - Item 4
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414 // Mallow Castle - Item 5
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415 // Mallow Castle - Item 6
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418

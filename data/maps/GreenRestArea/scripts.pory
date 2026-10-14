@@ -136,8 +136,8 @@ script GreenRestArea_EventScript_RivalBattle
             So\. uh\. if it's okay with you\.
             can I ask for a battle?
             
-            My team and I are feeling pretty
-            confident about our synergy!")
+            Battling against a friend like you
+            sounds pretty exciting!")
     closemessage
     switch(var(VAR_STARTER_MON)) {
 		case 0:
@@ -148,7 +148,7 @@ script GreenRestArea_EventScript_RivalBattle
 			trainerbattle_no_intro(TRAINER_GRUNT_SEAFLOOR_CAVERN_1, GreenRestArea_Text_BandanaWaddleDeeDefeat)
 	}
     msgbox("{SPEAKER NAME_BANDANA}That was a good battle, Kirby. I guess
-            I've still got a lot to learn, huh?
+            we've still got a lot to learn, huh?
             
             I'll have to round out my team more to
             get the upper hand. And of course,
@@ -169,6 +169,5 @@ script GreenRestArea_EventScript_RivalBattle
 
 text GreenRestArea_Text_BandanaWaddleDeeDefeat
 {
-	"Even though we trained, I guess it's
-    not that simple\."
+	"Wow! So that's what a real battle's like\."
 }

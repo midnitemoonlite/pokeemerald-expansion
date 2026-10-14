@@ -81,212 +81,211 @@ BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne::
 # 52 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay 16
 # 53 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_4, MSGBOX_YESNO
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_4
+# 54 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	message BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_5
+# 56 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmessage
 # 57 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	compare VAR_RESULT, YES
+	dynmultichoice 20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, BattleshipHalberd_Helm_Text_ItsFun, BattleshipHalberd_Helm_Text_NotReally
+# 58 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_2
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_1:
-# 62 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	compare VAR_RESULT, NO
-	goto_if_eq BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_5
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_4:
-# 67 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	closemessage
-# 68 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_2
-# 69 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 70 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	delay 8
-# 71 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 65 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_7
-# 84 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_1:
+# 68 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	closemessage
-# 85 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_VUL, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_6
-# 86 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 87 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_8
-# 89 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_7
-# 90 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_9
-# 91 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	closemessage
-# 92 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_VUL, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_8
-# 93 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 69 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_2
-# 94 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 70 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	waitmovement
-# 95 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 71 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	delay 8
+# 72 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_8
+# 85 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	closemessage
+# 86 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_VUL, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_6
+# 87 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
+# 88 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_9
+# 90 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_7
+# 91 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_10
+# 92 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	closemessage
+# 93 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_VUL, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_8
+# 94 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_2
+# 95 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
 # 96 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	closemessage
-# 97 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_EXIT
-# 98 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	addobject LOCALID_HELM_AXE
-# 99 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitse
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_AXE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_9
-# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_EXIT
-# 102 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	addobject LOCALID_HELM_MACE
-# 103 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitse
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_MACE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_10
-# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_EXIT
-# 106 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	addobject LOCALID_HELM_TRIDENT
-# 107 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitse
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_TRIDENT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_11
-# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_EXIT
-# 110 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	addobject LOCALID_HELM_JAVELIN
-# 111 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitse
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_JAVELIN, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_12
-# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 114 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_11
-# 119 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	trainerbattle_no_intro TRAINER_GWEN, BattleshipHalberd_Helm_Text_MetaKnightOneDefeat
-# 120 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_TRIDENT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13
-# 121 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_LEDGE
-# 122 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 123 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_12
-# 124 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 97 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	closemessage
-# 125 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_MACE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13
-# 126 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_LEDGE
-# 127 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 128 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_13
-# 129 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	closemessage
-# 130 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_AXE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13
-# 131 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_LEDGE
-# 132 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 133 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_14
-# 135 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	closemessage
-# 136 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_JAVELIN, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13
-# 137 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_LEDGE
-# 138 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 139 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_15
-# 141 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	closemessage
-# 142 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_14
-# 143 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 144 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_16
-# 145 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_TRIDENT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15
-# 146 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_MACE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15
-# 147 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_AXE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15
-# 148 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_JAVELIN, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15
-# 149 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_17
-# 158 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	closemessage
-# 159 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 98 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	playse SE_EXIT
-# 160 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	addobject LOCALID_HELM_SAILOR
-# 161 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 99 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	addobject LOCALID_HELM_AXE
+# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	waitse
-# 162 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_SAILOR, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_16
-# 163 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_AXE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_9
+# 102 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_EXIT
+# 103 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	addobject LOCALID_HELM_MACE
+# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitse
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_MACE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_10
+# 106 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_EXIT
+# 107 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	addobject LOCALID_HELM_TRIDENT
+# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitse
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_TRIDENT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_11
+# 110 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_EXIT
+# 111 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	addobject LOCALID_HELM_JAVELIN
+# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitse
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_JAVELIN, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_12
+# 114 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	waitmovement
-# 164 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 115 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_12
+# 120 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	trainerbattle_no_intro TRAINER_GWEN, BattleshipHalberd_Helm_Text_MetaKnightOneDefeat
+# 121 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_TRIDENT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13
+# 122 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	playse SE_LEDGE
-# 165 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_SAILOR, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_17
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_PLAYER, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_18
-# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 123 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	waitmovement
-# 168 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 124 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_13
+# 125 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	closemessage
+# 126 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_MACE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13
+# 127 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_LEDGE
+# 128 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
+# 129 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_14
+# 130 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	closemessage
+# 131 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_AXE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13
+# 132 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_LEDGE
+# 133 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
+# 134 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_15
+# 136 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	closemessage
+# 137 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_JAVELIN, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13
+# 138 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_LEDGE
+# 139 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
+# 140 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_16
+# 142 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	closemessage
+# 143 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_14
+# 144 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
+# 145 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_17
+# 146 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_TRIDENT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15
+# 147 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_MACE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15
+# 148 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_AXE, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15
+# 149 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_JAVELIN, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15
+# 150 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_18
-# 173 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 159 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	closemessage
-# 174 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	playse SE_PIN
-# 175 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_VUL, Common_Movement_ExclamationMark
-# 176 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 160 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_EXIT
+# 161 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	addobject LOCALID_HELM_SAILOR
+# 162 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitse
+# 163 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_SAILOR, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_16
+# 164 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	waitmovement
-# 177 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 165 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_LEDGE
+# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_SAILOR, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_17
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_PLAYER, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_18
+# 168 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
+# 169 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_19
+# 174 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	closemessage
+# 175 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	playse SE_PIN
+# 176 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_VUL, Common_Movement_ExclamationMark
+# 177 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
 # 178 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	closemessage
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_19
-# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 181 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_20
-# 186 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	setspeaker NULL
-# 187 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	giveitem_msg BattleshipHalberd_Helm_Text_ReceivedKinesPresent, ITEM_SAPPHIRE, 1, MUS_RG_OBTAIN_KEY_ITEM
-# 188 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_21
-# 189 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_20
-# 190 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	waitmovement
-# 191 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_22
-# 196 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	closemessage
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_19
+# 181 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
+# 182 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_21
+# 187 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	setspeaker NULL
+# 188 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	giveitem_msg BattleshipHalberd_Helm_Text_ReceivedKinesPresent, ITEM_SAPPHIRE, 1, MUS_RG_OBTAIN_KEY_ITEM
+# 189 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_22
+# 190 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	applymovement LOCALID_HELM_METAKNIGHT, BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_20
+# 191 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	waitmovement
+# 192 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_23
 # 197 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	setvar VAR_ORANGE_OCEAN_STATE, 1
+	closemessage
 # 198 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	setvar VAR_ORANGE_OCEAN_STATE, 1
+# 199 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	warp MAP_ORANGE_OCEAN, 14, 31
 	return
 
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_2:
-# 59 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_5
-	goto BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_1
-
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_5:
-# 64 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 60 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	msgbox BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_6
-	goto BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_4
+	goto BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_1
 
 
 # 14 "data/maps/BattleshipHalberd_Helm/scripts.pory"
@@ -333,211 +332,211 @@ BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_5:
 	face_left
 	step_end
 
-# 85 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 86 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_6:
-# 85 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 86 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_left
-# 85 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 86 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_left
-# 85 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 86 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 89 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 90 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_7:
-# 89 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 90 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_right
 	step_end
 
-# 92 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 93 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_8:
-# 92 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 93 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_down
 	step_end
 
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_9:
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_right
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 100 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 101 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_10:
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_left
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 104 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 105 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_11:
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_left
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_left
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 108 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 109 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_12:
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_right
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_right
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 112 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 113 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 120 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 121 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_13:
-# 120 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 121 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 142 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 143 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_14:
-# 142 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 143 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_fast_down
-# 142 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 143 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_fast_down
-# 142 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 143 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_fast_down
 	step_end
 
-# 145 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 146 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_15:
-# 145 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 146 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_up
 	step_end
 
-# 162 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 163 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_16:
-# 162 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 163 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 162 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 163 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 162 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 163 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 162 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 163 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 165 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_17:
-# 165 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
-# 165 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_18:
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	jump_left
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_right
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_left
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_down
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_right
-# 166 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 167 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_up
 	step_end
 
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_19:
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_right
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_down
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	face_right
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_right
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_right
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	delay_16
-# 179 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 180 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_slow_down
 	step_end
 
-# 189 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 190 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Movement_20:
-# 189 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 190 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	walk_in_place_up
 	step_end
 
@@ -565,22 +564,25 @@ BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_3:
 
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_4:
 # 53 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	.string "{SPEAKER NAME_META}I see. Your “Helpers”.\p"
-	.string "Tell me, Kirby. Have you been enjoying\n"
-	.string "the king's little diversion?$"
+	.string "{SPEAKER NAME_META}I see. Your “Helpers”.$"
 
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_5:
-# 59 "data/maps/BattleshipHalberd_Helm/scripts.pory"
-	.string "{SPEAKER NAME_META}Of course you are. You're still so naive\n"
-	.string "when it comes to fun and games.$"
+# 54 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	.string "{SPEAKER NAME_META}Tell me, Kirby. Have you been enjoying\n"
+	.string "the king's little diversion?$"
 
 BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_6:
-# 64 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 60 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	.string "{SPEAKER NAME_META}Of course you are. You're still so naive\n"
+	.string "when it comes to these frivolities.$"
+
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_7:
+# 65 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}Is that so? Hmhm… ha ha ha.\n"
 	.string "How amusing. Maybe I misjudged you.$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_7:
-# 71 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_8:
+# 72 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}Let me tell you something. The\n"
 	.string "Royal Royale is not to be trusted.\p"
 	.string "Dedede, of all people, looking to give up\n"
@@ -592,50 +594,50 @@ BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_7:
 	.string "something sinister is afoot, I'm sure.\l"
 	.string "And I will be the one to stop it!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_8:
-# 87 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_9:
+# 88 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Lord Meta Knight, I trust you have not\n"
 	.string "forgotten our plan?$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_9:
-# 90 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_10:
+# 91 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}Of course not. But first…$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_10:
-# 95 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_11:
+# 96 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}Meta-Knights! To the helm, immediately!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_11:
-# 114 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_12:
+# 115 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}I can't let trespassing on the Halberd\n"
 	.string "go unpunished, Kirby!\p"
 	.string "Come, and let me show you how a real\n"
 	.string "leader's army operates!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_12:
-# 123 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_13:
+# 124 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Lord Meta Knight! We've failed you!!!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_13:
-# 128 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_14:
+# 129 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Forgive us! Dem Helpers are too strong!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_14:
-# 133 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_15:
+# 134 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Give us another shot! Please! We'll get\n"
 	.string "it right this time!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_15:
-# 139 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_16:
+# 140 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Can we even beat Kirby like this!? Do we\n"
 	.string "really need Helpers to stand a chance?!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_16:
-# 144 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_17:
+# 145 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}Enough!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_17:
-# 149 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_18:
+# 150 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}You've already suffered one loss.\n"
 	.string "Fighting now will do you no good.\p"
 	.string "Kirby… I underestimated your potential\n"
@@ -644,38 +646,46 @@ BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_17:
 	.string "However, that doesn't mean I'll forgive\n"
 	.string "your transgressions so easily…!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_18:
-# 168 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_19:
+# 169 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Lord Meta Knight, please stop! Kirby's\n"
 	.string "not here to interfere with us!\p"
 	.string "He's just looking for a present his\n"
 	.string "friend dropped in the ocean here!$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_19:
-# 177 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_20:
+# 178 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Hm? Hrrm!? You mean this here?$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_20:
-# 181 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_21:
+# 182 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}…\p"
 	.string "I see…\p"
 	.string "Take this.$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_21:
-# 188 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_22:
+# 189 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}Now…$"
 
-BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_22:
-# 191 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne_Text_23:
+# 192 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "{SPEAKER NAME_META}Crew! Eject Kirby from the premises!\n"
 	.string "And prepare for liftoff!\p"
 	.string "The Halberd will fly again! It's time to\n"
 	.string "put a stop to King Dedede's plot!$"
 
 BattleshipHalberd_Helm_Text_MetaKnightOneDefeat::
-# 202 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 203 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Hmph…$"
 
 BattleshipHalberd_Helm_Text_ReceivedKinesPresent::
-# 207 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+# 208 "data/maps/BattleshipHalberd_Helm/scripts.pory"
 	.string "Kirby received the {COLOR RED}Present{COLOR DARK_GRAY}!$"
+
+BattleshipHalberd_Helm_Text_ItsFun::
+# 213 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	.string "IT'S FUN$"
+
+BattleshipHalberd_Helm_Text_NotReally::
+# 218 "data/maps/BattleshipHalberd_Helm/scripts.pory"
+	.string "NOT REALLY$"

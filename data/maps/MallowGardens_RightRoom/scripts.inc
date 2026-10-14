@@ -48,9 +48,9 @@ MallowGardens_RightRoom_EventScript_Vendor::
 	faceplayer
 # 50 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	goto_if_unset FLAG_BOUGHT_PRANK, MallowGardens_RightRoom_EventScript_Vendor_2
-# 126 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 128 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_6
-# 131 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 133 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	release
 	return
 
@@ -60,130 +60,134 @@ MallowGardens_RightRoom_EventScript_Vendor_2:
 # 57 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	showmoneybox 0, 0
 # 58 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_1, MSGBOX_YESNO
+	message MallowGardens_RightRoom_EventScript_Vendor_Text_1
 # 60 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	compare VAR_RESULT, YES
+	waitmessage
+# 61 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	dynmultichoice 20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, MallowGardens_RightRoom_Text_ImIn, MallowGardens_RightRoom_Text_ImOut
+# 62 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	compare VAR_RESULT, 0
 	goto_if_eq MallowGardens_RightRoom_EventScript_Vendor_5
-# 118 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 120 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	hidemoneybox
-# 119 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 121 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_5
-# 123 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 125 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	release
 	end
 
 MallowGardens_RightRoom_EventScript_Vendor_5:
-# 62 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 64 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	checkmoney 500
-# 63 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 65 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MallowGardens_RightRoom_EventScript_Vendor_9
 MallowGardens_RightRoom_EventScript_Vendor_8:
-# 67 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PRANK
-# 68 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	givemon SPECIES_PRANK, 25
 # 69 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_PRANK
+# 70 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	givemon SPECIES_PRANK, 25
+# 71 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	compare VAR_RESULT, MON_CANT_GIVE
 	goto_if_eq MallowGardens_RightRoom_EventScript_Vendor_12
 MallowGardens_RightRoom_EventScript_Vendor_11:
-# 73 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	delay 16
-# 74 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	removemoney 500
 # 75 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	updatemoneybox
+	delay 16
 # 76 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	playse SE_SHOP
+	removemoney 500
 # 77 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	waitse
+	updatemoneybox
 # 78 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_2
+	playse SE_SHOP
+# 79 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	waitse
 # 80 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_2
+# 82 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	hidemoneybox
-# 81 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 83 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq MallowGardens_RightRoom_EventScript_Vendor_15
-# 95 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 97 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq MallowGardens_RightRoom_EventScript_Vendor_16
-# 109 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 111 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	compare VAR_RESULT, MON_CANT_GIVE
 	goto_if_eq MallowGardens_RightRoom_EventScript_Vendor_17
 MallowGardens_RightRoom_EventScript_Vendor_14:
-# 113 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 115 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	setflag FLAG_BOUGHT_PRANK
-# 114 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 116 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	release
 	end
 
 MallowGardens_RightRoom_EventScript_Vendor_9:
-# 65 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 67 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	goto MallowGardens_RightRoom_EventScript_CantAfford
 	goto MallowGardens_RightRoom_EventScript_Vendor_8
 
 MallowGardens_RightRoom_EventScript_Vendor_12:
-# 71 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 73 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto MallowGardens_RightRoom_EventScript_Vendor_11
 
 MallowGardens_RightRoom_EventScript_Vendor_15:
-# 83 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	playfanfare MUS_EVOLVED
-# 84 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	message MallowGardens_RightRoom_EventScript_Vendor_Text_3
 # 85 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	waitmessage
+	playfanfare MUS_EVOLVED
 # 86 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	waitfanfare
+	message MallowGardens_RightRoom_EventScript_Vendor_Text_3
 # 87 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_4, MSGBOX_YESNO
+	waitmessage
+# 88 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	waitfanfare
 # 89 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_4, MSGBOX_YESNO
+# 91 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MallowGardens_RightRoom_EventScript_Vendor_21
 	goto MallowGardens_RightRoom_EventScript_Vendor_14
 
 MallowGardens_RightRoom_EventScript_Vendor_16:
-# 97 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	playfanfare MUS_EVOLVED
-# 98 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	message MallowGardens_RightRoom_EventScript_Vendor_Text_3
 # 99 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	waitmessage
+	playfanfare MUS_EVOLVED
 # 100 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	waitfanfare
+	message MallowGardens_RightRoom_EventScript_Vendor_Text_3
 # 101 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_4, MSGBOX_YESNO
+	waitmessage
+# 102 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	waitfanfare
 # 103 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	msgbox MallowGardens_RightRoom_EventScript_Vendor_Text_4, MSGBOX_YESNO
+# 105 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MallowGardens_RightRoom_EventScript_Vendor_24
 MallowGardens_RightRoom_EventScript_Vendor_23:
-# 107 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 109 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	call Common_EventScript_TransferredToPC
 	goto MallowGardens_RightRoom_EventScript_Vendor_14
 
 MallowGardens_RightRoom_EventScript_Vendor_17:
-# 111 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 113 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	goto Common_EventScript_NoMoreRoomForPokemon
 	goto MallowGardens_RightRoom_EventScript_Vendor_14
 
 MallowGardens_RightRoom_EventScript_Vendor_21:
-# 91 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 93 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 92 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 94 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto MallowGardens_RightRoom_EventScript_Vendor_14
 
 MallowGardens_RightRoom_EventScript_Vendor_24:
-# 105 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 107 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto MallowGardens_RightRoom_EventScript_Vendor_23
 
 
 MallowGardens_RightRoom_EventScript_CantAfford::
-# 136 "data/maps/MallowGardens_RightRoom/scripts.pory"
-	msgbox MallowGardens_RightRoom_EventScript_CantAfford_Text_0
 # 138 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	msgbox MallowGardens_RightRoom_EventScript_CantAfford_Text_0
+# 140 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	release
 	end
 
@@ -226,33 +230,41 @@ MallowGardens_RightRoom_EventScript_Vendor_Text_1:
 	.string "for the low, low cost of ¥500! You in?$"
 
 MallowGardens_RightRoom_EventScript_Vendor_Text_2:
-# 78 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 80 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	.string "Great choice, kid! Here it is: Prank!\n"
 	.string "Now remember, I don't offer refunds!$"
 
 MallowGardens_RightRoom_EventScript_Vendor_Text_3:
-# 84 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 86 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	.string "You paid ¥500 and bought Prank…!$"
 
 MallowGardens_RightRoom_EventScript_Vendor_Text_4:
-# 87 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 89 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	.string "Would you like to give a nickname to\n"
 	.string "Prank?$"
 
 MallowGardens_RightRoom_EventScript_Vendor_Text_5:
-# 119 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 121 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	.string "What's the matter? Don't trust me?\n"
 	.string "C'mon, we've got a common friend!\l"
 	.string "That basically makes us pals too!$"
 
 MallowGardens_RightRoom_EventScript_Vendor_Text_6:
-# 126 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 128 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	.string "What's the matter? Feeling buyer's\n"
 	.string "remorse with your new Helper?\p"
 	.string "Aw, come on. Any friend of Magolor's\n"
 	.string "should be ready for a prank! Hehe!$"
 
 MallowGardens_RightRoom_EventScript_CantAfford_Text_0:
-# 136 "data/maps/MallowGardens_RightRoom/scripts.pory"
+# 138 "data/maps/MallowGardens_RightRoom/scripts.pory"
 	.string "Wait a minute… you can't afford this!\n"
 	.string "Are you trying to swindle me?$"
+
+MallowGardens_RightRoom_Text_ImIn::
+# 144 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	.string "I'M IN$"
+
+MallowGardens_RightRoom_Text_ImOut::
+# 149 "data/maps/MallowGardens_RightRoom/scripts.pory"
+	.string "I'M OUT$"

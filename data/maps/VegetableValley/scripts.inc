@@ -135,31 +135,31 @@ VegetableValley_EventScript_BandanaWaddleDee_1:
 	giveitem_msg VegetableValley_Text_ReceivedEscapeRope, ITEM_ESCAPE_ROPE, 1, MUS_RG_OBTAIN_KEY_ITEM
 # 230 "data/maps/VegetableValley/scripts.pory"
 	msgbox VegetableValley_EventScript_BandanaWaddleDee_Text_2
-# 234 "data/maps/VegetableValley/scripts.pory"
+# 238 "data/maps/VegetableValley/scripts.pory"
 	closemessage
-# 235 "data/maps/VegetableValley/scripts.pory"
+# 239 "data/maps/VegetableValley/scripts.pory"
 	checkobjectat 59, 9
-# 236 "data/maps/VegetableValley/scripts.pory"
+# 240 "data/maps/VegetableValley/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne VegetableValley_EventScript_BandanaWaddleDee_7
-# 243 "data/maps/VegetableValley/scripts.pory"
+# 247 "data/maps/VegetableValley/scripts.pory"
 	applymovement LOCALID_BWD_VEGETABLE, VegetableValley_EventScript_BandanaWaddleDee_Movement_1
-# 244 "data/maps/VegetableValley/scripts.pory"
+# 248 "data/maps/VegetableValley/scripts.pory"
 	waitmovement
 VegetableValley_EventScript_BandanaWaddleDee_6:
-# 246 "data/maps/VegetableValley/scripts.pory"
-	removeobject LOCALID_BWD_VEGETABLE
-# 247 "data/maps/VegetableValley/scripts.pory"
-	playse SE_EXIT
-# 248 "data/maps/VegetableValley/scripts.pory"
-	waitse
-# 249 "data/maps/VegetableValley/scripts.pory"
-	setvar VAR_VEGETABLE_VALLEY_STATE, 1
 # 250 "data/maps/VegetableValley/scripts.pory"
-	savebgm MUS_DUMMY
+	removeobject LOCALID_BWD_VEGETABLE
 # 251 "data/maps/VegetableValley/scripts.pory"
-	fadedefaultbgm
+	playse SE_EXIT
 # 252 "data/maps/VegetableValley/scripts.pory"
+	waitse
+# 253 "data/maps/VegetableValley/scripts.pory"
+	setvar VAR_VEGETABLE_VALLEY_STATE, 1
+# 254 "data/maps/VegetableValley/scripts.pory"
+	savebgm MUS_DUMMY
+# 255 "data/maps/VegetableValley/scripts.pory"
+	fadedefaultbgm
+# 256 "data/maps/VegetableValley/scripts.pory"
 	release
 	return
 
@@ -179,9 +179,9 @@ VegetableValley_EventScript_BandanaWaddleDee_5:
 	goto VegetableValley_EventScript_BandanaWaddleDee_1
 
 VegetableValley_EventScript_BandanaWaddleDee_7:
-# 238 "data/maps/VegetableValley/scripts.pory"
+# 242 "data/maps/VegetableValley/scripts.pory"
 	applymovement LOCALID_BWD_VEGETABLE, VegetableValley_EventScript_BandanaWaddleDee_Movement_0
-# 239 "data/maps/VegetableValley/scripts.pory"
+# 243 "data/maps/VegetableValley/scripts.pory"
 	waitmovement
 	goto VegetableValley_EventScript_BandanaWaddleDee_6
 
@@ -236,31 +236,31 @@ VegetableValley_EventScript_TriggerRight_Movement_0:
 	walk_up
 	step_end
 
-# 238 "data/maps/VegetableValley/scripts.pory"
+# 242 "data/maps/VegetableValley/scripts.pory"
 VegetableValley_EventScript_BandanaWaddleDee_Movement_0:
-# 238 "data/maps/VegetableValley/scripts.pory"
+# 242 "data/maps/VegetableValley/scripts.pory"
 	walk_right
-# 238 "data/maps/VegetableValley/scripts.pory"
+# 242 "data/maps/VegetableValley/scripts.pory"
 	walk_up
-# 238 "data/maps/VegetableValley/scripts.pory"
+# 242 "data/maps/VegetableValley/scripts.pory"
 	walk_up
-# 238 "data/maps/VegetableValley/scripts.pory"
+# 242 "data/maps/VegetableValley/scripts.pory"
 	walk_up
-# 238 "data/maps/VegetableValley/scripts.pory"
+# 242 "data/maps/VegetableValley/scripts.pory"
 	walk_up
 	step_end
 
-# 243 "data/maps/VegetableValley/scripts.pory"
+# 247 "data/maps/VegetableValley/scripts.pory"
 VegetableValley_EventScript_BandanaWaddleDee_Movement_1:
-# 243 "data/maps/VegetableValley/scripts.pory"
+# 247 "data/maps/VegetableValley/scripts.pory"
 	walk_left
-# 243 "data/maps/VegetableValley/scripts.pory"
+# 247 "data/maps/VegetableValley/scripts.pory"
 	walk_up
-# 243 "data/maps/VegetableValley/scripts.pory"
+# 247 "data/maps/VegetableValley/scripts.pory"
 	walk_up
-# 243 "data/maps/VegetableValley/scripts.pory"
+# 247 "data/maps/VegetableValley/scripts.pory"
 	walk_up
-# 243 "data/maps/VegetableValley/scripts.pory"
+# 247 "data/maps/VegetableValley/scripts.pory"
 	walk_up
 	step_end
 
@@ -301,8 +301,11 @@ VegetableValley_EventScript_BandanaWaddleDee_Text_1:
 
 VegetableValley_EventScript_BandanaWaddleDee_Text_2:
 # 230 "data/maps/VegetableValley/scripts.pory"
-	.string "{SPEAKER NAME_BANDANA}If you get lost in the forest, you can\n"
-	.string "use this as an emergency exit.\p"
+	.string "{SPEAKER NAME_BANDANA}Gooey came all the way over to town to\n"
+	.string "give this to me. I guess he could tell\l"
+	.string "you'll be gone for a while.\p"
+	.string "If you get lost in the forest, put in a\n"
+	.string "call for an emergency exit, alright?\p"
 	.string "Catch you later, Kirby!$"
 
 VegetableValley_Text_Trainer1Intro::
@@ -398,10 +401,10 @@ VegetableValley_Text_Trainer6Post::
 	.string "in there who punishes trespassers!$"
 
 VegetableValley_Text_ReceivedEscapeRope::
-# 255 "data/maps/VegetableValley/scripts.pory"
-	.string "{SPEAKER NAME_NONE}Obtained the {COLOR BLUE}Escape Rope{COLOR DARK_GRAY}!$"
+# 259 "data/maps/VegetableValley/scripts.pory"
+	.string "{SPEAKER NAME_NONE}Obtained the {COLOR BLUE}Cell Phone{COLOR DARK_GRAY}!$"
 
 VegetableValley_Text_BandanaWaddleDeeDefeat::
-# 260 "data/maps/VegetableValley/scripts.pory"
+# 264 "data/maps/VegetableValley/scripts.pory"
 	.string "Aww… I thought things would be\n"
 	.string "different this time. Good battle, Kirby!$"

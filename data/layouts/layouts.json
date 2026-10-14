@@ -9824,6 +9824,46 @@
       "secondary_tileset": "gTileset_BattlePike",
       "border_filepath": "data/layouts/MallowGardens_RightRoom/border.bin",
       "blockdata_filepath": "data/layouts/MallowGardens_RightRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_CASTLE_1F",
+      "name": "MallowCastle_1F_Layout",
+      "width": 16,
+      "height": 48,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "border_filepath": "data/layouts/MallowCastle_1F/border.bin",
+      "blockdata_filepath": "data/layouts/MallowCastle_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_CASTLE_2F",
+      "name": "MallowCastle_2F_Layout",
+      "width": 50,
+      "height": 42,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "border_filepath": "data/layouts/MallowCastle_2F/border.bin",
+      "blockdata_filepath": "data/layouts/MallowCastle_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_CASTLE_3F",
+      "name": "MallowCastle_3F_Layout",
+      "width": 42,
+      "height": 34,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "border_filepath": "data/layouts/MallowCastle_3F/border.bin",
+      "blockdata_filepath": "data/layouts/MallowCastle_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MALLOW_CASTLE_4F",
+      "name": "MallowCastle_4F_Layout",
+      "width": 41,
+      "height": 30,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "border_filepath": "data/layouts/MallowCastle_4F/border.bin",
+      "blockdata_filepath": "data/layouts/MallowCastle_4F/map.bin"
     }
   ]
 }

@@ -1686,8 +1686,8 @@ Ball: Net
 
 /* Float Islands - Trainer 7 */
 === TRAINER_CHARLIE ===
-Name: CHARLIE
-Class: Tuber M
+Name: Waddle Dee
+Class: Swimmer F
 Pic: Tuber M
 Gender: Male
 Music: Girl
@@ -1799,7 +1799,7 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer / Prefer Highest Damage Move / Ace Pokemon
 
-Windwhipper
+Windwhipper (M)
 Level: 68
 Ability: Wind Power
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
@@ -1809,7 +1809,7 @@ Ball: Ultra
 - Flash Cannon
 - Blizzard
 
-Gnawcodile
+Gnawcodile (M)
 Level: 68
 Ability: Merciless
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
@@ -1819,7 +1819,7 @@ Ball: Ultra
 - Outrage
 - Wave Crash
 
-Fire Lion
+Fire Lion (F)
 Level: 68
 Ability: Intimidate
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
@@ -1829,7 +1829,7 @@ Ball: Ultra
 - Shadow Claw
 - Power Whip
 
-Fangora
+Fangora (M)
 Level: 68
 Ability: Dragon's Maw
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
@@ -1839,7 +1839,7 @@ Ball: Ultra
 - Fire Blast
 - Psychic Fangs
 
-Mega Masher
+Mega Masher (M)
 Level: 72
 Ability: Battle Armor
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
@@ -1852,211 +1852,245 @@ Ball: Ultra
 /* Mallow Courtyard - Metronome Gent */
 === TRAINER_RICKY_5 ===
 Name: Waddle Dee
-Class: Rich Boy
+Class: Gentleman
 Pic: Gentleman
 Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Pierre @ Metronome
+Pierre (M) @ Metronome
 Level: 23
 Ability: Technician
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Friend
 - Metronome
 
-Poppy Bros. Jr.
+Poppy Bros. Jr. (F) @ Metronome
 Level: 23
 Ability: Prankster
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Friend
 - Metronome
 
-Tick-Tock Jr.
+Tick-Tock Jr. (F) @ Metronome
 Level: 23
 Ability: Soundproof
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Friend
 - Metronome
 
+/* Mallow Courtyard - Trainer */
 === TRAINER_RANDALL ===
-Name: RANDALL
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Hyper Potion
+Name: Squeaker
+Class: School Kid
+Pic: School Kid F
+Music: Girl
 Double Battle: No
-AI: Basic Trainer
+AI: Try To Faint / Check Bad Move
 
-Swellow
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Quick Attack
-- Agility
-- Wing Attack
-
-=== TRAINER_PARKER ===
-Name: PARKER
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
-
-Spinda
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Teeter Dance
-- Dizzy Punch
-- Focus Punch
-
-=== TRAINER_GEORGE ===
-Name: GEORGE
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
-
-Slakoth @ Sitrus Berry
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Slack Off
-- Counter
-- Shadow Ball
-
-=== TRAINER_BERKE ===
-Name: BERKE
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
-
-Vigoroth
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Focus Energy
-- Slash
-
-=== TRAINER_BRAXTON ===
-Name: BRAXTON
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
-
-Swellow
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Energy
-- Quick Attack
-- Wing Attack
-- Endeavor
-
-Trapinch
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Bite
+Digguh (F)
+Level: 24
+Ability: Earth Eater
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
 - Dig
+- Rock Throw
+- Mud-Slap
+- Growl
+
+Boxin (F)
+Level: 24
+Ability: Guard Dog
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
+- Fake Out
+- Mach Punch
+- Odor Sleuth
+- Charm
+
+/* Mallow Castle (2F) - Trainer */
+=== TRAINER_PARKER ===
+Name: Waddle Dee
+Class: Lady
+Pic: Lady
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Check Viability
+
+Whippy (M)
+Level: 24
+Ability: Limber
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Luxury
+- Tickle
+- Covet
+- Bite
+- Fire Spin
+
+Solite (F)
+Level: 24
+Ability: Illuminate
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Friend
+- Thunder Shock
+- Signal Beam
+- Disable
+- Baby-Doll Eyes
+
+/* Mallow Castle (2F) - Trainer 1 */
+=== TRAINER_GEORGE ===
+Name: Waddle Dee
+Class: Parasol Lady
+Pic: Parasol Lady
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Check Viability
+
+Halcanto Burt (M)
+Level: 25
+Ability: Keen Eye
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Friend
 - Feint Attack
-- Sand Tomb
+- Thief
+- Air Cutter
+- Trailblaze
 
-Wailmer
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Rollout
-- Whirlpool
-- Astonish
-- Water Pulse
+/* Mallow Castle (2F) - Trainer 2 */
+=== TRAINER_BERKE ===
+Name: Waddle Dee
+Class: Black Belt
+Pic: Black Belt
+Music: Intense
+Double Battle: No
+AI: Risky
 
-Magneton
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Thunderbolt
+Foley (M)
+Level: 23
+Ability: Solar Power
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
+- Grav Apple
+- Synthesis
+- Incinerate
+- Feint
+
+Walky (M)
+Level: 24
+Ability: Vital Spirit
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
+- Chatter
+- Echoed Voice
+- Screech
 - Supersonic
-- Thunder Wave
-- Sonic Boom
 
-Shiftry
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Giga Drain
-- Feint Attack
-- Double Team
-- Swagger
+Mookie (F)
+Level: 23
+Ability: Flash Fire
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Fast
+- Revenge
+- Barrage
+- Embargo
+- Scary Face
 
+/* Mallow Castle (2F) - Trainer 3 */
+=== TRAINER_BRAXTON ===
+Name: Waddle Dee
+Class: Gentleman
+Pic: Gentleman
+Music: Rich
+Double Battle: No
+AI: Check Bad Move / Check Viability
+
+Phan Phan (F) @ Sweet Apple
+Level: 24
+Ability: Sap Sipper
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Friend
+- Grav Apple
+- Seismic Toss
+- Water Gun
+- Water Sport
+
+Cookin (M) @ Expert Belt
+Level: 24
+Ability: Aroma Veil
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Luxury
+- Flame Burst
+- Chilling Water
+- Syrup Bomb
+- Disarming Voice
+
+/* Mallow Castle (3F) - Trainer 1 */
 === TRAINER_VINCENT ===
-Name: VINCENT
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Full Restore
+Name: Waddle Dee
+Class: Lady
+Pic: Lady
+Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Try To Faint
 
-Sableye
-Level: 44
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Iron Mam (M)
+Level: 26
+Ability: Iron Fist
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Great
+- Mega Punch
+- Rock Smash
+- Bulk Up
+- Taunt
 
-Medicham
-Level: 44
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Sharpedo
-Level: 44
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
+/* Mallow Castle (3F) - Trainer 2 */
 === TRAINER_LEROY ===
-Name: LEROY
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Full Restore
+Name: Waddle Dee
+Class: Gentleman
+Pic: Gentleman
+Music: Rich
 Double Battle: No
-AI: Basic Trainer
+AI: Risky
 
-Mawile
-Level: 46
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Bomber (F)
+Level: 24
+Ability: Aftermath
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
+- Selfdestruct
 
-Starmie
-Level: 46
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Bomber (M)
+Level: 24
+Ability: Aftermath
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
+- Selfdestruct
 
+Bomber (M)
+Level: 24
+Ability: Aftermath
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Heal
+- Selfdestruct
+
+/* Mallow Castle (3F) - Trainer 3 */
 === TRAINER_WILTON_1 ===
-Name: WILTON
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Super Potion
+Name: Waddle Dee
+Class: Hiker
+Pic: Hiker
+Music: Hiker
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Check Viability
 
-Electrike
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Wailmer
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Makuhita
-Level: 17
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Blockin (M) @ Focus Sash
+Level: 27
+Ability: Stakeout
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Ball: Poke
+- Mud Bomb
+- Pursuit
+- Mimic
+- Rock Throw
 
 === TRAINER_EDGAR ===
 Name: EDGAR

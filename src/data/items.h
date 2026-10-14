@@ -2409,7 +2409,7 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_ESCAPE_ROPE] =
     {
-        .name = ITEM_NAME("Escape Rope"),
+        .name = ITEM_NAME("Cell Phone"),
         .description = COMPOUND_STRING(
             "Use to escape\n"
             "instantly from a\n"

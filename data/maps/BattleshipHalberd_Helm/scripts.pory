@@ -50,16 +50,17 @@ script BattleshipHalberd_Helm_EventScript_MetaKnightEncounterOne
         waitmovement
         applymovement(LOCALID_HELM_VUL, moves(face_left))
         delay(16)
-        msgbox("{SPEAKER NAME_META}I see. Your \qoHelpers\qc.
-        
-                Tell me, Kirby. Have you been enjoying
-                the king's little diversion?", MSGBOX_YESNO)
-        if(var(VAR_RESULT) == YES)
+        msgbox("{SPEAKER NAME_META}I see. Your \qoHelpers\qc.")
+        message("{SPEAKER NAME_META}Tell me, Kirby. Have you been enjoying
+                the king's little diversion?")
+        waitmessage
+        dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, BattleshipHalberd_Helm_Text_ItsFun, BattleshipHalberd_Helm_Text_NotReally)
+        if(var(VAR_RESULT) == 0)
         {
                 msgbox("{SPEAKER NAME_META}Of course you are. You're still so naive
-                when it comes to fun and games.")
+                when it comes to these frivolities.")
         }
-        if(var(VAR_RESULT) == NO)
+        else
         {
                 msgbox("{SPEAKER NAME_META}Is that so? Hmhm\. ha ha ha.
                 How amusing. Maybe I misjudged you.")
@@ -207,4 +208,14 @@ text BattleshipHalberd_Helm_Text_MetaKnightOneDefeat
 text BattleshipHalberd_Helm_Text_ReceivedKinesPresent
 {
         "Kirby received the {COLOR RED}Present{COLOR DARK_GRAY}!"
+}
+
+text BattleshipHalberd_Helm_Text_ItsFun
+{
+        "IT'S FUN"
+}
+
+text BattleshipHalberd_Helm_Text_NotReally
+{
+        "NOT REALLY"
 }

@@ -1694,6 +1694,10 @@
     {
       "id": "MAPSEC_MALLOW_GARDENS",
       "name": "MALLOW COURTYARD"
+    },
+    {
+      "id": "MAPSEC_MALLOW_CASTLE",
+      "name": "MALLOW CASTLE"
     }
   ]
 }

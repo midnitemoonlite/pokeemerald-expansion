@@ -74,11 +74,12 @@ script IceCreamIsland_EventScript_BlueSqueakerWander
             waitmovement()
             waitse()
             msgbox("Wait a squeaking second! Is that a
-                    Dowsing Machine? It's my lucky day!
-                    
-                    Ahem\. may I, uh\. borrowww\. that
-                    Dowsing Machine of yours for a moment?", MSGBOX_YESNO)
-            if(var(VAR_RESULT) == YES)
+                    Dowsing Machine? It's my lucky day!")
+            message("Ahem\. may I, uh\. borrowww\. that
+                    Dowsing Machine of yours for a moment?")
+            waitmessage
+            dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, IceCreamIsland_Text_SureThing, IceCreamIsland_Text_SeemsShady)
+            if(var(VAR_RESULT) == 0)
             {
                 playfanfare(MUS_OBTAIN_TMHM)
                 message("Kirby handed over the
@@ -166,15 +167,16 @@ script IceCreamIsland_EventScript_MrFloatyEncounter
         msgbox("Oh, it's you again\.
         
                 I'll be honest, I haven't stopped
-                worrying about that watery beast\.
-                
-                But I haven't seen it since. Do
-                you think it's still around?", MSGBOX_YESNO)
-        if(var(VAR_RESULT) == TRUE)
+                worrying about that watery beast\.")
+        message("But I haven't seen it since. Do
+                you think it's still around?")
+        waitmessage
+        dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, IceCreamIsland_Text_Probably, IceCreamIsland_Text_MaybeNot)
+        if(var(VAR_RESULT) == 0)
         {
             goto(IceCreamIsland_EventScript_SetUpEncounter)
         }
-        if(var(VAR_RESULT) == FALSE)
+        else
         {
             msgbox("That's what I want to hear, of course,
                     but I can't help but wonder\.")
@@ -186,15 +188,16 @@ script IceCreamIsland_EventScript_MrFloatyEncounter
             beast rampaging around here\.
             
             Personally, I wouldn't let something
-            like that stop me from vacationing.
-            
-            You don't really believe a rumor like
-            that either, do you?", MSGBOX_YESNO)
-        if(var(VAR_RESULT) == TRUE)
+            like that stop me from vacationing.")
+        message("You don't really believe a rumor like
+            that either, do you?")
+        waitmessage
+        dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, IceCreamIsland_Text_SoundsLegit, IceCreamIsland_Text_OfCourseNot)
+        if(var(VAR_RESULT) == 0)
         {
             goto(IceCreamIsland_EventScript_SetUpEncounter)
         }
-        if(var(VAR_RESULT) == FALSE)
+        else
         {
             msgbox("Right! This beach is so serene, I can't
                     imagine something like that being true.")
@@ -217,7 +220,7 @@ script IceCreamIsland_EventScript_SetUpEncounter
         msgbox("Ugh\. just thinking about that
                 beast gives me the chills\.")
     }
-    playmoncry(SPECIES_BULBASAUR, CRY_MODE_NORMAL)
+    playmoncry(SPECIES_MR_FLOATY, CRY_MODE_NORMAL)
     waitmoncry()
     playse(SE_PIN)
     applymovement(LOCALID_MR_FLOATY_DEE, Common_Movement_ExclamationMark)
@@ -236,7 +239,7 @@ script IceCreamIsland_EventScript_SetUpEncounter
     }
     closemessage()
     setwildbattle(SPECIES_MR_FLOATY, 20, ITEM_SAFETY_GOGGLES)
-    playmoncry(SPECIES_BULBASAUR, CRY_MODE_ENCOUNTER)
+    playmoncry(SPECIES_MR_FLOATY, CRY_MODE_ENCOUNTER)
     waitmoncry()
     setvar(VAR_0x8004, 2)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -474,4 +477,34 @@ text IceCreamIsland_Text_Trainer7Post
     
     Maybe a legendary pirate hid it, hoping
     their name would go down in history!"
+}
+
+text IceCreamIsland_Text_SureThing
+{
+    "I'LL TRUST YOU"
+}
+
+text IceCreamIsland_Text_SeemsShady
+{
+    "SOUNDS SHADY"
+}
+
+text IceCreamIsland_Text_OfCourseNot
+{
+    "OF COURSE NOT"
+}
+
+text IceCreamIsland_Text_SoundsLegit
+{
+    "I BELIEVE IT"
+}
+
+text IceCreamIsland_Text_MaybeNot
+{
+    "MAYBE NOT"
+}
+
+text IceCreamIsland_Text_Probably
+{
+    "MOST LIKELY"
 }

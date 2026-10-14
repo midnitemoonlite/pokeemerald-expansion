@@ -75,18 +75,18 @@
 #define TRAINER_RICKY_3                      68 // Float Islands (Small Cave) - Trainer 1
 #define TRAINER_RICKY_4                      69 // Mallow Courtyard - Soldier
 #define TRAINER_RICKY_5                      70 // Mallow Courtyard - Metronome Gent
-#define TRAINER_RANDALL                      71 // Mallow Castle - Trainer 1
-#define TRAINER_PARKER                       72 // Mallow Castle - Trainer 2
-#define TRAINER_GEORGE                       73 // Mallow Castle - Trainer 3
-#define TRAINER_BERKE                        74 // Mallow Castle - Trainer 4
-#define TRAINER_BRAXTON                      75 // Mallow Castle - Trainer 5
-#define TRAINER_VINCENT                      76 // Castle Arena - Francisca
-#define TRAINER_LEROY                        77 // Castle Arena - Flamberge
-#define TRAINER_WILTON_1                     78 // Castle Arena - Zan Partizanne
-#define TRAINER_EDGAR                        79
-#define TRAINER_ALBERT                       80
-#define TRAINER_SAMUEL                       81
-#define TRAINER_VITO                         82
+#define TRAINER_RANDALL                      71 // Mallow Courtyard - Trainer
+#define TRAINER_PARKER                       72 // Mallow Castle (1F) - Trainer
+#define TRAINER_GEORGE                       73 // Mallow Castle (2F) - Trainer 1
+#define TRAINER_BERKE                        74 // Mallow Castle (2F) - Trainer 2
+#define TRAINER_BRAXTON                      75 // Mallow Castle (2F) - Trainer 3
+#define TRAINER_VINCENT                      76 // Mallow Castle (3F) - Trainer 1
+#define TRAINER_LEROY                        77 // Mallow Castle (3F) - Trainer 2
+#define TRAINER_WILTON_1                     78 // Mallow Castle (3F) - Trainer 3
+#define TRAINER_EDGAR                        79 // Castle Arena - Francisca
+#define TRAINER_ALBERT                       80 // Castle Arena - Flamberge
+#define TRAINER_SAMUEL                       81 // Castle Arena - Zan Partizanne
+#define TRAINER_VITO                         82 // Castle Arena - Nago
 #define TRAINER_OWEN                         83
 #define TRAINER_WILTON_2                     84
 #define TRAINER_WILTON_3                     85

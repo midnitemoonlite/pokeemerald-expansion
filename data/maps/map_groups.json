@@ -505,7 +505,11 @@
     "BattleshipHalberd_Reactor",
     "BattleshipHalberd_Elevator",
     "BattleshipHalberd_Hall",
-    "BattleshipHalberd_Helm"
+    "BattleshipHalberd_Helm",
+    "MallowCastle_1F",
+    "MallowCastle_2F",
+    "MallowCastle_3F",
+    "MallowCastle_4F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
