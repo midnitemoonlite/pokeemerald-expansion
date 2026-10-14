@@ -1,0 +1,534 @@
+raw `
+MallowCastle_2F_MapScripts::
+	.byte 0
+`
+
+script MallowCastle_2F_EventScript_BombBlock1
+{
+    lockall
+    playse(SE_M_DIG)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_2F_1)
+    setflag(FLAG_TEMP_1B)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(13, 25, METATILE_LilycoveMuseum_WallTop, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(13, 26, METATILE_LilycoveMuseum_WallBottom, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(13, 27, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(13, 28, METATILE_LilycoveMuseum_WallLip, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    release
+}
+
+script MallowCastle_2F_EventScript_BombBlock2
+{
+    lockall
+    playse(SE_M_DIG)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_2F_2)
+    setflag(FLAG_TEMP_1C)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(16, 25, METATILE_LilycoveMuseum_WallTop, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(16, 26, METATILE_LilycoveMuseum_WallBottom, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(16, 27, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(16, 28, METATILE_LilycoveMuseum_WallLip, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    release
+}
+
+script MallowCastle_2F_EventScript_BombBlock3
+{
+    lockall
+    playse(SE_M_DIG)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_2F_3)
+    setflag(FLAG_TEMP_1D)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(19, 25, METATILE_LilycoveMuseum_WallTop, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(19, 26, METATILE_LilycoveMuseum_WallBottom, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(19, 27, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(19, 28, METATILE_LilycoveMuseum_WallLip, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    release
+}
+
+script MallowCastle_2F_EventScript_BombBlock4
+{
+    lockall
+    playse(SE_M_DIG)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_2F_4)
+    setflag(FLAG_TEMP_1E)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(22, 25, METATILE_LilycoveMuseum_Block, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(22, 26, METATILE_LilycoveMuseum_Block, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(22, 27, METATILE_LilycoveMuseum_Block, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(22, 28, METATILE_LilycoveMuseum_Block, TRUE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    release
+}
+
+script MallowCastle_2F_EventScript_BombBlock5
+{
+    lockall
+    playse(SE_M_DIG)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_2F_5)
+    setflag(FLAG_TEMP_1F)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(30, 4, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(29, 4, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(28, 4, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(28, 5, METATILE_LilycoveMuseum_Floor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(28, 6, METATILE_LilycoveMuseum_WallLeftCorner, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(27, 6, METATILE_LilycoveMuseum_Floor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(26, 6, METATILE_LilycoveMuseum_Floor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(25, 6, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_2F_6)
+    setflag(FLAG_TEMP_9)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    release
+}
+
+script MallowCastle_2F_EventScript_BombBlock6
+{
+    lockall
+    playse(SE_M_DIG)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_2F_6)
+    setflag(FLAG_TEMP_9)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(25, 6, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(26, 6, METATILE_LilycoveMuseum_Floor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(27, 6, METATILE_LilycoveMuseum_Floor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(28, 6, METATILE_LilycoveMuseum_WallLeftCorner, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(28, 5, METATILE_LilycoveMuseum_Floor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(28, 4, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(29, 4, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    setmetatile(30, 4, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    special(DrawWholeMapView)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    playse(SE_M_DIG)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_2F_5)
+    setflag(FLAG_TEMP_1F)
+    setvar(VAR_0x8004, 1)  // vertical pan
+	setvar(VAR_0x8005, 0)  // horizontal pan
+	setvar(VAR_0x8006, 2) // num shakes
+	setvar(VAR_0x8007, 3)  // shake delay
+	special(ShakeCamera)
+    waitstate
+    release
+}
+
+script MallowCastle_2F_EventScript_Trainer
+{
+    release
+}
+
+script MallowCastle_2F_EventScript_WaddleDee
+{
+    release
+}
+
+script MallowCastle_2F_EventScript_Blockin1
+{
+    lockall
+    setwildbattle(SPECIES_BLOCKIN, 25)
+    msgbox("Uh oh! The Star Block was actually
+            a Blockin in disguise!")
+    playmoncry(SPECIES_BLOCKIN, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle()
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    removeobject(LOCALID_BLOCKIN_MALLOW_CASTLE_2F_1)
+    setflag(FLAG_TEMP_11)
+    release
+}
+
+script MallowCastle_2F_EventScript_Blockin2
+{
+    lockall
+    setwildbattle(SPECIES_BLOCKIN, 25)
+    msgbox("Uh oh! The Star Block was actually
+            a Blockin in disguise!")
+    playmoncry(SPECIES_BLOCKIN, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle()
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    removeobject(LOCALID_BLOCKIN_MALLOW_CASTLE_2F_2)
+    setflag(FLAG_TEMP_12)
+    release
+}
+
+script MallowCastle_2F_EventScript_Blockin3
+{
+    lockall
+    setwildbattle(SPECIES_BLOCKIN, 25)
+    msgbox("Uh oh! The Star Block was actually
+            a Blockin in disguise!")
+    playmoncry(SPECIES_BLOCKIN, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle()
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    removeobject(LOCALID_BLOCKIN_MALLOW_CASTLE_2F_3)
+    setflag(FLAG_TEMP_15)
+    release
+}
+
+script MallowCastle_2F_EventScript_Blockin4
+{
+    lockall
+    setwildbattle(SPECIES_BLOCKIN, 25)
+    msgbox("Uh oh! The Star Block was actually
+            a Blockin in disguise!")
+    playmoncry(SPECIES_BLOCKIN, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle()
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    removeobject(LOCALID_BLOCKIN_MALLOW_CASTLE_2F_4)
+    setflag(FLAG_TEMP_16)
+    release
+}
+
+script MallowCastle_2F_EventScript_Blockin5
+{
+    lockall
+    setwildbattle(SPECIES_BLOCKIN, 25)
+    msgbox("Uh oh! The Star Block was actually
+            a Blockin in disguise!")
+    playmoncry(SPECIES_BLOCKIN, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle()
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    removeobject(LOCALID_BLOCKIN_MALLOW_CASTLE_2F_5)
+    setflag(FLAG_TEMP_17)
+    release
+}
+
+script MallowCastle_2F_EventScript_Blockin6
+{
+    lockall
+    setwildbattle(SPECIES_BLOCKIN, 25)
+    msgbox("Uh oh! The Star Block was actually
+            a Blockin in disguise!")
+    playmoncry(SPECIES_BLOCKIN, CRY_MODE_NORMAL)
+    waitmoncry
+    setflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    dowildbattle()
+    clearflag(FLAG_SYS_CTRL_OBJ_DELETE)
+    removeobject(LOCALID_BLOCKIN_MALLOW_CASTLE_2F_6)
+    setflag(FLAG_TEMP_18)
+    release
+}
