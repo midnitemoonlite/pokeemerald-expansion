@@ -2,7 +2,7 @@
   "id": "MAP_MALLOW_CASTLE_2F",
   "name": "MallowCastle_2F",
   "layout": "LAYOUT_MALLOW_CASTLE_2F",
-  "music": "MUS_B_PALACE",
+  "music": "MUS_DESERT",
   "region_map_section": "MAPSEC_MALLOW_CASTLE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

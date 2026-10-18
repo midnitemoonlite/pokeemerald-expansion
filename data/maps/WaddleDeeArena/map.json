@@ -2,7 +2,7 @@
   "id": "MAP_WADDLE_DEE_ARENA",
   "name": "WaddleDeeArena",
   "layout": "LAYOUT_WADDLE_DEE_ARENA",
-  "music": "MUS_B_FRONTIER",
+  "music": "MUS_CONTEST_LOBBY",
   "region_map_section": "MAPSEC_WADDLE_DEE_ARENA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

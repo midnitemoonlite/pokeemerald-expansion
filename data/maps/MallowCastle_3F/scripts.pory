@@ -777,7 +777,7 @@ script MallowCastle_3F_EventScript_BombBlock9
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(6, 6, METATILE_LilycoveMuseum_Floor, FALSE)
+    setmetatile(6, 6, METATILE_LilycoveMuseum_DarkFloor, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -786,7 +786,7 @@ script MallowCastle_3F_EventScript_BombBlock9
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(6, 7, METATILE_LilycoveMuseum_Floor, FALSE)
+    setmetatile(6, 7, METATILE_LilycoveMuseum_DarkFloor, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -795,8 +795,8 @@ script MallowCastle_3F_EventScript_BombBlock9
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    checkflag(FLAG_TEMP_13)
-    call_if_unset(FLAG_TEMP_13, MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval)
+    checkflag(FLAG_TEMP_1B)
+    call_if_unset(FLAG_TEMP_1B, MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval)
     setmetatile(6, 8, METATILE_LilycoveMuseum_Floor, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
@@ -819,8 +819,8 @@ script MallowCastle_3F_EventScript_BombBlock9
 
 script MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval
 {
-    removeobject(LOCALID_BOMB_MALLOW_CASTLE_3F_4)
-    setflag(FLAG_TEMP_13)
+    removeobject(LOCALID_BOMB_MALLOW_CASTLE_3F_12)
+    setflag(FLAG_TEMP_1B)
 }
 
 script MallowCastle_3F_EventScript_BombBlock10
@@ -902,7 +902,7 @@ script MallowCastle_3F_EventScript_BombBlock11
 	setvar(VAR_0x8007, 3)  // shake delay
 	special(ShakeCamera)
     waitstate
-    delay(60)
+    delay(120)
     msgbox("Looks like that was a dud\.")
     release
 }

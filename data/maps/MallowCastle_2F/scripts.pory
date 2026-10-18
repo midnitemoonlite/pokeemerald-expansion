@@ -797,7 +797,7 @@ script MallowCastle_2F_EventScript_BombBlock6
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(1, 11, METATILE_LilycoveMuseum_WallLip, FALSE)
+    setmetatile(1, 11, METATILE_LilycoveMuseum_WallLipDark, FALSE)
     special(DrawWholeMapView)
     setflag(FLAG_TEMP_13)
     setvar(VAR_0x8004, 1)  // vertical pan

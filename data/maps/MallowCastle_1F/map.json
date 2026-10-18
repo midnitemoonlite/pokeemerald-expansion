@@ -2,7 +2,7 @@
   "id": "MAP_MALLOW_CASTLE_1F",
   "name": "MallowCastle_1F",
   "layout": "LAYOUT_MALLOW_CASTLE_1F",
-  "music": "MUS_B_PALACE",
+  "music": "MUS_DESERT",
   "region_map_section": "MAPSEC_MALLOW_CASTLE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -150,7 +150,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MallowCastle_1F_EventScript_BombBlock8",
-      "flag": "FLAG_TEMP_17"
+      "flag": "FLAG_MET_RIVAL_MOM"
     },
     {
       "local_id": "LOCALID_BLOCKIN_MALLOW_CASTLE",

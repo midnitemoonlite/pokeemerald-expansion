@@ -143,6 +143,13 @@ script WaddleDeeTown_EventScript_ParkSign
     closemessage
 }
 
+script WaddleDeeTown_EventScript_ArenaSign
+{
+    msgbox("Newly-opened: WADDLE DEE ARENA
+            Conquer it and win a Waddle Dee Brooch!", MSGBOX_SIGN)
+    closemessage
+}
+
 script WaddleDeeTown_EventScript_Fisherman
 {
     lock

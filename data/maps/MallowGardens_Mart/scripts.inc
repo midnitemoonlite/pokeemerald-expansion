@@ -29,62 +29,56 @@ MallowGardens_Mart:
 # 20 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_POKE_BALL
 # 21 "data/maps/MallowGardens_Mart/scripts.pory"
-	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_FRIEND_BALL
 # 22 "data/maps/MallowGardens_Mart/scripts.pory"
-	.2byte ITEM_LUXURY_BALL
-# 23 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_POTION
-# 24 "data/maps/MallowGardens_Mart/scripts.pory"
+# 23 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_SUPER_POTION
-# 25 "data/maps/MallowGardens_Mart/scripts.pory"
-	.2byte ITEM_REVIVE
-# 26 "data/maps/MallowGardens_Mart/scripts.pory"
+# 24 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_ANTIDOTE
-# 27 "data/maps/MallowGardens_Mart/scripts.pory"
+# 25 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
-# 28 "data/maps/MallowGardens_Mart/scripts.pory"
+# 26 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_BURN_HEAL
-# 29 "data/maps/MallowGardens_Mart/scripts.pory"
-	.2byte ITEM_ICE_HEAL
-# 30 "data/maps/MallowGardens_Mart/scripts.pory"
+# 27 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_REPEL
-# 31 "data/maps/MallowGardens_Mart/scripts.pory"
+# 28 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_POKE_DOLL
-# 32 "data/maps/MallowGardens_Mart/scripts.pory"
+# 29 "data/maps/MallowGardens_Mart/scripts.pory"
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_NONE
 
 MallowGardens_Mart_EventScript_Employee::
-# 37 "data/maps/MallowGardens_Mart/scripts.pory"
+# 34 "data/maps/MallowGardens_Mart/scripts.pory"
 	lock
-# 38 "data/maps/MallowGardens_Mart/scripts.pory"
+# 35 "data/maps/MallowGardens_Mart/scripts.pory"
 	faceplayer
-# 39 "data/maps/MallowGardens_Mart/scripts.pory"
+# 36 "data/maps/MallowGardens_Mart/scripts.pory"
 	msgbox MallowGardens_Mart_EventScript_Employee_Text_0
-# 41 "data/maps/MallowGardens_Mart/scripts.pory"
+# 38 "data/maps/MallowGardens_Mart/scripts.pory"
 	release
 	return
 
 
 MallowGardens_Mart_EventScript_Chef::
-# 46 "data/maps/MallowGardens_Mart/scripts.pory"
+# 43 "data/maps/MallowGardens_Mart/scripts.pory"
 	lock
-# 47 "data/maps/MallowGardens_Mart/scripts.pory"
+# 44 "data/maps/MallowGardens_Mart/scripts.pory"
 	faceplayer
-# 48 "data/maps/MallowGardens_Mart/scripts.pory"
+# 45 "data/maps/MallowGardens_Mart/scripts.pory"
 	msgbox MallowGardens_Mart_EventScript_Chef_Text_0
-# 59 "data/maps/MallowGardens_Mart/scripts.pory"
+# 56 "data/maps/MallowGardens_Mart/scripts.pory"
 	release
 	return
 
 
 MallowGardens_Mart_EventScript_Employee_Text_0:
-# 39 "data/maps/MallowGardens_Mart/scripts.pory"
+# 36 "data/maps/MallowGardens_Mart/scripts.pory"
 	.string "I'm supposed to be stocking shelves,\n"
 	.string "but I can't do my job with a Gordo here…$"
 
 MallowGardens_Mart_EventScript_Chef_Text_0:
-# 48 "data/maps/MallowGardens_Mart/scripts.pory"
+# 45 "data/maps/MallowGardens_Mart/scripts.pory"
 	.string "Have you noticed how the shops across\n"
 	.string "Dream Land have different stock?\p"
 	.string "Each item shop sells its own unique\n"

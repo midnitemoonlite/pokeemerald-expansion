@@ -2,7 +2,7 @@
   "id": "MAP_MALLOW_CASTLE_3F",
   "name": "MallowCastle_3F",
   "layout": "LAYOUT_MALLOW_CASTLE_3F",
-  "music": "MUS_B_PALACE",
+  "music": "MUS_DESERT",
   "region_map_section": "MAPSEC_MALLOW_CASTLE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -294,8 +294,8 @@
       "x": 2,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_MALLOW_CASTLE_4F",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_CASTLE_ARENA",
+      "dest_warp_id": "3"
     },
     {
       "x": 36,
@@ -315,7 +315,7 @@
       "x": 3,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_MALLOW_CASTLE_4F",
+      "dest_map": "MAP_CASTLE_ARENA",
       "dest_warp_id": "0"
     }
   ],

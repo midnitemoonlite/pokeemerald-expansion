@@ -2082,81 +2082,150 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Check Viability
 
-Blockin (M) @ Focus Sash
+Big Kabu (M) @ Sitrus Berry
 Level: 27
-Ability: Stakeout
+Ability: Rock Head
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Poke
-- Mud Bomb
-- Pursuit
-- Mimic
-- Rock Throw
+- Rock Tomb
+- Bulldoze
+- Zen Headbutt
+- Attack Order
 
+/* Castle Arena - Francisca */
 === TRAINER_EDGAR ===
-Name: EDGAR
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
+Name: Francisca
+Class: Dome Ace
+Pic: Leader Wattson
 Music: Cool
-Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Ace Pokemon
 
-Cacturne
-Level: 43
+Chilly (M)
+Level: 27
+Ability: Ice Body
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ball: Friend
+- Snowscape
+- Ice Punch
+- Chilling Water
+- Light Screen
 
-Pelipper
-Level: 43
+Jambeliever (F) @ Berry Juice
+Level: 26
+Ability: Steadfast
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ball: Friend
+- Ice Punch
+- Confusion
+- Fake Out
+- Wish
 
+SPECIES_GUARD_ICE (M) @ Icicle Plate
+Level: 28
+Ability: Multitype
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ball: Friend
+- Ice Punch
+- Assurance
+- Iron Defense
+- Snowscape
+
+/* Castle Arena - Flamberge */
 === TRAINER_ALBERT ===
-Name: ALBERT
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
+Name: Flamberge
+Class: Dome Ace
+Pic: Leader Flannery
 Music: Cool
-Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / Ace Pokemon / Risky
 
-Magneton
-Level: 43
+Flamer (F)
+Level: 26
+Ability: Reckless
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ball: Friend
+- Flame Charge
+- Rapid Spin
+- Take Down
+- Rollout
 
-Muk
-Level: 43
+Jambeliever (F) @ Berry Juice
+Level: 26
+Ability: Hustle
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ball: Friend
+- Fire Punch
+- Low Sweep
+- Fake Out
+- Miracle Eye
 
+SPECIES_GUARD_FIRE (M) @ Flame Plate
+Level: 28
+Ability: Multitype
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ball: Friend
+- Fire Punch
+- Pursuit
+- Chip Away
+- Stomping Tantrum
+
+/* Castle Arena - Zan Partizanne */
 === TRAINER_SAMUEL ===
-Name: SAMUEL
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
+Name: Partizanne
+Class: Palace Maven
+Pic: Leader Norman
 Music: Cool
-Items: Full Restore
 Double Battle: No
-AI: Basic Trainer
+AI: Basic Trainer / HP Aware / Omniscient / Ace Pokemon
 
-Swellow
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Plugg (F) @ Electric Seed
+Level: 28
+Ability: Electric Surge
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Ball: Friend
+- Baby-Doll Eyes
+- Metal Claw
+- Quick Attack
+- Zing Zap
 
-Mawile
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Plasma Wisp (F)
+Level: 28
+Ability: Levitate
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Ball: Friend
+- Thunder Punch
+- Swift
+- Thunder Wave
+- Laser Focus
 
-Kadabra
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Jammerjab (M) @ Berry Juice
+Level: 27
+Ability: Steadfast
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Ball: Friend
+- Thunder Punch
+- Jump Kick
+- Fake Out
+- Wish
+
+SPECIES_GUARD_ELECTRIC (F) @ Zap Plate
+Level: 30
+Ability: Multitype
+IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Ball: Friend
+- Multi-Attack
+- Ice Punch
+- Fire Punch
+- Block
+
+/* Castle Arena - Nago */
 
 === TRAINER_VITO ===
-Name: VITO
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
+Name: Partizanne
+Class: Palace Maven
+Pic: Leader Norman
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 

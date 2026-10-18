@@ -1,0 +1,1324 @@
+raw `
+CastleArena_MapScripts::
+    map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, CastleArena_OnWarp
+    map_script MAP_SCRIPT_ON_RETURN_TO_FIELD, CastleArena_OnReturnToField
+	.byte 0
+CastleArena_OnWarp:
+	map_script_2 VAR_TEMP_1, 0, CastleArena_EventScript_CreateAudience
+	.2byte 0
+
+CastleArena_OnReturnToField:
+	goto CastleArena_EventScript_CreateAudience
+	end
+`
+
+// Audience V-Objects
+script CastleArena_EventScript_CreateAudience
+{
+    setvar(VAR_TEMP_1, 0)
+    if(var(VAR_TEMP_1) == 0)
+    {
+        createvobject(OBJ_EVENT_GFX_CAMPER, 0, 22, 5, 3, DIR_SOUTH)
+        createvobject(OBJ_EVENT_GFX_HEX_MANIAC, 1, 23, 5, 3, DIR_SOUTH)
+        createvobject(OBJ_EVENT_GFX_MAN_5, 2, 24, 5, 3, DIR_SOUTH)
+        setvar(VAR_TEMP_1, 5)
+    }
+    end
+}
+// Important NPCs 
+
+script CastleArena_EventScript_Francisca
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TM_SHOCK_WAVE))
+    {
+        msgbox("{SPEAKER NAME_FRANCISCA}I wish Lord Hyness would have come with
+                us to experience the Royal Royale\.
+                
+                He rarely seems to enjoy going out if it
+                doesn't aid his own research, though.
+                
+                Maybe I should catch a Helper to bring
+                back to him? That would be nice\.
+                
+                I bet he would be fond of Pierre. It has
+                a delightfully large nose like his!")
+    }
+    elif(!flag(FLAG_RECEIVED_TM_SHOCK_WAVE) && flag(FLAG_BADGE03_GET))
+    {
+        msgbox("I should have expected no less from
+                you, Kirby. To defeat both Ms. Flamberge
+                and Ms. Zan after me is truly stellar.
+                
+                In fact, I would like to impart a little
+                gift upon you. Take it, won't you?")
+        giveitem(ITEM_TM91)
+        msgbox("Many Helpers can learn Ice Punch, even
+                if they aren't of the Ice type.
+                
+                Use it to spread the power of the
+                bitter cold amongst your team.")
+        setflag(FLAG_RECEIVED_TM_SHOCK_WAVE)
+    }
+    elif(!flag(FLAG_RECEIVED_TM_SHOCK_WAVE) && !flag(FLAG_BADGE03_GET))
+    {
+        msgbox("{SPEAKER NAME_FRANCISCA}My, my, look who it is. Have you been
+                keeping well, Kirby?
+                
+                My fellow sisters and I have been
+                travelling together for some time.
+                
+                Now, we're participating in the Royal
+                Royale as a collective as well.
+                
+                You might think there can only be one
+                winner at the end of the day\.
+                
+                But you'll soon find we're more than
+                willing to share the spoils. Ohoho!")
+    }
+    release
+}
+
+script CastleArena_EventScript_Flamberge
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TM_OVERHEAT))
+    {
+        msgbox("You know, I asked Francisca why we
+                didn't just move on after getting
+                Brooches for the three of us\.
+                
+                You know what she said? It'd be good
+                to offer extras to potential followers.
+                
+                Maybe, though\. she just really liked
+                the thrill of building a big win streak!
+                
+                Ha ha ha! Oh, that Francisca! She's so
+                cool when she's focused on battles!")
+    }
+    elif(!flag(FLAG_RECEIVED_TM_OVERHEAT) && flag(FLAG_BADGE03_GET))
+    {
+        msgbox("Hey, can't you see I'm busy trying to
+                cheer poor Francisca up?
+                
+                Sheesh, you're annoying\. look, will you
+                quit being a pest if I give you this?")
+        giveitem(ITEM_TM13)
+        msgbox("That TM teaches Fire Punch. It's a cool
+                move you can teach to your Helpers.
+                
+                \.man, I really can't believe you managed
+                to topple our invincible strategy.
+                
+                Will you ever stop being full of
+                bothersome surprises?")
+        setflag(FLAG_RECEIVED_TM_OVERHEAT)
+    }
+    elif(!flag(FLAG_RECEIVED_TM_OVERHEAT) && !flag(FLAG_BADGE03_GET))
+    {
+        msgbox("{SPEAKER NAME_FLAMBERGE}Ahahaha! Look who it is! Let me guess,
+                you're here to take on the Arena too?
+                
+                Lemme warn you, shorty, you're in for a
+                world of trouble if you take it on!
+                
+                Us three sisters are way tougher now!
+                We've been strengthening our teamwork!
+                And now\. we're basically invincible!")
+    }
+    release
+}
+
+script CastleArena_EventScript_ZanPartizanne
+{
+    lock
+    faceplayer
+    if(flag(FLAG_RECEIVED_TM_FACADE))
+    {
+        msgbox("{SPEAKER NAME_ZAN}I must admit\. that friend of yours,
+                the king who put together this event,
+                I did not assume much of him initially.
+
+                He seemed\. poorly fit for his status.
+                Greedy. Slovenly. Easily corruptible.
+
+                And yet, he put together a game to
+                teach the importance of collaboration
+                and teamwork, and unite his people\.
+
+                Perhaps I misjudged him. It seems he
+                does know what makes a good leader,
+                even if he struggles to show it\.")
+    }
+    elif(!flag(FLAG_RECEIVED_TM_FACADE) && flag(FLAG_BADGE03_GET))
+    {
+        msgbox("{SPEAKER NAME_ZAN}\.jamanke, Kirby. It's not easy to say
+                that\.
+                
+                I realize now, though, that we've been
+                sidetracked from our original mission.
+                
+                We need to move on to other Arenas, so
+                we may have a shot at the grand prize\.
+
+                And more importantly, we must continue 
+                to learn and practice from experience.
+                
+                Here. It's not much, but I hope you can
+                forgive the trouble we've caused here.")
+        giveitem(ITEM_TM30)
+        msgbox("This TM is for the move Thunder Punch.
+                It has a change to paralyze the target.
+                
+                Stopping my opponents right where they
+                stand has always been my strategy.")
+        setflag(FLAG_RECEIVED_TM_FACADE)
+    }
+    elif(!flag(FLAG_RECEIVED_TM_FACADE) && !flag(FLAG_BADGE03_GET))
+    {
+        msgbox("{SPEAKER NAME_ZAN}Ah\. it's you, Kirby. Bonjam. Are you
+                participating in the Royal Royale too?
+                
+                We, the three Mage-Sisters, would quite
+                like to try our hand at the grand prize.
+                
+                I believe it would do wonders for our
+                following, so I devised a plan with the
+                other generals to guarantee victory.
+                
+                Should you choose to challenge the
+                Arena regardless\. well, good luck.")
+    }
+    release
+}
+
+script CastleArena_EventScript_Nago
+{
+    lock
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox("{SPEAKER NAME_NAGO}Mrrow\. these girls are a real piece of
+            work, I'll tell ya what!
+            
+            Gloating about their teamwork and their
+            unstoppable Arena-winning strategy\.
+            
+            It makes me wanna win against them all
+            the more, and yet I just keep losing!
+            Can't anyone do something about them?")
+    }
+    else
+    {
+        faceplayer
+        msgbox("Kirby! I didn't even notice you there.
+                Sorry about that, mrrow!
+                
+                I was really impressed by your Helpers.
+                They might be even stronger than mine!
+                
+                Mrrow! Let's have a battle sometime,
+                okay, buddy?")
+    }
+    release
+}
+
+script CastleArena_EventScript_Shiro
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox("Myew\. it really makes me sad to see
+            Nago get so worked up. Can't we all
+            get along and play nice?")
+    }
+    else
+    {
+        msgbox("Myew! Nago's looking a lot happier now.
+                I'm so relieved!")
+    }
+    release
+}
+
+// Move Tutor
+
+script CastleArena_EventScript_MoveTutor
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox("I'm a movesmith. I know all sorts of
+                long-forgotten techniques.
+                
+                What I'm looking for\. is a commander
+                of Helpers that can wield my power.
+                
+                Do you have what it takes to spark
+                the fire kindling in my heart?")
+    }
+    else
+    {
+        goto(CastleArena_EventScript_MoveTutorEnabled)
+    }
+    release   
+}
+
+script CastleArena_EventScript_MoveTutorEnabled
+{
+    msgbox("Having watched your recent victory\.
+            I feel so invigorated! Wroaaar!
+            
+            I know some special moves that can
+            be taught to your Helpers.
+            
+            For the price of ¥1500, I'll train
+            them these new techniques.")
+    message("What do you say?
+            Which move are you interested in?")
+    waitmessage()
+    showmoneybox(0, 0)
+    multichoice(20, 0, MULTI_PALACE_MOVELIST, FALSE)
+    copyvar(VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT)
+    switch(var(VAR_RESULT)) {
+	case 0:
+		goto(CastleArena_EventScript_Move1)
+	case 1:
+		goto(CastleArena_EventScript_Move2)
+	case 2:
+		goto(CastleArena_EventScript_Move3)
+    case 3:
+		goto(CastleArena_EventScript_Move4)
+    case 4:
+		goto(CastleArena_EventScript_Move5)
+    case MULTI_B_PRESSED:
+        goto(WaddleDeeArena_EventScript_MoveTutorLeave)
+    }
+}
+
+script CastleArena_EventScript_Move1
+{
+    setvar(VAR_0x8005, MOVE_MYSTICAL_FIRE)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_MYSTICAL_FIRE, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, CastleArena_EventScript_TaughtMove)
+}
+
+script CastleArena_EventScript_Move2
+{
+    setvar(VAR_0x8005, MOVE_POISON_TAIL)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_POISON_TAIL, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, CastleArena_EventScript_TaughtMove)
+}
+
+script CastleArena_EventScript_Move3
+{
+    setvar(VAR_0x8005, MOVE_STOMPING_TANTRUM)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_STOMPING_TANTRUM, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, CastleArena_EventScript_TaughtMove)
+}
+
+script CastleArena_EventScript_Move4
+{
+    setvar(VAR_0x8005, MOVE_PAYBACK)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_PAYBACK, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, CastleArena_EventScript_TaughtMove)
+}
+
+script CastleArena_EventScript_Move5
+{
+    setvar(VAR_0x8005, MOVE_HELPING_HAND)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(WaddleDeeArena_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_HELPING_HAND, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, CastleArena_EventScript_TaughtMove)
+}
+
+script CastleArena_EventScript_TaughtMove
+{
+    showmoneybox(0,0)
+    delay(16)
+    removemoney(1500)
+    updatemoneybox()
+    playse(SE_SHOP)
+    msgbox("All done! I hope you and your Helper will
+            make the most of this new technique!")
+	copyvar(VAR_0x8004, VAR_0x8008)
+    hidemoneybox()
+    release
+}
+
+// Arena scripts
+
+script CastleArena_EventScript_Commentator
+{
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE03_GET))
+    {
+        msgbox("Once more: congraaaaatulations on your
+                fantaaaaabulous win, Kirby!
+                
+                Even a trio of talented sisters didn't
+                keep you and your Helpers from victory!
+                
+                I'll be rooting for you at the other
+                Arenas! Good luck, Kirby of the Stars!")
+    }
+    elif(!flag(FLAG_BADGE03_GET))
+    {
+        lock
+        faceplayer
+        msgbox("Wwwwwelcome to the Castle
+                Arenaaaaa!
+                
+                I'm your host, Commentator Waddle Dee,
+                here to officiate heated Helper brawls!")
+
+        goto(CastleArena_EventScript_CommentatorChoice)
+	}
+    release
+}
+
+script CastleArena_EventScript_CommentatorChoice
+{
+    message("Today's challenge: a zesty expedition!
+            How can I help you?")
+    waitmessage
+    multichoice(20, 6, MULTI_CHALLENGEINFO, FALSE)
+    switch(var(VAR_RESULT)) {
+	case 0:
+		goto(CastleArena_EventScript_BeginChallenge)
+	case 1:
+		goto(CastleArena_EventScript_CommentatorInfo)
+	case 2:
+		goto(CastleArena_EventScript_CommentatorBye)
+    case MULTI_B_PRESSED:
+        goto(CastleArena_EventScript_CommentatorBye)
+    }
+}
+
+script CastleArena_EventScript_CommentatorBye
+{
+    msgbox("If you ever want to brave the Arena,
+            you know the Waddle Dee to talk to!")
+    release
+}
+
+script CastleArena_EventScript_CommentatorInfo
+{
+    msgbox("Arenas host gauntlet-styled
+            tournaments of Helper battles.
+            
+            In this Arena, your goal is to win
+            {COLOR BLUE}3 rounds{COLOR DARK_GRAY} without any breaks.
+            
+            There's no preliminary bracket here,
+			which means retiring takes you aaaaall
+			the way back to the beginning!
+            
+            In exchange, you'll get a complementary
+			{COLOR RED}full-party heal after each round{COLOR DARK_GRAY}.
+            
+            Defeat the final opponent, and you'll
+            be awarded one Castle Brooch!
+            
+            Now then\.")
+    goto(CastleArena_EventScript_CommentatorChoice)
+}
+
+script CastleArena_EventScript_BeginChallenge
+{
+    msgbox("Alright, you've been signed up.
+            Come with me onto the stage, please!")
+    closemessage
+    setvar(VAR_ARENA_HEALS, 1)
+    setvar(VAR_ARENA_BATTLES, 0)
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    getobjectfacingdirection(LOCALID_PLAYER, VAR_TEMP_0)
+	if(var(VAR_TEMP_0) == DIR_SOUTH)
+	{
+        applymovement(LOCALID_CASTLE_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_left, walk_down * 2, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_WEST)
+	{
+		applymovement(LOCALID_CASTLE_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_left, walk_in_place_up))
+		waitmovement()
+	}
+	elif(var(VAR_TEMP_0) == DIR_EAST)
+	{
+		applymovement(LOCALID_CASTLE_COMMENTATOR, moves(walk_in_place_down))
+		applymovement(LOCALID_PLAYER, moves(walk_down, walk_right, walk_in_place_up))
+		waitmovement()
+	}
+    special(SpawnCameraObject)
+    applymovement(LOCALID_CAMERA, moves(walk_up * 6))
+    applymovement(LOCALID_CASTLE_COMMENTATOR, moves(walk_up * 7, walk_in_place_down))
+    applymovement(LOCALID_PLAYER, moves(walk_up * 6, walk_left * 3, walk_in_place_right))
+    waitmovement()
+    applymovement(LOCALID_CASTLE_COMMENTATOR, moves(walk_in_place_down * 2))
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Welcome, one and all, to the lavish
+			Castle Arena!
+            
+            We've got some exciting battles today!
+            Here's a royally recognized rising star\.
+            It's the wondrous warrior, Kirbyyy!!!")
+    }
+    elif(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("Welcome, one and all, to the lavish
+            Castle Arena!
+            
+            We've got a returning Kirby, taking
+			another swing at the impenetrable trio!
+            Can he break through them after all?")
+    }
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_CASTLE_CROWD_1, moves(walk_in_place_right * 4))
+    applymovement(LOCALID_CASTLE_CROWD_2, moves(face_down, delay_16 delay_16, face_up, delay_16, delay_16, face_left))
+    turnvobject(0, DIR_EAST)
+    turnvobject(2, DIR_WEST)
+    delay(40)
+    turnvobject(0, DIR_SOUTH)
+    turnvobject(2, DIR_SOUTH)
+    delay(20)
+    call(CastleArena_EventScript_Challenger1)
+}
+
+script CastleArena_EventScript_Challenger1
+{
+	removeobject(LOCALID_FRANCISCA)
+    setobjectxyperm(LOCALID_FRANCISCA, 21, 16)
+    addobject(LOCALID_FRANCISCA)
+    msgbox("And for his first opponent, a girl whose
+			composure is as cold as her Helpers!
+			
+			Please welcome {COLOR BLUE}Francisca{COLOR DARK_GRAY} to the stage!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_CASTLE_CROWD_1, moves(walk_in_place_right * 2))
+    applymovement(LOCALID_CASTLE_CROWD_2, moves(face_up, delay_16, delay_16, delay_16, face_left))
+    applymovement(LOCALID_FRANCISCA, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    turnvobject(0, DIR_WEST)
+    delay(32)
+    turnvobject(0, DIR_EAST)
+    delay(32)
+    turnvobject(0, DIR_SOUTH)
+    waitmovement(LOCALID_FRANCISCA)
+    delay(30)
+    applymovement(LOCALID_FRANCISCA, moves(walk_in_place_left * 2))
+    waitmovement()
+    if(!flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("{SPEAKER NAME_FRANCISCA}\.Bonjam. It's been a while, hasn't it?
+		
+		My sisters and I were traveling to
+		spread word of our new doctrine, when
+		we heard of this intruiging game\.
+		
+		\.and came up with a foolproof plan!
+		With our powers combined, we have three
+		times the odds of winning a Brooch!
+		
+		Now, stay right there while I smite your
+		Helpers, won't you? Ahaha!")
+    }
+    elif(flag(FLAG_ARENA_RETRY))
+    {
+        msgbox("{SPEAKER NAME_FRANCISCA}\.Bonjam. You're as resilient as I
+                remember you being.
+                
+                Of course, our plan means we have to win
+                three times as many Brooches, too\.
+                
+                Having you slow our progress down is
+                absolutely unacceptable.
+                
+                This time, I'll make sure you stay
+                away from the rest of my sisters!")
+    }
+    closemessage
+    setflag(FLAG_ARENA_RETRY)
+    applymovement(LOCALID_FRANCISCA, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_EDGAR, CastleArena_Text_Francisca)
+    msgbox("His first opponent's been put on ice!
+            Kirby takes the first win!")
+    closemessage
+    applymovement(LOCALID_CASTLE_CROWD_1, moves(jump_in_place_right * 2))
+    applymovement(LOCALID_CASTLE_CROWD_2, moves(walk_in_place_left * 5))
+    playse(SE_APPLAUSE)
+    turnvobject(0, DIR_NORTH)
+    turnvobject(1, DIR_WEST)
+    turnvobject(2, DIR_WEST)
+    delay(48)
+    turnvobject(1, DIR_SOUTH)
+    turnvobject(2, DIR_SOUTH)
+    waitmovement(LOCALID_CASTLE_CROWD_2)
+    delay(60)
+    applymovement(LOCALID_FRANCISCA, moves(walk_in_place_slow_left * 2))
+    waitmovement()
+    msgbox("{SPEAKER NAME_FRANCISCA}I suppose it's up to my sisters now to
+            do what I could not. Jambuhbye.")
+    closemessage()
+    setvar(VAR_ARENA_BATTLES, 1)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_FRANCISCA, moves(walk_left, walk_down * 7, face_right))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_FRANCISCA)
+    setobjectxyperm(LOCALID_FRANCISCA, 17, 17)
+    addobject(LOCALID_FRANCISCA)
+    goto(CastleArena_EventScript_ArenaHeal)
+}
+
+script CastleArena_EventScript_Challenger2
+{
+	removeobject(LOCALID_FLAMBERGE)
+    setobjectxyperm(LOCALID_FLAMBERGE, 21, 16)
+    addobject(LOCALID_FLAMBERGE)
+    msgbox("Up next is an opponent who alway brings
+            the heat when she battles her rivals!
+			
+			Let's hear it for {COLOR RED}Flamberge{COLOR DARK_GRAY}, everybody!")
+    closemessage
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_CASTLE_CROWD_1, moves(face_down, delay_16, face_up, delay_16, face_down, delay_16, face_up, delay_16, face_right))
+    applymovement(LOCALID_CASTLE_CROWD_2, moves(walk_in_place_slow_left * 4))
+    applymovement(LOCALID_FLAMBERGE, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    turnvobject(2, DIR_EAST)
+    delay(18)
+    turnvobject(0, DIR_SOUTH)
+    turnvobject(2, DIR_SOUTH)
+    delay(18)
+    turnvobject(2, DIR_WEST)
+    delay(18)
+    turnvobject(2, DIR_SOUTH)
+    waitmovement(LOCALID_FLAMBERGE)
+    delay(30)
+    applymovement(LOCALID_FLAMBERGE, moves(walk_in_place_left * 2))
+    waitmovement()
+    if(!flag(FLAG_ARENA_HEALED_THIS_ROUND))
+    {
+        msgbox("{SPEAKER NAME_FLAMBERGE} HEY, YOU! You little pink\. whatever
+                your name was!
+                
+                You were supposed to give up last round
+                and let sweet Francisca take the win!
+                
+                But did you do that? NO! And you even
+                defeated her SUPER CUTE HELPERS!
+                
+                Aaaaargh! Seeing you always gets me
+                burning up! I've had it!
+                
+                Me and my Helpers are coming at you with
+                all of our scorching rage!")
+    }
+    elif(flag(FLAG_ARENA_HEALED_THIS_ROUND))
+    {
+        msgbox("{SPEAKER NAME_FLAMBERGE}WHAT did I tell you last time, huh?
+                STOP DEFEATING MY PRECIOUS FRANCISCA!
+                
+                Man, you're so annoyingly MEDDLESOME! 
+                Vun, vun, VUN MEDDLESOME! Aaaarghh!!
+                
+                YOU'RE GOING DOWN!")
+    }
+    closemessage
+    setflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_FLAMBERGE, moves(walk_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_ALBERT, CastleArena_Text_Flamberge)
+    msgbox("Flamberge's win streak was snuffed out!
+            Kirby has scored a second victory!")
+    closemessage
+    applymovement(LOCALID_CASTLE_CROWD_1, moves(walk_in_place_right * 8))
+    applymovement(LOCALID_CASTLE_CROWD_2, moves(jump_in_place_left, delay_16, delay_8, walk_in_place_fast_left * 5))
+    playse(SE_APPLAUSE)
+    turnvobject(2, DIR_SOUTH)
+    turnvobject(0, DIR_EAST)
+    delay(32)
+    turnvobject(0, DIR_SOUTH)
+    waitmovement(LOCALID_CASTLE_CROWD_2)
+    delay(60)
+    applymovement(LOCALID_FLAMBERGE, moves(walk_in_place_slow_left * 2))
+    waitmovement()
+    msgbox("{SPEAKER NAME_FLAMBERGE}Oops! I got so angry at you, when I
+            should've checked on Francisca first!
+            
+            Don't think this is over, though. Zan's
+            definitely gonna take you out!")
+    closemessage()
+    setvar(VAR_ARENA_BATTLES, 2)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_left * 2, walk_in_place_right))
+    applymovement(LOCALID_FLAMBERGE, moves(walk_left, walk_down * 7, face_left))
+    waitmovement()
+    special(RemoveCameraObject)
+    removeobject(LOCALID_FLAMBERGE)
+    setobjectxyperm(LOCALID_FLAMBERGE, 18, 17)
+    addobject(LOCALID_FLAMBERGE)
+    goto(CastleArena_EventScript_ArenaHeal)
+}
+
+script CastleArena_EventScript_GrandFinals
+{
+    turnvobject(0, DIR_SOUTH)
+    turnvobject(1, DIR_SOUTH)
+    turnvobject(2, DIR_SOUTH)
+    fadeoutbgm(1)
+    applymovement(LOCALID_CASTLE_COMMENTATOR, moves(walk_in_place_down * 2))
+    waitmovement()
+    if(!flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        msgbox("Can you feel it? The tension in the air?
+            The electric buzz from the crowd?
+            
+            That can only mean one thing:
+            it's FINAL ROUND time!
+            
+            On my right, a young hopeful looking to
+            topple the trio of terror\.
+            
+            Everyone give it up for Kirbyyyyy!!!")
+    }
+    elif(flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        msgbox("Can you feel it? The tension in the air?
+            The electric buzz from the crowd?
+            
+            That can only mean one thing:
+            it's FINAL ROUND time!
+            
+            On my right, a returnee determined to
+            end the sisters' reign of dominance\.
+            
+            Everyone give it up for Kirbyyyyy!!!")
+    }
+    closemessage()
+    applymovement(LOCALID_PLAYER, moves(jump_in_place_right * 5))
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_CASTLE_CROWD_1, moves(face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right))
+    applymovement(LOCALID_CASTLE_CROWD_2, moves(walk_in_place_left * 7))
+    turnvobject(0, DIR_WEST)
+    turnvobject(1, DIR_NORTH)
+    turnvobject(2, DIR_EAST)
+    delay(20)
+    turnvobject(0, DIR_NORTH)
+    turnvobject(2, DIR_WEST)
+    delay(20)
+    turnvobject(0, DIR_SOUTH)
+    turnvobject(1, DIR_SOUTH)
+    turnvobject(2, DIR_SOUTH)
+    removeobject(LOCALID_ZAN_PARTIZANNE)
+    setobjectxyperm(LOCALID_ZAN_PARTIZANNE, 21, 16)
+    addobject(LOCALID_ZAN_PARTIZANNE)
+    delay(60)
+    msgbox("And to my left, the other undefeated
+            challenger who reached the final round!
+            
+            The lightning-quick leader of the mage
+            sisters is a force to be reckoned with.
+
+            A name announced so often here, I've
+            almost memorized the whole thing!
+            
+            Everyone welcome to the stage\.
+            {COLOR GREEN}Zan Partizanne{COLOR DARK_GRAY}!")
+    closemessage()
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_CASTLE_CROWD_1, moves(face_up, delay_16, face_down, delay_16, face_right, delay_16, delay_8, walk_in_place_right * 3))
+    applymovement(LOCALID_CASTLE_CROWD_2, moves(walk_in_place_left * 4, delay_16, face_up, delay_16, delay_16, face_left))
+    applymovement(LOCALID_ZAN_PARTIZANNE, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
+    turnvobject(1, DIR_WEST)
+    delay(15)
+    turnvobject(1, DIR_EAST)
+    delay(15)
+    turnvobject(1, DIR_NORTH)
+    delay(15)
+    turnvobject(1, DIR_SOUTH)
+    waitmovement(LOCALID_ZAN_PARTIZANNE)
+    delay(60)
+    applymovement(LOCALID_ZAN_PARTIZANNE, moves(walk_in_place_left * 2))
+    waitmovement()
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, FALSE)
+    if(!flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        msgbox("{SPEAKER NAME_ZAN}Bonjam, Kirby. I'm surprised to see us
+        meeting on the battlefield once more.
+                
+        You showed us the importance of strong
+        relationships, and how that can bring
+        about change for the better\.
+        
+        So now, Franny, Berge, and I are putting
+        those lessons to the test.
+        
+        Do you really think you can take down
+        all three of us in a row?
+        
+        Come on, Kirby. I'll put a stop to your
+        lucky streak right here and now!")
+    }
+    if(flag(FLAG_GRAND_FINALS_ACTIVE))
+    {
+        msgbox("{SPEAKER NAME_ZAN}Bonjam majaja, Kirby. 
+                
+                If there's anything I'd never forget
+                about you, it's your persistence.
+                
+                That annoying tenacity that forced us
+                to cross paths over and over\.
+                
+                You haven't changed at all, it seems.
+                But we can't say the same for us.
+                
+                Allow me to remind you what it means to
+                face against the generals of magic!")
+    }
+    closemessage()
+    applymovement(LOCALID_ARENA_COMMENTATOR, moves(walk_in_place_fast_down * 5))
+    msgbox("It's come down to Kirby vs.\. uh\. Zan!
+            Who will reign supreme in the Arena?!
+            
+            Everyone make some noiseeeee!!!!!")
+    closemessage
+    setflag(FLAG_GRAND_FINALS_ACTIVE)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_ZAN_PARTIZANNE, moves(walk_slow_right, walk_fast_left * 2))
+    applymovement(LOCALID_PLAYER, moves(walk_slow_left, walk_fast_right * 2))
+    waitmovement()
+    special(RemoveCameraObject)
+    trainerbattle_no_intro(TRAINER_SAMUEL, CastleArena_Text_ZanPartizanne)
+    fadeoutbgm(1)
+    delay(60)
+    msgbox("Folks\. the battle of bonds has ended\.
+            The winner of this Castle Arena clash\.
+            
+            It's the pink puffball himself!
+            KIRBY WINS!")
+    closemessage()
+    playbgm(MUS_B_FRONTIER, TRUE)
+    playse(SE_APPLAUSE)
+    applymovement(LOCALID_CASTLE_CROWD_1, moves(walk_in_place_fast_right * 13))
+    applymovement(LOCALID_CASTLE_CROWD_2, moves(jump_in_place_left * 6))
+    applymovement(LOCALID_PLAYER, moves(jump_in_place_right, jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right, jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right))
+    turnvobject(0, DIR_EAST)
+    turnvobject(1, DIR_WEST)
+    delay(20)
+    turnvobject(0, DIR_SOUTH)
+    turnvobject(1, DIR_EAST)
+    turnvobject(2, DIR_WEST)
+    delay(20)
+    turnvobject(1, DIR_NORTH)
+    turnvobject(2, DIR_SOUTH)
+    delay(20)
+    turnvobject(1, DIR_SOUTH)
+    waitmovement(LOCALID_PLAYER)
+    message("KIRBY! KIRBY! KIRBY! KIRBY!")
+    waitmessage()
+    delay(60)
+    closemessage()
+    applymovement(LOCALID_ZAN_PARTIZANNE, moves(walk_in_place_slow_left * 2))
+    waitmovement()
+    msgbox("{SPEAKER NAME_ZAN}\.that's that, then. Jambuhbye\.")
+    closemessage()
+    applymovement(LOCALID_ZAN_PARTIZANNE, moves(walk_left * 2, walk_down * 8, face_down))
+    waitmovement()
+    removeobject(LOCALID_ZAN_PARTIZANNE)
+    setobjectxyperm(LOCALID_ZAN_PARTIZANNE, 24, 17)
+    addobject(LOCALID_ZAN_PARTIZANNE)
+    waitmovement()
+    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
+    clearflag(FLAG_ARENA_RETRY)
+    clearflag(FLAG_GRAND_FINALS_ACTIVE)
+    setvar(VAR_ARENA_BATTLES, 0)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_down * 6, walk_in_place_up))
+    delay(60)
+    applymovement(LOCALID_CAMERA, moves(walk_down * 6))
+    applymovement(LOCALID_CASTLE_COMMENTATOR, moves(walk_down * 7))
+    waitmovement()
+    special(RemoveCameraObject)
+    goto(CastleArena_EventScript_Victory)
+}
+
+script CastleArena_EventScript_Break
+{
+    if(var(VAR_ARENA_BATTLES) == 1)
+    {
+        message("There's just two rounds to go now.
+                 Are you ready for the next battle?")
+    }
+    elif(var(VAR_ARENA_BATTLES) == 2)
+    {
+        message("This is it: the final round awaits!
+                Ready for the ultimate battle, Kirby?")
+    }
+    waitmessage()
+    multichoice(20, 6, MULTI_GO_ON_RETIRE, 0)
+    switch(var(VAR_RESULT)) {
+	case 0:
+        if(var(VAR_ARENA_BATTLES) == 1)
+        {
+            goto(CastleArena_EventScript_Challenger2)
+        }
+		elif(var(VAR_ARENA_BATTLES) == 2)
+        {
+            goto(CastleArena_EventScript_GrandFinals)
+        }
+	case 1:
+		goto(CastleArena_EventScript_ForfeitConfirmation)
+    case MULTI_B_PRESSED:
+        goto(CastleArena_EventScript_ForfeitConfirmation)
+    }
+}
+
+script CastleArena_EventScript_ArenaHeal
+{
+    msgbox("Great job on that battle, Kirby. Let's
+            heal up those hardworking Helpers!")
+    special(HealPlayerParty)
+    playse(SE_USE_ITEM)
+    message("Your party has been fully healed!")
+    waitmessage()
+    delay(60)
+    goto(CastleArena_EventScript_Break)
+}
+
+script CastleArena_EventScript_ForfeitConfirmation
+{
+    msgbox("Are you really sure you want to
+            throw in the towel now?
+            
+            Just a heads up; {COLOR RED}you'll have to start
+            the tournament anew if you do{COLOR DARK_GRAY}!")
+    message("Are you absolutely, positively sure
+            you want to retire now?")
+    waitmessage
+    dynmultichoice(20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, WaddleDeeArena_Text_ToughItOut, WaddleDeeArena_Text_AcceptDefeat)
+    if(var(VAR_RESULT) == 1)
+    {
+        msgbox("Well, sorry, folks! Looks like this
+                promising run is being cut short!")
+        closemessage
+        removeobject(LOCALID_FRANCISCA)
+        setobjectxyperm(LOCALID_FRANCISCA, 22, 26)
+        addobject(LOCALID_FRANCISCA)
+        removeobject(LOCALID_FLAMBERGE)
+        setobjectxyperm(LOCALID_FLAMBERGE, 20, 26)
+        addobject(LOCALID_FLAMBERGE)
+        removeobject(LOCALID_ZAN_PARTIZANNE)
+        setobjectxyperm(LOCALID_ZAN_PARTIZANNE, 21, 26)
+        addobject(LOCALID_ZAN_PARTIZANNE)
+        special(SpawnCameraObject)
+        applymovement(LOCALID_PLAYER, moves(walk_right * 3, walk_down * 6, walk_in_place_up))
+        delay(60)
+        applymovement(LOCALID_CAMERA, moves(walk_down * 6))
+        applymovement(LOCALID_CASTLE_COMMENTATOR, moves(walk_down * 7))
+        waitmovement()
+        special(RemoveCameraObject)
+        goto(CastleArena_EventScript_CommentatorBye)
+    }
+    else
+    {
+        goto(CastleArena_EventScript_Break)
+    }
+}
+
+script CastleArena_EventScript_Victory
+{
+    msgbox("Congratulations again on conquering
+            the Castle Arena, Kirby!
+            
+            Here's your reward to commemorate the
+            occasion: the Castle Brooch!")
+    message("Kirby received the Castle Brooch
+            from Commentator Waddle Dee!")
+	waitmessage
+	call(Common_EventScript_PlayGymBadgeFanfare)
+    setflag(FLAG_BADGE03_GET)
+    msgbox("This Brooch certifies that you'll be
+            able to safely train stronger Helpers.
+            
+            I'm sure we'll see each other again
+            at the next Arena. Until then!")
+    release
+}
+
+text CastleArena_Text_Francisca
+{
+    "My, my\. you and your Helpers are in top
+    form as always. How divine\."
+}
+
+text CastleArena_Text_Flamberge
+{
+    "Jamblasted\. JAMBLASTED!"
+}
+
+text CastleArena_Text_ZanPartizanne
+{
+    "Janno\. it can't be\. are we really still
+    unable to overcome you?"
+}
+
+// Miscellaneous NPCs
+
+script CastleArena_EventScript_Youngster
+{
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE03_GET))
+    {
+        msgbox("Wow, your Helpers must have been really
+                good to win at the Arena here!
+                
+                I'm so inspired! I'm gonna go out and
+                try to befriend ones just like yours!")
+    }
+    else
+    {
+        msgbox("Is there any type of Helper that's good
+            against Ice, Fire, and Electric\.?
+            
+            Hmm\. I'm not sure my team is diverse
+            enough for the job here\.")
+    }
+    release
+}
+
+script CastleArena_EventScript_Lumberjack
+{
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE03_GET))
+    {
+        msgbox("It's really something how well those
+                girls work together in battle, huh?
+                
+                Maybe I should be taking a closer listen
+                to the words they preach about bonds
+                bringing us closer to paradise.")
+    }
+    else
+    {
+        msgbox("My Sandran and Digguh can hold their
+            own against the red and yellow girls\.
+            
+            But my luck usually leads me to get
+            matched up against the blue one!
+            Her team beats mine so easily!")
+    }
+    release
+}
+
+script CastleArena_EventScript_Conductor
+{
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE03_GET))
+    {
+        msgbox("You actually made it, huh? I guess this
+                Arena wasn't so unwinnable after all.
+                
+                I shouldn't have let my worries stop
+                me from giving it my best shot in there\.
+
+                Maybe this was one of those lessons
+                the Great King wanted us to take away?")
+    }
+    else
+    {
+        msgbox("There's a whole lot of hubbub about
+            this Arena being unwinnable.
+            
+            Did I choose the wrong Arena to visit
+            first? Maybe I should head over to
+            the Icecap Arena instead\.")
+    }
+    release
+}
+
+script CastleArena_EventScript_ShortcutGuide
+{
+    lock
+    faceplayer
+    msgbox("If you need to leave back to the
+            courtyard, this path's a shortcut.
+            I wish it was open on the way up\.")
+    release
+}
+
+script CastleArena_EventScript_Wintry
+{
+    lock
+    msgbox("Wow! I can see my friend at the top of
+            the Icecap Arena all the way from here!
+            
+            Heeeeeeey!!! Helloooooooooo!!!!!")
+    release
+}
+
+script CastleArena_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("I wonder whether the competitors who
+            won their Brooch here before that trio
+            showed up could have beat them?
+            
+            I've seen other strong-looking leaders
+            here too. There was this bandana-clad
+            Waddle Dee, and some artist girl\.")
+    release
+}
+
+script CastleArena_EventScript_Cafe
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox(CastleArena_Text_Cafe)
+    }
+    else
+    {
+        msgbox(CastleArena_Text_CafeWin)
+    }
+    release
+}
+
+script CastleArena_EventScript_Socialite
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox(CastleArena_Text_Socialite)
+    }
+    else
+    {
+        msgbox(CastleArena_Text_SocialiteWin)
+    }
+    release
+}
+
+script CastleArena_EventScript_TalkToCrowd1
+{
+    lockall
+    turnobject(LOCALID_CASTLE_CROWD_1, DIR_EAST)
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox(CastleArena_Text_Cafe)
+    }
+    else
+    {
+        msgbox(CastleArena_Text_CafeWin)
+    }
+    release
+}
+
+script CastleArena_EventScript_TalkToCrowd2
+{
+    lockall
+    turnobject(LOCALID_CASTLE_CROWD_2, DIR_WEST)
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox(CastleArena_Text_Socialite)
+    }
+    else
+    {
+        msgbox(CastleArena_Text_SocialiteWin)
+    }
+    release
+}
+
+script CastleArena_EventScript_TalkToVCrowd1
+{
+    lockall
+    turnvobject(0, DIR_SOUTH)
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox("I can't get enough of seeing Francisca
+                freeze her opponent's Helpers!
+                
+                Being frozen sounds like so much fun\.
+                Oh, Francisca, please let it be me next!")
+    }
+    else
+    {
+        msgbox("What? You managed to defeat the
+                wonderful Francisca? How could you!?
+                
+                Oooh\. this burning feeling in my heart\.
+                is this what Flamberge always feels!?")
+    }
+    release
+}
+
+script CastleArena_EventScript_TalkToVCrowd2
+{
+    lockall
+    turnvobject(1, DIR_SOUTH)
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox("My pals here are real big fans of
+                Francisca and Flamberge, so you'd think
+                you'd know what to expect from me.
+                
+                There's just one problem though\.
+                
+                I can't be the biggest fan of someone
+                whose name I can't even remember!")
+    }
+    else
+    {
+        msgbox("Whoa, you must be pretty talented if
+                you managed to beat\. uhh\.
+                
+                Hold on, it's coming to me\.
+                
+                \.
+                
+                \. Aha!
+                
+                Santa's Party Sack! That was it! Yeah,
+                good job winning against her.")
+    }
+    release
+}
+
+script CastleArena_EventScript_TalkToVCrowd3
+{
+    lockall
+    turnvobject(2, DIR_SOUTH)
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox("I think Flamberge puts up the best
+                performance of the three mage sisters.
+                
+                I'd be okay watching her battle over
+                and over if nobody could defeat her\.")
+    }
+    else
+    {
+        msgbox("No way\. you managed to defeat
+                Flamberge? Who even are you?")
+    }
+    release
+}
+
+text CastleArena_Text_Cafe
+{
+    "Arena seats seem like the perfect place
+    to sell snacks to hungry customers, so
+    I'm setting up a little food stand here!"
+}
+
+text CastleArena_Text_CafeWin
+{
+    "That was some seriously incredible
+    Helper battling skill! Great work!
+    
+    With hot shots like you, I bet this
+    place will draw huge crowds soon\.
+    and then I'll be busy, busy, busy!"
+}
+
+text CastleArena_Text_Socialite
+{
+    "It's easy to see the results coming
+    when one group of competitors keep
+    dominating every single tournament.
+                
+    Will you be able to inject some spice
+    into this Arena, I wonder?"
+}
+
+text CastleArena_Text_SocialiteWin
+{
+    "Bravo! You and your Helpers were really
+    something else!
+                
+    Knowing there are strong competitors
+    like you traveling here has restored
+    my enthusiasm for Arena spectating!"
+}
+
+script CastleArena_EventScript_Soldier
+{
+    lock
+    faceplayer
+    if(flag(FLAG_BADGE03_GET))
+    {
+        msgbox("Seems like those girls are ready to move
+                on elsewhere after you defeated them.
+                
+                It's a good thing that challengers will
+                be able to earn Brooches here again.
+                
+                \.it also cements that you're a serious
+                contender for the Royal Royale's crown.
+                Much to the Great King's chagrin\.
+                
+                I wonder how things will shake out.
+                For now, keep doing your best, alright?")
+    }
+    else
+    {
+        msgbox("I'm keeping an eye on things here to see
+            just how unbeatable that trio really is.
+            
+            It would be a problem if nobody could
+            win the Royal Royal because of them\.")
+    }
+    release
+}
+
+// Signs
+
+script CastleArena_EventScript_Sign
+{
+    msgbox("Newly-opened: CASTLE ARENA
+            Conquer it and win the Castle Brooch!", MSGBOX_SIGN)
+    closemessage
+}

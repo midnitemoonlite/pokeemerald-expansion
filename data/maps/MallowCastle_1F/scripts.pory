@@ -1,7 +1,21 @@
 raw `
 MallowCastle_1F_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, MallowCastle_1F_OnLoad
 	.byte 0
+
+MallowCastle_1F_OnLoad:
+	call_if_set FLAG_MET_RIVAL_MOM, MallowCastle_1F_EventScript_OpenShortcut
+	end
 `
+
+script MallowCastle_1F_EventScript_OpenShortcut
+{
+    setmetatile(8, 21, METATILE_LilycoveMuseum_Floor, FALSE)
+    setmetatile(7, 21, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    setmetatile(8, 22, METATILE_LilycoveMuseum_Floor, FALSE)
+    setmetatile(7, 22, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+    return
+}
 
 script MallowCastle_1F_EventScript_WaddleDee
 {
@@ -351,7 +365,7 @@ script MallowCastle_1F_EventScript_BombBlock4
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(3, 29, METATILE_LilycoveMuseum_WallLip, FALSE)
+    setmetatile(3, 29, METATILE_LilycoveMuseum_WallLipDark, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -360,7 +374,7 @@ script MallowCastle_1F_EventScript_BombBlock4
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(4, 29, METATILE_LilycoveMuseum_WallLip, FALSE)
+    setmetatile(4, 29, METATILE_LilycoveMuseum_WallLipDark, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -369,7 +383,7 @@ script MallowCastle_1F_EventScript_BombBlock4
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(5, 29, METATILE_LilycoveMuseum_WallRightCorner, FALSE)
+    setmetatile(5, 29, METATILE_LilycoveMuseum_WallRightCornerDark, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -569,7 +583,7 @@ script MallowCastle_1F_EventScript_BombBlock7
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(13, 29, METATILE_LilycoveMuseum_WallLip, FALSE)
+    setmetatile(13, 29, METATILE_LilycoveMuseum_WallLipDark, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -578,7 +592,7 @@ script MallowCastle_1F_EventScript_BombBlock7
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(12, 29, METATILE_LilycoveMuseum_WallLip, FALSE)
+    setmetatile(12, 29, METATILE_LilycoveMuseum_WallLipDark, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -587,7 +601,7 @@ script MallowCastle_1F_EventScript_BombBlock7
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(11, 29, METATILE_LilycoveMuseum_WallLip, FALSE)
+    setmetatile(11, 29, METATILE_LilycoveMuseum_WallLipDark, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -596,7 +610,7 @@ script MallowCastle_1F_EventScript_BombBlock7
 	special(ShakeCamera)
     waitstate
     playse(SE_M_DIG)
-    setmetatile(10, 29, METATILE_LilycoveMuseum_WallLeftCorner, FALSE)
+    setmetatile(10, 29, METATILE_LilycoveMuseum_WallLeftCornerDark, FALSE)
     special(DrawWholeMapView)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
@@ -612,7 +626,7 @@ script MallowCastle_1F_EventScript_BombBlock8
     lockall
     playse(SE_M_DIG)
     removeobject(LOCALID_BOMB_MALLOW_CASTLE_1F_8)
-    setflag(FLAG_TEMP_17)
+    setflag(FLAG_MET_RIVAL_MOM)
     setvar(VAR_0x8004, 1)  // vertical pan
 	setvar(VAR_0x8005, 0)  // horizontal pan
 	setvar(VAR_0x8006, 2) // num shakes

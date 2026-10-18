@@ -110,7 +110,7 @@
 #define FLAG_GRAND_FINALS_ACTIVE            0x55  // Various Arenas - marked when grand finals is available
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
-#define FLAG_MET_RIVAL_MOM                   0x57
+#define FLAG_MET_RIVAL_MOM                   0x57 // Mallow Castle (1F) - tracks if shortcut Bomb Block has been broken
 #define FLAG_BIRCH_AIDE_MET                  0x58
 #define FLAG_DECLINED_BIKE                   0x59
 #define FLAG_RECEIVED_BIKE                   0x5A
@@ -194,9 +194,9 @@
 #define FLAG_TOUGH_PAINTING_MADE             0xA4
 #define FLAG_RECEIVED_TM_ROCK_TOMB           0xA5 // Waddle Dee Arena - Magolor's TM
 #define FLAG_RECEIVED_TM_BULK_UP             0xA6 // Resort Arena - Daroach's TM
-#define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7
-#define FLAG_RECEIVED_TM_OVERHEAT            0xA8
-#define FLAG_RECEIVED_TM_FACADE              0xA9
+#define FLAG_RECEIVED_TM_SHOCK_WAVE          0xA7 // Castle Arena - Francisca's TM
+#define FLAG_RECEIVED_TM_OVERHEAT            0xA8 // Castle Arena - Flamberge's TM
+#define FLAG_RECEIVED_TM_FACADE              0xA9 // Castle Arena - Zan Partizanne's TM
 #define FLAG_RECEIVED_TM_AERIAL_ACE          0xAA
 #define FLAG_RECEIVED_TM_CALM_MIND           0xAB
 #define FLAG_RECEIVED_TM_WATER_PULSE         0xAC
@@ -469,7 +469,7 @@
 #define FLAG_REGISTERED_WALLACE              (TRAINER_REGISTERED_FLAGS_START + REMATCH_WALLACE)
 
 #define FLAG_BOUGHT_PRANK                    0x1AA // Mallow Courtyard - Vendor in right room
-#define FLAG_UNUSED_0x1AB                    0x1AB // Unused Flag
+#define FLAG_FOUND_NAGO                    0x1AB // Mallow Castle - obtained Nago
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC
 #define FLAG_BATTLED_DEOXYS                  0x1AD
@@ -576,9 +576,9 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16) // Waddle Dee Town - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x17) // Waddle Dee Town - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD            (FLAG_HIDDEN_ITEMS_START + 0x18) // Float Islands - Hidden Item 1
-#define FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN              (FLAG_HIDDEN_ITEMS_START + 0x19)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x1A)
-#define FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE           (FLAG_HIDDEN_ITEMS_START + 0x1B)
+#define FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN              (FLAG_HIDDEN_ITEMS_START + 0x19) // Resort Arena - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x1A) // Mallow Courtyard - Hidden Item 1
+#define FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE           (FLAG_HIDDEN_ITEMS_START + 0x1B) // Castle Arena - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET               (FLAG_HIDDEN_ITEMS_START + 0x1C)
 #define FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_ULTRA_BALL         (FLAG_HIDDEN_ITEMS_START + 0x1D)
 #define FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM            (FLAG_HIDDEN_ITEMS_START + 0x1E)
@@ -1096,7 +1096,7 @@
 #define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413 // Mallow Castle - Item 4
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414 // Mallow Castle - Item 5
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415 // Mallow Castle - Item 6
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416 // Castle Arena - Item 1
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
 #define FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER                          0x419

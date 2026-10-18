@@ -1698,6 +1698,10 @@
     {
       "id": "MAPSEC_MALLOW_CASTLE",
       "name": "MALLOW CASTLE"
+    },
+    {
+      "id": "MAPSEC_CASTLE_ARENA",
+      "name": "CASTLE ARENA"
     }
   ]
 }

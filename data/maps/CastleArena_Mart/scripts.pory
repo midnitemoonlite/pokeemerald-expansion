@@ -1,0 +1,69 @@
+raw `
+CastleArena_Mart_MapScripts::
+	.byte 0
+`
+
+script CastleArena_Mart_EventScript_Clerk
+{
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(CastleArena_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart CastleArena_Mart
+{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_LUXURY_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_REVIVE
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_REPEL
+    ITEM_POKE_DOLL
+    ITEM_DIRE_HIT
+}
+
+script CastleArena_Mart_EventScript_Nurse
+{
+    lock
+    faceplayer
+    msgbox("Umm\. isn't this supposed to be the
+            break room? Where am I?
+            
+            Ohhhh\. don't tell me I mixed up
+            my colors again\.")
+    release
+}
+
+script CastleArena_Mart_EventScript_Chef
+{
+    lock
+    faceplayer
+    msgbox("I'm stocking up on as many 1-Ups as I
+            can. They're a miracle item!
+            
+            I can't believe how generous the Great
+            King is for offering them in shops now.")
+    release
+}
+
+script CastleArena_Mart_EventScript_Worker
+{
+    lock
+    faceplayer
+    msgbox("With the avalanche in Waddle Dee Town,
+            Dream Land is basically split in half\.
+            
+            I wonder what kinds of competitors are
+            battling in the Arenas over there.")
+    release
+}

@@ -765,15 +765,15 @@ script ResortArena_EventScript_BeginChallenge
     }
     elif(flag(FLAG_ARENA_RETRY))
     {
-        msgbox("Welcome, one and all, to the brand-new
-            Waddle Dee Arena!
+        msgbox("Welcome, one and all, to the tropical
+            Resort Arena!
             
             Kirby has returned to the stage for
             another shot at the Resort Brooch!
             Will he see it through this time?")
     }
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(face_down))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_up))
     applymovement(LOCALID_RESORT_CROWD_2, moves(face_up))
     applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_left * 4))
     delay(60)
@@ -785,8 +785,8 @@ script ResortArena_EventScript_Challenger1
     msgbox("Let's have our first challenger, please!")
     closemessage
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(face_right, delay_16, delay_16, delay_16, face_down))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(face_right, delay_16, delay_16, delay_16, face_up))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_down, delay_16, delay_16, delay_16, face_up))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_down, delay_16, delay_16, delay_16, face_up))
     applymovement(LOCALID_RESORT_CROWD_3, moves(face_down, delay_16, delay_8, face_left, delay_16, delay_8, face_down, delay_16, delay_8, face_left))
     addobject(LOCALID_RESORT_CHALLENGER_1)
     applymovement(LOCALID_RESORT_CHALLENGER_1, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
@@ -814,8 +814,8 @@ script ResortArena_EventScript_Challenger1
     trainerbattle_no_intro(TRAINER_ROSE_5, ResortArena_Text_Challenger1)
     msgbox("Is this the start of another sweep?
             Kirby takes the first win!")
-    applymovement(LOCALID_RESORT_CROWD_1, moves(face_right, delay_16, delay_16, delay_16, delay_16, delay_16, face_down))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(face_right, delay_16, delay_16, delay_16, face_up))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_down, delay_16, delay_16, delay_16, delay_16, delay_16, face_up))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_down, delay_16, delay_16, delay_16, face_up))
     applymovement(LOCALID_RESORT_CROWD_3, moves(face_up, delay_16, face_right, delay_16, face_down, delay_16, face_left))
     playse(SE_APPLAUSE)
     closemessage
@@ -839,8 +839,8 @@ script ResortArena_EventScript_Challenger2
     msgbox("Challenger number two, step right up!")
     closemessage
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(face_right))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(face_right, delay_16, delay_16, delay_16, face_up, delay_16, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_down))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_down, delay_16, delay_16, delay_16, face_right, delay_16, delay_16, face_down))
     applymovement(LOCALID_RESORT_CROWD_3, moves(jump_in_place_left * 4))
     addobject(LOCALID_RESORT_CHALLENGER_2)
     applymovement(LOCALID_RESORT_CHALLENGER_2, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
@@ -861,8 +861,8 @@ script ResortArena_EventScript_Challenger2
             Kirby has scored a second victory!")
     closemessage
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_slow_right * 3))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(delay_16, face_up, delay_16, delay_16, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_slow_down * 3))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(delay_16, face_right, delay_16, delay_16, delay_16, face_down))
     applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_slow_left * 5))
     setvar(VAR_ARENA_BATTLES, 2)
     special(SpawnCameraObject)
@@ -884,8 +884,8 @@ script ResortArena_EventScript_Challenger3
     msgbox("Give it up for challenger number three!")
     closemessage
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(face_down, delay_16, face_right))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(face_up, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_left, delay_16, face_down))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_right, delay_16, face_down))
     applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_left * 4))
     addobject(LOCALID_RESORT_CHALLENGER_3)
     applymovement(LOCALID_RESORT_CHALLENGER_3, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
@@ -907,8 +907,8 @@ script ResortArena_EventScript_Challenger3
             Kirby nets his third victory!")
     closemessage
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_right * 5))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_right * 4))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_down * 5))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_down * 4))
     applymovement(LOCALID_RESORT_CROWD_3, moves(face_up, delay_8, face_right, delay_8, face_down, delay_8, face_left, delay_8, face_up, delay_8, face_right, delay_8, face_down, delay_8, face_left))
     setvar(VAR_ARENA_BATTLES, 3)
     special(SpawnCameraObject)
@@ -931,8 +931,8 @@ script ResortArena_EventScript_Challenger4
     msgbox("You're up next, challenger number four!")
     closemessage
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right, face_down, delay_16, face_right))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_right, face_up, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_down, face_left, delay_16, face_down))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_down, face_right, delay_16, face_down))
     applymovement(LOCALID_RESORT_CROWD_3, moves(jump_in_place_left, walk_up, walk_down * 2, walk_up, face_left))
     addobject(LOCALID_RESORT_CHALLENGER_4)
     applymovement(LOCALID_RESORT_CHALLENGER_4, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
@@ -954,8 +954,8 @@ script ResortArena_EventScript_Challenger4
             Kirby has gone up to four wins!")
     closemessage
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right * 3))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_right * 5))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_down * 3))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_down * 5))
     applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_fast_left * 10))
     setvar(VAR_ARENA_BATTLES, 4)
     special(SpawnCameraObject)
@@ -978,8 +978,8 @@ script ResortArena_EventScript_Challenger5
     msgbox("Everyone welcome our final challenger!")
     closemessage
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(face_up, delay_16, face_down, delay_16, face_right))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(face_up, delay_16, face_down, delay_16, face_right))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(face_right, delay_16, face_left, delay_16, face_down))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(face_right, delay_16, face_left, delay_16, face_down))
     applymovement(LOCALID_RESORT_CROWD_3, moves(jump_up, jump_down, jump_down, jump_up, face_left))
     addobject(LOCALID_RESORT_CHALLENGER_5)
     applymovement(LOCALID_RESORT_CHALLENGER_5, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
@@ -1001,8 +1001,8 @@ script ResortArena_EventScript_Challenger5
     closemessage
     clearflag(FLAG_ARENA_RETRY)
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_fast_right * 8))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_right * 3))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(walk_in_place_fast_down * 8))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_down * 3))
     applymovement(LOCALID_RESORT_CROWD_3, moves(face_right, delay_16, delay_16, jump_in_place_left * 4))
     setvar(VAR_ARENA_BATTLES, 5)
     setflag(FLAG_GRAND_FINALS_ACTIVE)
@@ -1274,8 +1274,8 @@ script ResortArena_EventScript_GrandFinals
     closemessage()
     applymovement(LOCALID_PLAYER, moves(jump_in_place_right * 5))
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right * 4))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_right * 6))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_down * 4))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(walk_in_place_down * 6))
     applymovement(LOCALID_RESORT_CROWD_3, moves(face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left, delay_4, face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left, delay_4, face_down, delay_4, face_right, delay_4, face_up, delay_4, face_left))
     removeobject(LOCALID_DAROACH)
     setobjectxyperm(LOCALID_DAROACH, 25, 22)
@@ -1293,8 +1293,8 @@ script ResortArena_EventScript_GrandFinals
             Everyone welcome {COLOR RED}Daroach{COLOR DARK_GRAY} to the stage!")
     closemessage()
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right, walk_in_place_fast_right * 5))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_right, walk_in_place_right * 3))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_down, walk_in_place_fast_down * 5))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_down, walk_in_place_down * 3))
     applymovement(LOCALID_RESORT_CROWD_3, moves(walk_in_place_fast_left * 8))
     applymovement(LOCALID_DAROACH, moves(walk_up * 7, walk_right * 3, walk_in_place_left))
     waitmovement()
@@ -1362,10 +1362,10 @@ script ResortArena_EventScript_GrandFinals
             It's the pink puffball himself!
             KIRBY WINS!")
     closemessage()
-    playbgm(MUS_LILYCOVE, FALSE)
+    playbgm(MUS_B_FRONTIER, TRUE)
     playse(SE_APPLAUSE)
-    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_right * 5))
-    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right))
+    applymovement(LOCALID_RESORT_CROWD_1, moves(jump_in_place_down * 5))
+    applymovement(LOCALID_RESORT_CROWD_2, moves(jump_in_place_right, jump_in_place_up, jump_in_place_left, jump_in_place_down))
     applymovement(LOCALID_RESORT_CROWD_3, moves(jump_2_down, jump_2_up, jump_2_up, jump_2_down, face_left))
     applymovement(LOCALID_PLAYER, moves(jump_in_place_right, jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right, jump_in_place_down, jump_in_place_left, jump_in_place_up, jump_in_place_right))
     waitmovement()

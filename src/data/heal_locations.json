@@ -407,6 +407,14 @@
       "y": 43,
       "respawn_map": "MAP_MALLOW_GARDENS_CENTER",
       "respawn_npc": "LOCALID_MALLOW_GARDENS_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_CASTLE_ARENA",
+      "map": "MAP_CASTLE_ARENA",
+      "x": 14,
+      "y": 27,
+      "respawn_map": "MAP_CASTLE_ARENA_CENTER",
+      "respawn_npc": "LOCALID_CASTLE_ARENA_NURSE"
     }
   ]
 }

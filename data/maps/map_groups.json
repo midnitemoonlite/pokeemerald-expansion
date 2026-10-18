@@ -84,7 +84,8 @@
     "gMapGroup_IndoorResortArena",
     "gMapGroup_IndoorOrangeRestArea",
     "gMapGroup_IndoorFloatIslands",
-    "gMapGroup_IndoorMallowGardens"
+    "gMapGroup_IndoorMallowGardens",
+    "gMapGroup_IndoorCastleArena"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -157,7 +158,8 @@
     "OrangeRestArea",
     "OrangeOcean",
     "FloatIslands",
-    "MallowGardens"
+    "MallowGardens",
+    "CastleArena"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -1244,5 +1246,9 @@
     "MallowGardens_Mart",
     "MallowGardens_LeftRoom",
     "MallowGardens_RightRoom"
+  ],
+  "gMapGroup_IndoorCastleArena": [
+    "CastleArena_Center",
+    "CastleArena_Mart"
   ]
 }

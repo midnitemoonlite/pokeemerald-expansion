@@ -125,10 +125,10 @@
     {
       "local_id": "LOCALID_RESORT_CROWD_1",
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 19,
-      "y": 14,
+      "x": 23,
+      "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -152,8 +152,8 @@
     {
       "local_id": "LOCALID_RESORT_CROWD_2",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 19,
-      "y": 16,
+      "x": 22,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -167,7 +167,7 @@
       "local_id": "LOCALID_RESORT_CROWD_3",
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
       "x": 31,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -532,27 +532,35 @@
     },
     {
       "type": "sign",
-      "x": 20,
-      "y": 14,
+      "x": 22,
+      "y": 12,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "ResortArena_EventScript_TalkToGentleman"
     },
     {
       "type": "sign",
-      "x": 20,
-      "y": 16,
+      "x": 23,
+      "y": 12,
       "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_WEST",
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "ResortArena_EventScript_TalkToParasol"
     },
     {
       "type": "sign",
       "x": 30,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_EAST",
       "script": "ResortArena_EventScript_TalkToSqueaker"
+    },
+    {
+      "type": "hidden_item",
+      "x": 20,
+      "y": 11,
+      "elevation": 0,
+      "item": "ITEM_AIR_BALLOON",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN"
     }
   ]
 }

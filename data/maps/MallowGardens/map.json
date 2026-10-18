@@ -2,7 +2,7 @@
   "id": "MAP_MALLOW_GARDENS",
   "name": "MallowGardens",
   "layout": "LAYOUT_MALLOW_GARDENS",
-  "music": "MUS_DEWFORD",
+  "music": "MUS_VERDANTURF",
   "region_map_section": "MAPSEC_MALLOW_GARDENS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -305,6 +305,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "MallowGardens_EventScript_Sign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 50,
+      "y": 27,
+      "elevation": 0,
+      "item": "ITEM_RARE_CANDY",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL"
     }
   ]
 }

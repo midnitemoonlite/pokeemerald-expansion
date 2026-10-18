@@ -9864,6 +9864,36 @@
       "secondary_tileset": "gTileset_LilycoveMuseum",
       "border_filepath": "data/layouts/MallowCastle_4F/border.bin",
       "blockdata_filepath": "data/layouts/MallowCastle_4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASTLE_ARENA",
+      "name": "CastleArena_Layout",
+      "width": 45,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattlePike",
+      "border_filepath": "data/layouts/CastleArena/border.bin",
+      "blockdata_filepath": "data/layouts/CastleArena/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASTLE_ARENA_MART",
+      "name": "CastleArena_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/CastleArena_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/CastleArena_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASTLE_ARENA_CENTER",
+      "name": "CastleArena_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/CastleArena_Center/border.bin",
+      "blockdata_filepath": "data/layouts/CastleArena_Center/map.bin"
     }
   ]
 }

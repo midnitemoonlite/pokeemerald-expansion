@@ -725,7 +725,7 @@ WaddleDeeArena_EventScript_GrandFinals_12:
 # 597 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
 # 598 "data/maps/WaddleDeeArena/scripts.pory"
-	playbgm MUS_B_FRONTIER, FALSE
+	playbgm MUS_CONTEST_LOBBY, TRUE
 # 599 "data/maps/WaddleDeeArena/scripts.pory"
 	playse SE_APPLAUSE
 # 600 "data/maps/WaddleDeeArena/scripts.pory"
@@ -2572,7 +2572,7 @@ WaddleDeeArena_EventScript_ForfeitConfirmation_Text_3:
 
 WaddleDeeArena_EventScript_TalkToMagolor_Text_0:
 # 807 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "I should study up on what makes the\n"
+	.string "{SPEAKER NAME_MAGOLOR}I should study up on what makes the\n"
 	.string "Royal Royale so fun to play.\p"
 	.string "That knowledge could be put to good\n"
 	.string "use for improving my own games!\p"
@@ -2583,7 +2583,7 @@ WaddleDeeArena_EventScript_TalkToMagolor_Text_0:
 
 WaddleDeeArena_EventScript_TalkToMagolor_Text_1:
 # 821 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "Huh? You're checking in on me to see\n"
+	.string "{SPEAKER NAME_MAGOLOR}Huh? You're checking in on me to see\n"
 	.string "if I'm doing alright?\p"
 	.string "Gee, Kirby, you're one silly fellow.\n"
 	.string "Of course I'm not upset!\p"
@@ -2594,7 +2594,7 @@ WaddleDeeArena_EventScript_TalkToMagolor_Text_1:
 
 WaddleDeeArena_EventScript_TalkToMagolor_Text_2:
 # 833 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "Trick is a move that swaps your Helper's\n"
+	.string "{SPEAKER NAME_MAGOLOR}Trick is a move that swaps your Helper's\n"
 	.string "item with the target's.\p"
 	.string "You might find items on your journey\n"
 	.string "you think you may have no use for…\p"

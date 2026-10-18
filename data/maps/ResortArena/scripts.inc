@@ -803,9 +803,9 @@ ResortArena_EventScript_BeginChallenge_8:
 # 776 "data/maps/ResortArena/scripts.pory"
 	applymovement LOCALID_RESORT_CROWD_1, ResortArena_EventScript_BeginChallenge_Movement_8
 # 777 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_BeginChallenge_Movement_9
+	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_BeginChallenge_Movement_8
 # 778 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_BeginChallenge_Movement_10
+	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_BeginChallenge_Movement_9
 # 779 "data/maps/ResortArena/scripts.pory"
 	delay 60
 # 780 "data/maps/ResortArena/scripts.pory"
@@ -860,19 +860,19 @@ ResortArena_EventScript_Challenger1::
 # 788 "data/maps/ResortArena/scripts.pory"
 	applymovement LOCALID_RESORT_CROWD_1, ResortArena_EventScript_Challenger1_Movement_0
 # 789 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_Challenger1_Movement_1
+	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_Challenger1_Movement_0
 # 790 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_Challenger1_Movement_2
+	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_Challenger1_Movement_1
 # 791 "data/maps/ResortArena/scripts.pory"
 	addobject LOCALID_RESORT_CHALLENGER_1
 # 792 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_1, ResortArena_EventScript_Challenger1_Movement_3
+	applymovement LOCALID_RESORT_CHALLENGER_1, ResortArena_EventScript_Challenger1_Movement_2
 # 793 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 794 "data/maps/ResortArena/scripts.pory"
 	delay 30
 # 795 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_1, ResortArena_EventScript_Challenger1_Movement_4
+	applymovement LOCALID_RESORT_CHALLENGER_1, ResortArena_EventScript_Challenger1_Movement_3
 # 796 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 797 "data/maps/ResortArena/scripts.pory"
@@ -887,9 +887,9 @@ ResortArena_EventScript_Challenger1_1:
 # 809 "data/maps/ResortArena/scripts.pory"
 	setflag FLAG_ARENA_RETRY
 # 810 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_1, ResortArena_EventScript_Challenger1_Movement_5
+	applymovement LOCALID_RESORT_CHALLENGER_1, ResortArena_EventScript_Challenger1_Movement_4
 # 811 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_6
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_5
 # 812 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 813 "data/maps/ResortArena/scripts.pory"
@@ -899,11 +899,11 @@ ResortArena_EventScript_Challenger1_1:
 # 815 "data/maps/ResortArena/scripts.pory"
 	msgbox ResortArena_EventScript_Challenger1_Text_3
 # 817 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_1, ResortArena_EventScript_Challenger1_Movement_7
+	applymovement LOCALID_RESORT_CROWD_1, ResortArena_EventScript_Challenger1_Movement_6
 # 818 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_Challenger1_Movement_1
+	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_Challenger1_Movement_0
 # 819 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_Challenger1_Movement_8
+	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_Challenger1_Movement_7
 # 820 "data/maps/ResortArena/scripts.pory"
 	playse SE_APPLAUSE
 # 821 "data/maps/ResortArena/scripts.pory"
@@ -913,9 +913,9 @@ ResortArena_EventScript_Challenger1_1:
 # 823 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 824 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_9
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_8
 # 825 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_1, ResortArena_EventScript_Challenger1_Movement_10
+	applymovement LOCALID_RESORT_CHALLENGER_1, ResortArena_EventScript_Challenger1_Movement_9
 # 826 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 827 "data/maps/ResortArena/scripts.pory"
@@ -953,13 +953,13 @@ ResortArena_EventScript_Challenger2::
 # 845 "data/maps/ResortArena/scripts.pory"
 	addobject LOCALID_RESORT_CHALLENGER_2
 # 846 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_2, ResortArena_EventScript_Challenger1_Movement_3
+	applymovement LOCALID_RESORT_CHALLENGER_2, ResortArena_EventScript_Challenger1_Movement_2
 # 847 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 848 "data/maps/ResortArena/scripts.pory"
 	delay 30
 # 849 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_2, ResortArena_EventScript_Challenger1_Movement_4
+	applymovement LOCALID_RESORT_CHALLENGER_2, ResortArena_EventScript_Challenger1_Movement_3
 # 850 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 851 "data/maps/ResortArena/scripts.pory"
@@ -971,9 +971,9 @@ ResortArena_EventScript_Challenger2::
 # 854 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 855 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_2, ResortArena_EventScript_Challenger1_Movement_5
+	applymovement LOCALID_RESORT_CHALLENGER_2, ResortArena_EventScript_Challenger1_Movement_4
 # 856 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_6
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_5
 # 857 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 858 "data/maps/ResortArena/scripts.pory"
@@ -997,9 +997,9 @@ ResortArena_EventScript_Challenger2::
 # 868 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 869 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_9
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_8
 # 870 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_2, ResortArena_EventScript_Challenger1_Movement_10
+	applymovement LOCALID_RESORT_CHALLENGER_2, ResortArena_EventScript_Challenger1_Movement_9
 # 871 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 872 "data/maps/ResortArena/scripts.pory"
@@ -1023,17 +1023,17 @@ ResortArena_EventScript_Challenger3::
 # 888 "data/maps/ResortArena/scripts.pory"
 	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_Challenger3_Movement_1
 # 889 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_BeginChallenge_Movement_10
+	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_BeginChallenge_Movement_9
 # 890 "data/maps/ResortArena/scripts.pory"
 	addobject LOCALID_RESORT_CHALLENGER_3
 # 891 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_3, ResortArena_EventScript_Challenger1_Movement_3
+	applymovement LOCALID_RESORT_CHALLENGER_3, ResortArena_EventScript_Challenger1_Movement_2
 # 892 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 893 "data/maps/ResortArena/scripts.pory"
 	delay 30
 # 894 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_3, ResortArena_EventScript_Challenger1_Movement_4
+	applymovement LOCALID_RESORT_CHALLENGER_3, ResortArena_EventScript_Challenger1_Movement_3
 # 895 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 896 "data/maps/ResortArena/scripts.pory"
@@ -1045,9 +1045,9 @@ ResortArena_EventScript_Challenger3::
 # 900 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 901 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_3, ResortArena_EventScript_Challenger1_Movement_5
+	applymovement LOCALID_RESORT_CHALLENGER_3, ResortArena_EventScript_Challenger1_Movement_4
 # 902 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_6
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_5
 # 903 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 904 "data/maps/ResortArena/scripts.pory"
@@ -1071,9 +1071,9 @@ ResortArena_EventScript_Challenger3::
 # 914 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 915 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_9
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_8
 # 916 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_3, ResortArena_EventScript_Challenger1_Movement_10
+	applymovement LOCALID_RESORT_CHALLENGER_3, ResortArena_EventScript_Challenger1_Movement_9
 # 917 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 918 "data/maps/ResortArena/scripts.pory"
@@ -1101,13 +1101,13 @@ ResortArena_EventScript_Challenger4::
 # 937 "data/maps/ResortArena/scripts.pory"
 	addobject LOCALID_RESORT_CHALLENGER_4
 # 938 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_4, ResortArena_EventScript_Challenger1_Movement_3
+	applymovement LOCALID_RESORT_CHALLENGER_4, ResortArena_EventScript_Challenger1_Movement_2
 # 939 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 940 "data/maps/ResortArena/scripts.pory"
 	delay 30
 # 941 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_4, ResortArena_EventScript_Challenger1_Movement_4
+	applymovement LOCALID_RESORT_CHALLENGER_4, ResortArena_EventScript_Challenger1_Movement_3
 # 942 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 943 "data/maps/ResortArena/scripts.pory"
@@ -1119,9 +1119,9 @@ ResortArena_EventScript_Challenger4::
 # 947 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 948 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_4, ResortArena_EventScript_Challenger1_Movement_5
+	applymovement LOCALID_RESORT_CHALLENGER_4, ResortArena_EventScript_Challenger1_Movement_4
 # 949 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_6
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_5
 # 950 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 951 "data/maps/ResortArena/scripts.pory"
@@ -1145,9 +1145,9 @@ ResortArena_EventScript_Challenger4::
 # 961 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 962 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_9
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_8
 # 963 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_4, ResortArena_EventScript_Challenger1_Movement_10
+	applymovement LOCALID_RESORT_CHALLENGER_4, ResortArena_EventScript_Challenger1_Movement_9
 # 964 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 965 "data/maps/ResortArena/scripts.pory"
@@ -1175,13 +1175,13 @@ ResortArena_EventScript_Challenger5::
 # 984 "data/maps/ResortArena/scripts.pory"
 	addobject LOCALID_RESORT_CHALLENGER_5
 # 985 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_5, ResortArena_EventScript_Challenger1_Movement_3
+	applymovement LOCALID_RESORT_CHALLENGER_5, ResortArena_EventScript_Challenger1_Movement_2
 # 986 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 987 "data/maps/ResortArena/scripts.pory"
 	delay 30
 # 988 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_5, ResortArena_EventScript_Challenger1_Movement_4
+	applymovement LOCALID_RESORT_CHALLENGER_5, ResortArena_EventScript_Challenger1_Movement_3
 # 989 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 990 "data/maps/ResortArena/scripts.pory"
@@ -1193,9 +1193,9 @@ ResortArena_EventScript_Challenger5::
 # 993 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 994 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_5, ResortArena_EventScript_Challenger1_Movement_5
+	applymovement LOCALID_RESORT_CHALLENGER_5, ResortArena_EventScript_Challenger1_Movement_4
 # 995 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_6
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_5
 # 996 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 997 "data/maps/ResortArena/scripts.pory"
@@ -1223,9 +1223,9 @@ ResortArena_EventScript_Challenger5::
 # 1009 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 1010 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_9
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_Challenger1_Movement_8
 # 1011 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CHALLENGER_5, ResortArena_EventScript_Challenger1_Movement_10
+	applymovement LOCALID_RESORT_CHALLENGER_5, ResortArena_EventScript_Challenger1_Movement_9
 # 1012 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 1013 "data/maps/ResortArena/scripts.pory"
@@ -1624,13 +1624,13 @@ ResortArena_EventScript_GrandFinals_1:
 # 1298 "data/maps/ResortArena/scripts.pory"
 	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_GrandFinals_Movement_6
 # 1299 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_DAROACH, ResortArena_EventScript_Challenger1_Movement_3
+	applymovement LOCALID_DAROACH, ResortArena_EventScript_Challenger1_Movement_2
 # 1300 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 1301 "data/maps/ResortArena/scripts.pory"
 	delay 60
 # 1302 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_DAROACH, ResortArena_EventScript_Challenger1_Movement_4
+	applymovement LOCALID_DAROACH, ResortArena_EventScript_Challenger1_Movement_3
 # 1303 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 1304 "data/maps/ResortArena/scripts.pory"
@@ -1672,17 +1672,17 @@ ResortArena_EventScript_GrandFinals_9:
 # 1364 "data/maps/ResortArena/scripts.pory"
 	closemessage
 # 1365 "data/maps/ResortArena/scripts.pory"
-	playbgm MUS_LILYCOVE, FALSE
+	playbgm MUS_B_FRONTIER, TRUE
 # 1366 "data/maps/ResortArena/scripts.pory"
 	playse SE_APPLAUSE
 # 1367 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_1, ResortArena_EventScript_GrandFinals_Movement_0
+	applymovement LOCALID_RESORT_CROWD_1, ResortArena_EventScript_GrandFinals_Movement_10
 # 1368 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_GrandFinals_Movement_10
+	applymovement LOCALID_RESORT_CROWD_2, ResortArena_EventScript_GrandFinals_Movement_11
 # 1369 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_GrandFinals_Movement_11
+	applymovement LOCALID_RESORT_CROWD_3, ResortArena_EventScript_GrandFinals_Movement_12
 # 1370 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_GrandFinals_Movement_12
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_GrandFinals_Movement_13
 # 1371 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 1372 "data/maps/ResortArena/scripts.pory"
@@ -1694,7 +1694,7 @@ ResortArena_EventScript_GrandFinals_9:
 # 1375 "data/maps/ResortArena/scripts.pory"
 	closemessage
 # 1376 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_DAROACH, ResortArena_EventScript_GrandFinals_Movement_13
+	applymovement LOCALID_DAROACH, ResortArena_EventScript_GrandFinals_Movement_14
 # 1377 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 1378 "data/maps/ResortArena/scripts.pory"
@@ -1702,7 +1702,7 @@ ResortArena_EventScript_GrandFinals_9:
 # 1380 "data/maps/ResortArena/scripts.pory"
 	closemessage
 # 1381 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_DAROACH, ResortArena_EventScript_GrandFinals_Movement_14
+	applymovement LOCALID_DAROACH, ResortArena_EventScript_GrandFinals_Movement_15
 # 1382 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 # 1383 "data/maps/ResortArena/scripts.pory"
@@ -1720,7 +1720,7 @@ ResortArena_EventScript_GrandFinals_9:
 # 1389 "data/maps/ResortArena/scripts.pory"
 	special SpawnCameraObject
 # 1390 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_GrandFinals_Movement_15
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_GrandFinals_Movement_16
 # 1391 "data/maps/ResortArena/scripts.pory"
 	delay 60
 # 1392 "data/maps/ResortArena/scripts.pory"
@@ -1859,16 +1859,16 @@ ResortArena_EventScript_GiveMinePresent_7:
 
 ResortArena_EventScript_GiveMinePresent_2:
 # 1447 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_MINE, ResortArena_EventScript_Challenger2_Movement_0
+	applymovement LOCALID_MINE, ResortArena_EventScript_GiveMinePresent_Movement_0
 # 1448 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_PLAYER, ResortArena_EventScript_GiveMinePresent_Movement_0
+	applymovement LOCALID_PLAYER, ResortArena_EventScript_GiveMinePresent_Movement_1
 # 1449 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 	goto ResortArena_EventScript_GiveMinePresent_1
 
 ResortArena_EventScript_GiveMinePresent_5:
 # 1453 "data/maps/ResortArena/scripts.pory"
-	applymovement LOCALID_MINE, ResortArena_EventScript_BeginChallenge_Movement_8
+	applymovement LOCALID_MINE, ResortArena_EventScript_Challenger2_Movement_0
 # 1454 "data/maps/ResortArena/scripts.pory"
 	waitmovement
 	goto ResortArena_EventScript_GiveMinePresent_4
@@ -2014,17 +2014,11 @@ ResortArena_EventScript_BeginChallenge_Movement_7:
 # 776 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_BeginChallenge_Movement_8:
 # 776 "data/maps/ResortArena/scripts.pory"
-	face_down
-	step_end
-
-# 777 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_BeginChallenge_Movement_9:
-# 777 "data/maps/ResortArena/scripts.pory"
 	face_up
 	step_end
 
 # 778 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_BeginChallenge_Movement_10:
+ResortArena_EventScript_BeginChallenge_Movement_9:
 # 778 "data/maps/ResortArena/scripts.pory"
 	walk_in_place_left
 # 778 "data/maps/ResortArena/scripts.pory"
@@ -2038,125 +2032,111 @@ ResortArena_EventScript_BeginChallenge_Movement_10:
 # 788 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger1_Movement_0:
 # 788 "data/maps/ResortArena/scripts.pory"
-	face_right
-# 788 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 788 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 788 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 788 "data/maps/ResortArena/scripts.pory"
 	face_down
-	step_end
-
-# 789 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_Challenger1_Movement_1:
-# 789 "data/maps/ResortArena/scripts.pory"
-	face_right
-# 789 "data/maps/ResortArena/scripts.pory"
+# 788 "data/maps/ResortArena/scripts.pory"
 	delay_16
-# 789 "data/maps/ResortArena/scripts.pory"
+# 788 "data/maps/ResortArena/scripts.pory"
 	delay_16
-# 789 "data/maps/ResortArena/scripts.pory"
+# 788 "data/maps/ResortArena/scripts.pory"
 	delay_16
-# 789 "data/maps/ResortArena/scripts.pory"
+# 788 "data/maps/ResortArena/scripts.pory"
 	face_up
 	step_end
 
 # 790 "data/maps/ResortArena/scripts.pory"
+ResortArena_EventScript_Challenger1_Movement_1:
+# 790 "data/maps/ResortArena/scripts.pory"
+	face_down
+# 790 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 790 "data/maps/ResortArena/scripts.pory"
+	delay_8
+# 790 "data/maps/ResortArena/scripts.pory"
+	face_left
+# 790 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 790 "data/maps/ResortArena/scripts.pory"
+	delay_8
+# 790 "data/maps/ResortArena/scripts.pory"
+	face_down
+# 790 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 790 "data/maps/ResortArena/scripts.pory"
+	delay_8
+# 790 "data/maps/ResortArena/scripts.pory"
+	face_left
+	step_end
+
+# 792 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger1_Movement_2:
-# 790 "data/maps/ResortArena/scripts.pory"
-	face_down
-# 790 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 790 "data/maps/ResortArena/scripts.pory"
-	delay_8
-# 790 "data/maps/ResortArena/scripts.pory"
-	face_left
-# 790 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 790 "data/maps/ResortArena/scripts.pory"
-	delay_8
-# 790 "data/maps/ResortArena/scripts.pory"
-	face_down
-# 790 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 790 "data/maps/ResortArena/scripts.pory"
-	delay_8
-# 790 "data/maps/ResortArena/scripts.pory"
-	face_left
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_up
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_up
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_up
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_up
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_up
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_up
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_up
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_right
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_right
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_right
+# 792 "data/maps/ResortArena/scripts.pory"
+	walk_in_place_left
 	step_end
 
-# 792 "data/maps/ResortArena/scripts.pory"
+# 795 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger1_Movement_3:
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_up
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_up
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_up
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_up
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_up
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_up
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_up
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_right
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_right
-# 792 "data/maps/ResortArena/scripts.pory"
-	walk_right
-# 792 "data/maps/ResortArena/scripts.pory"
+# 795 "data/maps/ResortArena/scripts.pory"
+	walk_in_place_left
+# 795 "data/maps/ResortArena/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 795 "data/maps/ResortArena/scripts.pory"
+# 810 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger1_Movement_4:
-# 795 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_left
-# 795 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_left
+# 810 "data/maps/ResortArena/scripts.pory"
+	walk_left
+# 810 "data/maps/ResortArena/scripts.pory"
+	walk_left
 	step_end
 
-# 810 "data/maps/ResortArena/scripts.pory"
+# 811 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger1_Movement_5:
-# 810 "data/maps/ResortArena/scripts.pory"
-	walk_left
-# 810 "data/maps/ResortArena/scripts.pory"
-	walk_left
+# 811 "data/maps/ResortArena/scripts.pory"
+	walk_right
+# 811 "data/maps/ResortArena/scripts.pory"
+	walk_right
 	step_end
 
-# 811 "data/maps/ResortArena/scripts.pory"
+# 817 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger1_Movement_6:
-# 811 "data/maps/ResortArena/scripts.pory"
-	walk_right
-# 811 "data/maps/ResortArena/scripts.pory"
-	walk_right
-	step_end
-
-# 817 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_Challenger1_Movement_7:
-# 817 "data/maps/ResortArena/scripts.pory"
-	face_right
-# 817 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 817 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 817 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 817 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 817 "data/maps/ResortArena/scripts.pory"
-	delay_16
 # 817 "data/maps/ResortArena/scripts.pory"
 	face_down
+# 817 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 817 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 817 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 817 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 817 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 817 "data/maps/ResortArena/scripts.pory"
+	face_up
 	step_end
 
 # 819 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_Challenger1_Movement_8:
+ResortArena_EventScript_Challenger1_Movement_7:
 # 819 "data/maps/ResortArena/scripts.pory"
 	face_up
 # 819 "data/maps/ResortArena/scripts.pory"
@@ -2174,7 +2154,7 @@ ResortArena_EventScript_Challenger1_Movement_8:
 	step_end
 
 # 824 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_Challenger1_Movement_9:
+ResortArena_EventScript_Challenger1_Movement_8:
 # 824 "data/maps/ResortArena/scripts.pory"
 	walk_left
 # 824 "data/maps/ResortArena/scripts.pory"
@@ -2184,7 +2164,7 @@ ResortArena_EventScript_Challenger1_Movement_9:
 	step_end
 
 # 825 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_Challenger1_Movement_10:
+ResortArena_EventScript_Challenger1_Movement_9:
 # 825 "data/maps/ResortArena/scripts.pory"
 	walk_left
 # 825 "data/maps/ResortArena/scripts.pory"
@@ -2206,27 +2186,27 @@ ResortArena_EventScript_Challenger1_Movement_10:
 # 842 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger2_Movement_0:
 # 842 "data/maps/ResortArena/scripts.pory"
-	face_right
+	face_down
 	step_end
 
 # 843 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger2_Movement_1:
 # 843 "data/maps/ResortArena/scripts.pory"
+	face_down
+# 843 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 843 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 843 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 843 "data/maps/ResortArena/scripts.pory"
 	face_right
 # 843 "data/maps/ResortArena/scripts.pory"
 	delay_16
 # 843 "data/maps/ResortArena/scripts.pory"
 	delay_16
 # 843 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 843 "data/maps/ResortArena/scripts.pory"
-	face_up
-# 843 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 843 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 843 "data/maps/ResortArena/scripts.pory"
-	face_right
+	face_down
 	step_end
 
 # 844 "data/maps/ResortArena/scripts.pory"
@@ -2244,11 +2224,11 @@ ResortArena_EventScript_Challenger2_Movement_2:
 # 864 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger2_Movement_3:
 # 864 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_slow_right
+	walk_in_place_slow_down
 # 864 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_slow_right
+	walk_in_place_slow_down
 # 864 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_slow_right
+	walk_in_place_slow_down
 	step_end
 
 # 865 "data/maps/ResortArena/scripts.pory"
@@ -2256,15 +2236,15 @@ ResortArena_EventScript_Challenger2_Movement_4:
 # 865 "data/maps/ResortArena/scripts.pory"
 	delay_16
 # 865 "data/maps/ResortArena/scripts.pory"
-	face_up
-# 865 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 865 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 865 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 865 "data/maps/ResortArena/scripts.pory"
 	face_right
+# 865 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 865 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 865 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 865 "data/maps/ResortArena/scripts.pory"
+	face_down
 	step_end
 
 # 866 "data/maps/ResortArena/scripts.pory"
@@ -2284,47 +2264,47 @@ ResortArena_EventScript_Challenger2_Movement_5:
 # 887 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger3_Movement_0:
 # 887 "data/maps/ResortArena/scripts.pory"
-	face_down
+	face_left
 # 887 "data/maps/ResortArena/scripts.pory"
 	delay_16
 # 887 "data/maps/ResortArena/scripts.pory"
-	face_right
+	face_down
 	step_end
 
 # 888 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger3_Movement_1:
 # 888 "data/maps/ResortArena/scripts.pory"
-	face_up
+	face_right
 # 888 "data/maps/ResortArena/scripts.pory"
 	delay_16
 # 888 "data/maps/ResortArena/scripts.pory"
-	face_right
+	face_down
 	step_end
 
 # 910 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger3_Movement_2:
 # 910 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 910 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 910 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 910 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 910 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 	step_end
 
 # 911 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger3_Movement_3:
 # 911 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 911 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 911 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 911 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 	step_end
 
 # 912 "data/maps/ResortArena/scripts.pory"
@@ -2364,25 +2344,25 @@ ResortArena_EventScript_Challenger3_Movement_4:
 # 934 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger4_Movement_0:
 # 934 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 934 "data/maps/ResortArena/scripts.pory"
-	face_down
+	face_left
 # 934 "data/maps/ResortArena/scripts.pory"
 	delay_16
 # 934 "data/maps/ResortArena/scripts.pory"
-	face_right
+	face_down
 	step_end
 
 # 935 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger4_Movement_1:
 # 935 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 935 "data/maps/ResortArena/scripts.pory"
-	face_up
+	face_right
 # 935 "data/maps/ResortArena/scripts.pory"
 	delay_16
 # 935 "data/maps/ResortArena/scripts.pory"
-	face_right
+	face_down
 	step_end
 
 # 936 "data/maps/ResortArena/scripts.pory"
@@ -2404,11 +2384,11 @@ ResortArena_EventScript_Challenger4_Movement_2:
 # 957 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger4_Movement_3:
 # 957 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 957 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 957 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 	step_end
 
 # 959 "data/maps/ResortArena/scripts.pory"
@@ -2438,15 +2418,15 @@ ResortArena_EventScript_Challenger4_Movement_4:
 # 981 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger5_Movement_0:
 # 981 "data/maps/ResortArena/scripts.pory"
-	face_up
+	face_right
+# 981 "data/maps/ResortArena/scripts.pory"
+	delay_16
+# 981 "data/maps/ResortArena/scripts.pory"
+	face_left
 # 981 "data/maps/ResortArena/scripts.pory"
 	delay_16
 # 981 "data/maps/ResortArena/scripts.pory"
 	face_down
-# 981 "data/maps/ResortArena/scripts.pory"
-	delay_16
-# 981 "data/maps/ResortArena/scripts.pory"
-	face_right
 	step_end
 
 # 983 "data/maps/ResortArena/scripts.pory"
@@ -2466,21 +2446,21 @@ ResortArena_EventScript_Challenger5_Movement_1:
 # 1004 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_Challenger5_Movement_2:
 # 1004 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1004 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1004 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1004 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1004 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1004 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1004 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1004 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 	step_end
 
 # 1006 "data/maps/ResortArena/scripts.pory"
@@ -2576,29 +2556,29 @@ ResortArena_EventScript_GrandFinals_Movement_0:
 # 1277 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_GrandFinals_Movement_1:
 # 1277 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 1277 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 1277 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 1277 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 	step_end
 
 # 1278 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_GrandFinals_Movement_2:
 # 1278 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 1278 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 1278 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 1278 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 1278 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 1278 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 	step_end
 
 # 1279 "data/maps/ResortArena/scripts.pory"
@@ -2654,29 +2634,29 @@ ResortArena_EventScript_GrandFinals_Movement_3:
 # 1296 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_GrandFinals_Movement_4:
 # 1296 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 1296 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1296 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1296 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1296 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 # 1296 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_fast_right
+	walk_in_place_fast_down
 	step_end
 
 # 1297 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_GrandFinals_Movement_5:
 # 1297 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_down
 # 1297 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 1297 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 # 1297 "data/maps/ResortArena/scripts.pory"
-	walk_in_place_right
+	walk_in_place_down
 	step_end
 
 # 1298 "data/maps/ResortArena/scripts.pory"
@@ -2733,20 +2713,34 @@ ResortArena_EventScript_GrandFinals_Movement_9:
 	walk_fast_right
 	step_end
 
-# 1368 "data/maps/ResortArena/scripts.pory"
+# 1367 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_GrandFinals_Movement_10:
-# 1368 "data/maps/ResortArena/scripts.pory"
+# 1367 "data/maps/ResortArena/scripts.pory"
 	jump_in_place_down
+# 1367 "data/maps/ResortArena/scripts.pory"
+	jump_in_place_down
+# 1367 "data/maps/ResortArena/scripts.pory"
+	jump_in_place_down
+# 1367 "data/maps/ResortArena/scripts.pory"
+	jump_in_place_down
+# 1367 "data/maps/ResortArena/scripts.pory"
+	jump_in_place_down
+	step_end
+
 # 1368 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_left
+ResortArena_EventScript_GrandFinals_Movement_11:
+# 1368 "data/maps/ResortArena/scripts.pory"
+	jump_in_place_right
 # 1368 "data/maps/ResortArena/scripts.pory"
 	jump_in_place_up
 # 1368 "data/maps/ResortArena/scripts.pory"
-	jump_in_place_right
+	jump_in_place_left
+# 1368 "data/maps/ResortArena/scripts.pory"
+	jump_in_place_down
 	step_end
 
 # 1369 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_GrandFinals_Movement_11:
+ResortArena_EventScript_GrandFinals_Movement_12:
 # 1369 "data/maps/ResortArena/scripts.pory"
 	jump_2_down
 # 1369 "data/maps/ResortArena/scripts.pory"
@@ -2760,7 +2754,7 @@ ResortArena_EventScript_GrandFinals_Movement_11:
 	step_end
 
 # 1370 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_GrandFinals_Movement_12:
+ResortArena_EventScript_GrandFinals_Movement_13:
 # 1370 "data/maps/ResortArena/scripts.pory"
 	jump_in_place_right
 # 1370 "data/maps/ResortArena/scripts.pory"
@@ -2782,7 +2776,7 @@ ResortArena_EventScript_GrandFinals_Movement_12:
 	step_end
 
 # 1376 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_GrandFinals_Movement_13:
+ResortArena_EventScript_GrandFinals_Movement_14:
 # 1376 "data/maps/ResortArena/scripts.pory"
 	walk_in_place_slow_left
 # 1376 "data/maps/ResortArena/scripts.pory"
@@ -2790,7 +2784,7 @@ ResortArena_EventScript_GrandFinals_Movement_13:
 	step_end
 
 # 1381 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_GrandFinals_Movement_14:
+ResortArena_EventScript_GrandFinals_Movement_15:
 # 1381 "data/maps/ResortArena/scripts.pory"
 	walk_left
 # 1381 "data/maps/ResortArena/scripts.pory"
@@ -2820,7 +2814,7 @@ ResortArena_EventScript_GrandFinals_Movement_14:
 	step_end
 
 # 1390 "data/maps/ResortArena/scripts.pory"
-ResortArena_EventScript_GrandFinals_Movement_15:
+ResortArena_EventScript_GrandFinals_Movement_16:
 # 1390 "data/maps/ResortArena/scripts.pory"
 	walk_right
 # 1390 "data/maps/ResortArena/scripts.pory"
@@ -2847,8 +2841,14 @@ ResortArena_EventScript_TurnAwayFromMine_Movement_0:
 	walk_down
 	step_end
 
-# 1448 "data/maps/ResortArena/scripts.pory"
+# 1447 "data/maps/ResortArena/scripts.pory"
 ResortArena_EventScript_GiveMinePresent_Movement_0:
+# 1447 "data/maps/ResortArena/scripts.pory"
+	face_right
+	step_end
+
+# 1448 "data/maps/ResortArena/scripts.pory"
+ResortArena_EventScript_GiveMinePresent_Movement_1:
 # 1448 "data/maps/ResortArena/scripts.pory"
 	face_left
 	step_end
@@ -3209,8 +3209,8 @@ ResortArena_EventScript_BeginChallenge_Text_1:
 
 ResortArena_EventScript_BeginChallenge_Text_2:
 # 768 "data/maps/ResortArena/scripts.pory"
-	.string "Welcome, one and all, to the brand-new\n"
-	.string "Waddle Dee Arena!\p"
+	.string "Welcome, one and all, to the tropical\n"
+	.string "Resort Arena!\p"
 	.string "Kirby has returned to the stage for\n"
 	.string "another shot at the Resort Brooch!\l"
 	.string "Will he see it through this time?$"

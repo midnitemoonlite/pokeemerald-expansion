@@ -595,7 +595,7 @@ script WaddleDeeArena_EventScript_GrandFinals
             It's the pink puffball himself!
             KIRBY WINS!")
     closemessage()
-    playbgm(MUS_B_FRONTIER, FALSE)
+    playbgm(MUS_CONTEST_LOBBY, TRUE)
     playse(SE_APPLAUSE)
     applymovement(LOCALID_WADDLE_CROWD_1, moves(walk_in_place_faster_down * 13, jump_in_place_down * 5))
     applymovement(LOCALID_WADDLE_CROWD_2, moves(face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, walk_in_place_fast_right * 10))
@@ -804,7 +804,7 @@ script WaddleDeeArena_EventScript_TalkToMagolor
     faceplayer
     if(flag(FLAG_RECEIVED_TM_ROCK_TOMB))
     {
-        msgbox("I should study up on what makes the
+        msgbox("{SPEAKER NAME_MAGOLOR}I should study up on what makes the
                 Royal Royale so fun to play.
                 
                 That knowledge could be put to good
@@ -818,7 +818,7 @@ script WaddleDeeArena_EventScript_TalkToMagolor
     }
     elif(!flag(FLAG_RECEIVED_TM_ROCK_TOMB))
     {
-        msgbox("Huh? You're checking in on me to see
+        msgbox("{SPEAKER NAME_MAGOLOR}Huh? You're checking in on me to see
                 if I'm doing alright?
                 
                 Gee, Kirby, you're one silly fellow.
@@ -830,7 +830,7 @@ script WaddleDeeArena_EventScript_TalkToMagolor
                 Here, let me give you a little souvenir
                 to mark our battle.")
         giveitem(ITEM_TM53)
-        msgbox("Trick is a move that swaps your Helper's
+        msgbox("{SPEAKER NAME_MAGOLOR}Trick is a move that swaps your Helper's
                 item with the target's.
                 
                 You might find items on your journey

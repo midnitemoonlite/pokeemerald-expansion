@@ -345,25 +345,28 @@
 #define METATILE_Lilycove_Wailmer3         0x2A1
 
 // gTileset_LilycoveMuseum
-#define METATILE_LilycoveMuseum_Block            0x271
-#define METATILE_LilycoveMuseum_BlueVoid         0x201
-#define METATILE_LilycoveMuseum_DarkFloor        0x203
-#define METATILE_LilycoveMuseum_Floor            0x202
-#define METATILE_LilycoveMuseum_Painting0_Left   0x25A
-#define METATILE_LilycoveMuseum_Painting0_Right  0x25B
-#define METATILE_LilycoveMuseum_Painting1_Left   0x25C
-#define METATILE_LilycoveMuseum_Painting1_Right  0x25D
-#define METATILE_LilycoveMuseum_Painting2_Left   0x25E
-#define METATILE_LilycoveMuseum_Painting2_Right  0x25F
-#define METATILE_LilycoveMuseum_Painting3_Left   0x260
-#define METATILE_LilycoveMuseum_Painting3_Right  0x261
-#define METATILE_LilycoveMuseum_Painting4_Left   0x262
-#define METATILE_LilycoveMuseum_Painting4_Right  0x263
-#define METATILE_LilycoveMuseum_WallBottom       0x213
-#define METATILE_LilycoveMuseum_WallLeftCorner   0x23A
-#define METATILE_LilycoveMuseum_WallLip          0x23B
-#define METATILE_LilycoveMuseum_WallRightCorner  0x23C
-#define METATILE_LilycoveMuseum_WallTop          0x20B
+#define METATILE_LilycoveMuseum_Block                0x271
+#define METATILE_LilycoveMuseum_BlueVoid             0x201
+#define METATILE_LilycoveMuseum_DarkFloor            0x203
+#define METATILE_LilycoveMuseum_Floor                0x202
+#define METATILE_LilycoveMuseum_Painting0_Left       0x25A
+#define METATILE_LilycoveMuseum_Painting0_Right      0x25B
+#define METATILE_LilycoveMuseum_Painting1_Left       0x25C
+#define METATILE_LilycoveMuseum_Painting1_Right      0x25D
+#define METATILE_LilycoveMuseum_Painting2_Left       0x25E
+#define METATILE_LilycoveMuseum_Painting2_Right      0x25F
+#define METATILE_LilycoveMuseum_Painting3_Left       0x260
+#define METATILE_LilycoveMuseum_Painting3_Right      0x261
+#define METATILE_LilycoveMuseum_Painting4_Left       0x262
+#define METATILE_LilycoveMuseum_Painting4_Right      0x263
+#define METATILE_LilycoveMuseum_WallBottom           0x213
+#define METATILE_LilycoveMuseum_WallLeftCorner       0x23A
+#define METATILE_LilycoveMuseum_WallLeftCornerDark   0x278
+#define METATILE_LilycoveMuseum_WallLip              0x23B
+#define METATILE_LilycoveMuseum_WallLipDark          0x279
+#define METATILE_LilycoveMuseum_WallRightCorner      0x23C
+#define METATILE_LilycoveMuseum_WallRightCornerDark  0x27A
+#define METATILE_LilycoveMuseum_WallTop              0x20B
 
 // gTileset_Mart
 #define METATILE_Mart_CounterMid_Bottom  0x2C0

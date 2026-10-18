@@ -1359,7 +1359,7 @@ MallowCastle_3F_EventScript_BombBlock9::
 # 779 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
 # 780 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 6, METATILE_LilycoveMuseum_Floor, FALSE
+	setmetatile 6, 6, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 781 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
 # 782 "data/maps/MallowCastle_3F/scripts.pory"
@@ -1377,7 +1377,7 @@ MallowCastle_3F_EventScript_BombBlock9::
 # 788 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
 # 789 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 7, METATILE_LilycoveMuseum_Floor, FALSE
+	setmetatile 6, 7, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 790 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
 # 791 "data/maps/MallowCastle_3F/scripts.pory"
@@ -1395,9 +1395,9 @@ MallowCastle_3F_EventScript_BombBlock9::
 # 797 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
 # 798 "data/maps/MallowCastle_3F/scripts.pory"
-	checkflag FLAG_TEMP_13
+	checkflag FLAG_TEMP_1B
 # 799 "data/maps/MallowCastle_3F/scripts.pory"
-	call_if_unset FLAG_TEMP_13, MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval
+	call_if_unset FLAG_TEMP_1B, MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval
 # 800 "data/maps/MallowCastle_3F/scripts.pory"
 	setmetatile 6, 8, METATILE_LilycoveMuseum_Floor, FALSE
 # 801 "data/maps/MallowCastle_3F/scripts.pory"
@@ -1439,9 +1439,9 @@ MallowCastle_3F_EventScript_BombBlock9::
 
 MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval::
 # 822 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_4
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_12
 # 823 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_13
+	setflag FLAG_TEMP_1B
 	return
 
 
@@ -1597,7 +1597,7 @@ MallowCastle_3F_EventScript_BombBlock11::
 # 904 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
 # 905 "data/maps/MallowCastle_3F/scripts.pory"
-	delay 60
+	delay 120
 # 906 "data/maps/MallowCastle_3F/scripts.pory"
 	msgbox MallowCastle_3F_EventScript_BombBlock11_Text_0
 # 907 "data/maps/MallowCastle_3F/scripts.pory"

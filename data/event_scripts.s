@@ -1843,3 +1843,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/MallowCastle_3F/scripts.inc"
 
 	.include "data/maps/MallowCastle_4F/scripts.inc"
+
+	.include "data/maps/CastleArena/scripts.inc"
+
+	.include "data/maps/CastleArena_Mart/scripts.inc"
+
+	.include "data/maps/CastleArena_Center/scripts.inc"

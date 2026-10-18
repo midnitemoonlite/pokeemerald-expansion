@@ -63,7 +63,7 @@ EventScript_UseRockSmash::
 @ Interact with smashable rock
 EventScript_RockSmash::
 	lockall
-	goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
+	goto_if_unset FLAG_FOUND_NAGO, EventScript_CantSmashRock
 	setfieldeffectargument 0, SPECIES_NAGO
 	msgbox Text_WantToSmash, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
@@ -224,7 +224,7 @@ Text_CantSmash:
 EventScript_StrengthBoulder::
 	lockall
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
-	goto_if_unset FLAG_BADGE03_GET, EventScript_CantStrength
+	goto_if_unset FLAG_BADGE06_GET, EventScript_CantStrength
 	setfieldeffectargument 0, SPECIES_RICK
 	msgbox Text_WantToStrength, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_CancelStrength

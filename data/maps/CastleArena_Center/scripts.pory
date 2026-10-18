@@ -1,0 +1,45 @@
+raw `
+CastleArena_Center_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, CastleArena_Center_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+CastleArena_Center_OnTransition:
+	setrespawn HEAL_LOCATION_CASTLE_ARENA
+	end
+`
+
+script CastleArena_Center_EventScript_Nurse
+{
+    setvar(VAR_0x800B, LOCALID_CASTLE_ARENA_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script CastleArena_Center_EventScript_WaddleDee
+{
+	lock
+	faceplayer
+	msgbox("The Royal Royale is fun and all, but how
+			much longer do I have to keep playing
+			before the lore drops start happening?")
+	release
+}
+
+script CastleArena_Center_EventScript_Lass
+{
+	lock
+	faceplayer
+	msgbox("Not having a preliminary bracket at
+			this Arena is pretty tough\.
+			
+			I like using the time inbetween to
+			make last-minute preparations.
+			
+			Here, though? You need to make sure
+			your Helpers are prepared for anything.")
+	release
+}
