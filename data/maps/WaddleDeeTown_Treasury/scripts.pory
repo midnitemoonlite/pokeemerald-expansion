@@ -1,0 +1,24 @@
+raw `
+WaddleDeeTown_Treasury_MapScripts::
+	.byte 0
+`
+
+script WaddleDeeTown_Treasury_EventScript_Soldier
+{
+    lock
+    faceplayer
+    msgbox("The Great King has ordered that part of
+            his treasury be opened to participants
+            of the Royal Royale.
+            
+            He feels these items might help push
+            players to become better leaders.
+            
+            \.to be honest, he's doing this because
+            he wants them to pick up the pace
+            and get ahead of you, Kirby.
+            
+            But since you're a participant of the
+            Royal Royale too, you can come in.")
+    release
+}

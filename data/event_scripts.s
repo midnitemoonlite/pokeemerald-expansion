@@ -1849,3 +1849,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/CastleArena_Mart/scripts.inc"
 
 	.include "data/maps/CastleArena_Center/scripts.inc"
+
+	.include "data/maps/HALRoom_1/scripts.inc"
+
+	.include "data/maps/WaddleDeeTown_Treasury/scripts.inc"

@@ -595,7 +595,7 @@ script WaddleDeeArena_EventScript_GrandFinals
             It's the pink puffball himself!
             KIRBY WINS!")
     closemessage()
-    playbgm(MUS_CONTEST_LOBBY, TRUE)
+    playbgm(MUS_B_FRONTIER, TRUE)
     playse(SE_APPLAUSE)
     applymovement(LOCALID_WADDLE_CROWD_1, moves(walk_in_place_faster_down * 13, jump_in_place_down * 5))
     applymovement(LOCALID_WADDLE_CROWD_2, moves(face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, delay_8, face_up, delay_8, face_left, delay_8, face_down, delay_8, face_right, walk_in_place_fast_right * 10))

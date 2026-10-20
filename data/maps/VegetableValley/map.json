@@ -186,6 +186,20 @@
       "elevation": 0,
       "dest_map": "MAP_FRUITY_FOREST",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_HALROOM_1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_HALROOM_1",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -206,6 +220,15 @@
       "var": "VAR_VEGETABLE_VALLEY_STATE",
       "var_value": "0",
       "script": "VegetableValley_EventScript_TriggerRight"
+    },
+    {
+      "type": "trigger",
+      "x": 64,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_6",
+      "var_value": "0",
+      "script": "VegetableValley_EventScript_OpenHALRoom"
     }
   ],
   "bg_events": [

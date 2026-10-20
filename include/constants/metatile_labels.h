@@ -263,6 +263,8 @@
 #define METATILE_General_CalmWater             0x170
 #define METATILE_General_CaveEntrance_Bottom   0x0A7
 #define METATILE_General_CaveEntrance_Top      0x09F
+#define METATILE_General_DarkTreeBottom_Left   0x1E4
+#define METATILE_General_DarkTreeBottom_Right  0x1E5
 #define METATILE_General_Door                  0x021
 #define METATILE_General_Door_Contest          0x1DB
 #define METATILE_General_Door_Gym              0x1CD
@@ -290,6 +292,7 @@
 #define METATILE_General_SecretBase_TreeRight  0x027
 #define METATILE_General_SecretBase_VineLeft   0x036
 #define METATILE_General_SecretBase_VineRight  0x037
+#define METATILE_General_SmallTree_Nest        0x0C7
 #define METATILE_General_TallGrass             0x00D
 #define METATILE_General_TallGrass_TreeLeft    0x1C6
 #define METATILE_General_TallGrass_TreeRight   0x1C7
@@ -594,9 +597,12 @@
 #define METATILE_PokemonMansion_Wall_EndPost_Mid                         0x2A5
 
 // gTileset_Rustboro
-#define METATILE_Rustboro_Blockade   0x201
-#define METATILE_Rustboro_Door_Gray  0x21F
-#define METATILE_Rustboro_Door_Tan   0x22F
+#define METATILE_Rustboro_Blockade              0x201
+#define METATILE_Rustboro_DarkSmallTree_Bottom  0x307
+#define METATILE_Rustboro_Door_Gray             0x21F
+#define METATILE_Rustboro_Door_Tan              0x22F
+#define METATILE_Rustboro_ForestWarp_Bottom     0x317
+#define METATILE_Rustboro_ForestWarp_Top        0x30F
 
 // gTileset_SSAnne
 #define METATILE_SSAnne_Door  0x281

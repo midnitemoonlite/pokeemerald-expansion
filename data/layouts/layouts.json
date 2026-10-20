@@ -9894,6 +9894,26 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/CastleArena_Center/border.bin",
       "blockdata_filepath": "data/layouts/CastleArena_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALROOM_1",
+      "name": "HALRoom_1_Layout",
+      "width": 16,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/HALRoom_1/border.bin",
+      "blockdata_filepath": "data/layouts/HALRoom_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_WADDLE_DEE_TOWN_TREASURY",
+      "name": "WaddleDeeTown_Treasury_Layout",
+      "width": 10,
+      "height": 12,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/WaddleDeeTown_Treasury/border.bin",
+      "blockdata_filepath": "data/layouts/WaddleDeeTown_Treasury/map.bin"
     }
   ]
 }

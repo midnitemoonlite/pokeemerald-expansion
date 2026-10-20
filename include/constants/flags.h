@@ -579,7 +579,7 @@
 #define FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN              (FLAG_HIDDEN_ITEMS_START + 0x19) // Resort Arena - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x1A) // Mallow Courtyard - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE           (FLAG_HIDDEN_ITEMS_START + 0x1B) // Castle Arena - Hidden Item 1
-#define FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET               (FLAG_HIDDEN_ITEMS_START + 0x1C)
+#define FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET               (FLAG_HIDDEN_ITEMS_START + 0x1C) 
 #define FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_ULTRA_BALL         (FLAG_HIDDEN_ITEMS_START + 0x1D)
 #define FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM            (FLAG_HIDDEN_ITEMS_START + 0x1E)
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_1_KEY             (FLAG_HIDDEN_ITEMS_START + 0x1F)
@@ -1097,13 +1097,13 @@
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0x414 // Mallow Castle - Item 5
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415 // Mallow Castle - Item 6
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416 // Castle Arena - Item 1
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
-#define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418
-#define FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER                          0x419
-#define FLAG_ITEM_GRANITE_CAVE_1F_ESCAPE_ROPE                       0x41A
-#define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B
-#define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C
-#define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417 // HAL Room 1 - Item 1
+#define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418 // Waddle Dee Town (Treasury) - Item 1
+#define FLAG_ITEM_RUSTURF_TUNNEL_MAX_ETHER                          0x419 // Waddle Dee Town (Treasury) - Item 2
+#define FLAG_ITEM_GRANITE_CAVE_1F_ESCAPE_ROPE                       0x41A // Waddle Dee Town (Treasury) - Item 3
+#define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B // Waddle Dee Town (Treasury) - Item 4
+#define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C // Waddle Dee Town (Treasury) - Item 5
+#define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D // Waddle Dee Town (Treasury) - Item 6
 #define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E
 #define FLAG_ITEM_PETALBURG_WOODS_X_ATTACK                          0x41F
 #define FLAG_ITEM_PETALBURG_WOODS_GREAT_BALL                        0x420

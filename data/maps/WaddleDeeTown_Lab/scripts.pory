@@ -1266,9 +1266,20 @@ script WaddleDeeTown_Lab_EventScript_Book24
 script WaddleDeeTown_Lab_EventScript_Book25
 {
     lockall
-    msgbox("This book is currently empty\.
+    msgbox("Helper Handbook: Experience
     
-            \qoThe pages are blank.\qc")
+            \qoHelpers gain experience through
+            battling and befriending others.
+            
+            The experience a Helper recieves
+            changes depending on its level.
+            
+            Battling and catching Helpers that
+            are stronger than it will yield
+            significantly more experience.
+            
+            Likewise, the opposite is true.
+            Helpers grow best with challenges.\qc")
     release
 }
 

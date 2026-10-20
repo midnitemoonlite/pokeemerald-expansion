@@ -1702,6 +1702,10 @@
     {
       "id": "MAPSEC_CASTLE_ARENA",
       "name": "CASTLE ARENA"
+    },
+    {
+      "id": "MAPSEC_HAL_ROOM",
+      "name": "HAL ROOM"
     }
   ]
 }

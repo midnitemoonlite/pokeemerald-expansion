@@ -24,6 +24,16 @@ script OrangeRestArea_EventScript_Soldier {
     release
 }
 
+script OrangeRestArea_EventScript_Fluff {
+    lock
+    faceplayer
+    msgbox("Do you think if the water was purple,
+            they'd call this sea Grape Ocean?
+            
+            Mmm\. I could go for some grapes.")
+    release
+}
+
 script OrangeRestArea_EventScript_Fisherman {
     lock
     faceplayer

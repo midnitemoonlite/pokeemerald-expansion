@@ -1436,10 +1436,10 @@ Level: 23
 Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
-- Stomp
-- Reversal
+- Tackle
+- Vacuum Wave
 - Aerial Ace
-- Work Up
+- Rapid Spin
 
 /* Battleship Halberd (West) - Mace Knight */
 === TRAINER_LOLA_1 ===
@@ -1455,8 +1455,8 @@ Level: 23
 Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
-- Body Slam
-- Counter
+- Pound
+- Rock Smash
 - Metal Claw
 - Leer
 
@@ -1475,7 +1475,7 @@ Ability: Justified
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
 - Peck
-- Force Palm
+- Reversal
 - Spark
 - Magnet Rise
 
@@ -1493,9 +1493,9 @@ Level: 23
 Ability: Sharpness
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
-- Revenge
+- Beat Up
 - Razor Leaf
-- Dual Chop
+- Karate Chop
 - Sharpen
 
 SPECIES_MACE_KNIGHT (M)
@@ -1503,30 +1503,30 @@ Level: 23
 Ability: Sheer Force
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
-- Revenge
+- Beat Up
 - Metal Claw
-- Rock Tomb
-- Harden
+- Rock Smash
+- Counter
 
 SPECIES_TRIDENT_KNIGHT (M)
 Level: 23
 Ability: Motor Drive
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
-- Revenge
+- Beat Up
 - Spark
 - Flame Charge
-- Magnet Rise
+- Reversal
 
 SPECIES_JAVELIN_KNIGHT (M)
 Level: 23
 Ability: Sniper
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Ball: Beast
-- Revenge
+- Beat Up
 - Aerial Ace
-- Brutal Swing
-- Rapid Spin
+- Vacuum Wave
+- Work Up
 
 /* Float Islands - Trainer 1 */
 === TRAINER_LOLA_2 ===
@@ -1616,10 +1616,10 @@ Level: 23
 Ability: Hyper Cutter
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Ball: Dive
-- Water Gun
-- Round
-- Baby-Doll Eyes
-- Entrainment
+- Bubble
+- Ancient Power
+- Sand Attack
+- Vise Grip
 
 /* Float Islands - Trainer 4 */
 === TRAINER_LOLA_5 ===

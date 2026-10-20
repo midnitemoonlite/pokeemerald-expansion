@@ -46,8 +46,8 @@ script WaddleDeeTown_CastleLobby_EventScript_Staff
     {
         msgbox("Do you know what a \qoTM\qc is?
         
-        They're special items that can teach
-        your Helpers new moves.
+        It stands for \qoTechnique Manuscript\qc.
+        Basically, they give Helpers new moves.
 
         Unlike most items, you can use them
         as many times as you'd like.

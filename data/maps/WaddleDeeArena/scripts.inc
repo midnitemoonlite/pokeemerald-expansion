@@ -725,7 +725,7 @@ WaddleDeeArena_EventScript_GrandFinals_12:
 # 597 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
 # 598 "data/maps/WaddleDeeArena/scripts.pory"
-	playbgm MUS_CONTEST_LOBBY, TRUE
+	playbgm MUS_B_FRONTIER, TRUE
 # 599 "data/maps/WaddleDeeArena/scripts.pory"
 	playse SE_APPLAUSE
 # 600 "data/maps/WaddleDeeArena/scripts.pory"

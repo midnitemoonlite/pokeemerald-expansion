@@ -23,8 +23,8 @@ script WaddleDeeTown_Cafe_EventScript_LonelyWaddleDee
     msgbox("I love eating at the café, but I feel
             a bit lonely coming on my own so often.
             
-            Wouldn't it be nice if they could sit a
-            doll or something across from me?")
+            Maybe I should find something to fill
+            the other seat with\.")
     release
 }
 
@@ -144,7 +144,38 @@ script WaddleDeeTown_Cafe_EventScript_BerryMenu
 	message("We serve fresh berries here!
             What can I get for you today?")
 	waitmessage
-	pokemart2(WaddleDeeTown_Cafe_BerryMart)
+	if(flag(FLAG_IS_CHAMPION))
+        {
+            pokemart2(WaddleDeeTown_Cafe_BerryMart9)
+        }
+        elif(flag(FLAG_BADGE08_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_BerryMart8)
+        }
+        elif(flag(FLAG_BADGE07_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_BerryMart7)
+        }
+        elif(flag(FLAG_BADGE06_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_BerryMart6)
+        }
+        elif(flag(FLAG_BADGE05_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_BerryMart5)
+        }
+        elif(flag(FLAG_BADGE04_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_BerryMart4)
+        }
+        elif(flag(FLAG_BADGE03_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_BerryMart3)
+        }
+        else
+        {
+            pokemart2(WaddleDeeTown_Cafe_BerryMart2)
+        }
 	msgbox(gText_PleaseComeAgain)
 	release
 	end
@@ -157,7 +188,38 @@ script WaddleDeeTown_Cafe_EventScript_DrinkMenu
 	message("We serve drinks and snacks here!
             What can I get for you today?")
 	waitmessage
-	pokemart2(WaddleDeeTown_Cafe_DrinkMart)
+	if(flag(FLAG_IS_CHAMPION))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DrinkMart9)
+        }
+        elif(flag(FLAG_BADGE08_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DrinkMart8)
+        }
+        elif(flag(FLAG_BADGE07_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DrinkMart7)
+        }
+        elif(flag(FLAG_BADGE06_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DrinkMart6)
+        }
+        elif(flag(FLAG_BADGE05_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DrinkMart5)
+        }
+        elif(flag(FLAG_BADGE04_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DrinkMart4)
+        }
+        elif(flag(FLAG_BADGE03_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DrinkMart3)
+        }
+        else
+        {
+            pokemart2(WaddleDeeTown_Cafe_DrinkMart2)
+        }
 	msgbox(gText_PleaseComeAgain)
 	release
 	end
@@ -170,7 +232,38 @@ script WaddleDeeTown_Cafe_EventScript_DessertMenu
 	message("We serve desserts here!
             What can I get for you today?")
 	waitmessage
-	pokemart2(WaddleDeeTown_Cafe_DessertMart)
+	if(flag(FLAG_IS_CHAMPION))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DessertMart9)
+        }
+        elif(flag(FLAG_BADGE08_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DessertMart8)
+        }
+        elif(flag(FLAG_BADGE07_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DessertMart7)
+        }
+        elif(flag(FLAG_BADGE06_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DessertMart6)
+        }
+        elif(flag(FLAG_BADGE05_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DessertMart5)
+        }
+        elif(flag(FLAG_BADGE04_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DessertMart4)
+        }
+        elif(flag(FLAG_BADGE03_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_DessertMart3)
+        }
+        else
+        {
+            pokemart2(WaddleDeeTown_Cafe_DessertMart2)
+        }
 	msgbox(gText_PleaseComeAgain)
 	release
 	end
@@ -180,15 +273,47 @@ script WaddleDeeTown_Cafe_EventScript_IngredientMenu
 {
 	lock
 	faceplayer
-	msgbox("We're planning on selling ingredients
-            for food preparation soon.
+    if(!flag(FLAG_BADGE04_GET))
+    {
+        msgbox("I'm sorry, but we're still a bit low on
+            supply for seasonings\.
             
-            It might seem counterintuitive, but
-            our head chef is mostly concerned with
-            making sure everyone eats well.
-            
-            We hope you'll check back in later!")
+            Once some more shipments arrive, I'll
+            be happy to sell you our offerings.")
+    }
+    else
+    {
+        message("We serve seasonings here!
+                What can I get for you today?")
+	    waitmessage
+        if(flag(FLAG_IS_CHAMPION))
+        {
+            pokemart2(WaddleDeeTown_Cafe_SeasoningMart9)
+        }
+        elif(flag(FLAG_BADGE08_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_SeasoningMart8)
+        }
+        elif(flag(FLAG_BADGE07_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_SeasoningMart7)
+        }
+        elif(flag(FLAG_BADGE06_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_SeasoningMart6)
+        }
+        elif(flag(FLAG_BADGE05_GET))
+        {
+            pokemart2(WaddleDeeTown_Cafe_SeasoningMart5)
+        }
+        else
+        {
+            pokemart2(WaddleDeeTown_Cafe_SeasoningMart4)
+        }
+	    msgbox(gText_PleaseComeAgain)
+    }
     release
+    end
 }
 
 script WaddleDeeTown_Cafe_EventScript_BerryDesk
@@ -215,7 +340,7 @@ script WaddleDeeTown_Cafe_EventScript_IngredientDesk
     goto(WaddleDeeTown_Cafe_EventScript_IngredientMenu)
 }
 
-mart WaddleDeeTown_Cafe_BerryMart
+mart WaddleDeeTown_Cafe_BerryMart2
 {
     ITEM_ORAN_BERRY
     ITEM_CHERI_BERRY
@@ -223,13 +348,426 @@ mart WaddleDeeTown_Cafe_BerryMart
     ITEM_RAWST_BERRY
 }
 
-mart WaddleDeeTown_Cafe_DrinkMart
+mart WaddleDeeTown_Cafe_DrinkMart2
 {
     ITEM_BERRY_JUICE
 }
 
-mart WaddleDeeTown_Cafe_DessertMart
+mart WaddleDeeTown_Cafe_DessertMart2
 {
     ITEM_EXP_CANDY_XS
     ITEM_FRESH_START_MOCHI
+}
+
+mart WaddleDeeTown_Cafe_BerryMart3
+{
+    ITEM_ORAN_BERRY
+    ITEM_CHERI_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_CHILAN_BERRY
+}
+
+mart WaddleDeeTown_Cafe_DrinkMart3
+{
+    ITEM_BERRY_JUICE
+    ITEM_FRESH_WATER
+}
+
+mart WaddleDeeTown_Cafe_DessertMart3
+{
+    ITEM_EXP_CANDY_XS
+    ITEM_EXP_CANDY_S
+    ITEM_FRESH_START_MOCHI
+    ITEM_HEALTH_MOCHI
+}
+
+mart WaddleDeeTown_Cafe_BerryMart4
+{
+    ITEM_ORAN_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_CHERI_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_CHILAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+}
+
+mart WaddleDeeTown_Cafe_DrinkMart4
+{
+    ITEM_BERRY_JUICE
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+}
+
+mart WaddleDeeTown_Cafe_DessertMart4
+{
+    ITEM_EXP_CANDY_XS
+    ITEM_EXP_CANDY_S
+    ITEM_FRESH_START_MOCHI
+    ITEM_HEALTH_MOCHI
+    ITEM_SWIFT_MOCHI
+}
+
+mart WaddleDeeTown_Cafe_SeasoningMart4
+{
+    ITEM_SERIOUS_MINT
+}
+
+mart WaddleDeeTown_Cafe_BerryMart5
+{
+    ITEM_ORAN_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_CHERI_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_CHILAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_ROSELI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_KEBIA_BERRY
+}
+
+mart WaddleDeeTown_Cafe_DrinkMart5
+{
+    ITEM_BERRY_JUICE
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+    ITEM_LAVA_COOKIE
+}
+
+mart WaddleDeeTown_Cafe_DessertMart5
+{
+    ITEM_EXP_CANDY_XS
+    ITEM_EXP_CANDY_S
+    ITEM_EXP_CANDY_M
+    ITEM_FRESH_START_MOCHI
+    ITEM_HEALTH_MOCHI
+    ITEM_CLEVER_MOCHI
+    ITEM_SWIFT_MOCHI
+}
+
+mart WaddleDeeTown_Cafe_SeasoningMart5
+{
+    ITEM_SERIOUS_MINT
+    ITEM_GRASSY_SEED
+}
+
+mart WaddleDeeTown_Cafe_BerryMart6
+{
+    ITEM_ORAN_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_FIGY_BERRY
+    ITEM_WIKI_BERRY
+    ITEM_MAGO_BERRY
+    ITEM_AGUAV_BERRY
+    ITEM_IAPAPA_BERRY
+    ITEM_CHERI_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_CHILAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_ROSELI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_KEBIA_BERRY
+    ITEM_TANGA_BERRY
+}
+
+mart WaddleDeeTown_Cafe_DrinkMart6
+{
+    ITEM_BERRY_JUICE
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+    ITEM_LEMONADE
+    ITEM_LAVA_COOKIE
+}
+
+mart WaddleDeeTown_Cafe_DessertMart6
+{
+    ITEM_EXP_CANDY_XS
+    ITEM_EXP_CANDY_S
+    ITEM_EXP_CANDY_M
+    ITEM_FRESH_START_MOCHI
+    ITEM_HEALTH_MOCHI
+    ITEM_GENIUS_MOCHI
+    ITEM_CLEVER_MOCHI
+    ITEM_SWIFT_MOCHI
+}
+
+mart WaddleDeeTown_Cafe_SeasoningMart6
+{
+    ITEM_SERIOUS_MINT
+    ITEM_GRASSY_SEED
+    ITEM_ELECTRIC_SEED
+}
+
+mart WaddleDeeTown_Cafe_BerryMart7
+{
+    ITEM_ORAN_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_FIGY_BERRY
+    ITEM_WIKI_BERRY
+    ITEM_MAGO_BERRY
+    ITEM_AGUAV_BERRY
+    ITEM_IAPAPA_BERRY
+    ITEM_CHERI_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_LUM_BERRY
+    ITEM_CHILAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_ROSELI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_KEBIA_BERRY
+    ITEM_TANGA_BERRY
+    ITEM_SHUCA_BERRY
+    ITEM_COBA_BERRY
+    ITEM_YACHE_BERRY
+    ITEM_CHOPLE_BERRY
+}
+
+mart WaddleDeeTown_Cafe_DrinkMart7
+{
+    ITEM_BERRY_JUICE
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+    ITEM_LEMONADE
+    ITEM_MOOMOO_MILK
+    ITEM_LAVA_COOKIE
+}
+
+mart WaddleDeeTown_Cafe_DessertMart7
+{
+    ITEM_EXP_CANDY_XS
+    ITEM_EXP_CANDY_S
+    ITEM_EXP_CANDY_M
+    ITEM_EXP_CANDY_L
+    ITEM_FRESH_START_MOCHI
+    ITEM_HEALTH_MOCHI
+    ITEM_MUSCLE_MOCHI
+    ITEM_GENIUS_MOCHI
+    ITEM_CLEVER_MOCHI
+    ITEM_SWIFT_MOCHI
+}
+
+mart WaddleDeeTown_Cafe_SeasoningMart7
+{
+    ITEM_SERIOUS_MINT
+    ITEM_GRASSY_SEED
+    ITEM_ELECTRIC_SEED
+    ITEM_MISTY_SEED
+}
+
+mart WaddleDeeTown_Cafe_BerryMart8
+{
+    ITEM_ORAN_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_FIGY_BERRY
+    ITEM_WIKI_BERRY
+    ITEM_MAGO_BERRY
+    ITEM_AGUAV_BERRY
+    ITEM_IAPAPA_BERRY
+    ITEM_CHERI_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_LUM_BERRY
+    ITEM_CHILAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_ROSELI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_KEBIA_BERRY
+    ITEM_TANGA_BERRY
+    ITEM_SHUCA_BERRY
+    ITEM_COBA_BERRY
+    ITEM_YACHE_BERRY
+    ITEM_CHOPLE_BERRY
+    ITEM_CHARTI_BERRY
+    ITEM_HABAN_BERRY
+    ITEM_BABIRI_BERRY
+    ITEM_JABOCA_BERRY
+    ITEM_ROWAP_BERRY
+}
+
+mart WaddleDeeTown_Cafe_DrinkMart8
+{
+    ITEM_BERRY_JUICE
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+    ITEM_LEMONADE
+    ITEM_MOOMOO_MILK
+    ITEM_LAVA_COOKIE
+    ITEM_REVIVAL_HERB
+}
+
+mart WaddleDeeTown_Cafe_DessertMart8
+{
+    ITEM_EXP_CANDY_XS
+    ITEM_EXP_CANDY_S
+    ITEM_EXP_CANDY_M
+    ITEM_EXP_CANDY_L
+    ITEM_EXP_CANDY_XL
+    ITEM_FRESH_START_MOCHI
+    ITEM_HEALTH_MOCHI
+    ITEM_MUSCLE_MOCHI
+    ITEM_RESIST_MOCHI
+    ITEM_GENIUS_MOCHI
+    ITEM_CLEVER_MOCHI
+    ITEM_SWIFT_MOCHI
+}
+
+mart WaddleDeeTown_Cafe_SeasoningMart8
+{
+    ITEM_SERIOUS_MINT
+    ITEM_GRASSY_SEED
+    ITEM_ELECTRIC_SEED
+    ITEM_MISTY_SEED
+    ITEM_PSYCHIC_SEED
+}
+
+mart WaddleDeeTown_Cafe_BerryMart9
+{
+    ITEM_ORAN_BERRY
+    ITEM_SITRUS_BERRY
+    ITEM_FIGY_BERRY
+    ITEM_WIKI_BERRY
+    ITEM_MAGO_BERRY
+    ITEM_AGUAV_BERRY
+    ITEM_IAPAPA_BERRY
+    ITEM_LEPPA_BERRY
+    ITEM_CHERI_BERRY
+    ITEM_PECHA_BERRY
+    ITEM_RAWST_BERRY
+    ITEM_CHESTO_BERRY
+    ITEM_ASPEAR_BERRY
+    ITEM_PERSIM_BERRY
+    ITEM_LUM_BERRY
+    ITEM_CHILAN_BERRY
+    ITEM_RINDO_BERRY
+    ITEM_OCCA_BERRY
+    ITEM_PASSHO_BERRY
+    ITEM_WACAN_BERRY
+    ITEM_PAYAPA_BERRY
+    ITEM_ROSELI_BERRY
+    ITEM_KASIB_BERRY
+    ITEM_COLBUR_BERRY
+    ITEM_KEBIA_BERRY
+    ITEM_TANGA_BERRY
+    ITEM_SHUCA_BERRY
+    ITEM_COBA_BERRY
+    ITEM_YACHE_BERRY
+    ITEM_CHOPLE_BERRY
+    ITEM_CHARTI_BERRY
+    ITEM_HABAN_BERRY
+    ITEM_BABIRI_BERRY
+    ITEM_JABOCA_BERRY
+    ITEM_ROWAP_BERRY
+    ITEM_KEE_BERRY
+    ITEM_MARANGA_BERRY
+    ITEM_LIECHI_BERRY
+    ITEM_GANLON_BERRY
+    ITEM_PETAYA_BERRY
+    ITEM_APICOT_BERRY
+    ITEM_SALAC_BERRY
+    ITEM_STARF_BERRY
+    ITEM_MICLE_BERRY
+    ITEM_LANSAT_BERRY
+    ITEM_CUSTAP_BERRY
+}
+
+mart WaddleDeeTown_Cafe_DrinkMart9
+{
+    ITEM_BERRY_JUICE
+    ITEM_FRESH_WATER
+    ITEM_SODA_POP
+    ITEM_LEMONADE
+    ITEM_MOOMOO_MILK
+    ITEM_LAVA_COOKIE
+    ITEM_REVIVAL_HERB
+}
+
+mart WaddleDeeTown_Cafe_DessertMart9
+{
+    ITEM_EXP_CANDY_XS
+    ITEM_EXP_CANDY_S
+    ITEM_EXP_CANDY_M
+    ITEM_EXP_CANDY_L
+    ITEM_EXP_CANDY_XL
+    ITEM_RARE_CANDY
+    ITEM_FRESH_START_MOCHI
+    ITEM_HEALTH_MOCHI
+    ITEM_MUSCLE_MOCHI
+    ITEM_RESIST_MOCHI
+    ITEM_GENIUS_MOCHI
+    ITEM_CLEVER_MOCHI
+    ITEM_SWIFT_MOCHI
+}
+
+mart WaddleDeeTown_Cafe_SeasoningMart9
+{
+    ITEM_SERIOUS_MINT
+    ITEM_LONELY_MINT
+    ITEM_ADAMANT_MINT
+    ITEM_NAUGHTY_MINT
+    ITEM_BRAVE_MINT
+    ITEM_BOLD_MINT
+    ITEM_IMPISH_MINT
+    ITEM_LAX_MINT
+    ITEM_RELAXED_MINT
+    ITEM_MODEST_MINT
+    ITEM_MILD_MINT
+    ITEM_RASH_MINT
+    ITEM_QUIET_MINT
+    ITEM_CALM_MINT
+    ITEM_GENTLE_MINT
+    ITEM_CAREFUL_MINT
+    ITEM_SASSY_MINT
+    ITEM_TIMID_MINT
+    ITEM_HASTY_MINT
+    ITEM_JOLLY_MINT
+    ITEM_NAIVE_MINT
+    ITEM_GRASSY_SEED
+    ITEM_ELECTRIC_SEED
+    ITEM_MISTY_SEED
+    ITEM_PSYCHIC_SEED
 }

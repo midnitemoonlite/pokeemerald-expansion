@@ -36676,7 +36676,7 @@
           "map": "MAP_GREEN_GREENS",
           "base_label": "gGreenGreens",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 25,
             "mons": [
               {
                 "min_level": 2,
@@ -36745,7 +36745,7 @@
           "map": "MAP_GREEN_REST_AREA",
           "base_label": "gGreenRestArea",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 3,
@@ -36814,7 +36814,7 @@
           "map": "MAP_PRISM_PLAINS",
           "base_label": "gPrismPlains",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 25,
             "mons": [
               {
                 "min_level": 3,
@@ -36968,7 +36968,7 @@
           "map": "MAP_WADDLE_DEE_TOWN",
           "base_label": "gWaddleDeeTown",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 6,
@@ -37122,7 +37122,7 @@
           "map": "MAP_VEGETABLE_VALLEY",
           "base_label": "gVegetableValley",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 25,
             "mons": [
               {
                 "min_level": 8,
@@ -37335,7 +37335,7 @@
               },
               {
                 "min_level": 13,
-                "max_level": 13,
+                "max_level": 14,
                 "species": "SPECIES_SULKWORM"
               }
             ]
@@ -37345,7 +37345,7 @@
           "map": "MAP_INDIGO_REST_AREA",
           "base_label": "gIndigoRestArea",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 14,
@@ -37529,7 +37529,7 @@
           "map": "MAP_ICE_CREAM_ISLAND",
           "base_label": "gIceCreamIsland",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 14,
@@ -37713,7 +37713,7 @@
           "map": "MAP_RESORT_ARENA",
           "base_label": "gResortArena",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 17,
@@ -38051,7 +38051,7 @@
           "map": "MAP_COCOA_CAVE_B1F",
           "base_label": "gCocoaCave_B1F",
           "land_mons": {
-            "encounter_rate": 5,
+            "encounter_rate": 4,
             "mons": [
               {
                 "min_level": 19,
@@ -38150,7 +38150,7 @@
           "map": "MAP_COCOA_CAVE_B2F",
           "base_label": "gCocoaCave_B2F",
           "land_mons": {
-            "encounter_rate": 3,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 21,
@@ -38249,7 +38249,7 @@
           "map": "MAP_ORANGE_REST_AREA",
           "base_label": "gOrangeRestArea",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 19,
@@ -38433,7 +38433,7 @@
           "map": "MAP_ORANGE_OCEAN",
           "base_label": "gOrangeOcean",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 25,
             "mons": [
               {
                 "min_level": 19,
@@ -38617,7 +38617,7 @@
           "map": "MAP_BATTLESHIP_HALBERD_DUCTS",
           "base_label": "gBattleshipHalberd_Ducts",
           "land_mons": {
-            "encounter_rate": 1,
+            "encounter_rate": 2,
             "mons": [
               {
                 "min_level": 21,
@@ -38686,7 +38686,7 @@
           "map": "MAP_BATTLESHIP_HALBERD_STORAGE",
           "base_label": "gBattleshipHalberd_Storage",
           "land_mons": {
-            "encounter_rate": 2,
+            "encounter_rate": 3,
             "mons": [
               {
                 "min_level": 21,
@@ -38755,7 +38755,7 @@
           "map": "MAP_FLOAT_ISLANDS",
           "base_label": "gFloatIslands",
           "land_mons": {
-            "encounter_rate": 14,
+            "encounter_rate": 50,
             "mons": [
               {
                 "min_level": 21,
@@ -39217,7 +39217,7 @@
           "map": "MAP_MALLOW_GARDENS",
           "base_label": "gMallowGardens",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": 30,
             "mons": [
               {
                 "min_level": 20,
@@ -39570,6 +39570,190 @@
                 "min_level": 27,
                 "max_level": 27,
                 "species": "SPECIES_IRON_MAM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_HALROOM_1",
+          "base_label": "gHALRoom_1",
+          "land_mons": {
+            "encounter_rate": 86,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_BROOM_HATTER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_ANGIE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_DUBIOR_JR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_SPYNUM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_GABON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_MIKARIN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_COTTA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_NRUFF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_TORTORNER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_HALTWORKER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_ESCARDROID"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_CHIBI_DEDEDE"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 86,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_TAC"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_MIRRA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_RINGLE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_I3"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_SKULLY"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 100,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_DUPA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_CUTFISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_SLIME"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_PHANTA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_HB_002"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 100,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_PACTO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_ROLLOZER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_BLOON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_BALLOON_MEISTER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 10,
+                "species": "SPECIES_CHEMITORY"
               }
             ]
           }

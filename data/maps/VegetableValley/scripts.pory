@@ -17,6 +17,32 @@ script VegetableValley_EventScript_ForestSign
     closemessage
 }
 
+script VegetableValley_EventScript_OpenHALRoom
+{
+    setvar(VAR_TEMP_6, 86)
+    setmetatile(5, 4, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(6, 5, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(5, 5, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(6, 5, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(5, 6, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(6, 6, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(5, 7, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(6, 7, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(5, 8, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(6, 8, METATILE_General_SmallTree_Nest, TRUE)
+    setmetatile(5, 9, METATILE_Rustboro_DarkSmallTree_Bottom, TRUE)
+    setmetatile(6, 9, METATILE_Rustboro_DarkSmallTree_Bottom, TRUE)
+    setmetatile(5, 10, METATILE_Rustboro_ForestWarp_Top, FALSE)
+    setmetatile(6, 10, METATILE_Rustboro_ForestWarp_Top, FALSE)
+    setmetatile(5, 11, METATILE_Rustboro_ForestWarp_Bottom, FALSE)
+    setmetatile(6, 11, METATILE_Rustboro_ForestWarp_Bottom, FALSE)
+    setmetatile(5, 12, METATILE_General_Grass, FALSE)
+    setmetatile(6, 12, METATILE_General_Grass, FALSE)
+    setmetatile(5, 13, METATILE_General_Grass_TreeLeft, FALSE)
+    setmetatile(6, 13, METATILE_General_Grass_TreeRight, FALSE)
+    end
+}
+
 script VegetableValley_EventScript_WaddleDee
 {
     lock
