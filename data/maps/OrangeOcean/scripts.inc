@@ -257,8 +257,8 @@ OrangeOcean_Text_Trainer3Defeated::
 
 OrangeOcean_Text_Trainer3Post::
 # 168 "data/maps/OrangeOcean/scripts.pory"
-	.string "I gave my Blipper a special Heart, and\n"
-	.string "then it became a Mamatee. Neat, huh?$"
+	.string "Do you think my Kapar will evolve into\n"
+	.string "something even better at swimming?$"
 
 OrangeOcean_Text_Trainer4Intro::
 # 180 "data/maps/OrangeOcean/scripts.pory"

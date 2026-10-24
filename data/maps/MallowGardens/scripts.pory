@@ -113,6 +113,22 @@ script MallowGardens_EventScript_Socialite
 {
     lock
     faceplayer
+    msgbox("Mallow Castle is filled with Helpers
+            that love to blow themselves up.
+            
+            I can't say I get why they would,
+            but it's very dangerous indeed.
+            
+            I would recommend stocking up on
+            Dedede Dolls so you can easily
+            get out of a scary battle.")
+    release
+}
+
+script MallowGardens_EventScript_Parasol
+{
+    lock
+    faceplayer
     if(!flag(FLAG_RECEIVED_6_SODA_POP))
     {
         msgbox("Oh, your Helpers are cute! Are you
@@ -123,19 +139,6 @@ script MallowGardens_EventScript_Socialite
     }
     msgbox("Waddle Dee Café has all sorts of treats
             I'm sure your Helpers would love.")
-    release
-}
-
-script MallowGardens_EventScript_Parasol
-{
-    lock
-    faceplayer
-    msgbox("Just wondering, Kirby\. why don't you fly
-            over the Star Blocks on the road?
-            
-            Oh, I see\. you're worried about the
-            Helpers of yours that can't fly?
-            That's so considerate of you!")
     release
 }
 

@@ -537,1154 +537,1166 @@ MallowCastle_3F_EventScript_BombBlock2Continued::
 # 352 "data/maps/MallowCastle_3F/scripts.pory"
 	setmetatile 31, 25, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 353 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 32, 26, METATILE_LilycoveMuseum_Floor, FALSE
 # 354 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	special DrawWholeMapView
 # 355 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8004, 1
 # 356 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8005, 0
 # 357 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	setvar VAR_0x8006, 2
 # 358 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8007, 3
 # 359 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special ShakeCamera
 # 360 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	waitstate
 # 361 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 30, 25, METATILE_LilycoveMuseum_Floor, FALSE
+	playse SE_M_DIG
 # 362 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setmetatile 30, 25, METATILE_LilycoveMuseum_Floor, FALSE
 # 363 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setmetatile 32, 27, METATILE_LilycoveMuseum_Floor, FALSE
 # 364 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special DrawWholeMapView
 # 365 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8004, 1
 # 366 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	setvar VAR_0x8005, 0
 # 367 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8006, 2
 # 368 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	setvar VAR_0x8007, 3
 # 369 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	special ShakeCamera
 # 370 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 29, 25, METATILE_LilycoveMuseum_Floor, FALSE
+	waitstate
 # 371 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
-# 372 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 373 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
-# 374 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
-# 375 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 376 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 377 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 378 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 379 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 28, 25, METATILE_LilycoveMuseum_DarkFloor, FALSE
-# 380 "data/maps/MallowCastle_3F/scripts.pory"
+# 372 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 29, 25, METATILE_LilycoveMuseum_Floor, FALSE
+# 373 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 32, 28, METATILE_LilycoveMuseum_Floor, FALSE
+# 374 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
-# 381 "data/maps/MallowCastle_3F/scripts.pory"
+# 375 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 382 "data/maps/MallowCastle_3F/scripts.pory"
+# 376 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 383 "data/maps/MallowCastle_3F/scripts.pory"
+# 377 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 384 "data/maps/MallowCastle_3F/scripts.pory"
+# 378 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 385 "data/maps/MallowCastle_3F/scripts.pory"
+# 379 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 386 "data/maps/MallowCastle_3F/scripts.pory"
+# 380 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 381 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 382 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 28, 25, METATILE_LilycoveMuseum_DarkFloor, FALSE
+# 383 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 32, 29, METATILE_LilycoveMuseum_Floor, FALSE
+# 384 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
+# 385 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 386 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
 # 387 "data/maps/MallowCastle_3F/scripts.pory"
-	checkflag FLAG_TEMP_13
+	setvar VAR_0x8006, 2
 # 388 "data/maps/MallowCastle_3F/scripts.pory"
-	goto_if_unset FLAG_TEMP_13, MallowCastle_3F_EventScript_BombBlock2_Continued_Continued
+	setvar VAR_0x8007, 3
 # 389 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 390 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 391 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 392 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 33, 29, METATILE_LilycoveMuseum_Floor, FALSE
+# 393 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
+# 394 "data/maps/MallowCastle_3F/scripts.pory"
+	checkflag FLAG_TEMP_13
+# 395 "data/maps/MallowCastle_3F/scripts.pory"
+	call_if_unset FLAG_TEMP_13, MallowCastle_3F_EventScript_BombBlock2_Continued_Continued
+# 396 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 397 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 398 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 399 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 400 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 401 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 402 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock2_Continued_Continued::
-# 394 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 395 "data/maps/MallowCastle_3F/scripts.pory"
+# 407 "data/maps/MallowCastle_3F/scripts.pory"
 	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_4
-# 396 "data/maps/MallowCastle_3F/scripts.pory"
+# 408 "data/maps/MallowCastle_3F/scripts.pory"
 	setflag FLAG_TEMP_13
-# 397 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 398 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
-# 399 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
-# 400 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 401 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 402 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock3::
-# 407 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 408 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 409 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_3
-# 410 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_12
-# 411 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 412 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 413 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 414 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 415 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_3
 # 416 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	setflag FLAG_TEMP_12
 # 417 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 418 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 40, 30, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 419 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 420 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 421 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 422 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 423 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 424 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 40, 30, METATILE_LilycoveMuseum_Floor, FALSE
 # 425 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 426 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 427 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 39, 30, METATILE_LilycoveMuseum_DarkFloor, FALSE
+	setvar VAR_0x8005, 0
 # 428 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 40, 31, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8006, 2
 # 429 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8007, 3
 # 430 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	special ShakeCamera
 # 431 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	waitstate
 # 432 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	playse SE_M_DIG
 # 433 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	setmetatile 39, 30, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 434 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 40, 31, METATILE_LilycoveMuseum_Floor, FALSE
 # 435 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 436 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 437 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 39, 31, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 438 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 40, 32, METATILE_LilycoveMuseum_WallLip, FALSE
+	setvar VAR_0x8006, 2
 # 439 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8007, 3
 # 440 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	special ShakeCamera
 # 441 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	waitstate
 # 442 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
-# 443 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 444 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 445 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 446 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 447 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 39, 32, METATILE_LilycoveMuseum_WallLip, FALSE
-# 448 "data/maps/MallowCastle_3F/scripts.pory"
+# 443 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 39, 31, METATILE_LilycoveMuseum_Floor, FALSE
+# 444 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 40, 32, METATILE_LilycoveMuseum_WallLip, FALSE
+# 445 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
-# 449 "data/maps/MallowCastle_3F/scripts.pory"
+# 446 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 450 "data/maps/MallowCastle_3F/scripts.pory"
+# 447 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 451 "data/maps/MallowCastle_3F/scripts.pory"
+# 448 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 452 "data/maps/MallowCastle_3F/scripts.pory"
+# 449 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 453 "data/maps/MallowCastle_3F/scripts.pory"
+# 450 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 454 "data/maps/MallowCastle_3F/scripts.pory"
+# 451 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 452 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 453 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 39, 32, METATILE_LilycoveMuseum_WallLip, FALSE
+# 454 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
 # 455 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 456 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 457 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 458 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 459 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 460 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 461 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock4::
-# 460 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 461 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 462 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_4
-# 463 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_13
-# 464 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 465 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 466 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 467 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 468 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_4
 # 469 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	setflag FLAG_TEMP_13
 # 470 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 471 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 28, 25, METATILE_LilycoveMuseum_DarkFloor, FALSE
+	setvar VAR_0x8005, 0
 # 472 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 473 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 474 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 475 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 476 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 477 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 28, 25, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 478 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 479 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 480 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 29, 25, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 481 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 482 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 483 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 484 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 485 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 486 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 29, 25, METATILE_LilycoveMuseum_Floor, FALSE
 # 487 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 488 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 489 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 30, 25, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 490 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 491 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 492 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 493 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 494 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 495 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 496 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 497 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 498 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 31, 25, METATILE_LilycoveMuseum_Floor, FALSE
-# 499 "data/maps/MallowCastle_3F/scripts.pory"
+# 495 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 30, 25, METATILE_LilycoveMuseum_Floor, FALSE
+# 496 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
-# 500 "data/maps/MallowCastle_3F/scripts.pory"
+# 497 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 501 "data/maps/MallowCastle_3F/scripts.pory"
+# 498 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 502 "data/maps/MallowCastle_3F/scripts.pory"
+# 499 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 503 "data/maps/MallowCastle_3F/scripts.pory"
+# 500 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 504 "data/maps/MallowCastle_3F/scripts.pory"
+# 501 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 505 "data/maps/MallowCastle_3F/scripts.pory"
+# 502 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 503 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 504 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 31, 25, METATILE_LilycoveMuseum_Floor, FALSE
+# 505 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
 # 506 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 507 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 508 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 509 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 510 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 511 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 512 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock5::
-# 511 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 512 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 513 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_5
-# 514 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_14
-# 515 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 516 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 517 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 518 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 519 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 520 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 521 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 522 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 21, 16, METATILE_LilycoveMuseum_DarkFloor, FALSE
-# 523 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 23, 16, METATILE_LilycoveMuseum_Floor, FALSE
-# 524 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
-# 525 "data/maps/MallowCastle_3F/scripts.pory"
+# 519 "data/maps/MallowCastle_3F/scripts.pory"
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_5
+# 520 "data/maps/MallowCastle_3F/scripts.pory"
+	setflag FLAG_TEMP_14
+# 521 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 526 "data/maps/MallowCastle_3F/scripts.pory"
+# 522 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 527 "data/maps/MallowCastle_3F/scripts.pory"
+# 523 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 528 "data/maps/MallowCastle_3F/scripts.pory"
+# 524 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 529 "data/maps/MallowCastle_3F/scripts.pory"
+# 525 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
+# 526 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 527 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 528 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 21, 16, METATILE_LilycoveMuseum_DarkFloor, FALSE
+# 529 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 23, 16, METATILE_LilycoveMuseum_Floor, FALSE
 # 530 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
+# 531 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 532 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 533 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 534 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 535 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 536 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock6::
-# 535 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 536 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 537 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_6
-# 538 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_15
-# 539 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 540 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 541 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 542 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 543 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 544 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 545 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 546 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 28, 16, METATILE_LilycoveMuseum_DarkFloor, FALSE
-# 547 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 30, 16, METATILE_LilycoveMuseum_Floor, FALSE
-# 548 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
-# 549 "data/maps/MallowCastle_3F/scripts.pory"
+# 543 "data/maps/MallowCastle_3F/scripts.pory"
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_6
+# 544 "data/maps/MallowCastle_3F/scripts.pory"
+	setflag FLAG_TEMP_15
+# 545 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 550 "data/maps/MallowCastle_3F/scripts.pory"
+# 546 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 551 "data/maps/MallowCastle_3F/scripts.pory"
+# 547 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 552 "data/maps/MallowCastle_3F/scripts.pory"
+# 548 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 553 "data/maps/MallowCastle_3F/scripts.pory"
+# 549 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 554 "data/maps/MallowCastle_3F/scripts.pory"
+# 550 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 551 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 552 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 28, 16, METATILE_LilycoveMuseum_DarkFloor, FALSE
+# 553 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 30, 16, METATILE_LilycoveMuseum_Floor, FALSE
+# 554 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
 # 555 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 556 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 557 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 558 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 559 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 560 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 561 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock7::
-# 560 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 561 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 562 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_7
-# 563 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_16
-# 564 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 565 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 566 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 567 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 568 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 569 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 570 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 571 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 35, 16, METATILE_LilycoveMuseum_DarkFloor, FALSE
-# 572 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 37, 16, METATILE_LilycoveMuseum_Floor, FALSE
-# 573 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
-# 574 "data/maps/MallowCastle_3F/scripts.pory"
+# 568 "data/maps/MallowCastle_3F/scripts.pory"
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_7
+# 569 "data/maps/MallowCastle_3F/scripts.pory"
+	setflag FLAG_TEMP_16
+# 570 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 575 "data/maps/MallowCastle_3F/scripts.pory"
+# 571 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 576 "data/maps/MallowCastle_3F/scripts.pory"
+# 572 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 577 "data/maps/MallowCastle_3F/scripts.pory"
+# 573 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 578 "data/maps/MallowCastle_3F/scripts.pory"
+# 574 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 579 "data/maps/MallowCastle_3F/scripts.pory"
+# 575 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 576 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 577 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 35, 16, METATILE_LilycoveMuseum_DarkFloor, FALSE
+# 578 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 37, 16, METATILE_LilycoveMuseum_Floor, FALSE
+# 579 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
 # 580 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 581 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 582 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 583 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 584 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 585 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 586 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock8::
-# 585 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 586 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 587 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_8
-# 588 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_17
-# 589 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 590 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 591 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 592 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 593 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_8
 # 594 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	setflag FLAG_TEMP_17
 # 595 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 596 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 597 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 598 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 599 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 600 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 601 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 602 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 603 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 8, 4, METATILE_LilycoveMuseum_DarkFloor, FALSE
+	setvar VAR_0x8005, 0
 # 604 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 605 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 606 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 607 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 608 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 609 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 8, 4, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 610 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 611 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 612 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 9, 4, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 613 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 614 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 615 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 616 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 617 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 618 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 9, 4, METATILE_LilycoveMuseum_Floor, FALSE
 # 619 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 620 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 621 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 10, 4, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 622 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 623 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 624 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 625 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 626 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 627 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 10, 4, METATILE_LilycoveMuseum_Floor, FALSE
 # 628 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 629 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 630 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 11, 4, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 631 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 632 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 633 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 634 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 635 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 636 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 637 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 638 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 639 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 12, 4, METATILE_LilycoveMuseum_Floor, FALSE
-# 640 "data/maps/MallowCastle_3F/scripts.pory"
+# 636 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 11, 4, METATILE_LilycoveMuseum_Floor, FALSE
+# 637 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
-# 641 "data/maps/MallowCastle_3F/scripts.pory"
+# 638 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 642 "data/maps/MallowCastle_3F/scripts.pory"
+# 639 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 643 "data/maps/MallowCastle_3F/scripts.pory"
+# 640 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 644 "data/maps/MallowCastle_3F/scripts.pory"
+# 641 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 645 "data/maps/MallowCastle_3F/scripts.pory"
+# 642 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 646 "data/maps/MallowCastle_3F/scripts.pory"
+# 643 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 644 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 645 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 12, 4, METATILE_LilycoveMuseum_Floor, FALSE
+# 646 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
 # 647 "data/maps/MallowCastle_3F/scripts.pory"
-	goto_if_not_defeated TRAINER_WILTON_1, MallowCastle_3F_EventScript_Trainer3Battle
+	setvar VAR_0x8004, 1
 # 648 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 649 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 650 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 651 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 652 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 653 "data/maps/MallowCastle_3F/scripts.pory"
+	goto_if_not_defeated TRAINER_WILTON_1, MallowCastle_3F_EventScript_Trainer3Battle
+# 654 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock9::
-# 653 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 654 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 655 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_9
-# 656 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_18
-# 657 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 658 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 659 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 660 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 661 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_9
 # 662 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	setflag FLAG_TEMP_18
 # 663 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 664 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 665 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 666 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 667 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 668 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 669 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 670 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 671 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 672 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 673 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 674 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 675 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 676 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 677 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 678 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 679 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 680 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 681 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 682 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 683 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 684 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 685 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 686 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 687 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 688 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 689 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 690 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 691 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 692 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 693 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 694 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 695 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 696 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 697 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 698 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 699 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 700 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 701 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 702 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 703 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 704 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 705 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 706 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 707 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 708 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 709 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 710 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 711 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 712 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 713 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 714 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 715 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 716 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 717 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 718 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 719 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 720 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 721 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 722 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 723 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 724 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 725 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 726 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 727 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 728 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 729 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 730 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 731 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 732 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 733 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 734 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 735 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 736 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 737 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 738 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 739 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 740 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 741 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 1, METATILE_LilycoveMuseum_BlueVoid, TRUE
+	setvar VAR_0x8005, 0
 # 742 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 743 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 744 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 745 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 746 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 747 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 6, 1, METATILE_LilycoveMuseum_BlueVoid, TRUE
 # 748 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 749 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 750 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 751 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 752 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 753 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 754 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 755 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 756 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 757 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 758 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 759 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 760 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 761 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 762 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 763 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 764 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 765 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 766 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 767 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 768 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 769 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 770 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 771 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 5, METATILE_LilycoveMuseum_DarkFloor, FALSE
+	setvar VAR_0x8005, 0
 # 772 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 773 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 774 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 775 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 776 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 777 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 6, 5, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 778 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 779 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 780 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 6, METATILE_LilycoveMuseum_DarkFloor, FALSE
+	setvar VAR_0x8005, 0
 # 781 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 782 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 783 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 784 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 785 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 786 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 6, 6, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 787 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 788 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 789 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 7, METATILE_LilycoveMuseum_DarkFloor, FALSE
+	setvar VAR_0x8005, 0
 # 790 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 791 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 792 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 793 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 794 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 795 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 6, 7, METATILE_LilycoveMuseum_DarkFloor, FALSE
 # 796 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 797 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 798 "data/maps/MallowCastle_3F/scripts.pory"
-	checkflag FLAG_TEMP_1B
+	setvar VAR_0x8005, 0
 # 799 "data/maps/MallowCastle_3F/scripts.pory"
-	call_if_unset FLAG_TEMP_1B, MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval
+	setvar VAR_0x8006, 2
 # 800 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 8, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8007, 3
 # 801 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	special ShakeCamera
 # 802 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	waitstate
 # 803 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
-# 804 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
-# 805 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 806 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 807 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 808 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 809 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 9, METATILE_LilycoveMuseum_WallLip, FALSE
-# 810 "data/maps/MallowCastle_3F/scripts.pory"
+# 804 "data/maps/MallowCastle_3F/scripts.pory"
+	checkflag FLAG_TEMP_1B
+# 805 "data/maps/MallowCastle_3F/scripts.pory"
+	call_if_unset FLAG_TEMP_1B, MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval
+# 806 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 6, 8, METATILE_LilycoveMuseum_Floor, FALSE
+# 807 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
-# 811 "data/maps/MallowCastle_3F/scripts.pory"
+# 808 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 812 "data/maps/MallowCastle_3F/scripts.pory"
+# 809 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 813 "data/maps/MallowCastle_3F/scripts.pory"
+# 810 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 814 "data/maps/MallowCastle_3F/scripts.pory"
+# 811 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 815 "data/maps/MallowCastle_3F/scripts.pory"
+# 812 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 816 "data/maps/MallowCastle_3F/scripts.pory"
+# 813 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 814 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 815 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 6, 9, METATILE_LilycoveMuseum_WallLip, FALSE
+# 816 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
 # 817 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 818 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 819 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 820 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 821 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 822 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 823 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock9_ExtraRemoval::
-# 822 "data/maps/MallowCastle_3F/scripts.pory"
+# 828 "data/maps/MallowCastle_3F/scripts.pory"
 	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_12
-# 823 "data/maps/MallowCastle_3F/scripts.pory"
+# 829 "data/maps/MallowCastle_3F/scripts.pory"
 	setflag FLAG_TEMP_1B
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock10::
-# 828 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 829 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 830 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_10
-# 831 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_19
-# 832 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 833 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 834 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 835 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 836 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_10
 # 837 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	setflag FLAG_TEMP_19
 # 838 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 839 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8005, 0
 # 840 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	setvar VAR_0x8006, 2
 # 841 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	setvar VAR_0x8007, 3
 # 842 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	special ShakeCamera
 # 843 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	waitstate
 # 844 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	playse SE_M_DIG
 # 845 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 846 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 8, 10, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 847 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 848 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 849 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 850 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 851 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 852 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 8, 10, METATILE_LilycoveMuseum_Floor, FALSE
 # 853 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 854 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 855 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 9, 10, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 856 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 857 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 858 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 859 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 860 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 861 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 9, 10, METATILE_LilycoveMuseum_Floor, FALSE
 # 862 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 863 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 864 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 10, 10, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 865 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 866 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 867 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 868 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 869 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 870 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 10, 10, METATILE_LilycoveMuseum_Floor, FALSE
 # 871 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 872 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 873 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 11, 10, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 874 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 875 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 876 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 877 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 878 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 879 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 880 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 881 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 882 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 12, 10, METATILE_LilycoveMuseum_Floor, FALSE
-# 883 "data/maps/MallowCastle_3F/scripts.pory"
+# 879 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 11, 10, METATILE_LilycoveMuseum_Floor, FALSE
+# 880 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
-# 884 "data/maps/MallowCastle_3F/scripts.pory"
+# 881 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 885 "data/maps/MallowCastle_3F/scripts.pory"
+# 882 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 886 "data/maps/MallowCastle_3F/scripts.pory"
+# 883 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 887 "data/maps/MallowCastle_3F/scripts.pory"
+# 884 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 888 "data/maps/MallowCastle_3F/scripts.pory"
+# 885 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 889 "data/maps/MallowCastle_3F/scripts.pory"
+# 886 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 887 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 888 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 12, 10, METATILE_LilycoveMuseum_Floor, FALSE
+# 889 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
 # 890 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 891 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 892 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 893 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 894 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 895 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 896 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock11::
-# 895 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 896 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 897 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_11
-# 898 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_1A
-# 899 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 900 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 901 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 902 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 903 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_11
 # 904 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	setflag FLAG_TEMP_1A
 # 905 "data/maps/MallowCastle_3F/scripts.pory"
-	delay 120
+	setvar VAR_0x8004, 1
 # 906 "data/maps/MallowCastle_3F/scripts.pory"
-	msgbox MallowCastle_3F_EventScript_BombBlock11_Text_0
+	setvar VAR_0x8005, 0
 # 907 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 908 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 909 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 910 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 911 "data/maps/MallowCastle_3F/scripts.pory"
+	delay 120
+# 912 "data/maps/MallowCastle_3F/scripts.pory"
+	msgbox MallowCastle_3F_EventScript_BombBlock11_Text_0
+# 913 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
 
 MallowCastle_3F_EventScript_BombBlock12::
-# 912 "data/maps/MallowCastle_3F/scripts.pory"
-	lockall
-# 913 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
-# 914 "data/maps/MallowCastle_3F/scripts.pory"
-	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_12
-# 915 "data/maps/MallowCastle_3F/scripts.pory"
-	setflag FLAG_TEMP_1B
-# 916 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
-# 917 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
 # 918 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	lockall
 # 919 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 920 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	removeobject LOCALID_BOMB_MALLOW_CASTLE_3F_12
 # 921 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	setflag FLAG_TEMP_1B
 # 922 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 923 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 7, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 924 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8006, 2
 # 925 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	setvar VAR_0x8007, 3
 # 926 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	special ShakeCamera
 # 927 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
+	waitstate
 # 928 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
+	playse SE_M_DIG
 # 929 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
+	setmetatile 6, 7, METATILE_LilycoveMuseum_Floor, FALSE
 # 930 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
+	special DrawWholeMapView
 # 931 "data/maps/MallowCastle_3F/scripts.pory"
-	playse SE_M_DIG
+	setvar VAR_0x8004, 1
 # 932 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 6, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8005, 0
 # 933 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 8, METATILE_LilycoveMuseum_Floor, FALSE
+	setvar VAR_0x8006, 2
 # 934 "data/maps/MallowCastle_3F/scripts.pory"
-	special DrawWholeMapView
+	setvar VAR_0x8007, 3
 # 935 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8004, 1
+	special ShakeCamera
 # 936 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8005, 0
+	waitstate
 # 937 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8006, 2
-# 938 "data/maps/MallowCastle_3F/scripts.pory"
-	setvar VAR_0x8007, 3
-# 939 "data/maps/MallowCastle_3F/scripts.pory"
-	special ShakeCamera
-# 940 "data/maps/MallowCastle_3F/scripts.pory"
-	waitstate
-# 941 "data/maps/MallowCastle_3F/scripts.pory"
 	playse SE_M_DIG
-# 942 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 5, METATILE_LilycoveMuseum_DarkFloor, FALSE
-# 943 "data/maps/MallowCastle_3F/scripts.pory"
-	setmetatile 6, 9, METATILE_LilycoveMuseum_WallLip, FALSE
-# 944 "data/maps/MallowCastle_3F/scripts.pory"
+# 938 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 6, 6, METATILE_LilycoveMuseum_Floor, FALSE
+# 939 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 6, 8, METATILE_LilycoveMuseum_Floor, FALSE
+# 940 "data/maps/MallowCastle_3F/scripts.pory"
 	special DrawWholeMapView
-# 945 "data/maps/MallowCastle_3F/scripts.pory"
+# 941 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8004, 1
-# 946 "data/maps/MallowCastle_3F/scripts.pory"
+# 942 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8005, 0
-# 947 "data/maps/MallowCastle_3F/scripts.pory"
+# 943 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8006, 2
-# 948 "data/maps/MallowCastle_3F/scripts.pory"
+# 944 "data/maps/MallowCastle_3F/scripts.pory"
 	setvar VAR_0x8007, 3
-# 949 "data/maps/MallowCastle_3F/scripts.pory"
+# 945 "data/maps/MallowCastle_3F/scripts.pory"
 	special ShakeCamera
-# 950 "data/maps/MallowCastle_3F/scripts.pory"
+# 946 "data/maps/MallowCastle_3F/scripts.pory"
 	waitstate
+# 947 "data/maps/MallowCastle_3F/scripts.pory"
+	playse SE_M_DIG
+# 948 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 6, 5, METATILE_LilycoveMuseum_DarkFloor, FALSE
+# 949 "data/maps/MallowCastle_3F/scripts.pory"
+	setmetatile 6, 9, METATILE_LilycoveMuseum_WallLip, FALSE
+# 950 "data/maps/MallowCastle_3F/scripts.pory"
+	special DrawWholeMapView
 # 951 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8004, 1
+# 952 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8005, 0
+# 953 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8006, 2
+# 954 "data/maps/MallowCastle_3F/scripts.pory"
+	setvar VAR_0x8007, 3
+# 955 "data/maps/MallowCastle_3F/scripts.pory"
+	special ShakeCamera
+# 956 "data/maps/MallowCastle_3F/scripts.pory"
+	waitstate
+# 957 "data/maps/MallowCastle_3F/scripts.pory"
 	release
 	return
 
@@ -1804,7 +1816,7 @@ MallowCastle_3F_EventScript_Trainer3Battle_Text_1:
 	.string "my hole in shame…$"
 
 MallowCastle_3F_EventScript_BombBlock11_Text_0:
-# 906 "data/maps/MallowCastle_3F/scripts.pory"
+# 912 "data/maps/MallowCastle_3F/scripts.pory"
 	.string "Looks like that was a dud…$"
 
 MallowCastle_3F_Text_Trainer1Intro::

@@ -124,7 +124,7 @@
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "dest_map": "WaddleDeeTown_Treasury",
+      "dest_map": "MAP_WADDLE_DEE_TOWN_TREASURY",
       "dest_warp_id": "0"
     },
     {
@@ -146,7 +146,7 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_WADDLE_DEE_TOWN_CASTLE_LOBBY",
-      "dest_warp_id": "0"
+      "dest_warp_id": "3"
     },
     {
       "x": 10,

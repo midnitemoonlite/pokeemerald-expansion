@@ -460,7 +460,6 @@ script CastleArena_EventScript_BeginChallenge
     closemessage
     setvar(VAR_ARENA_HEALS, 1)
     setvar(VAR_ARENA_BATTLES, 0)
-    clearflag(FLAG_ARENA_HEALED_THIS_ROUND)
     getobjectfacingdirection(LOCALID_PLAYER, VAR_TEMP_0)
 	if(var(VAR_TEMP_0) == DIR_SOUTH)
 	{

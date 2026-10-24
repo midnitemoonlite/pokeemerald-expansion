@@ -1104,7 +1104,7 @@
 #define FLAG_ITEM_GRANITE_CAVE_B1F_POKE_BALL                        0x41B // Waddle Dee Town (Treasury) - Item 4
 #define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C // Waddle Dee Town (Treasury) - Item 5
 #define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D // Waddle Dee Town (Treasury) - Item 6
-#define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E
+#define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E // Indigo Rest Area - Item 1
 #define FLAG_ITEM_PETALBURG_WOODS_X_ATTACK                          0x41F
 #define FLAG_ITEM_PETALBURG_WOODS_GREAT_BALL                        0x420
 #define FLAG_ITEM_ROUTE_104_POKE_BALL                               0x421

@@ -109,417 +109,417 @@ MallowGardens_EventScript_Socialite::
 # 115 "data/maps/MallowGardens/scripts.pory"
 	faceplayer
 # 116 "data/maps/MallowGardens/scripts.pory"
-	goto_if_unset FLAG_RECEIVED_6_SODA_POP, MallowGardens_EventScript_Socialite_2
-MallowGardens_EventScript_Socialite_1:
-# 124 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_Socialite_Text_1
-# 126 "data/maps/MallowGardens/scripts.pory"
+	msgbox MallowGardens_EventScript_Socialite_Text_0
+# 125 "data/maps/MallowGardens/scripts.pory"
 	release
 	return
-
-MallowGardens_EventScript_Socialite_2:
-# 118 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_Socialite_Text_0
-# 121 "data/maps/MallowGardens/scripts.pory"
-	giveitem ITEM_SODA_POP, 2
-# 122 "data/maps/MallowGardens/scripts.pory"
-	setflag FLAG_RECEIVED_6_SODA_POP
-	goto MallowGardens_EventScript_Socialite_1
 
 
 MallowGardens_EventScript_Parasol::
-# 131 "data/maps/MallowGardens/scripts.pory"
+# 130 "data/maps/MallowGardens/scripts.pory"
 	lock
-# 132 "data/maps/MallowGardens/scripts.pory"
+# 131 "data/maps/MallowGardens/scripts.pory"
 	faceplayer
-# 133 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_Parasol_Text_0
-# 139 "data/maps/MallowGardens/scripts.pory"
+# 132 "data/maps/MallowGardens/scripts.pory"
+	goto_if_unset FLAG_RECEIVED_6_SODA_POP, MallowGardens_EventScript_Parasol_2
+MallowGardens_EventScript_Parasol_1:
+# 140 "data/maps/MallowGardens/scripts.pory"
+	msgbox MallowGardens_EventScript_Parasol_Text_1
+# 142 "data/maps/MallowGardens/scripts.pory"
 	release
 	return
 
+MallowGardens_EventScript_Parasol_2:
+# 134 "data/maps/MallowGardens/scripts.pory"
+	msgbox MallowGardens_EventScript_Parasol_Text_0
+# 137 "data/maps/MallowGardens/scripts.pory"
+	giveitem ITEM_SODA_POP, 2
+# 138 "data/maps/MallowGardens/scripts.pory"
+	setflag FLAG_RECEIVED_6_SODA_POP
+	goto MallowGardens_EventScript_Parasol_1
+
 
 MallowGardens_EventScript_TriggerLeft::
-# 144 "data/maps/MallowGardens/scripts.pory"
-	lockall
-# 145 "data/maps/MallowGardens/scripts.pory"
-	addobject LOCALID_COURTYARD_DEDEDE
-# 146 "data/maps/MallowGardens/scripts.pory"
-	setobjectxy LOCALID_COURTYARD_DEDEDE, 33, 43
 # 147 "data/maps/MallowGardens/scripts.pory"
+	lockall
+# 148 "data/maps/MallowGardens/scripts.pory"
+	addobject LOCALID_COURTYARD_DEDEDE
+# 149 "data/maps/MallowGardens/scripts.pory"
+	setobjectxy LOCALID_COURTYARD_DEDEDE, 33, 43
+# 150 "data/maps/MallowGardens/scripts.pory"
 	goto MallowGardens_EventScript_Dedede
 	return
 
 
 MallowGardens_EventScript_TriggerCenter::
-# 152 "data/maps/MallowGardens/scripts.pory"
+# 155 "data/maps/MallowGardens/scripts.pory"
 	lockall
-# 153 "data/maps/MallowGardens/scripts.pory"
+# 156 "data/maps/MallowGardens/scripts.pory"
 	addobject LOCALID_COURTYARD_DEDEDE
-# 154 "data/maps/MallowGardens/scripts.pory"
+# 157 "data/maps/MallowGardens/scripts.pory"
 	goto MallowGardens_EventScript_Dedede
 	return
 
 
 MallowGardens_EventScript_TriggerRight::
-# 159 "data/maps/MallowGardens/scripts.pory"
-	lockall
-# 160 "data/maps/MallowGardens/scripts.pory"
-	addobject LOCALID_COURTYARD_DEDEDE
-# 161 "data/maps/MallowGardens/scripts.pory"
-	setobjectxy LOCALID_COURTYARD_DEDEDE, 35, 43
 # 162 "data/maps/MallowGardens/scripts.pory"
+	lockall
+# 163 "data/maps/MallowGardens/scripts.pory"
+	addobject LOCALID_COURTYARD_DEDEDE
+# 164 "data/maps/MallowGardens/scripts.pory"
+	setobjectxy LOCALID_COURTYARD_DEDEDE, 35, 43
+# 165 "data/maps/MallowGardens/scripts.pory"
 	goto MallowGardens_EventScript_Dedede
 	return
 
 
 MallowGardens_EventScript_Dedede::
-# 167 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_0
-# 168 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
-# 169 "data/maps/MallowGardens/scripts.pory"
-	playbgm MUS_ENCOUNTER_BRENDAN, 0
 # 170 "data/maps/MallowGardens/scripts.pory"
+	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_0
+# 171 "data/maps/MallowGardens/scripts.pory"
+	waitmovement
+# 172 "data/maps/MallowGardens/scripts.pory"
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
+# 173 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_Dedede_Text_0
-# 175 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_1
-# 176 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
-# 177 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_DEDEDE, Common_Movement_ExclamationMark
 # 178 "data/maps/MallowGardens/scripts.pory"
-	playse SE_PIN
+	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_1
 # 179 "data/maps/MallowGardens/scripts.pory"
-	waitse
+	waitmovement
 # 180 "data/maps/MallowGardens/scripts.pory"
-	delay 30
+	applymovement LOCALID_COURTYARD_DEDEDE, Common_Movement_ExclamationMark
 # 181 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_Dedede_Text_1
-# 199 "data/maps/MallowGardens/scripts.pory"
-	closemessage
-# 200 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_2
-# 201 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
-# 202 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_Dedede_Text_2
-# 204 "data/maps/MallowGardens/scripts.pory"
-	closemessage
-# 205 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_3
-# 206 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
-# 207 "data/maps/MallowGardens/scripts.pory"
-	playse SE_WALL_HIT
-# 208 "data/maps/MallowGardens/scripts.pory"
+	playse SE_PIN
+# 182 "data/maps/MallowGardens/scripts.pory"
 	waitse
+# 183 "data/maps/MallowGardens/scripts.pory"
+	delay 30
+# 184 "data/maps/MallowGardens/scripts.pory"
+	msgbox MallowGardens_EventScript_Dedede_Text_1
+# 202 "data/maps/MallowGardens/scripts.pory"
+	closemessage
+# 203 "data/maps/MallowGardens/scripts.pory"
+	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_2
+# 204 "data/maps/MallowGardens/scripts.pory"
+	waitmovement
+# 205 "data/maps/MallowGardens/scripts.pory"
+	msgbox MallowGardens_EventScript_Dedede_Text_2
+# 207 "data/maps/MallowGardens/scripts.pory"
+	closemessage
+# 208 "data/maps/MallowGardens/scripts.pory"
+	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_3
 # 209 "data/maps/MallowGardens/scripts.pory"
+	waitmovement
+# 210 "data/maps/MallowGardens/scripts.pory"
+	playse SE_WALL_HIT
+# 211 "data/maps/MallowGardens/scripts.pory"
+	waitse
+# 212 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_Dedede_Text_3
-# 214 "data/maps/MallowGardens/scripts.pory"
-	closemessage
-# 215 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_4
-# 216 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
 # 217 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_Dedede_Text_4
-# 230 "data/maps/MallowGardens/scripts.pory"
 	closemessage
-# 231 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_5
-# 232 "data/maps/MallowGardens/scripts.pory"
+# 218 "data/maps/MallowGardens/scripts.pory"
+	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_4
+# 219 "data/maps/MallowGardens/scripts.pory"
 	waitmovement
+# 220 "data/maps/MallowGardens/scripts.pory"
+	msgbox MallowGardens_EventScript_Dedede_Text_4
 # 233 "data/maps/MallowGardens/scripts.pory"
-	fadedefaultbgm
+	closemessage
 # 234 "data/maps/MallowGardens/scripts.pory"
-	removeobject LOCALID_COURTYARD_DEDEDE
+	applymovement LOCALID_COURTYARD_DEDEDE, MallowGardens_EventScript_Dedede_Movement_5
 # 235 "data/maps/MallowGardens/scripts.pory"
-	setvar VAR_MALLOW_COURTYARD_STATE, 1
+	waitmovement
 # 236 "data/maps/MallowGardens/scripts.pory"
+	fadedefaultbgm
+# 237 "data/maps/MallowGardens/scripts.pory"
+	removeobject LOCALID_COURTYARD_DEDEDE
+# 238 "data/maps/MallowGardens/scripts.pory"
+	setvar VAR_MALLOW_COURTYARD_STATE, 1
+# 239 "data/maps/MallowGardens/scripts.pory"
 	releaseall
 	return
 
 
 MallowGardens_EventScript_Soldier::
-# 241 "data/maps/MallowGardens/scripts.pory"
+# 244 "data/maps/MallowGardens/scripts.pory"
 	lockall
-# 242 "data/maps/MallowGardens/scripts.pory"
+# 245 "data/maps/MallowGardens/scripts.pory"
 	compare VAR_MALLOW_COURTYARD_STATE, 2
 	goto_if_ne MallowGardens_EventScript_Soldier_2
 MallowGardens_EventScript_Soldier_1:
-# 301 "data/maps/MallowGardens/scripts.pory"
+# 304 "data/maps/MallowGardens/scripts.pory"
 	faceplayer
-# 302 "data/maps/MallowGardens/scripts.pory"
+# 305 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_Soldier_Text_4
-# 315 "data/maps/MallowGardens/scripts.pory"
+# 318 "data/maps/MallowGardens/scripts.pory"
 	applymovement LOCALID_COURTYARD_SOLDIER, MallowGardens_EventScript_Soldier_Movement_0
-# 316 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
-# 317 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_Soldier_Text_5
 # 319 "data/maps/MallowGardens/scripts.pory"
+	waitmovement
+# 320 "data/maps/MallowGardens/scripts.pory"
+	msgbox MallowGardens_EventScript_Soldier_Text_5
+# 322 "data/maps/MallowGardens/scripts.pory"
 	release
 	return
 
 MallowGardens_EventScript_Soldier_2:
-# 244 "data/maps/MallowGardens/scripts.pory"
+# 247 "data/maps/MallowGardens/scripts.pory"
 	playbgm MUS_ENCOUNTER_COOL, 0
-# 245 "data/maps/MallowGardens/scripts.pory"
+# 248 "data/maps/MallowGardens/scripts.pory"
 	getplayerxy VAR_TEMP_5, VAR_TEMP_6
-# 246 "data/maps/MallowGardens/scripts.pory"
+# 249 "data/maps/MallowGardens/scripts.pory"
 	compare VAR_TEMP_5, 64
 	goto_if_eq MallowGardens_EventScript_Soldier_5
-# 256 "data/maps/MallowGardens/scripts.pory"
+# 259 "data/maps/MallowGardens/scripts.pory"
 	applymovement LOCALID_COURTYARD_SOLDIER, MallowGardens_EventScript_Soldier_Movement_1
-# 257 "data/maps/MallowGardens/scripts.pory"
+# 260 "data/maps/MallowGardens/scripts.pory"
 	waitmovement
 MallowGardens_EventScript_Soldier_4:
-# 259 "data/maps/MallowGardens/scripts.pory"
+# 262 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_Soldier_Text_0, MSGBOX_YESNO
-# 267 "data/maps/MallowGardens/scripts.pory"
+# 270 "data/maps/MallowGardens/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MallowGardens_EventScript_Soldier_8
-# 297 "data/maps/MallowGardens/scripts.pory"
+# 300 "data/maps/MallowGardens/scripts.pory"
 	goto MallowGardens_EventScript_SoldierDeny
 	goto MallowGardens_EventScript_Soldier_1
 
 MallowGardens_EventScript_Soldier_5:
-# 248 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_SOLDIER, Common_Movement_ExclamationMark
-# 249 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
-# 250 "data/maps/MallowGardens/scripts.pory"
-	delay 60
 # 251 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_PLAYER, MallowGardens_EventScript_Soldier_Movement_0
+	applymovement LOCALID_COURTYARD_SOLDIER, Common_Movement_ExclamationMark
 # 252 "data/maps/MallowGardens/scripts.pory"
+	waitmovement
+# 253 "data/maps/MallowGardens/scripts.pory"
+	delay 60
+# 254 "data/maps/MallowGardens/scripts.pory"
+	applymovement LOCALID_PLAYER, MallowGardens_EventScript_Soldier_Movement_0
+# 255 "data/maps/MallowGardens/scripts.pory"
 	waitmovement
 	goto MallowGardens_EventScript_Soldier_4
 
 MallowGardens_EventScript_Soldier_8:
-# 269 "data/maps/MallowGardens/scripts.pory"
+# 272 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_Soldier_Text_1, MSGBOX_YESNO
-# 270 "data/maps/MallowGardens/scripts.pory"
+# 273 "data/maps/MallowGardens/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq MallowGardens_EventScript_Soldier_11
-# 292 "data/maps/MallowGardens/scripts.pory"
+# 295 "data/maps/MallowGardens/scripts.pory"
 	goto MallowGardens_EventScript_SoldierDeny
 	goto MallowGardens_EventScript_Soldier_1
 
 MallowGardens_EventScript_Soldier_11:
-# 272 "data/maps/MallowGardens/scripts.pory"
-	message MallowGardens_EventScript_Soldier_Text_2
-# 274 "data/maps/MallowGardens/scripts.pory"
-	waitmessage
 # 275 "data/maps/MallowGardens/scripts.pory"
+	message MallowGardens_EventScript_Soldier_Text_2
+# 277 "data/maps/MallowGardens/scripts.pory"
+	waitmessage
+# 278 "data/maps/MallowGardens/scripts.pory"
 	dynmultichoice 20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, MallowGardens_Text_NoRegrets, MallowGardens_Text_No
-# 276 "data/maps/MallowGardens/scripts.pory"
+# 279 "data/maps/MallowGardens/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq MallowGardens_EventScript_Soldier_14
-# 287 "data/maps/MallowGardens/scripts.pory"
+# 290 "data/maps/MallowGardens/scripts.pory"
 	goto MallowGardens_EventScript_SoldierDeny
 	goto MallowGardens_EventScript_Soldier_1
 
 MallowGardens_EventScript_Soldier_14:
-# 278 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_Soldier_Text_3
-# 280 "data/maps/MallowGardens/scripts.pory"
-	trainerbattle_no_intro TRAINER_RICKY_4, MallowGardens_Text_SoldierDefeated
 # 281 "data/maps/MallowGardens/scripts.pory"
+	msgbox MallowGardens_EventScript_Soldier_Text_3
+# 283 "data/maps/MallowGardens/scripts.pory"
+	trainerbattle_no_intro TRAINER_RICKY_4, MallowGardens_Text_SoldierDefeated
+# 284 "data/maps/MallowGardens/scripts.pory"
 	setvar VAR_MALLOW_COURTYARD_STATE, 2
-# 282 "data/maps/MallowGardens/scripts.pory"
+# 285 "data/maps/MallowGardens/scripts.pory"
 	release
 	end
 
 
 MallowGardens_EventScript_SoldierDeny::
-# 334 "data/maps/MallowGardens/scripts.pory"
-	msgbox MallowGardens_EventScript_SoldierDeny_Text_0
-# 336 "data/maps/MallowGardens/scripts.pory"
-	closemessage
 # 337 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_COURTYARD_SOLDIER, MallowGardens_EventScript_SoldierDeny_Movement_0
-# 338 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
+	msgbox MallowGardens_EventScript_SoldierDeny_Text_0
 # 339 "data/maps/MallowGardens/scripts.pory"
-	applymovement LOCALID_PLAYER, MallowGardens_EventScript_SoldierDeny_Movement_1
+	closemessage
 # 340 "data/maps/MallowGardens/scripts.pory"
-	waitmovement
+	applymovement LOCALID_COURTYARD_SOLDIER, MallowGardens_EventScript_SoldierDeny_Movement_0
 # 341 "data/maps/MallowGardens/scripts.pory"
-	fadedefaultbgm
+	waitmovement
 # 342 "data/maps/MallowGardens/scripts.pory"
+	applymovement LOCALID_PLAYER, MallowGardens_EventScript_SoldierDeny_Movement_1
+# 343 "data/maps/MallowGardens/scripts.pory"
+	waitmovement
+# 344 "data/maps/MallowGardens/scripts.pory"
+	fadedefaultbgm
+# 345 "data/maps/MallowGardens/scripts.pory"
 	release
 	end
 
 
 MallowGardens_EventScript_Aide::
-# 348 "data/maps/MallowGardens/scripts.pory"
+# 351 "data/maps/MallowGardens/scripts.pory"
 	lock
-# 349 "data/maps/MallowGardens/scripts.pory"
+# 352 "data/maps/MallowGardens/scripts.pory"
 	faceplayer
-# 350 "data/maps/MallowGardens/scripts.pory"
+# 353 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_Aide_Text_0
-# 360 "data/maps/MallowGardens/scripts.pory"
-	playse SE_SELECT
-# 361 "data/maps/MallowGardens/scripts.pory"
-	closemessage
-# 362 "data/maps/MallowGardens/scripts.pory"
-	delay 60
 # 363 "data/maps/MallowGardens/scripts.pory"
-	call WaddleDeeTown_Lab_EvaluateCards
+	playse SE_SELECT
 # 364 "data/maps/MallowGardens/scripts.pory"
+	closemessage
+# 365 "data/maps/MallowGardens/scripts.pory"
+	delay 60
+# 366 "data/maps/MallowGardens/scripts.pory"
+	call WaddleDeeTown_Lab_EvaluateCards
+# 367 "data/maps/MallowGardens/scripts.pory"
 	compare VAR_0x8009, 30
 	goto_if_ge MallowGardens_EventScript_Aide_1
-# 368 "data/maps/MallowGardens/scripts.pory"
+# 371 "data/maps/MallowGardens/scripts.pory"
 	compare VAR_0x8009, 30
 	goto_if_lt MallowGardens_EventScript_Aide_2
 	return
 
 MallowGardens_EventScript_Aide_1:
-# 366 "data/maps/MallowGardens/scripts.pory"
+# 369 "data/maps/MallowGardens/scripts.pory"
 	goto MallowGardens_EventScript_AideSuccess
 	return
 
 MallowGardens_EventScript_Aide_2:
-# 370 "data/maps/MallowGardens/scripts.pory"
+# 373 "data/maps/MallowGardens/scripts.pory"
 	goto MallowGardens_EventScript_AideFailure
 	return
 
 
 MallowGardens_EventScript_AideSuccess::
-# 376 "data/maps/MallowGardens/scripts.pory"
+# 379 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_AideSuccess_Text_0
-# 383 "data/maps/MallowGardens/scripts.pory"
-	giveitem_msg WaddleDeeTown_Lab_ReceivedDowsingMachine, ITEM_DOWSING_MACHINE, 1, MUS_RG_OBTAIN_KEY_ITEM
-# 384 "data/maps/MallowGardens/scripts.pory"
-	giveitem ITEM_TM12
-# 385 "data/maps/MallowGardens/scripts.pory"
-	giveitem ITEM_NUGGET
 # 386 "data/maps/MallowGardens/scripts.pory"
-	giveitem ITEM_GREAT_BALL, 10
+	giveitem_msg WaddleDeeTown_Lab_ReceivedDowsingMachine, ITEM_DOWSING_MACHINE, 1, MUS_RG_OBTAIN_KEY_ITEM
 # 387 "data/maps/MallowGardens/scripts.pory"
+	giveitem ITEM_TM12
+# 388 "data/maps/MallowGardens/scripts.pory"
+	giveitem ITEM_NUGGET
+# 389 "data/maps/MallowGardens/scripts.pory"
+	giveitem ITEM_GREAT_BALL, 10
+# 390 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_AideSuccess_Text_1
-# 398 "data/maps/MallowGardens/scripts.pory"
-	closemessage
-# 399 "data/maps/MallowGardens/scripts.pory"
-	playse SE_EXIT
-# 400 "data/maps/MallowGardens/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
 # 401 "data/maps/MallowGardens/scripts.pory"
-	setflag FLAG_BINDER_GATE_03
+	closemessage
 # 402 "data/maps/MallowGardens/scripts.pory"
-	removeobject LOCALID_COURTYARD_AIDE
+	playse SE_EXIT
 # 403 "data/maps/MallowGardens/scripts.pory"
-	delay 30
+	fadescreenswapbuffers FADE_TO_BLACK
 # 404 "data/maps/MallowGardens/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	setflag FLAG_BINDER_GATE_03
 # 405 "data/maps/MallowGardens/scripts.pory"
+	removeobject LOCALID_COURTYARD_AIDE
+# 406 "data/maps/MallowGardens/scripts.pory"
+	delay 30
+# 407 "data/maps/MallowGardens/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 408 "data/maps/MallowGardens/scripts.pory"
 	release
 	return
 
 
 MallowGardens_EventScript_AideFailure::
-# 410 "data/maps/MallowGardens/scripts.pory"
+# 413 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_EventScript_AideFailure_Text_0
-# 418 "data/maps/MallowGardens/scripts.pory"
+# 421 "data/maps/MallowGardens/scripts.pory"
 	release
 	return
 
 
 MallowGardens_EventScript_SoldierAlt::
-# 423 "data/maps/MallowGardens/scripts.pory"
+# 426 "data/maps/MallowGardens/scripts.pory"
 	trainerbattle_single TRAINER_RICKY_4, MallowGardens_Text_SoldierIntro, MallowGardens_Text_SoldierDefeated, MallowGardens_Text_SoldierPost
 	return
 
 
 MallowGardens_EventScript_Trainer::
-# 447 "data/maps/MallowGardens/scripts.pory"
+# 450 "data/maps/MallowGardens/scripts.pory"
 	trainerbattle_single TRAINER_RANDALL, MallowGardens_Text_TrainerIntro, MallowGardens_Text_TrainerDefeated
-# 448 "data/maps/MallowGardens/scripts.pory"
+# 451 "data/maps/MallowGardens/scripts.pory"
 	msgbox MallowGardens_Text_TrainerPost, MSGBOX_AUTOCLOSE
 	return
 
 
-# 167 "data/maps/MallowGardens/scripts.pory"
+# 170 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_Dedede_Movement_0:
-# 167 "data/maps/MallowGardens/scripts.pory"
+# 170 "data/maps/MallowGardens/scripts.pory"
 	walk_down
-# 167 "data/maps/MallowGardens/scripts.pory"
+# 170 "data/maps/MallowGardens/scripts.pory"
 	walk_down
-# 167 "data/maps/MallowGardens/scripts.pory"
+# 170 "data/maps/MallowGardens/scripts.pory"
 	walk_down
-# 167 "data/maps/MallowGardens/scripts.pory"
+# 170 "data/maps/MallowGardens/scripts.pory"
 	walk_down
-# 167 "data/maps/MallowGardens/scripts.pory"
+# 170 "data/maps/MallowGardens/scripts.pory"
 	walk_down
 	step_end
 
-# 175 "data/maps/MallowGardens/scripts.pory"
+# 178 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_Dedede_Movement_1:
-# 175 "data/maps/MallowGardens/scripts.pory"
+# 178 "data/maps/MallowGardens/scripts.pory"
 	walk_in_place_down
-# 175 "data/maps/MallowGardens/scripts.pory"
+# 178 "data/maps/MallowGardens/scripts.pory"
 	walk_in_place_down
-# 175 "data/maps/MallowGardens/scripts.pory"
+# 178 "data/maps/MallowGardens/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 200 "data/maps/MallowGardens/scripts.pory"
+# 203 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_Dedede_Movement_2:
-# 200 "data/maps/MallowGardens/scripts.pory"
+# 203 "data/maps/MallowGardens/scripts.pory"
 	walk_slow_up
 	step_end
 
-# 205 "data/maps/MallowGardens/scripts.pory"
+# 208 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_Dedede_Movement_3:
-# 205 "data/maps/MallowGardens/scripts.pory"
+# 208 "data/maps/MallowGardens/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 215 "data/maps/MallowGardens/scripts.pory"
+# 218 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_Dedede_Movement_4:
-# 215 "data/maps/MallowGardens/scripts.pory"
+# 218 "data/maps/MallowGardens/scripts.pory"
 	walk_up
-# 215 "data/maps/MallowGardens/scripts.pory"
+# 218 "data/maps/MallowGardens/scripts.pory"
 	walk_in_place_slow_down
 	step_end
 
-# 231 "data/maps/MallowGardens/scripts.pory"
+# 234 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_Dedede_Movement_5:
-# 231 "data/maps/MallowGardens/scripts.pory"
+# 234 "data/maps/MallowGardens/scripts.pory"
 	walk_up
-# 231 "data/maps/MallowGardens/scripts.pory"
+# 234 "data/maps/MallowGardens/scripts.pory"
 	walk_up
-# 231 "data/maps/MallowGardens/scripts.pory"
+# 234 "data/maps/MallowGardens/scripts.pory"
 	walk_up
-# 231 "data/maps/MallowGardens/scripts.pory"
+# 234 "data/maps/MallowGardens/scripts.pory"
 	walk_up
-# 231 "data/maps/MallowGardens/scripts.pory"
+# 234 "data/maps/MallowGardens/scripts.pory"
 	walk_up
 	step_end
 
-# 251 "data/maps/MallowGardens/scripts.pory"
+# 254 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_Soldier_Movement_0:
-# 251 "data/maps/MallowGardens/scripts.pory"
+# 254 "data/maps/MallowGardens/scripts.pory"
 	face_right
 	step_end
 
-# 256 "data/maps/MallowGardens/scripts.pory"
+# 259 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_Soldier_Movement_1:
-# 256 "data/maps/MallowGardens/scripts.pory"
+# 259 "data/maps/MallowGardens/scripts.pory"
 	face_up
 	step_end
 
-# 337 "data/maps/MallowGardens/scripts.pory"
+# 340 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_SoldierDeny_Movement_0:
-# 337 "data/maps/MallowGardens/scripts.pory"
+# 340 "data/maps/MallowGardens/scripts.pory"
 	face_left
 	step_end
 
-# 339 "data/maps/MallowGardens/scripts.pory"
+# 342 "data/maps/MallowGardens/scripts.pory"
 MallowGardens_EventScript_SoldierDeny_Movement_1:
-# 339 "data/maps/MallowGardens/scripts.pory"
+# 342 "data/maps/MallowGardens/scripts.pory"
 	walk_up
 	step_end
 
@@ -589,33 +589,35 @@ MallowGardens_EventScript_Chef_Text_0:
 	.string "bad, does it?$"
 
 MallowGardens_EventScript_Socialite_Text_0:
-# 118 "data/maps/MallowGardens/scripts.pory"
+# 116 "data/maps/MallowGardens/scripts.pory"
+	.string "Mallow Castle is filled with Helpers\n"
+	.string "that love to blow themselves up.\p"
+	.string "I can't say I get why they would,\n"
+	.string "but it's very dangerous indeed.\p"
+	.string "I would recommend stocking up on\n"
+	.string "Dedede Dolls so you can easily\l"
+	.string "get out of a scary battle.$"
+
+MallowGardens_EventScript_Parasol_Text_0:
+# 134 "data/maps/MallowGardens/scripts.pory"
 	.string "Oh, your Helpers are cute! Are you\n"
 	.string "making sure to take care of them?\l"
 	.string "Here, they might appreciate this.$"
 
-MallowGardens_EventScript_Socialite_Text_1:
-# 124 "data/maps/MallowGardens/scripts.pory"
+MallowGardens_EventScript_Parasol_Text_1:
+# 140 "data/maps/MallowGardens/scripts.pory"
 	.string "Waddle Dee Café has all sorts of treats\n"
 	.string "I'm sure your Helpers would love.$"
 
-MallowGardens_EventScript_Parasol_Text_0:
-# 133 "data/maps/MallowGardens/scripts.pory"
-	.string "Just wondering, Kirby… why don't you fly\n"
-	.string "over the Star Blocks on the road?\p"
-	.string "Oh, I see… you're worried about the\n"
-	.string "Helpers of yours that can't fly?\l"
-	.string "That's so considerate of you!$"
-
 MallowGardens_EventScript_Dedede_Text_0:
-# 170 "data/maps/MallowGardens/scripts.pory"
+# 173 "data/maps/MallowGardens/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Well, howdy-do, Kirby! Fancy seein' ya\n"
 	.string "all the way out here!\p"
 	.string "Ya haven't given up on the Royal Royale\n"
 	.string "yet, have ya? Lemme just see here…$"
 
 MallowGardens_EventScript_Dedede_Text_1:
-# 181 "data/maps/MallowGardens/scripts.pory"
+# 184 "data/maps/MallowGardens/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Whoa-ho! Ya already got two brooches!\n"
 	.string "That's better than I was expecting!\p"
 	.string "And you're fillin' out yer cards nicely\n"
@@ -631,18 +633,18 @@ MallowGardens_EventScript_Dedede_Text_1:
 	.string "look into the blockade north o' town?$"
 
 MallowGardens_EventScript_Dedede_Text_2:
-# 202 "data/maps/MallowGardens/scripts.pory"
+# 205 "data/maps/MallowGardens/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Uh huh… look, Kirby, I like ya, so\n"
 	.string "here's a little piece of advice from me:$"
 
 MallowGardens_EventScript_Dedede_Text_3:
-# 209 "data/maps/MallowGardens/scripts.pory"
+# 212 "data/maps/MallowGardens/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Don't.\p"
 	.string "You.\p"
 	.string "Dare.$"
 
 MallowGardens_EventScript_Dedede_Text_4:
-# 217 "data/maps/MallowGardens/scripts.pory"
+# 220 "data/maps/MallowGardens/scripts.pory"
 	.string "{SPEAKER NAME_DEDEDE}Ahem… you know, we've all got our own\n"
 	.string "business to take care of, yeah?\p"
 	.string "Best not to stick your nose in other\n"
@@ -654,7 +656,7 @@ MallowGardens_EventScript_Dedede_Text_4:
 	.string "Peace!$"
 
 MallowGardens_EventScript_Soldier_Text_0:
-# 259 "data/maps/MallowGardens/scripts.pory"
+# 262 "data/maps/MallowGardens/scripts.pory"
 	.string "Halt! Under the Great King's orders,\n"
 	.string "nobody is allowed through here!\p"
 	.string "Yes, that means you, Kirby. If I have\n"
@@ -663,21 +665,21 @@ MallowGardens_EventScript_Soldier_Text_0:
 	.string "Are you really going to cross me?$"
 
 MallowGardens_EventScript_Soldier_Text_1:
-# 269 "data/maps/MallowGardens/scripts.pory"
+# 272 "data/maps/MallowGardens/scripts.pory"
 	.string "Are you sure?$"
 
 MallowGardens_EventScript_Soldier_Text_2:
-# 272 "data/maps/MallowGardens/scripts.pory"
+# 275 "data/maps/MallowGardens/scripts.pory"
 	.string "You're going to lose this battle.\n"
 	.string "You're sure you won't regret this?$"
 
 MallowGardens_EventScript_Soldier_Text_3:
-# 278 "data/maps/MallowGardens/scripts.pory"
+# 281 "data/maps/MallowGardens/scripts.pory"
 	.string "Well, that's how it is, then. Enjoy your\n"
 	.string "trip back to the break room!$"
 
 MallowGardens_EventScript_Soldier_Text_4:
-# 302 "data/maps/MallowGardens/scripts.pory"
+# 305 "data/maps/MallowGardens/scripts.pory"
 	.string "That castle… it appeared out of thin\n"
 	.string "air here, not too long ago.\p"
 	.string "When King Dedede heard the news, this\n"
@@ -689,17 +691,17 @@ MallowGardens_EventScript_Soldier_Text_4:
 	.string "…$"
 
 MallowGardens_EventScript_Soldier_Text_5:
-# 317 "data/maps/MallowGardens/scripts.pory"
+# 320 "data/maps/MallowGardens/scripts.pory"
 	.string "The soldier looked away, without saying\n"
 	.string "another word.$"
 
 MallowGardens_EventScript_SoldierDeny_Text_0:
-# 334 "data/maps/MallowGardens/scripts.pory"
+# 337 "data/maps/MallowGardens/scripts.pory"
 	.string "That's right. Go on, and don't set foot\n"
 	.string "near this place ever again.$"
 
 MallowGardens_EventScript_Aide_Text_0:
-# 350 "data/maps/MallowGardens/scripts.pory"
+# 353 "data/maps/MallowGardens/scripts.pory"
 	.string "Hello, Kirby!\n"
 	.string "I'm a researcher from Waddle Dee Town.\p"
 	.string "The Great King has sent me here to\n"
@@ -709,7 +711,7 @@ MallowGardens_EventScript_Aide_Text_0:
 	.string "Now then, may I see your binder?$"
 
 MallowGardens_EventScript_AideSuccess_Text_0:
-# 376 "data/maps/MallowGardens/scripts.pory"
+# 379 "data/maps/MallowGardens/scripts.pory"
 	.string "Wonderful! You've already registered\n"
 	.string "{STR_VAR_2} Helpers so far!\p"
 	.string "As a reward for your due diligence,\n"
@@ -717,7 +719,7 @@ MallowGardens_EventScript_AideSuccess_Text_0:
 	.string "Please, go ahead and open it!$"
 
 MallowGardens_EventScript_AideSuccess_Text_1:
-# 387 "data/maps/MallowGardens/scripts.pory"
+# 390 "data/maps/MallowGardens/scripts.pory"
 	.string "Of particular note is a new tool made\n"
 	.string "at the lab: the Dowsing Machine.\p"
 	.string "You can use it to find items on the\n"
@@ -728,7 +730,7 @@ MallowGardens_EventScript_AideSuccess_Text_1:
 	.string "to the Great King. Carry on!$"
 
 MallowGardens_EventScript_AideFailure_Text_0:
-# 410 "data/maps/MallowGardens/scripts.pory"
+# 413 "data/maps/MallowGardens/scripts.pory"
 	.string "Hm… it seems you've only registered\n"
 	.string "{STR_VAR_2} Helpers so far.\l"
 	.string "The Great King will be most displeased.\p"
@@ -737,39 +739,39 @@ MallowGardens_EventScript_AideFailure_Text_0:
 	.string "recruited at least {COLOR RED}30{COLOR DARK_GRAY} Helpers?$"
 
 MallowGardens_Text_NoRegrets::
-# 322 "data/maps/MallowGardens/scripts.pory"
+# 325 "data/maps/MallowGardens/scripts.pory"
 	.string "NO REGRETS!$"
 
 MallowGardens_Text_No::
-# 327 "data/maps/MallowGardens/scripts.pory"
+# 330 "data/maps/MallowGardens/scripts.pory"
 	.string "YES REGRETS$"
 
 MallowGardens_Text_SoldierIntro::
-# 426 "data/maps/MallowGardens/scripts.pory"
+# 429 "data/maps/MallowGardens/scripts.pory"
 	.string "Halt! Under the Great King's orders,\n"
 	.string "nobody is allowed through here!\p"
 	.string "You and your Helpers are going to have\n"
 	.string "have to learn this lesson the hard way!$"
 
 MallowGardens_Text_SoldierDefeated::
-# 435 "data/maps/MallowGardens/scripts.pory"
+# 438 "data/maps/MallowGardens/scripts.pory"
 	.string "What?! Forgive me, Great King!$"
 
 MallowGardens_Text_SoldierPost::
-# 440 "data/maps/MallowGardens/scripts.pory"
+# 443 "data/maps/MallowGardens/scripts.pory"
 	.string "Look$"
 
 MallowGardens_Text_TrainerIntro::
-# 451 "data/maps/MallowGardens/scripts.pory"
+# 454 "data/maps/MallowGardens/scripts.pory"
 	.string "I sniffed it! From aaall the way at the\n"
 	.string "beach, squeak! There's treasure here!$"
 
 MallowGardens_Text_TrainerDefeated::
-# 457 "data/maps/MallowGardens/scripts.pory"
+# 460 "data/maps/MallowGardens/scripts.pory"
 	.string "Squeak… maybe that treasure is better\n"
 	.string "off in your hands, after all.$"
 
 MallowGardens_Text_TrainerPost::
-# 463 "data/maps/MallowGardens/scripts.pory"
+# 466 "data/maps/MallowGardens/scripts.pory"
 	.string "I've gotten pretty far from the rest of\n"
 	.string "the squad… how will I get back?$"

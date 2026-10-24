@@ -56,16 +56,18 @@ script ResortArena_Villa2_EventScript_Hiker
     }
     if(var(VAR_SAILOR_QUEST) < 2)
     {
-        msgbox("I used to frequent this resort with
-            a friend of mine. More than anything,
-            their dream was going on adventures.
-            
-            Boy, it must have been tough spending
-            so much time relaxing with me instead!
-            
-            Last I heard, they sought to reach
-            their goal by working on the Halberd\.
-            I wonder if they're doing alright?")
+        msgbox("Staying at this resort reminds me of a
+                friend I used to travel with.
+                
+                They were quite the adventurous type,
+                so they always grovelled about how I
+                preferred to stay in on vacations!
+                
+                It's been a while since I've seen them\.
+                I wonder how they've been holding up?
+                
+                Last I heard, they were planning to apply
+                for work with the Meta-Knights\.")
         setvar(VAR_SAILOR_QUEST, 1)
         release
     }

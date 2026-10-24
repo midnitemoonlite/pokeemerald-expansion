@@ -4228,11 +4228,11 @@ static void Cmd_getexp(void)
             {
                 if (viaExpShare) // at least one mon is getting exp via exp share
                 {
-                    *exp = SAFE_DIV(calculatedExp / 2, viaSentIn);
+                    *exp = SAFE_DIV(calculatedExp, viaSentIn);
                     if (*exp == 0)
                         *exp = 1;
 
-                    gBattleStruct->expShareExpValue = calculatedExp / 2 / viaExpShare;
+                    gBattleStruct->expShareExpValue = calculatedExp / viaExpShare;
                     if (gBattleStruct->expShareExpValue == 0)
                         gBattleStruct->expShareExpValue = 1;
                 }
@@ -4300,7 +4300,7 @@ static void Cmd_getexp(void)
                         gBattleStruct->battlerExpReward = 0;
 
                     if ((holdEffect == HOLD_EFFECT_EXP_SHARE || IsGen6ExpShareEnabled())
-                        && (B_SPLIT_EXP < GEN_6 || gBattleStruct->battlerExpReward == 0)) // only give exp share bonus in later gens if the mon wasn't sent out
+                        && (gBattleStruct->battlerExpReward == 0)) // only give exp share bonus in later gens if the mon wasn't sent out
                     {
                         gBattleStruct->battlerExpReward += GetSoftLevelCapExpValue(gPlayerParty[*expMonId].level, gBattleStruct->expShareExpValue);
                     }

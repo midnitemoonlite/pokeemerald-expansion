@@ -69,7 +69,7 @@ script ResortArena_EventScript_TopAudience
 
 script ResortArena_EventScript_TalkToGentleman
 {
-    turnobject(LOCALID_RESORT_CROWD_1, DIR_EAST)
+    turnobject(LOCALID_RESORT_CROWD_1, DIR_SOUTH)
     goto(ResortArena_EventScript_TopAudience)
 }
 
@@ -97,7 +97,7 @@ script ResortArena_EventScript_BottomAudience
 
 script ResortArena_EventScript_TalkToParasol
 {
-    turnobject(LOCALID_RESORT_CROWD_2, DIR_EAST)
+    turnobject(LOCALID_RESORT_CROWD_2, DIR_SOUTH)
     goto(ResortArena_EventScript_BottomAudience)
 }
 

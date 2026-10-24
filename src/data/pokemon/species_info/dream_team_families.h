@@ -251,7 +251,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 88,
         .baseAttack    = 65,
         .baseDefense   = 80,
-        .baseSpeed     = 52,
+        .baseSpeed     = 42,
         .baseSpAttack  = 85,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIRE),
@@ -540,7 +540,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_CHIP] =
     {
         .baseHP        = 35,
-        .baseAttack    = 40,
+        .baseAttack    = 35,
         .baseDefense   = 40,
         .baseSpeed     = 60,
         .baseSpAttack  = 30,
@@ -717,7 +717,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_HALCANTO_BURT] =
     {
         .baseHP        = 55,
-        .baseAttack    = 85,
+        .baseAttack    = 83,
         .baseDefense   = 70,
         .baseSpeed     = 114,
         .baseSpAttack  = 60,
@@ -832,11 +832,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_PUPA] =
     {
-        .baseHP        = 35,
+        .baseHP        = 40,
         .baseAttack    = 33,
         .baseDefense   = 72,
         .baseSpeed     = 30,
-        .baseSpAttack  = 15,
+        .baseSpAttack  = 10,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 120,
@@ -892,10 +892,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BUTTERFLY_SOLO] =
     {
         .baseHP        = 55,
-        .baseAttack    = 27,
-        .baseDefense   = 32,
+        .baseAttack    = 21,
+        .baseDefense   = 27,
         .baseSpeed     = 75,
-        .baseSpAttack  = 71,
+        .baseSpAttack  = 61,
         .baseSpDefense = 62,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 20,
@@ -1070,9 +1070,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_TWIZZY] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 35,
-        .baseDefense   = 40,
+        .baseHP        = 35,
+        .baseAttack    = 30,
+        .baseDefense   = 35,
         .baseSpeed     = 50,
         .baseSpAttack  = 50,
         .baseSpDefense = 40,
@@ -1129,9 +1129,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_TOOKEY] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 60,
-        .baseDefense   = 70,
+        .baseHP        = 55,
+        .baseAttack    = 55,
+        .baseDefense   = 60,
         .baseSpeed     = 85,
         .baseSpAttack  = 90,
         .baseSpDefense = 65,
@@ -1190,10 +1190,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 60,
         .baseAttack    = 85,
-        .baseDefense   = 95,
-        .baseSpeed     = 65,
+        .baseDefense   = 90,
+        .baseSpeed     = 55,
         .baseSpAttack  = 50,
-        .baseSpDefense = 80,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_POISON, TYPE_ROCK),
         .catchRate = 75,
         .expYield = 189,
@@ -1247,10 +1247,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_WADDLE_DOO] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 40,
+        .baseHP        = 50,
+        .baseAttack    = 35,
         .baseDefense   = 49,
-        .baseSpeed     = 40,
+        .baseSpeed     = 30,
         .baseSpAttack  = 72,
         .baseSpDefense = 54,
         .types = MON_TYPES(TYPE_ELECTRIC),
@@ -1306,7 +1306,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
      [SPECIES_KING_DOO] =
     {
-        .baseHP        = 91,
+        .baseHP        = 88,
         .baseAttack    = 65,
         .baseDefense   = 70,
         .baseSpeed     = 65,
@@ -1550,7 +1550,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 100,
         .baseAttack    = 90,
         .baseDefense   = 85,
-        .baseSpeed     = 50,
+        .baseSpeed     = 40,
         .baseSpAttack  = 60,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_GRASS),
@@ -1609,7 +1609,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 115,
         .baseAttack    = 125,
         .baseDefense   = 95,
-        .baseSpeed     = 40,
+        .baseSpeed     = 35,
         .baseSpAttack  = 65,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_GRASS),
@@ -1667,7 +1667,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 85,
         .baseAttack    = 60,
         .baseDefense   = 90,
-        .baseSpeed     = 50,
+        .baseSpeed     = 40,
         .baseSpAttack  = 75,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GHOST),
@@ -1726,7 +1726,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 75,
         .baseAttack    = 85,
         .baseDefense   = 60,
-        .baseSpeed     = 50,
+        .baseSpeed     = 40,
         .baseSpAttack  = 100,
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
@@ -1845,7 +1845,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 119,
         .baseDefense   = 76,
         .baseSpeed     = 82,
-        .baseSpAttack  = 62,
+        .baseSpAttack  = 42,
         .baseSpDefense = 63,
         .types = MON_TYPES(TYPE_GROUND),
         .catchRate = 90,
@@ -1899,8 +1899,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CAPPY] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 30,
+        .baseHP        = 50,
+        .baseAttack    = 27,
         .baseDefense   = 64,
         .baseSpeed     = 23,
         .baseSpAttack  = 40,
@@ -1959,8 +1959,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_POISON_MASH] =
     {
-        .baseHP        = 88,
-        .baseAttack    = 52,
+        .baseHP        = 78,
+        .baseAttack    = 47,
         .baseDefense   = 82,
         .baseSpeed     = 35,
         .baseSpAttack  = 74,
@@ -2023,8 +2023,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 50,
         .baseDefense   = 30,
         .baseSpeed     = 60,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FIRE),
         .catchRate = 255,
         .expYield = 73,
@@ -2135,11 +2135,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_UFO] =
     {
         .baseHP        = 57,
-        .baseAttack    = 30,
-        .baseDefense   = 65,
+        .baseAttack    = 46,
+        .baseDefense   = 85,
         .baseSpeed     = 150,
-        .baseSpAttack  = 106,
-        .baseSpDefense = 89,
+        .baseSpAttack  = 103,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_ELECTRIC),
         .catchRate = 10,
         .expYield = 386,
@@ -2196,10 +2196,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 60,
         .baseAttack    = 75,
-        .baseDefense   = 50,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 45,
+        .baseDefense   = 45,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 180,
         .expYield = 66,
@@ -2252,15 +2252,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_GIGANT_EDGE] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 105,
-        .baseDefense   = 100,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 50,
+        .baseHP        = 85,
+        .baseAttack    = 115,
+        .baseDefense   = 115,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 90,
-        .expYield = 147,
+        .expYield = 177,
         .evYield_Attack = 1,
         .evYield_Defense = 1,
         .genderRatio = PERCENT_FEMALE(25.00),
@@ -2312,12 +2312,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_IGNITE_EDGE] =
     {
-        .baseHP        = 85,
+        .baseHP        = 110,
         .baseAttack    = 135,
-        .baseDefense   = 95,
+        .baseDefense   = 105,
         .baseSpeed     = 45,
         .baseSpAttack  = 60,
-        .baseSpDefense = 80,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_FIRE),
         .catchRate = 45,
         .expYield = 256,
@@ -2372,10 +2372,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_SIR_KIBBLE] =
     {
         .baseHP        = 50,
-        .baseAttack    = 65,
+        .baseAttack    = 55,
         .baseDefense   = 45,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 55,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 60,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_STEEL),
         .catchRate = 180,
@@ -2429,15 +2429,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_KIBBLE_BLADE] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 85,
-        .baseDefense   = 60,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 60,
+        .baseHP        = 75,
+        .baseAttack    = 95,
+        .baseDefense   = 80,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_STEEL),
         .catchRate = 90,
-        .expYield = 146,
+        .expYield = 176,
         .evYield_Attack = 1,
         .evYield_SpAttack = 1,
         .genderRatio = PERCENT_FEMALE(25.00),
@@ -2488,12 +2488,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_FROST_KIBBLE_BLADE] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 105,
-        .baseDefense   = 70,
+        .baseHP        = 105,
+        .baseAttack    = 110,
+        .baseDefense   = 75,
         .baseSpeed     = 70,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ICE),
         .catchRate = 45,
         .expYield = 255,
@@ -2546,10 +2546,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_NEEDLOUS] =
     {
-        .baseHP        = 35,
+        .baseHP        = 37,
         .baseAttack    = 65,
         .baseDefense   = 43,
-        .baseSpeed     = 42,
+        .baseSpeed     = 62,
         .baseSpAttack  = 20,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
@@ -2606,7 +2606,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_PUNC] =
     {
         .baseHP        = 43,
-        .baseAttack    = 70,
+        .baseAttack    = 67,
         .baseDefense   = 80,
         .baseSpeed     = 32,
         .baseSpAttack  = 20,
@@ -2664,9 +2664,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_PIERCE] =
     {
         .baseHP        = 60,
-        .baseAttack    = 95,
+        .baseAttack    = 90,
         .baseDefense   = 70,
-        .baseSpeed     = 80,
+        .baseSpeed     = 60,
         .baseSpAttack  = 60,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
@@ -2720,9 +2720,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BROOM_HATTER] =
     {
-        .baseHP        = 33,
-        .baseAttack    = 50,
-        .baseDefense   = 50,
+        .baseHP        = 38,
+        .baseAttack    = 43,
+        .baseDefense   = 47,
         .baseSpeed     = 55,
         .baseSpAttack  = 62,
         .baseSpDefense = 50,
@@ -2778,11 +2778,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_KEKE] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 70,
+        .baseHP        = 52,
+        .baseAttack    = 62,
         .baseDefense   = 55,
         .baseSpeed     = 85,
-        .baseSpAttack  = 105,
+        .baseSpAttack  = 101,
         .baseSpDefense = 93,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
         .catchRate = 140,
@@ -2837,7 +2837,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_GRYLL] =
     {
         .baseHP        = 55,
-        .baseAttack    = 83,
+        .baseAttack    = 76,
         .baseDefense   = 55,
         .baseSpeed     = 107,
         .baseSpAttack  = 133,
@@ -2893,8 +2893,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_AWOOFY] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 55,
+        .baseHP        = 45,
+        .baseAttack    = 45,
         .baseDefense   = 45,
         .baseSpeed     = 55,
         .baseSpAttack  = 30,
@@ -2944,7 +2944,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .levelUpLearnset = sAwoofyLevelUpLearnset,
         .teachableLearnset = sAwoofyTeachableLearnset,
         .eggMoveLearnset = sAwoofyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PRIMAL_AWOOFY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_PRIMAL_AWOOFY}),
         //.formSpeciesIdTable = sNoneFormSpeciesIdTable,
         //.formChangeTable = sNoneFormChangeTable,
         //.perfectIVCount = NUM_STATS,
@@ -2952,12 +2952,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_PRIMAL_AWOOFY] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 90,
-        .baseDefense   = 85,
+        .baseHP        = 75,
+        .baseAttack    = 85,
+        .baseDefense   = 71,
         .baseSpeed     = 90,
         .baseSpAttack  = 50,
-        .baseSpDefense = 90,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_GROUND),
         .catchRate = 120,
         .expYield = 165,
@@ -3011,8 +3011,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_KABU] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 45,
+        .baseHP        = 58,
+        .baseAttack    = 40,
         .baseDefense   = 63,
         .baseSpeed     = 60,
         .baseSpAttack  = 44,
@@ -3190,7 +3190,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 132,
         .baseAttack    = 54,
         .baseDefense   = 67,
-        .baseSpeed     = 58,
+        .baseSpeed     = 48,
         .baseSpAttack  = 83,
         .baseSpDefense = 78,
         .types = MON_TYPES(TYPE_WATER),
@@ -3253,7 +3253,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseSpDefense = 83,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 15,
-        .expYield = 277,
+        .expYield = 377,
         .evYield_HP = 1,
         .evYield_Defense = 1,
         .itemRare = ITEM_SAFETY_GOGGLES,
@@ -3303,9 +3303,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_LEAFAN] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 50,
-        .baseDefense   = 50,
+        .baseHP        = 40,
+        .baseAttack    = 34,
+        .baseDefense   = 45,
         .baseSpeed     = 25,
         .baseSpAttack  = 50,
         .baseSpDefense = 60,
@@ -3362,11 +3362,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BULBY] =
     {
         .baseHP        = 70,
-        .baseAttack    = 77,
-        .baseDefense   = 68,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 73,
+        .baseAttack    = 67,
+        .baseDefense   = 66,
+        .baseSpeed     = 33,
+        .baseSpAttack  = 89,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
         .catchRate = 75,
         .expYield = 160,
@@ -3422,7 +3422,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 48,
         .baseAttack    = 71,
-        .baseDefense   = 71,
+        .baseDefense   = 66,
         .baseSpeed     = 47,
         .baseSpAttack  = 20,
         .baseSpDefense = 46,
@@ -3711,10 +3711,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_SULKWORM] =
     {
         .baseHP        = 75,
-        .baseAttack    = 85,
+        .baseAttack    = 79,
         .baseDefense   = 70,
         .baseSpeed     = 20,
-        .baseSpAttack  = 70,
+        .baseSpAttack  = 62,
         .baseSpDefense = 44,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 45,
@@ -3770,7 +3770,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 85,
         .baseAttack    = 127,
-        .baseDefense   = 75,
+        .baseDefense   = 65,
         .baseSpeed     = 81,
         .baseSpAttack  = 122,
         .baseSpDefense = 60,
@@ -3828,8 +3828,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BUTTONFLY] =
     {
         .baseHP        = 30,
-        .baseAttack    = 35,
-        .baseDefense   = 25,
+        .baseAttack    = 30,
+        .baseDefense   = 35,
         .baseSpeed     = 56,
         .baseSpAttack  = 45,
         .baseSpDefense = 30,
@@ -3886,10 +3886,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 59,
         .baseAttack    = 94,
-        .baseDefense   = 50,
-        .baseSpeed     = 114,
+        .baseDefense   = 65,
+        .baseSpeed     = 112,
         .baseSpAttack  = 78,
-        .baseSpDefense = 55,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 120,
         .expYield = 128,
@@ -3941,11 +3941,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MAIGA] =
     {
-        .baseHP        = 75,
+        .baseHP        = 55,
         .baseAttack    = 47,
         .baseDefense   = 46,
         .baseSpeed     = 42,
-        .baseSpAttack  = 49,
+        .baseSpAttack  = 47,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_POISON, TYPE_NORMAL),
         .catchRate = 190,
@@ -4000,7 +4000,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_POPON] =
     {
         .baseHP        = 93,
-        .baseAttack    = 68,
+        .baseAttack    = 63,
         .baseDefense   = 72,
         .baseSpeed     = 42,
         .baseSpAttack  = 89,
@@ -4056,15 +4056,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CONER] =
     {
-        .baseHP        = 78,
-        .baseAttack    = 85,
-        .baseDefense   = 108,
-        .baseSpeed     = 56,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 91,
+        .baseHP        = 58,
+        .baseAttack    = 78,
+        .baseDefense   = 106,
+        .baseSpeed     = 32,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 71,
         .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
         .catchRate = 150,
-        .expYield = 154,
+        .expYield = 134,
         .evYield_Defense = 2,
         .itemRare = ITEM_SHELL_BELL,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -4114,11 +4114,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_DRIFTER] =
     {
-        .baseHP        = 28,
-        .baseAttack    = 49,
+        .baseHP        = 25,
+        .baseAttack    = 41,
         .baseDefense   = 40,
         .baseSpeed     = 32,
-        .baseSpAttack  = 49,
+        .baseSpAttack  = 45,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 190,
@@ -4173,9 +4173,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_JUMPER_SHOOT] =
     {
-        .baseHP        = 68,
+        .baseHP        = 63,
         .baseAttack    = 96,
-        .baseDefense   = 71,
+        .baseDefense   = 81,
         .baseSpeed     = 85,
         .baseSpAttack  = 83,
         .baseSpDefense = 73,
@@ -4233,7 +4233,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_PIERRE] =
     {
         .baseHP        = 63,
-        .baseAttack    = 52,
+        .baseAttack    = 42,
         .baseDefense   = 42,
         .baseSpeed     = 39,
         .baseSpAttack  = 56,
@@ -4292,11 +4292,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_CLOWN_ACROBOT] =
     {
         .baseHP        = 79,
-        .baseAttack    = 80,
-        .baseDefense   = 70,
-        .baseSpeed     = 65,
+        .baseAttack    = 74,
+        .baseDefense   = 55,
+        .baseSpeed     = 50,
         .baseSpAttack  = 80,
-        .baseSpDefense = 94,
+        .baseSpDefense = 89,
         .types = MON_TYPES(TYPE_FAIRY),
         .catchRate = 145,
         .expYield = 156,
@@ -4349,9 +4349,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SPARKY] =
     {
-        .baseHP        = 58,
-        .baseAttack    = 45,
-        .baseDefense   = 40,
+        .baseHP        = 53,
+        .baseAttack    = 35,
+        .baseDefense   = 35,
         .baseSpeed     = 45,
         .baseSpAttack  = 78,
         .baseSpDefense = 52,
@@ -4407,10 +4407,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MASTER_GREEN] =
     {
-        .baseHP        = 84,
-        .baseAttack    = 71,
+        .baseHP        = 74,
+        .baseAttack    = 66,
         .baseDefense   = 58,
-        .baseSpeed     = 75,
+        .baseSpeed     = 69,
         .baseSpAttack  = 121,
         .baseSpDefense = 101,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_WATER),
@@ -4466,13 +4466,13 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 105,
         .baseAttack    = 70,
-        .baseDefense   = 80,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 90,
+        .baseDefense   = 65,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 60,
-        .expYield = 182,
+        .expYield = 212,
         .evYield_HP = 1,
         .evYield_SpDefense = 1,
         .itemRare = ITEM_PASSHO_BERRY,
@@ -4527,13 +4527,13 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 105,
         .baseAttack    = 100,
-        .baseDefense   = 90,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 60,
+        .baseDefense   = 80,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 60,
-        .expYield = 182,
+        .expYield = 212,
         .evYield_HP = 1,
         .evYield_Defense = 1,
         .itemCommon = ITEM_GIMMIGHOUL_COIN,
@@ -4586,10 +4586,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_FLOTZO] =
     {
         .baseHP        = 54,
-        .baseAttack    = 51,
+        .baseAttack    = 43,
         .baseDefense   = 48,
         .baseSpeed     = 53,
-        .baseSpAttack  = 71,
+        .baseSpAttack  = 61,
         .baseSpDefense = 47,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 190,
@@ -4765,7 +4765,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 80,
         .baseDefense   = 100,
         .baseSpeed     = 5,
-        .baseSpAttack  = 15,
+        .baseSpAttack  = 10,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_ROCK),
         .catchRate = 255,
@@ -4825,7 +4825,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 100,
         .baseDefense   = 120,
         .baseSpeed     = 15,
-        .baseSpAttack  = 25,
+        .baseSpAttack  = 20,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_ROCK),
         .catchRate = 120,
@@ -4886,7 +4886,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseDefense   = 140,
         .baseSpeed     = 35,
         .baseSpAttack  = 45,
-        .baseSpDefense = 70,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ROCK),
         .catchRate = 45,
         .expYield = 238,
@@ -4942,11 +4942,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BATTY] =
     {
         .baseHP        = 37,
-        .baseAttack    = 53,
+        .baseAttack    = 45,
         .baseDefense   = 25,
         .baseSpeed     = 71,
         .baseSpAttack  = 31,
-        .baseSpDefense = 30,
+        .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_POISON, TYPE_FLYING),
         .catchRate = 255,
         .expYield = 47,
@@ -4998,8 +4998,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_PRICKLEBAT] =
     {
-        .baseHP        = 81,
-        .baseAttack    = 75,
+        .baseHP        = 80,
+        .baseAttack    = 73,
         .baseDefense   = 87,
         .baseSpeed     = 51,
         .baseSpAttack  = 43,
@@ -5056,7 +5056,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BUZZYBAT_NORMAL] =
     {
-        .baseHP        = 90,
+        .baseHP        = 80,
         .baseAttack    = 105,
         .baseDefense   = 50,
         .baseSpeed     = 105,
@@ -5114,7 +5114,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BUZZYBAT_GRAVE] =
     {
-        .baseHP        = 90,
+        .baseHP        = 80,
         .baseAttack    = 90,
         .baseDefense   = 105,
         .baseSpeed     = 50,
@@ -5177,7 +5177,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 80,
         .baseDefense   = 42,
         .baseSpeed     = 100,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 39,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 150,
@@ -5231,9 +5231,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_CHAIN_FLAMER] =
     {
         .baseHP        = 64,
-        .baseAttack    = 111,
+        .baseAttack    = 108,
         .baseDefense   = 60,
-        .baseSpeed     = 129,
+        .baseSpeed     = 109,
         .baseSpAttack  = 89,
         .baseSpDefense = 56,
         .types = MON_TYPES(TYPE_FIRE, TYPE_ELECTRIC),
@@ -5346,7 +5346,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BUN] =
     {
         .baseHP        = 70,
-        .baseAttack    = 70,
+        .baseAttack    = 90,
         .baseDefense   = 60,
         .baseSpeed     = 56,
         .baseSpAttack  = 35,
@@ -5403,9 +5403,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BOX_BOXER] =
     {
-        .baseHP        = 94,
+        .baseHP        = 84,
         .baseAttack    = 120,
-        .baseDefense   = 65,
+        .baseDefense   = 70,
         .baseSpeed     = 91,
         .baseSpAttack  = 85,
         .baseSpDefense = 45,
@@ -5465,10 +5465,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 30,
         .baseAttack    = 20,
-        .baseDefense   = 33,
+        .baseDefense   = 28,
         .baseSpeed     = 22,
         .baseSpAttack  = 90,
-        .baseSpDefense = 36,
+        .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 225,
         .expYield = 43,
@@ -5520,7 +5520,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CANDLEMANDER] =
     {
-        .baseHP        = 55,
+        .baseHP        = 54,
         .baseAttack    = 60,
         .baseDefense   = 43,
         .baseSpeed     = 84,
@@ -5580,7 +5580,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_EMBACONDA] =
     {
         .baseHP        = 81,
-        .baseAttack    = 82,
+        .baseAttack    = 74,
         .baseDefense   = 70,
         .baseSpeed     = 64,
         .baseSpAttack  = 140,
@@ -5639,10 +5639,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_EMBIRD] =
     {
         .baseHP        = 42,
-        .baseAttack    = 55,
+        .baseAttack    = 50,
         .baseDefense   = 45,
         .baseSpeed     = 63,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 60,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
         .catchRate = 255,
@@ -6929,15 +6929,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SOLITE] =
     {
-        .baseHP        = 73,
-        .baseAttack    = 74,
-        .baseDefense   = 63,
-        .baseSpeed     = 54,
-        .baseSpAttack  = 79,
-        .baseSpDefense = 82,
+        .baseHP        = 63,
+        .baseAttack    = 57,
+        .baseDefense   = 52,
+        .baseSpeed     = 48,
+        .baseSpAttack  = 81,
+        .baseSpDefense = 76,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_ELECTRIC),
         .catchRate = 255,
-        .expYield = 156,
+        .expYield = 146,
         .evYield_HP = 2,
         .evYield_SpAttack = 2,
         .itemRare = ITEM_CHERI_BERRY,
@@ -6988,14 +6988,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_TRANSFORMER] =
     {
-        .baseHP        = 62,
-        .baseAttack    = 20,
-        .baseDefense   = 20,
+        .baseHP        = 40,
+        .baseAttack    = 37,
+        .baseDefense   = 62,
         .baseSpeed     = 77,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseSpAttack  = 51,
+        .baseSpDefense = 54,
         .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 35,
+        .catchRate = 95,
         .expYield = 121,
         .evYield_HP = 1,
         .itemCommon = ITEM_QUICK_POWDER,
@@ -7005,7 +7005,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DITTO),
-        .abilities = { ABILITY_MOODY, ABILITY_NONE, ABILITY_IMPOSTER},
+        .abilities = { ABILITY_PRANKSTER, ABILITY_NONE, ABILITY_IMPOSTER},
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Transformer"),
         .cryId = CRY_BULBASAUR,
@@ -7049,12 +7049,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 25,
         .baseAttack    = 85,
         .baseDefense   = 15,
-        .baseSpeed     = 45,
+        .baseSpeed     = 40,
         .baseSpAttack  = 50,
         .baseSpDefense = 15,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
         .catchRate = 190,
-        .expYield = 54,
+        .expYield = 58,
         .evYield_Attack = 1,
         .itemRare = ITEM_ABSORB_BULB,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -7167,7 +7167,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 80,
         .baseAttack    = 120,
         .baseDefense   = 60,
-        .baseSpeed     = 85,
+        .baseSpeed     = 75,
         .baseSpAttack  = 115,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
@@ -7226,7 +7226,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 85,
         .baseAttack    = 92,
-        .baseDefense   = 64,
+        .baseDefense   = 69,
         .baseSpeed     = 63,
         .baseSpAttack  = 59,
         .baseSpDefense = 57,
@@ -7342,8 +7342,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_KACTI] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 55,
+        .baseHP        = 35,
+        .baseAttack    = 45,
         .baseDefense   = 50,
         .baseSpeed     = 60,
         .baseSpAttack  = 30,
@@ -7401,11 +7401,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_STACTUS] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 75,
-        .baseDefense   = 60,
+        .baseHP        = 63,
+        .baseAttack    = 55,
+        .baseDefense   = 62,
         .baseSpeed     = 30,
-        .baseSpAttack  = 55,
+        .baseSpAttack  = 40,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 120,
@@ -7465,7 +7465,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 90,
         .baseDefense   = 80,
         .baseSpeed     = 73,
-        .baseSpAttack  = 94,
+        .baseSpAttack  = 84,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 60,
@@ -7582,7 +7582,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 85,
         .baseAttack    = 112,
         .baseDefense   = 125,
-        .baseSpeed     = 70,
+        .baseSpeed     = 68,
         .baseSpAttack  = 50,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_DARK),
@@ -7639,7 +7639,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_GLUNK] =
     {
         .baseHP        = 52,
-        .baseAttack    = 45,
+        .baseAttack    = 42,
         .baseDefense   = 50,
         .baseSpeed     = 10,
         .baseSpAttack  = 65,
@@ -7700,7 +7700,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 94,
         .baseAttack    = 80,
         .baseDefense   = 113,
-        .baseSpeed     = 49,
+        .baseSpeed     = 51,
         .baseSpAttack  = 75,
         .baseSpDefense = 92,
         .types = MON_TYPES(TYPE_WATER, TYPE_GRASS),
@@ -7757,11 +7757,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SLIPPY] =
     {
-        .baseHP        = 66,
-        .baseAttack    = 56,
+        .baseHP        = 46,
+        .baseAttack    = 46,
         .baseDefense   = 49,
         .baseSpeed     = 52,
-        .baseSpAttack  = 52,
+        .baseSpAttack  = 42,
         .baseSpDefense = 56,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_WATER),
         .catchRate = 190,
@@ -7773,7 +7773,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_WIMP_OUT, ABILITY_NONE, ABILITY_NONE},
+        .abilities = { ABILITY_WIMP_OUT, ABILITY_NONE, ABILITY_OBLIVIOUS},
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Slippy"),
         .cryId = CRY_BULBASAUR,
@@ -7832,7 +7832,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SUPREME_OVERLORD, ABILITY_NONE, ABILITY_NONE},
+        .abilities = { ABILITY_SUPREME_OVERLORD, ABILITY_NONE, ABILITY_MOODY},
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Sir Slippy"),
         .cryId = CRY_BULBASAUR,
@@ -7873,12 +7873,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CRABY] =
     {
-        .baseHP        = 102,
-        .baseAttack    = 95,
+        .baseHP        = 70,
+        .baseAttack    = 90,
         .baseDefense   = 62,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 61,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 68,
+        .baseSpDefense = 58,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 75,
         .expYield = 147,
@@ -7934,7 +7934,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 58,
         .baseAttack    = 56,
-        .baseDefense   = 30,
+        .baseDefense   = 35,
         .baseSpeed     = 105,
         .baseSpAttack  = 56,
         .baseSpDefense = 30,
@@ -7989,9 +7989,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CAPSULE_J2] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 75,
-        .baseDefense   = 60,
+        .baseHP        = 65,
+        .baseAttack    = 70,
+        .baseDefense   = 70,
         .baseSpeed     = 110,
         .baseSpAttack  = 75,
         .baseSpDefense = 40,
@@ -8046,9 +8046,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CAPSULE_J3] =
     {
-        .baseHP        = 83,
-        .baseAttack    = 85,
-        .baseDefense   = 82,
+        .baseHP        = 68,
+        .baseAttack    = 80,
+        .baseDefense   = 72,
         .baseSpeed     = 130,
         .baseSpAttack  = 85,
         .baseSpDefense = 55,
@@ -8103,7 +8103,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_LASER_BALL] =
     {
         .baseHP        = 30,
-        .baseAttack    = 35,
+        .baseAttack    = 25,
         .baseDefense   = 40,
         .baseSpeed     = 91,
         .baseSpAttack  = 90,
@@ -8333,8 +8333,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_GHOST_KNIGHT] =
     {
         .baseHP        = 70,
-        .baseAttack    = 110,
-        .baseDefense   = 110,
+        .baseAttack    = 105,
+        .baseDefense   = 105,
         .baseSpeed     = 50,
         .baseSpAttack  = 65,
         .baseSpDefense = 65,
@@ -8390,7 +8390,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BANG_BANG] =
     {
-        .baseHP        = 60,
+        .baseHP        = 56,
         .baseAttack    = 100,
         .baseDefense   = 39,
         .baseSpeed     = 71,
@@ -8682,11 +8682,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_WHEELIE_BIKE] =
     {
         .baseHP        = 70,
-        .baseAttack    = 95,
-        .baseDefense   = 80,
+        .baseAttack    = 85,
+        .baseDefense   = 75,
         .baseSpeed     = 115,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_POISON),
         .catchRate = 90,
         .expYield = 167,
@@ -8865,9 +8865,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 70,
         .baseAttack    = 95,
         .baseDefense   = 110,
-        .baseSpeed     = 120,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 75,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_POISON, TYPE_STEEL),
         .catchRate = 90,
         .expYield = 223,
@@ -8984,11 +8984,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_DIGGUH] =
     {
-        .baseHP        = 60,
+        .baseHP        = 58,
         .baseAttack    = 61,
         .baseDefense   = 45,
         .baseSpeed     = 70,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 52,
         .baseSpDefense = 39,
         .types = MON_TYPES(TYPE_GROUND),
         .catchRate = 220,
@@ -9044,9 +9044,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MOGMOLE] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 76,
-        .baseDefense   = 55,
+        .baseHP        = 59,
+        .baseAttack    = 72,
+        .baseDefense   = 53,
         .baseSpeed     = 90,
         .baseSpAttack  = 67,
         .baseSpDefense = 55,
@@ -9105,8 +9105,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MOLEY_MR] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 106,
+        .baseHP        = 83,
+        .baseAttack    = 103,
         .baseDefense   = 75,
         .baseSpeed     = 95,
         .baseSpAttack  = 80,
@@ -9166,8 +9166,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MOLEY_MRS] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 116,
+        .baseHP        = 83,
+        .baseAttack    = 113,
         .baseDefense   = 70,
         .baseSpeed     = 105,
         .baseSpAttack  = 70,
@@ -9228,11 +9228,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_KAPAR] =
     {
         .baseHP        = 56,
-        .baseAttack    = 90,
-        .baseDefense   = 69,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 60,
+        .baseAttack    = 83,
+        .baseDefense   = 66,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 66,
         .types = MON_TYPES(TYPE_GRASS, TYPE_WATER),
         .catchRate = 140,
         .expYield = 169,
@@ -9290,7 +9290,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 105,
         .baseDefense   = 70,
         .baseSpeed     = 80,
-        .baseSpAttack  = 90,
+        .baseSpAttack  = 80,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 120,
@@ -9345,11 +9345,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_SANDRAN] =
     {
         .baseHP        = 67,
-        .baseAttack    = 78,
-        .baseDefense   = 74,
-        .baseSpeed     = 68,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 87,
+        .baseAttack    = 66,
+        .baseDefense   = 73,
+        .baseSpeed     = 53,
+        .baseSpAttack  = 86,
+        .baseSpDefense = 76,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
         .catchRate = 170,
         .expYield = 166,
@@ -9403,12 +9403,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_WALF] =
     {
-        .baseHP        = 64,
-        .baseAttack    = 71,
-        .baseDefense   = 101,
-        .baseSpeed     = 67,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 92,
+        .baseHP        = 40,
+        .baseAttack    = 52,
+        .baseDefense   = 86,
+        .baseSpeed     = 47,
+        .baseSpAttack  = 64,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_WATER, TYPE_BUG),
         .catchRate = 255,
         .expYield = 148,
@@ -9462,11 +9462,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CAWCUN] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 60,
+        .baseHP        = 54,
+        .baseAttack    = 54,
         .baseDefense   = 52,
         .baseSpeed     = 65,
-        .baseSpAttack  = 66,
+        .baseSpAttack  = 56,
         .baseSpDefense = 52,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 190,
@@ -9521,12 +9521,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_FLEURINA] =
     {
-        .baseHP        = 79,
-        .baseAttack    = 83,
-        .baseDefense   = 64,
+        .baseHP        = 78,
+        .baseAttack    = 76,
+        .baseDefense   = 59,
         .baseSpeed     = 113,
         .baseSpAttack  = 112,
-        .baseSpDefense = 72,
+        .baseSpDefense = 81,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 45,
         .expYield = 174,
@@ -9642,7 +9642,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 180,
         .baseAttack    = 100,
         .baseDefense   = 50,
-        .baseSpeed     = 72,
+        .baseSpeed     = 60,
         .baseSpAttack  = 90,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_WATER),
@@ -9698,9 +9698,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 60,
         .baseAttack    = 95,
-        .baseDefense   = 55,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 40,
+        .baseDefense   = 46,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 43,
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 150,
@@ -9874,10 +9874,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_SPARK_BONKERS] =
     {
         .baseHP        = 95,
-        .baseAttack    = 135,
+        .baseAttack    = 130,
         .baseDefense   = 70,
         .baseSpeed     = 100,
-        .baseSpAttack  = 90,
+        .baseSpAttack  = 95,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_ELECTRIC),
         .catchRate = 25,
@@ -9931,7 +9931,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_WHIPPY] =
     {
-        .baseHP        = 50,
+        .baseHP        = 47,
         .baseAttack    = 70,
         .baseDefense   = 32,
         .baseSpeed     = 62,
@@ -10223,7 +10223,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_COOKIN] =
     {
-        .baseHP        = 70,
+        .baseHP        = 60,
         .baseAttack    = 60,
         .baseDefense   = 45,
         .baseSpeed     = 30,
@@ -10284,14 +10284,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_CHEF_KAWASAKI] =
     {
         .baseHP        = 130,
-        .baseAttack    = 85,
-        .baseDefense   = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 75,
         .baseSpeed     = 65,
         .baseSpAttack  = 85,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FAIRY),
         .catchRate = 170,
-        .expYield = 50,
+        .expYield = 201,
         .evYield_HP = 2,
         .itemCommon = ITEM_ENIGMA_BERRY,
         .itemRare = ITEM_BALM_MUSHROOM,
@@ -10343,14 +10343,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_MOONJA] =
     {
         .baseHP        = 25,
-        .baseAttack    = 65,
-        .baseDefense   = 45,
+        .baseAttack    = 63,
+        .baseDefense   = 38,
         .baseSpeed     = 70,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 40,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 33,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
         .catchRate = 140,
-        .expYield = 57,
+        .expYield = 56,
         .evYield_Speed = 1,
         .itemCommon = ITEM_SMOKE_BALL,
         .itemRare = ITEM_SMOKE_BALL,
@@ -10402,8 +10402,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BIO_SPARK] =
     {
-        .baseHP        = 47,
-        .baseAttack    = 90,
+        .baseHP        = 43,
+        .baseAttack    = 85,
         .baseDefense   = 55,
         .baseSpeed     = 95,
         .baseSpAttack  = 75,
@@ -10463,11 +10463,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_WAIU] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 111,
+        .baseHP        = 65,
+        .baseAttack    = 94,
         .baseDefense   = 60,
         .baseSpeed     = 117,
-        .baseSpAttack  = 107,
+        .baseSpAttack  = 104,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
         .catchRate = 45,
@@ -10640,12 +10640,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SCARFY_NORMAL] =
     {
-        .baseHP        = 65,
+        .baseHP        = 60,
         .baseAttack    = 105,
-        .baseDefense   = 65,
+        .baseDefense   = 60,
         .baseSpeed     = 70,
         .baseSpAttack  = 45,
-        .baseSpDefense = 70,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_DARK),
         .catchRate = 230,
         .expYield = 159,
@@ -10699,12 +10699,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SCARFY_ANGRY] =
     {
-        .baseHP        = 65,
+        .baseHP        = 60,
         .baseAttack    = 140,
-        .baseDefense   = 65,
-        .baseSpeed     = 115,
+        .baseDefense   = 60,
+        .baseSpeed     = 110,
         .baseSpAttack  = 70,
-        .baseSpDefense = 70,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_DARK),
         .catchRate = 60,
         .expYield = 159,
@@ -10757,12 +10757,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SNOOTER_NORMAL] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 85,
-        .baseDefense   = 80,
+        .baseHP        = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 70,
         .baseSpeed     = 60,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 80,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
         .catchRate = 45,
         .expYield = 164,
@@ -10818,12 +10818,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SNOOTER_ANGRY] =
     {
-        .baseHP        = 85,
+        .baseHP        = 80,
         .baseAttack    = 105,
-        .baseDefense   = 60,
+        .baseDefense   = 55,
         .baseSpeed     = 120,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 25,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
         .catchRate = 25,
         .expYield = 164,
@@ -10878,12 +10878,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SNOOTER_GULPING] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 85,
-        .baseDefense   = 110,
+        .baseHP        = 80,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
         .baseSpeed     = 60,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 110,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
         .catchRate = 45,
         .expYield = 164,
@@ -10938,12 +10938,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SNOOTER_GORGING] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 85,
-        .baseDefense   = 110,
+        .baseHP        = 80,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
         .baseSpeed     = 60,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 110,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
         .catchRate = 45,
         .expYield = 164,
@@ -11006,7 +11006,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
         .catchRate = 45,
-        .expYield = 194,
+        .expYield = 183,
         .evYield_Attack = 1,
         .evYield_Defense = 1,
         .itemRare = ITEM_PROTECTIVE_PADS,
@@ -11177,12 +11177,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BLOCKIN] =
     {
-        .baseHP        = 55,
+        .baseHP        = 70,
         .baseAttack    = 80,
-        .baseDefense   = 100,
+        .baseDefense   = 94,
         .baseSpeed     = 83,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 95,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 64,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
         .catchRate = 120,
         .expYield = 163,
@@ -11233,11 +11233,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_OWGULF] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 61,
-        .baseDefense   = 47,
+        .baseHP        = 48,
+        .baseAttack    = 56,
+        .baseDefense   = 45,
         .baseSpeed     = 65,
-        .baseSpAttack  = 57,
+        .baseSpAttack  = 53,
         .baseSpDefense = 42,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 180,
@@ -11292,9 +11292,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BOHBOH] =
     {
-        .baseHP        = 90,
+        .baseHP        = 85,
         .baseAttack    = 104,
-        .baseDefense   = 80,
+        .baseDefense   = 78,
         .baseSpeed     = 89,
         .baseSpAttack  = 73,
         .baseSpDefense = 75,
@@ -11350,12 +11350,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_TOOTLEBAM] =
     {
-        .baseHP        = 117,
+        .baseHP        = 104,
         .baseAttack    = 60,
-        .baseDefense   = 72,
+        .baseDefense   = 58,
         .baseSpeed     = 74,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 74,
+        .baseSpAttack  = 92,
+        .baseSpDefense = 92,
         .types = MON_TYPES(TYPE_FAIRY),
         .catchRate = 220,
         .expYield = 234,
@@ -11415,7 +11415,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseDefense   = 48,
         .baseSpeed     = 35,
         .baseSpAttack  = 66,
-        .baseSpDefense = 84,
+        .baseSpDefense = 89,
         .types = MON_TYPES(TYPE_WATER, TYPE_PSYCHIC),
         .catchRate = 100,
         .expYield = 68,
@@ -11469,9 +11469,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BUBOO] =
     {
         .baseHP        = 96,
-        .baseAttack    = 63,
+        .baseAttack    = 53,
         .baseDefense   = 48,
-        .baseSpeed     = 56,
+        .baseSpeed     = 50,
         .baseSpAttack  = 72,
         .baseSpDefense = 127,
         .types = MON_TYPES(TYPE_WATER, TYPE_PSYCHIC),
@@ -11527,7 +11527,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_GUSSA] =
     {
         .baseHP        = 30,
-        .baseAttack    = 75,
+        .baseAttack    = 70,
         .baseDefense   = 20,
         .baseSpeed     = 70,
         .baseSpAttack  = 15,
@@ -11584,7 +11584,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_JOE] =
     {
         .baseHP        = 62,
-        .baseAttack    = 90,
+        .baseAttack    = 81,
         .baseDefense   = 40,
         .baseSpeed     = 80,
         .baseSpAttack  = 39,
@@ -11698,8 +11698,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MOPOO] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 35,
+        .baseHP        = 31,
+        .baseAttack    = 25,
         .baseDefense   = 37,
         .baseSpeed     = 40,
         .baseSpAttack  = 61,
@@ -11756,8 +11756,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CHILLY] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 51,
+        .baseHP        = 52,
+        .baseAttack    = 41,
         .baseDefense   = 54,
         .baseSpeed     = 40,
         .baseSpAttack  = 80,
@@ -11818,8 +11818,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 90,
         .baseAttack    = 74,
-        .baseDefense   = 70,
-        .baseSpeed     = 40,
+        .baseDefense   = 72,
+        .baseSpeed     = 30,
         .baseSpAttack  = 121,
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_ICE, TYPE_FAIRY),
@@ -11875,11 +11875,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_FRIGIS] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 40,
+        .baseHP        = 40,
+        .baseAttack    = 30,
         .baseDefense   = 45,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 60,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 53,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ICE, TYPE_FLYING),
         .catchRate = 190,
@@ -11934,10 +11934,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_SNOWL] =
     {
         .baseHP        = 75,
-        .baseAttack    = 55,
+        .baseAttack    = 45,
         .baseDefense   = 70,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 85,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 80,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_ICE, TYPE_FLYING),
         .catchRate = 80,
@@ -11990,8 +11990,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CORORI] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 50,
+        .baseHP        = 54,
+        .baseAttack    = 35,
         .baseDefense   = 55,
         .baseSpeed     = 44,
         .baseSpAttack  = 65,
@@ -12050,15 +12050,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_PENGY] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 78,
-        .baseDefense   = 74,
-        .baseSpeed     = 83,
-        .baseSpAttack  = 81,
+        .baseHP        = 65,
+        .baseAttack    = 68,
+        .baseDefense   = 64,
+        .baseSpeed     = 76,
+        .baseSpAttack  = 84,
         .baseSpDefense = 74,
         .types = MON_TYPES(TYPE_ICE),
         .catchRate = 90,
-        .expYield = 162,
+        .expYield = 152,
         .evYield_HP = 1,
         .evYield_SpAttack = 1,
         .itemCommon = ITEM_RESIST_FEATHER,
@@ -13189,7 +13189,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_ICE_DRAGON] =
     {
-        .baseHP        = 103,
+        .baseHP        = 88,
         .baseAttack    = 106,
         .baseDefense   = 63,
         .baseSpeed     = 70,
@@ -13248,11 +13248,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_LOBZILLA_SHRIMP] =
     {
-        .baseHP        = 77,
-        .baseAttack    = 80,
-        .baseDefense   = 74,
-        .baseSpeed     = 52,
-        .baseSpAttack  = 92,
+        .baseHP        = 76,
+        .baseAttack    = 88,
+        .baseDefense   = 69,
+        .baseSpeed     = 51,
+        .baseSpAttack  = 94,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
         .catchRate = 45,
@@ -13308,12 +13308,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_LOBZILLA_MONSTER] =
     {
-        .baseHP        = 77,
-        .baseAttack    = 123,
-        .baseDefense   = 94,
-        .baseSpeed     = 102,
-        .baseSpAttack  = 77,
-        .baseSpDefense = 167,
+        .baseHP        = 76,
+        .baseAttack    = 128,
+        .baseDefense   = 118,
+        .baseSpeed     = 81,
+        .baseSpAttack  = 167,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
         .catchRate = 45,
         .expYield = 282,
@@ -13425,14 +13425,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_SQUIBBY] =
     {
         .baseHP        = 65,
-        .baseAttack    = 79,
+        .baseAttack    = 72,
         .baseDefense   = 53,
         .baseSpeed     = 54,
         .baseSpAttack  = 63,
-        .baseSpDefense = 140,
+        .baseSpDefense = 135,
         .types = MON_TYPES(TYPE_WATER, TYPE_FAIRY),
         .catchRate = 75,
-        .expYield = 163,
+        .expYield = 162,
         .evYield_SpDefense = 2,
         .genderRatio = PERCENT_FEMALE(50.0),
         .eggCycles = 20,
@@ -13480,8 +13480,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_COMO] =
     {
-        .baseHP        = 46,
-        .baseAttack    = 50,
+        .baseHP        = 41,
+        .baseAttack    = 40,
         .baseDefense   = 40,
         .baseSpeed     = 30,
         .baseSpAttack  = 40,
@@ -13539,14 +13539,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_SPIDEROO] =
     {
         .baseHP        = 80,
-        .baseAttack    = 102,
+        .baseAttack    = 97,
         .baseDefense   = 61,
         .baseSpeed     = 88,
-        .baseSpAttack  = 77,
+        .baseSpAttack  = 61,
         .baseSpDefense = 64,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 90,
-        .expYield = 58,
+        .expYield = 153,
         .evYield_Attack = 2,
         .itemRare = ITEM_SILVER_POWDER,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -13598,9 +13598,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 100,
         .baseAttack    = 100,
         .baseDefense   = 50,
-        .baseSpeed     = 40,
+        .baseSpeed     = 43,
         .baseSpAttack  = 25,
-        .baseSpDefense = 35,
+        .baseSpDefense = 36,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FIGHTING),
         .catchRate = 120,
         .expYield = 80,
@@ -13654,12 +13654,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_PEPERON] =
     {
-        .baseHP        = 142,
-        .baseAttack    = 140,
-        .baseDefense   = 70,
+        .baseHP        = 144,
+        .baseAttack    = 135,
+        .baseDefense   = 72,
         .baseSpeed     = 50,
         .baseSpAttack  = 38,
-        .baseSpDefense = 60,
+        .baseSpDefense = 62,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = 192,
@@ -13713,10 +13713,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_OOHROO_NORMAL] =
     {
-        .baseHP        = 80,
+        .baseHP        = 76,
         .baseAttack    = 90,
         .baseDefense   = 58,
-        .baseSpeed     = 59,
+        .baseSpeed     = 51,
         .baseSpAttack  = 33,
         .baseSpDefense = 43,
         .types = MON_TYPES(TYPE_FIGHTING),
@@ -13774,10 +13774,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_OOHROO_ZEN] =
     {
-        .baseHP        = 80,
+        .baseHP        = 76,
         .baseAttack    = 90,
         .baseDefense   = 58,
-        .baseSpeed     = 59,
+        .baseSpeed     = 51,
         .baseSpAttack  = 33,
         .baseSpDefense = 43,
         .types = MON_TYPES(TYPE_PSYCHIC),
@@ -13835,7 +13835,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_GORIATH_NORMAL] =
     {
-        .baseHP        = 88,
+        .baseHP        = 85,
         .baseAttack    = 113,
         .baseDefense   = 71,
         .baseSpeed     = 91,
@@ -13896,7 +13896,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_GORIATH_ZEN] =
     {
-        .baseHP        = 88,
+        .baseHP        = 85,
         .baseAttack    = 113,
         .baseDefense   = 71,
         .baseSpeed     = 91,
@@ -13958,10 +13958,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_NESP] =
     {
         .baseHP        = 30,
-        .baseAttack    = 35,
+        .baseAttack    = 30,
         .baseDefense   = 23,
         .baseSpeed     = 45,
-        .baseSpAttack  = 105,
+        .baseSpAttack  = 95,
         .baseSpDefense = 62,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 60,
@@ -14016,7 +14016,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_MADOO] =
     {
         .baseHP        = 50,
-        .baseAttack    = 55,
+        .baseAttack    = 40,
         .baseDefense   = 50,
         .baseSpeed     = 65,
         .baseSpAttack  = 115,
@@ -14192,11 +14192,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BOUNCY] =
     {
-        .baseHP        = 61,
-        .baseAttack    = 50,
+        .baseHP        = 58,
+        .baseAttack    = 40,
         .baseDefense   = 53,
         .baseSpeed     = 36,
-        .baseSpAttack  = 33,
+        .baseSpAttack  = 35,
         .baseSpDefense = 52,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 200,
@@ -14250,7 +14250,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_BOUNCY_SIS] =
     {
         .baseHP        = 95,
-        .baseAttack    = 84,
+        .baseAttack    = 82,
         .baseDefense   = 86,
         .baseSpeed     = 57,
         .baseSpAttack  = 60,
@@ -14308,14 +14308,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_FISHBONE] =
     {
         .baseHP        = 21,
-        .baseAttack    = 65,
-        .baseDefense   = 35,
+        .baseAttack    = 55,
+        .baseDefense   = 36,
         .baseSpeed     = 38,
         .baseSpAttack  = 35,
-        .baseSpDefense = 25,
+        .baseSpDefense = 15,
         .types = MON_TYPES(TYPE_WATER, TYPE_POISON),
         .catchRate = 100,
-        .expYield = 55,
+        .expYield = 53,
         .evYield_Attack = 1,
         .genderRatio = PERCENT_FEMALE(50.0),
         .eggCycles = 20,
@@ -14364,9 +14364,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BLISH] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 102,
-        .baseDefense   = 83,
+        .baseHP        = 75,
+        .baseAttack    = 92,
+        .baseDefense   = 73,
         .baseSpeed     = 46,
         .baseSpAttack  = 87,
         .baseSpDefense = 79,
@@ -14656,12 +14656,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_KEY_DEE] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 60,
-        .baseDefense   = 60,
+        .baseHP        = 40,
+        .baseAttack    = 55,
+        .baseDefense   = 55,
         .baseSpeed     = 130,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FAIRY),
         .catchRate = 30,
         .expYield = 370,
@@ -14715,15 +14715,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SLIME] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 30,
-        .baseDefense   = 30,
+        .baseHP        = 28,
+        .baseAttack    = 25,
+        .baseDefense   = 26,
         .baseSpeed     = 15,
         .baseSpAttack  = 48,
         .baseSpDefense = 42,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_POISON),
         .catchRate = 255,
-        .expYield = 51,
+        .expYield = 38,
         .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
@@ -14774,14 +14774,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_PUPPET] =
     {
         .baseHP        = 56,
-        .baseAttack    = 55,
+        .baseAttack    = 50,
         .baseDefense   = 75,
         .baseSpeed     = 35,
-        .baseSpAttack  = 84,
+        .baseSpAttack  = 64,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_POISON),
         .catchRate = 220,
-        .expYield = 173,
+        .expYield = 143,
         .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
@@ -14830,10 +14830,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MAGICIAN] =
     {
-        .baseHP        = 89,
+        .baseHP        = 74,
         .baseAttack    = 38,
-        .baseDefense   = 80,
-        .baseSpeed     = 90,
+        .baseDefense   = 70,
+        .baseSpeed     = 85,
         .baseSpAttack  = 125,
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_POISON),
@@ -14889,10 +14889,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 255,
         .baseAttack    = 5,
-        .baseDefense   = 60,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 60,
+        .baseDefense   = 50,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_NORMAL),
         .catchRate = 100,
         .expYield = 300,
@@ -14946,9 +14946,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 110,
         .baseAttack    = 70,
-        .baseDefense   = 120,
+        .baseDefense   = 115,
         .baseSpeed     = 55,
-        .baseSpAttack  = 100,
+        .baseSpAttack  = 105,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_STEEL),
         .catchRate = 45,
@@ -15006,9 +15006,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 110,
         .baseAttack    = 70,
-        .baseDefense   = 120,
+        .baseDefense   = 115,
         .baseSpeed     = 55,
-        .baseSpAttack  = 100,
+        .baseSpAttack  = 105,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_STEEL, TYPE_ELECTRIC),
         .catchRate = 45,
@@ -15064,15 +15064,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BOXY] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 103,
-        .baseDefense   = 85,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 71,
-        .baseSpDefense = 58,
+        .baseHP        = 80,
+        .baseAttack    = 108,
+        .baseDefense   = 58,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_FAIRY),
         .catchRate = 75,
-        .expYield = 187,
+        .expYield = 197,
         .evYield_Attack = 2,
         .itemCommon = ITEM_GIMMIGHOUL_COIN,
         .genderRatio = PERCENT_FEMALE(75.0),
@@ -15125,7 +15125,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 105,
         .baseAttack    = 110,
         .baseDefense   = 60,
-        .baseSpeed     = 75,
+        .baseSpeed     = 80,
         .baseSpAttack  = 90,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_FAIRY),
@@ -15183,7 +15183,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 105,
         .baseAttack    = 110,
         .baseDefense   = 60,
-        .baseSpeed     = 75,
+        .baseSpeed     = 80,
         .baseSpAttack  = 90,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_DRAGON),
@@ -15242,7 +15242,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 105,
         .baseAttack    = 110,
         .baseDefense   = 60,
-        .baseSpeed     = 75,
+        .baseSpeed     = 80,
         .baseSpAttack  = 90,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
@@ -15361,7 +15361,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseDefense   = 130,
         .baseSpeed     = 50,
         .baseSpAttack  = 60,
-        .baseSpDefense = 95,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FIGHTING),
         .catchRate = 120,
         .expYield = 184,
@@ -15415,7 +15415,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_SNOOZROOT] =
     {
         .baseHP        = 66,
-        .baseAttack    = 46,
+        .baseAttack    = 36,
         .baseDefense   = 49,
         .baseSpeed     = 34,
         .baseSpAttack  = 65,
@@ -15473,7 +15473,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_LADY_IVY] =
     {
-        .baseHP        = 85,
+        .baseHP        = 88,
         .baseAttack    = 91,
         .baseDefense   = 85,
         .baseSpeed     = 80,
@@ -15532,11 +15532,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SNIPPER] =
     {
-        .baseHP        = 60,
+        .baseHP        = 55,
         .baseAttack    = 100,
         .baseDefense   = 50,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 25,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 29,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_GROUND, TYPE_BUG),
         .catchRate = 120,
@@ -15650,7 +15650,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_METALUN] =
     {
         .baseHP        = 60,
-        .baseAttack    = 70,
+        .baseAttack    = 66,
         .baseDefense   = 150,
         .baseSpeed     = 25,
         .baseSpAttack  = 20,
@@ -15712,11 +15712,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 100,
         .baseDefense   = 200,
         .baseSpeed     = 20,
-        .baseSpAttack  = 30,
+        .baseSpAttack  = 50,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_STEEL),
         .catchRate = 60,
-        .expYield = 179,
+        .expYield = 180,
         .evYield_Defense = 2,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -15825,7 +15825,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_HB_007] =
     {
         .baseHP        = 75,
-        .baseAttack    = 50,
+        .baseAttack    = 40,
         .baseDefense   = 105,
         .baseSpeed     = 65,
         .baseSpAttack  = 90,
@@ -15883,14 +15883,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_CUTFISH] =
     {
         .baseHP        = 35,
-        .baseAttack    = 80,
+        .baseAttack    = 75,
         .baseDefense   = 55,
         .baseSpeed     = 40,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 20,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = 180,
-        .expYield = 66,
+        .expYield = 56,
         .evYield_Attack = 1,
         .genderRatio = PERCENT_FEMALE(50.0),
         .eggCycles = 20,
@@ -15997,7 +15997,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 42,
         .baseAttack    = 10,
-        .baseDefense   = 35,
+        .baseDefense   = 30,
         .baseSpeed     = 70,
         .baseSpAttack  = 57,
         .baseSpDefense = 36,
@@ -16114,12 +16114,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_ANGEL] =
     {
-        .baseHP        = 83,
-        .baseAttack    = 44,
-        .baseDefense   = 84,
+        .baseHP        = 76,
+        .baseAttack    = 35,
+        .baseDefense   = 64,
         .baseSpeed     = 95,
-        .baseSpAttack  = 96,
-        .baseSpDefense = 97,
+        .baseSpAttack  = 106,
+        .baseSpDefense = 107,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
         .catchRate = 30,
         .expYield = 271,
@@ -16174,15 +16174,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SIMIRROR] =
     {
-        .baseHP        = 69,
-        .baseAttack    = 81,
-        .baseDefense   = 85,
+        .baseHP        = 59,
+        .baseAttack    = 77,
+        .baseDefense   = 79,
         .baseSpeed     = 49,
         .baseSpAttack  = 93,
         .baseSpDefense = 97,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FAIRY),
         .catchRate = 120,
-        .expYield = 170,
+        .expYield = 160,
         .evYield_SpAttack = 1,
         .evYield_SpDefense = 1,
         .itemRare = ITEM_MIRROR_HERB,
@@ -16234,7 +16234,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_TWISTER] =
     {
         .baseHP        = 55,
-        .baseAttack    = 50,
+        .baseAttack    = 52,
         .baseDefense   = 64,
         .baseSpeed     = 100,
         .baseSpAttack  = 74,
@@ -16291,15 +16291,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_WINDWHIPPER] =
     {
-        .baseHP        = 85,
+        .baseHP        = 83,
         .baseAttack    = 90,
-        .baseDefense   = 70,
-        .baseSpeed     = 71,
+        .baseDefense   = 80,
+        .baseSpeed     = 61,
         .baseSpAttack  = 117,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 45,
-        .expYield = 179,
+        .expYield = 199,
         .evYield_SpAttack = 1,
         .evYield_SpDefense = 1,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -16358,7 +16358,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseSpDefense = 37,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_PSYCHIC),
         .catchRate = 120,
-        .expYield = 66,
+        .expYield = 56,
         .evYield_SpAttack = 1,
         .genderRatio = PERCENT_FEMALE(50.0),
         .eggCycles = 20,
@@ -16412,7 +16412,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseDefense   = 85,
         .baseSpeed     = 90,
         .baseSpAttack  = 112,
-        .baseSpDefense = 82,
+        .baseSpDefense = 77,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_PSYCHIC),
         .catchRate = 60,
         .expYield = 175,
@@ -16464,12 +16464,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_COOL_SPOOK] =
     {
-        .baseHP        = 73,
-        .baseAttack    = 45,
-        .baseDefense   = 68,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 94,
-        .baseSpDefense = 70,
+        .baseHP        = 49,
+        .baseAttack    = 23,
+        .baseDefense   = 45,
+        .baseSpeed     = 71,
+        .baseSpAttack  = 142,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_GHOST),
         .catchRate = 60,
         .expYield = 162,
@@ -16521,15 +16521,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_TAC] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 90,
+        .baseHP        = 52,
+        .baseAttack    = 85,
         .baseDefense   = 60,
         .baseSpeed     = 118,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 75,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
         .catchRate = 30,
-        .expYield = 173,
+        .expYield = 273,
         .evYield_Speed = 2,
         .itemCommon = ITEM_LUCKY_PUNCH,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -16579,15 +16579,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CHEMITORY] =
     {
-        .baseHP        = 87,
-        .baseAttack    = 65,
-        .baseDefense   = 90,
-        .baseSpeed     = 44,
-        .baseSpAttack  = 83,
-        .baseSpDefense = 90,
+        .baseHP        = 64,
+        .baseAttack    = 55,
+        .baseDefense   = 57,
+        .baseSpeed     = 34,
+        .baseSpAttack  = 92,
+        .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_POISON),
         .catchRate = 80,
-        .expYield = 166,
+        .expYield = 136,
         .evYield_SpDefense = 2,
         .genderRatio = PERCENT_FEMALE(50.0),
         .eggCycles = 20,
@@ -16637,7 +16637,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_COTTA] =
     {
         .baseHP        = 40,
-        .baseAttack    = 40,
+        .baseAttack    = 30,
         .baseDefense   = 65,
         .baseSpeed     = 40,
         .baseSpAttack  = 40,
@@ -16814,9 +16814,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_VIVIDRIA] =
     {
         .baseHP        = 84,
-        .baseAttack    = 70,
+        .baseAttack    = 69,
         .baseDefense   = 60,
-        .baseSpeed     = 70,
+        .baseSpeed     = 64,
         .baseSpAttack  = 110,
         .baseSpDefense = 101,
         .types = MON_TYPES(TYPE_FAIRY),
@@ -16872,14 +16872,14 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_DRAWCIA] =
     {
         .baseHP        = 84,
-        .baseAttack    = 70,
+        .baseAttack    = 69,
         .baseDefense   = 60,
-        .baseSpeed     = 70,
+        .baseSpeed     = 64,
         .baseSpAttack  = 110,
         .baseSpDefense = 101,
         .types = MON_TYPES(TYPE_FAIRY),
         .catchRate = 15,
-        .expYield = 174,
+        .expYield = 263,
         .evYield_SpAttack = 1,
         .evYield_SpDefense = 1,
         .genderRatio = MON_FEMALE,
@@ -16931,10 +16931,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_MIKARIN] =
     {
         .baseHP        = 45,
-        .baseAttack    = 30,
-        .baseDefense   = 40,
+        .baseAttack    = 25,
+        .baseDefense   = 35,
         .baseSpeed     = 30,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 50,
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_GRASS),
         .catchRate = 220,
@@ -16989,11 +16989,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_KAGAMI_MOCCHI] =
     {
-        .baseHP        = 93,
+        .baseHP        = 92,
         .baseAttack    = 62,
         .baseDefense   = 86,
         .baseSpeed     = 50,
-        .baseSpAttack  = 89,
+        .baseSpAttack  = 84,
         .baseSpDefense = 107,
         .types = MON_TYPES(TYPE_GRASS, TYPE_ICE),
         .catchRate = 140,
@@ -17048,11 +17048,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BLOON] =
     {
-        .baseHP        = 150,
-        .baseAttack    = 48,
-        .baseDefense   = 42,
-        .baseSpeed     = 43,
-        .baseSpAttack  = 91,
+        .baseHP        = 165,
+        .baseAttack    = 35,
+        .baseDefense   = 30,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 83,
         .baseSpDefense = 71,
         .types = MON_TYPES(TYPE_FLYING),
         .catchRate = 200,
@@ -17105,12 +17105,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_STARMAN] =
     {
-        .baseHP        = 72,
-        .baseAttack    = 91,
-        .baseDefense   = 71,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 59,
+        .baseHP        = 62,
+        .baseAttack    = 96,
+        .baseDefense   = 65,
+        .baseSpeed     = 99,
+        .baseSpAttack  = 47,
+        .baseSpDefense = 57,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_FLYING),
         .catchRate = 100,
         .expYield = 178,
@@ -17164,15 +17164,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_RINGLE] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 60,
+        .baseHP        = 55,
+        .baseAttack    = 58,
         .baseDefense   = 112,
-        .baseSpeed     = 45,
+        .baseSpeed     = 38,
         .baseSpAttack  = 86,
-        .baseSpDefense = 104,
+        .baseSpDefense = 99,
         .types = MON_TYPES(TYPE_STEEL, TYPE_FAIRY),
         .catchRate = 150,
-        .expYield = 173,
+        .expYield = 163,
         .evYield_Defense = 2,
         .itemRare = ITEM_SOOTHE_BELL,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -17226,7 +17226,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseDefense   = 98,
         .baseSpeed     = 39,
         .baseSpAttack  = 40,
-        .baseSpDefense = 100,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GROUND, TYPE_PSYCHIC),
         .catchRate = 120,
         .expYield = 78,
@@ -17278,12 +17278,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_ORBSERVOR] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 98,
-        .baseDefense   = 118,
-        .baseSpeed     = 39,
+        .baseHP        = 61,
+        .baseAttack    = 86,
+        .baseDefense   = 108,
+        .baseSpeed     = 49,
         .baseSpAttack  = 85,
-        .baseSpDefense = 123,
+        .baseSpDefense = 113,
         .types = MON_TYPES(TYPE_GROUND, TYPE_PSYCHIC),
         .catchRate = 60,
         .expYield = 175,
@@ -17335,15 +17335,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SPYNUM] =
     {
-        .baseHP        = 46,
-        .baseAttack    = 65,
-        .baseDefense   = 40,
+        .baseHP        = 44,
+        .baseAttack    = 60,
+        .baseDefense   = 39,
         .baseSpeed     = 29,
         .baseSpAttack  = 65,
         .baseSpDefense = 48,
         .types = MON_TYPES(TYPE_DARK),
         .catchRate = 180,
-        .expYield = 69,
+        .expYield = 62,
         .evYield_Defense = 2,
         .itemRare = ITEM_ZOOM_LENS,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -17394,11 +17394,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SECTRA_SHOOTER] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 99,
-        .baseDefense   = 60,
+        .baseHP        = 58,
+        .baseAttack    = 89,
+        .baseDefense   = 55,
         .baseSpeed     = 54,
-        .baseSpAttack  = 99,
+        .baseSpAttack  = 94
+        ,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_DARK, TYPE_BUG),
         .catchRate = 90,
@@ -17453,9 +17454,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_PACTO] =
     {
         .baseHP        = 106,
-        .baseAttack    = 108,
-        .baseDefense   = 80,
-        .baseSpeed     = 66,
+        .baseAttack    = 106,
+        .baseDefense   = 76,
+        .baseSpeed     = 56,
         .baseSpAttack  = 75,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_BUG),
@@ -17510,12 +17511,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MIRRA] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 35,
-        .baseDefense   = 40,
-        .baseSpeed     = 110,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 135,
+        .baseHP        = 40,
+        .baseAttack    = 22,
+        .baseDefense   = 35,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 140,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_NORMAL),
         .catchRate = 30,
         .expYield = 167,
@@ -17569,7 +17570,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MR_SHINE] =
     {
-        .baseHP        = 90,
+        .baseHP        = 85,
         .baseAttack    = 95,
         .baseDefense   = 60,
         .baseSpeed     = 95,
@@ -17628,10 +17629,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SHINE_BRIGHT] =
     {
-        .baseHP        = 90,
+        .baseHP        = 85,
         .baseAttack    = 105,
         .baseDefense   = 70,
-        .baseSpeed     = 115,
+        .baseSpeed     = 105,
         .baseSpAttack  = 105,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FAIRY, TYPE_FIRE),
@@ -17688,7 +17689,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MR_BRIGHT] =
     {
-        .baseHP        = 90,
+        .baseHP        = 85,
         .baseAttack    = 105,
         .baseDefense   = 70,
         .baseSpeed     = 95,
@@ -17748,12 +17749,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_PLUGG] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 88,
-        .baseDefense   = 84,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 102,
-        .baseSpDefense = 71,
+        .baseHP        = 61,
+        .baseAttack    = 72,
+        .baseDefense   = 78,
+        .baseSpeed     = 46,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 200,
         .expYield = 162,
@@ -17806,12 +17807,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_AXE_KNIGHT] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 95,
-        .baseDefense   = 80,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 70,
+        .baseHP        = 60,
+        .baseAttack    = 84,
+        .baseDefense   = 68,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 71,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_GRASS),
         .catchRate = 15,
         .expYield = 176,
@@ -17862,12 +17863,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_MACE_KNIGHT] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 90,
-        .baseDefense   = 95,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 80,
+        .baseHP        = 78,
+        .baseAttack    = 99,
+        .baseDefense   = 84,
+        .baseSpeed     = 56,
+        .baseSpAttack  = 42,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
         .catchRate = 15,
         .expYield = 176,
@@ -17918,12 +17919,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_TRIDENT_KNIGHT] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 80,
-        .baseDefense   = 75,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 70,
+        .baseHP        = 62,
+        .baseAttack    = 60,
+        .baseDefense   = 67,
+        .baseSpeed     = 71,
+        .baseSpAttack  = 89,
+        .baseSpDefense = 83,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_ELECTRIC),
         .catchRate = 15,
         .expYield = 176,
@@ -17974,12 +17975,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_JAVELIN_KNIGHT] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 90,
-        .baseDefense   = 70,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 75,
+        .baseHP        = 56,
+        .baseAttack    = 71,
+        .baseDefense   = 55,
+        .baseSpeed     = 93,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 81,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_FLYING),
         .catchRate = 15,
         .expYield = 176,
@@ -18033,10 +18034,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 10,
         .baseAttack    = 20,
-        .baseDefense   = 20,
+        .baseDefense   = 15,
         .baseSpeed     = 95,
         .baseSpAttack  = 20,
-        .baseSpDefense = 20,
+        .baseSpDefense = 15,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 140,
         .expYield = 36,
@@ -18092,7 +18093,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 87,
         .baseAttack    = 83,
-        .baseDefense   = 79,
+        .baseDefense   = 69,
         .baseSpeed     = 71,
         .baseSpAttack  = 82,
         .baseSpDefense = 86,
@@ -18326,12 +18327,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CHAMELEO_ARM_GREEN] =
     {
-        .baseHP        = 83,
+        .baseHP        = 84,
         .baseAttack    = 104,
-        .baseDefense   = 65,
+        .baseDefense   = 74,
         .baseSpeed     = 102,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 66,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 61,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 177,
@@ -18386,12 +18387,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CHAMELEO_ARM_BLUE] =
     {
-        .baseHP        = 83,
+        .baseHP        = 84,
         .baseAttack    = 104,
-        .baseDefense   = 65,
+        .baseDefense   = 74,
         .baseSpeed     = 102,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 66,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 61,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 177,
@@ -18446,12 +18447,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CHAMELEO_ARM_PINK] =
     {
-        .baseHP        = 83,
+        .baseHP        = 84,
         .baseAttack    = 104,
-        .baseDefense   = 65,
+        .baseDefense   = 74,
         .baseSpeed     = 102,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 66,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 61,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 177,
@@ -18506,12 +18507,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CHAMELEO_ARM_RED] =
     {
-        .baseHP        = 83,
+        .baseHP        = 84,
         .baseAttack    = 104,
-        .baseDefense   = 65,
+        .baseDefense   = 74,
         .baseSpeed     = 102,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 66,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 61,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 177,
@@ -18566,12 +18567,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CHAMELEO_ARM_ORANGE] =
     {
-        .baseHP        = 83,
+        .baseHP        = 84,
         .baseAttack    = 104,
-        .baseDefense   = 65,
+        .baseDefense   = 74,
         .baseSpeed     = 102,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 66,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 61,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 177,
@@ -18626,12 +18627,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CHAMELEO_ARM_YELLOW] =
     {
-        .baseHP        = 83,
+        .baseHP        = 84,
         .baseAttack    = 104,
-        .baseDefense   = 65,
+        .baseDefense   = 74,
         .baseSpeed     = 102,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 66,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 61,
         .types = MON_TYPES(TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 177,
@@ -18686,9 +18687,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_NODDY] =
     {
-        .baseHP        = 108,
+        .baseHP        = 83,
         .baseAttack    = 32,
-        .baseDefense   = 72,
+        .baseDefense   = 57,
         .baseSpeed     = 20,
         .baseSpAttack  = 82,
         .baseSpDefense = 106,
@@ -18805,8 +18806,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_NRUFF_AND_NELLY] =
     {
-        .baseHP        = 105,
-        .baseAttack    = 100,
+        .baseHP        = 85,
+        .baseAttack    = 95,
         .baseDefense   = 85,
         .baseSpeed     = 95,
         .baseSpAttack  = 40,
@@ -18864,12 +18865,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BUFFAHORN] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 115,
+        .baseHP        = 105,
+        .baseAttack    = 110,
         .baseDefense   = 100,
         .baseSpeed     = 105,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_GROUND),
         .catchRate = 60,
         .expYield = 173,
@@ -18923,7 +18924,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_ROLLOZER] =
     {
-        .baseHP        = 62,
+        .baseHP        = 68,
         .baseAttack    = 91,
         .baseDefense   = 114,
         .baseSpeed     = 64,
@@ -18986,11 +18987,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseAttack    = 94,
         .baseDefense   = 127,
         .baseSpeed     = 91,
-        .baseSpAttack  = 74,
+        .baseSpAttack  = 77,
         .baseSpDefense = 62,
         .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
         .catchRate = 45,
-        .expYield = 182,
+        .expYield = 184,
         .evYield_Defense = 1,
         .evYield_Speed = 1,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -19042,10 +19043,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_TORTORNER] =
     {
         .baseHP        = 45,
-        .baseAttack    = 90,
+        .baseAttack    = 82,
         .baseDefense   = 120,
         .baseSpeed     = 15,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 32,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ROCK, TYPE_DRAGON),
         .catchRate = 60,
@@ -19109,7 +19110,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_ROCK, TYPE_DRAGON),
         .catchRate = 30,
-        .expYield = 184,
+        .expYield = 182,
         .evYield_Defense = 2,
         .itemRare = ITEM_LUMINOUS_MOSS,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -19160,12 +19161,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_BALLOON_MEISTER] =
     {
-        .baseHP        = 104,
-        .baseAttack    = 90,
-        .baseDefense   = 70,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 87,
+        .baseHP        = 92,
+        .baseAttack    = 88,
+        .baseDefense   = 72,
+        .baseSpeed     = 37,
+        .baseSpAttack  = 106,
+        .baseSpDefense = 81,
         .types = MON_TYPES(TYPE_WATER, TYPE_FIRE),
         .catchRate = 75,
         .expYield = 170,
@@ -19218,15 +19219,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_GABON_DISGUISED] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 79,
-        .baseDefense   = 84,
+        .baseHP        = 43,
+        .baseAttack    = 83,
+        .baseDefense   = 66,
         .baseSpeed     = 88,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 78,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 41,
         .types = MON_TYPES(TYPE_GROUND, TYPE_ROCK),
         .catchRate = 180,
-        .expYield = 159,
+        .expYield = 139,
         .evYield_Attack = 1,
         .evYield_Defense = 1,
         .itemCommon = ITEM_THICK_CLUB,
@@ -19278,15 +19279,15 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_GABON_BUSTED] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 79,
-        .baseDefense   = 84,
+        .baseHP        = 43,
+        .baseAttack    = 83,
+        .baseDefense   = 66,
         .baseSpeed     = 88,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 78,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 41,
         .types = MON_TYPES(TYPE_GROUND, TYPE_NORMAL),
         .catchRate = 180,
-        .expYield = 159,
+        .expYield = 139,
         .evYield_Attack = 1,
         .evYield_Defense = 1,
         .genderRatio = PERCENT_FEMALE(50.0),
@@ -19336,12 +19337,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_CAPTAIN_STITCH] =
     {
-        .baseHP        = 13,
-        .baseAttack    = 78,
+        .baseHP        = 5,
+        .baseAttack    = 80,
         .baseDefense   = 255,
         .baseSpeed     = 41,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 155,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 128,
         .types = MON_TYPES(TYPE_STEEL, TYPE_DARK),
         .catchRate = 45,
         .expYield = 177,
@@ -19393,7 +19394,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 45,
         .baseAttack    = 30,
-        .baseDefense   = 45,
+        .baseDefense   = 40,
         .baseSpeed     = 50,
         .baseSpAttack  = 65,
         .baseSpDefense = 45,
@@ -19450,9 +19451,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 62,
         .baseAttack    = 72,
-        .baseDefense   = 81,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 95,
+        .baseDefense   = 76,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 89,
         .baseSpDefense = 47,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 120,
@@ -19618,7 +19619,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_JAMBELIEVER] =
     {
         .baseHP        = 45,
-        .baseAttack    = 50,
+        .baseAttack    = 40,
         .baseDefense   = 35,
         .baseSpeed     = 40,
         .baseSpAttack  = 49,
@@ -19733,7 +19734,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 36,
         .baseAttack    = 25,
         .baseDefense   = 39,
-        .baseSpeed     = 63,
+        .baseSpeed     = 66,
         .baseSpAttack  = 55,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FIRE),
@@ -19786,10 +19787,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_NOO] =
     {
         .baseHP        = 63,
-        .baseAttack    = 50,
+        .baseAttack    = 40,
         .baseDefense   = 63,
         .baseSpeed     = 104,
-        .baseSpAttack  = 103,
+        .baseSpAttack  = 93,
         .baseSpDefense = 82,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FIRE),
         .catchRate = 90,
@@ -19954,7 +19955,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 79,
         .baseAttack    = 118,
         .baseDefense   = 76,
-        .baseSpeed     = 77,
+        .baseSpeed     = 71,
         .baseSpAttack  = 112,
         .baseSpDefense = 83,
         .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
@@ -20008,7 +20009,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_DUPA] =
     {
         .baseHP        = 28,
-        .baseAttack    = 72,
+        .baseAttack    = 62,
         .baseDefense   = 30,
         .baseSpeed     = 58,
         .baseSpAttack  = 60,
@@ -20066,7 +20067,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 53,
         .baseAttack    = 62,
-        .baseDefense   = 55,
+        .baseDefense   = 49,
         .baseSpeed     = 85,
         .baseSpAttack  = 70,
         .baseSpDefense = 60,
@@ -20120,11 +20121,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_DEPPA] =
     {
-        .baseHP        = 100,
+        .baseHP        = 89,
         .baseAttack    = 125,
         .baseDefense   = 65,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 100,
+        .baseSpeed     = 63,
+        .baseSpAttack  = 105,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 45,
@@ -20175,12 +20176,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SPHERE_DOOMER_NORMAL] =
     {
-        .baseHP        = 79,
-        .baseAttack    = 85,
-        .baseDefense   = 68,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 68,
+        .baseHP        = 72,
+        .baseAttack    = 80,
+        .baseDefense   = 64,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 174,
@@ -20233,12 +20234,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SPHERE_DOOMER_SUN] =
     {
-        .baseHP        = 79,
-        .baseAttack    = 85,
-        .baseDefense   = 68,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 68,
+        .baseHP        = 72,
+        .baseAttack    = 80,
+        .baseDefense   = 64,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 174,
@@ -20291,12 +20292,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SPHERE_DOOMER_RAIN] =
     {
-        .baseHP        = 79,
-        .baseAttack    = 85,
-        .baseDefense   = 68,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 68,
+        .baseHP        = 72,
+        .baseAttack    = 80,
+        .baseDefense   = 64,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 174,
@@ -20349,12 +20350,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_SPHERE_DOOMER_SNOW] =
     {
-        .baseHP        = 79,
-        .baseAttack    = 85,
-        .baseDefense   = 68,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 68,
+        .baseHP        = 72,
+        .baseAttack    = 80,
+        .baseDefense   = 64,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 73,
         .types = MON_TYPES(TYPE_ICE, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 174,
@@ -20408,11 +20409,11 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     [SPECIES_PHANTA] =
     {
         .baseHP        = 41,
-        .baseAttack    = 36,
+        .baseAttack    = 46,
         .baseDefense   = 60,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 78,
-        .baseSpDefense = 33,
+        .baseSpeed     = 69,
+        .baseSpAttack  = 68,
+        .baseSpDefense = 37,
         .types = MON_TYPES(TYPE_GHOST),
         .catchRate = 180,
         .expYield = 61,
@@ -20462,8 +20463,8 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_ACE_PHANTA] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 55,
+        .baseHP        = 73,
+        .baseAttack    = 56,
         .baseDefense   = 85,
         .baseSpeed     = 100,
         .baseSpAttack  = 125,
@@ -20519,7 +20520,7 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
     {
         .baseHP        = 15,
         .baseAttack    = 63,
-        .baseDefense   = 20,
+        .baseDefense   = 17,
         .baseSpeed     = 75,
         .baseSpAttack  = 63,
         .baseSpDefense = 47,
@@ -20574,10 +20575,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_TEDHAUN] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 69,
+        .baseHP        = 66,
+        .baseAttack    = 64,
         .baseDefense   = 44,
-        .baseSpeed     = 136,
+        .baseSpeed     = 125,
         .baseSpAttack  = 120,
         .baseSpDefense = 87,
         .types = MON_TYPES(TYPE_GHOST),
@@ -20631,12 +20632,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_PRANK] =
     {
-        .baseHP        = 49,
-        .baseAttack    = 53,
+        .baseHP        = 45,
+        .baseAttack    = 42,
         .baseDefense   = 49,
-        .baseSpeed     = 125,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 49,
+        .baseSpeed     = 113,
+        .baseSpAttack  = 41,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
         .catchRate = 60,
         .expYield = 142,
@@ -20687,12 +20688,12 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
 
     [SPECIES_ESCARDROID] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 65,
+        .baseHP        = 48,
+        .baseAttack    = 60,
         .baseDefense   = 80,
         .baseSpeed     = 41,
         .baseSpAttack  = 74,
-        .baseSpDefense = 50,
+        .baseSpDefense = 47,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 45,
         .expYield = 72,
@@ -20748,10 +20749,10 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseDefense   = 131,
         .baseSpeed     = 53,
         .baseSpAttack  = 146,
-        .baseSpDefense = 86,
+        .baseSpDefense = 87,
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
         .catchRate = 45,
-        .expYield = 232,
+        .expYield = 275,
         .evYield_Defense = 1,
         .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
@@ -21436,9 +21437,9 @@ const struct SpeciesInfo gSpeciesInfoDreamTeam[] =
         .baseHP        = 140,
         .baseAttack    = 155,
         .baseDefense   = 112,
-        .baseSpeed     = 51,
+        .baseSpeed     = 61,
         .baseSpAttack  = 51,
-        .baseSpDefense = 61,
+        .baseSpDefense = 51,
         .types = MON_TYPES(TYPE_BUG),
         .catchRate = 3,
         .expYield = 285,

@@ -124,8 +124,8 @@ WaddleDeeTown_CastleLobby_EventScript_Conductor_Text_0:
 WaddleDeeTown_CastleLobby_EventScript_Staff_Text_0:
 # 47 "data/maps/WaddleDeeTown_CastleLobby/scripts.pory"
 	.string "Do you know what a “TM” is?\p"
-	.string "They're special items that can teach\n"
-	.string "your Helpers new moves.\p"
+	.string "It stands for “Technique Manuscript”.\n"
+	.string "Basically, they give Helpers new moves.\p"
 	.string "Unlike most items, you can use them\n"
 	.string "as many times as you'd like.\p"
 	.string "Here's a TM that might help you out\n"

@@ -535,1702 +535,1700 @@ CastleArena_EventScript_BeginChallenge::
 # 462 "data/maps/CastleArena/scripts.pory"
 	setvar VAR_ARENA_BATTLES, 0
 # 463 "data/maps/CastleArena/scripts.pory"
-	clearflag FLAG_ARENA_HEALED_THIS_ROUND
-# 464 "data/maps/CastleArena/scripts.pory"
 	getobjectfacingdirection LOCALID_PLAYER, VAR_TEMP_0
-# 465 "data/maps/CastleArena/scripts.pory"
+# 464 "data/maps/CastleArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_SOUTH
 	goto_if_eq CastleArena_EventScript_BeginChallenge_2
-# 471 "data/maps/CastleArena/scripts.pory"
+# 470 "data/maps/CastleArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_WEST
 	goto_if_eq CastleArena_EventScript_BeginChallenge_3
-# 477 "data/maps/CastleArena/scripts.pory"
+# 476 "data/maps/CastleArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_EAST
 	goto_if_eq CastleArena_EventScript_BeginChallenge_4
 CastleArena_EventScript_BeginChallenge_1:
-# 483 "data/maps/CastleArena/scripts.pory"
+# 482 "data/maps/CastleArena/scripts.pory"
 	special SpawnCameraObject
-# 484 "data/maps/CastleArena/scripts.pory"
+# 483 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CAMERA, CastleArena_EventScript_BeginChallenge_Movement_4
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_COMMENTATOR, CastleArena_EventScript_BeginChallenge_Movement_5
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_BeginChallenge_Movement_6
-# 487 "data/maps/CastleArena/scripts.pory"
+# 486 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 488 "data/maps/CastleArena/scripts.pory"
+# 487 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_COMMENTATOR, CastleArena_EventScript_BeginChallenge_Movement_7
-# 489 "data/maps/CastleArena/scripts.pory"
+# 488 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_ARENA_RETRY, CastleArena_EventScript_BeginChallenge_9
-# 498 "data/maps/CastleArena/scripts.pory"
+# 497 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_ARENA_RETRY, CastleArena_EventScript_BeginChallenge_10
 CastleArena_EventScript_BeginChallenge_8:
-# 507 "data/maps/CastleArena/scripts.pory"
+# 506 "data/maps/CastleArena/scripts.pory"
 	playse SE_APPLAUSE
-# 508 "data/maps/CastleArena/scripts.pory"
+# 507 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_1, CastleArena_EventScript_BeginChallenge_Movement_8
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_2, CastleArena_EventScript_BeginChallenge_Movement_9
-# 510 "data/maps/CastleArena/scripts.pory"
+# 509 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_EAST
-# 511 "data/maps/CastleArena/scripts.pory"
+# 510 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_WEST
-# 512 "data/maps/CastleArena/scripts.pory"
+# 511 "data/maps/CastleArena/scripts.pory"
 	delay 40
-# 513 "data/maps/CastleArena/scripts.pory"
+# 512 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
-# 514 "data/maps/CastleArena/scripts.pory"
+# 513 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 515 "data/maps/CastleArena/scripts.pory"
+# 514 "data/maps/CastleArena/scripts.pory"
 	delay 20
-# 516 "data/maps/CastleArena/scripts.pory"
+# 515 "data/maps/CastleArena/scripts.pory"
 	call CastleArena_EventScript_Challenger1
 	return
 
 CastleArena_EventScript_BeginChallenge_2:
-# 467 "data/maps/CastleArena/scripts.pory"
+# 466 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_COMMENTATOR, CastleArena_EventScript_BeginChallenge_Movement_0
-# 468 "data/maps/CastleArena/scripts.pory"
+# 467 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_BeginChallenge_Movement_1
-# 469 "data/maps/CastleArena/scripts.pory"
+# 468 "data/maps/CastleArena/scripts.pory"
 	waitmovement
 	goto CastleArena_EventScript_BeginChallenge_1
 
 CastleArena_EventScript_BeginChallenge_3:
-# 473 "data/maps/CastleArena/scripts.pory"
+# 472 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_COMMENTATOR, CastleArena_EventScript_BeginChallenge_Movement_0
-# 474 "data/maps/CastleArena/scripts.pory"
+# 473 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_BeginChallenge_Movement_2
-# 475 "data/maps/CastleArena/scripts.pory"
+# 474 "data/maps/CastleArena/scripts.pory"
 	waitmovement
 	goto CastleArena_EventScript_BeginChallenge_1
 
 CastleArena_EventScript_BeginChallenge_4:
-# 479 "data/maps/CastleArena/scripts.pory"
+# 478 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_COMMENTATOR, CastleArena_EventScript_BeginChallenge_Movement_0
-# 480 "data/maps/CastleArena/scripts.pory"
+# 479 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_BeginChallenge_Movement_3
-# 481 "data/maps/CastleArena/scripts.pory"
+# 480 "data/maps/CastleArena/scripts.pory"
 	waitmovement
 	goto CastleArena_EventScript_BeginChallenge_1
 
 CastleArena_EventScript_BeginChallenge_9:
-# 491 "data/maps/CastleArena/scripts.pory"
+# 490 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_BeginChallenge_Text_1
 	goto CastleArena_EventScript_BeginChallenge_8
 
 CastleArena_EventScript_BeginChallenge_10:
-# 500 "data/maps/CastleArena/scripts.pory"
+# 499 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_BeginChallenge_Text_2
 	goto CastleArena_EventScript_BeginChallenge_8
 
 
 CastleArena_EventScript_Challenger1::
-# 521 "data/maps/CastleArena/scripts.pory"
+# 520 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_FRANCISCA
-# 522 "data/maps/CastleArena/scripts.pory"
+# 521 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_FRANCISCA, 21, 16
-# 523 "data/maps/CastleArena/scripts.pory"
+# 522 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_FRANCISCA
-# 524 "data/maps/CastleArena/scripts.pory"
+# 523 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger1_Text_0
-# 528 "data/maps/CastleArena/scripts.pory"
+# 527 "data/maps/CastleArena/scripts.pory"
 	closemessage
-# 529 "data/maps/CastleArena/scripts.pory"
+# 528 "data/maps/CastleArena/scripts.pory"
 	playse SE_APPLAUSE
-# 530 "data/maps/CastleArena/scripts.pory"
+# 529 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_1, CastleArena_EventScript_Challenger1_Movement_0
-# 531 "data/maps/CastleArena/scripts.pory"
+# 530 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_2, CastleArena_EventScript_Challenger1_Movement_1
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FRANCISCA, CastleArena_EventScript_Challenger1_Movement_2
-# 533 "data/maps/CastleArena/scripts.pory"
+# 532 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_WEST
+# 533 "data/maps/CastleArena/scripts.pory"
+	delay 32
 # 534 "data/maps/CastleArena/scripts.pory"
-	delay 32
-# 535 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_EAST
-# 536 "data/maps/CastleArena/scripts.pory"
+# 535 "data/maps/CastleArena/scripts.pory"
 	delay 32
-# 537 "data/maps/CastleArena/scripts.pory"
+# 536 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
-# 538 "data/maps/CastleArena/scripts.pory"
+# 537 "data/maps/CastleArena/scripts.pory"
 	waitmovement LOCALID_FRANCISCA
-# 539 "data/maps/CastleArena/scripts.pory"
+# 538 "data/maps/CastleArena/scripts.pory"
 	delay 30
-# 540 "data/maps/CastleArena/scripts.pory"
+# 539 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FRANCISCA, CastleArena_EventScript_Challenger1_Movement_3
-# 541 "data/maps/CastleArena/scripts.pory"
+# 540 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 542 "data/maps/CastleArena/scripts.pory"
+# 541 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_ARENA_RETRY, CastleArena_EventScript_Challenger1_2
-# 557 "data/maps/CastleArena/scripts.pory"
+# 556 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_ARENA_RETRY, CastleArena_EventScript_Challenger1_3
 CastleArena_EventScript_Challenger1_1:
+# 570 "data/maps/CastleArena/scripts.pory"
+	closemessage
 # 571 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 572 "data/maps/CastleArena/scripts.pory"
 	setflag FLAG_ARENA_RETRY
-# 573 "data/maps/CastleArena/scripts.pory"
+# 572 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FRANCISCA, CastleArena_EventScript_Challenger1_Movement_4
-# 574 "data/maps/CastleArena/scripts.pory"
+# 573 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_Challenger1_Movement_5
+# 574 "data/maps/CastleArena/scripts.pory"
+	waitmovement
 # 575 "data/maps/CastleArena/scripts.pory"
-	waitmovement
+	special RemoveCameraObject
 # 576 "data/maps/CastleArena/scripts.pory"
-	special RemoveCameraObject
-# 577 "data/maps/CastleArena/scripts.pory"
 	trainerbattle_no_intro TRAINER_EDGAR, CastleArena_Text_Francisca
-# 578 "data/maps/CastleArena/scripts.pory"
+# 577 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger1_Text_3
+# 579 "data/maps/CastleArena/scripts.pory"
+	closemessage
 # 580 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 581 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_1, CastleArena_EventScript_Challenger1_Movement_6
-# 582 "data/maps/CastleArena/scripts.pory"
+# 581 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_2, CastleArena_EventScript_Challenger1_Movement_7
-# 583 "data/maps/CastleArena/scripts.pory"
+# 582 "data/maps/CastleArena/scripts.pory"
 	playse SE_APPLAUSE
-# 584 "data/maps/CastleArena/scripts.pory"
+# 583 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_NORTH
-# 585 "data/maps/CastleArena/scripts.pory"
+# 584 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_WEST
-# 586 "data/maps/CastleArena/scripts.pory"
+# 585 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_WEST
-# 587 "data/maps/CastleArena/scripts.pory"
+# 586 "data/maps/CastleArena/scripts.pory"
 	delay 48
-# 588 "data/maps/CastleArena/scripts.pory"
+# 587 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_SOUTH
-# 589 "data/maps/CastleArena/scripts.pory"
+# 588 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 590 "data/maps/CastleArena/scripts.pory"
+# 589 "data/maps/CastleArena/scripts.pory"
 	waitmovement LOCALID_CASTLE_CROWD_2
-# 591 "data/maps/CastleArena/scripts.pory"
+# 590 "data/maps/CastleArena/scripts.pory"
 	delay 60
-# 592 "data/maps/CastleArena/scripts.pory"
+# 591 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FRANCISCA, CastleArena_EventScript_Challenger1_Movement_8
+# 592 "data/maps/CastleArena/scripts.pory"
+	waitmovement
 # 593 "data/maps/CastleArena/scripts.pory"
-	waitmovement
-# 594 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger1_Text_4
-# 596 "data/maps/CastleArena/scripts.pory"
+# 595 "data/maps/CastleArena/scripts.pory"
 	closemessage
-# 597 "data/maps/CastleArena/scripts.pory"
+# 596 "data/maps/CastleArena/scripts.pory"
 	setvar VAR_ARENA_BATTLES, 1
-# 598 "data/maps/CastleArena/scripts.pory"
+# 597 "data/maps/CastleArena/scripts.pory"
 	special SpawnCameraObject
-# 599 "data/maps/CastleArena/scripts.pory"
+# 598 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_Challenger1_Movement_9
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FRANCISCA, CastleArena_EventScript_Challenger1_Movement_10
-# 601 "data/maps/CastleArena/scripts.pory"
+# 600 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 602 "data/maps/CastleArena/scripts.pory"
+# 601 "data/maps/CastleArena/scripts.pory"
 	special RemoveCameraObject
-# 603 "data/maps/CastleArena/scripts.pory"
+# 602 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_FRANCISCA
-# 604 "data/maps/CastleArena/scripts.pory"
+# 603 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_FRANCISCA, 17, 17
-# 605 "data/maps/CastleArena/scripts.pory"
+# 604 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_FRANCISCA
-# 606 "data/maps/CastleArena/scripts.pory"
+# 605 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_ArenaHeal
 	return
 
 CastleArena_EventScript_Challenger1_2:
-# 544 "data/maps/CastleArena/scripts.pory"
+# 543 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger1_Text_1
 	goto CastleArena_EventScript_Challenger1_1
 
 CastleArena_EventScript_Challenger1_3:
-# 559 "data/maps/CastleArena/scripts.pory"
+# 558 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger1_Text_2
 	goto CastleArena_EventScript_Challenger1_1
 
 
 CastleArena_EventScript_Challenger2::
-# 611 "data/maps/CastleArena/scripts.pory"
+# 610 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_FLAMBERGE
-# 612 "data/maps/CastleArena/scripts.pory"
+# 611 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_FLAMBERGE, 21, 16
-# 613 "data/maps/CastleArena/scripts.pory"
+# 612 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_FLAMBERGE
-# 614 "data/maps/CastleArena/scripts.pory"
+# 613 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger2_Text_0
-# 618 "data/maps/CastleArena/scripts.pory"
+# 617 "data/maps/CastleArena/scripts.pory"
 	closemessage
-# 619 "data/maps/CastleArena/scripts.pory"
+# 618 "data/maps/CastleArena/scripts.pory"
 	playse SE_APPLAUSE
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_1, CastleArena_EventScript_Challenger2_Movement_0
-# 621 "data/maps/CastleArena/scripts.pory"
+# 620 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_2, CastleArena_EventScript_Challenger2_Movement_1
-# 622 "data/maps/CastleArena/scripts.pory"
+# 621 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FLAMBERGE, CastleArena_EventScript_Challenger1_Movement_2
-# 623 "data/maps/CastleArena/scripts.pory"
+# 622 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_EAST
+# 623 "data/maps/CastleArena/scripts.pory"
+	delay 18
 # 624 "data/maps/CastleArena/scripts.pory"
-	delay 18
-# 625 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
+# 625 "data/maps/CastleArena/scripts.pory"
+	turnvobject 2, DIR_SOUTH
 # 626 "data/maps/CastleArena/scripts.pory"
-	turnvobject 2, DIR_SOUTH
+	delay 18
 # 627 "data/maps/CastleArena/scripts.pory"
-	delay 18
-# 628 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_WEST
-# 629 "data/maps/CastleArena/scripts.pory"
+# 628 "data/maps/CastleArena/scripts.pory"
 	delay 18
-# 630 "data/maps/CastleArena/scripts.pory"
+# 629 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 631 "data/maps/CastleArena/scripts.pory"
+# 630 "data/maps/CastleArena/scripts.pory"
 	waitmovement LOCALID_FLAMBERGE
-# 632 "data/maps/CastleArena/scripts.pory"
+# 631 "data/maps/CastleArena/scripts.pory"
 	delay 30
-# 633 "data/maps/CastleArena/scripts.pory"
+# 632 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FLAMBERGE, CastleArena_EventScript_Challenger1_Movement_3
-# 634 "data/maps/CastleArena/scripts.pory"
+# 633 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 635 "data/maps/CastleArena/scripts.pory"
+# 634 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_ARENA_HEALED_THIS_ROUND, CastleArena_EventScript_Challenger2_2
-# 652 "data/maps/CastleArena/scripts.pory"
+# 651 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_ARENA_HEALED_THIS_ROUND, CastleArena_EventScript_Challenger2_3
 CastleArena_EventScript_Challenger2_1:
+# 661 "data/maps/CastleArena/scripts.pory"
+	closemessage
 # 662 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 663 "data/maps/CastleArena/scripts.pory"
 	setflag FLAG_ARENA_HEALED_THIS_ROUND
+# 663 "data/maps/CastleArena/scripts.pory"
+	special SpawnCameraObject
 # 664 "data/maps/CastleArena/scripts.pory"
-	special SpawnCameraObject
-# 665 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FLAMBERGE, CastleArena_EventScript_Challenger1_Movement_4
-# 666 "data/maps/CastleArena/scripts.pory"
+# 665 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_Challenger1_Movement_5
+# 666 "data/maps/CastleArena/scripts.pory"
+	waitmovement
 # 667 "data/maps/CastleArena/scripts.pory"
-	waitmovement
+	special RemoveCameraObject
 # 668 "data/maps/CastleArena/scripts.pory"
-	special RemoveCameraObject
-# 669 "data/maps/CastleArena/scripts.pory"
 	trainerbattle_no_intro TRAINER_ALBERT, CastleArena_Text_Flamberge
-# 670 "data/maps/CastleArena/scripts.pory"
+# 669 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger2_Text_3
+# 671 "data/maps/CastleArena/scripts.pory"
+	closemessage
 # 672 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 673 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_1, CastleArena_EventScript_Challenger2_Movement_2
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_2, CastleArena_EventScript_Challenger2_Movement_3
-# 675 "data/maps/CastleArena/scripts.pory"
+# 674 "data/maps/CastleArena/scripts.pory"
 	playse SE_APPLAUSE
-# 676 "data/maps/CastleArena/scripts.pory"
+# 675 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 677 "data/maps/CastleArena/scripts.pory"
+# 676 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_EAST
-# 678 "data/maps/CastleArena/scripts.pory"
+# 677 "data/maps/CastleArena/scripts.pory"
 	delay 32
-# 679 "data/maps/CastleArena/scripts.pory"
+# 678 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
-# 680 "data/maps/CastleArena/scripts.pory"
+# 679 "data/maps/CastleArena/scripts.pory"
 	waitmovement LOCALID_CASTLE_CROWD_2
-# 681 "data/maps/CastleArena/scripts.pory"
+# 680 "data/maps/CastleArena/scripts.pory"
 	delay 60
-# 682 "data/maps/CastleArena/scripts.pory"
+# 681 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FLAMBERGE, CastleArena_EventScript_Challenger1_Movement_8
+# 682 "data/maps/CastleArena/scripts.pory"
+	waitmovement
 # 683 "data/maps/CastleArena/scripts.pory"
-	waitmovement
-# 684 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger2_Text_4
-# 689 "data/maps/CastleArena/scripts.pory"
+# 688 "data/maps/CastleArena/scripts.pory"
 	closemessage
-# 690 "data/maps/CastleArena/scripts.pory"
+# 689 "data/maps/CastleArena/scripts.pory"
 	setvar VAR_ARENA_BATTLES, 2
-# 691 "data/maps/CastleArena/scripts.pory"
+# 690 "data/maps/CastleArena/scripts.pory"
 	special SpawnCameraObject
-# 692 "data/maps/CastleArena/scripts.pory"
+# 691 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_Challenger1_Movement_9
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_FLAMBERGE, CastleArena_EventScript_Challenger2_Movement_4
-# 694 "data/maps/CastleArena/scripts.pory"
+# 693 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 695 "data/maps/CastleArena/scripts.pory"
+# 694 "data/maps/CastleArena/scripts.pory"
 	special RemoveCameraObject
-# 696 "data/maps/CastleArena/scripts.pory"
+# 695 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_FLAMBERGE
-# 697 "data/maps/CastleArena/scripts.pory"
+# 696 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_FLAMBERGE, 18, 17
-# 698 "data/maps/CastleArena/scripts.pory"
+# 697 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_FLAMBERGE
-# 699 "data/maps/CastleArena/scripts.pory"
+# 698 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_ArenaHeal
 	return
 
 CastleArena_EventScript_Challenger2_2:
-# 637 "data/maps/CastleArena/scripts.pory"
+# 636 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger2_Text_1
 	goto CastleArena_EventScript_Challenger2_1
 
 CastleArena_EventScript_Challenger2_3:
-# 654 "data/maps/CastleArena/scripts.pory"
+# 653 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Challenger2_Text_2
 	goto CastleArena_EventScript_Challenger2_1
 
 
 CastleArena_EventScript_GrandFinals::
-# 704 "data/maps/CastleArena/scripts.pory"
+# 703 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
-# 705 "data/maps/CastleArena/scripts.pory"
+# 704 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_SOUTH
-# 706 "data/maps/CastleArena/scripts.pory"
+# 705 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 707 "data/maps/CastleArena/scripts.pory"
+# 706 "data/maps/CastleArena/scripts.pory"
 	fadeoutbgm 1
-# 708 "data/maps/CastleArena/scripts.pory"
+# 707 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_COMMENTATOR, CastleArena_EventScript_BeginChallenge_Movement_7
-# 709 "data/maps/CastleArena/scripts.pory"
+# 708 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 710 "data/maps/CastleArena/scripts.pory"
+# 709 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_GRAND_FINALS_ACTIVE, CastleArena_EventScript_GrandFinals_2
-# 723 "data/maps/CastleArena/scripts.pory"
+# 722 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_GRAND_FINALS_ACTIVE, CastleArena_EventScript_GrandFinals_3
 CastleArena_EventScript_GrandFinals_1:
+# 735 "data/maps/CastleArena/scripts.pory"
+	closemessage
 # 736 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 737 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_GrandFinals_Movement_0
+# 737 "data/maps/CastleArena/scripts.pory"
+	playse SE_APPLAUSE
 # 738 "data/maps/CastleArena/scripts.pory"
-	playse SE_APPLAUSE
-# 739 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_1, CastleArena_EventScript_GrandFinals_Movement_1
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_2, CastleArena_EventScript_GrandFinals_Movement_2
-# 741 "data/maps/CastleArena/scripts.pory"
+# 740 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_WEST
+# 741 "data/maps/CastleArena/scripts.pory"
+	turnvobject 1, DIR_NORTH
 # 742 "data/maps/CastleArena/scripts.pory"
-	turnvobject 1, DIR_NORTH
-# 743 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_EAST
+# 743 "data/maps/CastleArena/scripts.pory"
+	delay 20
 # 744 "data/maps/CastleArena/scripts.pory"
-	delay 20
-# 745 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_NORTH
-# 746 "data/maps/CastleArena/scripts.pory"
+# 745 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_WEST
-# 747 "data/maps/CastleArena/scripts.pory"
+# 746 "data/maps/CastleArena/scripts.pory"
 	delay 20
-# 748 "data/maps/CastleArena/scripts.pory"
+# 747 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
+# 748 "data/maps/CastleArena/scripts.pory"
+	turnvobject 1, DIR_SOUTH
 # 749 "data/maps/CastleArena/scripts.pory"
-	turnvobject 1, DIR_SOUTH
-# 750 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 751 "data/maps/CastleArena/scripts.pory"
+# 750 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_ZAN_PARTIZANNE
-# 752 "data/maps/CastleArena/scripts.pory"
+# 751 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_ZAN_PARTIZANNE, 21, 16
-# 753 "data/maps/CastleArena/scripts.pory"
+# 752 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_ZAN_PARTIZANNE
+# 753 "data/maps/CastleArena/scripts.pory"
+	delay 60
 # 754 "data/maps/CastleArena/scripts.pory"
-	delay 60
-# 755 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_GrandFinals_Text_2
-# 766 "data/maps/CastleArena/scripts.pory"
+# 765 "data/maps/CastleArena/scripts.pory"
 	closemessage
-# 767 "data/maps/CastleArena/scripts.pory"
+# 766 "data/maps/CastleArena/scripts.pory"
 	playse SE_APPLAUSE
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_1, CastleArena_EventScript_GrandFinals_Movement_3
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_2, CastleArena_EventScript_GrandFinals_Movement_4
-# 770 "data/maps/CastleArena/scripts.pory"
+# 769 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_ZAN_PARTIZANNE, CastleArena_EventScript_Challenger1_Movement_2
-# 771 "data/maps/CastleArena/scripts.pory"
+# 770 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_WEST
+# 771 "data/maps/CastleArena/scripts.pory"
+	delay 15
 # 772 "data/maps/CastleArena/scripts.pory"
-	delay 15
-# 773 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_EAST
+# 773 "data/maps/CastleArena/scripts.pory"
+	delay 15
 # 774 "data/maps/CastleArena/scripts.pory"
-	delay 15
-# 775 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_NORTH
-# 776 "data/maps/CastleArena/scripts.pory"
+# 775 "data/maps/CastleArena/scripts.pory"
 	delay 15
-# 777 "data/maps/CastleArena/scripts.pory"
+# 776 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_SOUTH
-# 778 "data/maps/CastleArena/scripts.pory"
+# 777 "data/maps/CastleArena/scripts.pory"
 	waitmovement LOCALID_ZAN_PARTIZANNE
-# 779 "data/maps/CastleArena/scripts.pory"
+# 778 "data/maps/CastleArena/scripts.pory"
 	delay 60
-# 780 "data/maps/CastleArena/scripts.pory"
+# 779 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_ZAN_PARTIZANNE, CastleArena_EventScript_Challenger1_Movement_3
-# 781 "data/maps/CastleArena/scripts.pory"
+# 780 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 782 "data/maps/CastleArena/scripts.pory"
+# 781 "data/maps/CastleArena/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
-# 783 "data/maps/CastleArena/scripts.pory"
+# 782 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_GRAND_FINALS_ACTIVE, CastleArena_EventScript_GrandFinals_7
 CastleArena_EventScript_GrandFinals_6:
-# 801 "data/maps/CastleArena/scripts.pory"
+# 800 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_GRAND_FINALS_ACTIVE, CastleArena_EventScript_GrandFinals_10
 CastleArena_EventScript_GrandFinals_9:
+# 816 "data/maps/CastleArena/scripts.pory"
+	closemessage
 # 817 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 818 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, CastleArena_EventScript_GrandFinals_Movement_5
-# 819 "data/maps/CastleArena/scripts.pory"
+# 818 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_GrandFinals_Text_5
+# 822 "data/maps/CastleArena/scripts.pory"
+	closemessage
 # 823 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 824 "data/maps/CastleArena/scripts.pory"
 	setflag FLAG_GRAND_FINALS_ACTIVE
+# 824 "data/maps/CastleArena/scripts.pory"
+	special SpawnCameraObject
 # 825 "data/maps/CastleArena/scripts.pory"
-	special SpawnCameraObject
-# 826 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_ZAN_PARTIZANNE, CastleArena_EventScript_GrandFinals_Movement_6
-# 827 "data/maps/CastleArena/scripts.pory"
+# 826 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_GrandFinals_Movement_7
+# 827 "data/maps/CastleArena/scripts.pory"
+	waitmovement
 # 828 "data/maps/CastleArena/scripts.pory"
-	waitmovement
+	special RemoveCameraObject
 # 829 "data/maps/CastleArena/scripts.pory"
-	special RemoveCameraObject
-# 830 "data/maps/CastleArena/scripts.pory"
 	trainerbattle_no_intro TRAINER_SAMUEL, CastleArena_Text_ZanPartizanne
-# 831 "data/maps/CastleArena/scripts.pory"
+# 830 "data/maps/CastleArena/scripts.pory"
 	fadeoutbgm 1
+# 831 "data/maps/CastleArena/scripts.pory"
+	delay 60
 # 832 "data/maps/CastleArena/scripts.pory"
-	delay 60
-# 833 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_GrandFinals_Text_6
+# 837 "data/maps/CastleArena/scripts.pory"
+	closemessage
 # 838 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 839 "data/maps/CastleArena/scripts.pory"
 	playbgm MUS_B_FRONTIER, TRUE
-# 840 "data/maps/CastleArena/scripts.pory"
+# 839 "data/maps/CastleArena/scripts.pory"
 	playse SE_APPLAUSE
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_1, CastleArena_EventScript_GrandFinals_Movement_8
-# 842 "data/maps/CastleArena/scripts.pory"
+# 841 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_CROWD_2, CastleArena_EventScript_GrandFinals_Movement_9
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_GrandFinals_Movement_10
-# 844 "data/maps/CastleArena/scripts.pory"
+# 843 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_EAST
-# 845 "data/maps/CastleArena/scripts.pory"
+# 844 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_WEST
+# 845 "data/maps/CastleArena/scripts.pory"
+	delay 20
 # 846 "data/maps/CastleArena/scripts.pory"
-	delay 20
-# 847 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
-# 848 "data/maps/CastleArena/scripts.pory"
+# 847 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_EAST
-# 849 "data/maps/CastleArena/scripts.pory"
+# 848 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_WEST
+# 849 "data/maps/CastleArena/scripts.pory"
+	delay 20
 # 850 "data/maps/CastleArena/scripts.pory"
-	delay 20
-# 851 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_NORTH
-# 852 "data/maps/CastleArena/scripts.pory"
+# 851 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 853 "data/maps/CastleArena/scripts.pory"
+# 852 "data/maps/CastleArena/scripts.pory"
 	delay 20
-# 854 "data/maps/CastleArena/scripts.pory"
+# 853 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_SOUTH
-# 855 "data/maps/CastleArena/scripts.pory"
+# 854 "data/maps/CastleArena/scripts.pory"
 	waitmovement LOCALID_PLAYER
-# 856 "data/maps/CastleArena/scripts.pory"
+# 855 "data/maps/CastleArena/scripts.pory"
 	message CastleArena_EventScript_GrandFinals_Text_7
-# 857 "data/maps/CastleArena/scripts.pory"
+# 856 "data/maps/CastleArena/scripts.pory"
 	waitmessage
+# 857 "data/maps/CastleArena/scripts.pory"
+	delay 60
 # 858 "data/maps/CastleArena/scripts.pory"
-	delay 60
+	closemessage
 # 859 "data/maps/CastleArena/scripts.pory"
-	closemessage
-# 860 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_ZAN_PARTIZANNE, CastleArena_EventScript_Challenger1_Movement_8
+# 860 "data/maps/CastleArena/scripts.pory"
+	waitmovement
 # 861 "data/maps/CastleArena/scripts.pory"
-	waitmovement
-# 862 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_GrandFinals_Text_8
-# 863 "data/maps/CastleArena/scripts.pory"
+# 862 "data/maps/CastleArena/scripts.pory"
 	closemessage
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_ZAN_PARTIZANNE, CastleArena_EventScript_GrandFinals_Movement_11
+# 864 "data/maps/CastleArena/scripts.pory"
+	waitmovement
 # 865 "data/maps/CastleArena/scripts.pory"
-	waitmovement
-# 866 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_ZAN_PARTIZANNE
-# 867 "data/maps/CastleArena/scripts.pory"
+# 866 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_ZAN_PARTIZANNE, 24, 17
-# 868 "data/maps/CastleArena/scripts.pory"
+# 867 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_ZAN_PARTIZANNE
+# 868 "data/maps/CastleArena/scripts.pory"
+	waitmovement
 # 869 "data/maps/CastleArena/scripts.pory"
-	waitmovement
-# 870 "data/maps/CastleArena/scripts.pory"
 	clearflag FLAG_ARENA_HEALED_THIS_ROUND
-# 871 "data/maps/CastleArena/scripts.pory"
+# 870 "data/maps/CastleArena/scripts.pory"
 	clearflag FLAG_ARENA_RETRY
-# 872 "data/maps/CastleArena/scripts.pory"
+# 871 "data/maps/CastleArena/scripts.pory"
 	clearflag FLAG_GRAND_FINALS_ACTIVE
-# 873 "data/maps/CastleArena/scripts.pory"
+# 872 "data/maps/CastleArena/scripts.pory"
 	setvar VAR_ARENA_BATTLES, 0
-# 874 "data/maps/CastleArena/scripts.pory"
+# 873 "data/maps/CastleArena/scripts.pory"
 	special SpawnCameraObject
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_GrandFinals_Movement_12
-# 876 "data/maps/CastleArena/scripts.pory"
+# 875 "data/maps/CastleArena/scripts.pory"
 	delay 60
-# 877 "data/maps/CastleArena/scripts.pory"
+# 876 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CAMERA, CastleArena_EventScript_GrandFinals_Movement_13
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_COMMENTATOR, CastleArena_EventScript_GrandFinals_Movement_14
-# 879 "data/maps/CastleArena/scripts.pory"
+# 878 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 880 "data/maps/CastleArena/scripts.pory"
+# 879 "data/maps/CastleArena/scripts.pory"
 	special RemoveCameraObject
-# 881 "data/maps/CastleArena/scripts.pory"
+# 880 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_Victory
 	return
 
 CastleArena_EventScript_GrandFinals_2:
-# 712 "data/maps/CastleArena/scripts.pory"
+# 711 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_GrandFinals_Text_0
 	goto CastleArena_EventScript_GrandFinals_1
 
 CastleArena_EventScript_GrandFinals_3:
-# 725 "data/maps/CastleArena/scripts.pory"
+# 724 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_GrandFinals_Text_1
 	goto CastleArena_EventScript_GrandFinals_1
 
 CastleArena_EventScript_GrandFinals_7:
-# 785 "data/maps/CastleArena/scripts.pory"
+# 784 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_GrandFinals_Text_3
 	goto CastleArena_EventScript_GrandFinals_6
 
 CastleArena_EventScript_GrandFinals_10:
-# 803 "data/maps/CastleArena/scripts.pory"
+# 802 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_GrandFinals_Text_4
 	goto CastleArena_EventScript_GrandFinals_9
 
 
 CastleArena_EventScript_Break::
-# 886 "data/maps/CastleArena/scripts.pory"
+# 885 "data/maps/CastleArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 1
 	goto_if_eq CastleArena_EventScript_Break_2
-# 891 "data/maps/CastleArena/scripts.pory"
+# 890 "data/maps/CastleArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 2
 	goto_if_eq CastleArena_EventScript_Break_3
 CastleArena_EventScript_Break_1:
-# 896 "data/maps/CastleArena/scripts.pory"
+# 895 "data/maps/CastleArena/scripts.pory"
 	waitmessage
-# 897 "data/maps/CastleArena/scripts.pory"
+# 896 "data/maps/CastleArena/scripts.pory"
 	multichoice 20, 6, MULTI_GO_ON_RETIRE, 0
-# 898 "data/maps/CastleArena/scripts.pory"
+# 897 "data/maps/CastleArena/scripts.pory"
 	switch VAR_RESULT
-# 899 "data/maps/CastleArena/scripts.pory"
+# 898 "data/maps/CastleArena/scripts.pory"
 	case 0, CastleArena_EventScript_Break_7
-# 908 "data/maps/CastleArena/scripts.pory"
+# 907 "data/maps/CastleArena/scripts.pory"
 	case 1, CastleArena_EventScript_Break_8
-# 910 "data/maps/CastleArena/scripts.pory"
+# 909 "data/maps/CastleArena/scripts.pory"
 	case MULTI_B_PRESSED, CastleArena_EventScript_Break_9
 	return
 
 CastleArena_EventScript_Break_2:
-# 888 "data/maps/CastleArena/scripts.pory"
+# 887 "data/maps/CastleArena/scripts.pory"
 	message CastleArena_EventScript_Break_Text_0
 	goto CastleArena_EventScript_Break_1
 
 CastleArena_EventScript_Break_3:
-# 893 "data/maps/CastleArena/scripts.pory"
+# 892 "data/maps/CastleArena/scripts.pory"
 	message CastleArena_EventScript_Break_Text_1
 	goto CastleArena_EventScript_Break_1
 
 CastleArena_EventScript_Break_7:
-# 900 "data/maps/CastleArena/scripts.pory"
+# 899 "data/maps/CastleArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 1
 	goto_if_eq CastleArena_EventScript_Break_10
-# 904 "data/maps/CastleArena/scripts.pory"
+# 903 "data/maps/CastleArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 2
 	goto_if_eq CastleArena_EventScript_Break_11
 	return
 
 CastleArena_EventScript_Break_8:
-# 909 "data/maps/CastleArena/scripts.pory"
+# 908 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_ForfeitConfirmation
 	return
 
 CastleArena_EventScript_Break_9:
-# 911 "data/maps/CastleArena/scripts.pory"
+# 910 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_ForfeitConfirmation
 	return
 
 CastleArena_EventScript_Break_10:
-# 902 "data/maps/CastleArena/scripts.pory"
+# 901 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_Challenger2
 	return
 
 CastleArena_EventScript_Break_11:
-# 906 "data/maps/CastleArena/scripts.pory"
+# 905 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_GrandFinals
 	return
 
 
 CastleArena_EventScript_ArenaHeal::
-# 917 "data/maps/CastleArena/scripts.pory"
+# 916 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_ArenaHeal_Text_0
-# 919 "data/maps/CastleArena/scripts.pory"
+# 918 "data/maps/CastleArena/scripts.pory"
 	special HealPlayerParty
-# 920 "data/maps/CastleArena/scripts.pory"
+# 919 "data/maps/CastleArena/scripts.pory"
 	playse SE_USE_ITEM
-# 921 "data/maps/CastleArena/scripts.pory"
+# 920 "data/maps/CastleArena/scripts.pory"
 	message CastleArena_EventScript_ArenaHeal_Text_1
-# 922 "data/maps/CastleArena/scripts.pory"
+# 921 "data/maps/CastleArena/scripts.pory"
 	waitmessage
-# 923 "data/maps/CastleArena/scripts.pory"
+# 922 "data/maps/CastleArena/scripts.pory"
 	delay 60
-# 924 "data/maps/CastleArena/scripts.pory"
+# 923 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_Break
 	return
 
 
 CastleArena_EventScript_ForfeitConfirmation::
-# 929 "data/maps/CastleArena/scripts.pory"
+# 928 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_ForfeitConfirmation_Text_0
-# 934 "data/maps/CastleArena/scripts.pory"
+# 933 "data/maps/CastleArena/scripts.pory"
 	message CastleArena_EventScript_ForfeitConfirmation_Text_1
-# 936 "data/maps/CastleArena/scripts.pory"
+# 935 "data/maps/CastleArena/scripts.pory"
 	waitmessage
-# 937 "data/maps/CastleArena/scripts.pory"
+# 936 "data/maps/CastleArena/scripts.pory"
 	dynmultichoice 20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, WaddleDeeArena_Text_ToughItOut, WaddleDeeArena_Text_AcceptDefeat
-# 938 "data/maps/CastleArena/scripts.pory"
+# 937 "data/maps/CastleArena/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq CastleArena_EventScript_ForfeitConfirmation_1
-# 963 "data/maps/CastleArena/scripts.pory"
+# 962 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_Break
 	return
 
 CastleArena_EventScript_ForfeitConfirmation_1:
-# 940 "data/maps/CastleArena/scripts.pory"
+# 939 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_ForfeitConfirmation_Text_2
-# 942 "data/maps/CastleArena/scripts.pory"
+# 941 "data/maps/CastleArena/scripts.pory"
 	closemessage
-# 943 "data/maps/CastleArena/scripts.pory"
+# 942 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_FRANCISCA
-# 944 "data/maps/CastleArena/scripts.pory"
+# 943 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_FRANCISCA, 22, 26
-# 945 "data/maps/CastleArena/scripts.pory"
+# 944 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_FRANCISCA
-# 946 "data/maps/CastleArena/scripts.pory"
+# 945 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_FLAMBERGE
-# 947 "data/maps/CastleArena/scripts.pory"
+# 946 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_FLAMBERGE, 20, 26
-# 948 "data/maps/CastleArena/scripts.pory"
+# 947 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_FLAMBERGE
-# 949 "data/maps/CastleArena/scripts.pory"
+# 948 "data/maps/CastleArena/scripts.pory"
 	removeobject LOCALID_ZAN_PARTIZANNE
-# 950 "data/maps/CastleArena/scripts.pory"
+# 949 "data/maps/CastleArena/scripts.pory"
 	setobjectxyperm LOCALID_ZAN_PARTIZANNE, 21, 26
-# 951 "data/maps/CastleArena/scripts.pory"
+# 950 "data/maps/CastleArena/scripts.pory"
 	addobject LOCALID_ZAN_PARTIZANNE
-# 952 "data/maps/CastleArena/scripts.pory"
+# 951 "data/maps/CastleArena/scripts.pory"
 	special SpawnCameraObject
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_PLAYER, CastleArena_EventScript_ForfeitConfirmation_Movement_0
-# 954 "data/maps/CastleArena/scripts.pory"
+# 953 "data/maps/CastleArena/scripts.pory"
 	delay 60
-# 955 "data/maps/CastleArena/scripts.pory"
+# 954 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CAMERA, CastleArena_EventScript_GrandFinals_Movement_13
-# 956 "data/maps/CastleArena/scripts.pory"
+# 955 "data/maps/CastleArena/scripts.pory"
 	applymovement LOCALID_CASTLE_COMMENTATOR, CastleArena_EventScript_GrandFinals_Movement_14
-# 957 "data/maps/CastleArena/scripts.pory"
+# 956 "data/maps/CastleArena/scripts.pory"
 	waitmovement
-# 958 "data/maps/CastleArena/scripts.pory"
+# 957 "data/maps/CastleArena/scripts.pory"
 	special RemoveCameraObject
-# 959 "data/maps/CastleArena/scripts.pory"
+# 958 "data/maps/CastleArena/scripts.pory"
 	goto CastleArena_EventScript_CommentatorBye
 	return
 
 
 CastleArena_EventScript_Victory::
-# 969 "data/maps/CastleArena/scripts.pory"
+# 968 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Victory_Text_0
-# 974 "data/maps/CastleArena/scripts.pory"
+# 973 "data/maps/CastleArena/scripts.pory"
 	message CastleArena_EventScript_Victory_Text_1
-# 976 "data/maps/CastleArena/scripts.pory"
+# 975 "data/maps/CastleArena/scripts.pory"
 	waitmessage
-# 977 "data/maps/CastleArena/scripts.pory"
+# 976 "data/maps/CastleArena/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
-# 978 "data/maps/CastleArena/scripts.pory"
+# 977 "data/maps/CastleArena/scripts.pory"
 	setflag FLAG_BADGE03_GET
-# 979 "data/maps/CastleArena/scripts.pory"
+# 978 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Victory_Text_2
-# 984 "data/maps/CastleArena/scripts.pory"
+# 983 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 
 CastleArena_EventScript_Youngster::
-# 1008 "data/maps/CastleArena/scripts.pory"
+# 1007 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1009 "data/maps/CastleArena/scripts.pory"
+# 1008 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1010 "data/maps/CastleArena/scripts.pory"
+# 1009 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, CastleArena_EventScript_Youngster_2
-# 1020 "data/maps/CastleArena/scripts.pory"
+# 1019 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Youngster_Text_1
 CastleArena_EventScript_Youngster_1:
-# 1026 "data/maps/CastleArena/scripts.pory"
+# 1025 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Youngster_2:
-# 1012 "data/maps/CastleArena/scripts.pory"
+# 1011 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Youngster_Text_0
 	goto CastleArena_EventScript_Youngster_1
 
 
 CastleArena_EventScript_Lumberjack::
-# 1031 "data/maps/CastleArena/scripts.pory"
+# 1030 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1032 "data/maps/CastleArena/scripts.pory"
+# 1031 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1033 "data/maps/CastleArena/scripts.pory"
+# 1032 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, CastleArena_EventScript_Lumberjack_2
-# 1044 "data/maps/CastleArena/scripts.pory"
+# 1043 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Lumberjack_Text_1
 CastleArena_EventScript_Lumberjack_1:
-# 1051 "data/maps/CastleArena/scripts.pory"
+# 1050 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Lumberjack_2:
-# 1035 "data/maps/CastleArena/scripts.pory"
+# 1034 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Lumberjack_Text_0
 	goto CastleArena_EventScript_Lumberjack_1
 
 
 CastleArena_EventScript_Conductor::
-# 1056 "data/maps/CastleArena/scripts.pory"
+# 1055 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1057 "data/maps/CastleArena/scripts.pory"
+# 1056 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1058 "data/maps/CastleArena/scripts.pory"
+# 1057 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, CastleArena_EventScript_Conductor_2
-# 1071 "data/maps/CastleArena/scripts.pory"
+# 1070 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Conductor_Text_1
 CastleArena_EventScript_Conductor_1:
-# 1078 "data/maps/CastleArena/scripts.pory"
+# 1077 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Conductor_2:
-# 1060 "data/maps/CastleArena/scripts.pory"
+# 1059 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Conductor_Text_0
 	goto CastleArena_EventScript_Conductor_1
 
 
 CastleArena_EventScript_ShortcutGuide::
-# 1083 "data/maps/CastleArena/scripts.pory"
+# 1082 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1084 "data/maps/CastleArena/scripts.pory"
+# 1083 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1085 "data/maps/CastleArena/scripts.pory"
+# 1084 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_ShortcutGuide_Text_0
-# 1088 "data/maps/CastleArena/scripts.pory"
+# 1087 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 
 CastleArena_EventScript_Wintry::
-# 1093 "data/maps/CastleArena/scripts.pory"
+# 1092 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1094 "data/maps/CastleArena/scripts.pory"
+# 1093 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Wintry_Text_0
-# 1098 "data/maps/CastleArena/scripts.pory"
+# 1097 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 
 CastleArena_EventScript_WaddleDee::
-# 1103 "data/maps/CastleArena/scripts.pory"
+# 1102 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1104 "data/maps/CastleArena/scripts.pory"
+# 1103 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1105 "data/maps/CastleArena/scripts.pory"
+# 1104 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_WaddleDee_Text_0
-# 1112 "data/maps/CastleArena/scripts.pory"
+# 1111 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 
 CastleArena_EventScript_Cafe::
-# 1117 "data/maps/CastleArena/scripts.pory"
+# 1116 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1118 "data/maps/CastleArena/scripts.pory"
+# 1117 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1119 "data/maps/CastleArena/scripts.pory"
+# 1118 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_Cafe_2
-# 1125 "data/maps/CastleArena/scripts.pory"
+# 1124 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_CafeWin
 CastleArena_EventScript_Cafe_1:
-# 1127 "data/maps/CastleArena/scripts.pory"
+# 1126 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Cafe_2:
-# 1121 "data/maps/CastleArena/scripts.pory"
+# 1120 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_Cafe
 	goto CastleArena_EventScript_Cafe_1
 
 
 CastleArena_EventScript_Socialite::
-# 1132 "data/maps/CastleArena/scripts.pory"
+# 1131 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1133 "data/maps/CastleArena/scripts.pory"
+# 1132 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1134 "data/maps/CastleArena/scripts.pory"
+# 1133 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_Socialite_2
-# 1140 "data/maps/CastleArena/scripts.pory"
+# 1139 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_SocialiteWin
 CastleArena_EventScript_Socialite_1:
-# 1142 "data/maps/CastleArena/scripts.pory"
+# 1141 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Socialite_2:
-# 1136 "data/maps/CastleArena/scripts.pory"
+# 1135 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_Socialite
 	goto CastleArena_EventScript_Socialite_1
 
 
 CastleArena_EventScript_TalkToCrowd1::
-# 1147 "data/maps/CastleArena/scripts.pory"
+# 1146 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1148 "data/maps/CastleArena/scripts.pory"
+# 1147 "data/maps/CastleArena/scripts.pory"
 	turnobject LOCALID_CASTLE_CROWD_1, DIR_EAST
-# 1149 "data/maps/CastleArena/scripts.pory"
+# 1148 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToCrowd1_2
-# 1155 "data/maps/CastleArena/scripts.pory"
+# 1154 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_CafeWin
 CastleArena_EventScript_TalkToCrowd1_1:
-# 1157 "data/maps/CastleArena/scripts.pory"
+# 1156 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToCrowd1_2:
-# 1151 "data/maps/CastleArena/scripts.pory"
+# 1150 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_Cafe
 	goto CastleArena_EventScript_TalkToCrowd1_1
 
 
 CastleArena_EventScript_TalkToCrowd2::
-# 1162 "data/maps/CastleArena/scripts.pory"
+# 1161 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1163 "data/maps/CastleArena/scripts.pory"
+# 1162 "data/maps/CastleArena/scripts.pory"
 	turnobject LOCALID_CASTLE_CROWD_2, DIR_WEST
-# 1164 "data/maps/CastleArena/scripts.pory"
+# 1163 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToCrowd2_2
-# 1170 "data/maps/CastleArena/scripts.pory"
+# 1169 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_SocialiteWin
 CastleArena_EventScript_TalkToCrowd2_1:
-# 1172 "data/maps/CastleArena/scripts.pory"
+# 1171 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToCrowd2_2:
-# 1166 "data/maps/CastleArena/scripts.pory"
+# 1165 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_Socialite
 	goto CastleArena_EventScript_TalkToCrowd2_1
 
 
 CastleArena_EventScript_TalkToVCrowd1::
-# 1177 "data/maps/CastleArena/scripts.pory"
+# 1176 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1178 "data/maps/CastleArena/scripts.pory"
+# 1177 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
-# 1179 "data/maps/CastleArena/scripts.pory"
+# 1178 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToVCrowd1_2
-# 1189 "data/maps/CastleArena/scripts.pory"
+# 1188 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd1_Text_1
 CastleArena_EventScript_TalkToVCrowd1_1:
-# 1195 "data/maps/CastleArena/scripts.pory"
+# 1194 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToVCrowd1_2:
-# 1181 "data/maps/CastleArena/scripts.pory"
+# 1180 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd1_Text_0
 	goto CastleArena_EventScript_TalkToVCrowd1_1
 
 
 CastleArena_EventScript_TalkToVCrowd2::
-# 1200 "data/maps/CastleArena/scripts.pory"
+# 1199 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1201 "data/maps/CastleArena/scripts.pory"
+# 1200 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_SOUTH
-# 1202 "data/maps/CastleArena/scripts.pory"
+# 1201 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToVCrowd2_2
-# 1215 "data/maps/CastleArena/scripts.pory"
+# 1214 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd2_Text_1
 CastleArena_EventScript_TalkToVCrowd2_1:
-# 1227 "data/maps/CastleArena/scripts.pory"
+# 1226 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToVCrowd2_2:
-# 1204 "data/maps/CastleArena/scripts.pory"
+# 1203 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd2_Text_0
 	goto CastleArena_EventScript_TalkToVCrowd2_1
 
 
 CastleArena_EventScript_TalkToVCrowd3::
-# 1232 "data/maps/CastleArena/scripts.pory"
+# 1231 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1233 "data/maps/CastleArena/scripts.pory"
+# 1232 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 1234 "data/maps/CastleArena/scripts.pory"
+# 1233 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToVCrowd3_2
-# 1244 "data/maps/CastleArena/scripts.pory"
+# 1243 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd3_Text_1
 CastleArena_EventScript_TalkToVCrowd3_1:
-# 1247 "data/maps/CastleArena/scripts.pory"
+# 1246 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToVCrowd3_2:
-# 1236 "data/maps/CastleArena/scripts.pory"
+# 1235 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd3_Text_0
 	goto CastleArena_EventScript_TalkToVCrowd3_1
 
 
 CastleArena_EventScript_Soldier::
-# 1289 "data/maps/CastleArena/scripts.pory"
+# 1288 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1290 "data/maps/CastleArena/scripts.pory"
+# 1289 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1291 "data/maps/CastleArena/scripts.pory"
+# 1290 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, CastleArena_EventScript_Soldier_2
-# 1308 "data/maps/CastleArena/scripts.pory"
+# 1307 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Soldier_Text_1
 CastleArena_EventScript_Soldier_1:
-# 1314 "data/maps/CastleArena/scripts.pory"
+# 1313 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Soldier_2:
-# 1293 "data/maps/CastleArena/scripts.pory"
+# 1292 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Soldier_Text_0
 	goto CastleArena_EventScript_Soldier_1
 
 
 CastleArena_EventScript_Sign::
-# 1321 "data/maps/CastleArena/scripts.pory"
+# 1320 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Sign_Text_0, MSGBOX_SIGN
-# 1323 "data/maps/CastleArena/scripts.pory"
+# 1322 "data/maps/CastleArena/scripts.pory"
 	closemessage
 	return
 
 
-# 467 "data/maps/CastleArena/scripts.pory"
+# 466 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_0:
+# 466 "data/maps/CastleArena/scripts.pory"
+	walk_in_place_down
+	step_end
+
 # 467 "data/maps/CastleArena/scripts.pory"
-	walk_in_place_down
-	step_end
-
-# 468 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_1:
-# 468 "data/maps/CastleArena/scripts.pory"
+# 467 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 468 "data/maps/CastleArena/scripts.pory"
+# 467 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 468 "data/maps/CastleArena/scripts.pory"
+# 467 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 468 "data/maps/CastleArena/scripts.pory"
+# 467 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 468 "data/maps/CastleArena/scripts.pory"
+# 467 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 474 "data/maps/CastleArena/scripts.pory"
+# 473 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_2:
-# 474 "data/maps/CastleArena/scripts.pory"
+# 473 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 474 "data/maps/CastleArena/scripts.pory"
+# 473 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 474 "data/maps/CastleArena/scripts.pory"
+# 473 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 480 "data/maps/CastleArena/scripts.pory"
+# 479 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_3:
-# 480 "data/maps/CastleArena/scripts.pory"
+# 479 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 480 "data/maps/CastleArena/scripts.pory"
+# 479 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 480 "data/maps/CastleArena/scripts.pory"
+# 479 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 484 "data/maps/CastleArena/scripts.pory"
+# 483 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_4:
-# 484 "data/maps/CastleArena/scripts.pory"
+# 483 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 484 "data/maps/CastleArena/scripts.pory"
+# 483 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 484 "data/maps/CastleArena/scripts.pory"
+# 483 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 484 "data/maps/CastleArena/scripts.pory"
+# 483 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 484 "data/maps/CastleArena/scripts.pory"
+# 483 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 484 "data/maps/CastleArena/scripts.pory"
+# 483 "data/maps/CastleArena/scripts.pory"
 	walk_up
 	step_end
 
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_5:
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 485 "data/maps/CastleArena/scripts.pory"
+# 484 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_6:
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 486 "data/maps/CastleArena/scripts.pory"
+# 485 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 488 "data/maps/CastleArena/scripts.pory"
+# 487 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_7:
-# 488 "data/maps/CastleArena/scripts.pory"
+# 487 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_down
-# 488 "data/maps/CastleArena/scripts.pory"
+# 487 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 508 "data/maps/CastleArena/scripts.pory"
+# 507 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_8:
-# 508 "data/maps/CastleArena/scripts.pory"
+# 507 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 508 "data/maps/CastleArena/scripts.pory"
+# 507 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 508 "data/maps/CastleArena/scripts.pory"
+# 507 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 508 "data/maps/CastleArena/scripts.pory"
+# 507 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_BeginChallenge_Movement_9:
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 	face_down
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 509 "data/maps/CastleArena/scripts.pory"
+# 508 "data/maps/CastleArena/scripts.pory"
 	face_left
 	step_end
 
-# 530 "data/maps/CastleArena/scripts.pory"
+# 529 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_0:
-# 530 "data/maps/CastleArena/scripts.pory"
+# 529 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 530 "data/maps/CastleArena/scripts.pory"
+# 529 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 531 "data/maps/CastleArena/scripts.pory"
+# 530 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_1:
-# 531 "data/maps/CastleArena/scripts.pory"
+# 530 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 531 "data/maps/CastleArena/scripts.pory"
+# 530 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 531 "data/maps/CastleArena/scripts.pory"
+# 530 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 531 "data/maps/CastleArena/scripts.pory"
+# 530 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 531 "data/maps/CastleArena/scripts.pory"
+# 530 "data/maps/CastleArena/scripts.pory"
 	face_left
 	step_end
 
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_2:
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_up
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 532 "data/maps/CastleArena/scripts.pory"
+# 531 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 540 "data/maps/CastleArena/scripts.pory"
+# 539 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_3:
-# 540 "data/maps/CastleArena/scripts.pory"
+# 539 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 540 "data/maps/CastleArena/scripts.pory"
+# 539 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 573 "data/maps/CastleArena/scripts.pory"
+# 572 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_4:
-# 573 "data/maps/CastleArena/scripts.pory"
+# 572 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 573 "data/maps/CastleArena/scripts.pory"
+# 572 "data/maps/CastleArena/scripts.pory"
 	walk_left
 	step_end
 
-# 574 "data/maps/CastleArena/scripts.pory"
+# 573 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_5:
-# 574 "data/maps/CastleArena/scripts.pory"
+# 573 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 574 "data/maps/CastleArena/scripts.pory"
+# 573 "data/maps/CastleArena/scripts.pory"
 	walk_right
 	step_end
 
-# 581 "data/maps/CastleArena/scripts.pory"
+# 580 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_6:
-# 581 "data/maps/CastleArena/scripts.pory"
+# 580 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
-# 581 "data/maps/CastleArena/scripts.pory"
+# 580 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 582 "data/maps/CastleArena/scripts.pory"
+# 581 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_7:
-# 582 "data/maps/CastleArena/scripts.pory"
+# 581 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 582 "data/maps/CastleArena/scripts.pory"
+# 581 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 582 "data/maps/CastleArena/scripts.pory"
+# 581 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 582 "data/maps/CastleArena/scripts.pory"
+# 581 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 582 "data/maps/CastleArena/scripts.pory"
+# 581 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 592 "data/maps/CastleArena/scripts.pory"
+# 591 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_8:
-# 592 "data/maps/CastleArena/scripts.pory"
+# 591 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_slow_left
-# 592 "data/maps/CastleArena/scripts.pory"
+# 591 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_slow_left
 	step_end
 
-# 599 "data/maps/CastleArena/scripts.pory"
+# 598 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_9:
-# 599 "data/maps/CastleArena/scripts.pory"
+# 598 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 599 "data/maps/CastleArena/scripts.pory"
+# 598 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 599 "data/maps/CastleArena/scripts.pory"
+# 598 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger1_Movement_10:
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 600 "data/maps/CastleArena/scripts.pory"
+# 599 "data/maps/CastleArena/scripts.pory"
 	face_right
 	step_end
 
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger2_Movement_0:
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	face_down
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	face_down
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 620 "data/maps/CastleArena/scripts.pory"
+# 619 "data/maps/CastleArena/scripts.pory"
 	face_right
 	step_end
 
-# 621 "data/maps/CastleArena/scripts.pory"
+# 620 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger2_Movement_1:
-# 621 "data/maps/CastleArena/scripts.pory"
+# 620 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_slow_left
-# 621 "data/maps/CastleArena/scripts.pory"
+# 620 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_slow_left
-# 621 "data/maps/CastleArena/scripts.pory"
+# 620 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_slow_left
-# 621 "data/maps/CastleArena/scripts.pory"
+# 620 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_slow_left
 	step_end
 
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger2_Movement_2:
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 673 "data/maps/CastleArena/scripts.pory"
+# 672 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger2_Movement_3:
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_left
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_left
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_left
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_left
-# 674 "data/maps/CastleArena/scripts.pory"
+# 673 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_left
 	step_end
 
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_Challenger2_Movement_4:
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 693 "data/maps/CastleArena/scripts.pory"
+# 692 "data/maps/CastleArena/scripts.pory"
 	face_left
 	step_end
 
-# 737 "data/maps/CastleArena/scripts.pory"
+# 736 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_0:
-# 737 "data/maps/CastleArena/scripts.pory"
+# 736 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
-# 737 "data/maps/CastleArena/scripts.pory"
+# 736 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
-# 737 "data/maps/CastleArena/scripts.pory"
+# 736 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
-# 737 "data/maps/CastleArena/scripts.pory"
+# 736 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
-# 737 "data/maps/CastleArena/scripts.pory"
+# 736 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_1:
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_left
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_down
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_right
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_left
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_down
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_right
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_left
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_down
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 739 "data/maps/CastleArena/scripts.pory"
+# 738 "data/maps/CastleArena/scripts.pory"
 	face_right
 	step_end
 
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_2:
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 740 "data/maps/CastleArena/scripts.pory"
+# 739 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_3:
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	face_down
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	face_right
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	delay_8
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
-# 768 "data/maps/CastleArena/scripts.pory"
+# 767 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_4:
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_left
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	face_up
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	delay_16
-# 769 "data/maps/CastleArena/scripts.pory"
+# 768 "data/maps/CastleArena/scripts.pory"
 	face_left
 	step_end
 
-# 818 "data/maps/CastleArena/scripts.pory"
+# 817 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_5:
-# 818 "data/maps/CastleArena/scripts.pory"
+# 817 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_down
-# 818 "data/maps/CastleArena/scripts.pory"
+# 817 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_down
-# 818 "data/maps/CastleArena/scripts.pory"
+# 817 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_down
-# 818 "data/maps/CastleArena/scripts.pory"
+# 817 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_down
-# 818 "data/maps/CastleArena/scripts.pory"
+# 817 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_down
 	step_end
 
-# 826 "data/maps/CastleArena/scripts.pory"
+# 825 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_6:
-# 826 "data/maps/CastleArena/scripts.pory"
+# 825 "data/maps/CastleArena/scripts.pory"
 	walk_slow_right
-# 826 "data/maps/CastleArena/scripts.pory"
+# 825 "data/maps/CastleArena/scripts.pory"
 	walk_fast_left
-# 826 "data/maps/CastleArena/scripts.pory"
+# 825 "data/maps/CastleArena/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 827 "data/maps/CastleArena/scripts.pory"
+# 826 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_7:
-# 827 "data/maps/CastleArena/scripts.pory"
+# 826 "data/maps/CastleArena/scripts.pory"
 	walk_slow_left
-# 827 "data/maps/CastleArena/scripts.pory"
+# 826 "data/maps/CastleArena/scripts.pory"
 	walk_fast_right
-# 827 "data/maps/CastleArena/scripts.pory"
+# 826 "data/maps/CastleArena/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_8:
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
-# 841 "data/maps/CastleArena/scripts.pory"
+# 840 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_fast_right
 	step_end
 
-# 842 "data/maps/CastleArena/scripts.pory"
+# 841 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_9:
-# 842 "data/maps/CastleArena/scripts.pory"
+# 841 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
-# 842 "data/maps/CastleArena/scripts.pory"
+# 841 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
-# 842 "data/maps/CastleArena/scripts.pory"
+# 841 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
-# 842 "data/maps/CastleArena/scripts.pory"
+# 841 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
-# 842 "data/maps/CastleArena/scripts.pory"
+# 841 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
-# 842 "data/maps/CastleArena/scripts.pory"
+# 841 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
 	step_end
 
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_10:
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_down
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_up
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_down
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_left
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_up
-# 843 "data/maps/CastleArena/scripts.pory"
+# 842 "data/maps/CastleArena/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_11:
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_left
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 864 "data/maps/CastleArena/scripts.pory"
+# 863 "data/maps/CastleArena/scripts.pory"
 	face_down
 	step_end
 
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_12:
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 875 "data/maps/CastleArena/scripts.pory"
+# 874 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 877 "data/maps/CastleArena/scripts.pory"
+# 876 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_13:
-# 877 "data/maps/CastleArena/scripts.pory"
+# 876 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 877 "data/maps/CastleArena/scripts.pory"
+# 876 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 877 "data/maps/CastleArena/scripts.pory"
+# 876 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 877 "data/maps/CastleArena/scripts.pory"
+# 876 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 877 "data/maps/CastleArena/scripts.pory"
+# 876 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 877 "data/maps/CastleArena/scripts.pory"
+# 876 "data/maps/CastleArena/scripts.pory"
 	walk_down
 	step_end
 
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_GrandFinals_Movement_14:
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 878 "data/maps/CastleArena/scripts.pory"
+# 877 "data/maps/CastleArena/scripts.pory"
 	walk_down
 	step_end
 
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 CastleArena_EventScript_ForfeitConfirmation_Movement_0:
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_right
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_down
-# 953 "data/maps/CastleArena/scripts.pory"
+# 952 "data/maps/CastleArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
@@ -2462,7 +2460,7 @@ CastleArena_EventScript_BeginChallenge_Text_0:
 	.string "Come with me onto the stage, please!$"
 
 CastleArena_EventScript_BeginChallenge_Text_1:
-# 491 "data/maps/CastleArena/scripts.pory"
+# 490 "data/maps/CastleArena/scripts.pory"
 	.string "Welcome, one and all, to the lavish\n"
 	.string "Castle Arena!\p"
 	.string "We've got some exciting battles today!\n"
@@ -2470,7 +2468,7 @@ CastleArena_EventScript_BeginChallenge_Text_1:
 	.string "It's the wondrous warrior, Kirbyyy!!!$"
 
 CastleArena_EventScript_BeginChallenge_Text_2:
-# 500 "data/maps/CastleArena/scripts.pory"
+# 499 "data/maps/CastleArena/scripts.pory"
 	.string "Welcome, one and all, to the lavish\n"
 	.string "Castle Arena!\p"
 	.string "We've got a returning Kirby, taking\n"
@@ -2478,13 +2476,13 @@ CastleArena_EventScript_BeginChallenge_Text_2:
 	.string "Can he break through them after all?$"
 
 CastleArena_EventScript_Challenger1_Text_0:
-# 524 "data/maps/CastleArena/scripts.pory"
+# 523 "data/maps/CastleArena/scripts.pory"
 	.string "And for his first opponent, a girl whose\n"
 	.string "composure is as cold as her Helpers!\p"
 	.string "Please welcome {COLOR BLUE}Francisca{COLOR DARK_GRAY} to the stage!$"
 
 CastleArena_EventScript_Challenger1_Text_1:
-# 544 "data/maps/CastleArena/scripts.pory"
+# 543 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_FRANCISCA}…Bonjam. It's been a while, hasn't it?\p"
 	.string "My sisters and I were traveling to\n"
 	.string "spread word of our new doctrine, when\l"
@@ -2496,7 +2494,7 @@ CastleArena_EventScript_Challenger1_Text_1:
 	.string "Helpers, won't you? Ahaha!$"
 
 CastleArena_EventScript_Challenger1_Text_2:
-# 559 "data/maps/CastleArena/scripts.pory"
+# 558 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_FRANCISCA}…Bonjam. You're as resilient as I\n"
 	.string "remember you being.\p"
 	.string "Of course, our plan means we have to win\n"
@@ -2507,23 +2505,23 @@ CastleArena_EventScript_Challenger1_Text_2:
 	.string "away from the rest of my sisters!$"
 
 CastleArena_EventScript_Challenger1_Text_3:
-# 578 "data/maps/CastleArena/scripts.pory"
+# 577 "data/maps/CastleArena/scripts.pory"
 	.string "His first opponent's been put on ice!\n"
 	.string "Kirby takes the first win!$"
 
 CastleArena_EventScript_Challenger1_Text_4:
-# 594 "data/maps/CastleArena/scripts.pory"
+# 593 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_FRANCISCA}I suppose it's up to my sisters now to\n"
 	.string "do what I could not. Jambuhbye.$"
 
 CastleArena_EventScript_Challenger2_Text_0:
-# 614 "data/maps/CastleArena/scripts.pory"
+# 613 "data/maps/CastleArena/scripts.pory"
 	.string "Up next is an opponent who alway brings\n"
 	.string "the heat when she battles her rivals!\p"
 	.string "Let's hear it for {COLOR RED}Flamberge{COLOR DARK_GRAY}, everybody!$"
 
 CastleArena_EventScript_Challenger2_Text_1:
-# 637 "data/maps/CastleArena/scripts.pory"
+# 636 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_FLAMBERGE} HEY, YOU! You little pink… whatever\n"
 	.string "your name was!\p"
 	.string "You were supposed to give up last round\n"
@@ -2536,7 +2534,7 @@ CastleArena_EventScript_Challenger2_Text_1:
 	.string "all of our scorching rage!$"
 
 CastleArena_EventScript_Challenger2_Text_2:
-# 654 "data/maps/CastleArena/scripts.pory"
+# 653 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_FLAMBERGE}WHAT did I tell you last time, huh?\n"
 	.string "STOP DEFEATING MY PRECIOUS FRANCISCA!\p"
 	.string "Man, you're so annoyingly MEDDLESOME! \n"
@@ -2544,19 +2542,19 @@ CastleArena_EventScript_Challenger2_Text_2:
 	.string "YOU'RE GOING DOWN!$"
 
 CastleArena_EventScript_Challenger2_Text_3:
-# 670 "data/maps/CastleArena/scripts.pory"
+# 669 "data/maps/CastleArena/scripts.pory"
 	.string "Flamberge's win streak was snuffed out!\n"
 	.string "Kirby has scored a second victory!$"
 
 CastleArena_EventScript_Challenger2_Text_4:
-# 684 "data/maps/CastleArena/scripts.pory"
+# 683 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_FLAMBERGE}Oops! I got so angry at you, when I\n"
 	.string "should've checked on Francisca first!\p"
 	.string "Don't think this is over, though. Zan's\n"
 	.string "definitely gonna take you out!$"
 
 CastleArena_EventScript_GrandFinals_Text_0:
-# 712 "data/maps/CastleArena/scripts.pory"
+# 711 "data/maps/CastleArena/scripts.pory"
 	.string "Can you feel it? The tension in the air?\n"
 	.string "The electric buzz from the crowd?\p"
 	.string "That can only mean one thing:\n"
@@ -2566,7 +2564,7 @@ CastleArena_EventScript_GrandFinals_Text_0:
 	.string "Everyone give it up for Kirbyyyyy!!!$"
 
 CastleArena_EventScript_GrandFinals_Text_1:
-# 725 "data/maps/CastleArena/scripts.pory"
+# 724 "data/maps/CastleArena/scripts.pory"
 	.string "Can you feel it? The tension in the air?\n"
 	.string "The electric buzz from the crowd?\p"
 	.string "That can only mean one thing:\n"
@@ -2576,7 +2574,7 @@ CastleArena_EventScript_GrandFinals_Text_1:
 	.string "Everyone give it up for Kirbyyyyy!!!$"
 
 CastleArena_EventScript_GrandFinals_Text_2:
-# 755 "data/maps/CastleArena/scripts.pory"
+# 754 "data/maps/CastleArena/scripts.pory"
 	.string "And to my left, the other undefeated\n"
 	.string "challenger who reached the final round!\p"
 	.string "The lightning-quick leader of the mage\n"
@@ -2587,7 +2585,7 @@ CastleArena_EventScript_GrandFinals_Text_2:
 	.string "{COLOR GREEN}Zan Partizanne{COLOR DARK_GRAY}!$"
 
 CastleArena_EventScript_GrandFinals_Text_3:
-# 785 "data/maps/CastleArena/scripts.pory"
+# 784 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_ZAN}Bonjam, Kirby. I'm surprised to see us\n"
 	.string "meeting on the battlefield once more.\p"
 	.string "You showed us the importance of strong\n"
@@ -2601,7 +2599,7 @@ CastleArena_EventScript_GrandFinals_Text_3:
 	.string "lucky streak right here and now!$"
 
 CastleArena_EventScript_GrandFinals_Text_4:
-# 803 "data/maps/CastleArena/scripts.pory"
+# 802 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_ZAN}Bonjam majaja, Kirby. \p"
 	.string "If there's anything I'd never forget\n"
 	.string "about you, it's your persistence.\p"
@@ -2613,97 +2611,97 @@ CastleArena_EventScript_GrandFinals_Text_4:
 	.string "face against the generals of magic!$"
 
 CastleArena_EventScript_GrandFinals_Text_5:
-# 819 "data/maps/CastleArena/scripts.pory"
+# 818 "data/maps/CastleArena/scripts.pory"
 	.string "It's come down to Kirby vs.… uh… Zan!\n"
 	.string "Who will reign supreme in the Arena?!\p"
 	.string "Everyone make some noiseeeee!!!!!$"
 
 CastleArena_EventScript_GrandFinals_Text_6:
-# 833 "data/maps/CastleArena/scripts.pory"
+# 832 "data/maps/CastleArena/scripts.pory"
 	.string "Folks… the battle of bonds has ended…\n"
 	.string "The winner of this Castle Arena clash…\p"
 	.string "It's the pink puffball himself!\n"
 	.string "KIRBY WINS!$"
 
 CastleArena_EventScript_GrandFinals_Text_7:
-# 856 "data/maps/CastleArena/scripts.pory"
+# 855 "data/maps/CastleArena/scripts.pory"
 	.string "KIRBY! KIRBY! KIRBY! KIRBY!$"
 
 CastleArena_EventScript_GrandFinals_Text_8:
-# 862 "data/maps/CastleArena/scripts.pory"
+# 861 "data/maps/CastleArena/scripts.pory"
 	.string "{SPEAKER NAME_ZAN}…that's that, then. Jambuhbye…$"
 
 CastleArena_EventScript_Break_Text_0:
-# 888 "data/maps/CastleArena/scripts.pory"
+# 887 "data/maps/CastleArena/scripts.pory"
 	.string "There's just two rounds to go now.\n"
 	.string "Are you ready for the next battle?$"
 
 CastleArena_EventScript_Break_Text_1:
-# 893 "data/maps/CastleArena/scripts.pory"
+# 892 "data/maps/CastleArena/scripts.pory"
 	.string "This is it: the final round awaits!\n"
 	.string "Ready for the ultimate battle, Kirby?$"
 
 CastleArena_EventScript_ArenaHeal_Text_0:
-# 917 "data/maps/CastleArena/scripts.pory"
+# 916 "data/maps/CastleArena/scripts.pory"
 	.string "Great job on that battle, Kirby. Let's\n"
 	.string "heal up those hardworking Helpers!$"
 
 CastleArena_EventScript_ArenaHeal_Text_1:
-# 921 "data/maps/CastleArena/scripts.pory"
+# 920 "data/maps/CastleArena/scripts.pory"
 	.string "Your party has been fully healed!$"
 
 CastleArena_EventScript_ForfeitConfirmation_Text_0:
-# 929 "data/maps/CastleArena/scripts.pory"
+# 928 "data/maps/CastleArena/scripts.pory"
 	.string "Are you really sure you want to\n"
 	.string "throw in the towel now?\p"
 	.string "Just a heads up; {COLOR RED}you'll have to start\n"
 	.string "the tournament anew if you do{COLOR DARK_GRAY}!$"
 
 CastleArena_EventScript_ForfeitConfirmation_Text_1:
-# 934 "data/maps/CastleArena/scripts.pory"
+# 933 "data/maps/CastleArena/scripts.pory"
 	.string "Are you absolutely, positively sure\n"
 	.string "you want to retire now?$"
 
 CastleArena_EventScript_ForfeitConfirmation_Text_2:
-# 940 "data/maps/CastleArena/scripts.pory"
+# 939 "data/maps/CastleArena/scripts.pory"
 	.string "Well, sorry, folks! Looks like this\n"
 	.string "promising run is being cut short!$"
 
 CastleArena_EventScript_Victory_Text_0:
-# 969 "data/maps/CastleArena/scripts.pory"
+# 968 "data/maps/CastleArena/scripts.pory"
 	.string "Congratulations again on conquering\n"
 	.string "the Castle Arena, Kirby!\p"
 	.string "Here's your reward to commemorate the\n"
 	.string "occasion: the Castle Brooch!$"
 
 CastleArena_EventScript_Victory_Text_1:
-# 974 "data/maps/CastleArena/scripts.pory"
+# 973 "data/maps/CastleArena/scripts.pory"
 	.string "Kirby received the Castle Brooch\n"
 	.string "from Commentator Waddle Dee!$"
 
 CastleArena_EventScript_Victory_Text_2:
-# 979 "data/maps/CastleArena/scripts.pory"
+# 978 "data/maps/CastleArena/scripts.pory"
 	.string "This Brooch certifies that you'll be\n"
 	.string "able to safely train stronger Helpers.\p"
 	.string "I'm sure we'll see each other again\n"
 	.string "at the next Arena. Until then!$"
 
 CastleArena_EventScript_Youngster_Text_0:
-# 1012 "data/maps/CastleArena/scripts.pory"
+# 1011 "data/maps/CastleArena/scripts.pory"
 	.string "Wow, your Helpers must have been really\n"
 	.string "good to win at the Arena here!\p"
 	.string "I'm so inspired! I'm gonna go out and\n"
 	.string "try to befriend ones just like yours!$"
 
 CastleArena_EventScript_Youngster_Text_1:
-# 1020 "data/maps/CastleArena/scripts.pory"
+# 1019 "data/maps/CastleArena/scripts.pory"
 	.string "Is there any type of Helper that's good\n"
 	.string "against Ice, Fire, and Electric…?\p"
 	.string "Hmm… I'm not sure my team is diverse\n"
 	.string "enough for the job here…$"
 
 CastleArena_EventScript_Lumberjack_Text_0:
-# 1035 "data/maps/CastleArena/scripts.pory"
+# 1034 "data/maps/CastleArena/scripts.pory"
 	.string "It's really something how well those\n"
 	.string "girls work together in battle, huh?\p"
 	.string "Maybe I should be taking a closer listen\n"
@@ -2711,7 +2709,7 @@ CastleArena_EventScript_Lumberjack_Text_0:
 	.string "bringing us closer to paradise.$"
 
 CastleArena_EventScript_Lumberjack_Text_1:
-# 1044 "data/maps/CastleArena/scripts.pory"
+# 1043 "data/maps/CastleArena/scripts.pory"
 	.string "My Sandran and Digguh can hold their\n"
 	.string "own against the red and yellow girls…\p"
 	.string "But my luck usually leads me to get\n"
@@ -2719,7 +2717,7 @@ CastleArena_EventScript_Lumberjack_Text_1:
 	.string "Her team beats mine so easily!$"
 
 CastleArena_EventScript_Conductor_Text_0:
-# 1060 "data/maps/CastleArena/scripts.pory"
+# 1059 "data/maps/CastleArena/scripts.pory"
 	.string "You actually made it, huh? I guess this\n"
 	.string "Arena wasn't so unwinnable after all.\p"
 	.string "I shouldn't have let my worries stop\n"
@@ -2728,7 +2726,7 @@ CastleArena_EventScript_Conductor_Text_0:
 	.string "the Great King wanted us to take away?$"
 
 CastleArena_EventScript_Conductor_Text_1:
-# 1071 "data/maps/CastleArena/scripts.pory"
+# 1070 "data/maps/CastleArena/scripts.pory"
 	.string "There's a whole lot of hubbub about\n"
 	.string "this Arena being unwinnable.\p"
 	.string "Did I choose the wrong Arena to visit\n"
@@ -2736,19 +2734,19 @@ CastleArena_EventScript_Conductor_Text_1:
 	.string "the Icecap Arena instead…$"
 
 CastleArena_EventScript_ShortcutGuide_Text_0:
-# 1085 "data/maps/CastleArena/scripts.pory"
+# 1084 "data/maps/CastleArena/scripts.pory"
 	.string "If you need to leave back to the\n"
 	.string "courtyard, this path's a shortcut.\l"
 	.string "I wish it was open on the way up…$"
 
 CastleArena_EventScript_Wintry_Text_0:
-# 1094 "data/maps/CastleArena/scripts.pory"
+# 1093 "data/maps/CastleArena/scripts.pory"
 	.string "Wow! I can see my friend at the top of\n"
 	.string "the Icecap Arena all the way from here!\p"
 	.string "Heeeeeeey!!! Helloooooooooo!!!!!$"
 
 CastleArena_EventScript_WaddleDee_Text_0:
-# 1105 "data/maps/CastleArena/scripts.pory"
+# 1104 "data/maps/CastleArena/scripts.pory"
 	.string "I wonder whether the competitors who\n"
 	.string "won their Brooch here before that trio\l"
 	.string "showed up could have beat them?\p"
@@ -2757,21 +2755,21 @@ CastleArena_EventScript_WaddleDee_Text_0:
 	.string "Waddle Dee, and some artist girl…$"
 
 CastleArena_EventScript_TalkToVCrowd1_Text_0:
-# 1181 "data/maps/CastleArena/scripts.pory"
+# 1180 "data/maps/CastleArena/scripts.pory"
 	.string "I can't get enough of seeing Francisca\n"
 	.string "freeze her opponent's Helpers!\p"
 	.string "Being frozen sounds like so much fun…\n"
 	.string "Oh, Francisca, please let it be me next!$"
 
 CastleArena_EventScript_TalkToVCrowd1_Text_1:
-# 1189 "data/maps/CastleArena/scripts.pory"
+# 1188 "data/maps/CastleArena/scripts.pory"
 	.string "What? You managed to defeat the\n"
 	.string "wonderful Francisca? How could you!?\p"
 	.string "Oooh… this burning feeling in my heart…\n"
 	.string "is this what Flamberge always feels!?$"
 
 CastleArena_EventScript_TalkToVCrowd2_Text_0:
-# 1204 "data/maps/CastleArena/scripts.pory"
+# 1203 "data/maps/CastleArena/scripts.pory"
 	.string "My pals here are real big fans of\n"
 	.string "Francisca and Flamberge, so you'd think\l"
 	.string "you'd know what to expect from me.\p"
@@ -2780,7 +2778,7 @@ CastleArena_EventScript_TalkToVCrowd2_Text_0:
 	.string "whose name I can't even remember!$"
 
 CastleArena_EventScript_TalkToVCrowd2_Text_1:
-# 1215 "data/maps/CastleArena/scripts.pory"
+# 1214 "data/maps/CastleArena/scripts.pory"
 	.string "Whoa, you must be pretty talented if\n"
 	.string "you managed to beat… uhh…\p"
 	.string "Hold on, it's coming to me…\p"
@@ -2790,19 +2788,19 @@ CastleArena_EventScript_TalkToVCrowd2_Text_1:
 	.string "good job winning against her.$"
 
 CastleArena_EventScript_TalkToVCrowd3_Text_0:
-# 1236 "data/maps/CastleArena/scripts.pory"
+# 1235 "data/maps/CastleArena/scripts.pory"
 	.string "I think Flamberge puts up the best\n"
 	.string "performance of the three mage sisters.\p"
 	.string "I'd be okay watching her battle over\n"
 	.string "and over if nobody could defeat her…$"
 
 CastleArena_EventScript_TalkToVCrowd3_Text_1:
-# 1244 "data/maps/CastleArena/scripts.pory"
+# 1243 "data/maps/CastleArena/scripts.pory"
 	.string "No way… you managed to defeat\n"
 	.string "Flamberge? Who even are you?$"
 
 CastleArena_EventScript_Soldier_Text_0:
-# 1293 "data/maps/CastleArena/scripts.pory"
+# 1292 "data/maps/CastleArena/scripts.pory"
 	.string "Seems like those girls are ready to move\n"
 	.string "on elsewhere after you defeated them.\p"
 	.string "It's a good thing that challengers will\n"
@@ -2814,39 +2812,39 @@ CastleArena_EventScript_Soldier_Text_0:
 	.string "For now, keep doing your best, alright?$"
 
 CastleArena_EventScript_Soldier_Text_1:
-# 1308 "data/maps/CastleArena/scripts.pory"
+# 1307 "data/maps/CastleArena/scripts.pory"
 	.string "I'm keeping an eye on things here to see\n"
 	.string "just how unbeatable that trio really is.\p"
 	.string "It would be a problem if nobody could\n"
 	.string "win the Royal Royal because of them…$"
 
 CastleArena_EventScript_Sign_Text_0:
-# 1321 "data/maps/CastleArena/scripts.pory"
+# 1320 "data/maps/CastleArena/scripts.pory"
 	.string "Newly-opened: CASTLE ARENA\n"
 	.string "Conquer it and win the Castle Brooch!$"
 
 CastleArena_Text_Francisca::
-# 987 "data/maps/CastleArena/scripts.pory"
+# 986 "data/maps/CastleArena/scripts.pory"
 	.string "My, my… you and your Helpers are in top\n"
 	.string "form as always. How divine…$"
 
 CastleArena_Text_Flamberge::
-# 993 "data/maps/CastleArena/scripts.pory"
+# 992 "data/maps/CastleArena/scripts.pory"
 	.string "Jamblasted… JAMBLASTED!$"
 
 CastleArena_Text_ZanPartizanne::
-# 998 "data/maps/CastleArena/scripts.pory"
+# 997 "data/maps/CastleArena/scripts.pory"
 	.string "Janno… it can't be… are we really still\n"
 	.string "unable to overcome you?$"
 
 CastleArena_Text_Cafe::
-# 1250 "data/maps/CastleArena/scripts.pory"
+# 1249 "data/maps/CastleArena/scripts.pory"
 	.string "Arena seats seem like the perfect place\n"
 	.string "to sell snacks to hungry customers, so\l"
 	.string "I'm setting up a little food stand here!$"
 
 CastleArena_Text_CafeWin::
-# 1257 "data/maps/CastleArena/scripts.pory"
+# 1256 "data/maps/CastleArena/scripts.pory"
 	.string "That was some seriously incredible\n"
 	.string "Helper battling skill! Great work!\p"
 	.string "With hot shots like you, I bet this\n"
@@ -2854,7 +2852,7 @@ CastleArena_Text_CafeWin::
 	.string "and then I'll be busy, busy, busy!$"
 
 CastleArena_Text_Socialite::
-# 1267 "data/maps/CastleArena/scripts.pory"
+# 1266 "data/maps/CastleArena/scripts.pory"
 	.string "It's easy to see the results coming\n"
 	.string "when one group of competitors keep\l"
 	.string "dominating every single tournament.\p"
@@ -2862,7 +2860,7 @@ CastleArena_Text_Socialite::
 	.string "into this Arena, I wonder?$"
 
 CastleArena_Text_SocialiteWin::
-# 1277 "data/maps/CastleArena/scripts.pory"
+# 1276 "data/maps/CastleArena/scripts.pory"
 	.string "Bravo! You and your Helpers were really\n"
 	.string "something else!\p"
 	.string "Knowing there are strong competitors\n"

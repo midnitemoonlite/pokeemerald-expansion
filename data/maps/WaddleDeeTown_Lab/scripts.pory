@@ -274,6 +274,7 @@ script WaddleDeeTown_Lab_EventScript_WiseGateCheckSuccess
             {STR_VAR_2} Helpers so far!
             
             As promised, here's your care package!")
+    setspeaker(NULL)
     giveitem_msg(WaddleDeeTown_Lab_ReceivedExpShare, ITEM_EXP_SHARE, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM02)
     giveitem(ITEM_STARDUST)
@@ -610,6 +611,7 @@ script WaddleDeeTown_Lab_BinderCheck2
             
             As proof of your hard work, please
             accept this care package from me!")
+    setspeaker(NULL)
     giveitem_msg(WaddleDeeTown_Lab_ReceivedHelperBoxLink, ITEM_POKEMON_BOX_LINK, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM09)
     giveitem(ITEM_BIG_PEARL)
@@ -637,6 +639,7 @@ script WaddleDeeTown_Lab_BinderCheck3
             
             As proof of your hard work, please
             accept this care package from me!")
+    setspeaker(NULL)
     giveitem_msg(WaddleDeeTown_Lab_ReceivedDowsingMachine, ITEM_DOWSING_MACHINE, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM12)
     giveitem(ITEM_NUGGET)
@@ -664,6 +667,7 @@ script WaddleDeeTown_Lab_BinderCheck4
             
             As proof of your hard work, please
             accept this care package from me!")
+    setspeaker(NULL)
     giveitem_msg(WaddleDeeTown_Lab_ReceivedOvalCharm, ITEM_OVAL_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM01)
     giveitem(ITEM_STAR_PIECE)
@@ -694,6 +698,7 @@ script WaddleDeeTown_Lab_BinderCheck5
             
             As proof of your hard work, please
             accept this care package from me!")
+    setspeaker(NULL)
     giveitem_msg(WaddleDeeTown_Lab_ReceivedCatchingCharm, ITEM_CATCHING_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM34)
     giveitem(ITEM_PEARL_STRING)
@@ -724,6 +729,7 @@ script WaddleDeeTown_Lab_BinderCheck6
             
             As proof of your hard work, please
             accept this care package from me!")
+    setspeaker(NULL)
     giveitem_msg(WaddleDeeTown_Lab_ReceivedMachBike, ITEM_MACH_BIKE, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM10)
     giveitem(ITEM_COMET_SHARD)
@@ -755,6 +761,7 @@ script WaddleDeeTown_Lab_BinderCheck7
             
             As proof of your hard work, please
             accept this care package from me!")
+    setspeaker(NULL)
     giveitem_msg(WaddleDeeTown_Lab_ReceivedExpCharm, ITEM_EXP_CHARM, 1, MUS_RG_OBTAIN_KEY_ITEM)
     giveitem(ITEM_TM06)
     giveitem(ITEM_BIG_NUGGET)
@@ -1286,6 +1293,34 @@ script WaddleDeeTown_Lab_EventScript_Book25
 script WaddleDeeTown_Lab_EventScript_Book26
 {
     lockall
+    msgbox("Helper Handbook: Exp. Share
+    
+            \qoWhen Helpers work together to defeat
+            another Helper, that experience is
+            split between all the contributors.
+            
+            It made us wonder\. is there a way for
+            a whole team to share experience?
+            
+            With some quick work, we've devised a
+            new tool: the Experience Share.
+            
+            As usual, all Helpers that participate
+            in battle share their experience\.
+            
+            Now, though, that experience sum is
+            copied and distributed to all Helpers
+            who remain passive in the party too.
+            
+            It may not be the intended experience
+            for the Royal Royale, but it should
+            make managing large teams easier!\qc")
+    release
+}
+
+script WaddleDeeTown_Lab_EventScript_Book27
+{
+    lockall
     msgbox("Helper Handbook: Evolution Cancel
     
             \qoMany helpers evolve simply through
@@ -1305,7 +1340,7 @@ script WaddleDeeTown_Lab_EventScript_Book26
     release
 }
 
-script WaddleDeeTown_Lab_EventScript_Book27
+script WaddleDeeTown_Lab_EventScript_Book28
 {
     lockall
     msgbox("Helper Handbook: Evolution Stars
@@ -1329,15 +1364,6 @@ script WaddleDeeTown_Lab_EventScript_Book27
             That move still exists deep in the
             evolved Helper's egg movepool,
             and can be learned by other means.\qc")
-    release
-}
-
-script WaddleDeeTown_Lab_EventScript_Book28
-{
-    lockall
-    msgbox("This book is currently empty\.
-    
-            \qoThe pages are blank.\qc")
     release
 }
 

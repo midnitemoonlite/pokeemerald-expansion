@@ -350,6 +350,7 @@ script MallowCastle_3F_EventScript_BombBlock2Continued
         waitstate
         playse(SE_M_DIG)
         setmetatile(31, 25, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+        setmetatile(32, 26, METATILE_LilycoveMuseum_Floor, FALSE)
         special(DrawWholeMapView)
         setvar(VAR_0x8004, 1)  // vertical pan
         setvar(VAR_0x8005, 0)  // horizontal pan
@@ -359,6 +360,7 @@ script MallowCastle_3F_EventScript_BombBlock2Continued
         waitstate
         playse(SE_M_DIG)
         setmetatile(30, 25, METATILE_LilycoveMuseum_Floor, FALSE)
+        setmetatile(32, 27, METATILE_LilycoveMuseum_Floor, FALSE)
         special(DrawWholeMapView)
         setvar(VAR_0x8004, 1)  // vertical pan
         setvar(VAR_0x8005, 0)  // horizontal pan
@@ -368,6 +370,7 @@ script MallowCastle_3F_EventScript_BombBlock2Continued
         waitstate
         playse(SE_M_DIG)
         setmetatile(29, 25, METATILE_LilycoveMuseum_Floor, FALSE)
+        setmetatile(32, 28, METATILE_LilycoveMuseum_Floor, FALSE)
         special(DrawWholeMapView)
         setvar(VAR_0x8004, 1)  // vertical pan
         setvar(VAR_0x8005, 0)  // horizontal pan
@@ -377,6 +380,7 @@ script MallowCastle_3F_EventScript_BombBlock2Continued
         waitstate
         playse(SE_M_DIG)
         setmetatile(28, 25, METATILE_LilycoveMuseum_DarkFloor, FALSE)
+        setmetatile(32, 29, METATILE_LilycoveMuseum_Floor, FALSE)
         special(DrawWholeMapView)
         setvar(VAR_0x8004, 1)  // vertical pan
         setvar(VAR_0x8005, 0)  // horizontal pan
@@ -384,22 +388,24 @@ script MallowCastle_3F_EventScript_BombBlock2Continued
         setvar(VAR_0x8007, 3)  // shake delay
         special(ShakeCamera)
         waitstate
+        playse(SE_M_DIG)
+        setmetatile(33, 29, METATILE_LilycoveMuseum_Floor, FALSE)
+        special(DrawWholeMapView)
         checkflag(FLAG_TEMP_13)
-        goto_if_unset(FLAG_TEMP_13, MallowCastle_3F_EventScript_BombBlock2_Continued_Continued)
+        call_if_unset(FLAG_TEMP_13, MallowCastle_3F_EventScript_BombBlock2_Continued_Continued)
+        setvar(VAR_0x8004, 1)  // vertical pan
+        setvar(VAR_0x8005, 0)  // horizontal pan
+        setvar(VAR_0x8006, 2) // num shakes
+        setvar(VAR_0x8007, 3)  // shake delay
+        special(ShakeCamera)
+        waitstate
         release
 }
 
 script MallowCastle_3F_EventScript_BombBlock2_Continued_Continued
 {
-            playse(SE_M_DIG)
             removeobject(LOCALID_BOMB_MALLOW_CASTLE_3F_4)
             setflag(FLAG_TEMP_13)
-            setvar(VAR_0x8004, 1)  // vertical pan
-            setvar(VAR_0x8005, 0)  // horizontal pan
-            setvar(VAR_0x8006, 2) // num shakes
-            setvar(VAR_0x8007, 3)  // shake delay
-            special(ShakeCamera)
-            waitstate
 }
 
 script MallowCastle_3F_EventScript_BombBlock3

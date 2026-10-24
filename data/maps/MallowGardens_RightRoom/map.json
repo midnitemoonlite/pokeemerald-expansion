@@ -2,7 +2,7 @@
   "id": "MAP_MALLOW_GARDENS_RIGHT_ROOM",
   "name": "MallowGardens_RightRoom",
   "layout": "LAYOUT_MALLOW_GARDENS_RIGHT_ROOM",
-  "music": "MUS_DEWFORD",
+  "music": "MUS_VERDANTURF",
   "region_map_section": "MAPSEC_MALLOW_GARDENS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

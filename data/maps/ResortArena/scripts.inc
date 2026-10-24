@@ -67,7 +67,7 @@ ResortArena_EventScript_TopAudience_2:
 
 ResortArena_EventScript_TalkToGentleman::
 # 72 "data/maps/ResortArena/scripts.pory"
-	turnobject LOCALID_RESORT_CROWD_1, DIR_EAST
+	turnobject LOCALID_RESORT_CROWD_1, DIR_SOUTH
 # 73 "data/maps/ResortArena/scripts.pory"
 	goto ResortArena_EventScript_TopAudience
 	return
@@ -95,7 +95,7 @@ ResortArena_EventScript_BottomAudience_2:
 
 ResortArena_EventScript_TalkToParasol::
 # 100 "data/maps/ResortArena/scripts.pory"
-	turnobject LOCALID_RESORT_CROWD_2, DIR_EAST
+	turnobject LOCALID_RESORT_CROWD_2, DIR_SOUTH
 # 101 "data/maps/ResortArena/scripts.pory"
 	goto ResortArena_EventScript_BottomAudience
 	return

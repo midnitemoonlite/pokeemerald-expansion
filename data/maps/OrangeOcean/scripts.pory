@@ -167,8 +167,8 @@ text OrangeOcean_Text_Trainer3Defeated
 
 text OrangeOcean_Text_Trainer3Post
 {
-    "I gave my Blipper a special Heart, and
-    then it became a Mamatee. Neat, huh?"
+    "Do you think my Kapar will evolve into
+    something even better at swimming?"
 }
 
 script OrangeOcean_EventScript_Trainer4
