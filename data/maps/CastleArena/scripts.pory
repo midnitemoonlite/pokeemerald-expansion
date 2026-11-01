@@ -214,14 +214,68 @@ script CastleArena_EventScript_Nago
     else
     {
         faceplayer
-        msgbox("Kirby! I didn't even notice you there.
-                Sorry about that, mrrow!
-                
-                I was really impressed by your Helpers.
-                They might be even stronger than mine!
-                
-                Mrrow! Let's have a battle sometime,
-                okay, buddy?")
+        msgbox("{SPEAKER NAME_NAGO}Mrrow\. okay, Kirby, I'll make it quick:
+                I want to have a battle with you!", MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES)
+        {
+            msgbox("{SPEAKER NAME_NAGO}All right! Let's see if I can defeat the
+                    one who beat all three mage sisters!")
+            trainerbattle_no_intro(TRAINER_VITO, CastleArena_Text_Nago)
+            msgbox("{SPEAKER NAME_NAGO}Thanks, Kirby. You know I always want to
+                    help you out however I can\.
+                    
+                    I just wanted to make sure I wouldn't
+                    regret splitting time from this game.
+                    Helper battles are so much fun, mrrow!
+                    
+                    I'm behind you all the way now, mrrow.
+                    Here, let's trade numbers!")
+            setspeaker(NULL)
+            playfanfare(MUS_RG_OBTAIN_KEY_ITEM)
+            msgbox("Obtained {COLOR RED}Nago's phone number{COLOR DARK_GRAY}!
+            Now you can call for Nago's help!")
+            waitfanfare()
+            waitmessage()
+            msgbox("{SPEAKER NAME_NAGO}With my rock-smashing strength, no
+                    Star Blocks will be able to stop us!")
+            closemessage
+            applymovement(LOCALID_NAGO, moves(walk_in_place_down))
+            waitmovement
+            turnobject(LOCALID_SHIRO, DIR_NORTH)
+            waitmovement
+            msgbox("{SPEAKER NAME_NAGO}Alright, Shiro, let's get a move on.
+                    We've got other Arenas to visit, and a
+                    kingly mystery to sniff out, mrrow!")
+            closemessage
+            getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+            if(var(VAR_TEMP_2) == 22)
+            {
+                applymovement(LOCALID_PLAYER, moves(walk_up, walk_in_place_down))
+                waitmovement
+            }
+            applymovement(LOCALID_NAGO, moves(walk_right * 11))
+            applymovement(LOCALID_SHIRO, moves(walk_up, walk_right * 4, delay_16, delay_16, delay_16, walk_in_place_left))
+            waitmovement
+            turnobject(LOCALID_PLAYER, DIR_EAST)
+            waitmovement
+            msgbox("Bye-bye, Kirby! Thank you for all your
+                    help, myew!")
+            closemessage
+            playse(SE_LEDGE)
+            applymovement(LOCALID_PLAYER, moves(jump_in_place_right, walk_in_place_right * 2))
+            waitmovement
+            waitse
+            applymovement(LOCALID_SHIRO, moves(walk_in_place_right, walk_fast_right * 7))
+            waitmovement
+            removeobject(LOCALID_NAGO)
+            removeobject(LOCALID_SHIRO)
+            setflag(FLAG_FOUND_NAGO)
+        }
+        else
+        {
+            msgbox("{SPEAKER NAME_NAGO}Mrrow? Are your Helpers not ready? Well,
+                    I'll wait for you here then.")
+        }
     }
     release
 }
@@ -850,6 +904,33 @@ script CastleArena_EventScript_Victory
             
             I'm sure we'll see each other again
             at the next Arena. Until then!")
+    closemessage
+    removeobject(LOCALID_NAGO)
+    setobjectxyperm(LOCALID_NAGO, 21, 22)
+    addobject(LOCALID_NAGO)
+    applymovement(LOCALID_NAGO, moves(walk_up * 6))
+    waitmovement
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_down))
+    waitmovement
+    msgbox("{SPEAKER NAME_NAGO}Kirby! I didn't even notice you before!
+            I kept losing to those mage sisters,
+            and it riled me up\. sorry, mrrow!
+            
+            It's good to see you around. Have you
+            been enjoying the Royal Royale?
+            
+            Hm? You're investgating a secret you
+            think King Dedede is hiding? Hmm\.
+            
+            Tell you what, mrrow. Talk to me down at
+            the square after you rest up, okay?
+            We'll strike up a little deal!")
+    closemessage
+    applymovement(LOCALID_NAGO, moves(walk_down * 6))
+    waitmovement
+    removeobject(LOCALID_NAGO)
+    setobjectxyperm(LOCALID_NAGO, 21, 28)
+    addobject(LOCALID_NAGO)
     release
 }
 
@@ -868,6 +949,12 @@ text CastleArena_Text_ZanPartizanne
 {
     "Janno\. it can't be\. are we really still
     unable to overcome you?"
+}
+
+text CastleArena_Text_Nago
+{
+    "There's no doubt about it. Your Helpers
+    are the real deal, mrrow!"
 }
 
 // Miscellaneous NPCs
@@ -952,8 +1039,7 @@ script CastleArena_EventScript_ShortcutGuide
     lock
     faceplayer
     msgbox("If you need to leave back to the
-            courtyard, this path's a shortcut.
-            I wish it was open on the way up\.")
+            courtyard, this path's a shortcut.")
     release
 }
 

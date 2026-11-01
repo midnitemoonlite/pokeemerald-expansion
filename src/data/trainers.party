@@ -2160,7 +2160,7 @@ Double Battle: No
 AI: Basic Trainer / HP Aware / Omniscient / Ace Pokemon
 
 Plugg (F) @ Electric Seed
-Level: 28
+Level: 27
 Ability: Electric Surge
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Friend
@@ -2170,7 +2170,7 @@ Ball: Friend
 - Zing Zap
 
 Plasma Wisp (F)
-Level: 28
+Level: 27
 Ability: Levitate
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Friend
@@ -2180,7 +2180,7 @@ Ball: Friend
 - Laser Focus
 
 Jammerjab (M) @ Berry Juice
-Level: 27
+Level: 28
 Ability: Steadfast
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Friend
@@ -2190,11 +2190,11 @@ Ball: Friend
 - Wish
 
 SPECIES_GUARD_ELECTRIC (F) @ Zap Plate
-Level: 30
+Level: 29
 Ability: Multitype
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Ball: Friend
-- Multi-Attack
+- Thunder Punch
 - Ice Punch
 - Fire Punch
 - Block
@@ -2202,28 +2202,42 @@ Ball: Friend
 /* Castle Arena - Nago */
 
 === TRAINER_VITO ===
-Name: Partizanne
-Class: Palace Maven
-Pic: Leader Norman
+Name: Nago
+Class: Winstrate
+Pic: Pokefan M
 Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Dodrio
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Mopoo (F)
+Level: 25
+Ability: Refrigerate
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Premier
+- Terrain Pulse
+- Chilling Water
+- Mist
+- Misty Terrain
 
-Kadabra
-Level: 42
+Scarfy (M)
+Level: 26
+Ability: Berserk
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ball: Luxury
+- Bite
+- Charm
+- Assist
+- Draining Kiss
 
-Electrode
-Level: 42
+Keke (F) @ Oran Berry
+Level: 27
+Ability: Screen Cleaner
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Shiftry
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Ball: Poke
+- Play Rough
+- Fly
+- Twister
+- Icy Wind
 
 === TRAINER_OWEN ===
 Name: OWEN
