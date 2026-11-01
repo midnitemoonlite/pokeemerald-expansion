@@ -733,14 +733,14 @@ TEST("Battle strings fit on the battle message window")
     case STRINGID_WILDPKMNFLED:
     case STRINGID_MEGAEVOEVOLVED:
     case STRINGID_PKMNREVIVEDREADYTOFIGHT:
-    case STRINGID_ITEMRESTOREDSPECIESHEALTH: // Should probably use nickname instead?
-    case STRINGID_ITEMCUREDSPECIESSTATUS: // Should probably use nickname instead?
-    case STRINGID_ITEMRESTOREDSPECIESPP: // Should probably use nickname instead?
         PREPARE_SPECIES_BUFFER(gBattleTextBuff1, longSpeciesName)
         break;
     // Buffer nickname with prefix to B_BUFF1
     case STRINGID_PKMNATTACK:
     case STRINGID_PKMNWISHCAMETRUE:
+    case STRINGID_ITEMRESTOREDSPECIESHEALTH: // Should probably use nickname instead?
+    case STRINGID_ITEMCUREDSPECIESSTATUS: // Should probably use nickname instead?
+    case STRINGID_ITEMRESTOREDSPECIESPP: // Should probably use nickname instead?
         PREPARE_MON_NICK_WITH_PREFIX_BUFFER(gBattleTextBuff1, 1, 0);
         break;
     // Buffer nickname with prefix in lower case to B_BUFF1

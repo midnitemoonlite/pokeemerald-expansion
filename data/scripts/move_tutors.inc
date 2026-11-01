@@ -180,3 +180,39 @@ MoveTutor_AfterChooseBoxMon::
 	special CanTeachMoveBoxMon
 	waitstate
 	return
+
+MoveTutor_EventScript_CantAfford::
+    hidemoneybox
+	msgbox MoveTutor_Text_CantAfford, MSGBOX_DEFAULT
+    release
+    end
+
+MoveTutor_EventScript_MoveTutorLeave::
+    hidemoneybox
+	msgbox MoveTutor_Text_MoveTutorLeave, MSGBOX_DEFAULT
+    release
+	end
+
+MoveTutor_Text_CantAfford::
+	.string "You can't afford to teach this move.\n"
+	.string "My skills don't come for free…$"
+
+MoveTutor_Text_MoveTutorLeave::
+	.string "Return to me if you ever wish to teach\n"
+	.string "your Helpers some special moves!$"
+
+MoveTutor_Text_TeachMove::
+    .string "So, you want me to teach\n"
+    .string "{STR_VAR_1}?$"
+
+MoveTutor_Text_SelectMon::
+    .string "And which of your Helpers should I\n"
+    .string "teach the move to?$"
+
+MoveTutor_Text_MoveTutorNotEnabled:
+	.string "I'm a movesmith. I know all sorts of\n"
+	.string "long-forgotten techniques.\p"
+	.string "What I'm looking for… is a commander\n"
+	.string "of Helpers that can wield my power.\p"
+    .string "Do you have what it takes to spark\n"
+	.string "the fire kindling in my heart?$"

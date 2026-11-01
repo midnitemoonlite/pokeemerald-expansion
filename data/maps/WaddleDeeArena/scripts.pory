@@ -18,6 +18,21 @@ script WaddleDeeArena_EventScript_Youngster
     release
 }
 
+script WaddleDeeArena_EventScript_WaddleDee
+{
+    lock
+    faceplayer
+    msgbox("Have you met the craftsman hanging out
+            inside the item shop yet?
+            
+            Apparently he knows special moves that
+            can be taught to Helpers.
+            
+            If you get a Brooch, you should pay
+            him a visit and see what he offers.")
+    release
+}
+
 script WaddleDeeArena_EventScript_Cafe
 {
     lock
@@ -840,163 +855,6 @@ script WaddleDeeArena_EventScript_TalkToMagolor
                 else's problem! Hee hee hee!")
         setflag(FLAG_RECEIVED_TM_ROCK_TOMB)
     }
-    release
-}
-
-script WaddleDeeArena_EventScript_MoveTutor
-{
-    lock
-    faceplayer
-    if(!flag(FLAG_BADGE01_GET))
-    {
-        msgbox("I'm a movesmith. I know all sorts of
-                long-forgotten techniques.
-                
-                What I'm looking for\. is a commander
-                of Helpers that can wield my power.
-                
-                Do you have what it takes to spark
-                the fire kindling in my heart?")
-    }
-    else
-    {
-        goto(WaddleDeeArena_EventScript_MoveTutorEnabled)
-    }
-    release   
-}
-
-script WaddleDeeArena_EventScript_MoveTutorEnabled
-{
-    msgbox("Having watched your recent victory\.
-            I feel so invigorated! Wroaaar!
-            
-            I know some special moves that can
-            be taught to your Helpers.
-            
-            For the price of ¥500, I'll train
-            them these new techniques.")
-    message("What do you say?
-            Which move are you interested in?")
-    waitmessage()
-    showmoneybox(0, 0)
-    multichoice(20, 0, MULTI_WADDLE_DEE_MOVELIST, FALSE)
-    copyvar(VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT)
-    switch(var(VAR_RESULT)) {
-	case 0:
-		goto(WaddleDeeArena_EventScript_Move1)
-	case 1:
-		goto(WaddleDeeArena_EventScript_Move2)
-	case 2:
-		goto(WaddleDeeArena_EventScript_Move3)
-    case 3:
-		goto(WaddleDeeArena_EventScript_Move4)
-    case 4:
-		goto(WaddleDeeArena_EventScript_Move5)
-    case MULTI_B_PRESSED:
-        goto(WaddleDeeArena_EventScript_MoveTutorLeave)
-    }
-}
-
-script WaddleDeeArena_EventScript_Move1
-{
-    setvar(VAR_0x8005, MOVE_GRASS_KNOT)
-    special(BufferBattleFrontierTutorMoveName)
-    checkmoney(500)
-    if(!var(VAR_RESULT))
-    {
-        goto(WaddleDeeArena_EventScript_CantAfford)
-    }
-    move_tutor(MOVE_GRASS_KNOT, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
-}
-
-script WaddleDeeArena_EventScript_Move2
-{
-    setvar(VAR_0x8005, MOVE_NIGHT_SHADE)
-    special(BufferBattleFrontierTutorMoveName)
-    checkmoney(500)
-    if(!var(VAR_RESULT))
-    {
-        goto(WaddleDeeArena_EventScript_CantAfford)
-    }
-    move_tutor(MOVE_NIGHT_SHADE, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
-}
-
-script WaddleDeeArena_EventScript_Move3
-{
-    setvar(VAR_0x8005, MOVE_VACUUM_WAVE)
-    special(BufferBattleFrontierTutorMoveName)
-    checkmoney(500)
-    if(!var(VAR_RESULT))
-    {
-        goto(WaddleDeeArena_EventScript_CantAfford)
-    }
-    move_tutor(MOVE_VACUUM_WAVE, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
-}
-
-script WaddleDeeArena_EventScript_Move4
-{
-    setvar(VAR_0x8005, MOVE_SWAGGER)
-    special(BufferBattleFrontierTutorMoveName)
-    checkmoney(500)
-    if(!var(VAR_RESULT))
-    {
-        goto(WaddleDeeArena_EventScript_CantAfford)
-    }
-    move_tutor(MOVE_SWAGGER, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
-}
-
-script WaddleDeeArena_EventScript_Move5
-{
-    setvar(VAR_0x8005, MOVE_TOXIC_SPIKES)
-    special(BufferBattleFrontierTutorMoveName)
-    checkmoney(500)
-    if(!var(VAR_RESULT))
-    {
-        goto(WaddleDeeArena_EventScript_CantAfford)
-    }
-    move_tutor(MOVE_TOXIC_SPIKES, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove)
-}
-
-script WaddleDeeArena_EventScript_CantAfford
-{
-    hidemoneybox()
-    msgbox("You can't afford to teach this move.
-            My skills don't come for free\.")
-    release
-    end
-}
-
-text WaddleDeeArena_Text_TeachMove
-{
-    "So, you want me to teach
-    {STR_VAR_1}?"
-}
-
-text WaddleDeeArena_Text_SelectMon
-{
-    "And which of your Helpers should I
-    teach the move to?"
-}
-
-script WaddleDeeArena_EventScript_TaughtMove
-{
-    showmoneybox(0,0)
-    delay(16)
-    removemoney(500)
-    updatemoneybox()
-    playse(SE_SHOP)
-    msgbox("All done! I hope you and your Helper will
-            make the most of this new technique!")
-	copyvar(VAR_0x8004, VAR_0x8008)
-    hidemoneybox()
-    release
-}
-
-script WaddleDeeArena_EventScript_MoveTutorLeave
-{
-    hidemoneybox()
-    msgbox("Return to me if you ever wish to teach
-            your Helpers some special moves!")
     release
 }
 

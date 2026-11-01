@@ -770,4 +770,4 @@ KirbysHouse_Indoors_BandanaDeeIntroduction::
 	.string "I'm not sure what it's about, but it had\n"
 	.string "the whole town in an uproar!\p"
 	.string "What do you say we check it out\n"
-	.string "tgoether and see what's going on, yeah?$"
+	.string "together and see what's going on, yeah?$"

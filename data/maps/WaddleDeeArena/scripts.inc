@@ -17,2188 +17,1973 @@ WaddleDeeArena_EventScript_Youngster::
 	return
 
 
-WaddleDeeArena_EventScript_Cafe::
+WaddleDeeArena_EventScript_WaddleDee::
 # 23 "data/maps/WaddleDeeArena/scripts.pory"
 	lock
 # 24 "data/maps/WaddleDeeArena/scripts.pory"
 	faceplayer
 # 25 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_WaddleDee_Text_0
+# 33 "data/maps/WaddleDeeArena/scripts.pory"
+	release
+	return
+
+
+WaddleDeeArena_EventScript_Cafe::
+# 38 "data/maps/WaddleDeeArena/scripts.pory"
+	lock
+# 39 "data/maps/WaddleDeeArena/scripts.pory"
+	faceplayer
+# 40 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_unset FLAG_BADGE01_GET, WaddleDeeArena_EventScript_Cafe_2
-# 35 "data/maps/WaddleDeeArena/scripts.pory"
+# 50 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Cafe_Text_1
 WaddleDeeArena_EventScript_Cafe_1:
-# 41 "data/maps/WaddleDeeArena/scripts.pory"
+# 56 "data/maps/WaddleDeeArena/scripts.pory"
 	release
 	return
 
 WaddleDeeArena_EventScript_Cafe_2:
-# 27 "data/maps/WaddleDeeArena/scripts.pory"
+# 42 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Cafe_Text_0
 	goto WaddleDeeArena_EventScript_Cafe_1
 
 
 WaddleDeeArena_EventScript_TalkToCafe::
-# 46 "data/maps/WaddleDeeArena/scripts.pory"
+# 61 "data/maps/WaddleDeeArena/scripts.pory"
 	turnobject LOCALID_WADDLE_CROWD_1, DIR_SOUTH
-# 47 "data/maps/WaddleDeeArena/scripts.pory"
+# 62 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Cafe
 	return
 
 
 WaddleDeeArena_EventScript_Staff::
-# 52 "data/maps/WaddleDeeArena/scripts.pory"
+# 67 "data/maps/WaddleDeeArena/scripts.pory"
 	lock
-# 53 "data/maps/WaddleDeeArena/scripts.pory"
+# 68 "data/maps/WaddleDeeArena/scripts.pory"
 	faceplayer
-# 54 "data/maps/WaddleDeeArena/scripts.pory"
+# 69 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_unset FLAG_BADGE01_GET, WaddleDeeArena_EventScript_Staff_2
-# 66 "data/maps/WaddleDeeArena/scripts.pory"
+# 81 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Staff_Text_1
 WaddleDeeArena_EventScript_Staff_1:
-# 72 "data/maps/WaddleDeeArena/scripts.pory"
+# 87 "data/maps/WaddleDeeArena/scripts.pory"
 	release
 	return
 
 WaddleDeeArena_EventScript_Staff_2:
-# 56 "data/maps/WaddleDeeArena/scripts.pory"
+# 71 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Staff_Text_0
 	goto WaddleDeeArena_EventScript_Staff_1
 
 
 WaddleDeeArena_EventScript_TalkToStaff::
-# 77 "data/maps/WaddleDeeArena/scripts.pory"
+# 92 "data/maps/WaddleDeeArena/scripts.pory"
 	turnobject LOCALID_WADDLE_CROWD_2, DIR_EAST
-# 78 "data/maps/WaddleDeeArena/scripts.pory"
+# 93 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Staff
 	return
 
 
 WaddleDeeArena_EventScript_Hiker::
-# 83 "data/maps/WaddleDeeArena/scripts.pory"
-	lock
-# 84 "data/maps/WaddleDeeArena/scripts.pory"
-	faceplayer
-# 85 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Hiker_Text_0
-# 91 "data/maps/WaddleDeeArena/scripts.pory"
-	release
-	return
-
-
-WaddleDeeArena_EventScript_Gentleman::
-# 96 "data/maps/WaddleDeeArena/scripts.pory"
-	lock
-# 97 "data/maps/WaddleDeeArena/scripts.pory"
-	faceplayer
 # 98 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Gentleman_Text_0
+	lock
+# 99 "data/maps/WaddleDeeArena/scripts.pory"
+	faceplayer
+# 100 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_Hiker_Text_0
 # 106 "data/maps/WaddleDeeArena/scripts.pory"
 	release
 	return
 
 
-WaddleDeeArena_EventScript_Nurse::
+WaddleDeeArena_EventScript_Gentleman::
 # 111 "data/maps/WaddleDeeArena/scripts.pory"
 	lock
 # 112 "data/maps/WaddleDeeArena/scripts.pory"
 	faceplayer
 # 113 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_Gentleman_Text_0
+# 121 "data/maps/WaddleDeeArena/scripts.pory"
+	release
+	return
+
+
+WaddleDeeArena_EventScript_Nurse::
+# 126 "data/maps/WaddleDeeArena/scripts.pory"
+	lock
+# 127 "data/maps/WaddleDeeArena/scripts.pory"
+	faceplayer
+# 128 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Nurse_Text_0, MSGBOX_YESNO
-# 115 "data/maps/WaddleDeeArena/scripts.pory"
+# 130 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne WaddleDeeArena_EventScript_Nurse_2
 WaddleDeeArena_EventScript_Nurse_1:
-# 126 "data/maps/WaddleDeeArena/scripts.pory"
+# 141 "data/maps/WaddleDeeArena/scripts.pory"
 	release
 	return
 
 WaddleDeeArena_EventScript_Nurse_2:
-# 117 "data/maps/WaddleDeeArena/scripts.pory"
+# 132 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 118 "data/maps/WaddleDeeArena/scripts.pory"
+# 133 "data/maps/WaddleDeeArena/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK
-# 119 "data/maps/WaddleDeeArena/scripts.pory"
+# 134 "data/maps/WaddleDeeArena/scripts.pory"
 	playfanfare MUS_HEAL
-# 120 "data/maps/WaddleDeeArena/scripts.pory"
+# 135 "data/maps/WaddleDeeArena/scripts.pory"
 	waitfanfare
-# 121 "data/maps/WaddleDeeArena/scripts.pory"
+# 136 "data/maps/WaddleDeeArena/scripts.pory"
 	special HealPlayerParty
-# 122 "data/maps/WaddleDeeArena/scripts.pory"
+# 137 "data/maps/WaddleDeeArena/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK
-# 123 "data/maps/WaddleDeeArena/scripts.pory"
+# 138 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Nurse_Text_1
 	goto WaddleDeeArena_EventScript_Nurse_1
 
 
 WaddleDeeArena_EventScript_Commentator::
-# 131 "data/maps/WaddleDeeArena/scripts.pory"
-	lock
-# 132 "data/maps/WaddleDeeArena/scripts.pory"
-	faceplayer
-# 133 "data/maps/WaddleDeeArena/scripts.pory"
-	goto_if_set FLAG_BADGE01_GET, WaddleDeeArena_EventScript_Commentator_2
-# 144 "data/maps/WaddleDeeArena/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, WaddleDeeArena_EventScript_Commentator_3
-WaddleDeeArena_EventScript_Commentator_1:
-# 173 "data/maps/WaddleDeeArena/scripts.pory"
-	release
-	return
-
-WaddleDeeArena_EventScript_Commentator_2:
-# 135 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Commentator_Text_0
-	goto WaddleDeeArena_EventScript_Commentator_1
-
-WaddleDeeArena_EventScript_Commentator_3:
 # 146 "data/maps/WaddleDeeArena/scripts.pory"
 	lock
 # 147 "data/maps/WaddleDeeArena/scripts.pory"
 	faceplayer
 # 148 "data/maps/WaddleDeeArena/scripts.pory"
+	goto_if_set FLAG_BADGE01_GET, WaddleDeeArena_EventScript_Commentator_2
+# 159 "data/maps/WaddleDeeArena/scripts.pory"
+	goto_if_unset FLAG_BADGE01_GET, WaddleDeeArena_EventScript_Commentator_3
+WaddleDeeArena_EventScript_Commentator_1:
+# 188 "data/maps/WaddleDeeArena/scripts.pory"
+	release
+	return
+
+WaddleDeeArena_EventScript_Commentator_2:
+# 150 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_Commentator_Text_0
+	goto WaddleDeeArena_EventScript_Commentator_1
+
+WaddleDeeArena_EventScript_Commentator_3:
+# 161 "data/maps/WaddleDeeArena/scripts.pory"
+	lock
+# 162 "data/maps/WaddleDeeArena/scripts.pory"
+	faceplayer
+# 163 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Commentator_Text_1
-# 153 "data/maps/WaddleDeeArena/scripts.pory"
+# 168 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_unset FLAG_GRAND_FINALS_ACTIVE, WaddleDeeArena_EventScript_Commentator_6
-# 157 "data/maps/WaddleDeeArena/scripts.pory"
+# 172 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_GRAND_FINALS_ACTIVE, WaddleDeeArena_EventScript_Commentator_7
 	goto WaddleDeeArena_EventScript_Commentator_1
 
 WaddleDeeArena_EventScript_Commentator_6:
-# 155 "data/maps/WaddleDeeArena/scripts.pory"
+# 170 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_CommentatorChoice
 	goto WaddleDeeArena_EventScript_Commentator_1
 
 WaddleDeeArena_EventScript_Commentator_7:
-# 159 "data/maps/WaddleDeeArena/scripts.pory"
+# 174 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Commentator_Text_2, MSGBOX_YESNO
-# 161 "data/maps/WaddleDeeArena/scripts.pory"
+# 176 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne WaddleDeeArena_EventScript_Commentator_10
-# 166 "data/maps/WaddleDeeArena/scripts.pory"
+# 181 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq WaddleDeeArena_EventScript_Commentator_11
 	goto WaddleDeeArena_EventScript_Commentator_1
 
 WaddleDeeArena_EventScript_Commentator_10:
-# 163 "data/maps/WaddleDeeArena/scripts.pory"
+# 178 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 164 "data/maps/WaddleDeeArena/scripts.pory"
+# 179 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_GrandFinalsPreparation
 	goto WaddleDeeArena_EventScript_Commentator_1
 
 WaddleDeeArena_EventScript_Commentator_11:
-# 168 "data/maps/WaddleDeeArena/scripts.pory"
+# 183 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 169 "data/maps/WaddleDeeArena/scripts.pory"
+# 184 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_CommentatorBye
 	goto WaddleDeeArena_EventScript_Commentator_1
 
 
 WaddleDeeArena_EventScript_GrandFinalsPreparation::
-# 178 "data/maps/WaddleDeeArena/scripts.pory"
+# 193 "data/maps/WaddleDeeArena/scripts.pory"
 	getobjectfacingdirection LOCALID_PLAYER, VAR_TEMP_0
-# 179 "data/maps/WaddleDeeArena/scripts.pory"
+# 194 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_SOUTH
 	goto_if_eq WaddleDeeArena_EventScript_GrandFinalsPreparation_2
-# 185 "data/maps/WaddleDeeArena/scripts.pory"
+# 200 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_WEST
 	goto_if_eq WaddleDeeArena_EventScript_GrandFinalsPreparation_3
-# 191 "data/maps/WaddleDeeArena/scripts.pory"
+# 206 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_EAST
 	goto_if_eq WaddleDeeArena_EventScript_GrandFinalsPreparation_4
 WaddleDeeArena_EventScript_GrandFinalsPreparation_1:
-# 197 "data/maps/WaddleDeeArena/scripts.pory"
+# 212 "data/maps/WaddleDeeArena/scripts.pory"
 	special SpawnCameraObject
-# 198 "data/maps/WaddleDeeArena/scripts.pory"
+# 213 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_CAMERA, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_4
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_5
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_6
-# 201 "data/maps/WaddleDeeArena/scripts.pory"
+# 216 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
-# 202 "data/maps/WaddleDeeArena/scripts.pory"
+# 217 "data/maps/WaddleDeeArena/scripts.pory"
 	special RemoveCameraObject
-# 203 "data/maps/WaddleDeeArena/scripts.pory"
+# 218 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_GrandFinals
 	return
 
 WaddleDeeArena_EventScript_GrandFinalsPreparation_2:
-# 181 "data/maps/WaddleDeeArena/scripts.pory"
+# 196 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0
-# 182 "data/maps/WaddleDeeArena/scripts.pory"
+# 197 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_1
-# 183 "data/maps/WaddleDeeArena/scripts.pory"
+# 198 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 	goto WaddleDeeArena_EventScript_GrandFinalsPreparation_1
 
 WaddleDeeArena_EventScript_GrandFinalsPreparation_3:
-# 187 "data/maps/WaddleDeeArena/scripts.pory"
+# 202 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0
-# 188 "data/maps/WaddleDeeArena/scripts.pory"
+# 203 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_2
-# 189 "data/maps/WaddleDeeArena/scripts.pory"
+# 204 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 	goto WaddleDeeArena_EventScript_GrandFinalsPreparation_1
 
 WaddleDeeArena_EventScript_GrandFinalsPreparation_4:
-# 193 "data/maps/WaddleDeeArena/scripts.pory"
+# 208 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0
-# 194 "data/maps/WaddleDeeArena/scripts.pory"
+# 209 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_3
-# 195 "data/maps/WaddleDeeArena/scripts.pory"
+# 210 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 	goto WaddleDeeArena_EventScript_GrandFinalsPreparation_1
 
 
 WaddleDeeArena_EventScript_CommentatorChoice::
-# 208 "data/maps/WaddleDeeArena/scripts.pory"
+# 223 "data/maps/WaddleDeeArena/scripts.pory"
 	message WaddleDeeArena_EventScript_CommentatorChoice_Text_0
-# 210 "data/maps/WaddleDeeArena/scripts.pory"
+# 225 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmessage
-# 211 "data/maps/WaddleDeeArena/scripts.pory"
+# 226 "data/maps/WaddleDeeArena/scripts.pory"
 	multichoice 20, 6, MULTI_CHALLENGEINFO, FALSE
-# 212 "data/maps/WaddleDeeArena/scripts.pory"
+# 227 "data/maps/WaddleDeeArena/scripts.pory"
 	switch VAR_RESULT
-# 213 "data/maps/WaddleDeeArena/scripts.pory"
+# 228 "data/maps/WaddleDeeArena/scripts.pory"
 	case 0, WaddleDeeArena_EventScript_CommentatorChoice_2
-# 215 "data/maps/WaddleDeeArena/scripts.pory"
+# 230 "data/maps/WaddleDeeArena/scripts.pory"
 	case 1, WaddleDeeArena_EventScript_CommentatorChoice_3
-# 217 "data/maps/WaddleDeeArena/scripts.pory"
+# 232 "data/maps/WaddleDeeArena/scripts.pory"
 	case 2, WaddleDeeArena_EventScript_CommentatorChoice_4
-# 219 "data/maps/WaddleDeeArena/scripts.pory"
+# 234 "data/maps/WaddleDeeArena/scripts.pory"
 	case MULTI_B_PRESSED, WaddleDeeArena_EventScript_CommentatorChoice_5
 	return
 
 WaddleDeeArena_EventScript_CommentatorChoice_2:
-# 214 "data/maps/WaddleDeeArena/scripts.pory"
+# 229 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_BeginChallenge
 	return
 
 WaddleDeeArena_EventScript_CommentatorChoice_3:
-# 216 "data/maps/WaddleDeeArena/scripts.pory"
+# 231 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_CommentatorInfo
 	return
 
 WaddleDeeArena_EventScript_CommentatorChoice_4:
-# 218 "data/maps/WaddleDeeArena/scripts.pory"
+# 233 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_CommentatorBye
 	return
 
 WaddleDeeArena_EventScript_CommentatorChoice_5:
-# 220 "data/maps/WaddleDeeArena/scripts.pory"
+# 235 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_CommentatorBye
 	return
 
 
 WaddleDeeArena_EventScript_CommentatorBye::
-# 226 "data/maps/WaddleDeeArena/scripts.pory"
+# 241 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_GRAND_FINALS_ACTIVE, WaddleDeeArena_EventScript_CommentatorBye_2
-# 233 "data/maps/WaddleDeeArena/scripts.pory"
+# 248 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_CommentatorBye_Text_1
 WaddleDeeArena_EventScript_CommentatorBye_1:
-# 236 "data/maps/WaddleDeeArena/scripts.pory"
+# 251 "data/maps/WaddleDeeArena/scripts.pory"
 	release
 	return
 
 WaddleDeeArena_EventScript_CommentatorBye_2:
-# 228 "data/maps/WaddleDeeArena/scripts.pory"
+# 243 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_CommentatorBye_Text_0
 	goto WaddleDeeArena_EventScript_CommentatorBye_1
 
 
 WaddleDeeArena_EventScript_CommentatorInfo::
-# 241 "data/maps/WaddleDeeArena/scripts.pory"
+# 256 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_CommentatorInfo_Text_0
-# 267 "data/maps/WaddleDeeArena/scripts.pory"
+# 282 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_CommentatorChoice
 	return
 
 
 WaddleDeeArena_EventScript_BeginChallenge::
-# 272 "data/maps/WaddleDeeArena/scripts.pory"
+# 287 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_BeginChallenge_Text_0
-# 274 "data/maps/WaddleDeeArena/scripts.pory"
+# 289 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 275 "data/maps/WaddleDeeArena/scripts.pory"
+# 290 "data/maps/WaddleDeeArena/scripts.pory"
 	setvar VAR_ARENA_HEALS, 1
-# 276 "data/maps/WaddleDeeArena/scripts.pory"
+# 291 "data/maps/WaddleDeeArena/scripts.pory"
 	setvar VAR_ARENA_BATTLES, 0
-# 277 "data/maps/WaddleDeeArena/scripts.pory"
+# 292 "data/maps/WaddleDeeArena/scripts.pory"
 	clearflag FLAG_ARENA_HEALED_THIS_ROUND
-# 278 "data/maps/WaddleDeeArena/scripts.pory"
+# 293 "data/maps/WaddleDeeArena/scripts.pory"
 	getobjectfacingdirection LOCALID_PLAYER, VAR_TEMP_0
-# 279 "data/maps/WaddleDeeArena/scripts.pory"
+# 294 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_SOUTH
 	goto_if_eq WaddleDeeArena_EventScript_BeginChallenge_2
-# 285 "data/maps/WaddleDeeArena/scripts.pory"
+# 300 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_WEST
 	goto_if_eq WaddleDeeArena_EventScript_BeginChallenge_3
-# 291 "data/maps/WaddleDeeArena/scripts.pory"
+# 306 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_TEMP_0, DIR_EAST
 	goto_if_eq WaddleDeeArena_EventScript_BeginChallenge_4
 WaddleDeeArena_EventScript_BeginChallenge_1:
-# 297 "data/maps/WaddleDeeArena/scripts.pory"
-	special SpawnCameraObject
-# 298 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_CAMERA, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_4
-# 299 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_5
-# 300 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_6
-# 301 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 302 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_BeginChallenge_Movement_0
-# 303 "data/maps/WaddleDeeArena/scripts.pory"
-	goto_if_unset FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_BeginChallenge_9
 # 312 "data/maps/WaddleDeeArena/scripts.pory"
+	special SpawnCameraObject
+# 313 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_CAMERA, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_4
+# 314 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_5
+# 315 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_6
+# 316 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 317 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_BeginChallenge_Movement_0
+# 318 "data/maps/WaddleDeeArena/scripts.pory"
+	goto_if_unset FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_BeginChallenge_9
+# 327 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_BeginChallenge_10
 WaddleDeeArena_EventScript_BeginChallenge_8:
-# 321 "data/maps/WaddleDeeArena/scripts.pory"
+# 336 "data/maps/WaddleDeeArena/scripts.pory"
 	playse SE_APPLAUSE
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_BeginChallenge_Movement_1
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_BeginChallenge_Movement_2
-# 324 "data/maps/WaddleDeeArena/scripts.pory"
+# 339 "data/maps/WaddleDeeArena/scripts.pory"
 	delay 60
-# 325 "data/maps/WaddleDeeArena/scripts.pory"
+# 340 "data/maps/WaddleDeeArena/scripts.pory"
 	call WaddleDeeArena_EventScript_Challenger1
 	return
 
 WaddleDeeArena_EventScript_BeginChallenge_2:
-# 281 "data/maps/WaddleDeeArena/scripts.pory"
+# 296 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0
-# 282 "data/maps/WaddleDeeArena/scripts.pory"
+# 297 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_1
-# 283 "data/maps/WaddleDeeArena/scripts.pory"
+# 298 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 	goto WaddleDeeArena_EventScript_BeginChallenge_1
 
 WaddleDeeArena_EventScript_BeginChallenge_3:
-# 287 "data/maps/WaddleDeeArena/scripts.pory"
+# 302 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0
-# 288 "data/maps/WaddleDeeArena/scripts.pory"
+# 303 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_2
-# 289 "data/maps/WaddleDeeArena/scripts.pory"
+# 304 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 	goto WaddleDeeArena_EventScript_BeginChallenge_1
 
 WaddleDeeArena_EventScript_BeginChallenge_4:
-# 293 "data/maps/WaddleDeeArena/scripts.pory"
+# 308 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0
-# 294 "data/maps/WaddleDeeArena/scripts.pory"
+# 309 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_3
-# 295 "data/maps/WaddleDeeArena/scripts.pory"
+# 310 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 	goto WaddleDeeArena_EventScript_BeginChallenge_1
 
 WaddleDeeArena_EventScript_BeginChallenge_9:
-# 305 "data/maps/WaddleDeeArena/scripts.pory"
+# 320 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_BeginChallenge_Text_1
 	goto WaddleDeeArena_EventScript_BeginChallenge_8
 
 WaddleDeeArena_EventScript_BeginChallenge_10:
-# 314 "data/maps/WaddleDeeArena/scripts.pory"
+# 329 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_BeginChallenge_Text_2
 	goto WaddleDeeArena_EventScript_BeginChallenge_8
 
 
 WaddleDeeArena_EventScript_Challenger1::
-# 330 "data/maps/WaddleDeeArena/scripts.pory"
+# 345 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Challenger1_Text_0
-# 331 "data/maps/WaddleDeeArena/scripts.pory"
+# 346 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 332 "data/maps/WaddleDeeArena/scripts.pory"
-	playse SE_APPLAUSE
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger1_Movement_0
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger1_Movement_1
-# 335 "data/maps/WaddleDeeArena/scripts.pory"
-	addobject LOCALID_WADDLE_CHALLENGER_1
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_1, WaddleDeeArena_EventScript_Challenger1_Movement_2
-# 337 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 338 "data/maps/WaddleDeeArena/scripts.pory"
-	delay 30
-# 339 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_1, WaddleDeeArena_EventScript_Challenger1_Movement_3
-# 340 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 341 "data/maps/WaddleDeeArena/scripts.pory"
-	clearflag FLAG_ARENA_HEALED_THIS_ROUND
-# 342 "data/maps/WaddleDeeArena/scripts.pory"
-	goto_if_unset FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_Challenger1_2
 # 347 "data/maps/WaddleDeeArena/scripts.pory"
+	playse SE_APPLAUSE
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger1_Movement_0
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger1_Movement_1
+# 350 "data/maps/WaddleDeeArena/scripts.pory"
+	addobject LOCALID_WADDLE_CHALLENGER_1
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_1, WaddleDeeArena_EventScript_Challenger1_Movement_2
+# 352 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 353 "data/maps/WaddleDeeArena/scripts.pory"
+	delay 30
+# 354 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_1, WaddleDeeArena_EventScript_Challenger1_Movement_3
+# 355 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 356 "data/maps/WaddleDeeArena/scripts.pory"
+	clearflag FLAG_ARENA_HEALED_THIS_ROUND
+# 357 "data/maps/WaddleDeeArena/scripts.pory"
+	goto_if_unset FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_Challenger1_2
+# 362 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_Challenger1_3
 WaddleDeeArena_EventScript_Challenger1_1:
-# 352 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
-# 353 "data/maps/WaddleDeeArena/scripts.pory"
-	setflag FLAG_ARENA_RETRY
-# 354 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_1, WaddleDeeArena_EventScript_Challenger1_Movement_4
-# 355 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_5
-# 356 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 357 "data/maps/WaddleDeeArena/scripts.pory"
-	special RemoveCameraObject
-# 358 "data/maps/WaddleDeeArena/scripts.pory"
-	trainerbattle_no_intro TRAINER_ED, WaddleDeeArena_Text_Challenger1
-# 359 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Challenger1_Text_3
-# 361 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger1_Movement_6
-# 362 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger1_Movement_7
-# 363 "data/maps/WaddleDeeArena/scripts.pory"
-	playse SE_APPLAUSE
-# 364 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
-# 365 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_ARENA_BATTLES, 1
-# 366 "data/maps/WaddleDeeArena/scripts.pory"
-	special SpawnCameraObject
 # 367 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_8
+	closemessage
 # 368 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_1, WaddleDeeArena_EventScript_Challenger1_Movement_9
+	setflag FLAG_ARENA_RETRY
 # 369 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
+	applymovement LOCALID_WADDLE_CHALLENGER_1, WaddleDeeArena_EventScript_Challenger1_Movement_4
 # 370 "data/maps/WaddleDeeArena/scripts.pory"
-	special RemoveCameraObject
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_5
 # 371 "data/maps/WaddleDeeArena/scripts.pory"
-	removeobject LOCALID_WADDLE_CHALLENGER_1
+	waitmovement
 # 372 "data/maps/WaddleDeeArena/scripts.pory"
+	special RemoveCameraObject
+# 373 "data/maps/WaddleDeeArena/scripts.pory"
+	trainerbattle_no_intro TRAINER_ED, WaddleDeeArena_Text_Challenger1
+# 374 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_Challenger1_Text_3
+# 376 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger1_Movement_6
+# 377 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger1_Movement_7
+# 378 "data/maps/WaddleDeeArena/scripts.pory"
+	playse SE_APPLAUSE
+# 379 "data/maps/WaddleDeeArena/scripts.pory"
+	closemessage
+# 380 "data/maps/WaddleDeeArena/scripts.pory"
+	setvar VAR_ARENA_BATTLES, 1
+# 381 "data/maps/WaddleDeeArena/scripts.pory"
+	special SpawnCameraObject
+# 382 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_8
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_1, WaddleDeeArena_EventScript_Challenger1_Movement_9
+# 384 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 385 "data/maps/WaddleDeeArena/scripts.pory"
+	special RemoveCameraObject
+# 386 "data/maps/WaddleDeeArena/scripts.pory"
+	removeobject LOCALID_WADDLE_CHALLENGER_1
+# 387 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	return
 
 WaddleDeeArena_EventScript_Challenger1_2:
-# 344 "data/maps/WaddleDeeArena/scripts.pory"
+# 359 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Challenger1_Text_1
 	goto WaddleDeeArena_EventScript_Challenger1_1
 
 WaddleDeeArena_EventScript_Challenger1_3:
-# 349 "data/maps/WaddleDeeArena/scripts.pory"
+# 364 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Challenger1_Text_2
 	goto WaddleDeeArena_EventScript_Challenger1_1
 
 
 WaddleDeeArena_EventScript_Challenger2::
-# 377 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Challenger2_Text_0
-# 378 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
-# 379 "data/maps/WaddleDeeArena/scripts.pory"
-	playse SE_APPLAUSE
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger2_Movement_0
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger2_Movement_1
-# 382 "data/maps/WaddleDeeArena/scripts.pory"
-	addobject LOCALID_WADDLE_CHALLENGER_2
-# 383 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_2, WaddleDeeArena_EventScript_Challenger1_Movement_2
-# 384 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 385 "data/maps/WaddleDeeArena/scripts.pory"
-	delay 30
-# 386 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_2, WaddleDeeArena_EventScript_Challenger1_Movement_3
-# 387 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 388 "data/maps/WaddleDeeArena/scripts.pory"
-	clearflag FLAG_ARENA_HEALED_THIS_ROUND
-# 389 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Challenger2_Text_1
-# 391 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
 # 392 "data/maps/WaddleDeeArena/scripts.pory"
-	special SpawnCameraObject
+	msgbox WaddleDeeArena_EventScript_Challenger2_Text_0
 # 393 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_2, WaddleDeeArena_EventScript_Challenger1_Movement_4
-# 394 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_5
-# 395 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 396 "data/maps/WaddleDeeArena/scripts.pory"
-	special RemoveCameraObject
-# 397 "data/maps/WaddleDeeArena/scripts.pory"
-	trainerbattle_no_intro TRAINER_GRUNT_SEAFLOOR_CAVERN_4, WaddleDeeArena_Text_Challenger2
-# 398 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Challenger2_Text_2
-# 400 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 401 "data/maps/WaddleDeeArena/scripts.pory"
+# 394 "data/maps/WaddleDeeArena/scripts.pory"
 	playse SE_APPLAUSE
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger2_Movement_2
-# 403 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger2_Movement_3
-# 404 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_ARENA_BATTLES, 2
-# 405 "data/maps/WaddleDeeArena/scripts.pory"
-	special SpawnCameraObject
-# 406 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_8
-# 407 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_2, WaddleDeeArena_EventScript_Challenger1_Movement_9
-# 408 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger2_Movement_0
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger2_Movement_1
+# 397 "data/maps/WaddleDeeArena/scripts.pory"
+	addobject LOCALID_WADDLE_CHALLENGER_2
+# 398 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_2, WaddleDeeArena_EventScript_Challenger1_Movement_2
+# 399 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
+# 400 "data/maps/WaddleDeeArena/scripts.pory"
+	delay 30
+# 401 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_2, WaddleDeeArena_EventScript_Challenger1_Movement_3
+# 402 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 403 "data/maps/WaddleDeeArena/scripts.pory"
+	clearflag FLAG_ARENA_HEALED_THIS_ROUND
+# 404 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_Challenger2_Text_1
+# 406 "data/maps/WaddleDeeArena/scripts.pory"
+	closemessage
+# 407 "data/maps/WaddleDeeArena/scripts.pory"
+	special SpawnCameraObject
+# 408 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_2, WaddleDeeArena_EventScript_Challenger1_Movement_4
 # 409 "data/maps/WaddleDeeArena/scripts.pory"
-	special RemoveCameraObject
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_5
 # 410 "data/maps/WaddleDeeArena/scripts.pory"
-	removeobject LOCALID_WADDLE_CHALLENGER_2
+	waitmovement
 # 411 "data/maps/WaddleDeeArena/scripts.pory"
+	special RemoveCameraObject
+# 412 "data/maps/WaddleDeeArena/scripts.pory"
+	trainerbattle_no_intro TRAINER_GRUNT_SEAFLOOR_CAVERN_4, WaddleDeeArena_Text_Challenger2
+# 413 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_Challenger2_Text_2
+# 415 "data/maps/WaddleDeeArena/scripts.pory"
+	closemessage
+# 416 "data/maps/WaddleDeeArena/scripts.pory"
+	playse SE_APPLAUSE
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger2_Movement_2
+# 418 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger2_Movement_3
+# 419 "data/maps/WaddleDeeArena/scripts.pory"
+	setvar VAR_ARENA_BATTLES, 2
+# 420 "data/maps/WaddleDeeArena/scripts.pory"
+	special SpawnCameraObject
+# 421 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_8
+# 422 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_2, WaddleDeeArena_EventScript_Challenger1_Movement_9
+# 423 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 424 "data/maps/WaddleDeeArena/scripts.pory"
+	special RemoveCameraObject
+# 425 "data/maps/WaddleDeeArena/scripts.pory"
+	removeobject LOCALID_WADDLE_CHALLENGER_2
+# 426 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	return
 
 
 WaddleDeeArena_EventScript_Challenger3::
-# 416 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Challenger3_Text_0
-# 417 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
-# 418 "data/maps/WaddleDeeArena/scripts.pory"
-	playse SE_APPLAUSE
-# 419 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger3_Movement_0
-# 420 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger3_Movement_1
-# 421 "data/maps/WaddleDeeArena/scripts.pory"
-	addobject LOCALID_WADDLE_CHALLENGER_3
-# 422 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_3, WaddleDeeArena_EventScript_Challenger1_Movement_2
-# 423 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 424 "data/maps/WaddleDeeArena/scripts.pory"
-	delay 30
-# 425 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_3, WaddleDeeArena_EventScript_Challenger1_Movement_3
-# 426 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 427 "data/maps/WaddleDeeArena/scripts.pory"
-	clearflag FLAG_ARENA_HEALED_THIS_ROUND
-# 428 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Challenger3_Text_1
-# 430 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
 # 431 "data/maps/WaddleDeeArena/scripts.pory"
-	special SpawnCameraObject
+	msgbox WaddleDeeArena_EventScript_Challenger3_Text_0
 # 432 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_3, WaddleDeeArena_EventScript_Challenger1_Movement_4
-# 433 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_5
-# 434 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 435 "data/maps/WaddleDeeArena/scripts.pory"
-	special RemoveCameraObject
-# 436 "data/maps/WaddleDeeArena/scripts.pory"
-	trainerbattle_no_intro TRAINER_DECLAN, WaddleDeeArena_Text_Challenger3
-# 437 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_Challenger3_Text_2
-# 439 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 440 "data/maps/WaddleDeeArena/scripts.pory"
-	clearflag FLAG_ARENA_RETRY
-# 441 "data/maps/WaddleDeeArena/scripts.pory"
+# 433 "data/maps/WaddleDeeArena/scripts.pory"
 	playse SE_APPLAUSE
+# 434 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger3_Movement_0
+# 435 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger3_Movement_1
+# 436 "data/maps/WaddleDeeArena/scripts.pory"
+	addobject LOCALID_WADDLE_CHALLENGER_3
+# 437 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_3, WaddleDeeArena_EventScript_Challenger1_Movement_2
+# 438 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 439 "data/maps/WaddleDeeArena/scripts.pory"
+	delay 30
+# 440 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_3, WaddleDeeArena_EventScript_Challenger1_Movement_3
+# 441 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
 # 442 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger3_Movement_2
+	clearflag FLAG_ARENA_HEALED_THIS_ROUND
 # 443 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger3_Movement_3
-# 444 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_ARENA_BATTLES, 3
+	msgbox WaddleDeeArena_EventScript_Challenger3_Text_1
 # 445 "data/maps/WaddleDeeArena/scripts.pory"
-	setflag FLAG_GRAND_FINALS_ACTIVE
+	closemessage
 # 446 "data/maps/WaddleDeeArena/scripts.pory"
 	special SpawnCameraObject
 # 447 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_8
+	applymovement LOCALID_WADDLE_CHALLENGER_3, WaddleDeeArena_EventScript_Challenger1_Movement_4
 # 448 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CHALLENGER_3, WaddleDeeArena_EventScript_Challenger1_Movement_9
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_5
 # 449 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
 # 450 "data/maps/WaddleDeeArena/scripts.pory"
 	special RemoveCameraObject
 # 451 "data/maps/WaddleDeeArena/scripts.pory"
-	removeobject LOCALID_WADDLE_CHALLENGER_3
+	trainerbattle_no_intro TRAINER_DECLAN, WaddleDeeArena_Text_Challenger3
 # 452 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_Challenger3_Text_2
+# 454 "data/maps/WaddleDeeArena/scripts.pory"
+	closemessage
+# 455 "data/maps/WaddleDeeArena/scripts.pory"
+	clearflag FLAG_ARENA_RETRY
+# 456 "data/maps/WaddleDeeArena/scripts.pory"
+	playse SE_APPLAUSE
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_Challenger3_Movement_2
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_Challenger3_Movement_3
+# 459 "data/maps/WaddleDeeArena/scripts.pory"
+	setvar VAR_ARENA_BATTLES, 3
+# 460 "data/maps/WaddleDeeArena/scripts.pory"
+	setflag FLAG_GRAND_FINALS_ACTIVE
+# 461 "data/maps/WaddleDeeArena/scripts.pory"
+	special SpawnCameraObject
+# 462 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_Challenger1_Movement_8
+# 463 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CHALLENGER_3, WaddleDeeArena_EventScript_Challenger1_Movement_9
+# 464 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 465 "data/maps/WaddleDeeArena/scripts.pory"
+	special RemoveCameraObject
+# 466 "data/maps/WaddleDeeArena/scripts.pory"
+	removeobject LOCALID_WADDLE_CHALLENGER_3
+# 467 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Challenger3_Text_3
-# 468 "data/maps/WaddleDeeArena/scripts.pory"
+# 483 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	return
 
 
 WaddleDeeArena_EventScript_GrandFinals::
-# 473 "data/maps/WaddleDeeArena/scripts.pory"
+# 488 "data/maps/WaddleDeeArena/scripts.pory"
 	fadeoutbgm 1
-# 474 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_BeginChallenge_Movement_0
-# 475 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 476 "data/maps/WaddleDeeArena/scripts.pory"
-	goto_if_unset FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_GrandFinals_2
 # 489 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_BeginChallenge_Movement_0
+# 490 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 491 "data/maps/WaddleDeeArena/scripts.pory"
+	goto_if_unset FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_GrandFinals_2
+# 504 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_GrandFinals_3
 WaddleDeeArena_EventScript_GrandFinals_1:
-# 502 "data/maps/WaddleDeeArena/scripts.pory"
+# 517 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 503 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinals_Movement_0
-# 504 "data/maps/WaddleDeeArena/scripts.pory"
-	playse SE_APPLAUSE
-# 505 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_GrandFinals_Movement_1
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_GrandFinals_Movement_2
-# 507 "data/maps/WaddleDeeArena/scripts.pory"
-	delay 60
-# 508 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_2
 # 518 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinals_Movement_0
 # 519 "data/maps/WaddleDeeArena/scripts.pory"
 	playse SE_APPLAUSE
 # 520 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_GrandFinals_Movement_3
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_GrandFinals_Movement_1
 # 521 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_GrandFinals_Movement_4
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_GrandFinals_Movement_2
 # 522 "data/maps/WaddleDeeArena/scripts.pory"
-	addobject LOCALID_ARENA_MAGOLOR
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_GrandFinals_Movement_5
-# 524 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 525 "data/maps/WaddleDeeArena/scripts.pory"
 	delay 60
-# 526 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_Challenger1_Movement_3
-# 527 "data/maps/WaddleDeeArena/scripts.pory"
+# 523 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_2
+# 533 "data/maps/WaddleDeeArena/scripts.pory"
+	closemessage
+# 534 "data/maps/WaddleDeeArena/scripts.pory"
+	playse SE_APPLAUSE
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_GrandFinals_Movement_3
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_GrandFinals_Movement_4
+# 537 "data/maps/WaddleDeeArena/scripts.pory"
+	addobject LOCALID_ARENA_MAGOLOR
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_GrandFinals_Movement_5
+# 539 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
-# 528 "data/maps/WaddleDeeArena/scripts.pory"
+# 540 "data/maps/WaddleDeeArena/scripts.pory"
+	delay 60
+# 541 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_Challenger1_Movement_3
+# 542 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 543 "data/maps/WaddleDeeArena/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, FALSE
-# 529 "data/maps/WaddleDeeArena/scripts.pory"
+# 544 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_unset FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_GrandFinals_7
 WaddleDeeArena_EventScript_GrandFinals_6:
-# 548 "data/maps/WaddleDeeArena/scripts.pory"
+# 563 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_ARENA_RETRY, WaddleDeeArena_EventScript_GrandFinals_10
 WaddleDeeArena_EventScript_GrandFinals_9:
-# 568 "data/maps/WaddleDeeArena/scripts.pory"
+# 583 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 569 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinals_Movement_6
-# 570 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_5
-# 574 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
-# 575 "data/maps/WaddleDeeArena/scripts.pory"
-	setflag FLAG_ARENA_RETRY
-# 576 "data/maps/WaddleDeeArena/scripts.pory"
-	special SpawnCameraObject
-# 577 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_GrandFinals_Movement_7
-# 578 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinals_Movement_8
-# 579 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 580 "data/maps/WaddleDeeArena/scripts.pory"
-	special RemoveCameraObject
-# 581 "data/maps/WaddleDeeArena/scripts.pory"
-	switch VAR_STARTER_MON
-# 582 "data/maps/WaddleDeeArena/scripts.pory"
-	case 0, WaddleDeeArena_EventScript_GrandFinals_14
 # 584 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinals_Movement_6
+# 585 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_5
+# 589 "data/maps/WaddleDeeArena/scripts.pory"
+	closemessage
+# 590 "data/maps/WaddleDeeArena/scripts.pory"
+	setflag FLAG_ARENA_RETRY
+# 591 "data/maps/WaddleDeeArena/scripts.pory"
+	special SpawnCameraObject
+# 592 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_GrandFinals_Movement_7
+# 593 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinals_Movement_8
+# 594 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 595 "data/maps/WaddleDeeArena/scripts.pory"
+	special RemoveCameraObject
+# 596 "data/maps/WaddleDeeArena/scripts.pory"
+	switch VAR_STARTER_MON
+# 597 "data/maps/WaddleDeeArena/scripts.pory"
+	case 0, WaddleDeeArena_EventScript_GrandFinals_14
+# 599 "data/maps/WaddleDeeArena/scripts.pory"
 	case 1, WaddleDeeArena_EventScript_GrandFinals_15
-# 586 "data/maps/WaddleDeeArena/scripts.pory"
+# 601 "data/maps/WaddleDeeArena/scripts.pory"
 	case 2, WaddleDeeArena_EventScript_GrandFinals_16
 WaddleDeeArena_EventScript_GrandFinals_12:
-# 590 "data/maps/WaddleDeeArena/scripts.pory"
-	fadeoutbgm 1
-# 591 "data/maps/WaddleDeeArena/scripts.pory"
-	delay 60
-# 592 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_6
-# 597 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
-# 598 "data/maps/WaddleDeeArena/scripts.pory"
-	playbgm MUS_B_FRONTIER, TRUE
-# 599 "data/maps/WaddleDeeArena/scripts.pory"
-	playse SE_APPLAUSE
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_GrandFinals_Movement_9
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_GrandFinals_Movement_10
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinals_Movement_11
-# 603 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 604 "data/maps/WaddleDeeArena/scripts.pory"
-	message WaddleDeeArena_EventScript_GrandFinals_Text_7
 # 605 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmessage
+	fadeoutbgm 1
 # 606 "data/maps/WaddleDeeArena/scripts.pory"
 	delay 60
 # 607 "data/maps/WaddleDeeArena/scripts.pory"
-	closemessage
-# 608 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_GrandFinals_Movement_12
-# 609 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
-# 610 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_8
+	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_6
 # 612 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
 # 613 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_GrandFinals_Movement_13
+	playbgm MUS_B_FRONTIER, TRUE
 # 614 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
+	playse SE_APPLAUSE
 # 615 "data/maps/WaddleDeeArena/scripts.pory"
-	setobjectxyperm LOCALID_ARENA_MAGOLOR, 9, 18
+	applymovement LOCALID_WADDLE_CROWD_1, WaddleDeeArena_EventScript_GrandFinals_Movement_9
 # 616 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmovement
+	applymovement LOCALID_WADDLE_CROWD_2, WaddleDeeArena_EventScript_GrandFinals_Movement_10
 # 617 "data/maps/WaddleDeeArena/scripts.pory"
-	clearflag FLAG_ARENA_HEALED_THIS_ROUND
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinals_Movement_11
 # 618 "data/maps/WaddleDeeArena/scripts.pory"
-	clearflag FLAG_ARENA_RETRY
-# 619 "data/maps/WaddleDeeArena/scripts.pory"
-	clearflag FLAG_GRAND_FINALS_ACTIVE
-# 620 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_ARENA_BATTLES, 0
-# 621 "data/maps/WaddleDeeArena/scripts.pory"
-	special SpawnCameraObject
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinals_Movement_14
-# 623 "data/maps/WaddleDeeArena/scripts.pory"
-	delay 60
-# 624 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_CAMERA, WaddleDeeArena_EventScript_GrandFinals_Movement_15
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
-	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinals_Movement_16
-# 626 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
+# 619 "data/maps/WaddleDeeArena/scripts.pory"
+	message WaddleDeeArena_EventScript_GrandFinals_Text_7
+# 620 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmessage
+# 621 "data/maps/WaddleDeeArena/scripts.pory"
+	delay 60
+# 622 "data/maps/WaddleDeeArena/scripts.pory"
+	closemessage
+# 623 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_GrandFinals_Movement_12
+# 624 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 625 "data/maps/WaddleDeeArena/scripts.pory"
+	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_8
 # 627 "data/maps/WaddleDeeArena/scripts.pory"
-	special RemoveCameraObject
+	closemessage
 # 628 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_MAGOLOR, WaddleDeeArena_EventScript_GrandFinals_Movement_13
+# 629 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 630 "data/maps/WaddleDeeArena/scripts.pory"
+	setobjectxyperm LOCALID_ARENA_MAGOLOR, 9, 18
+# 631 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 632 "data/maps/WaddleDeeArena/scripts.pory"
+	clearflag FLAG_ARENA_HEALED_THIS_ROUND
+# 633 "data/maps/WaddleDeeArena/scripts.pory"
+	clearflag FLAG_ARENA_RETRY
+# 634 "data/maps/WaddleDeeArena/scripts.pory"
+	clearflag FLAG_GRAND_FINALS_ACTIVE
+# 635 "data/maps/WaddleDeeArena/scripts.pory"
+	setvar VAR_ARENA_BATTLES, 0
+# 636 "data/maps/WaddleDeeArena/scripts.pory"
+	special SpawnCameraObject
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_GrandFinals_Movement_14
+# 638 "data/maps/WaddleDeeArena/scripts.pory"
+	delay 60
+# 639 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_CAMERA, WaddleDeeArena_EventScript_GrandFinals_Movement_15
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
+	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinals_Movement_16
+# 641 "data/maps/WaddleDeeArena/scripts.pory"
+	waitmovement
+# 642 "data/maps/WaddleDeeArena/scripts.pory"
+	special RemoveCameraObject
+# 643 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Victory
 	return
 
 WaddleDeeArena_EventScript_GrandFinals_2:
-# 478 "data/maps/WaddleDeeArena/scripts.pory"
+# 493 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_0
 	goto WaddleDeeArena_EventScript_GrandFinals_1
 
 WaddleDeeArena_EventScript_GrandFinals_3:
-# 491 "data/maps/WaddleDeeArena/scripts.pory"
+# 506 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_1
 	goto WaddleDeeArena_EventScript_GrandFinals_1
 
 WaddleDeeArena_EventScript_GrandFinals_7:
-# 531 "data/maps/WaddleDeeArena/scripts.pory"
+# 546 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_3
 	goto WaddleDeeArena_EventScript_GrandFinals_6
 
 WaddleDeeArena_EventScript_GrandFinals_10:
-# 550 "data/maps/WaddleDeeArena/scripts.pory"
+# 565 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_GrandFinals_Text_4
 	goto WaddleDeeArena_EventScript_GrandFinals_9
 
 WaddleDeeArena_EventScript_GrandFinals_14:
-# 583 "data/maps/WaddleDeeArena/scripts.pory"
+# 598 "data/maps/WaddleDeeArena/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, WaddleDeeArena_Text_Magolor
 	goto WaddleDeeArena_EventScript_GrandFinals_12
 
 WaddleDeeArena_EventScript_GrandFinals_15:
-# 585 "data/maps/WaddleDeeArena/scripts.pory"
+# 600 "data/maps/WaddleDeeArena/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_WEATHER_INST_1, WaddleDeeArena_Text_Magolor
 	goto WaddleDeeArena_EventScript_GrandFinals_12
 
 WaddleDeeArena_EventScript_GrandFinals_16:
-# 587 "data/maps/WaddleDeeArena/scripts.pory"
+# 602 "data/maps/WaddleDeeArena/scripts.pory"
 	trainerbattle_no_intro TRAINER_GRUNT_WEATHER_INST_2, WaddleDeeArena_Text_Magolor
 	goto WaddleDeeArena_EventScript_GrandFinals_12
 
 
 WaddleDeeArena_EventScript_Victory::
-# 633 "data/maps/WaddleDeeArena/scripts.pory"
+# 648 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Victory_Text_0
-# 638 "data/maps/WaddleDeeArena/scripts.pory"
+# 653 "data/maps/WaddleDeeArena/scripts.pory"
 	message WaddleDeeArena_EventScript_Victory_Text_1
-# 640 "data/maps/WaddleDeeArena/scripts.pory"
+# 655 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmessage
-# 641 "data/maps/WaddleDeeArena/scripts.pory"
+# 656 "data/maps/WaddleDeeArena/scripts.pory"
 	call Common_EventScript_PlayGymBadgeFanfare
-# 642 "data/maps/WaddleDeeArena/scripts.pory"
+# 657 "data/maps/WaddleDeeArena/scripts.pory"
 	setflag FLAG_BADGE01_GET
-# 643 "data/maps/WaddleDeeArena/scripts.pory"
+# 658 "data/maps/WaddleDeeArena/scripts.pory"
 	clearflag FLAG_HIDE_WADDLE_DEE_ARENA_PARTICIPANTS
-# 644 "data/maps/WaddleDeeArena/scripts.pory"
+# 659 "data/maps/WaddleDeeArena/scripts.pory"
 	setvar VAR_WADDLE_DEE_TOWN_STATE, 2
-# 645 "data/maps/WaddleDeeArena/scripts.pory"
+# 660 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_Victory_Text_2
-# 650 "data/maps/WaddleDeeArena/scripts.pory"
+# 665 "data/maps/WaddleDeeArena/scripts.pory"
 	release
 	return
 
 
 WaddleDeeArena_EventScript_Break::
-# 655 "data/maps/WaddleDeeArena/scripts.pory"
+# 670 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 1
 	goto_if_eq WaddleDeeArena_EventScript_Break_2
-# 660 "data/maps/WaddleDeeArena/scripts.pory"
+# 675 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 2
 	goto_if_eq WaddleDeeArena_EventScript_Break_3
-# 665 "data/maps/WaddleDeeArena/scripts.pory"
+# 680 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 3
 	goto_if_eq WaddleDeeArena_EventScript_Break_4
 WaddleDeeArena_EventScript_Break_1:
-# 670 "data/maps/WaddleDeeArena/scripts.pory"
+# 685 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmessage
-# 671 "data/maps/WaddleDeeArena/scripts.pory"
-	multichoice 20, 6, MULTI_GO_ON_REST_RETIRE, 0
-# 672 "data/maps/WaddleDeeArena/scripts.pory"
-	switch VAR_RESULT
-# 673 "data/maps/WaddleDeeArena/scripts.pory"
-	case 0, WaddleDeeArena_EventScript_Break_9
 # 686 "data/maps/WaddleDeeArena/scripts.pory"
-	case 1, WaddleDeeArena_EventScript_Break_10
+	multichoice 20, 6, MULTI_GO_ON_REST_RETIRE, 0
+# 687 "data/maps/WaddleDeeArena/scripts.pory"
+	switch VAR_RESULT
 # 688 "data/maps/WaddleDeeArena/scripts.pory"
+	case 0, WaddleDeeArena_EventScript_Break_9
+# 701 "data/maps/WaddleDeeArena/scripts.pory"
+	case 1, WaddleDeeArena_EventScript_Break_10
+# 703 "data/maps/WaddleDeeArena/scripts.pory"
 	case 2, WaddleDeeArena_EventScript_Break_11
-# 690 "data/maps/WaddleDeeArena/scripts.pory"
+# 705 "data/maps/WaddleDeeArena/scripts.pory"
 	case MULTI_B_PRESSED, WaddleDeeArena_EventScript_Break_12
 	return
 
 WaddleDeeArena_EventScript_Break_2:
-# 657 "data/maps/WaddleDeeArena/scripts.pory"
+# 672 "data/maps/WaddleDeeArena/scripts.pory"
 	message WaddleDeeArena_EventScript_Break_Text_0
 	goto WaddleDeeArena_EventScript_Break_1
 
 WaddleDeeArena_EventScript_Break_3:
-# 662 "data/maps/WaddleDeeArena/scripts.pory"
+# 677 "data/maps/WaddleDeeArena/scripts.pory"
 	message WaddleDeeArena_EventScript_Break_Text_1
 	goto WaddleDeeArena_EventScript_Break_1
 
 WaddleDeeArena_EventScript_Break_4:
-# 667 "data/maps/WaddleDeeArena/scripts.pory"
+# 682 "data/maps/WaddleDeeArena/scripts.pory"
 	message WaddleDeeArena_EventScript_Break_Text_2
 	goto WaddleDeeArena_EventScript_Break_1
 
 WaddleDeeArena_EventScript_Break_9:
-# 674 "data/maps/WaddleDeeArena/scripts.pory"
+# 689 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 1
 	goto_if_eq WaddleDeeArena_EventScript_Break_13
-# 678 "data/maps/WaddleDeeArena/scripts.pory"
+# 693 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 2
 	goto_if_eq WaddleDeeArena_EventScript_Break_14
-# 682 "data/maps/WaddleDeeArena/scripts.pory"
+# 697 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_ARENA_BATTLES, 3
 	goto_if_eq WaddleDeeArena_EventScript_Break_15
 	return
 
 WaddleDeeArena_EventScript_Break_10:
-# 687 "data/maps/WaddleDeeArena/scripts.pory"
+# 702 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_ArenaHeal
 	return
 
 WaddleDeeArena_EventScript_Break_11:
-# 689 "data/maps/WaddleDeeArena/scripts.pory"
+# 704 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_ForfeitConfirmation
 	return
 
 WaddleDeeArena_EventScript_Break_12:
-# 691 "data/maps/WaddleDeeArena/scripts.pory"
+# 706 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_ForfeitConfirmation
 	return
 
 WaddleDeeArena_EventScript_Break_13:
-# 676 "data/maps/WaddleDeeArena/scripts.pory"
+# 691 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Challenger2
 	return
 
 WaddleDeeArena_EventScript_Break_14:
-# 680 "data/maps/WaddleDeeArena/scripts.pory"
+# 695 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Challenger3
 	return
 
 WaddleDeeArena_EventScript_Break_15:
-# 684 "data/maps/WaddleDeeArena/scripts.pory"
+# 699 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_GrandFinals
 	return
 
 
 WaddleDeeArena_EventScript_ArenaHeal::
-# 697 "data/maps/WaddleDeeArena/scripts.pory"
+# 712 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_unset FLAG_GRAND_FINALS_ACTIVE, WaddleDeeArena_EventScript_ArenaHeal_1
-# 739 "data/maps/WaddleDeeArena/scripts.pory"
+# 754 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_GRAND_FINALS_ACTIVE, WaddleDeeArena_EventScript_ArenaHeal_2
 	return
 
 WaddleDeeArena_EventScript_ArenaHeal_1:
-# 699 "data/maps/WaddleDeeArena/scripts.pory"
+# 714 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_unset FLAG_ARENA_HEALED_THIS_ROUND, WaddleDeeArena_EventScript_ArenaHeal_5
-# 731 "data/maps/WaddleDeeArena/scripts.pory"
+# 746 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_ARENA_HEALED_THIS_ROUND, WaddleDeeArena_EventScript_ArenaHeal_6
 	return
 
 WaddleDeeArena_EventScript_ArenaHeal_2:
-# 741 "data/maps/WaddleDeeArena/scripts.pory"
+# 756 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_ArenaHeal_Text_4
-# 743 "data/maps/WaddleDeeArena/scripts.pory"
+# 758 "data/maps/WaddleDeeArena/scripts.pory"
 	special HealPlayerParty
-# 744 "data/maps/WaddleDeeArena/scripts.pory"
+# 759 "data/maps/WaddleDeeArena/scripts.pory"
 	playse SE_USE_ITEM
-# 745 "data/maps/WaddleDeeArena/scripts.pory"
+# 760 "data/maps/WaddleDeeArena/scripts.pory"
 	message WaddleDeeArena_EventScript_ArenaHeal_Text_1
-# 746 "data/maps/WaddleDeeArena/scripts.pory"
+# 761 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmessage
-# 747 "data/maps/WaddleDeeArena/scripts.pory"
+# 762 "data/maps/WaddleDeeArena/scripts.pory"
 	delay 60
-# 748 "data/maps/WaddleDeeArena/scripts.pory"
+# 763 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	return
 
 WaddleDeeArena_EventScript_ArenaHeal_5:
-# 701 "data/maps/WaddleDeeArena/scripts.pory"
+# 716 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_ARENA_HEALS, 0
 	goto_if_gt WaddleDeeArena_EventScript_ArenaHeal_9
-# 723 "data/maps/WaddleDeeArena/scripts.pory"
+# 738 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_ArenaHeal_Text_2
-# 728 "data/maps/WaddleDeeArena/scripts.pory"
+# 743 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	return
 
 WaddleDeeArena_EventScript_ArenaHeal_6:
-# 733 "data/maps/WaddleDeeArena/scripts.pory"
+# 748 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_ArenaHeal_Text_3
-# 736 "data/maps/WaddleDeeArena/scripts.pory"
+# 751 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	return
 
 WaddleDeeArena_EventScript_ArenaHeal_9:
-# 703 "data/maps/WaddleDeeArena/scripts.pory"
+# 718 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_ArenaHeal_Text_0, MSGBOX_YESNO
-# 705 "data/maps/WaddleDeeArena/scripts.pory"
+# 720 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_ne WaddleDeeArena_EventScript_ArenaHeal_13
 WaddleDeeArena_EventScript_ArenaHeal_12:
-# 716 "data/maps/WaddleDeeArena/scripts.pory"
+# 731 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq WaddleDeeArena_EventScript_ArenaHeal_15
 	return
 
 WaddleDeeArena_EventScript_ArenaHeal_13:
-# 707 "data/maps/WaddleDeeArena/scripts.pory"
+# 722 "data/maps/WaddleDeeArena/scripts.pory"
 	special HealPlayerParty
-# 708 "data/maps/WaddleDeeArena/scripts.pory"
+# 723 "data/maps/WaddleDeeArena/scripts.pory"
 	playse SE_USE_ITEM
-# 709 "data/maps/WaddleDeeArena/scripts.pory"
+# 724 "data/maps/WaddleDeeArena/scripts.pory"
 	subvar VAR_ARENA_HEALS, 1
-# 710 "data/maps/WaddleDeeArena/scripts.pory"
+# 725 "data/maps/WaddleDeeArena/scripts.pory"
 	setflag FLAG_ARENA_HEALED_THIS_ROUND
-# 711 "data/maps/WaddleDeeArena/scripts.pory"
+# 726 "data/maps/WaddleDeeArena/scripts.pory"
 	message WaddleDeeArena_EventScript_ArenaHeal_Text_1
-# 712 "data/maps/WaddleDeeArena/scripts.pory"
+# 727 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmessage
-# 713 "data/maps/WaddleDeeArena/scripts.pory"
+# 728 "data/maps/WaddleDeeArena/scripts.pory"
 	delay 60
-# 714 "data/maps/WaddleDeeArena/scripts.pory"
+# 729 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	goto WaddleDeeArena_EventScript_ArenaHeal_12
 
 WaddleDeeArena_EventScript_ArenaHeal_15:
-# 718 "data/maps/WaddleDeeArena/scripts.pory"
+# 733 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	return
 
 
 WaddleDeeArena_EventScript_ForfeitConfirmation::
-# 754 "data/maps/WaddleDeeArena/scripts.pory"
+# 769 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_unset FLAG_GRAND_FINALS_ACTIVE, WaddleDeeArena_EventScript_ForfeitConfirmation_1
-# 784 "data/maps/WaddleDeeArena/scripts.pory"
+# 799 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_set FLAG_GRAND_FINALS_ACTIVE, WaddleDeeArena_EventScript_ForfeitConfirmation_2
 	return
 
 WaddleDeeArena_EventScript_ForfeitConfirmation_1:
-# 756 "data/maps/WaddleDeeArena/scripts.pory"
+# 771 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_ForfeitConfirmation_Text_0
-# 761 "data/maps/WaddleDeeArena/scripts.pory"
+# 776 "data/maps/WaddleDeeArena/scripts.pory"
 	message WaddleDeeArena_EventScript_ForfeitConfirmation_Text_1
-# 763 "data/maps/WaddleDeeArena/scripts.pory"
+# 778 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmessage
-# 764 "data/maps/WaddleDeeArena/scripts.pory"
+# 779 "data/maps/WaddleDeeArena/scripts.pory"
 	dynmultichoice 20, 8, FALSE, 2, 0, DYN_MULTICHOICE_CB_NONE, WaddleDeeArena_Text_ToughItOut, WaddleDeeArena_Text_AcceptDefeat
-# 765 "data/maps/WaddleDeeArena/scripts.pory"
+# 780 "data/maps/WaddleDeeArena/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq WaddleDeeArena_EventScript_ForfeitConfirmation_5
-# 781 "data/maps/WaddleDeeArena/scripts.pory"
+# 796 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_Break
 	return
 
 WaddleDeeArena_EventScript_ForfeitConfirmation_2:
-# 786 "data/maps/WaddleDeeArena/scripts.pory"
+# 801 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_ForfeitConfirmation_Text_3
-# 788 "data/maps/WaddleDeeArena/scripts.pory"
+# 803 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 789 "data/maps/WaddleDeeArena/scripts.pory"
+# 804 "data/maps/WaddleDeeArena/scripts.pory"
 	special SpawnCameraObject
-# 790 "data/maps/WaddleDeeArena/scripts.pory"
+# 805 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_ForfeitConfirmation_Movement_0
-# 791 "data/maps/WaddleDeeArena/scripts.pory"
+# 806 "data/maps/WaddleDeeArena/scripts.pory"
 	delay 60
-# 792 "data/maps/WaddleDeeArena/scripts.pory"
+# 807 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_CAMERA, WaddleDeeArena_EventScript_GrandFinals_Movement_15
-# 793 "data/maps/WaddleDeeArena/scripts.pory"
+# 808 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinals_Movement_16
-# 794 "data/maps/WaddleDeeArena/scripts.pory"
+# 809 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
-# 795 "data/maps/WaddleDeeArena/scripts.pory"
+# 810 "data/maps/WaddleDeeArena/scripts.pory"
 	special RemoveCameraObject
-# 796 "data/maps/WaddleDeeArena/scripts.pory"
+# 811 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_CommentatorBye
-# 797 "data/maps/WaddleDeeArena/scripts.pory"
+# 812 "data/maps/WaddleDeeArena/scripts.pory"
 	release
 	return
 
 WaddleDeeArena_EventScript_ForfeitConfirmation_5:
-# 767 "data/maps/WaddleDeeArena/scripts.pory"
+# 782 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_ForfeitConfirmation_Text_2
-# 769 "data/maps/WaddleDeeArena/scripts.pory"
+# 784 "data/maps/WaddleDeeArena/scripts.pory"
 	closemessage
-# 770 "data/maps/WaddleDeeArena/scripts.pory"
+# 785 "data/maps/WaddleDeeArena/scripts.pory"
 	special SpawnCameraObject
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_PLAYER, WaddleDeeArena_EventScript_ForfeitConfirmation_Movement_0
-# 772 "data/maps/WaddleDeeArena/scripts.pory"
+# 787 "data/maps/WaddleDeeArena/scripts.pory"
 	delay 60
-# 773 "data/maps/WaddleDeeArena/scripts.pory"
+# 788 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_CAMERA, WaddleDeeArena_EventScript_GrandFinals_Movement_15
-# 774 "data/maps/WaddleDeeArena/scripts.pory"
+# 789 "data/maps/WaddleDeeArena/scripts.pory"
 	applymovement LOCALID_ARENA_COMMENTATOR, WaddleDeeArena_EventScript_GrandFinals_Movement_16
-# 775 "data/maps/WaddleDeeArena/scripts.pory"
+# 790 "data/maps/WaddleDeeArena/scripts.pory"
 	waitmovement
-# 776 "data/maps/WaddleDeeArena/scripts.pory"
+# 791 "data/maps/WaddleDeeArena/scripts.pory"
 	special RemoveCameraObject
-# 777 "data/maps/WaddleDeeArena/scripts.pory"
+# 792 "data/maps/WaddleDeeArena/scripts.pory"
 	goto WaddleDeeArena_EventScript_CommentatorBye
 	return
 
 
 WaddleDeeArena_EventScript_TalkToMagolor::
-# 803 "data/maps/WaddleDeeArena/scripts.pory"
+# 818 "data/maps/WaddleDeeArena/scripts.pory"
 	lock
-# 804 "data/maps/WaddleDeeArena/scripts.pory"
-	faceplayer
-# 805 "data/maps/WaddleDeeArena/scripts.pory"
-	goto_if_set FLAG_RECEIVED_TM_ROCK_TOMB, WaddleDeeArena_EventScript_TalkToMagolor_2
 # 819 "data/maps/WaddleDeeArena/scripts.pory"
+	faceplayer
+# 820 "data/maps/WaddleDeeArena/scripts.pory"
+	goto_if_set FLAG_RECEIVED_TM_ROCK_TOMB, WaddleDeeArena_EventScript_TalkToMagolor_2
+# 834 "data/maps/WaddleDeeArena/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, WaddleDeeArena_EventScript_TalkToMagolor_3
 WaddleDeeArena_EventScript_TalkToMagolor_1:
-# 843 "data/maps/WaddleDeeArena/scripts.pory"
+# 858 "data/maps/WaddleDeeArena/scripts.pory"
 	release
 	return
 
 WaddleDeeArena_EventScript_TalkToMagolor_2:
-# 807 "data/maps/WaddleDeeArena/scripts.pory"
+# 822 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_TalkToMagolor_Text_0
 	goto WaddleDeeArena_EventScript_TalkToMagolor_1
 
 WaddleDeeArena_EventScript_TalkToMagolor_3:
-# 821 "data/maps/WaddleDeeArena/scripts.pory"
+# 836 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_TalkToMagolor_Text_1
-# 832 "data/maps/WaddleDeeArena/scripts.pory"
+# 847 "data/maps/WaddleDeeArena/scripts.pory"
 	giveitem ITEM_TM53
-# 833 "data/maps/WaddleDeeArena/scripts.pory"
+# 848 "data/maps/WaddleDeeArena/scripts.pory"
 	msgbox WaddleDeeArena_EventScript_TalkToMagolor_Text_2
-# 841 "data/maps/WaddleDeeArena/scripts.pory"
+# 856 "data/maps/WaddleDeeArena/scripts.pory"
 	setflag FLAG_RECEIVED_TM_ROCK_TOMB
 	goto WaddleDeeArena_EventScript_TalkToMagolor_1
 
 
-WaddleDeeArena_EventScript_MoveTutor::
-# 848 "data/maps/WaddleDeeArena/scripts.pory"
-	lock
-# 849 "data/maps/WaddleDeeArena/scripts.pory"
-	faceplayer
-# 850 "data/maps/WaddleDeeArena/scripts.pory"
-	goto_if_unset FLAG_BADGE01_GET, WaddleDeeArena_EventScript_MoveTutor_2
-# 863 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_MoveTutorEnabled
-WaddleDeeArena_EventScript_MoveTutor_1:
-# 865 "data/maps/WaddleDeeArena/scripts.pory"
-	release
-	return
-
-WaddleDeeArena_EventScript_MoveTutor_2:
-# 852 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_MoveTutor_Text_0
-	goto WaddleDeeArena_EventScript_MoveTutor_1
-
-
-WaddleDeeArena_EventScript_MoveTutorEnabled::
-# 870 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_MoveTutorEnabled_Text_0
-# 878 "data/maps/WaddleDeeArena/scripts.pory"
-	message WaddleDeeArena_EventScript_MoveTutorEnabled_Text_1
-# 880 "data/maps/WaddleDeeArena/scripts.pory"
-	waitmessage
-# 881 "data/maps/WaddleDeeArena/scripts.pory"
-	showmoneybox 0, 0
-# 882 "data/maps/WaddleDeeArena/scripts.pory"
-	multichoice 20, 0, MULTI_WADDLE_DEE_MOVELIST, FALSE
-# 883 "data/maps/WaddleDeeArena/scripts.pory"
-	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
-# 884 "data/maps/WaddleDeeArena/scripts.pory"
-	switch VAR_RESULT
-# 885 "data/maps/WaddleDeeArena/scripts.pory"
-	case 0, WaddleDeeArena_EventScript_MoveTutorEnabled_2
-# 887 "data/maps/WaddleDeeArena/scripts.pory"
-	case 1, WaddleDeeArena_EventScript_MoveTutorEnabled_3
-# 889 "data/maps/WaddleDeeArena/scripts.pory"
-	case 2, WaddleDeeArena_EventScript_MoveTutorEnabled_4
-# 891 "data/maps/WaddleDeeArena/scripts.pory"
-	case 3, WaddleDeeArena_EventScript_MoveTutorEnabled_5
-# 893 "data/maps/WaddleDeeArena/scripts.pory"
-	case 4, WaddleDeeArena_EventScript_MoveTutorEnabled_6
-# 895 "data/maps/WaddleDeeArena/scripts.pory"
-	case MULTI_B_PRESSED, WaddleDeeArena_EventScript_MoveTutorEnabled_7
-	return
-
-WaddleDeeArena_EventScript_MoveTutorEnabled_2:
-# 886 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_Move1
-	return
-
-WaddleDeeArena_EventScript_MoveTutorEnabled_3:
-# 888 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_Move2
-	return
-
-WaddleDeeArena_EventScript_MoveTutorEnabled_4:
-# 890 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_Move3
-	return
-
-WaddleDeeArena_EventScript_MoveTutorEnabled_5:
-# 892 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_Move4
-	return
-
-WaddleDeeArena_EventScript_MoveTutorEnabled_6:
-# 894 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_Move5
-	return
-
-WaddleDeeArena_EventScript_MoveTutorEnabled_7:
-# 896 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_MoveTutorLeave
-	return
-
-
-WaddleDeeArena_EventScript_Move1::
-# 902 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_0x8005, MOVE_GRASS_KNOT
-# 903 "data/maps/WaddleDeeArena/scripts.pory"
-	special BufferBattleFrontierTutorMoveName
-# 904 "data/maps/WaddleDeeArena/scripts.pory"
-	checkmoney 500
-# 905 "data/maps/WaddleDeeArena/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq WaddleDeeArena_EventScript_Move1_2
-WaddleDeeArena_EventScript_Move1_1:
-# 909 "data/maps/WaddleDeeArena/scripts.pory"
-	move_tutor MOVE_GRASS_KNOT, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove
-	return
-
-WaddleDeeArena_EventScript_Move1_2:
-# 907 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_CantAfford
-	goto WaddleDeeArena_EventScript_Move1_1
-
-
-WaddleDeeArena_EventScript_Move2::
-# 914 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_0x8005, MOVE_NIGHT_SHADE
-# 915 "data/maps/WaddleDeeArena/scripts.pory"
-	special BufferBattleFrontierTutorMoveName
-# 916 "data/maps/WaddleDeeArena/scripts.pory"
-	checkmoney 500
-# 917 "data/maps/WaddleDeeArena/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq WaddleDeeArena_EventScript_Move2_2
-WaddleDeeArena_EventScript_Move2_1:
-# 921 "data/maps/WaddleDeeArena/scripts.pory"
-	move_tutor MOVE_NIGHT_SHADE, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove
-	return
-
-WaddleDeeArena_EventScript_Move2_2:
-# 919 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_CantAfford
-	goto WaddleDeeArena_EventScript_Move2_1
-
-
-WaddleDeeArena_EventScript_Move3::
-# 926 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_0x8005, MOVE_VACUUM_WAVE
-# 927 "data/maps/WaddleDeeArena/scripts.pory"
-	special BufferBattleFrontierTutorMoveName
-# 928 "data/maps/WaddleDeeArena/scripts.pory"
-	checkmoney 500
-# 929 "data/maps/WaddleDeeArena/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq WaddleDeeArena_EventScript_Move3_2
-WaddleDeeArena_EventScript_Move3_1:
-# 933 "data/maps/WaddleDeeArena/scripts.pory"
-	move_tutor MOVE_VACUUM_WAVE, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove
-	return
-
-WaddleDeeArena_EventScript_Move3_2:
-# 931 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_CantAfford
-	goto WaddleDeeArena_EventScript_Move3_1
-
-
-WaddleDeeArena_EventScript_Move4::
-# 938 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_0x8005, MOVE_SWAGGER
-# 939 "data/maps/WaddleDeeArena/scripts.pory"
-	special BufferBattleFrontierTutorMoveName
-# 940 "data/maps/WaddleDeeArena/scripts.pory"
-	checkmoney 500
-# 941 "data/maps/WaddleDeeArena/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq WaddleDeeArena_EventScript_Move4_2
-WaddleDeeArena_EventScript_Move4_1:
-# 945 "data/maps/WaddleDeeArena/scripts.pory"
-	move_tutor MOVE_SWAGGER, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove
-	return
-
-WaddleDeeArena_EventScript_Move4_2:
-# 943 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_CantAfford
-	goto WaddleDeeArena_EventScript_Move4_1
-
-
-WaddleDeeArena_EventScript_Move5::
-# 950 "data/maps/WaddleDeeArena/scripts.pory"
-	setvar VAR_0x8005, MOVE_TOXIC_SPIKES
-# 951 "data/maps/WaddleDeeArena/scripts.pory"
-	special BufferBattleFrontierTutorMoveName
-# 952 "data/maps/WaddleDeeArena/scripts.pory"
-	checkmoney 500
-# 953 "data/maps/WaddleDeeArena/scripts.pory"
-	compare VAR_RESULT, 0
-	goto_if_eq WaddleDeeArena_EventScript_Move5_2
-WaddleDeeArena_EventScript_Move5_1:
-# 957 "data/maps/WaddleDeeArena/scripts.pory"
-	move_tutor MOVE_TOXIC_SPIKES, WaddleDeeArena_Text_TeachMove, WaddleDeeArena_Text_SelectMon, WaddleDeeArena_EventScript_MoveTutorLeave, WaddleDeeArena_EventScript_TaughtMove
-	return
-
-WaddleDeeArena_EventScript_Move5_2:
-# 955 "data/maps/WaddleDeeArena/scripts.pory"
-	goto WaddleDeeArena_EventScript_CantAfford
-	goto WaddleDeeArena_EventScript_Move5_1
-
-
-WaddleDeeArena_EventScript_CantAfford::
-# 962 "data/maps/WaddleDeeArena/scripts.pory"
-	hidemoneybox
-# 963 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_CantAfford_Text_0
-# 965 "data/maps/WaddleDeeArena/scripts.pory"
-	release
-	end
-
-
-WaddleDeeArena_EventScript_TaughtMove::
-# 983 "data/maps/WaddleDeeArena/scripts.pory"
-	showmoneybox 0, 0
-# 984 "data/maps/WaddleDeeArena/scripts.pory"
-	delay 16
-# 985 "data/maps/WaddleDeeArena/scripts.pory"
-	removemoney 500
-# 986 "data/maps/WaddleDeeArena/scripts.pory"
-	updatemoneybox
-# 987 "data/maps/WaddleDeeArena/scripts.pory"
-	playse SE_SHOP
-# 988 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_TaughtMove_Text_0
-# 990 "data/maps/WaddleDeeArena/scripts.pory"
-	copyvar VAR_0x8004, VAR_0x8008
-# 991 "data/maps/WaddleDeeArena/scripts.pory"
-	hidemoneybox
-# 992 "data/maps/WaddleDeeArena/scripts.pory"
-	release
-	return
-
-
-WaddleDeeArena_EventScript_MoveTutorLeave::
-# 997 "data/maps/WaddleDeeArena/scripts.pory"
-	hidemoneybox
-# 998 "data/maps/WaddleDeeArena/scripts.pory"
-	msgbox WaddleDeeArena_EventScript_MoveTutorLeave_Text_0
-# 1000 "data/maps/WaddleDeeArena/scripts.pory"
-	release
-	return
-
-
-# 181 "data/maps/WaddleDeeArena/scripts.pory"
+# 196 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_0:
-# 181 "data/maps/WaddleDeeArena/scripts.pory"
+# 196 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 182 "data/maps/WaddleDeeArena/scripts.pory"
+# 197 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_1:
-# 182 "data/maps/WaddleDeeArena/scripts.pory"
+# 197 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 182 "data/maps/WaddleDeeArena/scripts.pory"
+# 197 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 182 "data/maps/WaddleDeeArena/scripts.pory"
+# 197 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 182 "data/maps/WaddleDeeArena/scripts.pory"
+# 197 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 182 "data/maps/WaddleDeeArena/scripts.pory"
+# 197 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 188 "data/maps/WaddleDeeArena/scripts.pory"
+# 203 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_2:
-# 188 "data/maps/WaddleDeeArena/scripts.pory"
+# 203 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 188 "data/maps/WaddleDeeArena/scripts.pory"
+# 203 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 188 "data/maps/WaddleDeeArena/scripts.pory"
+# 203 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 194 "data/maps/WaddleDeeArena/scripts.pory"
+# 209 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_3:
-# 194 "data/maps/WaddleDeeArena/scripts.pory"
+# 209 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 194 "data/maps/WaddleDeeArena/scripts.pory"
+# 209 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 194 "data/maps/WaddleDeeArena/scripts.pory"
+# 209 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 198 "data/maps/WaddleDeeArena/scripts.pory"
+# 213 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_4:
-# 198 "data/maps/WaddleDeeArena/scripts.pory"
+# 213 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 198 "data/maps/WaddleDeeArena/scripts.pory"
+# 213 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 198 "data/maps/WaddleDeeArena/scripts.pory"
+# 213 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 198 "data/maps/WaddleDeeArena/scripts.pory"
+# 213 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 198 "data/maps/WaddleDeeArena/scripts.pory"
+# 213 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 198 "data/maps/WaddleDeeArena/scripts.pory"
+# 213 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
 	step_end
 
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_5:
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 199 "data/maps/WaddleDeeArena/scripts.pory"
+# 214 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinalsPreparation_Movement_6:
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 200 "data/maps/WaddleDeeArena/scripts.pory"
+# 215 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 302 "data/maps/WaddleDeeArena/scripts.pory"
+# 317 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_BeginChallenge_Movement_0:
-# 302 "data/maps/WaddleDeeArena/scripts.pory"
+# 317 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 302 "data/maps/WaddleDeeArena/scripts.pory"
+# 317 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_BeginChallenge_Movement_1:
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 322 "data/maps/WaddleDeeArena/scripts.pory"
+# 337 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
 	step_end
 
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_BeginChallenge_Movement_2:
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 323 "data/maps/WaddleDeeArena/scripts.pory"
+# 338 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
 	step_end
 
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_0:
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 333 "data/maps/WaddleDeeArena/scripts.pory"
+# 348 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
 	step_end
 
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_1:
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 334 "data/maps/WaddleDeeArena/scripts.pory"
+# 349 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
 	step_end
 
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_2:
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 336 "data/maps/WaddleDeeArena/scripts.pory"
+# 351 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 339 "data/maps/WaddleDeeArena/scripts.pory"
+# 354 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_3:
-# 339 "data/maps/WaddleDeeArena/scripts.pory"
+# 354 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_left
-# 339 "data/maps/WaddleDeeArena/scripts.pory"
+# 354 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 354 "data/maps/WaddleDeeArena/scripts.pory"
+# 369 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_4:
-# 354 "data/maps/WaddleDeeArena/scripts.pory"
+# 369 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 354 "data/maps/WaddleDeeArena/scripts.pory"
+# 369 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
 	step_end
 
-# 355 "data/maps/WaddleDeeArena/scripts.pory"
+# 370 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_5:
-# 355 "data/maps/WaddleDeeArena/scripts.pory"
+# 370 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 355 "data/maps/WaddleDeeArena/scripts.pory"
+# 370 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
 	step_end
 
-# 361 "data/maps/WaddleDeeArena/scripts.pory"
+# 376 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_6:
-# 361 "data/maps/WaddleDeeArena/scripts.pory"
+# 376 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 361 "data/maps/WaddleDeeArena/scripts.pory"
+# 376 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 361 "data/maps/WaddleDeeArena/scripts.pory"
+# 376 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 361 "data/maps/WaddleDeeArena/scripts.pory"
+# 376 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 361 "data/maps/WaddleDeeArena/scripts.pory"
+# 376 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 362 "data/maps/WaddleDeeArena/scripts.pory"
+# 377 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_7:
-# 362 "data/maps/WaddleDeeArena/scripts.pory"
+# 377 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 362 "data/maps/WaddleDeeArena/scripts.pory"
+# 377 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 362 "data/maps/WaddleDeeArena/scripts.pory"
+# 377 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 362 "data/maps/WaddleDeeArena/scripts.pory"
+# 377 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 367 "data/maps/WaddleDeeArena/scripts.pory"
+# 382 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_8:
-# 367 "data/maps/WaddleDeeArena/scripts.pory"
+# 382 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 367 "data/maps/WaddleDeeArena/scripts.pory"
+# 382 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 367 "data/maps/WaddleDeeArena/scripts.pory"
+# 382 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger1_Movement_9:
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 368 "data/maps/WaddleDeeArena/scripts.pory"
+# 383 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
 	step_end
 
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger2_Movement_0:
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 380 "data/maps/WaddleDeeArena/scripts.pory"
+# 395 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
 	step_end
 
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger2_Movement_1:
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 381 "data/maps/WaddleDeeArena/scripts.pory"
+# 396 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger2_Movement_2:
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 402 "data/maps/WaddleDeeArena/scripts.pory"
+# 417 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
 	step_end
 
-# 403 "data/maps/WaddleDeeArena/scripts.pory"
+# 418 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger2_Movement_3:
-# 403 "data/maps/WaddleDeeArena/scripts.pory"
+# 418 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 403 "data/maps/WaddleDeeArena/scripts.pory"
+# 418 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 403 "data/maps/WaddleDeeArena/scripts.pory"
+# 418 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 403 "data/maps/WaddleDeeArena/scripts.pory"
+# 418 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 403 "data/maps/WaddleDeeArena/scripts.pory"
+# 418 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
-# 403 "data/maps/WaddleDeeArena/scripts.pory"
+# 418 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 419 "data/maps/WaddleDeeArena/scripts.pory"
+# 434 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger3_Movement_0:
-# 419 "data/maps/WaddleDeeArena/scripts.pory"
+# 434 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 419 "data/maps/WaddleDeeArena/scripts.pory"
+# 434 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 419 "data/maps/WaddleDeeArena/scripts.pory"
+# 434 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 419 "data/maps/WaddleDeeArena/scripts.pory"
+# 434 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 419 "data/maps/WaddleDeeArena/scripts.pory"
+# 434 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
-# 419 "data/maps/WaddleDeeArena/scripts.pory"
+# 434 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 420 "data/maps/WaddleDeeArena/scripts.pory"
+# 435 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger3_Movement_1:
-# 420 "data/maps/WaddleDeeArena/scripts.pory"
+# 435 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 420 "data/maps/WaddleDeeArena/scripts.pory"
+# 435 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 420 "data/maps/WaddleDeeArena/scripts.pory"
+# 435 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 420 "data/maps/WaddleDeeArena/scripts.pory"
+# 435 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger3_Movement_2:
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 442 "data/maps/WaddleDeeArena/scripts.pory"
+# 457 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
 	step_end
 
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_Challenger3_Movement_3:
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_16
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 443 "data/maps/WaddleDeeArena/scripts.pory"
+# 458 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
 	step_end
 
-# 503 "data/maps/WaddleDeeArena/scripts.pory"
+# 518 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_0:
-# 503 "data/maps/WaddleDeeArena/scripts.pory"
+# 518 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 503 "data/maps/WaddleDeeArena/scripts.pory"
+# 518 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 503 "data/maps/WaddleDeeArena/scripts.pory"
+# 518 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 503 "data/maps/WaddleDeeArena/scripts.pory"
+# 518 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 503 "data/maps/WaddleDeeArena/scripts.pory"
+# 518 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 505 "data/maps/WaddleDeeArena/scripts.pory"
+# 520 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_1:
-# 505 "data/maps/WaddleDeeArena/scripts.pory"
+# 520 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 505 "data/maps/WaddleDeeArena/scripts.pory"
+# 520 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 505 "data/maps/WaddleDeeArena/scripts.pory"
+# 520 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 505 "data/maps/WaddleDeeArena/scripts.pory"
+# 520 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 505 "data/maps/WaddleDeeArena/scripts.pory"
+# 520 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 505 "data/maps/WaddleDeeArena/scripts.pory"
+# 520 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
+# 521 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_2:
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
+# 521 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
+# 521 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
+# 521 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
+# 521 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
+# 521 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
+# 521 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 506 "data/maps/WaddleDeeArena/scripts.pory"
+# 521 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
 	step_end
 
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_3:
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 520 "data/maps/WaddleDeeArena/scripts.pory"
+# 535 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
 	step_end
 
-# 521 "data/maps/WaddleDeeArena/scripts.pory"
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_4:
-# 521 "data/maps/WaddleDeeArena/scripts.pory"
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 521 "data/maps/WaddleDeeArena/scripts.pory"
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 521 "data/maps/WaddleDeeArena/scripts.pory"
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 521 "data/maps/WaddleDeeArena/scripts.pory"
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 521 "data/maps/WaddleDeeArena/scripts.pory"
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 521 "data/maps/WaddleDeeArena/scripts.pory"
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 521 "data/maps/WaddleDeeArena/scripts.pory"
+# 536 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_5:
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_up
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 523 "data/maps/WaddleDeeArena/scripts.pory"
+# 538 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 569 "data/maps/WaddleDeeArena/scripts.pory"
+# 584 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_6:
-# 569 "data/maps/WaddleDeeArena/scripts.pory"
+# 584 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 569 "data/maps/WaddleDeeArena/scripts.pory"
+# 584 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 569 "data/maps/WaddleDeeArena/scripts.pory"
+# 584 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 569 "data/maps/WaddleDeeArena/scripts.pory"
+# 584 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
-# 569 "data/maps/WaddleDeeArena/scripts.pory"
+# 584 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_down
 	step_end
 
-# 577 "data/maps/WaddleDeeArena/scripts.pory"
+# 592 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_7:
-# 577 "data/maps/WaddleDeeArena/scripts.pory"
+# 592 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_slow_right
-# 577 "data/maps/WaddleDeeArena/scripts.pory"
+# 592 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_fast_left
-# 577 "data/maps/WaddleDeeArena/scripts.pory"
+# 592 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 578 "data/maps/WaddleDeeArena/scripts.pory"
+# 593 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_8:
-# 578 "data/maps/WaddleDeeArena/scripts.pory"
+# 593 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_slow_left
-# 578 "data/maps/WaddleDeeArena/scripts.pory"
+# 593 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_fast_right
-# 578 "data/maps/WaddleDeeArena/scripts.pory"
+# 593 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_9:
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_faster_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 600 "data/maps/WaddleDeeArena/scripts.pory"
+# 615 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
 	step_end
 
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_10:
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	face_up
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	face_left
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	face_down
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	delay_8
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	face_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
-# 601 "data/maps/WaddleDeeArena/scripts.pory"
+# 616 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_fast_right
 	step_end
 
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_11:
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_left
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_up
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_down
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_left
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_up
-# 602 "data/maps/WaddleDeeArena/scripts.pory"
+# 617 "data/maps/WaddleDeeArena/scripts.pory"
 	jump_in_place_right
 	step_end
 
-# 608 "data/maps/WaddleDeeArena/scripts.pory"
+# 623 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_12:
-# 608 "data/maps/WaddleDeeArena/scripts.pory"
+# 623 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_slow_left
-# 608 "data/maps/WaddleDeeArena/scripts.pory"
+# 623 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_slow_left
 	step_end
 
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_13:
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 613 "data/maps/WaddleDeeArena/scripts.pory"
+# 628 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_left
 	step_end
 
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_14:
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 622 "data/maps/WaddleDeeArena/scripts.pory"
+# 637 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 624 "data/maps/WaddleDeeArena/scripts.pory"
+# 639 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_15:
-# 624 "data/maps/WaddleDeeArena/scripts.pory"
+# 639 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 624 "data/maps/WaddleDeeArena/scripts.pory"
+# 639 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 624 "data/maps/WaddleDeeArena/scripts.pory"
+# 639 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 624 "data/maps/WaddleDeeArena/scripts.pory"
+# 639 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 624 "data/maps/WaddleDeeArena/scripts.pory"
+# 639 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 624 "data/maps/WaddleDeeArena/scripts.pory"
+# 639 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
 	step_end
 
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_GrandFinals_Movement_16:
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 625 "data/maps/WaddleDeeArena/scripts.pory"
+# 640 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
 	step_end
 
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 WaddleDeeArena_EventScript_ForfeitConfirmation_Movement_0:
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_right
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_down
-# 771 "data/maps/WaddleDeeArena/scripts.pory"
+# 786 "data/maps/WaddleDeeArena/scripts.pory"
 	walk_in_place_up
 	step_end
 
@@ -2211,22 +1996,31 @@ WaddleDeeArena_EventScript_Youngster_Text_0:
 	.string "No wonder some folks like to load up\n"
 	.string "on a single type of Helper, huh?$"
 
+WaddleDeeArena_EventScript_WaddleDee_Text_0:
+# 25 "data/maps/WaddleDeeArena/scripts.pory"
+	.string "Have you met the craftsman hanging out\n"
+	.string "inside the item shop yet?\p"
+	.string "Apparently he knows special moves that\n"
+	.string "can be taught to Helpers.\p"
+	.string "If you get a Brooch, you should pay\n"
+	.string "him a visit and see what he offers.$"
+
 WaddleDeeArena_EventScript_Cafe_Text_0:
-# 27 "data/maps/WaddleDeeArena/scripts.pory"
+# 42 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "I've got some time off, so I came to\n"
 	.string "see what the Arenas were like.\p"
 	.string "I can't wait to see what kinds of\n"
 	.string "battles will take place in here!$"
 
 WaddleDeeArena_EventScript_Cafe_Text_1:
-# 35 "data/maps/WaddleDeeArena/scripts.pory"
+# 50 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Hey, congratulations on your victory!\n"
 	.string "All the competitors were so cool.\p"
 	.string "I think I get why the Great King is\n"
 	.string "making such a big deal of this game now!$"
 
 WaddleDeeArena_EventScript_Staff_Text_0:
-# 56 "data/maps/WaddleDeeArena/scripts.pory"
+# 71 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "My boss is planning on challenging the\n"
 	.string "Arena, so I'm here to cheer him on.\p"
 	.string "His Psychic-type Helpers are something\n"
@@ -2234,14 +2028,14 @@ WaddleDeeArena_EventScript_Staff_Text_0:
 	.string "Gooooo, boss! You've got this!$"
 
 WaddleDeeArena_EventScript_Staff_Text_1:
-# 66 "data/maps/WaddleDeeArena/scripts.pory"
+# 81 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Wow, you managed to best my boss's\n"
 	.string "Helpers? You're something else!\p"
 	.string "Don't tell him, but… I'll be\n"
 	.string "rooting for you too!$"
 
 WaddleDeeArena_EventScript_Hiker_Text_0:
-# 85 "data/maps/WaddleDeeArena/scripts.pory"
+# 100 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Supposedly, each of the various\n"
 	.string "Arenas have slightly different rules.\p"
 	.string "Whenever you get to a new Arena, it\n"
@@ -2249,7 +2043,7 @@ WaddleDeeArena_EventScript_Hiker_Text_0:
 	.string "what you'll be getting into.$"
 
 WaddleDeeArena_EventScript_Gentleman_Text_0:
-# 98 "data/maps/WaddleDeeArena/scripts.pory"
+# 113 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Raising Helpers is quite difficult…\n"
 	.string "I'm not sure I've got what it takes.\p"
 	.string "But watching others battle with their\n"
@@ -2258,17 +2052,17 @@ WaddleDeeArena_EventScript_Gentleman_Text_0:
 	.string "for the new king of Dream Land here!$"
 
 WaddleDeeArena_EventScript_Nurse_Text_0:
-# 113 "data/maps/WaddleDeeArena/scripts.pory"
+# 128 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Are you planning on entering the Arena?\n"
 	.string "I can heal up your Helpers first!$"
 
 WaddleDeeArena_EventScript_Nurse_Text_1:
-# 123 "data/maps/WaddleDeeArena/scripts.pory"
+# 138 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "You and your Helpers are in top form.\n"
 	.string "Best of luck in the Arena!$"
 
 WaddleDeeArena_EventScript_Commentator_Text_0:
-# 135 "data/maps/WaddleDeeArena/scripts.pory"
+# 150 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Once more: congraaaaatulations on your\n"
 	.string "fantaaaaabulous win, Kirby!\p"
 	.string "It's no small feat, overcoming Magolor\n"
@@ -2277,34 +2071,34 @@ WaddleDeeArena_EventScript_Commentator_Text_0:
 	.string "Arenas! Good luck, Kirby of the Stars!$"
 
 WaddleDeeArena_EventScript_Commentator_Text_1:
-# 148 "data/maps/WaddleDeeArena/scripts.pory"
+# 163 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Wwwwwelcome to the Waddle Dee\n"
 	.string "Arenaaaaa!\p"
 	.string "I'm your host, Commentator Waddle Dee,\n"
 	.string "here to officiate heated Helper brawls!$"
 
 WaddleDeeArena_EventScript_Commentator_Text_2:
-# 159 "data/maps/WaddleDeeArena/scripts.pory"
+# 174 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Next up: grand finals!\n"
 	.string "Are you prepared for the last battle?$"
 
 WaddleDeeArena_EventScript_CommentatorChoice_Text_0:
-# 208 "data/maps/WaddleDeeArena/scripts.pory"
+# 223 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Today's challenge: a sweet breeze!\n"
 	.string "How can I help you?$"
 
 WaddleDeeArena_EventScript_CommentatorBye_Text_0:
-# 228 "data/maps/WaddleDeeArena/scripts.pory"
+# 243 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "When you're ready for the grand finals,\n"
 	.string "you know the Waddle Dee to talk to!$"
 
 WaddleDeeArena_EventScript_CommentatorBye_Text_1:
-# 233 "data/maps/WaddleDeeArena/scripts.pory"
+# 248 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "If you ever want to brave the Arena,\n"
 	.string "you know the Waddle Dee to talk to!$"
 
 WaddleDeeArena_EventScript_CommentatorInfo_Text_0:
-# 241 "data/maps/WaddleDeeArena/scripts.pory"
+# 256 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Arenas host gauntlet-styled\n"
 	.string "tournaments of Helper battles.\p"
 	.string "Eager challengers are first pooled into\n"
@@ -2325,12 +2119,12 @@ WaddleDeeArena_EventScript_CommentatorInfo_Text_0:
 	.string "Now then…$"
 
 WaddleDeeArena_EventScript_BeginChallenge_Text_0:
-# 272 "data/maps/WaddleDeeArena/scripts.pory"
+# 287 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Alright, you've been signed up.\n"
 	.string "Come with me onto the stage, please!$"
 
 WaddleDeeArena_EventScript_BeginChallenge_Text_1:
-# 305 "data/maps/WaddleDeeArena/scripts.pory"
+# 320 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Welcome, one and all, to the brand-new\n"
 	.string "Waddle Dee Arena!\p"
 	.string "We've got some exciting battles today!\n"
@@ -2338,7 +2132,7 @@ WaddleDeeArena_EventScript_BeginChallenge_Text_1:
 	.string "it's the pink pugilist, Kirbyyy!!!$"
 
 WaddleDeeArena_EventScript_BeginChallenge_Text_2:
-# 314 "data/maps/WaddleDeeArena/scripts.pory"
+# 329 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Welcome, one and all, to the brand-new\n"
 	.string "Waddle Dee Arena!\p"
 	.string "Unable to settle for anything other\n"
@@ -2346,54 +2140,54 @@ WaddleDeeArena_EventScript_BeginChallenge_Text_2:
 	.string "Is it time for his first big win?$"
 
 WaddleDeeArena_EventScript_Challenger1_Text_0:
-# 330 "data/maps/WaddleDeeArena/scripts.pory"
+# 345 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Let's have our first challenger, please!$"
 
 WaddleDeeArena_EventScript_Challenger1_Text_1:
-# 344 "data/maps/WaddleDeeArena/scripts.pory"
+# 359 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "We're both having our first Arena\n"
 	.string "battle here. Let's make it a good one!$"
 
 WaddleDeeArena_EventScript_Challenger1_Text_2:
-# 349 "data/maps/WaddleDeeArena/scripts.pory"
+# 364 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "We both couldn't win last time… let's\n"
 	.string "see if one of us will do it this time!$"
 
 WaddleDeeArena_EventScript_Challenger1_Text_3:
-# 359 "data/maps/WaddleDeeArena/scripts.pory"
+# 374 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "This could be the start of something\n"
 	.string "big! Kirby takes the first win!$"
 
 WaddleDeeArena_EventScript_Challenger2_Text_0:
-# 377 "data/maps/WaddleDeeArena/scripts.pory"
+# 392 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Challenger number two, step right up!$"
 
 WaddleDeeArena_EventScript_Challenger2_Text_1:
-# 389 "data/maps/WaddleDeeArena/scripts.pory"
+# 404 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Prepare to be dazzled by my adorable\n"
 	.string "little Helpers!$"
 
 WaddleDeeArena_EventScript_Challenger2_Text_2:
-# 398 "data/maps/WaddleDeeArena/scripts.pory"
+# 413 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Things are starting to heat up!\n"
 	.string "Kirby has scored a second victory!$"
 
 WaddleDeeArena_EventScript_Challenger3_Text_0:
-# 416 "data/maps/WaddleDeeArena/scripts.pory"
+# 431 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Everyone welcome our final challenger!$"
 
 WaddleDeeArena_EventScript_Challenger3_Text_1:
-# 428 "data/maps/WaddleDeeArena/scripts.pory"
+# 443 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "My Helper and I have made it so far.\n"
 	.string "We can't back down now!$"
 
 WaddleDeeArena_EventScript_Challenger3_Text_2:
-# 437 "data/maps/WaddleDeeArena/scripts.pory"
+# 452 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "What an amazing battle! Kirby has swept\n"
 	.string "the preliminary bracket!!$"
 
 WaddleDeeArena_EventScript_Challenger3_Text_3:
-# 452 "data/maps/WaddleDeeArena/scripts.pory"
+# 467 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "All that's left now is the grand finals!\p"
 	.string "Now that you've conquered the bracket,\n"
 	.string "your options have changed slightly.\p"
@@ -2407,7 +2201,7 @@ WaddleDeeArena_EventScript_Challenger3_Text_3:
 	.string "we can get started right now!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_0:
-# 478 "data/maps/WaddleDeeArena/scripts.pory"
+# 493 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Can you feel it? The tension in the air?\n"
 	.string "The electric buzz from the crowd?\p"
 	.string "That can only mean one thing:\n"
@@ -2417,7 +2211,7 @@ WaddleDeeArena_EventScript_GrandFinals_Text_0:
 	.string "Everyone give it up for Kirbyyyyy!!!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_1:
-# 491 "data/maps/WaddleDeeArena/scripts.pory"
+# 506 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Can you feel it? The tension in the air?\n"
 	.string "The electric buzz from the crowd?\p"
 	.string "That can only mean one thing:\n"
@@ -2427,7 +2221,7 @@ WaddleDeeArena_EventScript_GrandFinals_Text_1:
 	.string "Everyone give it up for Kirbyyyyy!!!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_2:
-# 508 "data/maps/WaddleDeeArena/scripts.pory"
+# 523 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "And to my left, the other undefeated\n"
 	.string "challenger who made it to grand finals!\p"
 	.string "This sly spell caster hasn't just made a\n"
@@ -2437,7 +2231,7 @@ WaddleDeeArena_EventScript_GrandFinals_Text_2:
 	.string "Everyone welcome {COLOR BLUE}Magolor{COLOR DARK_GRAY} to the stage!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_3:
-# 531 "data/maps/WaddleDeeArena/scripts.pory"
+# 546 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "{SPEAKER NAME_MAGOLOR}Hey, Kirby! Surprised to see me?\p"
 	.string "I've been working hard setting up a\n"
 	.string "load of shops here in Waddle Dee Town!\p"
@@ -2451,7 +2245,7 @@ WaddleDeeArena_EventScript_GrandFinals_Text_3:
 	.string "my magical team!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_4:
-# 550 "data/maps/WaddleDeeArena/scripts.pory"
+# 565 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "{SPEAKER NAME_MAGOLOR}Good to see you again, Kirby!\p"
 	.string "I had a hunch you might enter this\n"
 	.string "Arena again. You're a persistent one!\p"
@@ -2466,112 +2260,112 @@ WaddleDeeArena_EventScript_GrandFinals_Text_4:
 	.string "battle I won't ever forget!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_5:
-# 570 "data/maps/WaddleDeeArena/scripts.pory"
+# 585 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "It's come down to Kirby vs. Magolor!\n"
 	.string "Who will reign supreme in the Arena?!\p"
 	.string "Everyone make some noiseeeee!!!!!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_6:
-# 592 "data/maps/WaddleDeeArena/scripts.pory"
+# 607 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Folks… we've witnessed history today.\n"
 	.string "Claiming his first Arena championship…\p"
 	.string "It's the pink puffball himself!\n"
 	.string "KIRBY WINS!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_7:
-# 604 "data/maps/WaddleDeeArena/scripts.pory"
+# 619 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "KIRBY! KIRBY! KIRBY! KIRBY!$"
 
 WaddleDeeArena_EventScript_GrandFinals_Text_8:
-# 610 "data/maps/WaddleDeeArena/scripts.pory"
+# 625 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "{SPEAKER NAME_MAGOLOR}What a humbling loss… I'll just have to\n"
 	.string "try harder next time! Hee hee hee…!$"
 
 WaddleDeeArena_EventScript_Victory_Text_0:
-# 633 "data/maps/WaddleDeeArena/scripts.pory"
+# 648 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Congratulations again on conquering\n"
 	.string "the Waddle Dee Arena, Kirby!\p"
 	.string "Here's your reward to commemorate the\n"
 	.string "occasion: the Waddle Dee Brooch!$"
 
 WaddleDeeArena_EventScript_Victory_Text_1:
-# 638 "data/maps/WaddleDeeArena/scripts.pory"
+# 653 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Kirby received the Waddle Dee Brooch\n"
 	.string "from Commentator Waddle Dee!$"
 
 WaddleDeeArena_EventScript_Victory_Text_2:
-# 645 "data/maps/WaddleDeeArena/scripts.pory"
+# 660 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "This Brooch certifies that you'll be\n"
 	.string "able to safely train stronger Helpers.\p"
 	.string "I hope you'll keep visiting different\n"
 	.string "Arenas and claiming more Brooches!$"
 
 WaddleDeeArena_EventScript_Break_Text_0:
-# 657 "data/maps/WaddleDeeArena/scripts.pory"
+# 672 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "There's just two rounds to go now.\n"
 	.string "Are you ready for the next battle?$"
 
 WaddleDeeArena_EventScript_Break_Text_1:
-# 662 "data/maps/WaddleDeeArena/scripts.pory"
+# 677 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "The last battle in the preliminary\n"
 	.string "bracket awaits! Are you prepared?$"
 
 WaddleDeeArena_EventScript_Break_Text_2:
-# 667 "data/maps/WaddleDeeArena/scripts.pory"
+# 682 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Now then, Kirby: the grand finals await!\n"
 	.string "Are you ready for the TRUE final bout?$"
 
 WaddleDeeArena_EventScript_ArenaHeal_Text_0:
-# 703 "data/maps/WaddleDeeArena/scripts.pory"
+# 718 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "You have {COLOR RED}one full-party heal{COLOR DARK_GRAY} left.\n"
 	.string "Would you like to use it now?$"
 
 WaddleDeeArena_EventScript_ArenaHeal_Text_1:
-# 711 "data/maps/WaddleDeeArena/scripts.pory"
+# 726 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Your party has been fully healed!$"
 
 WaddleDeeArena_EventScript_ArenaHeal_Text_2:
-# 723 "data/maps/WaddleDeeArena/scripts.pory"
+# 738 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Unfortunately, you've already used up\n"
 	.string "all of your heals, Kirby.\p"
 	.string "You'll have to tough out the remaining\n"
 	.string "battles with your party as they are!$"
 
 WaddleDeeArena_EventScript_ArenaHeal_Text_3:
-# 733 "data/maps/WaddleDeeArena/scripts.pory"
+# 748 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "You already healed up this round, Kirby!\n"
 	.string "If you have any heals remaining,\l"
 	.string "let's save them for future rounds, OK?$"
 
 WaddleDeeArena_EventScript_ArenaHeal_Text_4:
-# 741 "data/maps/WaddleDeeArena/scripts.pory"
+# 756 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Alright, one complimentary full-party\n"
 	.string "heal for our pink warrior, coming up!$"
 
 WaddleDeeArena_EventScript_ForfeitConfirmation_Text_0:
-# 756 "data/maps/WaddleDeeArena/scripts.pory"
+# 771 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Are you really sure you want to\n"
 	.string "throw in the towel now?\p"
 	.string "Just a heads up; {COLOR RED}you'll have to start\n"
 	.string "the tournament anew if you do{COLOR DARK_GRAY}!$"
 
 WaddleDeeArena_EventScript_ForfeitConfirmation_Text_1:
-# 761 "data/maps/WaddleDeeArena/scripts.pory"
+# 776 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Are you absolutely, positively sure\n"
 	.string "you want to retire now?$"
 
 WaddleDeeArena_EventScript_ForfeitConfirmation_Text_2:
-# 767 "data/maps/WaddleDeeArena/scripts.pory"
+# 782 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Well, sorry, folks! Looks like this\n"
 	.string "promising run is being cut short!$"
 
 WaddleDeeArena_EventScript_ForfeitConfirmation_Text_3:
-# 786 "data/maps/WaddleDeeArena/scripts.pory"
+# 801 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Alright, folks! Stay tuned! The grand\n"
 	.string "finals will begin after a short break!$"
 
 WaddleDeeArena_EventScript_TalkToMagolor_Text_0:
-# 807 "data/maps/WaddleDeeArena/scripts.pory"
+# 822 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "{SPEAKER NAME_MAGOLOR}I should study up on what makes the\n"
 	.string "Royal Royale so fun to play.\p"
 	.string "That knowledge could be put to good\n"
@@ -2582,7 +2376,7 @@ WaddleDeeArena_EventScript_TalkToMagolor_Text_0:
 	.string "inside. I hope you'll check it out!$"
 
 WaddleDeeArena_EventScript_TalkToMagolor_Text_1:
-# 821 "data/maps/WaddleDeeArena/scripts.pory"
+# 836 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "{SPEAKER NAME_MAGOLOR}Huh? You're checking in on me to see\n"
 	.string "if I'm doing alright?\p"
 	.string "Gee, Kirby, you're one silly fellow.\n"
@@ -2593,7 +2387,7 @@ WaddleDeeArena_EventScript_TalkToMagolor_Text_1:
 	.string "to mark our battle.$"
 
 WaddleDeeArena_EventScript_TalkToMagolor_Text_2:
-# 833 "data/maps/WaddleDeeArena/scripts.pory"
+# 848 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "{SPEAKER NAME_MAGOLOR}Trick is a move that swaps your Helper's\n"
 	.string "item with the target's.\p"
 	.string "You might find items on your journey\n"
@@ -2601,79 +2395,31 @@ WaddleDeeArena_EventScript_TalkToMagolor_Text_2:
 	.string "But you can always make them someone\n"
 	.string "else's problem! Hee hee hee!$"
 
-WaddleDeeArena_EventScript_MoveTutor_Text_0:
-# 852 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "I'm a movesmith. I know all sorts of\n"
-	.string "long-forgotten techniques.\p"
-	.string "What I'm looking for… is a commander\n"
-	.string "of Helpers that can wield my power.\p"
-	.string "Do you have what it takes to spark\n"
-	.string "the fire kindling in my heart?$"
-
-WaddleDeeArena_EventScript_MoveTutorEnabled_Text_0:
-# 870 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "Having watched your recent victory…\n"
-	.string "I feel so invigorated! Wroaaar!\p"
-	.string "I know some special moves that can\n"
-	.string "be taught to your Helpers.\p"
-	.string "For the price of ¥500, I'll train\n"
-	.string "them these new techniques.$"
-
-WaddleDeeArena_EventScript_MoveTutorEnabled_Text_1:
-# 878 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "What do you say?\n"
-	.string "Which move are you interested in?$"
-
-WaddleDeeArena_EventScript_CantAfford_Text_0:
-# 963 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "You can't afford to teach this move.\n"
-	.string "My skills don't come for free…$"
-
-WaddleDeeArena_EventScript_TaughtMove_Text_0:
-# 988 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "All done! I hope you and your Helper will\n"
-	.string "make the most of this new technique!$"
-
-WaddleDeeArena_EventScript_MoveTutorLeave_Text_0:
-# 998 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "Return to me if you ever wish to teach\n"
-	.string "your Helpers some special moves!$"
-
-WaddleDeeArena_Text_TeachMove::
-# 969 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "So, you want me to teach\n"
-	.string "{STR_VAR_1}?$"
-
-WaddleDeeArena_Text_SelectMon::
-# 975 "data/maps/WaddleDeeArena/scripts.pory"
-	.string "And which of your Helpers should I\n"
-	.string "teach the move to?$"
-
 WaddleDeeArena_Text_Challenger1::
-# 1003 "data/maps/WaddleDeeArena/scripts.pory"
+# 861 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Not everyone who makes it to the Arena\n"
 	.string "will be able to win…$"
 
 WaddleDeeArena_Text_Challenger2::
-# 1009 "data/maps/WaddleDeeArena/scripts.pory"
+# 867 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Oh no?! My darling Helpers!$"
 
 WaddleDeeArena_Text_Challenger3::
-# 1014 "data/maps/WaddleDeeArena/scripts.pory"
+# 872 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "So this is the strength of someone\n"
 	.string "who can reach grand finals…$"
 
 WaddleDeeArena_Text_Magolor::
-# 1020 "data/maps/WaddleDeeArena/scripts.pory"
+# 878 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "Bravo, Kirby! I'll admit, I didn't think\n"
 	.string "you had it in you to defeat me.\p"
 	.string "But I suppose bringing the best out of\n"
 	.string "your friends is what you do, right?$"
 
 WaddleDeeArena_Text_ToughItOut::
-# 1029 "data/maps/WaddleDeeArena/scripts.pory"
+# 887 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "TOUGH IT OUT$"
 
 WaddleDeeArena_Text_AcceptDefeat::
-# 1034 "data/maps/WaddleDeeArena/scripts.pory"
+# 892 "data/maps/WaddleDeeArena/scripts.pory"
 	.string "ACCEPT DEFEAT$"

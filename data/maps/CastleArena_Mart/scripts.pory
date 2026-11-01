@@ -67,3 +67,126 @@ script CastleArena_Mart_EventScript_Worker
             battling in the Arenas over there.")
     release
 }
+
+// Move Tutor
+
+script CastleArena_Mart_EventScript_MoveTutor
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_BADGE03_GET))
+    {
+        msgbox(MoveTutor_Text_MoveTutorNotEnabled, MSGBOX_DEFAULT)
+    }
+    else
+    {
+        goto(CastleArena_Mart_EventScript_MoveTutorEnabled)
+    }
+    release   
+}
+
+script CastleArena_Mart_EventScript_MoveTutorEnabled
+{
+    msgbox("Having heard of your recent victory\.
+            I feel so invigorated! Wroaaar!
+            
+            I know some special moves that can
+            be taught to your Helpers.
+            
+            For the price of ¥1500, I'll train
+            them these new techniques.")
+    message("What do you say?
+            Which move are you interested in?")
+    waitmessage()
+    showmoneybox(0, 0)
+    multichoice(20, 0, MULTI_PALACE_MOVELIST, FALSE)
+    copyvar(VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT)
+    switch(var(VAR_RESULT)) {
+	case 0:
+		goto(CastleArena_Mart_EventScript_Move1)
+	case 1:
+		goto(CastleArena_Mart_EventScript_Move2)
+	case 2:
+		goto(CastleArena_Mart_EventScript_Move3)
+    case 3:
+		goto(CastleArena_Mart_EventScript_Move4)
+    case 4:
+		goto(CastleArena_Mart_EventScript_Move5)
+    case MULTI_B_PRESSED:
+        goto(MoveTutor_EventScript_MoveTutorLeave)
+    }
+}
+
+script CastleArena_Mart_EventScript_Move1
+{
+    setvar(VAR_0x8005, MOVE_MYSTICAL_FIRE)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(MoveTutor_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_MYSTICAL_FIRE, MoveTutor_Text_TeachMove, MoveTutor_Text_SelectMon, MoveTutor_EventScript_MoveTutorLeave, CastleArena_Mart_EventScript_TaughtMove)
+}
+
+script CastleArena_Mart_EventScript_Move2
+{
+    setvar(VAR_0x8005, MOVE_POISON_TAIL)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(MoveTutor_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_POISON_TAIL, MoveTutor_Text_TeachMove, MoveTutor_Text_SelectMon, MoveTutor_EventScript_MoveTutorLeave, CastleArena_Mart_EventScript_TaughtMove)
+}
+
+script CastleArena_Mart_EventScript_Move3
+{
+    setvar(VAR_0x8005, MOVE_STOMPING_TANTRUM)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(MoveTutor_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_STOMPING_TANTRUM, MoveTutor_Text_TeachMove, MoveTutor_Text_SelectMon, MoveTutor_EventScript_MoveTutorLeave, CastleArena_Mart_EventScript_TaughtMove)
+}
+
+script CastleArena_Mart_EventScript_Move4
+{
+    setvar(VAR_0x8005, MOVE_PAYBACK)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(MoveTutor_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_PAYBACK, MoveTutor_Text_TeachMove, MoveTutor_Text_SelectMon, MoveTutor_EventScript_MoveTutorLeave, CastleArena_Mart_EventScript_TaughtMove)
+}
+
+script CastleArena_Mart_EventScript_Move5
+{
+    setvar(VAR_0x8005, MOVE_HELPING_HAND)
+    special(BufferBattleFrontierTutorMoveName)
+    checkmoney(1000)
+    if(!var(VAR_RESULT))
+    {
+        goto(MoveTutor_EventScript_CantAfford)
+    }
+    move_tutor(MOVE_HELPING_HAND, MoveTutor_Text_TeachMove, MoveTutor_Text_SelectMon, MoveTutor_EventScript_MoveTutorLeave, CastleArena_Mart_EventScript_TaughtMove)
+}
+
+script CastleArena_Mart_EventScript_TaughtMove
+{
+    showmoneybox(0,0)
+    delay(16)
+    removemoney(1500)
+    updatemoneybox()
+    playse(SE_SHOP)
+    msgbox("All done! I hope you and your Helper will
+            make the most of this new technique!")
+	copyvar(VAR_0x8004, VAR_0x8008)
+    hidemoneybox()
+    release
+}

@@ -36,10 +36,10 @@ ResortArena_Villa1_EventScript_Cafe::
 	faceplayer
 # 34 "data/maps/ResortArena_Villa1/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_ARM_THRUST_TM, ResortArena_Villa1_EventScript_Cafe_2
-# 49 "data/maps/ResortArena_Villa1/scripts.pory"
+# 50 "data/maps/ResortArena_Villa1/scripts.pory"
 	msgbox ResortArena_Villa1_EventScript_Cafe_Text_2
 ResortArena_Villa1_EventScript_Cafe_1:
-# 52 "data/maps/ResortArena_Villa1/scripts.pory"
+# 53 "data/maps/ResortArena_Villa1/scripts.pory"
 	release
 	return
 
@@ -50,6 +50,8 @@ ResortArena_Villa1_EventScript_Cafe_2:
 	giveitem ITEM_TM41
 # 41 "data/maps/ResortArena_Villa1/scripts.pory"
 	msgbox ResortArena_Villa1_EventScript_Cafe_Text_1
+# 46 "data/maps/ResortArena_Villa1/scripts.pory"
+	setflag FLAG_RECEIVED_ARM_THRUST_TM
 	goto ResortArena_Villa1_EventScript_Cafe_1
 
 
@@ -81,6 +83,6 @@ ResortArena_Villa1_EventScript_Cafe_Text_1:
 	.string "five times!$"
 
 ResortArena_Villa1_EventScript_Cafe_Text_2:
-# 49 "data/maps/ResortArena_Villa1/scripts.pory"
+# 50 "data/maps/ResortArena_Villa1/scripts.pory"
 	.string "I always make sure to greet everyone\n"
 	.string "I meet with everything I've got!$"

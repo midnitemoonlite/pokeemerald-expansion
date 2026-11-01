@@ -43,6 +43,7 @@ script ResortArena_Villa1_EventScript_Cafe
                 
                 If you get lucky, it can hit up to
                 five times!")
+        setflag(FLAG_RECEIVED_ARM_THRUST_TM)
     }
     else
     {
