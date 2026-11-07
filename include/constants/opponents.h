@@ -87,15 +87,15 @@
 #define TRAINER_ALBERT                       80 // Castle Arena - Flamberge
 #define TRAINER_SAMUEL                       81 // Castle Arena - Zan Partizanne
 #define TRAINER_VITO                         82 // Castle Arena - Nago
-#define TRAINER_OWEN                         83
-#define TRAINER_WILTON_2                     84
-#define TRAINER_WILTON_3                     85
-#define TRAINER_WILTON_4                     86
-#define TRAINER_WILTON_5                     87
-#define TRAINER_WARREN                       88
-#define TRAINER_MARY                         89
-#define TRAINER_ALEXIA                       90
-#define TRAINER_JODY                         91
+#define TRAINER_OWEN                         83 // Ripple Field - Trainer 1
+#define TRAINER_WILTON_2                     84 // Ripple Field - Trainer 2
+#define TRAINER_WILTON_3                     85 // Ripple Field - Trainer 3
+#define TRAINER_WILTON_4                     86 // Ripple Field - Trainer 4
+#define TRAINER_WILTON_5                     87 // Ripple Field - Trainer 5
+#define TRAINER_WARREN                       88 // Ripple Field - Trainer 6
+#define TRAINER_MARY                         89 // Ripple Field - Trainer 7
+#define TRAINER_ALEXIA                       90 // Ripple Field - Trainer 8
+#define TRAINER_JODY                         91 
 #define TRAINER_WENDY                        92
 #define TRAINER_KEIRA                        93
 #define TRAINER_BROOKE_1                     94

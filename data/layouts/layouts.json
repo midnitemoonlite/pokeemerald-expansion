@@ -9914,6 +9914,16 @@
       "secondary_tileset": "gTileset_Contest",
       "border_filepath": "data/layouts/WaddleDeeTown_Treasury/border.bin",
       "blockdata_filepath": "data/layouts/WaddleDeeTown_Treasury/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIPPLE_FIELD",
+      "name": "RippleField_Layout",
+      "width": 110,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/RippleField/border.bin",
+      "blockdata_filepath": "data/layouts/RippleField/map.bin"
     }
   ]
 }

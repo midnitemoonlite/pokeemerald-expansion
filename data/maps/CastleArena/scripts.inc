@@ -1241,197 +1241,197 @@ CastleArena_EventScript_ShortcutGuide::
 	faceplayer
 # 1041 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_ShortcutGuide_Text_0
-# 1044 "data/maps/CastleArena/scripts.pory"
+# 1043 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 
 CastleArena_EventScript_Wintry::
-# 1049 "data/maps/CastleArena/scripts.pory"
+# 1048 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1050 "data/maps/CastleArena/scripts.pory"
+# 1049 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Wintry_Text_0
-# 1054 "data/maps/CastleArena/scripts.pory"
+# 1053 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 
 CastleArena_EventScript_WaddleDee::
-# 1059 "data/maps/CastleArena/scripts.pory"
+# 1058 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1060 "data/maps/CastleArena/scripts.pory"
+# 1059 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1061 "data/maps/CastleArena/scripts.pory"
+# 1060 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_WaddleDee_Text_0
-# 1068 "data/maps/CastleArena/scripts.pory"
+# 1067 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 
 CastleArena_EventScript_Cafe::
-# 1073 "data/maps/CastleArena/scripts.pory"
+# 1072 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1074 "data/maps/CastleArena/scripts.pory"
+# 1073 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1075 "data/maps/CastleArena/scripts.pory"
+# 1074 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_Cafe_2
-# 1081 "data/maps/CastleArena/scripts.pory"
+# 1080 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_CafeWin
 CastleArena_EventScript_Cafe_1:
-# 1083 "data/maps/CastleArena/scripts.pory"
+# 1082 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Cafe_2:
-# 1077 "data/maps/CastleArena/scripts.pory"
+# 1076 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_Cafe
 	goto CastleArena_EventScript_Cafe_1
 
 
 CastleArena_EventScript_Socialite::
-# 1088 "data/maps/CastleArena/scripts.pory"
+# 1087 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1089 "data/maps/CastleArena/scripts.pory"
+# 1088 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1090 "data/maps/CastleArena/scripts.pory"
+# 1089 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_Socialite_2
-# 1096 "data/maps/CastleArena/scripts.pory"
+# 1095 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_SocialiteWin
 CastleArena_EventScript_Socialite_1:
-# 1098 "data/maps/CastleArena/scripts.pory"
+# 1097 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Socialite_2:
-# 1092 "data/maps/CastleArena/scripts.pory"
+# 1091 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_Socialite
 	goto CastleArena_EventScript_Socialite_1
 
 
 CastleArena_EventScript_TalkToCrowd1::
-# 1103 "data/maps/CastleArena/scripts.pory"
+# 1102 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1104 "data/maps/CastleArena/scripts.pory"
+# 1103 "data/maps/CastleArena/scripts.pory"
 	turnobject LOCALID_CASTLE_CROWD_1, DIR_EAST
-# 1105 "data/maps/CastleArena/scripts.pory"
+# 1104 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToCrowd1_2
-# 1111 "data/maps/CastleArena/scripts.pory"
+# 1110 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_CafeWin
 CastleArena_EventScript_TalkToCrowd1_1:
-# 1113 "data/maps/CastleArena/scripts.pory"
+# 1112 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToCrowd1_2:
-# 1107 "data/maps/CastleArena/scripts.pory"
+# 1106 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_Cafe
 	goto CastleArena_EventScript_TalkToCrowd1_1
 
 
 CastleArena_EventScript_TalkToCrowd2::
-# 1118 "data/maps/CastleArena/scripts.pory"
+# 1117 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1119 "data/maps/CastleArena/scripts.pory"
+# 1118 "data/maps/CastleArena/scripts.pory"
 	turnobject LOCALID_CASTLE_CROWD_2, DIR_WEST
-# 1120 "data/maps/CastleArena/scripts.pory"
+# 1119 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToCrowd2_2
-# 1126 "data/maps/CastleArena/scripts.pory"
+# 1125 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_SocialiteWin
 CastleArena_EventScript_TalkToCrowd2_1:
-# 1128 "data/maps/CastleArena/scripts.pory"
+# 1127 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToCrowd2_2:
-# 1122 "data/maps/CastleArena/scripts.pory"
+# 1121 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_Text_Socialite
 	goto CastleArena_EventScript_TalkToCrowd2_1
 
 
 CastleArena_EventScript_TalkToVCrowd1::
-# 1133 "data/maps/CastleArena/scripts.pory"
+# 1132 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1134 "data/maps/CastleArena/scripts.pory"
+# 1133 "data/maps/CastleArena/scripts.pory"
 	turnvobject 0, DIR_SOUTH
-# 1135 "data/maps/CastleArena/scripts.pory"
+# 1134 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToVCrowd1_2
-# 1145 "data/maps/CastleArena/scripts.pory"
+# 1144 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd1_Text_1
 CastleArena_EventScript_TalkToVCrowd1_1:
-# 1151 "data/maps/CastleArena/scripts.pory"
+# 1150 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToVCrowd1_2:
-# 1137 "data/maps/CastleArena/scripts.pory"
+# 1136 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd1_Text_0
 	goto CastleArena_EventScript_TalkToVCrowd1_1
 
 
 CastleArena_EventScript_TalkToVCrowd2::
-# 1156 "data/maps/CastleArena/scripts.pory"
+# 1155 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1157 "data/maps/CastleArena/scripts.pory"
+# 1156 "data/maps/CastleArena/scripts.pory"
 	turnvobject 1, DIR_SOUTH
-# 1158 "data/maps/CastleArena/scripts.pory"
+# 1157 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToVCrowd2_2
-# 1171 "data/maps/CastleArena/scripts.pory"
+# 1170 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd2_Text_1
 CastleArena_EventScript_TalkToVCrowd2_1:
-# 1183 "data/maps/CastleArena/scripts.pory"
+# 1182 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToVCrowd2_2:
-# 1160 "data/maps/CastleArena/scripts.pory"
+# 1159 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd2_Text_0
 	goto CastleArena_EventScript_TalkToVCrowd2_1
 
 
 CastleArena_EventScript_TalkToVCrowd3::
-# 1188 "data/maps/CastleArena/scripts.pory"
+# 1187 "data/maps/CastleArena/scripts.pory"
 	lockall
-# 1189 "data/maps/CastleArena/scripts.pory"
+# 1188 "data/maps/CastleArena/scripts.pory"
 	turnvobject 2, DIR_SOUTH
-# 1190 "data/maps/CastleArena/scripts.pory"
+# 1189 "data/maps/CastleArena/scripts.pory"
 	goto_if_unset FLAG_BADGE03_GET, CastleArena_EventScript_TalkToVCrowd3_2
-# 1200 "data/maps/CastleArena/scripts.pory"
+# 1199 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd3_Text_1
 CastleArena_EventScript_TalkToVCrowd3_1:
-# 1203 "data/maps/CastleArena/scripts.pory"
+# 1202 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_TalkToVCrowd3_2:
-# 1192 "data/maps/CastleArena/scripts.pory"
+# 1191 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_TalkToVCrowd3_Text_0
 	goto CastleArena_EventScript_TalkToVCrowd3_1
 
 
 CastleArena_EventScript_Soldier::
-# 1245 "data/maps/CastleArena/scripts.pory"
+# 1244 "data/maps/CastleArena/scripts.pory"
 	lock
-# 1246 "data/maps/CastleArena/scripts.pory"
+# 1245 "data/maps/CastleArena/scripts.pory"
 	faceplayer
-# 1247 "data/maps/CastleArena/scripts.pory"
+# 1246 "data/maps/CastleArena/scripts.pory"
 	goto_if_set FLAG_BADGE03_GET, CastleArena_EventScript_Soldier_2
-# 1264 "data/maps/CastleArena/scripts.pory"
+# 1263 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Soldier_Text_1
 CastleArena_EventScript_Soldier_1:
-# 1270 "data/maps/CastleArena/scripts.pory"
+# 1269 "data/maps/CastleArena/scripts.pory"
 	release
 	return
 
 CastleArena_EventScript_Soldier_2:
-# 1249 "data/maps/CastleArena/scripts.pory"
+# 1248 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Soldier_Text_0
 	goto CastleArena_EventScript_Soldier_1
 
 
 CastleArena_EventScript_Sign::
-# 1277 "data/maps/CastleArena/scripts.pory"
+# 1276 "data/maps/CastleArena/scripts.pory"
 	msgbox CastleArena_EventScript_Sign_Text_0, MSGBOX_SIGN
-# 1279 "data/maps/CastleArena/scripts.pory"
+# 1278 "data/maps/CastleArena/scripts.pory"
 	closemessage
 	return
 
@@ -2752,17 +2752,16 @@ CastleArena_EventScript_Conductor_Text_1:
 CastleArena_EventScript_ShortcutGuide_Text_0:
 # 1041 "data/maps/CastleArena/scripts.pory"
 	.string "If you need to leave back to the\n"
-	.string "courtyard, this path's a shortcut.\l"
-	.string "I wish it was open on the way up…$"
+	.string "courtyard, this path's a shortcut.$"
 
 CastleArena_EventScript_Wintry_Text_0:
-# 1050 "data/maps/CastleArena/scripts.pory"
+# 1049 "data/maps/CastleArena/scripts.pory"
 	.string "Wow! I can see my friend at the top of\n"
 	.string "the Icecap Arena all the way from here!\p"
 	.string "Heeeeeeey!!! Helloooooooooo!!!!!$"
 
 CastleArena_EventScript_WaddleDee_Text_0:
-# 1061 "data/maps/CastleArena/scripts.pory"
+# 1060 "data/maps/CastleArena/scripts.pory"
 	.string "I wonder whether the competitors who\n"
 	.string "won their Brooch here before that trio\l"
 	.string "showed up could have beat them?\p"
@@ -2771,21 +2770,21 @@ CastleArena_EventScript_WaddleDee_Text_0:
 	.string "Waddle Dee, and some artist girl…$"
 
 CastleArena_EventScript_TalkToVCrowd1_Text_0:
-# 1137 "data/maps/CastleArena/scripts.pory"
+# 1136 "data/maps/CastleArena/scripts.pory"
 	.string "I can't get enough of seeing Francisca\n"
 	.string "freeze her opponent's Helpers!\p"
 	.string "Being frozen sounds like so much fun…\n"
 	.string "Oh, Francisca, please let it be me next!$"
 
 CastleArena_EventScript_TalkToVCrowd1_Text_1:
-# 1145 "data/maps/CastleArena/scripts.pory"
+# 1144 "data/maps/CastleArena/scripts.pory"
 	.string "What? You managed to defeat the\n"
 	.string "wonderful Francisca? How could you!?\p"
 	.string "Oooh… this burning feeling in my heart…\n"
 	.string "is this what Flamberge always feels!?$"
 
 CastleArena_EventScript_TalkToVCrowd2_Text_0:
-# 1160 "data/maps/CastleArena/scripts.pory"
+# 1159 "data/maps/CastleArena/scripts.pory"
 	.string "My pals here are real big fans of\n"
 	.string "Francisca and Flamberge, so you'd think\l"
 	.string "you'd know what to expect from me.\p"
@@ -2794,7 +2793,7 @@ CastleArena_EventScript_TalkToVCrowd2_Text_0:
 	.string "whose name I can't even remember!$"
 
 CastleArena_EventScript_TalkToVCrowd2_Text_1:
-# 1171 "data/maps/CastleArena/scripts.pory"
+# 1170 "data/maps/CastleArena/scripts.pory"
 	.string "Whoa, you must be pretty talented if\n"
 	.string "you managed to beat… uhh…\p"
 	.string "Hold on, it's coming to me…\p"
@@ -2804,19 +2803,19 @@ CastleArena_EventScript_TalkToVCrowd2_Text_1:
 	.string "good job winning against her.$"
 
 CastleArena_EventScript_TalkToVCrowd3_Text_0:
-# 1192 "data/maps/CastleArena/scripts.pory"
+# 1191 "data/maps/CastleArena/scripts.pory"
 	.string "I think Flamberge puts up the best\n"
 	.string "performance of the three mage sisters.\p"
 	.string "I'd be okay watching her battle over\n"
 	.string "and over if nobody could defeat her…$"
 
 CastleArena_EventScript_TalkToVCrowd3_Text_1:
-# 1200 "data/maps/CastleArena/scripts.pory"
+# 1199 "data/maps/CastleArena/scripts.pory"
 	.string "No way… you managed to defeat\n"
 	.string "Flamberge? Who even are you?$"
 
 CastleArena_EventScript_Soldier_Text_0:
-# 1249 "data/maps/CastleArena/scripts.pory"
+# 1248 "data/maps/CastleArena/scripts.pory"
 	.string "Seems like those girls are ready to move\n"
 	.string "on elsewhere after you defeated them.\p"
 	.string "It's a good thing that challengers will\n"
@@ -2828,14 +2827,14 @@ CastleArena_EventScript_Soldier_Text_0:
 	.string "For now, keep doing your best, alright?$"
 
 CastleArena_EventScript_Soldier_Text_1:
-# 1264 "data/maps/CastleArena/scripts.pory"
+# 1263 "data/maps/CastleArena/scripts.pory"
 	.string "I'm keeping an eye on things here to see\n"
 	.string "just how unbeatable that trio really is.\p"
 	.string "It would be a problem if nobody could\n"
 	.string "win the Royal Royal because of them…$"
 
 CastleArena_EventScript_Sign_Text_0:
-# 1277 "data/maps/CastleArena/scripts.pory"
+# 1276 "data/maps/CastleArena/scripts.pory"
 	.string "Newly-opened: CASTLE ARENA\n"
 	.string "Conquer it and win the Castle Brooch!$"
 
@@ -2859,13 +2858,13 @@ CastleArena_Text_Nago::
 	.string "are the real deal, mrrow!$"
 
 CastleArena_Text_Cafe::
-# 1206 "data/maps/CastleArena/scripts.pory"
+# 1205 "data/maps/CastleArena/scripts.pory"
 	.string "Arena seats seem like the perfect place\n"
 	.string "to sell snacks to hungry customers, so\l"
 	.string "I'm setting up a little food stand here!$"
 
 CastleArena_Text_CafeWin::
-# 1213 "data/maps/CastleArena/scripts.pory"
+# 1212 "data/maps/CastleArena/scripts.pory"
 	.string "That was some seriously incredible\n"
 	.string "Helper battling skill! Great work!\p"
 	.string "With hot shots like you, I bet this\n"
@@ -2873,7 +2872,7 @@ CastleArena_Text_CafeWin::
 	.string "and then I'll be busy, busy, busy!$"
 
 CastleArena_Text_Socialite::
-# 1223 "data/maps/CastleArena/scripts.pory"
+# 1222 "data/maps/CastleArena/scripts.pory"
 	.string "It's easy to see the results coming\n"
 	.string "when one group of competitors keep\l"
 	.string "dominating every single tournament.\p"
@@ -2881,7 +2880,7 @@ CastleArena_Text_Socialite::
 	.string "into this Arena, I wonder?$"
 
 CastleArena_Text_SocialiteWin::
-# 1233 "data/maps/CastleArena/scripts.pory"
+# 1232 "data/maps/CastleArena/scripts.pory"
 	.string "Bravo! You and your Helpers were really\n"
 	.string "something else!\p"
 	.string "Knowing there are strong competitors\n"

@@ -17,6 +17,11 @@
       "map": "MAP_FLOAT_ISLANDS",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_RIPPLE_FIELD",
+      "offset": 15,
+      "direction": "left"
     }
   ],
   "object_events": [

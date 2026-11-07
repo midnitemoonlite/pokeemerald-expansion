@@ -1006,9 +1006,6 @@ static const struct SpriteFrameImage sPicTable_TreeDisguise[] = {
     overworld_frame(gFieldEffectObjectPic_TreeDisguise, 2, 4, 1),
     overworld_frame(gFieldEffectObjectPic_TreeDisguise, 2, 4, 2),
     overworld_frame(gFieldEffectObjectPic_TreeDisguise, 2, 4, 3),
-    overworld_frame(gFieldEffectObjectPic_TreeDisguise, 2, 4, 4),
-    overworld_frame(gFieldEffectObjectPic_TreeDisguise, 2, 4, 5),
-    overworld_frame(gFieldEffectObjectPic_TreeDisguise, 2, 4, 6),
 };
 
 static const union AnimCmd sAnim_TreeDisguise[] =
@@ -1023,9 +1020,6 @@ static const union AnimCmd sAnim_TreeDisguiseReveal[] =
     ANIMCMD_FRAME(1, 4),
     ANIMCMD_FRAME(2, 4),
     ANIMCMD_FRAME(3, 4),
-    ANIMCMD_FRAME(4, 4),
-    ANIMCMD_FRAME(5, 4),
-    ANIMCMD_FRAME(6, 4),
     ANIMCMD_END,
 };
 
@@ -1037,7 +1031,7 @@ static const union AnimCmd *const sAnimTable_TreeDisguise[] =
 
 const struct SpriteTemplate gFieldEffectObjectTemplate_TreeDisguise = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
     .oam = &gObjectEventBaseOam_16x32,
     .anims = sAnimTable_TreeDisguise,
     .images = sPicTable_TreeDisguise,

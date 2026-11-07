@@ -1853,3 +1853,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/HALRoom_1/scripts.inc"
 
 	.include "data/maps/WaddleDeeTown_Treasury/scripts.inc"
+
+	.include "data/maps/RippleField/scripts.inc"

@@ -1,0 +1,326 @@
+raw `
+RippleField_MapScripts::
+	.byte 0
+`
+
+// NPCS
+
+script RippleField_EventScript_Sign
+{
+    msgbox("RIPPLE FIELD
+            Strong currents protect this island.", MSGBOX_SIGN)
+    closemessage
+}
+
+script RippleField_EventScript_Fairy1
+{
+    lock
+    faceplayer
+    msgbox("Oh, you don't have wings? That sucks.
+            You can't just fly above the currents.
+            
+            You better take a close look at where
+            you're swimming, okay?")
+    release
+}
+
+script RippleField_EventScript_Fairy2
+{
+    lock
+    faceplayer
+    msgbox("What's with that face you're making?
+            Haven't you ever seen a fairy before?
+            
+            Sorry you don't understand what true
+            beauty looks like. We can't all be
+            round, pudgy little creatures here.")
+    release
+}
+
+script RippleField_EventScript_Fairy3
+{
+    lock
+    faceplayer
+    msgbox("If you need to go back to Mallow Castle,
+            you should ride the current below me.")
+    release
+}
+
+script RippleField_EventScript_Fairy4
+{
+    lock
+    faceplayer
+    msgbox("Eek! Did you splash water on me?
+            Take this!")
+    closemessage
+    playse(SE_M_DIVE)
+    applymovement(LOCALID_PLAYER, moves(lock_facing_direction, walk_fast_down, unlock_facing_direction))
+    waitmovement
+    release
+}
+
+// Whirlpools
+
+script RippleField_EventScript_WhirlpoolWarp1
+{
+    lock
+    playse(SE_M_WHIRLPOOL)
+    applymovement(LOCALID_PLAYER, moves(face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down))
+    waitmovement
+    warp(MAP_RIPPLE_FIELD, 84, 5)
+    release
+}
+
+script RippleField_EventScript_WhirlpoolWarp2
+{
+    lock
+    playse(SE_M_WHIRLPOOL)
+    applymovement(LOCALID_PLAYER, moves(face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down, delay_2, face_left, delay_2, face_up, delay_2, face_right, delay_2, face_down))
+    waitmovement
+    warp(MAP_RIPPLE_FIELD, 23, 5)
+    release
+}
+
+// Trainers
+
+script RippleField_EventScript_Trainer1
+{
+    trainerbattle_single(TRAINER_OWEN, RippleField_Text_Trainer1Intro, RippleField_Text_Trainer1Defeated)
+    msgbox(RippleField_Text_Trainer1Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Trainer1Intro
+{
+    "Hey, I hauled that chest out of the
+    ocean! We'll have to battle for it!"
+}
+
+text RippleField_Text_Trainer1Defeated
+{
+    "Sigh\. to the victor goes the spoils\."
+}
+
+text RippleField_Text_Trainer1Post
+{
+    "I bet you could find all sorts of
+    treasures down on the sea floor."
+}
+
+script RippleField_EventScript_Trainer2
+{
+    trainerbattle_double(TRAINER_WILTON_2, RippleField_Text_Trainer2Intro, RippleField_Text_Trainer2Defeated, Generic_NotEnoughHelpers_Text)
+    msgbox(RippleField_Text_Trainer2Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Trainer2Intro
+{
+    "One Helper isn't enough! It's time to
+    show you what 2-on-2 battles are like!"
+}
+
+text RippleField_Text_Trainer2Defeated
+{
+    "Did you count how many Helpers there
+    was? It was a lot, wasn't it?"
+}
+
+text RippleField_Text_Trainer2Post
+{
+    "Fairies are stronger when we work
+    together!"
+}
+
+script RippleField_EventScript_Partner2
+{
+    trainerbattle_double(TRAINER_WILTON_2, RippleField_Text_Partner2Intro, RippleField_Text_Partner2Defeated, Generic_NotEnoughHelpers_Text)
+    msgbox(RippleField_Text_Partner2Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Partner2Intro
+{
+    "One Helper isn't enough! It's time for\.
+    battles with even more Helpers!"
+}
+
+text RippleField_Text_Partner2Defeated
+{
+    "I tried to count all the Helpers,
+    but I got distracted\."
+}
+
+text RippleField_Text_Partner2Post
+{
+    "One plus one\. plus one plus one\.
+    Ohh, I can't count that high!"
+}
+
+script RippleField_EventScript_Trainer3
+{
+    trainerbattle_single(TRAINER_WILTON_3, RippleField_Text_Trainer3Intro, RippleField_Text_Trainer3Defeated)
+    msgbox(RippleField_Text_Trainer3Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Trainer3Intro
+{
+    "Finally, someone who's not a Waddle Dee!
+    C'mon, let's play that fun Helper game!"
+}
+
+text RippleField_Text_Trainer3Defeated
+{
+    "Yow, you're good!"
+}
+
+text RippleField_Text_Trainer3Post
+{
+    "I'm so glad Ribbon told us about this
+    places! The games here are so much fun!"
+}
+
+script RippleField_EventScript_Trainer4
+{
+    trainerbattle_single(TRAINER_WILTON_4, RippleField_Text_Trainer4Intro, RippleField_Text_Trainer4Defeated)
+    msgbox(RippleField_Text_Trainer4Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Trainer4Intro
+{
+    "You found me!"
+}
+
+text RippleField_Text_Trainer4Defeated
+{
+    "I lost the battle\. I lost my block\."
+}
+
+text RippleField_Text_Trainer4Post
+{
+    "All my friends say I'm good at hide
+    and seek. Can you tell?"
+}
+
+script RippleField_EventScript_Trainer5
+{
+    trainerbattle_single(TRAINER_WILTON_5, RippleField_Text_Trainer5Intro, RippleField_Text_Trainer5Defeated)
+    msgbox(RippleField_Text_Trainer5Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Trainer5Intro
+{
+    "I won't lose! I've got the power of
+    friendship and teamwork on my side!"
+}
+
+text RippleField_Text_Trainer5Defeated
+{
+    "Is your teamwork really stronger\.?"
+}
+
+text RippleField_Text_Trainer5Post
+{
+    "I've got to strengthen my friendship
+    with my Helpers\. aha! I've got it!
+    We're gonna go to the café!"
+}
+
+script RippleField_EventScript_Trainer6
+{
+    trainerbattle_single(TRAINER_WARREN, RippleField_Text_Trainer6Intro, RippleField_Text_Trainer6Defeated)
+    msgbox(RippleField_Text_Trainer6Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Trainer6Intro
+{
+    "I can't lose! I've got the power of
+    standing next to this really cool rock!"
+}
+
+text RippleField_Text_Trainer6Defeated
+{
+    "I thought this rock would be my lucky
+    charm\."
+}
+
+text RippleField_Text_Trainer6Post
+{
+    "Maybe next time I should stand next to
+    a tree. Not a coconut tree, though."
+}
+
+script RippleField_EventScript_Trainer7
+{
+    trainerbattle_single(TRAINER_MARY, RippleField_Text_Trainer7Intro, RippleField_Text_Trainer7Defeated)
+    msgbox(RippleField_Text_Trainer7Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Trainer7Intro
+{
+    "You can do all sorts of neat things with
+    two Helpers battling together!"
+}
+
+text RippleField_Text_Trainer7Defeated
+{
+    "I still have so many ideas for new
+    strategies to try\."
+}
+
+text RippleField_Text_Trainer7Post
+{
+    "Preparing your moves for the kind of
+    battle you enter is important!"
+}
+
+script RippleField_EventScript_Partner7
+{
+    trainerbattle_single(TRAINER_MARY, RippleField_Text_Partner7Intro, RippleField_Text_Partner7Defeated)
+    msgbox(RippleField_Text_Partner7Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Partner7Intro
+{
+    "I don't know much about battling\. I'm
+    just here for support\."
+}
+
+text RippleField_Text_Partner7Defeated
+{
+    "Did I do a good job at helping?"
+}
+
+text RippleField_Text_Partner7Post
+{
+    "My hope is that my partner can win for
+    me as long as I keep using Helping Hand."
+}
+
+script RippleField_EventScript_Trainer8
+{
+    trainerbattle_single(TRAINER_ALEXIA, RippleField_Text_Trainer8Intro, RippleField_Text_Trainer8Defeated)
+    msgbox(RippleField_Text_Trainer8Post, MSGBOX_AUTOCLOSE)
+}
+
+text RippleField_Text_Trainer8Intro
+{
+    "The currents keep pulling my fishing
+    rod away\."
+}
+
+text RippleField_Text_Trainer8Defeated
+{
+    "It's a miracle the current hasn't pulled
+    me in too, hasn't it?"
+}
+
+text RippleField_Text_Trainer8Post
+{
+    "There's lots of rare Helpers in these
+    waters, but they're tough to catch."
+}
+
+// Hopefully unused?
+text Generic_NotEnoughHelpers_Text
+{
+    "You shouldn't be seeing this text.
+    Say something if you do."
+}

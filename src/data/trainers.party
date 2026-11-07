@@ -2222,7 +2222,7 @@ Ball: Premier
 Scarfy (M)
 Level: 26
 Ability: Berserk
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 Ball: Luxury
 - Bite
 - Charm
@@ -2232,173 +2232,240 @@ Ball: Luxury
 Keke (F) @ Oran Berry
 Level: 27
 Ability: Screen Cleaner
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 Ball: Poke
 - Play Rough
 - Fly
 - Twister
 - Icy Wind
 
+/* Ripple Field - Trainer 1 */
+
 === TRAINER_OWEN ===
-Name: OWEN
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Full Restore
+Name: Waddle Dee
+Class: Pokemaniac
+Pic: Pokemaniac
+Music: Suspicious
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Check Viability
 
-Kecleon
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Moonja (M)
+Level: 25
+Ability: Illusion
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Great
+- Feint Attack
+- Vacuum Wave
+- Aerial Ace
+- Double Team
 
-Graveler
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+NESP (F) @ Ring Target
+Level: 25
+Ability: Neuroforce
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Great
+- Psybeam
+- Shock Wave
+- Trick
+- Astonish
 
-Wailord
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+/* Ripple Field - Trainer 2 */
 
 === TRAINER_WILTON_2 ===
-Name: WILTON
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
+Name: Fairies
+Class: Sr And Jr
+Pic: Sr And Jr
+Music: Twins
+Double Battle: Yes
+AI: Check Bad Move / Negate Unaware
 
-Electrike
+Blade Knight (M)
 Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Ability: Justified
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Poke
+- Rock Smash
+- Aerial Ace
+- Revenge
+- Vacuum Wave
 
-Wailmer
+Sir Kibble (M)
 Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Ability: Justified
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Poke
+- Smart Strike
+- Air Cutter
+- Fury Cutter
+- Arm Thrust
 
-Makuhita
-Level: 26
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+/* Ripple Field - Trainer 3 */
 
 === TRAINER_WILTON_3 ===
-Name: WILTON
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Hyper Potion
+Name: Fairy
+Class: Tuber F
+Pic: Tuber F
+Music: Twins
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Negate Unaware
 
-Manectric
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Slushy (F)
+Level: 25
+Ability: Natural Cure
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Net
+- Whirlpool
+- Aqua Ring
+- Sweet Kiss
+- Recover
 
-Wailmer
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Broom Hatter (F)
+Level: 25
+Ability: Overcoat
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Net
+- Play Rough
+- Gust
+- Tidy Up
+- Twister
 
-Makuhita
-Level: 29
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Cookin (F)
+Level: 25
+Ability: Purifying Salt
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Heal
+- Disarming Voice
+- Flame Burst
+- Covet
+- Sweet Scent
+
+/* Ripple Field - Trainer 4 */
 
 === TRAINER_WILTON_4 ===
-Name: WILTON
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Full Restore
+Name: Waddle Dee
+Class: Ninja Boy
+Pic: Ninja Boy
+Music: Suspicious
 Double Battle: No
-AI: Basic Trainer
+AI: Try To Faint / Check Bad Move
 
-Manectric
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Blockin (M)
+Level: 27
+Ability: Stakeout
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Nest
+- Pursuit
+- Mud Bomb
+- Rock Throw
+- Mimic
 
-Wailmer
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Makuhita
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+/* Ripple Field - Trainer 5 */
 
 === TRAINER_WILTON_5 ===
-Name: WILTON
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Full Restore
+Name: Waddle Dee
+Class: Youngster
+Pic: Youngster
+Music: Male
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Check Viability
 
-Manectric
-Level: 35
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Venogg (M) @ Pecha Berry
+Level: 26
+Ability: Gooey
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Great
+- Stuff Cheeks
+- Toxic
+- Venoshock
+- Venom Drench
 
-Wailmer
-Level: 35
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+Sulkworm (M)
+Level: 26
+Ability: Own Tempo
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Net
+- Curse
+- Body Press
+- Lunge
+- Bind
 
-Hariyama
-Level: 35
-IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
+/* Ripple Field - Trainer 6 */
 
 === TRAINER_WARREN ===
-Name: WARREN
-Class: Cooltrainer
-Pic: Cooltrainer M
-Gender: Male
-Music: Cool
-Items: Full Restore
+Name: Waddle Dee
+Class: Lass
+Pic: Lass
+Music: Female
 Double Battle: No
-AI: Basic Trainer
+AI: Check Bad Move / Check Viability
 
-Graveler
-Level: 33
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Bouncy (F)
+Level: 26
+Ability: Own Tempo
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Friend
+- Teeter Dance
+- Draining Kiss
+- Heart Stamp
+- Swift
 
-Ludicolo
-Level: 33
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Stactus (F)
+Level: 26
+Ability: Water Absorb
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Fast
+- Needle Arm
+- Pin Missile
+- Pluck
+- Safeguard
+
+/* Ripple Field - Trainer 7 */
 
 === TRAINER_MARY ===
-Name: MARY
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Hyper Potion
-Double Battle: No
-AI: Basic Trainer
+Name: Fairies
+Class: Sr And Jr
+Pic: Sr And Jr
+Music: Twins
+Double Battle: Yes
+AI: Check Bad Move / Negate Unaware
 
-Delcatty
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Feint Attack
-- Shock Wave
+Boxin (F)
+Level: 27
+Ability: Guard Dog
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Heal
+- Helping Hand
+- Mach Punch
+
+Chippurus (F)
+Level: 27
+Ability: Fluffy
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Nest
+- Tail Slap
+- Quick Attack
+- Body Press
+- Defense Curl
+
+/* Ripple Field - Trainer 8 */
 
 === TRAINER_ALEXIA ===
-Name: ALEXIA
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Hyper Potion
+Name: Waddle Dee
+Class: Fisherman
+Pic: Fisherman
+Music: Hiker
 Double Battle: No
-AI: Basic Trainer
+AI: Check Viability / Try To Faint
 
-Wigglytuff
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Defense Curl
-- Double Edge
-- Shadow Ball
+Acro (F)
+Level: 28
+Ability: Immunity
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+Ball: Lure
+- Flip Turn
+- Ice Fang
+- Rock Throw
+- Bite
 
 === TRAINER_JODY ===
 Name: JODY

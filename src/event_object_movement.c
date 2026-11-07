@@ -6051,6 +6051,13 @@ void MovementType_TreeDisguise(struct Sprite *sprite)
     struct ObjectEvent *objectEvent;
 
     objectEvent = &gObjectEvents[sprite->sObjEventId];
+    if (!sprite->data[7])
+    {
+        gObjectEvents[sprite->sObjEventId].fixedPriority = TRUE;
+        sprite->subspriteMode = SUBSPRITES_IGNORE_PRIORITY;
+        sprite->oam.priority = 3;
+        //sprite->data[7]++;
+    }
     if (objectEvent->directionSequenceIndex == 0 || (objectEvent->directionSequenceIndex == 1 && !sprite->data[7]))
     {
         ObjectEventGetLocalIdAndMap(objectEvent, &gFieldEffectArguments[0], &gFieldEffectArguments[1], &gFieldEffectArguments[2]);
@@ -8744,6 +8751,9 @@ bool8 MovementAction_RevealTrainer_Step0(struct ObjectEvent *objectEvent, struct
         sprite->sActionFuncId = 2;
         return TRUE;
     }
+    //gObjectEvents[sprite->sObjEventId].fixedPriority = TRUE;
+    sprite->oam.priority = 2;
+    //sprite->data[7]++;
     StartRevealDisguise(objectEvent);
     sprite->sActionFuncId = 1;
     return MovementAction_RevealTrainer_Step1(objectEvent, sprite);

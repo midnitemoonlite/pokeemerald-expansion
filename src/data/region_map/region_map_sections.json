@@ -1706,6 +1706,10 @@
     {
       "id": "MAPSEC_HAL_ROOM",
       "name": "HAL ROOM"
+    },
+    {
+      "id": "MAPSEC_RIPPLE_FIELD",
+      "name": "RIPPLE FIELD"
     }
   ]
 }
