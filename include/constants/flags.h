@@ -348,24 +348,24 @@
 #define FLAG_RECEIVED_AURORA_TICKET          0x13A
 #define FLAG_RECEIVED_MYSTIC_TICKET          0x13B
 #define FLAG_RECEIVED_OLD_SEA_MAP            0x13C
-#define FLAG_WONDER_CARD_UNUSED_1            0x13D // These Wonder Card flags are referenced but never set
-#define FLAG_WONDER_CARD_UNUSED_2            0x13E
-#define FLAG_WONDER_CARD_UNUSED_3            0x13F
-#define FLAG_WONDER_CARD_UNUSED_4            0x140
-#define FLAG_WONDER_CARD_UNUSED_5            0x141
-#define FLAG_WONDER_CARD_UNUSED_6            0x142
-#define FLAG_WONDER_CARD_UNUSED_7            0x143
-#define FLAG_WONDER_CARD_UNUSED_8            0x144
-#define FLAG_WONDER_CARD_UNUSED_9            0x145
-#define FLAG_WONDER_CARD_UNUSED_10           0x146
-#define FLAG_WONDER_CARD_UNUSED_11           0x147
-#define FLAG_WONDER_CARD_UNUSED_12           0x148
-#define FLAG_WONDER_CARD_UNUSED_13           0x149
-#define FLAG_WONDER_CARD_UNUSED_14           0x14A
-#define FLAG_WONDER_CARD_UNUSED_15           0x14B
-#define FLAG_WONDER_CARD_UNUSED_16           0x14C
-#define FLAG_WONDER_CARD_UNUSED_17           0x14D
-#define NUM_WONDER_CARD_FLAGS                (1 + FLAG_WONDER_CARD_UNUSED_17 - FLAG_RECEIVED_AURORA_TICKET)
+#define FLAG_RECEIVED_HEAVY_DUTY_BOOTS       0x13D // Blue Rest Area - Animal Waddle Dee who gives Heavy-Duty Boots
+#define FLAG_BLUE_REST_AREA_ROCK_SMASH       0x13E // Blue Rest Area - Permanently destroyed Star Block at Iceberg entrance
+#define FLAG_WONDER_CARD_UNUSED_3            0x13F // Unused
+#define FLAG_WONDER_CARD_UNUSED_4            0x140 // Unused
+#define FLAG_WONDER_CARD_UNUSED_5            0x141 // Unused
+#define FLAG_WONDER_CARD_UNUSED_6            0x142 // Unused
+#define FLAG_WONDER_CARD_UNUSED_7            0x143 // Unused
+#define FLAG_WONDER_CARD_UNUSED_8            0x144 // Unused
+#define FLAG_WONDER_CARD_UNUSED_9            0x145 // Unused
+#define FLAG_WONDER_CARD_UNUSED_10           0x146 // Unused
+#define FLAG_WONDER_CARD_UNUSED_11           0x147 // Unused
+#define FLAG_WONDER_CARD_UNUSED_12           0x148 // Unused
+#define FLAG_WONDER_CARD_UNUSED_13           0x149 // Unused
+#define FLAG_WONDER_CARD_UNUSED_14           0x14A // Unused
+#define FLAG_WONDER_CARD_UNUSED_15           0x14B // Unused
+#define FLAG_WONDER_CARD_UNUSED_16           0x14C // Unused
+#define FLAG_WONDER_CARD_UNUSED_17           0x14D // Unused
+#define NUM_WONDER_CARD_FLAGS                (1 + FLAG_RECEIVED_OLD_SEA_MAP - FLAG_RECEIVED_AURORA_TICKET)
 
 #define FLAG_MIRAGE_TOWER_VISIBLE            0x14E
 #define FLAG_CHOSE_ROOT_FOSSIL               0x14F
@@ -582,7 +582,7 @@
 #define FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET               (FLAG_HIDDEN_ITEMS_START + 0x1C) // Ripple Field - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_MT_PYRE_EXTERIOR_ULTRA_BALL         (FLAG_HIDDEN_ITEMS_START + 0x1D) // Ripple Field - Hidden Item 2
 #define FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM            (FLAG_HIDDEN_ITEMS_START + 0x1E) // Ripple Field - Hidden Item 3
-#define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_1_KEY             (FLAG_HIDDEN_ITEMS_START + 0x1F)
+#define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_1_KEY             (FLAG_HIDDEN_ITEMS_START + 0x1F) // Blue Rest Area - Hidden Item 1
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_2_KEY             (FLAG_HIDDEN_ITEMS_START + 0x20)
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_4_KEY             (FLAG_HIDDEN_ITEMS_START + 0x21)
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_6_KEY             (FLAG_HIDDEN_ITEMS_START + 0x22)
@@ -1112,8 +1112,8 @@
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE                    0x423 // Ripple Field - Item 5
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_1_ORANGE_MAIL                  0x424 // Ripple Field - Item 6
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0x425 // Ripple Field - Item 7
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427
+#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426 // Blue Rest Area - Item 1
+#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427 // Blue Rest Area - Item 2
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL                    0x428
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_4_MECH_MAIL                    0x429
 #define FLAG_ITEM_ROUTE_124_YELLOW_SHARD                            0x42A

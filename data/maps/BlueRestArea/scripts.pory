@@ -1,0 +1,16 @@
+raw `
+BlueRestArea_MapScripts::
+    map_script MAP_SCRIPT_ON_RESUME, BlueRestArea_OnResume
+	.byte 0
+
+BlueRestArea_OnResume:
+	setstepcallback STEP_CB_PACIFIDLOG_BRIDGE
+	end
+`
+
+script BLueRestArea_EventScript_Sign
+{
+    msgbox("BLUE REST AREA
+            A patch of warm in the unforgiving cold.", MSGBOX_SIGN)
+    closemessage
+}

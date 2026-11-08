@@ -415,6 +415,20 @@
       "y": 27,
       "respawn_map": "MAP_CASTLE_ARENA_CENTER",
       "respawn_npc": "LOCALID_CASTLE_ARENA_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_RIPPLE_FIELD",
+      "map": "MAP_RIPPLE_FIELD",
+      "x": 33,
+      "y": 18
+    },
+    {
+      "id": "HEAL_LOCATION_BLUE_REST_AREA",
+      "map": "MAP_BLUE_REST_AREA",
+      "x": 28,
+      "y": 21,
+      "respawn_map": "MAP_BLUE_REST_AREA_CENTER",
+      "respawn_npc": "LOCALID_BLUE_REST_AREA_NURSE"
     }
   ]
 }

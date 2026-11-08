@@ -1298,8 +1298,8 @@ bool8 MetatileBehavior_IsRunningDisallowed(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_NO_RUNNING
      || metatileBehavior == MB_LONG_GRASS
-     || metatileBehavior == MB_HOT_SPRINGS
-     || MetatileBehavior_IsPacifidlogLog(metatileBehavior) != FALSE)
+     || metatileBehavior == MB_HOT_SPRINGS)
+     //|| MetatileBehavior_IsPacifidlogLog(metatileBehavior) != FALSE)
         return TRUE;
     else
         return FALSE;

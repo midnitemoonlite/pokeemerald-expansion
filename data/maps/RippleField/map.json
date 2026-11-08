@@ -5,7 +5,7 @@
   "music": "MUS_SLATEPORT",
   "region_map_section": "MAPSEC_RIPPLE_FIELD",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
+  "weather": "WEATHER_ROUTE123_CYCLE",
   "map_type": "MAP_TYPE_OCEAN_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -17,6 +17,11 @@
       "map": "MAP_MALLOW_GARDENS",
       "offset": -15,
       "direction": "right"
+    },
+    {
+      "map": "MAP_BLUE_REST_AREA",
+      "offset": -5,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -257,7 +262,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 29,
-      "y": 9,
+      "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -309,7 +314,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 29,
-      "y": 27,
+      "y": 9,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,

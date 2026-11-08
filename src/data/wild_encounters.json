@@ -39826,6 +39826,95 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_BLUE_REST_AREA",
+          "base_label": "gBlueRestArea",
+          "water_mons": {
+            "encounter_rate": 2,
+            "mons": [
+              {
+                "min_level": 10,
+                "max_level": 30,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 15,
+                "max_level": 25,
+                "species": "SPECIES_SLUSHY"
+              },
+              {
+                "min_level": 20,
+                "max_level": 25,
+                "species": "SPECIES_GLUNK"
+              },
+              {
+                "min_level": 25,
+                "max_level": 30,
+                "species": "SPECIES_GLUNK"
+              },
+              {
+                "min_level": 15,
+                "max_level": 20,
+                "species": "SPECIES_GLUNK"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 23,
+                "max_level": 27,
+                "species": "SPECIES_BLIPPER"
+              },
+              {
+                "min_level": 26,
+                "max_level": 27,
+                "species": "SPECIES_JOE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 26,
+                "species": "SPECIES_CRABY"
+              },
+              {
+                "min_level": 27,
+                "max_level": 28,
+                "species": "SPECIES_ACRO"
+              },
+              {
+                "min_level": 26,
+                "max_level": 27,
+                "species": "SPECIES_LOBZILLA"
+              }
+            ]
+          }
         }
       ]
     },

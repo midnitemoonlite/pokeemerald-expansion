@@ -9924,6 +9924,46 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/RippleField/border.bin",
       "blockdata_filepath": "data/layouts/RippleField/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLUE_REST_AREA",
+      "name": "BlueRestArea_Layout",
+      "width": 51,
+      "height": 37,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/BlueRestArea/border.bin",
+      "blockdata_filepath": "data/layouts/BlueRestArea/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLUE_REST_AREA_CENTER",
+      "name": "BlueRestArea_Center_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/BlueRestArea_Center/border.bin",
+      "blockdata_filepath": "data/layouts/BlueRestArea_Center/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLUE_REST_AREA_MART",
+      "name": "BlueRestArea_Mart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/BlueRestArea_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/BlueRestArea_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_BLUE_REST_AREA_HOUSE",
+      "name": "BlueRestArea_House_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/BlueRestArea_House/border.bin",
+      "blockdata_filepath": "data/layouts/BlueRestArea_House/map.bin"
     }
   ]
 }

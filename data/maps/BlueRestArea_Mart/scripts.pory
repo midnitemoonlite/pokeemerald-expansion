@@ -1,0 +1,54 @@
+raw `
+BlueRestArea_Mart_MapScripts::
+	.byte 0
+`
+
+script BlueRestArea_Mart_EventScript_Clerk
+{
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(CastleArena_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart BlueRestArea_Mart
+{
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_DREAM_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_REVIVE
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_REPEL
+    ITEM_POKE_DOLL
+    ITEM_DIRE_HIT
+}
+
+script BlueRestArea_Mart_EventScript_Camper
+{
+    lock
+    faceplayer
+    msgbox("The weather is so unforgiving here that
+            even the rest area is pretty empty.
+            
+            If you're going inside the Iceberg, I'd
+            make sure to pack lots of items.")
+    release
+}
+
+script BlueRestArea_Mart_EventScript_Fairy
+{
+    lock
+    faceplayer
+    msgbox("Brr! My wings almost froze over when
+            I flew inside the Iceberg!")
+    release
+}

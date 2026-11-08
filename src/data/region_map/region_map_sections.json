@@ -1710,6 +1710,10 @@
     {
       "id": "MAPSEC_RIPPLE_FIELD",
       "name": "RIPPLE FIELD"
+    },
+    {
+      "id": "MAPSEC_BLUE_REST_AREA",
+      "name": "BLUE REST AREA"
     }
   ]
 }

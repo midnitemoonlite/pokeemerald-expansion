@@ -1855,3 +1855,11 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/WaddleDeeTown_Treasury/scripts.inc"
 
 	.include "data/maps/RippleField/scripts.inc"
+
+	.include "data/maps/BlueRestArea/scripts.inc"
+
+	.include "data/maps/BlueRestArea_Center/scripts.inc"
+
+	.include "data/maps/BlueRestArea_Mart/scripts.inc"
+
+	.include "data/maps/BlueRestArea_House/scripts.inc"

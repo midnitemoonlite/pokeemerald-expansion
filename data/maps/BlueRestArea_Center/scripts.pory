@@ -1,0 +1,31 @@
+raw `
+BlueRestArea_Center_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, CastleArena_Center_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+BlueRestArea_Center_OnTransition:
+	setrespawn HEAL_LOCATION_BLUE_REST_AREA
+	end
+`
+
+script BlueRestArea_Center_EventScript_Nurse
+{
+    setvar(VAR_0x800B, LOCALID_BLUE_REST_AREA_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script BlueRestArea_Center_EventScript_FatMan
+{
+	lock
+	faceplayer
+	msgbox("A game can be disassembled and put
+            back together to make something new\.
+            
+            The power of science is staggering!")
+	release
+}

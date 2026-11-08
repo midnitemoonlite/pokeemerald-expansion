@@ -1,0 +1,54 @@
+raw `
+BlueRestArea_House_MapScripts::
+	.byte 0
+`
+
+script BlueRestArea_House_EventScript_Camper
+{
+    lock
+    faceplayer
+    msgbox("High up in the sky, rainbows bridge
+            many of Dream Land's islands together.
+            
+            These islands came to be known as the
+            Rainbow Islands as a result.
+            
+            The Iceberg and Ripple Field are
+            actually two of those islands!")
+    release
+}
+
+script BlueRestArea_House_EventScript_Conductor
+{
+    lock
+    msgbox("Siiiiiip\.
+    
+            Hoh! This cocoa is really hot! I
+            almost burned myself!")
+    release
+}
+
+script BlueRestArea_House_EventScript_Animal
+{
+    lock
+    faceplayer
+    if(!flag(FLAG_RECEIVED_HEAVY_DUTY_BOOTS))
+    {
+        msgbox("These fluffy paws help keep my feet
+            warm when I walk on snow on ice.
+            
+            Do your Helpers want some boots too?
+            Here, I'll lend you another pair I have.")
+        giveitem(ITEM_HEAVY_DUTY_BOOTS)
+        msgbox("A nice pair of shoes can protect
+                against all sorts of elements.")
+        setflag(FLAG_RECEIVED_HEAVY_DUTY_BOOTS)
+    }
+    else
+    {
+        msgbox("Having fluffy paws keeps you warm in
+                the cold, but they're not as comfy
+                to wear when you go to the beach\.")
+    }
+    release
+}

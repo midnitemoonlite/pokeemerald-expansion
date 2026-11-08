@@ -85,7 +85,8 @@
     "gMapGroup_IndoorOrangeRestArea",
     "gMapGroup_IndoorFloatIslands",
     "gMapGroup_IndoorMallowGardens",
-    "gMapGroup_IndoorCastleArena"
+    "gMapGroup_IndoorCastleArena",
+    "gMapGroup_IndoorBlueRestArea"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -160,7 +161,8 @@
     "FloatIslands",
     "MallowGardens",
     "CastleArena",
-    "RippleField"
+    "RippleField",
+    "BlueRestArea"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -1253,5 +1255,10 @@
   "gMapGroup_IndoorCastleArena": [
     "CastleArena_Center",
     "CastleArena_Mart"
+  ],
+  "gMapGroup_IndoorBlueRestArea": [
+    "BlueRestArea_Center",
+    "BlueRestArea_Mart",
+    "BlueRestArea_House"
   ]
 }
